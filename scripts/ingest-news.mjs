@@ -6,9 +6,13 @@
  * Usage: node scripts/ingest-news.mjs
  */
 import { createHash } from 'node:crypto'
+import dns from 'node:dns'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+
+// Prefer IPv4 — some feeds (e.g. Al Jazeera) fail on unreachable IPv6 routes
+dns.setDefaultResultOrder('ipv4first')
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')

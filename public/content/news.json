@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T18:02:56.663Z",
+  "updatedAt": "2026-07-21T18:04:46.344Z",
   "items": [
     {
       "id": "rss-ea1a04f8a042",
@@ -22,6 +22,30 @@
         {
           "label": "Al Jazeera podcasts",
           "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-3a21fcc8d229",
+      "hook": "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
+      "title": "Rescuers search for survivors amid risk of fresh floods in Afghanistan",
+      "lesson": "Death toll rises to at least 23, with more than 100 people missing, as monsoon season spreads chaos across region. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/21/rescuers-search-for-survivors-amid-risk-of-fresh-floods-in-afghanistan?traffic_source=rss",
+      "publishedAt": "2026-07-21T17:41:39.000Z",
+      "expiresAt": "2026-08-04T17:41:39.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/21/rescuers-search-for-survivors-amid-risk-of-fresh-floods-in-afghanistan?traffic_source=rss"
         },
         {
           "label": "AllSides",
@@ -54,6 +78,54 @@
       ]
     },
     {
+      "id": "rss-5fd1ea705392",
+      "hook": "Where will LeBron James go next? NBA star ‘not rushed’ to make a…",
+      "title": "Where will LeBron James go next? NBA star ‘not rushed’ to make a decision",
+      "lesson": "Reports have linked James to the Golden State Warriors, the Philadelphia 76ers, the Miami Heat, or the Cleveland Cavaliers. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/sports/2026/7/21/where-will-lebron-james-go-next-nba-star-not-rushed-to-make-a-decision?traffic_source=rss",
+      "publishedAt": "2026-07-21T17:31:57.000Z",
+      "expiresAt": "2026-08-04T17:31:57.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/sports/2026/7/21/where-will-lebron-james-go-next-nba-star-not-rushed-to-make-a-decision?traffic_source=rss"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-cc5b5271190f",
+      "hook": "Lebanon’s goal to end hostilities with Israel ‘forever’, says president",
+      "title": "Lebanon’s goal to end hostilities with Israel ‘forever’, says president",
+      "lesson": "Lebanese President Aoun told Trump that Lebanon&#039;s “ultimate objective” is to end hostilities with Israel “forever”. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/21/lebanons-goal-to-end-hostilities-with-israel-forever-says-president?traffic_source=rss",
+      "publishedAt": "2026-07-21T17:30:32.000Z",
+      "expiresAt": "2026-08-04T17:30:32.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/21/lebanons-goal-to-end-hostilities-with-israel-forever-says-president?traffic_source=rss"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
       "id": "rss-3ccee1b1f174",
       "hook": "Burnham tells cabinet to tackle living costs at first meeting",
       "title": "Burnham tells cabinet to tackle living costs at first meeting",
@@ -70,6 +142,54 @@
         {
           "label": "Full story",
           "url": "https://www.bbc.co.uk/news/articles/cx2vp4x7gkxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-d6de160699d0",
+      "hook": "Salah to Besiktas? Football’s transfer window centre stage after…",
+      "title": "Salah to Besiktas? Football’s transfer window centre stage after World Cup",
+      "lesson": "Mohamed Salah&#039;s future tops the latest news, contract, salary rumours, and transfer agenda ahead of the new football Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/sports/2026/7/21/salah-to-besiktas-footballs-transfer-window-centre-stage-after-world-cup?traffic_source=rss",
+      "publishedAt": "2026-07-21T17:23:04.000Z",
+      "expiresAt": "2026-08-04T17:23:04.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/sports/2026/7/21/salah-to-besiktas-footballs-transfer-window-centre-stage-after-world-cup?traffic_source=rss"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-fb6e9ed25d28",
+      "hook": "Greek-American tourists stabbed near the Acropolis",
+      "title": "Greek-American tourists stabbed near the Acropolis",
+      "lesson": "Police arrested a 60-year-old man on Tuesday after he allegedly stabbed two Greek-American tourists near the Acropolis. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/21/greek-american-tourists-stabbed-near-the-acropolis?traffic_source=rss",
+      "publishedAt": "2026-07-21T17:14:53.000Z",
+      "expiresAt": "2026-08-04T17:14:53.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/21/greek-american-tourists-stabbed-near-the-acropolis?traffic_source=rss"
         },
         {
           "label": "AllSides",
@@ -122,6 +242,126 @@
         {
           "label": "Al Jazeera podcasts",
           "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-81c704967371",
+      "hook": "An embattled coal terminal could be a lifeline for US coal",
+      "title": "An embattled coal terminal could be a lifeline for US coal",
+      "lesson": "West Oakland residents push legislation to block a coal terminal that could lead to air pollution in their area. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/economy/2026/7/21/an-embattled-coal-terminal-could-be-a-lifeline-for-us-coal?traffic_source=rss",
+      "publishedAt": "2026-07-21T17:06:36.000Z",
+      "expiresAt": "2026-08-04T17:06:36.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/economy/2026/7/21/an-embattled-coal-terminal-could-be-a-lifeline-for-us-coal?traffic_source=rss"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-be607dfccb41",
+      "hook": "Trump vows to help Lebanon but offers no timeline for Israeli withdrawal",
+      "title": "Trump vows to help Lebanon but offers no timeline for Israeli withdrawal",
+      "lesson": "Lebanese President Joseph Aoun says his goal is to end &#039;state of hostility between Lebanon and Israel forever&#039;. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/21/trump-vows-to-help-lebanon-but-offers-no-timeline-for-israeli-withdrawal?traffic_source=rss",
+      "publishedAt": "2026-07-21T16:58:59.000Z",
+      "expiresAt": "2026-08-04T16:58:59.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/21/trump-vows-to-help-lebanon-but-offers-no-timeline-for-israeli-withdrawal?traffic_source=rss"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-92b916a975d8",
+      "hook": "Police detain Indian opposition leader Gandhi as protests continue…",
+      "title": "Police detain Indian opposition leader Gandhi as protests continue to grow",
+      "lesson": "Detained while picketing PM&#039;s residence, Gandhi demands Modi&#039;s resignation for &#039;destroying the future of India&#039;s Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/21/police-arrest-indian-opposition-leader-gandhi-as-protests-continue-to-grow?traffic_source=rss",
+      "publishedAt": "2026-07-21T16:54:09.000Z",
+      "expiresAt": "2026-08-04T16:54:09.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/21/police-arrest-indian-opposition-leader-gandhi-as-protests-continue-to-grow?traffic_source=rss"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-ff12efed2cb3",
+      "hook": "Civilians faced attacks, abuse in joint US-Ecuador operations, HRW says",
+      "title": "Civilians faced attacks, abuse in joint US-Ecuador operations, HRW says",
+      "lesson": "Report presents evidence civilian farmers, fisherman were caught up in anti-drug crime operations from January to March. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/21/civilians-faced-attacks-abuse-in-joint-us-ecuador-operations-hrw-says?traffic_source=rss",
+      "publishedAt": "2026-07-21T16:53:24.000Z",
+      "expiresAt": "2026-08-04T16:53:24.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/21/civilians-faced-attacks-abuse-in-joint-us-ecuador-operations-hrw-says?traffic_source=rss"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-125241aa7e97",
+      "hook": "External review finds no wrongdoing in Gates Foundation–Epstein links",
+      "title": "External review finds no wrongdoing in Gates Foundation–Epstein links",
+      "lesson": "Report notes foundation&#039;s interaction with US sex offender Epstein on donor fund and grant, but rules out wrongdoing. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/economy/2026/7/21/external-review-finds-no-wrongdoing-in-gates-foundation-epstein?traffic_source=rss",
+      "publishedAt": "2026-07-21T16:46:06.000Z",
+      "expiresAt": "2026-08-04T16:46:06.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/economy/2026/7/21/external-review-finds-no-wrongdoing-in-gates-foundation-epstein?traffic_source=rss"
         },
         {
           "label": "AllSides",
