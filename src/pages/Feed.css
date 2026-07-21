@@ -69,6 +69,12 @@
   background: color-mix(in srgb, var(--accent) 18%, var(--surface));
 }
 
+.feed-updated {
+  margin: 0.65rem 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
 .feed-stage {
   position: relative;
   z-index: 1;

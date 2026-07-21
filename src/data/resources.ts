@@ -384,7 +384,8 @@ export const learningResources: LearningResource[] = [
     id: 'allsides',
     name: 'AllSides',
     url: 'https://www.allsides.com/',
-    blurb: 'Same story from left, center, and right — calibrate your media diet.',
+    blurb:
+      'Same story from left, center, and right — primary weekly source for Thinker’s politics & news cards (RSS: allsides.com/rss/news).',
     category: 'news',
     topicHints: ['current-events', 'politics'],
   },

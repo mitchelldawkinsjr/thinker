@@ -525,6 +525,33 @@ export const ideas: Idea[] = [
     sourceType: 'article',
     readMinutes: 2,
   },
+  {
+    id: 'media-as-arena',
+    topicId: 'politics',
+    title: 'Media is an arena, not a mirror',
+    body: 'Outlets compete for attention and identity, not just accuracy. Treat each story as a move in a game: who is the intended audience, what emotion is the payoff, and what facts would falsify the frame?',
+    source: 'Media Literacy',
+    sourceType: 'practice',
+    readMinutes: 2,
+  },
+  {
+    id: 'local-is-where-power-lands',
+    topicId: 'politics',
+    title: 'National noise, local levers',
+    body: 'Federal drama fills the feed; zoning, prosecutors, school boards, and state AGs often move your life more. When a national fight feels abstract, ask which local office actually holds the pen.',
+    source: 'Civic Practice',
+    sourceType: 'practice',
+    readMinutes: 2,
+  },
+  {
+    id: 'legitimacy-vs-legality',
+    topicId: 'politics',
+    title: 'Legal is not the same as legitimate',
+    body: 'Courts and statutes decide legality; publics and coalitions decide legitimacy. Crises often sit in the gap between them. Track both — the letter of the rule and who still consents to it.',
+    source: 'Political Theory',
+    sourceType: 'article',
+    readMinutes: 2,
+  },
 
   // Finance
   {

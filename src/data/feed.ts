@@ -6,6 +6,8 @@ import {
   gutenbergUrl,
 } from './gutenberg'
 import type { Idea, TopicId } from './types'
+import type { NewsItem } from './newsTypes'
+import { daySeed, seededShuffle, sortByFreshness } from '../lib/feedRotation'
 
 export type FeedItem =
   | { kind: 'idea'; id: string; idea: Idea }
@@ -32,17 +34,12 @@ export type FeedItem =
       ideaTitle?: string
       ideaBody?: string
     }
+  | {
+      kind: 'news'
+      id: string
+      news: NewsItem
+    }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr]
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[a[i], a[j]] = [a[j], a[i]]
-  }
-  return a
-}
-
-/** Round-robin merge so no single source dominates the swipe stack */
 function interleave<T>(queues: T[][]): T[] {
   const qs = queues.map((q) => [...q])
   const out: T[] = []
@@ -100,7 +97,14 @@ function resourceItems(topicFilter?: string): FeedItem[] {
 }
 
 function ideaItems(topicFilter?: string): FeedItem[] {
-  const list = topicFilter ? getIdeasByTopic(topicFilter) : ideas
+  let list = topicFilter ? getIdeasByTopic(topicFilter) : ideas
+  // Boost politics + current-events into the default mix
+  if (!topicFilter) {
+    const boost = ideas.filter(
+      (i) => i.topicId === 'politics' || i.topicId === 'current-events',
+    )
+    list = [...list, ...boost]
+  }
   return list.map((idea) => ({
     kind: 'idea' as const,
     id: `idea-${idea.id}`,
@@ -110,7 +114,14 @@ function ideaItems(topicFilter?: string): FeedItem[] {
 
 function askItems(topicFilter?: string): FeedItem[] {
   const pool = topicFilter ? getIdeasByTopic(topicFilter) : ideas
-  const samples = shuffle(pool).slice(0, Math.min(8, Math.ceil(pool.length / 6)))
+  const politicsPool = pool.filter(
+    (i) => i.topicId === 'politics' || i.topicId === 'current-events',
+  )
+  const base = politicsPool.length ? [...pool, ...politicsPool] : pool
+  const samples = seededShuffle(base, daySeed('ask')).slice(
+    0,
+    Math.min(10, Math.ceil(base.length / 5)),
+  )
 
   return samples.map((idea, i) => ({
     kind: 'ask' as const,
@@ -122,19 +133,39 @@ function askItems(topicFilter?: string): FeedItem[] {
   }))
 }
 
+function newsItems(news: NewsItem[], topicFilter?: string): FeedItem[] {
+  return news
+    .filter((n) => {
+      if (!topicFilter) return true
+      return n.topicIds.includes(topicFilter as TopicId)
+    })
+    .map((n) => ({
+      kind: 'news' as const,
+      id: `news-${n.id}`,
+      news: n,
+    }))
+}
+
 /**
- * Total mix: ideas + free sites + Gutenberg books + ask prompts,
- * interleaved so the feed never feels like one silo.
+ * Total mix: ideas + news/politics + sites + Gutenberg + ask,
+ * freshness-weighted so cards don't go stale.
  */
-export function buildMixedFeed(topicFilter?: string | null): FeedItem[] {
+export function buildMixedFeed(
+  topicFilter?: string | null,
+  news: NewsItem[] = [],
+  reshuffleKey = 0,
+): FeedItem[] {
   const topic = topicFilter || undefined
+  const seed = daySeed(`r${reshuffleKey}:${topic ?? 'all'}`)
 
-  const ideasQ = shuffle(ideaItems(topic))
-  const resourcesQ = shuffle(resourceItems(topic))
-  const booksQ = shuffle(bookItems(topic))
-  const asksQ = shuffle(askItems(topic))
+  const ideasQ = sortByFreshness(seededShuffle(ideaItems(topic), seed))
+  const newsQ = sortByFreshness(seededShuffle(newsItems(news, topic), seed ^ 1))
+  const resourcesQ = sortByFreshness(seededShuffle(resourceItems(topic), seed ^ 2))
+  const booksQ = sortByFreshness(seededShuffle(bookItems(topic), seed ^ 3))
+  const asksQ = sortByFreshness(seededShuffle(askItems(topic), seed ^ 4))
 
-  return interleave([ideasQ, resourcesQ, booksQ, asksQ, ideasQ])
+  // Weight: ideas, news (politics/current), ideas again, resources, books, asks
+  return interleave([ideasQ, newsQ, resourcesQ, newsQ, booksQ, asksQ, ideasQ])
 }
 
 const LABELS = {
@@ -142,6 +173,7 @@ const LABELS = {
   resource: 'Free site',
   book: 'Gutenberg',
   ask: 'Ask LLM',
+  news: 'News · Politics',
 } as const
 
 export const feedKindLabel = (kind: FeedItem['kind']) => LABELS[kind]

@@ -84,6 +84,28 @@
   color: color-mix(in srgb, white 50%, transparent);
 }
 
+.feed-card-angles {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.feed-card-angles a {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--card-accent) 55%, white);
+  text-decoration: none;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, white 16%, transparent);
+  background: color-mix(in srgb, white 6%, transparent);
+}
+
+.feed-card-angles a:hover {
+  background: color-mix(in srgb, white 12%, transparent);
+}
+
 .feed-card-foot {
   position: relative;
   margin-top: auto;

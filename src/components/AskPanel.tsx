@@ -8,6 +8,12 @@ import {
   type ExploreResult,
 } from '../lib/ollama'
 import { buildSlimCatalog, exploreInstant } from '../lib/exploreFast'
+import {
+  averageAskLatency,
+  formatWait,
+  loadAskLatencies,
+  recordAskLatency,
+} from '../lib/askLatency'
 import './AskPanel.css'
 
 type Props = {
@@ -37,10 +43,7 @@ function ResultBlock({
         {typeof result.latencyMs === 'number' && (
           <>
             {' '}
-            ·{' '}
-            {result.latencyMs < 50
-              ? `${result.latencyMs}ms`
-              : `${(result.latencyMs / 1000).toFixed(1)}s`}
+            · {formatWait(result.latencyMs)}
           </>
         )}
       </p>
@@ -106,7 +109,13 @@ export function AskPanel({
   const [refining, setRefining] = useState(false)
   const [model, setModel] = useState(getConfiguredModel())
   const [available, setAvailable] = useState<string[] | null>(null)
+  const [elapsedMs, setElapsedMs] = useState(0)
+  const [avgWaitMs, setAvgWaitMs] = useState<number | null>(() =>
+    averageAskLatency(loadAskLatencies()),
+  )
+  const [sampleCount, setSampleCount] = useState(() => loadAskLatencies().length)
   const abortRef = useRef<AbortController | null>(null)
+  const llmStartedAt = useRef<number | null>(null)
 
   useEffect(() => {
     let cancelled = false
@@ -124,6 +133,15 @@ export function AskPanel({
       abortRef.current?.abort()
     }
   }, [])
+
+  // Live elapsed timer while the LLM is thinking
+  useEffect(() => {
+    if (!refining || llmStartedAt.current == null) return
+    const tick = () => setElapsedMs(Math.round(performance.now() - (llmStartedAt.current ?? 0)))
+    tick()
+    const id = window.setInterval(tick, 100)
+    return () => window.clearInterval(id)
+  }, [refining])
 
   async function runExplore(qRaw: string) {
     const q = qRaw.trim()
@@ -149,17 +167,27 @@ export function AskPanel({
     setAi(null)
     setError(null)
     setLoading(false)
+    setElapsedMs(0)
 
     // 2) LLM answer appends below — never replaces instant
     if (available && available.length === 0) return
 
+    llmStartedAt.current = performance.now()
     setRefining(true)
     try {
       const out = await exploreQuestion(ctx, buildSlimCatalog(topicId), {
         model,
         signal: ac.signal,
       })
-      if (!ac.signal.aborted) setAi(out)
+      if (ac.signal.aborted) return
+
+      const waitMs = out.latencyMs ?? Math.round(performance.now() - (llmStartedAt.current ?? 0))
+      out.latencyMs = waitMs
+      const samples = recordAskLatency(waitMs)
+      setAvgWaitMs(averageAskLatency(samples))
+      setSampleCount(samples.length)
+      setElapsedMs(waitMs)
+      setAi(out)
     } catch (err) {
       if ((err as Error).name === 'AbortError') return
       setError(
@@ -168,6 +196,7 @@ export function AskPanel({
           : 'Instant answer kept. LLM unavailable.',
       )
     } finally {
+      llmStartedAt.current = null
       if (!ac.signal.aborted) setRefining(false)
     }
   }
@@ -186,6 +215,8 @@ export function AskPanel({
   useEffect(() => {
     if (initialQuestion) setQuestion(initialQuestion)
   }, [initialQuestion])
+
+  const showTimer = refining || (ai != null && elapsedMs > 0)
 
   return (
     <section className={`ask-panel ${compact ? 'ask-panel--compact' : ''}`}>
@@ -227,9 +258,35 @@ export function AskPanel({
               : 'e.g. Where do I go deeper on veto points in US politics?'
           }
         />
-        <button type="submit" className="btn btn-primary" disabled={loading || !question.trim()}>
-          {loading ? 'Thinking…' : 'Explore'}
-        </button>
+        <div className="ask-form-row">
+          <button type="submit" className="btn btn-primary" disabled={loading || !question.trim()}>
+            {loading ? 'Thinking…' : 'Explore'}
+          </button>
+          {(showTimer || avgWaitMs != null) && (
+            <p className="ask-wait" aria-live="polite">
+              {refining && (
+                <span className="ask-wait-live">
+                  {formatWait(elapsedMs)}
+                  <span className="ask-wait-dot" aria-hidden />
+                </span>
+              )}
+              {!refining && ai && elapsedMs > 0 && (
+                <span className="ask-wait-done">last {formatWait(elapsedMs)}</span>
+              )}
+              {avgWaitMs != null && (
+                <span className="ask-wait-avg">
+                  avg {formatWait(avgWaitMs)}
+                  {sampleCount > 0 && (
+                    <span className="ask-wait-n">
+                      {' '}
+                      · {sampleCount} ask{sampleCount === 1 ? '' : 's'}
+                    </span>
+                  )}
+                </span>
+              )}
+            </p>
+          )}
+        </div>
       </form>
 
       {error && <p className="ask-error">{error}</p>}
@@ -239,7 +296,10 @@ export function AskPanel({
       )}
 
       {refining && (
-        <p className="ask-refining">AI thinking with {model}… will append below.</p>
+        <p className="ask-refining">
+          AI thinking with {model}…
+          <span className="ask-refining-time"> {formatWait(elapsedMs)}</span>
+        </p>
       )}
 
       {ai && <ResultBlock result={ai} heading="AI answer" onFollowUp={askFollowUp} />}

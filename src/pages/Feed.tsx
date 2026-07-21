@@ -2,9 +2,16 @@ import { useMemo, useState, useEffect, useCallback } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { buildMixedFeed, feedKindLabel } from '../data/feed'
 import { getTopic } from '../data/topics'
+import { useNewsItems } from '../hooks/useNews'
+import { markSeen } from '../lib/feedRotation'
 import { IdeaCard } from '../components/IdeaCard'
 import { AskPanel } from '../components/AskPanel'
-import { AskFeedCard, BookFeedCard, ResourceFeedCard } from '../components/FeedCards'
+import {
+  AskFeedCard,
+  BookFeedCard,
+  NewsFeedCard,
+  ResourceFeedCard,
+} from '../components/FeedCards'
 import './Feed.css'
 
 export function Feed() {
@@ -12,17 +19,24 @@ export function Feed() {
   const topicFilter = params.get('topic')
   const topic = topicFilter ? getTopic(topicFilter) : undefined
   const [reshuffle, setReshuffle] = useState(0)
+  const { items: news, updatedAt } = useNewsItems()
 
   const items = useMemo(
-    () => buildMixedFeed(topicFilter),
-    [topicFilter, reshuffle],
+    () => buildMixedFeed(topicFilter, news, reshuffle),
+    [topicFilter, news, reshuffle],
   )
 
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
     setIndex(0)
-  }, [topicFilter, reshuffle])
+  }, [topicFilter, reshuffle, news])
+
+  const item = items[index]
+
+  useEffect(() => {
+    if (item?.id) markSeen(item.id)
+  }, [item?.id])
 
   const next = useCallback(() => {
     setIndex((i) => (i + 1) % Math.max(items.length, 1))
@@ -41,9 +55,8 @@ export function Feed() {
     return () => window.removeEventListener('keydown', onKey)
   }, [next, prev])
 
-  const item = items[index]
   const counts = useMemo(() => {
-    const c = { idea: 0, resource: 0, book: 0, ask: 0 }
+    const c = { idea: 0, resource: 0, book: 0, ask: 0, news: 0 }
     for (const it of items) c[it.kind]++
     return c
   }, [items])
@@ -55,11 +68,12 @@ export function Feed() {
         <h1>{topic ? `#${topic.name}` : 'Your feed'}</h1>
         <p>
           {topic
-            ? `Mixed ideas, free sites, and Gutenberg for ${topic.name}. Expand a card to go deeper — Ask is optional.`
-            : 'Total mix — ideas, free sites, Gutenberg books. Read more on a card when you want depth; Ask when you want a path.'}
+            ? `Mixed ideas, news, and sources for ${topic.name}. Politics & current events stay in the rotation.`
+            : 'Total mix — ideas, politics/news, free sites, Gutenberg. Unseen cards rise; news expires so it doesn’t go stale.'}
         </p>
         <div className="feed-mix">
           <span>{counts.idea} ideas</span>
+          <span>{counts.news} news</span>
           <span>{counts.resource} sites</span>
           <span>{counts.book} books</span>
           <span>{counts.ask} asks</span>
@@ -67,6 +81,11 @@ export function Feed() {
             Reshuffle
           </button>
         </div>
+        {updatedAt && (
+          <p className="feed-updated">
+            News updated {new Date(updatedAt).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}
+          </p>
+        )}
       </header>
 
       <div className="feed-stage">
@@ -76,6 +95,17 @@ export function Feed() {
           <IdeaCard
             key={item.id}
             idea={item.idea}
+            index={index}
+            total={items.length}
+            onNext={next}
+            onPrev={prev}
+          />
+        )}
+
+        {item?.kind === 'news' && (
+          <NewsFeedCard
+            key={item.id}
+            news={item.news}
             index={index}
             total={items.length}
             onNext={next}

@@ -1,5 +1,6 @@
 import type { CSSProperties, ReactNode } from 'react'
 import type { LearningResource } from '../data/resources'
+import type { NewsItem } from '../data/newsTypes'
 import './IdeaCard.css'
 import './FeedCards.css'
 
@@ -165,5 +166,54 @@ export function AskFeedCard({
       </FeedCardShell>
       <div className="ask-feed-panel">{children}</div>
     </div>
+  )
+}
+
+export function NewsFeedCard({
+  news,
+  onNext,
+  onPrev,
+  index,
+  total,
+}: {
+  news: NewsItem
+} & NavProps) {
+  const topics = news.topicIds.map((t) => `#${t}`).join(' · ')
+  const primary = news.angles?.[0]?.url ?? news.sourceUrl
+
+  return (
+    <FeedCardShell
+      accent="#c084fc"
+      surface="#1e1a28"
+      kind={`News · ${topics || 'current-events'}`}
+      title={news.hook}
+      index={index}
+      total={total}
+      onPrev={onPrev}
+      onNext={onNext}
+      cta={
+        <a className="idea-btn next" href={primary} target="_blank" rel="noreferrer">
+          Read source →
+        </a>
+      }
+    >
+      <p className="feed-card-author">{news.title}</p>
+      <p className="feed-card-body">{news.lesson}</p>
+      <p className="feed-card-hint">
+        {news.source}
+        {news.publishedAt
+          ? ` · ${new Date(news.publishedAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}`
+          : ''}
+      </p>
+      {news.angles && news.angles.length > 1 && (
+        <div className="feed-card-angles">
+          {news.angles.slice(0, 3).map((a) => (
+            <a key={a.url} href={a.url} target="_blank" rel="noreferrer">
+              {a.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </FeedCardShell>
   )
 }
