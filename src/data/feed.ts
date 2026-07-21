@@ -7,6 +7,7 @@ import {
 } from './gutenberg'
 import type { Idea, TopicId } from './types'
 import type { NewsItem } from './newsTypes'
+import type { ScriptureItem } from './scriptureTypes'
 import { daySeed, seededShuffle, sortByFreshness } from '../lib/feedRotation'
 
 export type FeedItem =
@@ -38,6 +39,11 @@ export type FeedItem =
       kind: 'news'
       id: string
       news: NewsItem
+    }
+  | {
+      kind: 'scripture'
+      id: string
+      scripture: ScriptureItem
     }
 
 function interleave<T>(queues: T[][]): T[] {
@@ -146,13 +152,30 @@ function newsItems(news: NewsItem[], topicFilter?: string): FeedItem[] {
     }))
 }
 
+function scriptureItems(
+  scriptures: ScriptureItem[],
+  topicFilter?: string,
+): FeedItem[] {
+  return scriptures
+    .filter((s) => {
+      if (!topicFilter) return true
+      return s.topicIds.includes(topicFilter as TopicId)
+    })
+    .map((s) => ({
+      kind: 'scripture' as const,
+      id: `scripture-${s.id}`,
+      scripture: s,
+    }))
+}
+
 /**
- * Total mix: ideas + news/politics + sites + Gutenberg + ask,
+ * Total mix: ideas + news/politics + scripture + sites + Gutenberg + ask,
  * freshness-weighted so cards don't go stale.
  */
 export function buildMixedFeed(
   topicFilter?: string | null,
   news: NewsItem[] = [],
+  scriptures: ScriptureItem[] = [],
   reshuffleKey = 0,
 ): FeedItem[] {
   const topic = topicFilter || undefined
@@ -160,12 +183,25 @@ export function buildMixedFeed(
 
   const ideasQ = sortByFreshness(seededShuffle(ideaItems(topic), seed))
   const newsQ = sortByFreshness(seededShuffle(newsItems(news, topic), seed ^ 1))
+  const scriptureQ = sortByFreshness(
+    seededShuffle(scriptureItems(scriptures, topic), seed ^ 5),
+  )
   const resourcesQ = sortByFreshness(seededShuffle(resourceItems(topic), seed ^ 2))
   const booksQ = sortByFreshness(seededShuffle(bookItems(topic), seed ^ 3))
   const asksQ = sortByFreshness(seededShuffle(askItems(topic), seed ^ 4))
 
-  // Weight: ideas, news (politics/current), ideas again, resources, books, asks
-  return interleave([ideasQ, newsQ, resourcesQ, newsQ, booksQ, asksQ, ideasQ])
+  // Weight: ideas, news, scripture, resources, books, asks — scripture in the cadence
+  return interleave([
+    ideasQ,
+    newsQ,
+    scriptureQ,
+    resourcesQ,
+    newsQ,
+    booksQ,
+    asksQ,
+    ideasQ,
+    scriptureQ,
+  ])
 }
 
 const LABELS = {
@@ -174,6 +210,7 @@ const LABELS = {
   book: 'Gutenberg',
   ask: 'Ask LLM',
   news: 'News · Politics',
+  scripture: 'Scripture',
 } as const
 
 export const feedKindLabel = (kind: FeedItem['kind']) => LABELS[kind]

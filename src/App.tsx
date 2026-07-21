@@ -9,6 +9,7 @@ import { Library } from './pages/Library'
 import { Books } from './pages/Books'
 import { Resources } from './pages/Resources'
 import { Ask } from './pages/Ask'
+import { ReloadPrompt } from './components/ReloadPrompt'
 import './App.css'
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
               <Route path="/library" element={<Library />} />
             </Routes>
           </main>
+          <ReloadPrompt />
         </div>
       </StashProvider>
     </BrowserRouter>

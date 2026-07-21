@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "ingest:news": "node scripts/ingest-news.mjs"
+    "ingest:news": "node scripts/ingest-news.mjs",
+    "ingest:scriptures": "node scripts/ingest-scriptures.mjs",
+    "ingest": "npm run ingest:news && npm run ingest:scriptures"
   },
   "dependencies": {
     "react": "^19.2.7",

@@ -106,6 +106,19 @@
   background: color-mix(in srgb, white 12%, transparent);
 }
 
+.feed-card-verse {
+  position: relative;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-style: italic;
+  color: color-mix(in srgb, white 92%, transparent);
+  background: color-mix(in srgb, white 6%, transparent);
+  border-left: 3px solid color-mix(in srgb, var(--card-accent) 70%, transparent);
+  border-radius: 0 10px 10px 0;
+}
+
 .feed-card-foot {
   position: relative;
   margin-top: auto;

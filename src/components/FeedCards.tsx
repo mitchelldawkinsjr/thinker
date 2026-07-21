@@ -1,6 +1,7 @@
 import type { CSSProperties, ReactNode } from 'react'
 import type { LearningResource } from '../data/resources'
 import type { NewsItem } from '../data/newsTypes'
+import type { ScriptureItem } from '../data/scriptureTypes'
 import './IdeaCard.css'
 import './FeedCards.css'
 
@@ -214,6 +215,48 @@ export function NewsFeedCard({
           ))}
         </div>
       )}
+    </FeedCardShell>
+  )
+}
+
+export function ScriptureFeedCard({
+  scripture,
+  onNext,
+  onPrev,
+  index,
+  total,
+}: {
+  scripture: ScriptureItem
+} & NavProps) {
+  const topics = scripture.topicIds.map((t) => `#${t}`).join(' · ')
+
+  return (
+    <FeedCardShell
+      accent="#e8c47c"
+      surface="#241c14"
+      kind={`Scripture · ${topics || 'wisdom'}`}
+      title={scripture.hook}
+      index={index}
+      total={total}
+      onPrev={onPrev}
+      onNext={onNext}
+      cta={
+        <a
+          className="idea-btn next"
+          href={scripture.sourceUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open passage →
+        </a>
+      }
+    >
+      <p className="feed-card-author">{scripture.reference}</p>
+      <blockquote className="feed-card-verse">“{scripture.text}”</blockquote>
+      <p className="feed-card-body">{scripture.lesson}</p>
+      <p className="feed-card-hint">
+        {scripture.translation} · via bolls.life (public domain)
+      </p>
     </FeedCardShell>
   )
 }

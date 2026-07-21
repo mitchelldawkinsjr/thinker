@@ -408,6 +408,15 @@ export const learningResources: LearningResource[] = [
     topicHints: ['current-events', 'politics'],
   },
   {
+    id: 'bolls-life',
+    name: 'bolls.life Bible API',
+    url: 'https://bolls.life/',
+    blurb:
+      'Free public-domain scripture API (WEB) — powers Thinker’s rotating scripture cards. No key required.',
+    category: 'thinking',
+    topicHints: ['mental-models', 'history', 'politics'],
+  },
+  {
     id: 'ground-news',
     name: 'Ground News',
     url: 'https://ground.news/',

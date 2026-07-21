@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import { buildMixedFeed, feedKindLabel } from '../data/feed'
 import { getTopic } from '../data/topics'
 import { useNewsItems } from '../hooks/useNews'
+import { useScriptures } from '../hooks/useScriptures'
 import { markSeen } from '../lib/feedRotation'
 import { IdeaCard } from '../components/IdeaCard'
 import { AskPanel } from '../components/AskPanel'
@@ -11,6 +12,7 @@ import {
   BookFeedCard,
   NewsFeedCard,
   ResourceFeedCard,
+  ScriptureFeedCard,
 } from '../components/FeedCards'
 import './Feed.css'
 
@@ -20,17 +22,18 @@ export function Feed() {
   const topic = topicFilter ? getTopic(topicFilter) : undefined
   const [reshuffle, setReshuffle] = useState(0)
   const { items: news, updatedAt } = useNewsItems()
+  const { items: scriptures } = useScriptures()
 
   const items = useMemo(
-    () => buildMixedFeed(topicFilter, news, reshuffle),
-    [topicFilter, news, reshuffle],
+    () => buildMixedFeed(topicFilter, news, scriptures, reshuffle),
+    [topicFilter, news, scriptures, reshuffle],
   )
 
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
     setIndex(0)
-  }, [topicFilter, reshuffle, news])
+  }, [topicFilter, reshuffle, news, scriptures])
 
   const item = items[index]
 
@@ -56,7 +59,7 @@ export function Feed() {
   }, [next, prev])
 
   const counts = useMemo(() => {
-    const c = { idea: 0, resource: 0, book: 0, ask: 0, news: 0 }
+    const c = { idea: 0, resource: 0, book: 0, ask: 0, news: 0, scripture: 0 }
     for (const it of items) c[it.kind]++
     return c
   }, [items])
@@ -68,12 +71,13 @@ export function Feed() {
         <h1>{topic ? `#${topic.name}` : 'Your feed'}</h1>
         <p>
           {topic
-            ? `Mixed ideas, news, and sources for ${topic.name}. Politics & current events stay in the rotation.`
-            : 'Total mix — ideas, politics/news, free sites, Gutenberg. Unseen cards rise; news expires so it doesn’t go stale.'}
+            ? `Mixed ideas, news, scripture, and sources for ${topic.name}.`
+            : 'Total mix — ideas, politics/news, scripture, free sites, Gutenberg. Unseen cards rise; news expires so it doesn’t go stale.'}
         </p>
         <div className="feed-mix">
           <span>{counts.idea} ideas</span>
           <span>{counts.news} news</span>
+          <span>{counts.scripture} scripture</span>
           <span>{counts.resource} sites</span>
           <span>{counts.book} books</span>
           <span>{counts.ask} asks</span>
@@ -106,6 +110,17 @@ export function Feed() {
           <NewsFeedCard
             key={item.id}
             news={item.news}
+            index={index}
+            total={items.length}
+            onNext={next}
+            onPrev={prev}
+          />
+        )}
+
+        {item?.kind === 'scripture' && (
+          <ScriptureFeedCard
+            key={item.id}
+            scripture={item.scripture}
             index={index}
             total={items.length}
             onNext={next}

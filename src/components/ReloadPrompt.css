@@ -1,0 +1,88 @@
+.pwa-toast {
+  position: fixed;
+  z-index: 1000;
+  left: 1rem;
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  max-width: 22rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  background: #1a2332;
+  color: #f4f6fa;
+  box-shadow: var(--shadow-float);
+  border: 1px solid color-mix(in srgb, white 12%, transparent);
+  animation: pwa-toast-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pwa-toast-title {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.pwa-toast-copy {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.4;
+  color: color-mix(in srgb, #f4f6fa 78%, transparent);
+}
+
+.pwa-toast-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.pwa-toast-dismiss,
+.pwa-toast-update {
+  appearance: none;
+  border: none;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.65rem;
+  cursor: pointer;
+}
+
+.pwa-toast-dismiss {
+  background: transparent;
+  color: color-mix(in srgb, #f4f6fa 70%, transparent);
+}
+
+.pwa-toast-dismiss:hover {
+  color: #f4f6fa;
+}
+
+.pwa-toast-update {
+  background: var(--accent);
+  color: white;
+}
+
+.pwa-toast-update:hover {
+  background: var(--accent-hot);
+}
+
+@keyframes pwa-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 640px) {
+  .pwa-toast {
+    left: auto;
+    right: 1.25rem;
+    margin-inline: 0;
+  }
+}

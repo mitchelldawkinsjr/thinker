@@ -2,7 +2,7 @@ name: Ingest news
 
 on:
   schedule:
-    # Weekly Monday 12:00 UTC — AllSides + politics/current-events refresh
+    # Weekly Monday 12:00 UTC — news + scriptures refresh
     - cron: "0 12 * * 1"
   workflow_dispatch:
 
@@ -16,16 +16,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Ingest RSS → news.json
-        run: node scripts/ingest-news.mjs
+      - name: Ingest RSS + scriptures
+        run: |
+          node scripts/ingest-news.mjs
+          node scripts/ingest-scriptures.mjs
       - name: Commit if changed
         run: |
           git config user.name "thinker-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add public/content/news.json
+          git add public/content/news.json public/content/scriptures.json
           if git diff --staged --quiet; then
-            echo "No news changes"
+            echo "No content changes"
             exit 0
           fi
-          git commit -m "chore: refresh politics & current-events news"
+          git commit -m "chore: refresh news and scriptures"
           git push
