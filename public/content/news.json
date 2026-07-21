@@ -1,6 +1,34 @@
 {
-  "updatedAt": "2026-07-21T17:58:39.566Z",
+  "updatedAt": "2026-07-21T18:02:56.663Z",
   "items": [
+    {
+      "id": "rss-ea1a04f8a042",
+      "hook": "Trump and Lebanon’s Aoun discuss Israel deal, Hezbollah and…",
+      "title": "Trump and Lebanon’s Aoun discuss Israel deal, Hezbollah and strengthening the army",
+      "lesson": "US President Donald Trump hosted Lebanese President Joseph Aoun at the White House for the first visit by a Lebanese president in nearly two decades. Trump described Lebanon as a \"very mistreated country\" and pledged US support, saying \"we're going to help it a lot.\" President Aoun thanked Trump for what he called a Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/44bba3ad-a259-49a0-9dee-b48e01236718/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-21T17:41:57.000Z",
+      "expiresAt": "2026-08-04T17:41:57.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/44bba3ad-a259-49a0-9dee-b48e01236718/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
     {
       "id": "rss-f8e7b0c85e71",
       "hook": "Bloomberg Bias Rating Moves From Lean Left to Center: 2026 AllSides…",
@@ -22,10 +50,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -50,10 +74,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -78,10 +98,62 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-60876fad4bb1",
+      "hook": "ASEAN ministers meet in Manila amid Iran-US tensions, South China…",
+      "title": "ASEAN ministers meet in Manila amid Iran-US tensions, South China Sea dispute",
+      "lesson": "Foreign ministers from the 11-nation ASEAN bloc are meeting in Manila amid escalating US-Iran hostilities that threaten regional oil supplies via the Strait of Hormuz, which they have urged be fully reopened. Talks come as tensions flared in the South China Sea, with the Philippines accusing China's coast guard of Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/ee0d07b5-e9d5-442f-af47-b48e011c1484/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-21T17:14:30.000Z",
+      "expiresAt": "2026-08-04T17:14:30.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/ee0d07b5-e9d5-442f-af47-b48e011c1484/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
         },
         {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-bd4a559d5b52",
+      "hook": "US-Iran tensions escalate as attacks hit Bahrain and Kuwait, raising…",
+      "title": "US-Iran tensions escalate as attacks hit Bahrain and Kuwait, raising wider war fears",
+      "lesson": "Regional mediators are pushing to de-escalate tensions and revive an interim ceasefire agreement between the US and Iran, as Iran's interior minister holds high-level talks with officials in Pakistan. The diplomatic efforts come after the US launched more attacks on Iran, with explosions reported in multiple areas Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8d0d809a-4cf6-4386-a1e8-b48e010a7f8b/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-21T16:10:52.000Z",
+      "expiresAt": "2026-08-04T16:10:52.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8d0d809a-4cf6-4386-a1e8-b48e010a7f8b/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
         }
       ]
     },
@@ -106,10 +178,34 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-447ea83e5e07",
+      "hook": "Israeli strike kills family of six as Gaza City home is reduced to…",
+      "title": "Israeli strike kills family of six as Gaza City home is reduced to rubble",
+      "lesson": "An Israeli air strike hit a residential building in Gaza City overnight, killing a father, his wife and their four children, including youngsters aged five, eight and 10. Neighbours say multiple drone strikes brought down the roof and set the home ablaze while the family slept, with no prior warning given. The Israeli Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/6b09a354-8c2f-4d75-a346-b48e00f8351d/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-21T15:03:51.000Z",
+      "expiresAt": "2026-08-04T15:03:51.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/6b09a354-8c2f-4d75-a346-b48e00f8351d/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
         },
         {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
         }
       ]
     },
@@ -134,10 +230,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -162,10 +254,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -190,10 +278,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -218,10 +302,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -246,10 +326,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -274,10 +350,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -302,10 +374,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -330,10 +398,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -457,6 +521,62 @@
       ]
     },
     {
+      "id": "rss-09040cad3a39",
+      "hook": "World Cup 2026 in review as Spain beat Argentina in the final",
+      "title": "World Cup 2026 in review as Spain beat Argentina in the final",
+      "lesson": "Spain beat Argentina in New Jersey to win a 48-team World Cup marked by debutants, records, politics and VAR controversy. Al Jazeera’s Paul Rhys takes a look back at the tournament. Subscribe to our channel: http://bit.ly/AJSubscribe Follow us on X: https://twitter.com/AJEnglish Find us on Facebook: Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/47534149-3dc9-4277-b3f5-b48e00bfac3e/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-21T11:38:04.000Z",
+      "expiresAt": "2026-08-04T11:38:04.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/47534149-3dc9-4277-b3f5-b48e00bfac3e/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-5c5c23f7199a",
+      "hook": "Mexican drug lord Ismael ‘El Mayo’ Zambada sentenced to life in US…",
+      "title": "Mexican drug lord Ismael ‘El Mayo’ Zambada sentenced to life in US prison",
+      "lesson": "A Mexican drug boss has been sentenced to life in prison by a US court. Ismael Zambada, known as “El Mayo”, agreed to a plea deal last year. He admitted to smuggling millions of kilograms of cocaine over decades, as leader of the Sinaloa Cartel. He was arrested in 2024 in New Mexico. Al Jazeera’s John Holman reports Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a88985d8-926a-403b-9673-b48e00b67df6/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-21T11:04:37.000Z",
+      "expiresAt": "2026-08-04T11:04:37.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a88985d8-926a-403b-9673-b48e00b67df6/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
       "id": "rss-839c3f2bca04",
       "hook": "Defense Secretary Pete Hegseth goes to the Hill with nearly $90B…",
       "title": "Defense Secretary Pete Hegseth goes to the Hill with nearly $90B funding request",
@@ -477,10 +597,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -505,10 +621,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -533,10 +645,34 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-762800c9026e",
+      "hook": "EU ban on destroying unsold clothes takes effect to curb fast…",
+      "title": "EU ban on destroying unsold clothes takes effect to curb fast fashion waste",
+      "lesson": "New European Union (EU) rules have come into effect, aimed at reducing the waste and pollution created by the fast fashion industry. The legislation makes it illegal to destroy unsold clothing. But some industry players and environmental activists are sceptical. Al Jazeera’s Rebecca Collard reports from Berlin, Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/62b11b87-6ca1-42c1-b02d-b48e00a3a2d3/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-21T09:56:01.000Z",
+      "expiresAt": "2026-08-04T09:56:01.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/62b11b87-6ca1-42c1-b02d-b48e00a3a2d3/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
         },
         {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
         }
       ]
     },
@@ -561,10 +697,34 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-9669940c5907",
+      "hook": "President Aoun to meet Trump in Washington as Israel talks divide…",
+      "title": "President Aoun to meet Trump in Washington as Israel talks divide Lebanon",
+      "lesson": "US President Donald Trump will meet Lebanon’s President Joseph Aoun in Washington, DC later on Tuesday. It’s the first time in nearly two decades that a Lebanese president is visiting the White House. It follows a US-brokered agreement between Lebanon and Israel that calls for disarming Hezbollah and the gradual Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/5842c76f-12c9-4b40-93e2-b48e00975f35/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-21T09:11:23.000Z",
+      "expiresAt": "2026-08-04T09:11:23.000Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/5842c76f-12c9-4b40-93e2-b48e00975f35/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
         },
         {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
         }
       ]
     },
@@ -589,10 +749,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -617,10 +773,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -645,10 +797,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -673,10 +821,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -701,10 +845,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -729,10 +869,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -757,10 +893,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -785,10 +917,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -813,10 +941,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -841,10 +965,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -869,10 +989,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -897,10 +1013,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -925,10 +1037,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -953,10 +1061,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -981,10 +1085,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -1009,10 +1109,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -1037,10 +1133,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -1065,10 +1157,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -1093,10 +1181,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -1121,10 +1205,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -1149,10 +1229,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -1177,10 +1253,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -1205,10 +1277,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     },
@@ -1233,10 +1301,6 @@
         {
           "label": "AllSides",
           "url": "https://www.allsides.com/"
-        },
-        {
-          "label": "AllSides news RSS",
-          "url": "https://www.allsides.com/rss/news"
         }
       ]
     }

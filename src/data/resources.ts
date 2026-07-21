@@ -390,6 +390,24 @@ export const learningResources: LearningResource[] = [
     topicHints: ['current-events', 'politics'],
   },
   {
+    id: 'al-jazeera',
+    name: 'Al Jazeera',
+    url: 'https://www.aljazeera.com/',
+    blurb:
+      'Global breaking news and analysis — weekly ingest via aljazeera.com/xml/rss/all.xml.',
+    category: 'news',
+    topicHints: ['current-events', 'politics'],
+  },
+  {
+    id: 'al-jazeera-news-feed',
+    name: 'Al Jazeera News Feed',
+    url: 'https://www.aljazeera.com/podcasts/news-updates/',
+    blurb:
+      'Short Al Jazeera news clips (podcast) — audio updates in the Thinker news mix.',
+    category: 'news',
+    topicHints: ['current-events', 'politics'],
+  },
+  {
     id: 'ground-news',
     name: 'Ground News',
     url: 'https://ground.news/',

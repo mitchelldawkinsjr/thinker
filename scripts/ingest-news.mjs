@@ -26,6 +26,20 @@ const FEEDS = [
     limit: 12,
   },
   {
+    name: 'Al Jazeera',
+    url: 'https://www.aljazeera.com/xml/rss/all.xml',
+    topicIds: ['current-events', 'politics'],
+    limit: 10,
+  },
+  {
+    name: 'Al Jazeera News Feed',
+    url: 'https://www.omnycontent.com/d/playlist/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/cee1148d-ea1d-4149-9475-ad8a0105363f/podcast.rss',
+    topicIds: ['current-events', 'politics'],
+    limit: 8,
+    kind: 'podcast',
+    siteUrl: 'https://www.aljazeera.com/podcasts/news-updates/',
+  },
+  {
     name: 'NPR Politics',
     url: 'https://feeds.npr.org/1014/rss.xml',
     topicIds: ['politics', 'current-events'],
@@ -173,6 +187,15 @@ function attr(block, name, attrName) {
   return m ? m[1] : ''
 }
 
+function decodeEntities(s) {
+  return String(s || '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+}
+
 function parseEntries(xml) {
   const chunks = []
   const itemRe = /<item[\s>][\s\S]*?<\/item>/gi
@@ -191,6 +214,14 @@ function parseEntries(xml) {
       const guid = tag(block, 'guid')
       if (guid.startsWith('http')) link = guid
     }
+    // Podcasts often ship audio-only (enclosure) with empty <link>
+    if (!link) {
+      link =
+        attr(block, 'enclosure', 'url') ||
+        attr(block, 'media:content', 'url') ||
+        ''
+    }
+    link = decodeEntities(link)
     const summary =
       tag(block, 'description') ||
       tag(block, 'summary') ||
@@ -260,6 +291,7 @@ async function fetchFeed(feed) {
       .filter((e) => e.title && e.link)
       .map((e) => {
         const publishedAt = toIso(e.published)
+        const isPodcast = feed.kind === 'podcast'
         /** @type {NewsItem} */
         const item = {
           id: idFor(e.link, e.title),
@@ -271,11 +303,19 @@ async function fetchFeed(feed) {
           publishedAt,
           expiresAt: expiresFrom(publishedAt),
           topicIds: feed.topicIds,
-          angles: [
-            { label: 'Full story', url: e.link },
-            { label: 'AllSides', url: 'https://www.allsides.com/' },
-            { label: 'AllSides news RSS', url: 'https://www.allsides.com/rss/news' },
-          ],
+          angles: isPodcast
+            ? [
+                { label: 'Listen', url: e.link },
+                {
+                  label: 'Al Jazeera podcasts',
+                  url: feed.siteUrl || 'https://www.aljazeera.com/podcasts/news-updates/',
+                },
+                { label: 'AllSides', url: 'https://www.allsides.com/' },
+              ]
+            : [
+                { label: 'Full story', url: e.link },
+                { label: 'AllSides', url: 'https://www.allsides.com/' },
+              ],
         }
         return item
       })
