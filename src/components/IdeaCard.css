@@ -258,13 +258,13 @@
   padding-inline: 0.9rem;
 }
 
-.idea-btn.stash {
+.idea-btn.keep {
   background: color-mix(in srgb, white 12%, transparent);
   color: white;
   border: 1px solid color-mix(in srgb, white 18%, transparent);
 }
 
-.idea-btn.stash.is-saved {
+.idea-btn.keep.is-kept {
   background: var(--card-accent);
   border-color: transparent;
   color: #0f1216;

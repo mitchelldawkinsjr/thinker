@@ -83,7 +83,7 @@ export function Home() {
         <div className="section-head">
           <h2>Knowledge, in minutes</h2>
           <p>
-            One idea at a time. Every stashed insight can open its source site —
+            One idea at a time. Every kept thought can open its source site —
             not another Reddit tab.
           </p>
         </div>

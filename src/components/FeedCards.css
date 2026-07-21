@@ -84,6 +84,16 @@
   color: color-mix(in srgb, white 50%, transparent);
 }
 
+.feed-card-hint a {
+  color: color-mix(in srgb, var(--card-accent) 55%, white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.feed-card-hint a:hover {
+  text-decoration: underline;
+}
+
 .feed-card-angles {
   position: relative;
   display: flex;

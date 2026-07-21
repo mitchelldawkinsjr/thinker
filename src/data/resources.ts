@@ -408,11 +408,20 @@ export const learningResources: LearningResource[] = [
     topicHints: ['current-events', 'politics'],
   },
   {
+    id: 'scriptura',
+    name: 'Scriptura',
+    url: 'https://scriptura.360web.cloud',
+    blurb:
+      'Scripture study companion — open Thinker passages here for reading, cross-refs, and language study.',
+    category: 'thinking',
+    topicHints: ['mental-models', 'history', 'politics'],
+  },
+  {
     id: 'bolls-life',
     name: 'bolls.life Bible API',
     url: 'https://bolls.life/',
     blurb:
-      'Free public-domain scripture API (WEB) — powers Thinker’s rotating scripture cards. No key required.',
+      'Free public-domain scripture API (WEB) — powers Thinker’s scripture text ingest; also the offline fallback reader.',
     category: 'thinking',
     topicHints: ['mental-models', 'history', 'politics'],
   },

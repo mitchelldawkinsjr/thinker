@@ -67,7 +67,7 @@ Without Ollama, the rest of the app still works — Ask falls back to instant ca
 
 - **Feed** — mixed ideas, free sites, Gutenberg books; optional Ask on a card
 - **Ask** — instant catalog paths + optional LLM refine
-- **Topics / Resources / Gutenberg / Library** — curated learning destinations
+- **Topics / Resources / Gutenberg / Kept** — curated learning destinations + thoughts you keep for later
 - **PWA** — installable, offline shell
 
 Content lives in `src/data/`.

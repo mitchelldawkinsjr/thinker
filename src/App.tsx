@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { StashProvider } from './hooks/useStash'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { KeptProvider } from './hooks/useKept'
 import { Nav } from './components/Nav'
 import { Home } from './pages/Home'
 import { Feed } from './pages/Feed'
 import { Topics } from './pages/Topics'
 import { TopicDetail } from './pages/TopicDetail'
-import { Library } from './pages/Library'
+import { Kept } from './pages/Kept'
 import { Books } from './pages/Books'
 import { Resources } from './pages/Resources'
 import { Ask } from './pages/Ask'
@@ -15,7 +15,7 @@ import './App.css'
 export default function App() {
   return (
     <BrowserRouter>
-      <StashProvider>
+      <KeptProvider>
         <div className="app-shell">
           <Nav />
           <main>
@@ -27,12 +27,13 @@ export default function App() {
               <Route path="/topics/:topicId" element={<TopicDetail />} />
               <Route path="/resources" element={<Resources />} />
               <Route path="/books" element={<Books />} />
-              <Route path="/library" element={<Library />} />
+              <Route path="/kept" element={<Kept />} />
+              <Route path="/library" element={<Navigate to="/kept" replace />} />
             </Routes>
           </main>
           <ReloadPrompt />
         </div>
-      </StashProvider>
+      </KeptProvider>
     </BrowserRouter>
   )
 }

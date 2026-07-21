@@ -4,7 +4,7 @@ import type { Idea } from '../data/types'
 import { presentIdea } from '../data/ideaDepth'
 import { getTopic } from '../data/topics'
 import { gutenbergUrl } from '../data/gutenberg'
-import { useStash } from '../hooks/useStash'
+import { useKept } from '../hooks/useKept'
 import { AskPanel } from './AskPanel'
 import './IdeaCard.css'
 
@@ -35,8 +35,8 @@ export function IdeaCard({
   askOpenByDefault = false,
 }: Props) {
   const topic = getTopic(idea.topicId)
-  const { stashed, toggle } = useStash()
-  const saved = stashed.has(idea.id)
+  const { kept, toggle } = useKept()
+  const saved = kept.has(idea.id)
   const sourceHref = resolveSourceUrl(idea)
   const { hook, lesson, takeaway, example, hasMore } = presentIdea(idea)
 
@@ -145,11 +145,11 @@ export function IdeaCard({
             )}
             <button
               type="button"
-              className={`idea-btn stash ${saved ? 'is-saved' : ''}`}
+              className={`idea-btn keep ${saved ? 'is-kept' : ''}`}
               onClick={() => toggle(idea.id)}
               aria-pressed={saved}
             >
-              {saved ? 'Stashed' : 'Stash'}
+              {saved ? 'Kept' : 'Keep'}
             </button>
             {!compact && (
               <button

@@ -1,35 +1,35 @@
 import { Link } from 'react-router-dom'
-import { useStash } from '../hooks/useStash'
+import { useKept } from '../hooks/useKept'
 import { getIdea } from '../data/ideas'
 import { IdeaCard } from '../components/IdeaCard'
-import './Library.css'
+import './Kept.css'
 
-export function Library() {
-  const { stashed } = useStash()
-  const ideas = [...stashed]
+export function Kept() {
+  const { kept } = useKept()
+  const ideas = [...kept]
     .map((id) => getIdea(id))
     .filter((i): i is NonNullable<typeof i> => Boolean(i))
 
   return (
-    <div className="library">
-      <header className="library-head">
-        <h1>Your library</h1>
+    <div className="kept">
+      <header className="kept-head">
+        <h1>Kept thoughts</h1>
         <p>
           {ideas.length === 0
-            ? 'Stash ideas from the feed and they’ll land here.'
-            : `${ideas.length} idea${ideas.length === 1 ? '' : 's'} saved on this device.`}
+            ? 'Keep ideas from the feed when you want to think on them later.'
+            : `${ideas.length} thought${ideas.length === 1 ? '' : 's'} saved on this device.`}
         </p>
       </header>
 
       {ideas.length === 0 ? (
-        <div className="library-empty">
-          <p>Nothing stashed yet.</p>
+        <div className="kept-empty">
+          <p>Nothing kept yet.</p>
           <Link to="/feed" className="btn btn-primary">
             Open feed
           </Link>
         </div>
       ) : (
-        <div className="library-grid">
+        <div className="kept-grid">
           {ideas.map((idea) => (
             <IdeaCard key={idea.id} idea={idea} compact />
           ))}

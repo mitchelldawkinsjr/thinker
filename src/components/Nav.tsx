@@ -1,9 +1,9 @@
 import { Link, NavLink } from 'react-router-dom'
-import { useStash } from '../hooks/useStash'
+import { useKept } from '../hooks/useKept'
 import './Nav.css'
 
 export function Nav() {
-  const { count } = useStash()
+  const { count } = useKept()
 
   return (
     <>
@@ -28,8 +28,8 @@ export function Nav() {
             <NavLink to="/topics">Topics</NavLink>
             <NavLink to="/resources">Resources</NavLink>
             <NavLink to="/books">Gutenberg</NavLink>
-            <NavLink to="/library" className="nav-library">
-              Library
+            <NavLink to="/kept" className="nav-kept">
+              Kept
               {count > 0 && <span className="nav-badge">{count}</span>}
             </NavLink>
           </nav>
@@ -44,8 +44,8 @@ export function Nav() {
         <NavLink to="/feed">Feed</NavLink>
         <NavLink to="/ask">Ask</NavLink>
         <NavLink to="/resources">Sites</NavLink>
-        <NavLink to="/library">
-          Lib
+        <NavLink to="/kept">
+          Kept
           {count > 0 && <span className="nav-badge">{count}</span>}
         </NavLink>
       </nav>

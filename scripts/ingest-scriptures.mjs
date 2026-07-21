@@ -2,6 +2,7 @@
 /**
  * Pull curated scriptures from bolls.life (free, no API key) → public/content/scriptures.json
  * Uses World English Bible (WEB, public domain).
+ * Open links prefer Scriptura (scriptura.360web.cloud); bolls remains the text source + fallback reader.
  *
  * Usage: node scripts/ingest-scriptures.mjs
  */

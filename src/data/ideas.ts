@@ -729,7 +729,7 @@ export const ideas: Idea[] = [
     id: 'instrument-reality',
     topicId: 'building-products',
     title: 'Instrument what you hope is true',
-    body: 'If you believe users stash ideas daily, measure stashes. Opinions without instrumentation become myths. Product truth lives in events, not standups.',
+    body: 'If you believe users keep ideas daily, measure keeps. Opinions without instrumentation become myths. Product truth lives in events, not standups.',
     source: 'Analytics for Builders',
     sourceType: 'practice',
     readMinutes: 1,

@@ -1,7 +1,13 @@
 import type { CSSProperties, ReactNode } from 'react'
+import { useEffect, useState } from 'react'
 import type { LearningResource } from '../data/resources'
 import type { NewsItem } from '../data/newsTypes'
 import type { ScriptureItem } from '../data/scriptureTypes'
+import {
+  preferredPassageUrl,
+  probeScriptura,
+  warmScripturaProbe,
+} from '../lib/scriptureLinks'
 import './IdeaCard.css'
 import './FeedCards.css'
 
@@ -229,6 +235,12 @@ export function ScriptureFeedCard({
   scripture: ScriptureItem
 } & NavProps) {
   const topics = scripture.topicIds.map((t) => `#${t}`).join(' · ')
+  const [open, setOpen] = useState(() => preferredPassageUrl(scripture))
+
+  useEffect(() => {
+    warmScripturaProbe()
+    void probeScriptura().then(() => setOpen(preferredPassageUrl(scripture)))
+  }, [scripture])
 
   return (
     <FeedCardShell
@@ -241,13 +253,8 @@ export function ScriptureFeedCard({
       onPrev={onPrev}
       onNext={onNext}
       cta={
-        <a
-          className="idea-btn next"
-          href={scripture.sourceUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open passage →
+        <a className="idea-btn next" href={open.href} target="_blank" rel="noreferrer">
+          {open.via === 'scriptura' ? 'Open in Scriptura →' : 'Open passage →'}
         </a>
       }
     >
@@ -255,7 +262,28 @@ export function ScriptureFeedCard({
       <blockquote className="feed-card-verse">“{scripture.text}”</blockquote>
       <p className="feed-card-body">{scripture.lesson}</p>
       <p className="feed-card-hint">
-        {scripture.translation} · via bolls.life (public domain)
+        {scripture.translation}
+        {open.via === 'scriptura' ? (
+          <>
+            {' '}
+            · via{' '}
+            <a href={open.href} target="_blank" rel="noreferrer">
+              Scriptura
+            </a>
+            {' · '}
+            <a href={open.fallbackHref} target="_blank" rel="noreferrer">
+              bolls.life fallback
+            </a>
+          </>
+        ) : (
+          <>
+            {' '}
+            · Scriptura offline · via{' '}
+            <a href={open.href} target="_blank" rel="noreferrer">
+              bolls.life
+            </a>
+          </>
+        )}
       </p>
     </FeedCardShell>
   )
