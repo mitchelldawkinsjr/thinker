@@ -1,0 +1,7 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-shell main {
+  min-height: calc(100vh - 90px);
+}

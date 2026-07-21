@@ -1,0 +1,43 @@
+.library {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.library-head {
+  margin-bottom: 1.75rem;
+}
+
+.library-head h1 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.5vw, 2.5rem);
+  letter-spacing: -0.035em;
+}
+
+.library-head p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.library-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  background: var(--surface);
+  border: 1px dashed color-mix(in srgb, var(--ink) 14%, transparent);
+}
+
+.library-empty p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.library-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

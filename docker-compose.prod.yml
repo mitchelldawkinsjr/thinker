@@ -1,0 +1,35 @@
+# Production stack (mitch-cloud VPS).
+# Joins `360ws-network` so NPM can reach thinker-app:80.
+#
+# Prerequisites: docker network create 360ws-network
+# NPM Proxy Host: thinker.360web.cloud → http://thinker-app:80
+
+name: thinker
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        VITE_OLLAMA_MODEL: ${VITE_OLLAMA_MODEL:-mistral:latest}
+    image: thinker:latest
+    container_name: thinker-app
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${PORT:-8055}:80"
+    environment:
+      # Host-published llm-runtime (Ollama on :11434)
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - proxy
+    labels:
+      - "com.360ws.app=thinker"
+      - "com.360ws.type=docker-app"
+      - "com.360ws.domain=thinker.360web.cloud"
+
+networks:
+  proxy:
+    external: true
+    name: 360ws-network

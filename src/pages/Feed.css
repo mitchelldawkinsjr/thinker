@@ -1,0 +1,104 @@
+.feed {
+  position: relative;
+  min-height: calc(100vh - 90px);
+  padding: 2rem 1.25rem 4rem;
+}
+
+.feed-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 50% 40% at 50% 20%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 60%),
+    var(--bg);
+  z-index: 0;
+}
+
+.feed-head {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+  margin: 0 auto 1.75rem;
+  text-align: center;
+}
+
+.feed-head h1 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.2rem);
+  letter-spacing: -0.03em;
+}
+
+.feed-head p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.feed-mix {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.feed-mix span,
+.feed-reshuffle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+  color: var(--muted);
+}
+
+.feed-reshuffle {
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  border-color: color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+.feed-reshuffle:hover {
+  background: color-mix(in srgb, var(--accent) 18%, var(--surface));
+}
+
+.feed-stage {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feed-idea-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: min(100%, 560px);
+}
+
+.feed-empty {
+  color: var(--muted);
+}
+
+.feed-now {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 1.25rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.feed-now strong {
+  color: var(--ink);
+  font-weight: 700;
+}

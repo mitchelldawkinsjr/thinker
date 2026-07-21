@@ -1,0 +1,51 @@
+server {
+  listen 80;
+  server_name _;
+  root /usr/share/nginx/html;
+  index index.html;
+
+  # SPA: react-router client routes
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+
+  # PWA: never cache the service worker or webmanifest
+  location = /sw.js {
+    add_header Cache-Control "no-cache";
+    try_files $uri =404;
+  }
+
+  location = /manifest.webmanifest {
+    add_header Cache-Control "no-cache";
+    try_files $uri =404;
+  }
+
+  location = /healthz {
+    access_log off;
+    add_header Content-Type text/plain;
+    return 200 'ok';
+  }
+
+  # Same path the Vite dev proxy used — rewrite to Ollama API root
+  location /api/ollama/ {
+    proxy_pass ${OLLAMA_URL}/;
+    proxy_http_version 1.1;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_read_timeout 300s;
+    proxy_send_timeout 300s;
+    proxy_connect_timeout 60s;
+  }
+
+  location = /api/ollama {
+    return 301 /api/ollama/;
+  }
+
+  # Cache hashed Vite assets aggressively
+  location /assets/ {
+    try_files $uri =404;
+    add_header Cache-Control "public, max-age=31536000, immutable";
+  }
+}

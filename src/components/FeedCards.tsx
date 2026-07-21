@@ -1,0 +1,169 @@
+import type { CSSProperties, ReactNode } from 'react'
+import type { LearningResource } from '../data/resources'
+import './IdeaCard.css'
+import './FeedCards.css'
+
+type NavProps = {
+  onNext?: () => void
+  onPrev?: () => void
+  index?: number
+  total?: number
+}
+
+function FeedCardShell({
+  accent,
+  surface,
+  kind,
+  title,
+  children,
+  cta,
+  onNext,
+  onPrev,
+  index,
+  total,
+}: {
+  accent: string
+  surface: string
+  kind: string
+  title: string
+  children: ReactNode
+  cta?: ReactNode
+} & NavProps) {
+  return (
+    <article
+      className="feed-card"
+      style={{ '--card-accent': accent, '--card-surface': surface } as CSSProperties}
+    >
+      <div className="feed-card-glow" aria-hidden />
+      <header className="feed-card-top">
+        <span className="feed-card-kind">{kind}</span>
+        {typeof index === 'number' && typeof total === 'number' && (
+          <span className="feed-card-progress">
+            {index + 1} / {total}
+          </span>
+        )}
+      </header>
+      <h2 className="feed-card-title">{title}</h2>
+      {children}
+      <footer className="feed-card-foot">
+        <div className="feed-card-actions">
+          {onPrev && (
+            <button type="button" className="idea-btn ghost" onClick={onPrev} aria-label="Previous">
+              ←
+            </button>
+          )}
+          {cta}
+          {onNext && (
+            <button type="button" className="idea-btn ghost" onClick={onNext}>
+              Skip
+            </button>
+          )}
+        </div>
+      </footer>
+    </article>
+  )
+}
+
+export function ResourceFeedCard({
+  resource,
+  onNext,
+  onPrev,
+  index,
+  total,
+}: {
+  resource: LearningResource
+} & NavProps) {
+  return (
+    <FeedCardShell
+      accent="#38bdf8"
+      surface="#15202b"
+      kind={`Free site · ${resource.category}`}
+      title={resource.name}
+      index={index}
+      total={total}
+      onPrev={onPrev}
+      onNext={onNext}
+      cta={
+        <a className="idea-btn next" href={resource.url} target="_blank" rel="noreferrer">
+          Open site →
+        </a>
+      }
+    >
+      <p className="feed-card-body">{resource.blurb}</p>
+      <p className="feed-card-hint">Open the real site — don’t scroll Reddit for this.</p>
+    </FeedCardShell>
+  )
+}
+
+export function BookFeedCard({
+  title,
+  author,
+  why,
+  url,
+  onNext,
+  onPrev,
+  index,
+  total,
+}: {
+  title: string
+  author: string
+  why: string
+  url: string
+} & NavProps) {
+  return (
+    <FeedCardShell
+      accent="#d4a574"
+      surface="#2a2218"
+      kind="Gutenberg · free ebook"
+      title={title}
+      index={index}
+      total={total}
+      onPrev={onPrev}
+      onNext={onNext}
+      cta={
+        <a className="idea-btn next" href={url} target="_blank" rel="noreferrer">
+          Read on Gutenberg →
+        </a>
+      }
+    >
+      <p className="feed-card-author">{author}</p>
+      <p className="feed-card-body">{why}</p>
+    </FeedCardShell>
+  )
+}
+
+export function AskFeedCard({
+  prompt,
+  children,
+  onNext,
+  onPrev,
+  index,
+  total,
+}: {
+  prompt: string
+  children: ReactNode
+} & NavProps) {
+  return (
+    <div className="ask-feed-wrap">
+      <FeedCardShell
+        accent="#ff4d3a"
+        surface="#1a2332"
+        kind="Ask · llm-runtime"
+        title="Go deeper"
+        index={index}
+        total={total}
+        onPrev={onPrev}
+        cta={
+          onNext ? (
+            <button type="button" className="idea-btn next" onClick={onNext}>
+              Next →
+            </button>
+          ) : undefined
+        }
+      >
+        <p className="feed-card-body">{prompt}</p>
+      </FeedCardShell>
+      <div className="ask-feed-panel">{children}</div>
+    </div>
+  )
+}

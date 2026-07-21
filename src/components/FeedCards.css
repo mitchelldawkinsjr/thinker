@@ -1,0 +1,126 @@
+.feed-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  width: min(100%, 520px);
+  min-height: 380px;
+  padding: 1.75rem 1.65rem 1.4rem;
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(120% 80% at 100% 0%, color-mix(in srgb, var(--card-accent) 28%, transparent), transparent 55%),
+    linear-gradient(165deg, color-mix(in srgb, var(--card-surface) 92%, white 8%), var(--card-surface));
+  color: #f4f1ec;
+  border: 1px solid color-mix(in srgb, white 12%, transparent);
+  box-shadow:
+    0 24px 60px color-mix(in srgb, var(--card-surface) 55%, transparent),
+    0 2px 0 color-mix(in srgb, white 10%, transparent) inset;
+  animation: card-in 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.feed-card-glow {
+  position: absolute;
+  inset: auto -20% -40% auto;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--card-accent) 35%, transparent), transparent 70%);
+  pointer-events: none;
+  filter: blur(8px);
+}
+
+.feed-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+}
+
+.feed-card-kind {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--card-accent) 70%, white);
+}
+
+.feed-card-progress {
+  font-size: 0.78rem;
+  color: color-mix(in srgb, white 55%, transparent);
+  font-variant-numeric: tabular-nums;
+}
+
+.feed-card-title {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.feed-card-author {
+  position: relative;
+  margin: 0;
+  font-size: 0.95rem;
+  color: color-mix(in srgb, white 70%, transparent);
+}
+
+.feed-card-body {
+  position: relative;
+  margin: 0;
+  flex: 1;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: color-mix(in srgb, white 82%, transparent);
+}
+
+.feed-card-hint {
+  position: relative;
+  margin: 0;
+  font-size: 0.85rem;
+  color: color-mix(in srgb, white 50%, transparent);
+}
+
+.feed-card-foot {
+  position: relative;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid color-mix(in srgb, white 12%, transparent);
+}
+
+.feed-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.feed-card-actions--ask {
+  margin-top: 0.5rem;
+}
+
+.ask-feed-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: min(100%, 560px);
+}
+
+.ask-feed-panel {
+  width: 100%;
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

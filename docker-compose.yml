@@ -1,0 +1,16 @@
+# Local / ad-hoc Docker run (see docker-compose.prod.yml for mitch-cloud).
+
+services:
+  thinker:
+    build:
+      context: .
+      args:
+        VITE_OLLAMA_MODEL: ${VITE_OLLAMA_MODEL:-mistral:latest}
+    image: thinker:latest
+    ports:
+      - "${PORT:-8080}:80"
+    environment:
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
