@@ -10,9 +10,13 @@ import { hideFromPool, markSeen } from '../lib/feedRotation'
 import { IdeaCard } from '../components/IdeaCard'
 import {
   BookFeedCard,
+  MathGameFeedCard,
+  MemoryGameFeedCard,
   NewsFeedCard,
+  ReactionGameFeedCard,
   ResourceFeedCard,
   ScriptureFeedCard,
+  SpotGameFeedCard,
 } from '../components/FeedCards'
 import './Feed.css'
 
@@ -93,7 +97,7 @@ export function Feed() {
   }, [next, prev])
 
   const counts = useMemo(() => {
-    const c = { idea: 0, resource: 0, book: 0, news: 0, scripture: 0 }
+    const c = { idea: 0, resource: 0, book: 0, news: 0, scripture: 0, game: 0 }
     for (const it of items) c[it.kind]++
     return c
   }, [items])
@@ -116,6 +120,7 @@ export function Feed() {
           <span>{counts.scripture} scripture</span>
           <span>{counts.resource} sites</span>
           <span>{counts.book} books</span>
+          {counts.game > 0 && <span>{counts.game} brain games</span>}
           <button type="button" className="feed-reshuffle" onClick={reshuffleFeed}>
             Reshuffle
           </button>
@@ -173,6 +178,42 @@ export function Feed() {
             author={item.author}
             why={item.why}
             url={item.url}
+            {...nav}
+          />
+        )}
+
+        {item?.kind === 'game' && item.gameId === 'reaction' && (
+          <ReactionGameFeedCard
+            key={item.id}
+            title={item.title}
+            blurb={item.blurb}
+            {...nav}
+          />
+        )}
+
+        {item?.kind === 'game' && item.gameId === 'spot' && (
+          <SpotGameFeedCard
+            key={item.id}
+            title={item.title}
+            blurb={item.blurb}
+            {...nav}
+          />
+        )}
+
+        {item?.kind === 'game' && item.gameId === 'memory' && (
+          <MemoryGameFeedCard
+            key={item.id}
+            title={item.title}
+            blurb={item.blurb}
+            {...nav}
+          />
+        )}
+
+        {item?.kind === 'game' && item.gameId === 'math' && (
+          <MathGameFeedCard
+            key={item.id}
+            title={item.title}
+            blurb={item.blurb}
             {...nav}
           />
         )}
