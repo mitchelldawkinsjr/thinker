@@ -3,6 +3,9 @@ import type { Connect, Plugin } from 'vite'
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+// Shared with Docker sidecar — plain JS module
+// @ts-expect-error no types for .mjs helper
+import { proxyFeed } from './scripts/lib/feedProxy.mjs'
 
 function readBody(req: IncomingMessage): Promise<Buffer> {
   return new Promise((resolve, reject) => {
@@ -72,6 +75,47 @@ function openaiProxyPlugin(apiKey: string, defaultModel: string): Plugin {
   }
 }
 
+/** CORS-safe RSS/Atom/JSON Feed proxy for user-added feeds. */
+function feedProxyPlugin(): Plugin {
+  const mount = (middlewares: Connect.Server) => {
+    middlewares.use(async (req, res, next) => {
+      const path = req.url?.split('?')[0] ?? ''
+      if (path !== '/api/feed-proxy') return next()
+      if (req.method !== 'GET') {
+        json(res, 405, { error: 'Method not allowed' })
+        return
+      }
+      try {
+        const full = new URL(req.url || '/', 'http://localhost')
+        const target = full.searchParams.get('url') || ''
+        const result = await proxyFeed(target)
+        if (!result.ok) {
+          json(res, result.status, { error: result.error })
+          return
+        }
+        res.statusCode = 200
+        res.setHeader('Content-Type', result.contentType)
+        res.setHeader('Cache-Control', 'no-store')
+        res.end(result.body)
+      } catch (err) {
+        json(res, 502, {
+          error: err instanceof Error ? err.message : 'Feed proxy failed',
+        })
+      }
+    })
+  }
+
+  return {
+    name: 'feed-proxy',
+    configureServer(server) {
+      mount(server.middlewares)
+    },
+    configurePreviewServer(server) {
+      mount(server.middlewares)
+    },
+  }
+}
+
 function json(res: ServerResponse, status: number, payload: unknown) {
   res.statusCode = status
   res.setHeader('Content-Type', 'application/json')
@@ -89,6 +133,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       openaiProxyPlugin(openaiKey, openaiModel),
+      feedProxyPlugin(),
       VitePWA({
         registerType: 'prompt',
         includeAssets: [
@@ -141,7 +186,8 @@ export default defineConfig(({ mode }) => {
               // Never cache LLM calls
               urlPattern: ({ url }) =>
                 url.pathname.startsWith('/api/ollama') ||
-                url.pathname.startsWith('/api/openai'),
+                url.pathname.startsWith('/api/openai') ||
+                url.pathname.startsWith('/api/feed-proxy'),
               handler: 'NetworkOnly',
             },
             {

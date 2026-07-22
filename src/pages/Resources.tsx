@@ -1,20 +1,24 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { customSitesToResources } from '../data/feed'
 import {
   browseableResources,
   resourceCategories,
   sourceLists,
   type ResourceCategory,
 } from '../data/resources'
+import { useSubscriptions } from '../hooks/useSubscriptions'
 import './Resources.css'
 
 export function Resources() {
   const [category, setCategory] = useState<ResourceCategory | 'all'>('all')
   const [query, setQuery] = useState('')
+  const { subscriptions } = useSubscriptions()
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return browseableResources().filter((r) => {
+    const custom = customSitesToResources(subscriptions.customSites)
+    return [...browseableResources(), ...custom].filter((r) => {
       if (category !== 'all' && r.category !== category) return false
       if (!q) return true
       return (
@@ -23,7 +27,7 @@ export function Resources() {
         r.category.includes(q)
       )
     })
-  }, [category, query])
+  }, [category, query, subscriptions.customSites])
 
   return (
     <div className="resources-page">
@@ -40,8 +44,8 @@ export function Resources() {
             Go Highbrow
           </a>
           , plus{' '}
-          <Link to="/books">Project Gutenberg</Link> for primary texts. No infinite feed —
-          pick a destination and learn.
+          <Link to="/books">Project Gutenberg</Link> for primary texts. Add your own from{' '}
+          <Link to="/settings">Settings</Link>.
         </p>
       </header>
 

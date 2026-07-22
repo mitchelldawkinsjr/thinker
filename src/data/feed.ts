@@ -9,6 +9,12 @@ import type { Idea, TopicId } from './types'
 import type { NewsItem } from './newsTypes'
 import type { ScriptureItem } from './scriptureTypes'
 import { daySeed, filterHidden, seededShuffle, sortByFreshness } from '../lib/feedRotation'
+import {
+  matchesTopicFilter,
+  type CustomSite,
+  type Subscriptions,
+} from './subscriptions'
+import { curatedNewsFeeds } from './newsFeeds'
 
 export type FeedItem =
   | { kind: 'idea'; id: string; idea: Idea }
@@ -44,6 +50,8 @@ export type FeedItem =
       title: string
       blurb: string
     }
+
+export type TopicFilter = string | string[] | undefined
 
 /**
  * Round-robin by weight without duplicating items.
@@ -81,12 +89,12 @@ function weightedInterleave<T extends { id: string }>(
   return out
 }
 
-function bookItems(topicFilter?: string): FeedItem[] {
+function bookItems(topicFilter?: TopicFilter): FeedItem[] {
   const seen = new Set<number>()
   const items: FeedItem[] = []
 
   for (const shelf of gutenbergShelves) {
-    if (topicFilter && !shelf.topicIds.includes(topicFilter as TopicId)) continue
+    if (!matchesTopicFilter(shelf.topicIds, topicFilter)) continue
     for (const bookId of shelf.bookIds) {
       if (seen.has(bookId)) continue
       seen.add(bookId)
@@ -107,12 +115,25 @@ function bookItems(topicFilter?: string): FeedItem[] {
   return items
 }
 
-function resourceItems(topicFilter?: string): FeedItem[] {
-  return browseableResources()
-    .filter((r) => {
-      if (!topicFilter) return true
-      return r.topicHints?.includes(topicFilter)
-    })
+export function customSitesToResources(sites: CustomSite[]): LearningResource[] {
+  return sites.map((s) => ({
+    id: `user-${s.id}`,
+    name: s.name,
+    url: s.url,
+    blurb: s.blurb || 'Added from Settings.',
+    category: 'learning' as const,
+    topicHints: s.topicHints,
+  }))
+}
+
+function resourceItems(
+  topicFilter?: TopicFilter,
+  customSites: CustomSite[] = [],
+): FeedItem[] {
+  const curated = browseableResources()
+  const custom = customSitesToResources(customSites)
+  return [...curated, ...custom]
+    .filter((r) => matchesTopicFilter(r.topicHints, topicFilter))
     .map((resource) => ({
       kind: 'resource' as const,
       id: `res-${resource.id}`,
@@ -120,11 +141,9 @@ function resourceItems(topicFilter?: string): FeedItem[] {
     }))
 }
 
-function ideaItems(topicFilter?: string, extraIdeas: Idea[] = []): FeedItem[] {
+function ideaItems(topicFilter?: TopicFilter, extraIdeas: Idea[] = []): FeedItem[] {
   const catalog = mergeIdeas(extraIdeas)
-  const list = topicFilter
-    ? catalog.filter((i) => i.topicId === topicFilter)
-    : catalog
+  const list = catalog.filter((i) => matchesTopicFilter([i.topicId], topicFilter))
   return list.map((idea) => ({
     kind: 'idea' as const,
     id: `idea-${idea.id}`,
@@ -132,11 +151,22 @@ function ideaItems(topicFilter?: string, extraIdeas: Idea[] = []): FeedItem[] {
   }))
 }
 
-function newsItems(news: NewsItem[], topicFilter?: string): FeedItem[] {
+function resolveNewsFeedId(n: NewsItem): string | undefined {
+  if (n.feedId) return n.feedId
+  return curatedNewsFeeds.find((f) => f.name === n.source)?.id
+}
+
+function newsItems(
+  news: NewsItem[],
+  topicFilter?: TopicFilter,
+  disabledFeedIds: string[] = [],
+): FeedItem[] {
+  const muted = new Set(disabledFeedIds)
   return news
     .filter((n) => {
-      if (!topicFilter) return true
-      return n.topicIds.includes(topicFilter as TopicId)
+      const feedId = resolveNewsFeedId(n)
+      if (feedId && muted.has(feedId)) return false
+      return matchesTopicFilter(n.topicIds, topicFilter)
     })
     .map((n) => ({
       kind: 'news' as const,
@@ -194,13 +224,10 @@ function filterDailyPromises(scriptures: ScriptureItem[]): ScriptureItem[] {
 
 function scriptureItems(
   scriptures: ScriptureItem[],
-  topicFilter?: string,
+  topicFilter?: TopicFilter,
 ): FeedItem[] {
   return filterDailyPromises(scriptures)
-    .filter((s) => {
-      if (!topicFilter) return true
-      return s.topicIds.includes(topicFilter as TopicId)
-    })
+    .filter((s) => matchesTopicFilter(s.topicIds, topicFilter))
     .map((s) => ({
       kind: 'scripture' as const,
       id: `scripture-${s.id}`,
@@ -251,30 +278,87 @@ const FEED_WEIGHTS = {
   games: 1,
 } as const
 
+export type BuildMixedFeedOptions = {
+  topicFilter?: TopicFilter
+  news?: NewsItem[]
+  scriptures?: ScriptureItem[]
+  reshuffleKey?: number
+  extraIdeas?: Idea[]
+  subscriptions?: Subscriptions
+}
+
 /**
  * Total mix: ideas (+ book summaries) + news + scripture + sites + Gutenberg,
  * freshness-weighted so cards don't go stale. Each card id appears at most once.
  */
 export function buildMixedFeed(
   topicFilter?: string | null,
+  news?: NewsItem[],
+  scriptures?: ScriptureItem[],
+  reshuffleKey?: number,
+  extraIdeas?: Idea[],
+  subscriptions?: Subscriptions,
+): FeedItem[]
+export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[]
+export function buildMixedFeed(
+  topicFilterOrOpts?: string | null | BuildMixedFeedOptions,
   news: NewsItem[] = [],
   scriptures: ScriptureItem[] = [],
   reshuffleKey = 0,
   extraIdeas: Idea[] = [],
+  subscriptions?: Subscriptions,
 ): FeedItem[] {
-  const topic = topicFilter || undefined
-  const seed = daySeed(`r${reshuffleKey}:${topic ?? 'all'}`)
+  const opts: BuildMixedFeedOptions =
+    topicFilterOrOpts && typeof topicFilterOrOpts === 'object'
+      ? topicFilterOrOpts
+      : {
+          topicFilter: topicFilterOrOpts || undefined,
+          news,
+          scriptures,
+          reshuffleKey,
+          extraIdeas,
+          subscriptions,
+        }
 
-  const ideasQ = sortByFreshness(
-    seededShuffle(ideaItems(topic, extraIdeas), seed),
-  )
-  const newsQ = sortByFreshness(seededShuffle(newsItems(news, topic), seed ^ 1))
-  const scriptureQ = sortByFreshness(
-    seededShuffle(scriptureItems(scriptures, topic), seed ^ 5),
-  )
-  const resourcesQ = sortByFreshness(seededShuffle(resourceItems(topic), seed ^ 2))
-  const booksQ = sortByFreshness(seededShuffle(bookItems(topic), seed ^ 3))
-  const gamesQ = sortByFreshness(seededShuffle(gameItems(), seed ^ 7))
+  const subs = opts.subscriptions
+  const kinds = subs?.kinds
+  const topic = opts.topicFilter
+  const seed = daySeed(`r${opts.reshuffleKey ?? 0}:${JSON.stringify(topic ?? 'all')}`)
+
+  const ideasExtra = kinds && !kinds.bookIdeas ? [] : (opts.extraIdeas ?? [])
+  const ideasQ =
+    !kinds || kinds.ideas
+      ? sortByFreshness(seededShuffle(ideaItems(topic, ideasExtra), seed))
+      : []
+  const newsQ =
+    !kinds || kinds.news
+      ? sortByFreshness(
+          seededShuffle(
+            newsItems(opts.news ?? [], topic, subs?.disabledFeedIds ?? []),
+            seed ^ 1,
+          ),
+        )
+      : []
+  const scriptureQ =
+    !kinds || kinds.scripture
+      ? sortByFreshness(
+          seededShuffle(scriptureItems(opts.scriptures ?? [], topic), seed ^ 5),
+        )
+      : []
+  const resourcesQ =
+    !kinds || kinds.resources
+      ? sortByFreshness(
+          seededShuffle(resourceItems(topic, subs?.customSites ?? []), seed ^ 2),
+        )
+      : []
+  const booksQ =
+    !kinds || kinds.books
+      ? sortByFreshness(seededShuffle(bookItems(topic), seed ^ 3))
+      : []
+  const gamesQ =
+    !kinds || kinds.games
+      ? sortByFreshness(seededShuffle(gameItems(), seed ^ 7))
+      : []
 
   return filterHidden(
     weightedInterleave([

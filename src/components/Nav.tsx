@@ -32,6 +32,7 @@ export function Nav() {
               Kept
               {count > 0 && <span className="nav-badge">{count}</span>}
             </NavLink>
+            <NavLink to="/settings">Settings</NavLink>
           </nav>
 
           <Link to="/feed" className="nav-cta">
@@ -48,6 +49,7 @@ export function Nav() {
           Kept
           {count > 0 && <span className="nav-badge">{count}</span>}
         </NavLink>
+        <NavLink to="/settings">Settings</NavLink>
       </nav>
     </>
   )

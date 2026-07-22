@@ -27,23 +27,26 @@ const TTL_DAYS_POLITICS = 3
 const TTL_DAYS_DEFAULT = 10
 const DAY_MS = 24 * 60 * 60 * 1000
 
-/** @typedef {{ id: string, hook: string, title: string, lesson: string, source: string, sourceUrl: string, publishedAt: string, expiresAt: string, topicIds: string[], angles?: { label: string, url: string }[] }} NewsItem */
+/** @typedef {{ id: string, hook: string, title: string, lesson: string, source: string, sourceUrl: string, publishedAt: string, expiresAt: string, topicIds: string[], angles?: { label: string, url: string }[], feedId?: string }} NewsItem */
 
 const FEEDS = [
   {
     // Multi-perspective headlines — primary weekly politics/current-events source
+    id: 'allsides',
     name: 'AllSides',
     url: 'https://www.allsides.com/rss/news',
     topicIds: ['politics', 'current-events'],
     limit: 12,
   },
   {
+    id: 'al-jazeera',
     name: 'Al Jazeera',
     url: 'https://www.aljazeera.com/xml/rss/all.xml',
     topicIds: ['current-events', 'politics'],
     limit: 10,
   },
   {
+    id: 'al-jazeera-news-feed',
     name: 'Al Jazeera News Feed',
     url: 'https://www.omnycontent.com/d/playlist/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/cee1148d-ea1d-4149-9475-ad8a0105363f/podcast.rss',
     topicIds: ['current-events', 'politics'],
@@ -52,42 +55,49 @@ const FEEDS = [
     siteUrl: 'https://www.aljazeera.com/podcasts/news-updates/',
   },
   {
+    id: 'npr-politics',
     name: 'NPR Politics',
     url: 'https://feeds.npr.org/1014/rss.xml',
     topicIds: ['politics', 'current-events'],
     limit: 8,
   },
   {
+    id: 'the-conversation-politics',
     name: 'The Conversation · Politics',
     url: 'https://theconversation.com/us/politics/articles.atom',
     topicIds: ['politics', 'current-events'],
     limit: 8,
   },
   {
+    id: 'propublica',
     name: 'ProPublica',
     url: 'https://www.propublica.org/feeds/propublica/main',
     topicIds: ['politics', 'current-events'],
     limit: 6,
   },
   {
+    id: 'bbc-politics',
     name: 'BBC Politics',
     url: 'https://feeds.bbci.co.uk/news/politics/rss.xml',
     topicIds: ['politics', 'current-events'],
     limit: 6,
   },
   {
+    id: 'black-political-news',
     name: 'Black Political News',
     url: 'https://rss.app/feeds/v1.1/tXmxv8nuAzRRkvTG.json',
     topicIds: ['politics', 'current-events'],
     limit: 8,
   },
   {
+    id: 'congress',
     name: 'Congress',
     url: 'https://rss.app/feeds/v1.1/tcKJj9qeKSubFqWa.json',
     topicIds: ['politics', 'current-events'],
     limit: 8,
   },
   {
+    id: 'war',
     name: 'War',
     url: 'https://rss.app/feeds/v1.1/tPxxxGsDpoflsm8c.json',
     topicIds: ['politics', 'current-events'],
@@ -95,24 +105,28 @@ const FEEDS = [
   },
   // Faith / Christian journalism
   {
+    id: 'christian-today',
     name: 'Christian Today',
     url: 'https://www.christiantoday.com/rss.xml',
     topicIds: ['current-events', 'mental-models'],
     limit: 6,
   },
   {
+    id: 'christianity-today',
     name: 'Christianity Today',
     url: 'https://www.christianitytoday.com/feed/',
     topicIds: ['current-events', 'mental-models'],
     limit: 8,
   },
   {
+    id: 'crosswalk',
     name: 'Crosswalk',
     url: 'https://www.crosswalk.com/rss.xml',
     topicIds: ['mental-models', 'current-events'],
     limit: 6,
   },
   {
+    id: 'ap-top-news',
     name: 'AP Top News',
     url: 'https://rsshub.app/apnews/topics/apf-topnews',
     topicIds: ['current-events'],
@@ -121,6 +135,7 @@ const FEEDS = [
   },
   // Black pop culture / music — verified XML only
   {
+    id: 'philip-lewis',
     name: 'Philip Lewis',
     url: 'https://rss.app/feeds/v1.1/DMmESHzgp7DfJBh9.json',
     topicIds: ['current-events'],
@@ -128,6 +143,7 @@ const FEEDS = [
     lessonStyle: 'culture',
   },
   {
+    id: 'black-pop-culture',
     name: 'Black Pop Culture',
     url: 'https://rss.app/feeds/v1.1/twaYgziGNNhuhsNL.json',
     topicIds: ['current-events'],
@@ -135,6 +151,7 @@ const FEEDS = [
     lessonStyle: 'culture',
   },
   {
+    id: 'essence',
     name: 'Essence',
     url: 'https://www.essence.com/feed/',
     topicIds: ['current-events'],
@@ -142,6 +159,7 @@ const FEEDS = [
     lessonStyle: 'culture',
   },
   {
+    id: 'billboard-rb-hip-hop',
     name: 'Billboard R&B/Hip-Hop',
     url: 'https://www.billboard.com/c/music/rb-hip-hop/feed/',
     topicIds: ['current-events'],
@@ -149,6 +167,7 @@ const FEEDS = [
     lessonStyle: 'culture',
   },
   {
+    id: 'xxl',
     name: 'XXL',
     url: 'https://www.xxlmag.com/feed/',
     topicIds: ['current-events'],
@@ -156,6 +175,7 @@ const FEEDS = [
     lessonStyle: 'culture',
   },
   {
+    id: 'vibe',
     name: 'Vibe',
     url: 'https://www.vibe.com/feed/',
     topicIds: ['current-events'],
@@ -163,6 +183,7 @@ const FEEDS = [
     lessonStyle: 'culture',
   },
   {
+    id: 'the-shade-room',
     name: 'The Shade Room',
     url: 'https://theshaderoom.com/feed/',
     topicIds: ['current-events'],
@@ -170,6 +191,7 @@ const FEEDS = [
     lessonStyle: 'culture',
   },
   {
+    id: 'mediatakeout',
     name: 'MediaTakeOut',
     url: 'https://mediatakeout.com/feed/',
     topicIds: ['current-events'],
@@ -178,12 +200,14 @@ const FEEDS = [
   },
   // Sports — RSS.app topic feeds (JSON Feed 1.1; NBA has no public XML)
   {
+    id: 'nba-basketball-news',
     name: 'NBA & Basketball News',
     url: 'https://rss.app/feeds/v1.1/tCcjmK096Kle1DEN.json',
     topicIds: ['nba-analytics', 'sports-biz'],
     limit: 8,
   },
   {
+    id: 'nfl-football-news',
     name: 'NFL & Football News',
     url: 'https://rss.app/feeds/v1.1/tAQFDM5ScLlCIIWp.json',
     topicIds: ['football-film', 'sports-biz'],
@@ -191,6 +215,7 @@ const FEEDS = [
   },
   // Finance — MarketWatch (Dow Jones)
   {
+    id: 'marketwatch-marketpulse',
     name: 'MarketWatch · MarketPulse',
     url: 'https://feeds.content.dowjones.io/public/rss/mw_marketpulse',
     topicIds: ['finance', 'current-events'],
@@ -198,6 +223,7 @@ const FEEDS = [
     ttlDays: 3,
   },
   {
+    id: 'marketwatch-bulletins',
     name: 'MarketWatch · Bulletins',
     url: 'https://feeds.content.dowjones.io/public/rss/mw_bulletins',
     topicIds: ['finance', 'current-events'],
@@ -205,6 +231,7 @@ const FEEDS = [
     ttlDays: 3,
   },
   {
+    id: 'cnbc-finance',
     name: 'CNBC · Finance',
     url: 'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664',
     topicIds: ['finance', 'current-events'],
@@ -467,6 +494,7 @@ async function fetchFeed(feed) {
           publishedAt,
           expiresAt: expiresFrom(ttlDays, ingestedAt),
           topicIds: feed.topicIds,
+          feedId: feed.id,
           angles: isPodcast
             ? [
                 { label: 'Listen', url: e.link },

@@ -19,6 +19,8 @@ export type NewsItem = {
   expiresAt: string
   topicIds: TopicId[]
   angles?: NewsAngle[]
+  /** Stable curated feed id from ingest; missing on legacy/seed items */
+  feedId?: string
 }
 
 export type NewsFile = {

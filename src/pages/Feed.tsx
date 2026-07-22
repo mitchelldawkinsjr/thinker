@@ -1,10 +1,13 @@
 import { useMemo, useState, useEffect, useCallback } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { buildMixedFeed, feedKindLabel } from '../data/feed'
+import { resolveTopicFilter } from '../data/subscriptions'
 import { getTopic } from '../data/topics'
 import { useBookIdeas } from '../hooks/useBookIdeas'
 import { useNewsItems } from '../hooks/useNews'
 import { useScriptures } from '../hooks/useScriptures'
+import { useSubscriptions } from '../hooks/useSubscriptions'
+import { useUserNewsItems } from '../hooks/useUserNews'
 import { getFeedCursor, setFeedCursor } from '../lib/daySession'
 import { hideFromPool, markSeen } from '../lib/feedRotation'
 import { IdeaCard } from '../components/IdeaCard'
@@ -28,15 +31,36 @@ export function Feed() {
   const [reshuffle, setReshuffle] = useState(0)
   /** Bumps when a card is permanently removed so the mix rebuilds */
   const [hideTick, setHideTick] = useState(0)
-  const { items: news, updatedAt } = useNewsItems()
+  const { subscriptions } = useSubscriptions()
+  const { items: curatedNews, updatedAt } = useNewsItems()
+  const { items: userNews } = useUserNewsItems(subscriptions.customFeeds)
   const { items: scriptures } = useScriptures()
   const { items: bookIdeas, updatedAt: bookIdeasUpdatedAt } = useBookIdeas()
 
+  const news = useMemo(() => {
+    const byId = new Map<string, (typeof curatedNews)[number]>()
+    for (const n of [...curatedNews, ...userNews]) byId.set(n.id, n)
+    return [...byId.values()]
+  }, [curatedNews, userNews])
+
+  const resolvedTopic = useMemo(
+    () => resolveTopicFilter(topicFilter, subscriptions),
+    [topicFilter, subscriptions],
+  )
+
   const items = useMemo(
-    () => buildMixedFeed(topicFilter, news, scriptures, reshuffle, bookIdeas),
+    () =>
+      buildMixedFeed({
+        topicFilter: resolvedTopic,
+        news,
+        scriptures,
+        reshuffleKey: reshuffle,
+        extraIdeas: bookIdeas,
+        subscriptions,
+      }),
     // hideTick re-runs build after permanent dismiss
     // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional refresh keys
-    [topicFilter, news, scriptures, reshuffle, bookIdeas, hideTick],
+    [resolvedTopic, news, scriptures, reshuffle, bookIdeas, subscriptions, hideTick],
   )
 
   const [index, setIndex] = useState(() => getFeedCursor(topicKey))
@@ -112,7 +136,8 @@ export function Feed() {
         <p>
           {topic
             ? `Mixed ideas, book summaries, news, scripture, and sources for ${topic.name}.`
-            : 'Total mix — ideas, book summaries, politics/news, scripture, free sites, Gutenberg. Unseen cards rise; news expires so it doesn’t go stale.'}
+            : 'Total mix — ideas, book summaries, politics/news, scripture, free sites, Gutenberg. Unseen cards rise; news expires so it doesn’t go stale.'}{' '}
+          <Link to="/settings">Customize</Link>
         </p>
         <div className="feed-mix">
           <span>{counts.idea} ideas</span>
