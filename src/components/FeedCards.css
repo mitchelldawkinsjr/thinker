@@ -101,7 +101,10 @@
   gap: 0.45rem;
 }
 
-.feed-card-angles a {
+.feed-card-angles a,
+.feed-card-angle-btn {
+  appearance: none;
+  font: inherit;
   font-size: 0.78rem;
   font-weight: 600;
   color: color-mix(in srgb, var(--card-accent) 55%, white);
@@ -110,10 +113,18 @@
   border-radius: 999px;
   border: 1px solid color-mix(in srgb, white 16%, transparent);
   background: color-mix(in srgb, white 6%, transparent);
+  cursor: pointer;
 }
 
-.feed-card-angles a:hover {
+.feed-card-angles a:hover,
+.feed-card-angle-btn:hover {
   background: color-mix(in srgb, white 12%, transparent);
+}
+
+.feed-card-angle-btn.is-copied {
+  color: #86efac;
+  border-color: color-mix(in srgb, #86efac 40%, transparent);
+  background: color-mix(in srgb, #86efac 14%, transparent);
 }
 
 .feed-card-verse {

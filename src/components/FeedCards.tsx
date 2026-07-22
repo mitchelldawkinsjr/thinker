@@ -224,6 +224,37 @@ export function NewsFeedCard({
 } & NavProps) {
   const topics = news.topicIds.map((t) => `#${t}`).join(' · ')
   const primary = news.angles?.[0]?.url ?? news.sourceUrl
+  const isPolitics = news.topicIds.includes('politics')
+  const [copied, setCopied] = useState(false)
+
+  const copySourceUrl = async () => {
+    const url = news.sourceUrl
+    if (!url) return
+    try {
+      await navigator.clipboard.writeText(url)
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1600)
+    } catch {
+      // Fallback for older WebViews
+      const ta = document.createElement('textarea')
+      ta.value = url
+      ta.setAttribute('readonly', '')
+      ta.style.position = 'fixed'
+      ta.style.left = '-9999px'
+      document.body.appendChild(ta)
+      ta.select()
+      document.execCommand('copy')
+      document.body.removeChild(ta)
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1600)
+    }
+  }
+
+  const extraAngles = (news.angles ?? []).filter(
+    (a) => a.url !== primary && a.label !== 'Full story' && a.label !== 'AllSides',
+  )
+
+  const allSidesHref = `https://www.allsides.com/search?search=${encodeURIComponent(news.title)}`
 
   return (
     <FeedCardShell
@@ -250,15 +281,31 @@ export function NewsFeedCard({
           ? ` · ${new Date(news.publishedAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}`
           : ''}
       </p>
-      {news.angles && news.angles.length > 1 && (
-        <div className="feed-card-angles">
-          {news.angles.slice(0, 3).map((a) => (
-            <a key={a.url} href={a.url} target="_blank" rel="noreferrer">
-              {a.label}
+      <div className="feed-card-angles">
+        <button
+          type="button"
+          className={`feed-card-angle-btn ${copied ? 'is-copied' : ''}`}
+          onClick={() => void copySourceUrl()}
+          title="Copy source URL for a bias checker"
+        >
+          {copied ? 'Copied' : 'Copy URL'}
+        </button>
+        {isPolitics && (
+          <>
+            <a href={allSidesHref} target="_blank" rel="noreferrer">
+              AllSides
             </a>
-          ))}
-        </div>
-      )}
+            <a href="https://ground.news/" target="_blank" rel="noreferrer">
+              Ground News
+            </a>
+          </>
+        )}
+        {extraAngles.slice(0, 2).map((a) => (
+          <a key={a.url} href={a.url} target="_blank" rel="noreferrer">
+            {a.label}
+          </a>
+        ))}
+      </div>
     </FeedCardShell>
   )
 }
