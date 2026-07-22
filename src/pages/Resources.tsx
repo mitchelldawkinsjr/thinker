@@ -29,7 +29,7 @@ export function Resources() {
     <div className="resources-page">
       <header className="resources-head">
         <p className="resources-kicker">Stay tapped in</p>
-        <h1>Replace Reddit scroll with real sources</h1>
+        <h1>Replace endless scroll with real sources</h1>
         <p>
           Curated free learning sites — each card opens the actual website. Parsed from{' '}
           <a href={sourceLists[0].url} target="_blank" rel="noreferrer">
@@ -103,8 +103,8 @@ export function Resources() {
           ))}
         </ul>
         <p className="resources-note">
-          Reddit and r/TodayILearned appeared on those lists — we left them out on purpose.
-          Use Thinker’s feed + these destinations instead of another scroll session.
+          We skipped infinite-scroll feeds on purpose. Use Thinker’s cards + these
+          destinations instead of another scroll session.
         </p>
       </section>
     </div>

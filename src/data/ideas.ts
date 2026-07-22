@@ -735,12 +735,12 @@ export const ideas: Idea[] = [
     readMinutes: 1,
   },
 
-  // Linked free resources (instead of Reddit scroll)
+  // Linked free resources
   {
     id: 'latticework-models',
     topicId: 'mental-models',
     title: 'Build a latticework of models',
-    body: 'One framework is a hammer. A latticework — incentives, second-order effects, base rates — lets you diagnose unfamiliar problems. Farnam Street is a free habit for collecting those models without another Reddit binge.',
+    body: 'One framework is a hammer. A latticework — incentives, second-order effects, base rates — lets you diagnose unfamiliar problems. Farnam Street is a free habit for collecting those models without another doomscroll binge.',
     source: 'Farnam Street',
     sourceType: 'site',
     sourceUrl: 'https://fs.blog/',
@@ -760,7 +760,7 @@ export const ideas: Idea[] = [
     id: 'three-angles',
     topicId: 'current-events',
     title: 'Read the same story three ways',
-    body: 'AllSides puts left, center, and right coverage side by side. Bias doesn’t disappear — but you stop mistaking one feed for the whole picture. Better than refreshing Reddit for “balance.”',
+    body: 'AllSides puts left, center, and right coverage side by side. Bias doesn’t disappear — but you stop mistaking one feed for the whole picture. Better than refreshing one timeline for “balance.”',
     source: 'AllSides',
     sourceType: 'site',
     sourceUrl: 'https://www.allsides.com/',
@@ -810,7 +810,7 @@ export const ideas: Idea[] = [
     id: 'conversation-experts',
     topicId: 'current-events',
     title: 'Prefer the expert rewrite',
-    body: 'The Conversation asks researchers to explain their own fields for the public. It’s current events with citations — a better default open than the front page of Reddit.',
+    body: 'The Conversation asks researchers to explain their own fields for the public. It’s current events with citations — a better default open than the front page of an infinite feed.',
     source: 'The Conversation',
     sourceType: 'site',
     sourceUrl: 'https://theconversation.com/',

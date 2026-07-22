@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { topics } from '../data/topics'
 import { TopicChip } from '../components/TopicChip'
+import { peekContinue } from '../lib/daySession'
 import './Home.css'
 
 const floatingIdeas = [
@@ -13,6 +14,8 @@ const floatingIdeas = [
 
 export function Home() {
   const featured = topics.slice(0, 6)
+  const cont = peekContinue()
+  const continueTo = cont?.topic ? `/feed?topic=${encodeURIComponent(cont.topic)}` : '/feed'
 
   return (
     <div className="home">
@@ -40,7 +43,7 @@ export function Home() {
         <div className="hero-copy">
           <p className="hero-toast">
             <span className="hero-toast-dot" />
-            Stay tapped in — not doomscrolling Reddit
+            Stay tapped in — not doomscrolling
           </p>
           <h1 className="hero-brand">Thinker</h1>
           <p className="hero-line">
@@ -49,12 +52,19 @@ export function Home() {
           </p>
           <p className="hero-sub">
             Bite-sized ideas on AI, sports, markets, and history — then jump to the
-            real sites: Gutenberg, Quanta, Farnam Street, SEP, and more.
+            real sites: Gutenberg, Quanta, Farnam Street, SEP, and more. Remembers
+            this device for today; tomorrow starts fresh.
           </p>
           <div className="hero-actions">
-            <Link to="/feed" className="btn btn-primary">
-              Start thinking
-            </Link>
+            {cont ? (
+              <Link to={continueTo} className="btn btn-primary">
+                Continue · card {cont.index + 1}
+              </Link>
+            ) : (
+              <Link to="/feed" className="btn btn-primary">
+                Start thinking
+              </Link>
+            )}
             <Link to="/resources" className="btn btn-ghost">
               Browse free resources
             </Link>
@@ -84,7 +94,7 @@ export function Home() {
           <h2>Knowledge, in minutes</h2>
           <p>
             One idea at a time. Every kept thought can open its source site —
-            not another Reddit tab.
+            not another endless tab.
           </p>
         </div>
         <div className="why-grid">

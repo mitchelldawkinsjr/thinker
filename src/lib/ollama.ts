@@ -109,7 +109,7 @@ export async function exploreQuestion(
 
   const system = `Thinker research guide. Reply ONLY compact JSON:
 {"answer":"max 50 words","digDeeper":["q1","q2"],"links":[{"title":"t","url":"https://...","why":"short"}],"topics":["topic-id"]}
-Rules: use ONLY catalog URLs; never invent links; no Reddit; 2 digDeeper max; 3 links max.
+Rules: use ONLY catalog URLs; never invent links; no social-feed URLs; 2 digDeeper max; 3 links max.
 
 CATALOG:
 ${catalogBlock}`

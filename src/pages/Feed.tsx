@@ -5,6 +5,7 @@ import { getTopic } from '../data/topics'
 import { useBookIdeas } from '../hooks/useBookIdeas'
 import { useNewsItems } from '../hooks/useNews'
 import { useScriptures } from '../hooks/useScriptures'
+import { getFeedCursor, setFeedCursor } from '../lib/daySession'
 import { hideFromPool, markSeen } from '../lib/feedRotation'
 import { IdeaCard } from '../components/IdeaCard'
 import { AskPanel } from '../components/AskPanel'
@@ -20,6 +21,7 @@ import './Feed.css'
 export function Feed() {
   const [params] = useSearchParams()
   const topicFilter = params.get('topic')
+  const topicKey = topicFilter
   const topic = topicFilter ? getTopic(topicFilter) : undefined
   const [reshuffle, setReshuffle] = useState(0)
   /** Bumps after a full loop so freshness re-sorts without changing the daily shuffle seed */
@@ -37,11 +39,12 @@ export function Feed() {
     [topicFilter, news, scriptures, reshuffle, bookIdeas, loopTick, hideTick],
   )
 
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(() => getFeedCursor(topicKey))
 
+  // Topic change: restore today’s cursor for that topic
   useEffect(() => {
-    setIndex(0)
-  }, [topicFilter, reshuffle, news, scriptures, bookIdeas])
+    setIndex(getFeedCursor(topicKey))
+  }, [topicKey])
 
   useEffect(() => {
     if (items.length === 0) {
@@ -50,6 +53,11 @@ export function Feed() {
     }
     setIndex((i) => Math.min(i, items.length - 1))
   }, [items.length, hideTick])
+
+  // Persist card position for today only (device localStorage)
+  useEffect(() => {
+    setFeedCursor(topicKey, index)
+  }, [topicKey, index])
 
   const item = items[index]
 
@@ -62,6 +70,12 @@ export function Feed() {
     hideFromPool(item.id)
     setHideTick((t) => t + 1)
   }, [item?.id])
+
+  const reshuffleFeed = useCallback(() => {
+    setReshuffle((n) => n + 1)
+    setIndex(0)
+    setFeedCursor(topicKey, 0)
+  }, [topicKey])
 
   const next = useCallback(() => {
     if (items.length <= 1) {
@@ -115,7 +129,7 @@ export function Feed() {
           <span>{counts.resource} sites</span>
           <span>{counts.book} books</span>
           <span>{counts.ask} asks</span>
-          <button type="button" className="feed-reshuffle" onClick={() => setReshuffle((n) => n + 1)}>
+          <button type="button" className="feed-reshuffle" onClick={reshuffleFeed}>
             Reshuffle
           </button>
         </div>

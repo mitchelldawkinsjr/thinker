@@ -28,6 +28,15 @@ function save(map: SeenMap) {
   }
 }
 
+/** Wipe same-day seen map (called when the local calendar day rolls). */
+export function clearSeen() {
+  try {
+    localStorage.removeItem(STORAGE_KEY)
+  } catch {
+    // ignore
+  }
+}
+
 function loadHidden(): Set<string> {
   try {
     const raw = localStorage.getItem(HIDDEN_KEY)
@@ -109,10 +118,10 @@ export function markSeen(id: string) {
   save(map)
 }
 
-/** Stable-ish daily shuffle seed */
+/** Stable-ish daily shuffle seed (local calendar day). */
 export function daySeed(extra = ''): number {
   const d = new Date()
-  const key = `${d.getUTCFullYear()}-${d.getUTCMonth()}-${d.getUTCDate()}-${extra}`
+  const key = `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}-${extra}`
   let h = 2166136261
   for (let i = 0; i < key.length; i++) {
     h ^= key.charCodeAt(i)

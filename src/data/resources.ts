@@ -39,7 +39,7 @@ export const resourceCategories: { id: ResourceCategory | 'all'; label: string }
   { id: 'writing', label: 'Writing' },
 ]
 
-/** Curated free (or freemium) sites — links go to the real destinations, not Reddit. */
+/** Curated free (or freemium) sites — links go to the real destinations. */
 export const learningResources: LearningResource[] = [
   // Thinking / PD
   {

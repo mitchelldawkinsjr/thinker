@@ -10,7 +10,7 @@ export function Ask() {
         <p>
           Questions hit your VPS <strong>llm-runtime</strong> (Ollama over Tailscale). The model
           returns a short answer plus outbound links from Thinker’s resource catalog and Gutenberg
-          shelf — so you dig deeper on purpose instead of scrolling Reddit.
+          shelf — so you dig deeper on purpose instead of endless scrolling.
         </p>
         <ul>
           <li>

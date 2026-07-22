@@ -130,7 +130,7 @@ export function ResourceFeedCard({
       }
     >
       <p className="feed-card-body">{resource.blurb}</p>
-      <p className="feed-card-hint">Open the real site — don’t scroll Reddit for this.</p>
+      <p className="feed-card-hint">Open the real site — leave the infinite scroll behind.</p>
     </FeedCardShell>
   )
 }

@@ -68,7 +68,7 @@ export const ideaDepth: Record<
   'three-angles': {
     hook: 'One feed is not the whole picture.',
     lesson:
-      'AllSides puts left, center, and right coverage side by side. Bias doesn’t disappear — but you stop mistaking one timeline for reality. Better than refreshing Reddit for “balance.”',
+      'AllSides puts left, center, and right coverage side by side. Bias doesn’t disappear — but you stop mistaking one timeline for reality. Better than refreshing one feed for “balance.”',
     takeaway: 'Read the same story three ways before you decide.',
   },
   'stream-tokens': {
