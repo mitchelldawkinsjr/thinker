@@ -1,11 +1,13 @@
 import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { getIdeasByTopic } from '../data/ideas'
+import { useBookIdeas } from '../hooks/useBookIdeas'
 import type { Topic } from '../data/types'
 import './TopicChip.css'
 
 export function TopicChip({ topic, large }: { topic: Topic; large?: boolean }) {
-  const count = getIdeasByTopic(topic.id).length
+  const { items: bookIdeas } = useBookIdeas()
+  const count = getIdeasByTopic(topic.id, bookIdeas).length
 
   return (
     <Link

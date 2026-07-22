@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 /**
  * Fetch politics / current-events RSS → public/content/news.json
- * Thinker-shaped cards with 14-day TTL. Seed lessons are always merged in.
+ * Thinker-shaped cards with tiered TTL from ingest time:
+ *   politics → 3 days (headlines go stale fast)
+ *   everything else → 10 days
+ * Override per feed with `ttlDays`. Seed lessons are always merged in.
  *
  * Usage: node scripts/ingest-news.mjs
  */
@@ -17,7 +20,11 @@ dns.setDefaultResultOrder('ipv4first')
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const OUT = join(ROOT, 'public', 'content', 'news.json')
-const TTL_DAYS = 14
+/** Hard-news / politics — short window; stories change daily */
+const TTL_DAYS_POLITICS = 3
+/** Culture, sports, faith, general current-events */
+const TTL_DAYS_DEFAULT = 10
+const DAY_MS = 24 * 60 * 60 * 1000
 
 /** @typedef {{ id: string, hook: string, title: string, lesson: string, source: string, sourceUrl: string, publishedAt: string, expiresAt: string, topicIds: string[], angles?: { label: string, url: string }[] }} NewsItem */
 
@@ -68,11 +75,111 @@ const FEEDS = [
     limit: 6,
   },
   {
+    name: 'Black Political News',
+    url: 'https://rss.app/feeds/v1.1/tXmxv8nuAzRRkvTG.json',
+    topicIds: ['politics', 'current-events'],
+    limit: 8,
+  },
+  {
+    name: 'Congress',
+    url: 'https://rss.app/feeds/v1.1/tcKJj9qeKSubFqWa.json',
+    topicIds: ['politics', 'current-events'],
+    limit: 8,
+  },
+  {
+    name: 'War',
+    url: 'https://rss.app/feeds/v1.1/tPxxxGsDpoflsm8c.json',
+    topicIds: ['politics', 'current-events'],
+    limit: 8,
+  },
+  // Faith / Christian journalism
+  {
+    name: 'Christian Today',
+    url: 'https://www.christiantoday.com/rss.xml',
+    topicIds: ['current-events', 'mental-models'],
+    limit: 6,
+  },
+  {
+    name: 'Christianity Today',
+    url: 'https://www.christianitytoday.com/feed/',
+    topicIds: ['current-events', 'mental-models'],
+    limit: 8,
+  },
+  {
+    name: 'Crosswalk',
+    url: 'https://www.crosswalk.com/rss.xml',
+    topicIds: ['mental-models', 'current-events'],
+    limit: 6,
+  },
+  {
     name: 'AP Top News',
     url: 'https://rsshub.app/apnews/topics/apf-topnews',
     topicIds: ['current-events'],
     limit: 5,
     optional: true,
+  },
+  // Black pop culture / music — verified XML only
+  {
+    name: 'Black Pop Culture',
+    url: 'https://rss.app/feeds/v1.1/twaYgziGNNhuhsNL.json',
+    topicIds: ['current-events'],
+    limit: 8,
+    lessonStyle: 'culture',
+  },
+  {
+    name: 'Essence',
+    url: 'https://www.essence.com/feed/',
+    topicIds: ['current-events'],
+    limit: 6,
+    lessonStyle: 'culture',
+  },
+  {
+    name: 'Billboard R&B/Hip-Hop',
+    url: 'https://www.billboard.com/c/music/rb-hip-hop/feed/',
+    topicIds: ['current-events'],
+    limit: 6,
+    lessonStyle: 'culture',
+  },
+  {
+    name: 'XXL',
+    url: 'https://www.xxlmag.com/feed/',
+    topicIds: ['current-events'],
+    limit: 5,
+    lessonStyle: 'culture',
+  },
+  {
+    name: 'Vibe',
+    url: 'https://www.vibe.com/feed/',
+    topicIds: ['current-events'],
+    limit: 5,
+    lessonStyle: 'culture',
+  },
+  {
+    name: 'The Shade Room',
+    url: 'https://theshaderoom.com/feed/',
+    topicIds: ['current-events'],
+    limit: 4,
+    lessonStyle: 'culture',
+  },
+  {
+    name: 'MediaTakeOut',
+    url: 'https://mediatakeout.com/feed/',
+    topicIds: ['current-events'],
+    limit: 3,
+    lessonStyle: 'culture',
+  },
+  // Sports — RSS.app topic feeds (JSON Feed 1.1; NBA has no public XML)
+  {
+    name: 'NBA & Basketball News',
+    url: 'https://rss.app/feeds/v1.1/tCcjmK096Kle1DEN.json',
+    topicIds: ['nba-analytics', 'sports-biz'],
+    limit: 8,
+  },
+  {
+    name: 'NFL & Football News',
+    url: 'https://rss.app/feeds/v1.1/tAQFDM5ScLlCIIWp.json',
+    topicIds: ['football-film', 'sports-biz'],
+    limit: 8,
   },
 ]
 
@@ -242,6 +349,26 @@ function parseEntries(xml) {
   })
 }
 
+/** JSON Feed 1.1 (rss.app /feeds/v1.1/*.json) */
+function parseJsonFeed(text) {
+  const data = JSON.parse(text)
+  const items = Array.isArray(data.items) ? data.items : []
+  return items.map((it) => ({
+    title: stripHtml(it.title || ''),
+    link: String(it.url || it.external_url || '').trim(),
+    summary: stripHtml(it.content_text || it.summary || it.content_html || ''),
+    published: String(it.date_published || it.date_modified || ''),
+  }))
+}
+
+function parseFeedBody(text, feedUrl) {
+  const trimmed = text.trimStart()
+  if (feedUrl.includes('.json') || trimmed.startsWith('{')) {
+    return parseJsonFeed(text)
+  }
+  return parseEntries(text)
+}
+
 function hookFromTitle(title) {
   const t = title.trim()
   if (t.length <= 72) return t
@@ -250,12 +377,19 @@ function hookFromTitle(title) {
   return `${(sp > 40 ? cut.slice(0, sp) : cut).trim()}…`
 }
 
-function lessonFrom(summary, title) {
+function lessonFrom(summary, title, lessonStyle = 'politics') {
   const s = summary || ''
+  const culture = lessonStyle === 'culture'
   if (s.length >= 80) {
     const cut = s.slice(0, 320)
     const sp = cut.lastIndexOf(' ')
-    return `${(sp > 120 ? cut.slice(0, sp) : cut).trim()} Ask: who benefits, what’s the mechanism, and what would change your mind?`
+    const body = `${(sp > 120 ? cut.slice(0, sp) : cut).trim()}`
+    return culture
+      ? `${body} Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?`
+      : `${body} Ask: who benefits, what’s the mechanism, and what would change your mind?`
+  }
+  if (culture) {
+    return `Headline: “${title}”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.`
   }
   return `Headline: “${title}”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.`
 }
@@ -265,10 +399,17 @@ function idFor(url, title) {
   return `rss-${h}`
 }
 
-function expiresFrom(publishedAt) {
-  const t = Date.parse(publishedAt)
-  const base = Number.isNaN(t) ? Date.now() : t
-  return new Date(base + TTL_DAYS * 24 * 60 * 60 * 1000).toISOString()
+/** Pool lifetime from ingest — not publish date — so stale feeds still get a full window. */
+function ttlDaysFor(feed) {
+  if (typeof feed.ttlDays === 'number' && feed.ttlDays > 0) return feed.ttlDays
+  if (Array.isArray(feed.topicIds) && feed.topicIds.includes('politics')) {
+    return TTL_DAYS_POLITICS
+  }
+  return TTL_DAYS_DEFAULT
+}
+
+function expiresFrom(ttlDays, now = Date.now()) {
+  return new Date(now + ttlDays * DAY_MS).toISOString()
 }
 
 function toIso(published) {
@@ -289,8 +430,10 @@ async function fetchFeed(feed) {
       },
     })
     if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
-    const xml = await res.text()
-    const entries = parseEntries(xml).slice(0, feed.limit)
+    const body = await res.text()
+    const entries = parseFeedBody(body, feed.url).slice(0, feed.limit)
+    const ttlDays = ttlDaysFor(feed)
+    const ingestedAt = Date.now()
     return entries
       .filter((e) => e.title && e.link)
       .map((e) => {
@@ -301,11 +444,11 @@ async function fetchFeed(feed) {
           id: idFor(e.link, e.title),
           hook: hookFromTitle(e.title),
           title: e.title,
-          lesson: lessonFrom(e.summary, e.title),
+          lesson: lessonFrom(e.summary, e.title, feed.lessonStyle),
           source: feed.name,
           sourceUrl: e.link,
           publishedAt,
-          expiresAt: expiresFrom(publishedAt),
+          expiresAt: expiresFrom(ttlDays, ingestedAt),
           topicIds: feed.topicIds,
           angles: isPodcast
             ? [
@@ -344,6 +487,16 @@ function isActive(item, now = Date.now()) {
   return exp > now
 }
 
+/** Migrate legacy long-TTL politics cards down to the politics window. */
+function clampPoliticsExpiry(item, now = Date.now()) {
+  if (!Array.isArray(item.topicIds) || !item.topicIds.includes('politics')) return item
+  if (String(item.expiresAt || '').startsWith('2099')) return item // evergreen seeds
+  const maxExp = now + TTL_DAYS_POLITICS * DAY_MS
+  const exp = Date.parse(item.expiresAt)
+  if (Number.isNaN(exp) || exp <= maxExp) return item
+  return { ...item, expiresAt: new Date(maxExp).toISOString() }
+}
+
 async function main() {
   const existing = await loadExisting()
   /** @type {NewsItem[]} */
@@ -366,8 +519,9 @@ async function main() {
 
   const byId = new Map()
   for (const item of [...existing, ...scraped, ...SEED]) {
-    if (!isActive(item)) continue
-    byId.set(item.id, item)
+    const next = clampPoliticsExpiry(item)
+    if (!isActive(next)) continue
+    byId.set(next.id, next)
   }
 
   const items = [...byId.values()].sort(

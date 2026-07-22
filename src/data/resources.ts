@@ -370,6 +370,20 @@ export const learningResources: LearningResource[] = [
     category: 'tech',
     topicHints: ['ai-agents', 'current-events'],
   },
+  {
+    id: 'rss-app',
+    name: 'RSS.app',
+    url: 'https://rss.app/',
+    blurb: 'Turn X, Instagram, and sites without RSS into feed URLs for a chronological reader.',
+    category: 'tech',
+  },
+  {
+    id: 'feedly',
+    name: 'Feedly',
+    url: 'https://feedly.com/',
+    blurb: 'Folder your culture and news RSS feeds in one place — bypass the algorithm.',
+    category: 'tech',
+  },
 
   // News / current events (anti-doomscroll alternatives)
   {
@@ -449,6 +463,76 @@ export const learningResources: LearningResource[] = [
     category: 'news',
     topicHints: ['current-events', 'ai-agents'],
   },
+  {
+    id: 'philip-lewis',
+    name: 'Philip Lewis',
+    url: 'https://rss.app/feeds/v1.1/DMmESHzgp7DfJBh9.json',
+    blurb:
+      'Chronological X posts and RTs on culture, sports, and Black community news — via RSS.app, no algorithm.',
+    category: 'news',
+    topicHints: ['current-events'],
+  },
+  {
+    id: 'black-political-news',
+    name: 'Black Political News',
+    url: 'https://rss.app/feeds/v1.1/tXmxv8nuAzRRkvTG.json',
+    blurb:
+      'Aggregated headlines on Black politics and civic power — via RSS.app topic feed.',
+    category: 'news',
+    topicHints: ['politics', 'current-events'],
+  },
+  {
+    id: 'black-pop-culture',
+    name: 'Black Pop Culture',
+    url: 'https://rss.app/feeds/v1.1/twaYgziGNNhuhsNL.json',
+    blurb:
+      'Aggregated Black pop culture and entertainment headlines — via RSS.app topic feed.',
+    category: 'news',
+    topicHints: ['current-events'],
+  },
+  {
+    id: 'congress-news',
+    name: 'Congress',
+    url: 'https://rss.app/feeds/v1.1/tcKJj9qeKSubFqWa.json',
+    blurb:
+      'Aggregated Capitol Hill and congressional headlines — via RSS.app topic feed.',
+    category: 'news',
+    topicHints: ['politics', 'current-events'],
+  },
+  {
+    id: 'war-news',
+    name: 'War',
+    url: 'https://rss.app/feeds/v1.1/tPxxxGsDpoflsm8c.json',
+    blurb:
+      'Aggregated conflict and defense headlines — via RSS.app topic feed.',
+    category: 'news',
+    topicHints: ['politics', 'current-events'],
+  },
+  {
+    id: 'christian-today',
+    name: 'Christian Today',
+    url: 'https://www.christiantoday.com/',
+    blurb: 'Christian news and commentary — weekly ingest via christiantoday.com/rss.xml.',
+    category: 'news',
+    topicHints: ['current-events', 'mental-models'],
+  },
+  {
+    id: 'christianity-today',
+    name: 'Christianity Today',
+    url: 'https://www.christianitytoday.com/',
+    blurb:
+      'Evangelical journalism on faith, culture, and the church — weekly ingest via christianitytoday.com/feed/.',
+    category: 'news',
+    topicHints: ['current-events', 'mental-models'],
+  },
+  {
+    id: 'crosswalk',
+    name: 'Crosswalk',
+    url: 'https://www.crosswalk.com/',
+    blurb: 'Devotional and faith-life articles — weekly ingest via crosswalk.com/rss.xml.',
+    category: 'news',
+    topicHints: ['mental-models', 'current-events'],
+  },
 
   // Culture / art
   {
@@ -499,6 +583,68 @@ export const learningResources: LearningResource[] = [
     url: 'https://www.mentalfloss.com/',
     blurb: 'Facts, trivia, and curious history without the feed dopamine trap.',
     category: 'culture',
+  },
+  {
+    id: 'essence',
+    name: 'Essence',
+    url: 'https://www.essence.com/',
+    blurb: 'Black Hollywood, streaming, and culture — entertainment with community context.',
+    category: 'culture',
+    topicHints: ['current-events'],
+  },
+  {
+    id: 'billboard-rb',
+    name: 'Billboard R&B/Hip-Hop',
+    url: 'https://www.billboard.com/c/music/rb-hip-hop/',
+    blurb: 'Charts, drops, and industry moves in R&B and hip-hop.',
+    category: 'culture',
+  },
+  {
+    id: 'xxl',
+    name: 'XXL',
+    url: 'https://www.xxlmag.com/',
+    blurb: 'Hip-hop news, freestyles, and artist features without the algorithm shuffle.',
+    category: 'culture',
+    topicHints: ['current-events'],
+  },
+  {
+    id: 'vibe',
+    name: 'Vibe',
+    url: 'https://www.vibe.com/',
+    blurb: 'Music, style, and Black culture coverage with editorial depth.',
+    category: 'culture',
+    topicHints: ['current-events'],
+  },
+  {
+    id: 'complex',
+    name: 'Complex',
+    url: 'https://www.complex.com/',
+    blurb: 'Sneakers, music, and street culture — the viral edge of pop.',
+    category: 'culture',
+    topicHints: ['current-events'],
+  },
+  {
+    id: 'revolt',
+    name: 'REVOLT',
+    url: 'https://www.revolt.tv/',
+    blurb: 'Hip-hop and Black culture media — music, news, and conversation.',
+    category: 'culture',
+  },
+  {
+    id: 'shade-room',
+    name: 'The Shade Room',
+    url: 'https://theshaderoom.com/',
+    blurb: 'Fast celebrity and culture tea — useful signal if you filter for what matters.',
+    category: 'culture',
+    topicHints: ['current-events'],
+  },
+  {
+    id: 'mediatakeout',
+    name: 'MediaTakeOut',
+    url: 'https://mediatakeout.com/',
+    blurb: 'Celebrity gossip and viral entertainment headlines — skim, don’t drown.',
+    category: 'culture',
+    topicHints: ['current-events'],
   },
   {
     id: 'britannica',

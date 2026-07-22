@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom'
 import { useKept } from '../hooks/useKept'
 import { getIdea } from '../data/ideas'
+import { useBookIdeas } from '../hooks/useBookIdeas'
 import { IdeaCard } from '../components/IdeaCard'
 import './Kept.css'
 
 export function Kept() {
   const { kept } = useKept()
+  const { items: bookIdeas } = useBookIdeas()
   const ideas = [...kept]
-    .map((id) => getIdea(id))
+    .map((id) => getIdea(id, bookIdeas))
     .filter((i): i is NonNullable<typeof i> => Boolean(i))
 
   return (

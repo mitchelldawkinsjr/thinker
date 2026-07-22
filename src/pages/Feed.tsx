@@ -2,6 +2,7 @@ import { useMemo, useState, useEffect, useCallback } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { buildMixedFeed, feedKindLabel } from '../data/feed'
 import { getTopic } from '../data/topics'
+import { useBookIdeas } from '../hooks/useBookIdeas'
 import { useNewsItems } from '../hooks/useNews'
 import { useScriptures } from '../hooks/useScriptures'
 import { markSeen } from '../lib/feedRotation'
@@ -21,19 +22,24 @@ export function Feed() {
   const topicFilter = params.get('topic')
   const topic = topicFilter ? getTopic(topicFilter) : undefined
   const [reshuffle, setReshuffle] = useState(0)
+  /** Bumps after a full loop so freshness re-sorts without changing the daily shuffle seed */
+  const [loopTick, setLoopTick] = useState(0)
   const { items: news, updatedAt } = useNewsItems()
   const { items: scriptures } = useScriptures()
+  const { items: bookIdeas, updatedAt: bookIdeasUpdatedAt } = useBookIdeas()
 
   const items = useMemo(
-    () => buildMixedFeed(topicFilter, news, scriptures, reshuffle),
-    [topicFilter, news, scriptures, reshuffle],
+    () => buildMixedFeed(topicFilter, news, scriptures, reshuffle, bookIdeas),
+    // loopTick re-runs build so recently marked cards sink after a wrap
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional freshness refresh
+    [topicFilter, news, scriptures, reshuffle, bookIdeas, loopTick],
   )
 
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
     setIndex(0)
-  }, [topicFilter, reshuffle, news, scriptures])
+  }, [topicFilter, reshuffle, news, scriptures, bookIdeas])
 
   const item = items[index]
 
@@ -42,8 +48,18 @@ export function Feed() {
   }, [item?.id])
 
   const next = useCallback(() => {
-    setIndex((i) => (i + 1) % Math.max(items.length, 1))
-  }, [items.length])
+    if (items.length <= 1) {
+      setLoopTick((t) => t + 1)
+      setIndex(0)
+      return
+    }
+    if (index + 1 >= items.length) {
+      setLoopTick((t) => t + 1)
+      setIndex(0)
+      return
+    }
+    setIndex(index + 1)
+  }, [index, items.length])
 
   const prev = useCallback(() => {
     setIndex((i) => (i - 1 + items.length) % Math.max(items.length, 1))
@@ -71,8 +87,8 @@ export function Feed() {
         <h1>{topic ? `#${topic.name}` : 'Your feed'}</h1>
         <p>
           {topic
-            ? `Mixed ideas, news, scripture, and sources for ${topic.name}.`
-            : 'Total mix — ideas, politics/news, scripture, free sites, Gutenberg. Unseen cards rise; news expires so it doesn’t go stale.'}
+            ? `Mixed ideas, book summaries, news, scripture, and sources for ${topic.name}.`
+            : 'Total mix — ideas, book summaries, politics/news, scripture, free sites, Gutenberg. Unseen cards rise; news expires so it doesn’t go stale.'}
         </p>
         <div className="feed-mix">
           <span>{counts.idea} ideas</span>
@@ -85,9 +101,29 @@ export function Feed() {
             Reshuffle
           </button>
         </div>
-        {updatedAt && (
+        {(updatedAt || bookIdeasUpdatedAt) && (
           <p className="feed-updated">
-            News updated {new Date(updatedAt).toLocaleString(undefined, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}
+            {updatedAt && (
+              <>
+                News updated{' '}
+                {new Date(updatedAt).toLocaleString(undefined, {
+                  month: 'short',
+                  day: 'numeric',
+                  hour: 'numeric',
+                  minute: '2-digit',
+                })}
+              </>
+            )}
+            {updatedAt && bookIdeasUpdatedAt ? ' · ' : null}
+            {bookIdeasUpdatedAt && (
+              <>
+                Books{' '}
+                {new Date(bookIdeasUpdatedAt).toLocaleString(undefined, {
+                  month: 'short',
+                  day: 'numeric',
+                })}
+              </>
+            )}
           </p>
         )}
       </header>

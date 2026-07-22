@@ -43,6 +43,10 @@ export interface Idea {
   /** Direct link to the article, site, or book page */
   sourceUrl?: string
   readMinutes: number
+  /** When this card entered the live pool (book-summary ingest) */
+  ingestedAt?: string
+  /** Drop from live pool after this time (book summaries rotate weekly) */
+  expiresAt?: string
 }
 
 export interface GutenbergBook {

@@ -1,4 +1,4 @@
-import { ideas, getIdeasByTopic } from './ideas'
+import { mergeIdeas } from './ideas'
 import { learningResources, type LearningResource } from './resources'
 import {
   curatedGutenbergMeta,
@@ -46,17 +46,36 @@ export type FeedItem =
       scripture: ScriptureItem
     }
 
-function interleave<T>(queues: T[][]): T[] {
-  const qs = queues.map((q) => [...q])
+/**
+ * Round-robin by weight without duplicating items.
+ * weight 2 ≈ two pulls per cycle vs weight 1 — each card still appears once.
+ */
+function weightedInterleave<T extends { id: string }>(
+  queues: { items: T[]; weight: number }[],
+): T[] {
+  const qs = queues.map((q) => ({
+    items: [...q.items],
+    weight: Math.max(1, Math.floor(q.weight)),
+  }))
+  const pattern: number[] = []
+  qs.forEach((q, i) => {
+    for (let w = 0; w < q.weight; w++) pattern.push(i)
+  })
+
   const out: T[] = []
+  const used = new Set<string>()
   let added = true
   while (added) {
     added = false
-    for (const q of qs) {
-      const next = q.shift()
-      if (next !== undefined) {
+    for (const qi of pattern) {
+      const q = qs[qi]
+      while (q.items.length) {
+        const next = q.items.shift()!
+        if (used.has(next.id)) continue
+        used.add(next.id)
         out.push(next)
         added = true
+        break
       }
     }
   }
@@ -102,15 +121,11 @@ function resourceItems(topicFilter?: string): FeedItem[] {
     }))
 }
 
-function ideaItems(topicFilter?: string): FeedItem[] {
-  let list = topicFilter ? getIdeasByTopic(topicFilter) : ideas
-  // Boost politics + current-events into the default mix
-  if (!topicFilter) {
-    const boost = ideas.filter(
-      (i) => i.topicId === 'politics' || i.topicId === 'current-events',
-    )
-    list = [...list, ...boost]
-  }
+function ideaItems(topicFilter?: string, extraIdeas: Idea[] = []): FeedItem[] {
+  const catalog = mergeIdeas(extraIdeas)
+  const list = topicFilter
+    ? catalog.filter((i) => i.topicId === topicFilter)
+    : catalog
   return list.map((idea) => ({
     kind: 'idea' as const,
     id: `idea-${idea.id}`,
@@ -118,20 +133,19 @@ function ideaItems(topicFilter?: string): FeedItem[] {
   }))
 }
 
-function askItems(topicFilter?: string): FeedItem[] {
-  const pool = topicFilter ? getIdeasByTopic(topicFilter) : ideas
-  const politicsPool = pool.filter(
-    (i) => i.topicId === 'politics' || i.topicId === 'current-events',
-  )
-  const base = politicsPool.length ? [...pool, ...politicsPool] : pool
-  const samples = seededShuffle(base, daySeed('ask')).slice(
+function askItems(topicFilter?: string, extraIdeas: Idea[] = []): FeedItem[] {
+  const catalog = mergeIdeas(extraIdeas)
+  const pool = topicFilter
+    ? catalog.filter((i) => i.topicId === topicFilter)
+    : catalog
+  const samples = seededShuffle(pool, daySeed('ask')).slice(
     0,
-    Math.min(10, Math.ceil(base.length / 5)),
+    Math.min(10, Math.ceil(pool.length / 5) || 1),
   )
 
-  return samples.map((idea, i) => ({
+  return samples.map((idea) => ({
     kind: 'ask' as const,
-    id: `ask-${idea.id}-${i}`,
+    id: `ask-${idea.id}`,
     prompt: `What should I read next to go deeper on “${idea.title}”?`,
     topicId: idea.topicId,
     ideaTitle: idea.title,
@@ -168,39 +182,50 @@ function scriptureItems(
     }))
 }
 
+/** Kind cadence weights — higher = denser early in the feed, still one card each */
+const FEED_WEIGHTS = {
+  ideas: 2,
+  news: 2,
+  scripture: 2,
+  resources: 1,
+  books: 1,
+  asks: 1,
+} as const
+
 /**
- * Total mix: ideas + news/politics + scripture + sites + Gutenberg + ask,
- * freshness-weighted so cards don't go stale.
+ * Total mix: ideas (+ book summaries) + news + scripture + sites + Gutenberg + ask,
+ * freshness-weighted so cards don't go stale. Each card id appears at most once.
  */
 export function buildMixedFeed(
   topicFilter?: string | null,
   news: NewsItem[] = [],
   scriptures: ScriptureItem[] = [],
   reshuffleKey = 0,
+  extraIdeas: Idea[] = [],
 ): FeedItem[] {
   const topic = topicFilter || undefined
   const seed = daySeed(`r${reshuffleKey}:${topic ?? 'all'}`)
 
-  const ideasQ = sortByFreshness(seededShuffle(ideaItems(topic), seed))
+  const ideasQ = sortByFreshness(
+    seededShuffle(ideaItems(topic, extraIdeas), seed),
+  )
   const newsQ = sortByFreshness(seededShuffle(newsItems(news, topic), seed ^ 1))
   const scriptureQ = sortByFreshness(
     seededShuffle(scriptureItems(scriptures, topic), seed ^ 5),
   )
   const resourcesQ = sortByFreshness(seededShuffle(resourceItems(topic), seed ^ 2))
   const booksQ = sortByFreshness(seededShuffle(bookItems(topic), seed ^ 3))
-  const asksQ = sortByFreshness(seededShuffle(askItems(topic), seed ^ 4))
+  const asksQ = sortByFreshness(
+    seededShuffle(askItems(topic, extraIdeas), seed ^ 4),
+  )
 
-  // Weight: ideas, news, scripture, resources, books, asks — scripture in the cadence
-  return interleave([
-    ideasQ,
-    newsQ,
-    scriptureQ,
-    resourcesQ,
-    newsQ,
-    booksQ,
-    asksQ,
-    ideasQ,
-    scriptureQ,
+  return weightedInterleave([
+    { items: ideasQ, weight: FEED_WEIGHTS.ideas },
+    { items: newsQ, weight: FEED_WEIGHTS.news },
+    { items: scriptureQ, weight: FEED_WEIGHTS.scripture },
+    { items: resourcesQ, weight: FEED_WEIGHTS.resources },
+    { items: booksQ, weight: FEED_WEIGHTS.books },
+    { items: asksQ, weight: FEED_WEIGHTS.asks },
   ])
 }
 

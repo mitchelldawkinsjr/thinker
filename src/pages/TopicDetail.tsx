@@ -2,13 +2,15 @@ import type { CSSProperties } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getTopic } from '../data/topics'
 import { getIdeasByTopic } from '../data/ideas'
+import { useBookIdeas } from '../hooks/useBookIdeas'
 import { IdeaCard } from '../components/IdeaCard'
 import './TopicDetail.css'
 
 export function TopicDetail() {
   const { topicId = '' } = useParams()
   const topic = getTopic(topicId)
-  const ideas = getIdeasByTopic(topicId)
+  const { items: bookIdeas } = useBookIdeas()
+  const ideas = getIdeasByTopic(topicId, bookIdeas)
 
   if (!topic) {
     return (

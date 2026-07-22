@@ -1,5 +1,11 @@
 const STORAGE_KEY = 'thinker-feed-seen-v1'
 
+/** Cards seen within this window get a hard penalty so they don't reappear immediately */
+const RECENT_HOURS = 18
+const RECENT_PENALTY = 80
+const COUNT_WEIGHT = 28
+const DAY_DECAY = 3
+
 type SeenMap = Record<string, { count: number; lastSeen: number }>
 
 function load(): SeenMap {
@@ -24,8 +30,14 @@ function save(map: SeenMap) {
 export function freshnessScore(id: string, now = Date.now()): number {
   const entry = load()[id]
   if (!entry) return 0
-  const days = (now - entry.lastSeen) / (1000 * 60 * 60 * 24)
-  return entry.count * 10 - days
+  const ms = now - entry.lastSeen
+  const days = ms / (1000 * 60 * 60 * 24)
+  const hours = ms / (1000 * 60 * 60)
+  let score = entry.count * COUNT_WEIGHT - days * DAY_DECAY
+  if (hours < RECENT_HOURS) {
+    score += RECENT_PENALTY * (1 - hours / RECENT_HOURS)
+  }
+  return score
 }
 
 export function sortByFreshness<T extends { id: string }>(items: T[]): T[] {

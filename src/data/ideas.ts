@@ -818,8 +818,17 @@ export const ideas: Idea[] = [
   },
 ]
 
-export const getIdea = (id: string) => ideas.find((i) => i.id === id)
+export const getIdea = (id: string, extra: Idea[] = []) =>
+  extra.find((i) => i.id === id) ?? ideas.find((i) => i.id === id)
 
-export const getIdeasByTopic = (topicId: string) =>
-  ideas.filter((i) => i.topicId === topicId)
+export const getIdeasByTopic = (topicId: string, extra: Idea[] = []) =>
+  mergeIdeas(extra).filter((i) => i.topicId === topicId)
+
+/** Static catalog + ingested book-summary ideas (extra wins on id clash). */
+export function mergeIdeas(extra: Idea[] = []): Idea[] {
+  const byId = new Map<string, Idea>()
+  for (const idea of ideas) byId.set(idea.id, idea)
+  for (const idea of extra) byId.set(idea.id, idea)
+  return [...byId.values()]
+}
 

@@ -263,6 +263,15 @@ export function ScriptureFeedCard({
       <p className="feed-card-body">{scripture.lesson}</p>
       <p className="feed-card-hint">
         {scripture.translation}
+        {scripture.sourceUrl?.includes('blueletterbible.org') && (
+          <>
+            {' '}
+            ·{' '}
+            <a href={scripture.sourceUrl} target="_blank" rel="noreferrer">
+              BLB Daily Promise
+            </a>
+          </>
+        )}
         {open.via === 'scriptura' ? (
           <>
             {' '}
