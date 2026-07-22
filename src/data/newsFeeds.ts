@@ -61,6 +61,11 @@ export const curatedNewsFeeds: CuratedNewsFeed[] = [
     topicIds: ['mental-models', 'current-events'],
   },
   { id: 'ap-top-news', name: 'AP Top News', topicIds: ['current-events'] },
+  {
+    id: 'aaron-parnas',
+    name: 'The Parnas Perspective',
+    topicIds: ['politics', 'current-events'],
+  },
   { id: 'philip-lewis', name: 'Philip Lewis', topicIds: ['current-events'] },
   { id: 'black-pop-culture', name: 'Black Pop Culture', topicIds: ['current-events'] },
   { id: 'essence', name: 'Essence', topicIds: ['current-events'] },

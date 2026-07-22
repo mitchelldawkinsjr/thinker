@@ -7,7 +7,7 @@ import {
   type ReactNode,
 } from 'react'
 import { createPortal } from 'react-dom'
-import { detectMediaKind, type MediaKind } from '../lib/mediaUrl'
+import { detectMediaKind, youtubeEmbedUrl, type MediaKind } from '../lib/mediaUrl'
 import './CardMedia.css'
 
 export function ExternalLinkIcon() {
@@ -306,6 +306,7 @@ function VideoLightbox({ url, onClose }: { url: string; onClose: () => void }) {
   const titleId = useId()
   const videoRef = useRef<HTMLVideoElement>(null)
   const closeBtnRef = useRef<HTMLButtonElement>(null)
+  const embedSrc = youtubeEmbedUrl(url)
 
   useEffect(() => {
     const prev = document.body.style.overflow
@@ -329,12 +330,13 @@ function VideoLightbox({ url, onClose }: { url: string; onClose: () => void }) {
   }, [onClose])
 
   useEffect(() => {
+    if (embedSrc) return
     const v = videoRef.current
     if (!v) return
     void v.play().catch(() => {
       /* autoplay may be blocked — controls remain */
     })
-  }, [url])
+  }, [url, embedSrc])
 
   return createPortal(
     <div
@@ -361,16 +363,27 @@ function VideoLightbox({ url, onClose }: { url: string; onClose: () => void }) {
             ✕
           </button>
         </div>
-        <video
-          ref={videoRef}
-          className="video-lightbox-player"
-          controls
-          playsInline
-          preload="metadata"
-          src={url}
-        />
+        {embedSrc ? (
+          <iframe
+            className="video-lightbox-player video-lightbox-player--embed"
+            src={embedSrc}
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            className="video-lightbox-player"
+            controls
+            playsInline
+            preload="metadata"
+            src={url}
+          />
+        )}
         <a className="video-lightbox-open" href={url} target="_blank" rel="noreferrer">
-          Open file <ExternalLinkIcon />
+          {embedSrc ? 'Open on YouTube' : 'Open file'} <ExternalLinkIcon />
         </a>
       </div>
     </div>,

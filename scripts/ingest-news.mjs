@@ -177,6 +177,13 @@ const FEEDS = [
     limit: 5,
     optional: true,
   },
+  {
+    id: 'aaron-parnas',
+    name: 'The Parnas Perspective',
+    url: 'https://aaronparnas.substack.com/feed',
+    topicIds: ['politics', 'current-events'],
+    limit: 8,
+  },
   // Black pop culture / music — verified XML only
   {
     id: 'philip-lewis',
@@ -400,6 +407,59 @@ function decodeEntities(s) {
   return decodeHtmlEntities(s)
 }
 
+const MEDIA_EXTS = new Set([
+  'mp3',
+  'm4a',
+  'aac',
+  'ogg',
+  'oga',
+  'opus',
+  'wav',
+  'flac',
+  'weba',
+  'mp4',
+  'webm',
+  'mov',
+  'm4v',
+  'ogv',
+  'mkv',
+])
+
+function mediaPathExt(url) {
+  try {
+    const path = new URL(url, 'https://example.invalid').pathname
+    const base = path.split('/').pop() || ''
+    const dot = base.lastIndexOf('.')
+    if (dot < 0 || dot === base.length - 1) return null
+    return base.slice(dot + 1).toLowerCase()
+  } catch {
+    return null
+  }
+}
+
+/** Prefer playable audio/video enclosures over webpage <link> (e.g. Club 520). */
+function mediaEnclosureUrl(block) {
+  const candidates = [
+    {
+      url: attr(block, 'enclosure', 'url'),
+      type: attr(block, 'enclosure', 'type'),
+    },
+    {
+      url: attr(block, 'media:content', 'url'),
+      type: attr(block, 'media:content', 'type'),
+    },
+  ]
+  for (const c of candidates) {
+    const url = decodeEntities(c.url || '').trim()
+    if (!url) continue
+    const type = String(c.type || '').toLowerCase()
+    if (type.startsWith('audio/') || type.startsWith('video/')) return url
+    const ext = mediaPathExt(url)
+    if (ext && MEDIA_EXTS.has(ext)) return url
+  }
+  return ''
+}
+
 function parseEntries(xml) {
   const chunks = []
   const itemRe = /<item[\s>][\s\S]*?<\/item>/gi
@@ -418,14 +478,11 @@ function parseEntries(xml) {
       const guid = tag(block, 'guid')
       if (guid.startsWith('http')) link = guid
     }
-    // Podcasts often ship audio-only (enclosure) with empty <link>
-    if (!link) {
-      link =
-        attr(block, 'enclosure', 'url') ||
-        attr(block, 'media:content', 'url') ||
-        ''
-    }
     link = decodeEntities(link)
+    // Podcast / media feeds: enclosure is the playable file; <link> is often a show page
+    const media = mediaEnclosureUrl(block)
+    if (media) link = media
+    else if (!link) link = ''
     const summary =
       tag(block, 'description') ||
       tag(block, 'summary') ||

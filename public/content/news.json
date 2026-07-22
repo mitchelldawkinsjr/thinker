@@ -1,6 +1,1503 @@
 {
-  "updatedAt": "2026-07-22T18:52:02.399Z",
+  "updatedAt": "2026-07-22T22:12:17.926Z",
   "items": [
+    {
+      "id": "rss-218cb0044f4a",
+      "hook": "NPR News: 07-22-2026 6PM EDT",
+      "title": "NPR News: 07-22-2026 6PM EDT",
+      "lesson": "NPR News: 07-22-2026 6PM EDT See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy",
+      "source": "NPR News Now",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/5ca1c5d5-3803-4381-be87-eb1e340bb31d/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=5ca1c5d5-3803-4381-be87-eb1e340bb31d&feed=O9WlY7a5&t=podcast&e=nx-s1-20260722-1800-long&p=500005&d=280&size=4481821",
+      "publishedAt": "2026-07-22T22:10:57.000Z",
+      "expiresAt": "2026-08-01T22:12:10.064Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-news-now",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/5ca1c5d5-3803-4381-be87-eb1e340bb31d/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=5ca1c5d5-3803-4381-be87-eb1e340bb31d&feed=O9WlY7a5&t=podcast&e=nx-s1-20260722-1800-long&p=500005&d=280&size=4481821"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/500005/npr-news-now"
+        }
+      ]
+    },
+    {
+      "id": "rss-ecd2c534f684",
+      "hook": "John Paulson says we are in the early stages of a long-term bull…",
+      "title": "John Paulson says we are in the early stages of a long-term bull market for gold",
+      "lesson": "He said demand for bullion continues to broaden, led by central banks that have been adding to their reserves alongside growing private-sector",
+      "source": "CNBC · Finance",
+      "sourceUrl": "https://www.cnbc.com/2026/07/22/john-paulson-says-we-are-in-early-stages-of-a-long-term-bull-market-for-gold.html",
+      "publishedAt": "2026-07-22T22:06:49.000Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "cnbc-finance",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cnbc.com/2026/07/22/john-paulson-says-we-are-in-early-stages-of-a-long-term-bull-market-for-gold.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-11573ae77cc8",
+      "hook": "Trina Gives Yung Miami Advice After Nicci Gilbert Sparks Viral…",
+      "title": "Trina Gives Yung Miami Advice After Nicci Gilbert Sparks Viral Debate With Her Take On ‘Spend Dat’ (VIDEOS)",
+      "lesson": "Whew, Roommates! The debate over Yung Miami’s hit song ‘Spend Dat’ isn’t slowing down. Nicci Gilbert, one of the voices behind the R&B group Brownstone, recently jumped into the conversation and shared her thoughts on the viral track. Now, with social media still going back and forth over Miami’s record, Trina has",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/trina-weighs-in-yung-miam-spend-dat-nicci-gilbert-comments-the-shade-room/",
+      "publishedAt": "2026-07-22T22:04:12.000Z",
+      "expiresAt": "2026-08-01T22:12:17.324Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/trina-weighs-in-yung-miam-spend-dat-nicci-gilbert-comments-the-shade-room/"
+        }
+      ]
+    },
+    {
+      "id": "rss-a1f2566948ca",
+      "hook": "Iranian missiles show deadly precision amid US-Iran war escalation",
+      "title": "Iranian missiles show deadly precision amid US-Iran war escalation",
+      "lesson": "Killing of three US soldiers at Jordan base shows Iran maintains the ability to exact deadly toll in grinding conflict.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/iranian-missiles-show-deadly-precision-amid-us-iran-war-escalation?traffic_source=rss",
+      "publishedAt": "2026-07-22T22:03:13.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/iranian-missiles-show-deadly-precision-amid-us-iran-war-escalation?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-2250fd9ebd11",
+      "hook": "Republicans in Congress continue to back Iran war despite the…",
+      "title": "Republicans in Congress continue to back Iran war despite the political risk",
+      "lesson": "WASHINGTON (AP) — Republicans on Capitol Hill are walking a cautious election-year line on the Iran war as the future of the conflict seems",
+      "source": "Congress",
+      "sourceUrl": "https://ktar.com/national-news/republicans-in-congress-continue-to-back-iran-war-despite-the-political-risk/5891319/",
+      "publishedAt": "2026-07-22T21:53:39.000Z",
+      "expiresAt": "2026-07-25T22:12:12.316Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://ktar.com/national-news/republicans-in-congress-continue-to-back-iran-war-despite-the-political-risk/5891319/"
+        }
+      ]
+    },
+    {
+      "id": "rss-40daa1161971",
+      "hook": "House Republicans adopt $95 billion package for the Iran war and…",
+      "title": "House Republicans adopt $95 billion package for the Iran war and Trump’s priorities",
+      "lesson": "The package includes $73 billion for the Pentagon and other national security needs and $12 billion for farmers struggling under President Trump’s",
+      "source": "Congress",
+      "sourceUrl": "https://federalnewsnetwork.com/congress/2026/07/house-republicans-push-95-billion-package-for-the-iran-war-and-trumps-priorities/",
+      "publishedAt": "2026-07-22T21:51:27.000Z",
+      "expiresAt": "2026-07-25T22:12:12.316Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://federalnewsnetwork.com/congress/2026/07/house-republicans-push-95-billion-package-for-the-iran-war-and-trumps-priorities/"
+        }
+      ]
+    },
+    {
+      "id": "rss-7c3cbdb4bca7",
+      "hook": "House passes Pentagon funding and limits on stock trades in a last…",
+      "title": "House passes Pentagon funding and limits on stock trades in a last dash before recess",
+      "lesson": "Republicans passed more than $1 trillion for the Pentagon alongside a budget blueprint that would let them bypass Democrats to unlock new funds for the Iran war and Trump's election overhaul",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5903130/house-vote-iran-war-funding-reconciliation",
+      "publishedAt": "2026-07-22T21:51:19.000Z",
+      "expiresAt": "2026-07-25T22:12:10.003Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5903130/house-vote-iran-war-funding-reconciliation"
+        }
+      ]
+    },
+    {
+      "id": "rss-e93e57dd8561",
+      "hook": "Iran warns of regional turmoil if US threats and attacks do not stop",
+      "title": "Iran warns of regional turmoil if US threats and attacks do not stop",
+      "lesson": "Tehran's chief negotiator says if Iran's 'security is not ensured, no infrastructure will be safe'.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/iran-warns-of-regional-turmoil-if-us-threats-and-attacks-do-not?traffic_source=rss",
+      "publishedAt": "2026-07-22T21:41:32.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/iran-warns-of-regional-turmoil-if-us-threats-and-attacks-do-not?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-2c435765a60c",
+      "hook": "Is US Congress finally on the verge of a change? – Stateside with…",
+      "title": "Is US Congress finally on the verge of a change? – Stateside with Kai and Carter",
+      "lesson": "Four Guardian journalists discuss gerontocracy, transparency, the rise of the Democratic Socialists of America, and just how much of an inflection point this summer might be for both",
+      "source": "Congress",
+      "sourceUrl": "https://www.theguardian.com/us-news/video/2026/jul/22/congress-change-stateside-podcast",
+      "publishedAt": "2026-07-22T21:40:10.000Z",
+      "expiresAt": "2026-07-25T22:12:12.316Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.theguardian.com/us-news/video/2026/jul/22/congress-change-stateside-podcast"
+        }
+      ]
+    },
+    {
+      "id": "rss-9a1b3d4135b4",
+      "hook": "Musk faces investors as Tesla’s stock falls after earnings miss…",
+      "title": "Musk faces investors as Tesla’s stock falls after earnings miss expectations",
+      "lesson": "Musk faces investors as Tesla’s stock falls after earnings miss expectations",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=93df1e00-9dff-420a-a3f1-b39fb2e2a774&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T21:38:14.000Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "marketwatch-bulletins",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=93df1e00-9dff-420a-a3f1-b39fb2e2a774&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-ed0473452b87",
+      "hook": "Wounded Gaza journalists call for urgent medical evacuation",
+      "title": "Wounded Gaza journalists call for urgent medical evacuation",
+      "lesson": "Wounded and chronically ill Palestinian journalists held a protest calling for urgent medical evacuation from Gaza.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/wounded-gaza-journalists-call-for-urgent-medical-evacuation?traffic_source=rss",
+      "publishedAt": "2026-07-22T21:36:37.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/wounded-gaza-journalists-call-for-urgent-medical-evacuation?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-44ef4da5fb15",
+      "hook": "US judge sets 2027 trial date for Venezuela’s Maduro and wife in…",
+      "title": "US judge sets 2027 trial date for Venezuela’s Maduro and wife in drug case",
+      "lesson": "A US judge has set June 2027 as the trial date for Venezuela’s former president Nicolás Maduro and his wife Cilia Flores. The couple appeared in a New York court, where they pleaded not guilty to drug trafficking and related charges. US prosecutors accuse Maduro and Flores of being involved in a conspiracy to move",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/65a646eb-745f-4e69-88a5-b48f0162dbdd/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T21:32:08.000Z",
+      "expiresAt": "2026-07-25T22:12:09.833Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/65a646eb-745f-4e69-88a5-b48f0162dbdd/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-4e58225ee682",
+      "hook": "US and Saudi Arabia announce nuclear cooperation deal",
+      "title": "US and Saudi Arabia announce nuclear cooperation deal",
+      "lesson": "Trump administration says 'historic' agreement will 'reinforce global nonproliferation standards' and create jobs in US.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/us-and-saudi-arabia-announce-nuclear-cooperation-deal?traffic_source=rss",
+      "publishedAt": "2026-07-22T21:30:25.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/us-and-saudi-arabia-announce-nuclear-cooperation-deal?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-b297cc61d7f2",
+      "hook": "Syd Says the Internet’s New Album is Almost Done — and It’s “Super Fire”",
+      "title": "Syd Says the Internet’s New Album is Almost Done — and It’s “Super Fire”",
+      "lesson": "After she and Steve Lacy released solo albums on the same day, they're getting back to work on the band's new project, with an adjusted",
+      "source": "Vibe",
+      "sourceUrl": "https://www.vibe.com/features/editorial/syd-the-internet-new-album-almost-done-1235180704/",
+      "publishedAt": "2026-07-22T21:28:56.000Z",
+      "expiresAt": "2026-08-01T22:12:16.683Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "vibe",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.vibe.com/features/editorial/syd-the-internet-new-album-almost-done-1235180704/"
+        }
+      ]
+    },
+    {
+      "id": "rss-9e4fbf9df24f",
+      "hook": "RFK Jr. says parasitic cyclosporiasis outbreak 'under control,' as…",
+      "title": "RFK Jr. says parasitic cyclosporiasis outbreak 'under control,' as more than 11,000 cases reported",
+      "lesson": "Health Secretary Robert F. Kennedy Jr. said that the cyclosporiasis outbreak was under control\" as the investigation into the source of the illness continues. The Center for Disease Control and Prevention on Wednesday said that there have been more than 11,500 cases of the illness in 41 states, ABC News",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/healthcare-rfk-jr-says-parasitic-cyclosporiasis-outbreak-under-control-more-11000-cases-reported",
+      "publishedAt": "2026-07-22T21:27:33.000Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/healthcare-rfk-jr-says-parasitic-cyclosporiasis-outbreak-under-control-more-11000-cases-reported"
+        }
+      ]
+    },
+    {
+      "id": "rss-ec60da45c05a",
+      "hook": "Cyclosporiasis Cases in the United States Hit Record High",
+      "title": "Cyclosporiasis Cases in the United States Hit Record High",
+      "lesson": "The Centers for Disease Control and Prevention announced on Tuesday that it had confirmed more than 2,500 additional cases of cyclospora infections in the United States, making 2026 the worst year for the parasitic infection on record. Since May 1, there have been 4,173 confirmed domestic cases across 41 states, as",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/healthcare-cyclosporiasis-cases-united-states-hit-record-high",
+      "publishedAt": "2026-07-22T21:27:33.000Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/healthcare-cyclosporiasis-cases-united-states-hit-record-high"
+        }
+      ]
+    },
+    {
+      "id": "rss-1e0dd648dc85",
+      "hook": "Cyclospora cases in US hit all time high",
+      "title": "Cyclospora cases in US hit all time high",
+      "lesson": "The Centers for Disease Control and Prevention (CDC) said it confirmed more than 2,500 additional cases of cyclosporiasis infections across dozens of states, making it the largest outbreak on record. Nationwide, CDC said it has confirmed 4,173 cases of cyclosporiasis since May 1, though some states are seeing much",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/healthcare-cyclospora-cases-us-hit-all-time-high",
+      "publishedAt": "2026-07-22T21:27:33.000Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/healthcare-cyclospora-cases-us-hit-all-time-high"
+        }
+      ]
+    },
+    {
+      "id": "rss-02f4ab3ce18e",
+      "hook": "House Republicans adopt $95 billion package for the Iran war and…",
+      "title": "House Republicans adopt $95 billion package for the Iran war and Trump's priorities",
+      "lesson": "The vote tally was 216-214, with all Democrats opposed.",
+      "source": "Congress",
+      "sourceUrl": "https://abc7ny.com/post/house-republicans-adopt-95-billion-package-iran-war-trumps-priorities/19558620/",
+      "publishedAt": "2026-07-22T21:26:17.000Z",
+      "expiresAt": "2026-07-25T22:12:12.316Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://abc7ny.com/post/house-republicans-adopt-95-billion-package-iran-war-trumps-priorities/19558620/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c08a07e45060",
+      "hook": "Stocks making the biggest moves after hours: Alphabet, Tesla, IBM,…",
+      "title": "Stocks making the biggest moves after hours: Alphabet, Tesla, IBM, Las Vegas Sands, ServiceNow & more",
+      "lesson": "These are the stocks posting the largest moves in after hours trading.",
+      "source": "CNBC · Finance",
+      "sourceUrl": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-after-hours-googl-tsla-ibm-lvs.html",
+      "publishedAt": "2026-07-22T21:21:52.000Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "cnbc-finance",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-after-hours-googl-tsla-ibm-lvs.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-e1e558c0a04c",
+      "hook": "House Passes Miller-Meeks Backed Bill to Ban Congressional Stock Trading",
+      "title": "House Passes Miller-Meeks Backed Bill to Ban Congressional Stock Trading",
+      "lesson": "The U.S. House of Representatives has passed the Stop Insider Trading Act, led by Congresswoman Mariannette Miller-Meeks (IA-01), which bans Members of Congress, their spouses, and dependent children from purchasing stocks and requires public notice before these individuals may sell",
+      "source": "Congress",
+      "sourceUrl": "http://millermeeks.house.gov/media/press-releases/house-passes-miller-meeks-backed-bill-ban-congressional-stock-trading",
+      "publishedAt": "2026-07-22T21:21:29.000Z",
+      "expiresAt": "2026-07-25T22:12:12.316Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "http://millermeeks.house.gov/media/press-releases/house-passes-miller-meeks-backed-bill-ban-congressional-stock-trading"
+        }
+      ]
+    },
+    {
+      "id": "rss-42adceedc6c2",
+      "hook": "Afghanistan floods leave dozens dead and missing as Nuristan faces…",
+      "title": "Afghanistan floods leave dozens dead and missing as Nuristan faces massive destruction",
+      "lesson": "Flash floods have killed at least 23 people in Afghanistan's mountainous Nuristan province, with more than 100 others still missing. The regional capital, Parun, bore the brunt of the destruction after torrential rain on Monday caused rivers to burst their banks, unleashing mudslides that swept away homes, markets and",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/3dd41766-a74a-436e-aa84-b48f015eec8c/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T21:17:52.000Z",
+      "expiresAt": "2026-07-25T22:12:09.833Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/3dd41766-a74a-436e-aa84-b48f015eec8c/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-9a32bf6f044a",
+      "hook": "Trump administration signs commercial nuclear deal with Saudi Arabia",
+      "title": "Trump administration signs commercial nuclear deal with Saudi Arabia",
+      "lesson": "The agreement gives American companies priority access to nuclear reactors and fuel to Saudi Arabia. It's expected to last decades and be worth billions of",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5903293/trump-saudi-arabia-nuclear-deal",
+      "publishedAt": "2026-07-22T21:17:24.000Z",
+      "expiresAt": "2026-07-25T22:12:10.003Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5903293/trump-saudi-arabia-nuclear-deal"
+        }
+      ]
+    },
+    {
+      "id": "rss-01690b240d81",
+      "hook": "Malcolm-Jamal Warner’s Widow Speaks Out & Claims She Had “No Choice”…",
+      "title": "Malcolm-Jamal Warner’s Widow Speaks Out & Claims She Had “No Choice” But To Sue His Mother (VIDEO)",
+      "lesson": "A private family matter has made its way to the courtroom nearly a year after Malcolm-Jamal Warner’s passing. New legal filings reveal that his widow, Tenisha Warner, is now involved in a dispute over the late actor’s estate. The legal matter has also brought attention to his mother, who is connected to the estate as",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/malcolm-jamal-warner-widow-breaks-silence-estate-battle-rumored-tension-mother-videos/",
+      "publishedAt": "2026-07-22T21:12:11.000Z",
+      "expiresAt": "2026-08-01T22:12:17.324Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/malcolm-jamal-warner-widow-breaks-silence-estate-battle-rumored-tension-mother-videos/"
+        }
+      ]
+    },
+    {
+      "id": "rss-f12e4f91508e",
+      "hook": "NPR News: 07-22-2026 5PM EDT",
+      "title": "NPR News: 07-22-2026 5PM EDT",
+      "lesson": "NPR News: 07-22-2026 5PM EDT See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy",
+      "source": "NPR News Now",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/55812bf0-c75f-4ced-926c-92bf98509c77/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=55812bf0-c75f-4ced-926c-92bf98509c77&feed=O9WlY7a5&t=podcast&e=nx-s1-20260722-1700-long&p=500005&d=280&size=4481820",
+      "publishedAt": "2026-07-22T21:10:28.000Z",
+      "expiresAt": "2026-08-01T22:12:10.064Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-news-now",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/55812bf0-c75f-4ced-926c-92bf98509c77/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=55812bf0-c75f-4ced-926c-92bf98509c77&feed=O9WlY7a5&t=podcast&e=nx-s1-20260722-1700-long&p=500005&d=280&size=4481820"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/500005/npr-news-now"
+        }
+      ]
+    },
+    {
+      "id": "rss-0bb5896deddd",
+      "hook": "Former defence minister Al Carns turns down ministerial offer",
+      "title": "Former defence minister Al Carns turns down ministerial offer",
+      "lesson": "Carns quit following the resignation of John Healey as defence secretary in a row over military funding.",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c74geex0k82o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-22T21:10:03.000Z",
+      "expiresAt": "2026-07-25T22:12:12.075Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "bbc-politics",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/c74geex0k82o?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-6b3bf758abbe",
+      "hook": "ServiceNow’s stock rises as earnings show momentum in cybersecurity",
+      "title": "ServiceNow’s stock rises as earnings show momentum in cybersecurity",
+      "lesson": "ServiceNow’s stock rises as earnings show momentum in cybersecurity",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=99d2dc1b-49dc-4608-b816-dbf77376d485&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T21:09:08.000Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "marketwatch-bulletins",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=99d2dc1b-49dc-4608-b816-dbf77376d485&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-551ce66b2332",
+      "hook": "Democrats try new war powers resolution despite past failures",
+      "title": "Democrats try new war powers resolution despite past failures",
+      "lesson": "Senate Minority Leader Chuck Schumer announced Wednesday that Democrats will force another vote on a war powers resolution.",
+      "source": "War",
+      "sourceUrl": "https://katu.com/news/nation-world/senate-democrats-try-new-iran-war-powers-resolution-despite-past-failures-congress-president-trump-white-house",
+      "publishedAt": "2026-07-22T21:01:24.000Z",
+      "expiresAt": "2026-07-25T22:12:12.395Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://katu.com/news/nation-world/senate-democrats-try-new-iran-war-powers-resolution-despite-past-failures-congress-president-trump-white-house"
+        }
+      ]
+    },
+    {
+      "id": "rss-5f8d31f5ab27",
+      "hook": "U.S. Surges Forces Toward Middle East, Giving Trump Options to…",
+      "title": "U.S. Surges Forces Toward Middle East, Giving Trump Options to Expand Iran War",
+      "lesson": "The influx of troops, medics and weaponry follows the deaths of three American soldiers in an Iranian weekend attack.",
+      "source": "War",
+      "sourceUrl": "https://www.wsj.com/world/middle-east/u-s-surges-forces-toward-middle-east-giving-trump-options-to-expand-iran-war-e5d627b1",
+      "publishedAt": "2026-07-22T21:00:00.000Z",
+      "expiresAt": "2026-07-25T22:12:12.395Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.wsj.com/world/middle-east/u-s-surges-forces-toward-middle-east-giving-trump-options-to-expand-iran-war-e5d627b1"
+        }
+      ]
+    },
+    {
+      "id": "rss-0b2fae5714b5",
+      "hook": "House Backs Trump Iran War Budget Despite Midterm Election Fears",
+      "title": "House Backs Trump Iran War Budget Despite Midterm Election Fears",
+      "lesson": "House Republicans approved a $95 billion budget plan largely aimed at funding President Donald Trump’s Iran war despite rising fears the unpopular conflict and surging consumer energy prices will endanger GOP lawmakers’ prospects in the midterm",
+      "source": "War",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-07-22/house-backs-trump-iran-war-budget-despite-midterm-election-fears",
+      "publishedAt": "2026-07-22T20:59:54.000Z",
+      "expiresAt": "2026-07-25T22:12:12.395Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-22/house-backs-trump-iran-war-budget-despite-midterm-election-fears"
+        }
+      ]
+    },
+    {
+      "id": "rss-503c5edea80f",
+      "hook": "India’s Rahul Gandhi speaks out after release",
+      "title": "India’s Rahul Gandhi speaks out after release",
+      "lesson": "Indian opposition leader Rahul Gandhi has spoken out publicly for the first time since he was arrested during protests.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/indias-rahul-gandhi-speaks-out-after-release?traffic_source=rss",
+      "publishedAt": "2026-07-22T20:59:28.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/indias-rahul-gandhi-speaks-out-after-release?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-2ef0c2a3044e",
+      "hook": "Lebanon PM visits first ‘pilot zone’ after Israeli withdrawal amid…",
+      "title": "Lebanon PM visits first ‘pilot zone’ after Israeli withdrawal amid residents' anger",
+      "lesson": "Lebanon's Prime Minister Nawaf Salam has planted the national flag in Zawtar al-Gharbiya, marking a symbolic return of state authority a day after Israeli forces withdrew from the southern town, one of three designated \"pilot zones\". Residents remain sceptical, with many stopped at an army checkpoint and told they",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/f47b020f-32b6-4a41-88ca-b48f0159cbd1/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T20:59:16.000Z",
+      "expiresAt": "2026-07-25T22:12:09.833Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/f47b020f-32b6-4a41-88ca-b48f0159cbd1/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-9dcc36efcad3",
+      "hook": "IBM just cut its outlook — but the stock is bouncing after its…",
+      "title": "IBM just cut its outlook — but the stock is bouncing after its earnings anyway",
+      "lesson": "IBM just cut its outlook — but the stock is bouncing after its earnings anyway",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=99f034de-7fd1-4941-9323-71d35b35ce75&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T20:56:50.000Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "marketwatch-bulletins",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=99f034de-7fd1-4941-9323-71d35b35ce75&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-9511eafc41a1",
+      "hook": "House passes bill to limit stock purchases by members of Congress",
+      "title": "House passes bill to limit stock purchases by members of Congress",
+      "lesson": "House passes bill to limit stock purchases by members of Congress",
+      "source": "Congress",
+      "sourceUrl": "https://www.cbsnews.com/news/congress-stock-trading-limits-house-vote/",
+      "publishedAt": "2026-07-22T20:54:14.000Z",
+      "expiresAt": "2026-07-25T22:12:12.316Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cbsnews.com/news/congress-stock-trading-limits-house-vote/"
+        }
+      ]
+    },
+    {
+      "id": "rss-859f7f7b2d17",
+      "hook": "Prayers Up! 23-Year-Old Woman Passes Away In Japan After Man Falls…",
+      "title": "Prayers Up! 23-Year-Old Woman Passes Away In Japan After Man Falls From Building Onto Her",
+      "lesson": "Over the weekend, a 23-year-old woman lost her life in Japan after a man fell from a building onto her. He survived the fall, which happened on Sunday (July 20) in a busy district.RELATED: Prayers Up! Gloss Up Shares Details About Car Accident That Left Her Undergoing Dramatic Foot Surgery (VIDEO)Details About",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/japan-woman-houra-inaba-passes-away-man-shinsei-taguchi-falls-on-her-apartment-building/",
+      "publishedAt": "2026-07-22T20:53:38.000Z",
+      "expiresAt": "2026-08-01T22:12:17.324Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/japan-woman-houra-inaba-passes-away-man-shinsei-taguchi-falls-on-her-apartment-building/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c7eb4a70f58a",
+      "hook": "Tesla earnings: Cybercab production, FSD adoption can't keep stock…",
+      "title": "Tesla earnings: Cybercab production, FSD adoption can't keep stock from falling",
+      "lesson": "Tesla earnings: Cybercab production, FSD adoption can't keep stock from falling",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=aecc3de4-4781-4c42-9b90-122ae2c85653&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T20:53:04.000Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "marketwatch-bulletins",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=aecc3de4-4781-4c42-9b90-122ae2c85653&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-1ae363b72a4a",
+      "hook": "Caleb Wilson, Chicago Bulls teammates pair up for scrimmage",
+      "title": "Caleb Wilson, Chicago Bulls teammates pair up for scrimmage",
+      "lesson": "Caleb Wilson is quickly taking the NBA by storm. The former Tar Heel delivered more highlights in a recent scrimmage with this Chicago Bulls",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://tarheelswire.usatoday.com/story/sports/college/tarheels/mens-basketball/2026/07/22/unc-basketball-caleb-wilson-chicago-bulls-matas-buzelis-nba/91014167007/",
+      "publishedAt": "2026-07-22T20:49:07.000Z",
+      "expiresAt": "2026-08-01T22:12:17.537Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://tarheelswire.usatoday.com/story/sports/college/tarheels/mens-basketball/2026/07/22/unc-basketball-caleb-wilson-chicago-bulls-matas-buzelis-nba/91014167007/"
+        }
+      ]
+    },
+    {
+      "id": "rss-de8e47b6c4c7",
+      "hook": "Victoria Monét Announces ‘Frequency of Love’ Release Date & Drops…",
+      "title": "Victoria Monét Announces ‘Frequency of Love’ Release Date & Drops Kaytranada-Produced ‘Reach Out’ Single",
+      "lesson": "The Grammy winner's \"Let Me\" topped the Adult R&B Airplay chart in June.",
+      "source": "Billboard R&B/Hip-Hop",
+      "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/victoria-monet-frequency-of-love-reach-out-kaytranada-1236300946/",
+      "publishedAt": "2026-07-22T20:43:30.000Z",
+      "expiresAt": "2026-08-01T22:12:16.244Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "billboard-rb-hip-hop",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.billboard.com/music/rb-hip-hop/victoria-monet-frequency-of-love-reach-out-kaytranada-1236300946/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c141e6d29841",
+      "hook": "Democrats turn annual defense bill into a vote on Trump’s Iran war",
+      "title": "Democrats turn annual defense bill into a vote on Trump’s Iran war",
+      "lesson": "Democrats look at the National Defense Authorization Act as a proxy vote on Trump's war with Iran.",
+      "source": "War",
+      "sourceUrl": "https://www.ms.now/news/democrats-annual-defense-bill-vote-trump-iran-war",
+      "publishedAt": "2026-07-22T20:39:35.000Z",
+      "expiresAt": "2026-07-25T22:12:12.395Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.ms.now/news/democrats-annual-defense-bill-vote-trump-iran-war"
+        }
+      ]
+    },
+    {
+      "id": "rss-48c6f0a662a4",
+      "hook": "US regulators to weigh controversial peptides backed by RFK Jr",
+      "title": "US regulators to weigh controversial peptides backed by RFK Jr",
+      "lesson": "FDA has questioned the evidence as demand surges for the compounds promoted for sleep, muscle growth, and anti-ageing.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/us-regulators-to-weigh-controversial-peptides-backed-by-rfk-jr?traffic_source=rss",
+      "publishedAt": "2026-07-22T20:39:14.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/us-regulators-to-weigh-controversial-peptides-backed-by-rfk-jr?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-83edca522bda",
+      "hook": "Can Trump revive America's auto industry? | This is America",
+      "title": "Can Trump revive America's auto industry? | This is America",
+      "lesson": "This is America, which boasts one of the most powerful and resilient automotive industries in the world, serving as a primary engine of the nation’s economic and technological power. But today, the industry is confronting a new set of challenges -- unprecedented global competition, shifting international supply chains",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/622c558b-2899-449f-8043-b48f0153af79/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T20:37:41.000Z",
+      "expiresAt": "2026-07-25T22:12:09.833Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/622c558b-2899-449f-8043-b48f0153af79/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-5a831e9f1792",
+      "hook": "As casualties rise, do the politics of the Iran war change?",
+      "title": "As casualties rise, do the politics of the Iran war change?",
+      "lesson": "President Trump attended the dignified transfer on Wednesday of four U.S. soldiers killed in the Iran war. We discuss how the latest casualties affect the politics of the war, and how Congress took Defense Secretary Pete Hegseth’s request for billions more in funding for the war. This episode: senior political",
+      "source": "NPR Politics Podcast",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/69cb855a-8d27-40a0-adf7-c895f20c46af/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=69cb855a-8d27-40a0-adf7-c895f20c46af&feed=iDPaKWvZ&t=podcast&e=nx-s1-5902925&p=510310&d=1263&size=20221746",
+      "publishedAt": "2026-07-22T20:34:59.000Z",
+      "expiresAt": "2026-07-25T22:12:10.467Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics-podcast",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/69cb855a-8d27-40a0-adf7-c895f20c46af/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=69cb855a-8d27-40a0-adf7-c895f20c46af&feed=iDPaKWvZ&t=podcast&e=nx-s1-5902925&p=510310&d=1263&size=20221746"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510310/npr-politics-podcast"
+        }
+      ]
+    },
+    {
+      "id": "rss-0c593759573a",
+      "hook": "Ukraine’s new military chief pledges to escalate retaliation against…",
+      "title": "Ukraine’s new military chief pledges to escalate retaliation against Russia",
+      "lesson": "Russian Foreign Minister Sergei Lavrov is due to meet US counterpart Marco Rubio, but progress towards peace unlikely.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/ukraines-new-military-chief-pledges-to-escalate-retaliation-against-russia?traffic_source=rss",
+      "publishedAt": "2026-07-22T20:34:56.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/ukraines-new-military-chief-pledges-to-escalate-retaliation-against-russia?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-91ad5ed21292",
+      "hook": "House GOP cites \"socialist takeover\" in bid to stop D.C. from…",
+      "title": "House GOP cites \"socialist takeover\" in bid to stop D.C. from raising taxes",
+      "lesson": "A bill limiting D.C.'s taxing authority advanced out of the Oversight Committee on Wednesday.",
+      "source": "Congress",
+      "sourceUrl": "https://www.axios.com/local/washington-dc/2026/07/22/house-republicans-bill-dc-taxes-james-comer",
+      "publishedAt": "2026-07-22T20:29:31.000Z",
+      "expiresAt": "2026-07-25T22:12:12.316Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.axios.com/local/washington-dc/2026/07/22/house-republicans-bill-dc-taxes-james-comer"
+        }
+      ]
+    },
+    {
+      "id": "rss-9fa35237a3dc",
+      "hook": "GOP advances a bill requiring Congress to approve all tax changes…",
+      "title": "GOP advances a bill requiring Congress to approve all tax changes and fees in DC",
+      "lesson": "GOP advances a bill requiring Congress to approve all tax changes and fees in DC",
+      "source": "Congress",
+      "sourceUrl": "https://www.wusa9.com/article/news/local/dc/gop-advances-a-bill-requiring-congress-to-approve-all-tax-changes-and-fees-dc/65-7b785ada-cc5a-4878-bcef-c2e1c29bd7ec",
+      "publishedAt": "2026-07-22T20:26:00.000Z",
+      "expiresAt": "2026-07-25T22:12:12.316Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.wusa9.com/article/news/local/dc/gop-advances-a-bill-requiring-congress-to-approve-all-tax-changes-and-fees-dc/65-7b785ada-cc5a-4878-bcef-c2e1c29bd7ec"
+        }
+      ]
+    },
+    {
+      "id": "rss-f628279c383a",
+      "hook": "Tesla's stock falls as Musk-led EV maker reports earnings that miss…",
+      "title": "Tesla's stock falls as Musk-led EV maker reports earnings that miss expectations",
+      "lesson": "Tesla's stock falls as Musk-led EV maker reports earnings that miss expectations",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=9fa91342-a4e4-46a8-ac70-d7e0339f8cd8&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T20:22:12.000Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "marketwatch-bulletins",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=9fa91342-a4e4-46a8-ac70-d7e0339f8cd8&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-9c2954ca0682",
+      "hook": "Griffiths: Diplomacy requires US and Iran to accept they have ‘lost‘",
+      "title": "Griffiths: Diplomacy requires US and Iran to accept they have ‘lost‘",
+      "lesson": "Griffiths: Diplomacy requires US and Iran to accept they have ‘lost‘",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/griffiths-diplomacy-requires-us-and-iran-to-accept-they-have?traffic_source=rss",
+      "publishedAt": "2026-07-22T20:20:57.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/griffiths-diplomacy-requires-us-and-iran-to-accept-they-have?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-11961bcabf4a",
+      "hook": "Unboxed: Antoinette Wooden Wants Black Women To Find Wellness…",
+      "title": "Unboxed: Antoinette Wooden Wants Black Women To Find Wellness Through Archery",
+      "lesson": "Connecting emotional therapy and archery has become the foundation of Wooden’s practices and has been of great benefit for her local",
+      "source": "Essence",
+      "sourceUrl": "https://www.essence.com/lifestyle/unboxed-antoinette-wooden-archery/",
+      "publishedAt": "2026-07-22T20:18:39.000Z",
+      "expiresAt": "2026-08-01T22:12:16.129Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "essence",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.essence.com/lifestyle/unboxed-antoinette-wooden-archery/"
+        }
+      ]
+    },
+    {
+      "id": "rss-08bdc56aa67c",
+      "hook": "US Casualties Underscore Toll of Unpopular War With Iran",
+      "title": "US Casualties Underscore Toll of Unpopular War With Iran",
+      "lesson": "Images of US service members in caskets are a reminder that Trump — as he repeatedly vowed not to do — has started a new war in the Middle",
+      "source": "War",
+      "sourceUrl": "https://www.bloomberg.com/news/newsletters/2026-07-22/us-casualties-underscore-toll-of-unpopular-war-with-iran",
+      "publishedAt": "2026-07-22T20:15:18.000Z",
+      "expiresAt": "2026-07-25T22:12:12.395Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bloomberg.com/news/newsletters/2026-07-22/us-casualties-underscore-toll-of-unpopular-war-with-iran"
+        }
+      ]
+    },
+    {
+      "id": "rss-b5f2accfe6e5",
+      "hook": "NPR News: 07-22-2026 4PM EDT",
+      "title": "NPR News: 07-22-2026 4PM EDT",
+      "lesson": "NPR News: 07-22-2026 4PM EDT See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy",
+      "source": "NPR News Now",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/09dd9299-0492-4701-ab39-a66d4dfa0f10/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=09dd9299-0492-4701-ab39-a66d4dfa0f10&feed=O9WlY7a5&t=podcast&e=nx-s1-20260722-1600-long&p=500005&d=280&size=4481821",
+      "publishedAt": "2026-07-22T20:14:46.000Z",
+      "expiresAt": "2026-08-01T22:12:10.064Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-news-now",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/09dd9299-0492-4701-ab39-a66d4dfa0f10/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=09dd9299-0492-4701-ab39-a66d4dfa0f10&feed=O9WlY7a5&t=podcast&e=nx-s1-20260722-1600-long&p=500005&d=280&size=4481821"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/500005/npr-news-now"
+        }
+      ]
+    },
+    {
+      "id": "rss-ea67b0f1295e",
+      "hook": "Tesla earnings: Elon Musk's EV maker delivers mixed results, led by…",
+      "title": "Tesla earnings: Elon Musk's EV maker delivers mixed results, led by profit miss",
+      "lesson": "Tesla earnings: Elon Musk's EV maker delivers mixed results, led by profit miss",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=83d7ee42-d4d1-4f1a-b9ad-770d9a3bc28b&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T20:13:04.000Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "marketwatch-bulletins",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=83d7ee42-d4d1-4f1a-b9ad-770d9a3bc28b&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-10d17c93a842",
+      "hook": "Alphabet earnings: Google parent's capex doubles as AI spending boom…",
+      "title": "Alphabet earnings: Google parent's capex doubles as AI spending boom continues",
+      "lesson": "Alphabet earnings: Google parent's capex doubles as AI spending boom continues",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=d83c1fe3-0ea6-4ed9-af5b-3cd9958ed8f0&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T20:09:27.000Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "marketwatch-bulletins",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=d83c1fe3-0ea6-4ed9-af5b-3cd9958ed8f0&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-d7236b6038ed",
+      "hook": "UN rights chief condemns Nicaragua’s decision to abolish elections",
+      "title": "UN rights chief condemns Nicaragua’s decision to abolish elections",
+      "lesson": "UN rights chief condemns worsening repression in Nicaragua, urging the restoration of freedoms and the rule of law.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/un-rights-chief-condemns-nicaraguas-decision-to-abolish-elections?traffic_source=rss",
+      "publishedAt": "2026-07-22T20:07:35.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/un-rights-chief-condemns-nicaraguas-decision-to-abolish-elections?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-d17c4e32a330",
+      "hook": "Trump: Iran will ‘pay a big price’ for US troop deaths",
+      "title": "Trump: Iran will ‘pay a big price’ for US troop deaths",
+      "lesson": "US President Trump warned that Iran will ‘pay a big price’ right before he attended a dignified transfer ceremony.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/trump-iran-will-pay-a-big-price-for-us-troop-deaths?traffic_source=rss",
+      "publishedAt": "2026-07-22T20:06:31.000Z",
+      "expiresAt": "2026-07-25T22:12:09.589Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/trump-iran-will-pay-a-big-price-for-us-troop-deaths?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-295f4a486a08",
+      "hook": "Stocks close mostly lower as Iran conflict pushes up oil prices and…",
+      "title": "Stocks close mostly lower as Iran conflict pushes up oil prices and bond yields",
+      "lesson": "Stocks close mostly lower as Iran conflict pushes up oil prices and bond yields",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=40dd01d9-eb45-4473-b1c5-ad884f55f9e1&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T20:05:28.000Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "marketwatch-bulletins",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=40dd01d9-eb45-4473-b1c5-ad884f55f9e1&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-56e5d4ff622a",
+      "hook": "Blueface Tells Pregnant Girlfriend He Cheated With Chrisean Rock",
+      "title": "Blueface Tells Pregnant Girlfriend He Cheated With Chrisean Rock",
+      "lesson": "Blue met up with his ex Chrisean at a party on livestream. Continue reading…",
+      "source": "XXL",
+      "sourceUrl": "https://www.xxlmag.com/blueface-nevaeh-cheated-chrisean-rock/",
+      "publishedAt": "2026-07-22T20:04:22.000Z",
+      "expiresAt": "2026-08-01T22:12:16.566Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "xxl",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.xxlmag.com/blueface-nevaeh-cheated-chrisean-rock/"
+        }
+      ]
+    },
+    {
+      "id": "rss-bf49cecd796e",
+      "hook": "The American People Need the Truth About the Iran War",
+      "title": "The American People Need the Truth About the Iran War",
+      "lesson": "The president and the Pentagon are not being up front about what has happened in more than 20 weeks of hostilities.",
+      "source": "War",
+      "sourceUrl": "https://www.theatlantic.com/ideas/2026/07/trump-iran-conflict-pentagon/688026/",
+      "publishedAt": "2026-07-22T20:03:30.000Z",
+      "expiresAt": "2026-07-25T22:12:12.395Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.theatlantic.com/ideas/2026/07/trump-iran-conflict-pentagon/688026/"
+        }
+      ]
+    },
+    {
+      "id": "rss-668f3cba289e",
+      "hook": "End Of Nicolandria! Social Media Reacts To Reports That ‘Love Island…",
+      "title": "End Of Nicolandria! Social Media Reacts To Reports That ‘Love Island USA’ Stars Olandria Carthen & Nic Vansteenberghe Have Split",
+      "lesson": "It’s been one year since Olandria Carthen and Nic Vansteenberghe not only graced our TV screens but also decided to continue their relationship outside the ‘Love Island USA’ villa. Throughout their time as a couple, the pair faced constant criticism and rumors. However, with the support of their loyal Nicolandria",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/love-island-usa-olandria-carthen-nic-vansteenberghe-reportedly-call-it-quits/",
+      "publishedAt": "2026-07-22T19:50:14.000Z",
+      "expiresAt": "2026-08-01T22:12:17.324Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/love-island-usa-olandria-carthen-nic-vansteenberghe-reportedly-call-it-quits/"
+        }
+      ]
+    },
+    {
+      "id": "rss-edb364e71fc0",
+      "hook": "Trump attends transfer of four US troops killed in Iranian attacks",
+      "title": "Trump attends transfer of four US troops killed in Iranian attacks",
+      "lesson": "President Donald Trump attended a dignified transfer at Dover Air Force Base for four US service members killed in Iranian attacks, calling it his hardest duty as commander-in-chief. Two soldiers died when a missile struck Muwaffaq Salti Air Base in Jordan, another was killed in the same incident, and a fourth died",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/5ecfbdc1-a804-4f8a-a494-b48f014523ff/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T19:43:58.000Z",
+      "expiresAt": "2026-07-25T22:12:09.833Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/5ecfbdc1-a804-4f8a-a494-b48f014523ff/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c1aaa04cca71",
+      "hook": "This Is Your Reminder That the Trojan War Didn’t Actually Happen",
+      "title": "This Is Your Reminder That the Trojan War Didn’t Actually Happen",
+      "lesson": "‘The Odyssey’ does have real historical foundations, though.",
+      "source": "War",
+      "sourceUrl": "https://www.esquire.com/entertainment/movies/a73193683/trojan-war-explained/",
+      "publishedAt": "2026-07-22T19:43:58.000Z",
+      "expiresAt": "2026-07-25T22:12:12.395Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.esquire.com/entertainment/movies/a73193683/trojan-war-explained/"
+        }
+      ]
+    },
+    {
+      "id": "rss-e0cde4e14d84",
+      "hook": "Congressional report says Virginians have paid $1.8 billion more for…",
+      "title": "Congressional report says Virginians have paid $1.8 billion more for gas since Iran war started",
+      "lesson": "Virginia households have paid $573 more for gas since the U.S.–Iran war began, placing them among the citizens who have experienced the highest jump in the",
+      "source": "War",
+      "sourceUrl": "https://wtop.com/virginia/2026/07/congressional-report-says-virginians-have-paid-1-8-billion-more-for-gas-since-iran-war-started/",
+      "publishedAt": "2026-07-22T19:38:21.000Z",
+      "expiresAt": "2026-07-25T22:12:12.395Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://wtop.com/virginia/2026/07/congressional-report-says-virginians-have-paid-1-8-billion-more-for-gas-since-iran-war-started/"
+        }
+      ]
+    },
+    {
+      "id": "rss-6509e8efeadf",
+      "hook": "Indiana Fever star Caitlin Clark makes WNBA history with NBA 2K27…",
+      "title": "Indiana Fever star Caitlin Clark makes WNBA history with NBA 2K27 cover appearance",
+      "lesson": "Indiana Fever star Caitlin Clark is on a premium cover for a popular video game franchise, a monumental moment for the WNBA.",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/07/22/indiana-fever-caitlin-clark-nba-2k27-cover-wnba-players-how-to-buy-price/91013037007/",
+      "publishedAt": "2026-07-22T19:32:41.000Z",
+      "expiresAt": "2026-08-01T22:12:17.537Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.indystar.com/story/sports/basketball/wnba/fever/2026/07/22/indiana-fever-caitlin-clark-nba-2k27-cover-wnba-players-how-to-buy-price/91013037007/"
+        }
+      ]
+    },
+    {
+      "id": "rss-4675047b9a26",
+      "hook": "Tenisha Warner Speaks About Grief As Estate Dispute With…",
+      "title": "Tenisha Warner Speaks About Grief As Estate Dispute With Malcolm-Jamal Warner’s Mother Comes To Light",
+      "lesson": "A few days after the anniversary of Malcolm-Jamal Warner’s death, new details have emerged about an ongoing legal dispute involving his estate, just as his widow, Tenisha Warner, prepares to share her story publicly. In a preview of an upcoming CBS Mornings interview, Gayle King asks Tenisha about her relationship",
+      "source": "Essence",
+      "sourceUrl": "https://www.essence.com/entertainment/tenisha-warner-gayle-king-cbs-interview/",
+      "publishedAt": "2026-07-22T19:32:04.000Z",
+      "expiresAt": "2026-08-01T22:12:16.129Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "essence",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.essence.com/entertainment/tenisha-warner-gayle-king-cbs-interview/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c31efa55059c",
+      "hook": "An OpenAI test model escaped and broke into a real company's servers",
+      "title": "An OpenAI test model escaped and broke into a real company's servers",
+      "lesson": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked its way onto a different company's real production systems while trying to \"cheat\" on a cybersecurity",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/technology-openai-test-model-escaped-and-broke-real-companys-servers",
+      "publishedAt": "2026-07-22T19:21:08.000Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/technology-openai-test-model-escaped-and-broke-real-companys-servers"
+        }
+      ]
+    },
+    {
+      "id": "rss-a6675231109e",
+      "hook": "Trump attends dignified transfer of 4 US troops killed in Iran war:…",
+      "title": "Trump attends dignified transfer of 4 US troops killed in Iran war: 'One of the hardest things to do'",
+      "lesson": "President Trump saluted four flag-draped caskets carrying the bodies of four US service members killed in the Iran war last week — shortly after telling journalists it was \"one of the hardest things to do\" for",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/defense-and-security-trump-attends-dignified-transfer-4-us-troops-killed-iran-war-one-hardest-things-do",
+      "publishedAt": "2026-07-22T19:18:56.000Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/defense-and-security-trump-attends-dignified-transfer-4-us-troops-killed-iran-war-one-hardest-things-do"
+        }
+      ]
+    },
+    {
+      "id": "rss-ff25105c2c40",
+      "hook": "The 4 Republicans who betrayed Trump on trans-identifying military…",
+      "title": "The 4 Republicans who betrayed Trump on trans-identifying military members",
+      "lesson": "An amendment to a House bill intended to codify the president's executive order against transgender-identifying people serving in the military has failed after four Republicans voted with",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/defense-and-security-4-republicans-who-betrayed-trump-trans-identifying-military-members",
+      "publishedAt": "2026-07-22T19:16:39.000Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/defense-and-security-4-republicans-who-betrayed-trump-trans-identifying-military-members"
+        }
+      ]
+    },
+    {
+      "id": "rss-99fa2d0d138e",
+      "hook": "Billion-Dollar Data Centers And The Growing Opposition",
+      "title": "Billion-Dollar Data Centers And The Growing Opposition",
+      "lesson": "Nestled between the sere hills east of Sparks, Nevada, and a little off the U.S. Parkway (SR-439), Switch's Citadel Campus is a Las Vegas company specializing in data centers. One building is already operational: Tahoe Reno 1, a high-security, futuristic industrial shed standing on endless rows of girders, with a roof",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/technology-billion-dollar-data-centers-and-growing-opposition",
+      "publishedAt": "2026-07-22T19:14:21.000Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/technology-billion-dollar-data-centers-and-growing-opposition"
+        }
+      ]
+    },
+    {
+      "id": "rss-0124a9d4d24d",
+      "hook": "'No better way' to end US-Iran war than diplomacy: Martin Griffiths",
+      "title": "'No better way' to end US-Iran war than diplomacy: Martin Griffiths",
+      "lesson": "As the conflict between the US and Iran escalates, diplomatic efforts are continuing, with regional mediators trying to revive negotiations. Iran's Foreign Ministry spokesperson said on Monday that mediators are actively engaged after the latest round of escalation began on July 8. The violence followed the collapse",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/187c0818-5c92-4781-a784-b48f013bf92e/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T19:10:57.000Z",
+      "expiresAt": "2026-07-25T22:12:09.833Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/187c0818-5c92-4781-a784-b48f013bf92e/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-2a2377081fa0",
+      "hook": "Dow up, Nasdaq retreating in final hour ahead of Tesla, Alphabet…",
+      "title": "Dow up, Nasdaq retreating in final hour ahead of Tesla, Alphabet earnings — live",
+      "lesson": "Dow up, Nasdaq retreating in final hour ahead of Tesla, Alphabet earnings — live",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=63959a05-7e15-4581-917d-5b007e74605a&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T19:03:04.000Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "marketwatch-bulletins",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=63959a05-7e15-4581-917d-5b007e74605a&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-1a3f7da745e7",
+      "hook": "Caitlin Clark appears on the cover of the deluxe edition of NBA…",
+      "title": "Caitlin Clark appears on the cover of the deluxe edition of NBA 2K27, but... it doesn't look like her!",
+      "lesson": "Caitlin Clark makes NBA 2K history, but fans are questioning the accuracy of her digital likeness",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.marca.com/en/basketball/wnba/indiana-fever/2026/07/22/caitlin-clark-appears-on-the-cover-of-the-deluxe-edition-of-nba-2k27-but-it-doesn-t-look-like-her.html",
+      "publishedAt": "2026-07-22T18:57:06.000Z",
+      "expiresAt": "2026-08-01T22:12:17.537Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marca.com/en/basketball/wnba/indiana-fever/2026/07/22/caitlin-clark-appears-on-the-cover-of-the-deluxe-edition-of-nba-2k27-but-it-doesn-t-look-like-her.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-f4f727850cea",
+      "hook": "Travis Scott Teases ‘Amazing’ New Album: ‘Pushing Myself … to Make…",
+      "title": "Travis Scott Teases ‘Amazing’ New Album: ‘Pushing Myself … to Make Something I Haven’t Made Before’",
+      "lesson": "La Flame also discussed Cactus Jack signing a first-look deal with a movie studio in a new interview.",
+      "source": "Billboard R&B/Hip-Hop",
+      "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/travis-scott-new-album-tease-paramount-pictures-deal-1236300702/",
+      "publishedAt": "2026-07-22T18:54:19.000Z",
+      "expiresAt": "2026-08-01T22:12:16.244Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "billboard-rb-hip-hop",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.billboard.com/music/rb-hip-hop/travis-scott-new-album-tease-paramount-pictures-deal-1236300702/"
+        }
+      ]
+    },
     {
       "id": "rss-2d6d7fe37fba",
       "hook": "U.S.-Saudi Nuclear Deal Stokes Israeli Concerns of Mideast Arms Race",
@@ -9,7 +1506,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/energy-us-saudi-nuclear-deal-stokes-israeli-concerns-mideast-arms-race",
       "publishedAt": "2026-07-22T18:40:21.000Z",
-      "expiresAt": "2026-07-25T18:51:55.338Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -30,7 +1527,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/energy-why-proposed-us-saudi-nuclear-deal-worries-some-washington-and-middle-east",
       "publishedAt": "2026-07-22T18:38:15.000Z",
-      "expiresAt": "2026-07-25T18:51:55.338Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -51,7 +1548,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/energy-trump-greenlights-saudi-nuclear-deal-uranium-enrichment-kingdom-possible",
       "publishedAt": "2026-07-22T18:34:59.000Z",
-      "expiresAt": "2026-07-25T18:51:55.338Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -72,7 +1569,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/dominic-fike-rocket-billboard-philippines-1236300206/",
       "publishedAt": "2026-07-22T18:32:22.000Z",
-      "expiresAt": "2026-08-01T18:52:01.157Z",
+      "expiresAt": "2026-08-01T22:12:16.244Z",
       "topicIds": [
         "current-events"
       ],
@@ -92,7 +1589,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/rb-up-and-comer-of-the-month-july-2026-mack-keane-interview-1236300888/",
       "publishedAt": "2026-07-22T18:29:55.000Z",
-      "expiresAt": "2026-08-01T18:52:01.157Z",
+      "expiresAt": "2026-08-01T22:12:16.244Z",
       "topicIds": [
         "current-events"
       ],
@@ -112,7 +1609,7 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/50-cent-roasts-rick-ross-album-low-sales/",
       "publishedAt": "2026-07-22T18:29:32.000Z",
-      "expiresAt": "2026-08-01T18:52:01.474Z",
+      "expiresAt": "2026-08-01T22:12:16.566Z",
       "topicIds": [
         "current-events"
       ],
@@ -125,6 +1622,26 @@
       ]
     },
     {
+      "id": "rss-74875944de31",
+      "hook": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Today: Dems push to…",
+      "title": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Today: Dems push to eliminate interest on federal student loans. \"This is ground zero for the affordability crisis for a whole generation of Americans.\" Why it matters: Student loan defaults are at a record high as COVID-era policies and Biden era repayment programs wind down.",
+      "lesson": "Today: Dems push to eliminate interest on federal student loans. \"This is ground zero for the affordability crisis for a whole generation of Americans.\" Why it matters: Student loan defaults are at a record high as COVID-era policies and Biden era repayment programs wind down.— @RaquelMartinTV Jul 22,",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/RaquelMartinTV/status/2079994901744275675",
+      "publishedAt": "2026-07-22T18:20:00.000Z",
+      "expiresAt": "2026-08-01T22:12:15.211Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "philip-lewis",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/RaquelMartinTV/status/2079994901744275675"
+        }
+      ]
+    },
+    {
       "id": "rss-3d86c11581cc",
       "hook": "How ‘Wounds To Wisdom’ Turned Honest Conversations Into A Documentary",
       "title": "How ‘Wounds To Wisdom’ Turned Honest Conversations Into A Documentary",
@@ -132,7 +1649,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/entertainment/wounds-to-wisdom-documentary-mvaaff/",
       "publishedAt": "2026-07-22T18:19:53.000Z",
-      "expiresAt": "2026-08-01T18:52:01.045Z",
+      "expiresAt": "2026-08-01T22:12:16.129Z",
       "topicIds": [
         "current-events"
       ],
@@ -169,6 +1686,27 @@
       ]
     },
     {
+      "id": "rss-21b0be4cdc99",
+      "hook": "Dub Hub: Steph Curry to receive first-ever Hall of Fame exhibit…",
+      "title": "Dub Hub: Steph Curry to receive first-ever Hall of Fame exhibit dedicated to an active NBA player",
+      "lesson": "Rounding up all Warriors and NBA related news for Wednesday, July 22nd.",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.goldenstateofmind.com/warriors-news/111741/dub-hub-steph-curry-to-receive-first-ever-hall-of-fame-exhibit-dedicated-to-an-active-nba-player",
+      "publishedAt": "2026-07-22T18:11:10.000Z",
+      "expiresAt": "2026-08-01T22:12:17.537Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.goldenstateofmind.com/warriors-news/111741/dub-hub-steph-curry-to-receive-first-ever-hall-of-fame-exhibit-dedicated-to-an-active-nba-player"
+        }
+      ]
+    },
+    {
       "id": "rss-ebce8809bbfa",
       "hook": "US judge sets 2027 trial date for Venezuela’s Maduro and wife",
       "title": "US judge sets 2027 trial date for Venezuela’s Maduro and wife",
@@ -197,7 +1735,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/99e09d6e-cb00-4b61-b55f-b48f01263f96/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T17:51:30.000Z",
-      "expiresAt": "2026-07-25T18:51:55.793Z",
+      "expiresAt": "2026-07-25T22:12:09.833Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -222,7 +1760,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.si.com/nba/2k27-cover-stars-victor-wembanyama-caitlin-clark-join-long-list-basketball-greats",
       "publishedAt": "2026-07-22T17:50:06.000Z",
-      "expiresAt": "2026-08-01T18:52:01.968Z",
+      "expiresAt": "2026-08-01T22:12:17.537Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -326,7 +1864,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cq56g2n083do?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T17:33:56.000Z",
-      "expiresAt": "2026-07-25T18:51:57.341Z",
+      "expiresAt": "2026-07-25T22:12:12.075Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -367,7 +1905,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-midday-smci-eqt-air-cb-pega.html",
       "publishedAt": "2026-07-22T17:25:55.000Z",
-      "expiresAt": "2026-07-25T18:52:02.396Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -388,7 +1926,7 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/pooh-shiesty-denied-bond-third-time-gucci-mane-case/",
       "publishedAt": "2026-07-22T17:21:07.000Z",
-      "expiresAt": "2026-08-01T18:52:01.474Z",
+      "expiresAt": "2026-08-01T22:12:16.566Z",
       "topicIds": [
         "current-events"
       ],
@@ -471,7 +2009,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/israel-gaza-war-american-evangelical-christians-survey/",
       "publishedAt": "2026-07-22T17:16:25.000Z",
-      "expiresAt": "2026-08-01T18:51:57.867Z",
+      "expiresAt": "2026-08-01T22:12:12.648Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -513,7 +2051,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steph-curry-naismith-basketball-hall-fame/1951532/",
       "publishedAt": "2026-07-22T17:14:28.000Z",
-      "expiresAt": "2026-08-01T18:52:01.968Z",
+      "expiresAt": "2026-08-01T22:12:17.537Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -558,7 +2096,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/hair/the-secrets-behind-beyonce-big-bouncy-curls/",
       "publishedAt": "2026-07-22T17:08:38.000Z",
-      "expiresAt": "2026-08-01T18:52:01.045Z",
+      "expiresAt": "2026-08-01T22:12:16.129Z",
       "topicIds": [
         "current-events"
       ],
@@ -599,7 +2137,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-rfk-jr-freezes-1b-medicaid-california-minnesota-over-fraud-fears",
       "publishedAt": "2026-07-22T17:02:44.000Z",
-      "expiresAt": "2026-07-25T18:51:55.338Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -620,7 +2158,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-trump-admin-freezes-over-1b-medicaid-funds-minnesota-california",
       "publishedAt": "2026-07-22T17:01:19.000Z",
-      "expiresAt": "2026-07-25T18:51:55.338Z",
+      "expiresAt": "2026-07-25T22:12:09.471Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -660,7 +2198,7 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/omb-bloodbath-second-trial-houston-gang-murder/",
       "publishedAt": "2026-07-22T17:00:19.000Z",
-      "expiresAt": "2026-08-01T18:52:01.474Z",
+      "expiresAt": "2026-08-01T22:12:16.566Z",
       "topicIds": [
         "current-events"
       ],
@@ -743,7 +2281,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.nba.com/news/wnba-bwb-camp-2026-wnba-all-star",
       "publishedAt": "2026-07-22T16:50:14.000Z",
-      "expiresAt": "2026-08-01T18:52:01.968Z",
+      "expiresAt": "2026-08-01T22:12:17.537Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -784,7 +2322,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.nba.com/news/closer-look-new-coaches-2026-27",
       "publishedAt": "2026-07-22T16:42:57.000Z",
-      "expiresAt": "2026-08-01T18:52:01.968Z",
+      "expiresAt": "2026-08-01T22:12:17.537Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -826,7 +2364,7 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/snoop-dogg-biopic-premiere-summer-2027/",
       "publishedAt": "2026-07-22T16:37:52.000Z",
-      "expiresAt": "2026-08-01T18:52:01.474Z",
+      "expiresAt": "2026-08-01T22:12:16.566Z",
       "topicIds": [
         "current-events"
       ],
@@ -1012,7 +2550,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cgk4x44mm50o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T16:18:30.000Z",
-      "expiresAt": "2026-07-25T18:51:57.341Z",
+      "expiresAt": "2026-07-25T22:12:12.075Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1054,7 +2592,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079963925240492423",
       "publishedAt": "2026-07-22T16:16:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.244Z",
+      "expiresAt": "2026-08-01T22:12:15.211Z",
       "topicIds": [
         "current-events"
       ],
@@ -1095,7 +2633,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=6f3fbf2a-dcd9-402b-aff4-7ffc062222f6&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-22T16:13:17.000Z",
-      "expiresAt": "2026-07-25T18:52:02.184Z",
+      "expiresAt": "2026-07-25T22:12:17.722Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -1116,7 +2654,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/9eeb65e5-ebeb-4c1a-a9c5-b48f010ac4ba/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T16:11:25.000Z",
-      "expiresAt": "2026-07-25T18:51:55.793Z",
+      "expiresAt": "2026-07-25T22:12:09.833Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1290,7 +2828,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://fox59.com/video/nfl-flag-football-teams-arrive-in-indy/11995127/",
       "publishedAt": "2026-07-22T15:55:00.000Z",
-      "expiresAt": "2026-08-01T18:52:02.043Z",
+      "expiresAt": "2026-08-01T22:12:17.611Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -1353,7 +2891,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/c0ejwedl1gno?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T15:43:55.000Z",
-      "expiresAt": "2026-07-25T18:51:57.341Z",
+      "expiresAt": "2026-07-25T22:12:12.075Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1374,7 +2912,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5897383/dc-reflecting-pool-saga-influencers",
       "publishedAt": "2026-07-22T15:41:39.000Z",
-      "expiresAt": "2026-07-25T18:51:56.022Z",
+      "expiresAt": "2026-07-25T22:12:10.003Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1618,7 +3156,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/22/kalshi-launches-election-hub-for-prediction-markets-ahead-of-midterms.html",
       "publishedAt": "2026-07-22T15:23:02.000Z",
-      "expiresAt": "2026-07-25T18:52:02.396Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -1639,7 +3177,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/lifestyle/essence-festival-friend-group-tradition/",
       "publishedAt": "2026-07-22T15:21:16.000Z",
-      "expiresAt": "2026-08-01T18:52:01.045Z",
+      "expiresAt": "2026-08-01T22:12:16.129Z",
       "topicIds": [
         "current-events"
       ],
@@ -1659,7 +3197,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nbcsports.com/fantasy/football/news/2026-rotoworld-fantasy-football-team-previews-hub",
       "publishedAt": "2026-07-22T15:21:00.000Z",
-      "expiresAt": "2026-08-01T18:52:02.043Z",
+      "expiresAt": "2026-08-01T22:12:17.611Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -1846,7 +3384,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/fashion/imaan-hammam-victorias-secret-bra-campaign-profile/",
       "publishedAt": "2026-07-22T15:06:26.000Z",
-      "expiresAt": "2026-08-01T18:52:01.045Z",
+      "expiresAt": "2026-08-01T22:12:16.129Z",
       "topicIds": [
         "current-events"
       ],
@@ -1866,7 +3404,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/why-christopher-nolan-odyssey-haunts-us-right-now/",
       "publishedAt": "2026-07-22T15:04:03.000Z",
-      "expiresAt": "2026-08-01T18:51:57.867Z",
+      "expiresAt": "2026-08-01T22:12:12.648Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -1953,7 +3491,7 @@
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/love-island-star-jana-is-accused-of-beating-her-bf-details-video/",
       "publishedAt": "2026-07-22T14:55:03.000Z",
-      "expiresAt": "2026-08-01T18:52:01.880Z",
+      "expiresAt": "2026-08-01T22:12:17.461Z",
       "topicIds": [
         "current-events"
       ],
@@ -2035,7 +3573,7 @@
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/fetty-wap-engaged-to-buxom-ig-influencer-all-the-details-about-his-fiance/",
       "publishedAt": "2026-07-22T14:45:35.000Z",
-      "expiresAt": "2026-08-01T18:52:01.880Z",
+      "expiresAt": "2026-08-01T22:12:17.461Z",
       "topicIds": [
         "current-events"
       ],
@@ -2055,7 +3593,7 @@
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/broke-nfler-leveon-bell-has-7-kids-6-baby-mamas-pays-millions-in-child-support/",
       "publishedAt": "2026-07-22T14:44:26.000Z",
-      "expiresAt": "2026-08-01T18:52:01.880Z",
+      "expiresAt": "2026-08-01T22:12:17.461Z",
       "topicIds": [
         "current-events"
       ],
@@ -2116,7 +3654,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079935040708841711",
       "publishedAt": "2026-07-22T14:22:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.244Z",
+      "expiresAt": "2026-08-01T22:12:15.211Z",
       "topicIds": [
         "current-events"
       ],
@@ -2146,6 +3684,27 @@
         {
           "label": "Full story",
           "url": "https://www.bloomberg.com/news/articles/2026-07-22/ghana-keeps-rates-at-14-as-us-iran-war-drives-inflation-risk"
+        }
+      ]
+    },
+    {
+      "id": "rss-393f82ed43a1",
+      "hook": "NEWS: Trump Lawsuit Backfires as Judge Orders Financial Discovery,…",
+      "title": "NEWS: Trump Lawsuit Backfires as Judge Orders Financial Discovery, Big Epstein News and New Death, Iran Videos Show Troops Hiding",
+      "lesson": "Good morning, everyone.",
+      "source": "The Parnas Perspective",
+      "sourceUrl": "https://api.substack.com/feed/podcast/208003889/7af9331c49fe012f4b4393fa47591ad6.mp3",
+      "publishedAt": "2026-07-22T14:10:43.000Z",
+      "expiresAt": "2026-07-25T22:12:15.109Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "aaron-parnas",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://api.substack.com/feed/podcast/208003889/7af9331c49fe012f4b4393fa47591ad6.mp3"
         }
       ]
     },
@@ -2198,7 +3757,7 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/movies-tv/malcolm-jamal-warner-widow-sues-mother-prenuptial-agreement-1235180657/",
       "publishedAt": "2026-07-22T14:01:23.000Z",
-      "expiresAt": "2026-08-01T18:52:01.635Z",
+      "expiresAt": "2026-08-01T22:12:16.683Z",
       "topicIds": [
         "current-events"
       ],
@@ -2218,7 +3777,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cdrvyl5lxy1o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T13:34:17.000Z",
-      "expiresAt": "2026-07-25T18:51:57.341Z",
+      "expiresAt": "2026-07-25T22:12:12.075Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2320,7 +3879,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079913926347633100",
       "publishedAt": "2026-07-22T12:58:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.244Z",
+      "expiresAt": "2026-08-01T22:12:15.211Z",
       "topicIds": [
         "current-events"
       ],
@@ -2381,7 +3940,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.cbssports.com/nfl/news/2026-nfl-rookie-running-back-rankings-fantasy-football/",
       "publishedAt": "2026-07-22T12:31:22.000Z",
-      "expiresAt": "2026-08-01T18:52:02.043Z",
+      "expiresAt": "2026-08-01T22:12:17.611Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -2402,7 +3961,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/the-antifa-terrorism-threat-the-trump-administration-describes-does-not-exist-287748",
       "publishedAt": "2026-07-22T12:28:46.000Z",
-      "expiresAt": "2026-07-25T18:51:56.718Z",
+      "expiresAt": "2026-07-25T22:12:11.050Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2423,7 +3982,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/philadelphias-criminal-justice-fines-and-fees-fall-hardest-on-poorest-neighborhoods-286417",
       "publishedAt": "2026-07-22T12:28:28.000Z",
-      "expiresAt": "2026-07-25T18:51:56.718Z",
+      "expiresAt": "2026-07-25T22:12:11.050Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2444,7 +4003,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cz64l78n5vpo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T12:26:03.000Z",
-      "expiresAt": "2026-07-25T18:51:57.341Z",
+      "expiresAt": "2026-07-25T22:12:12.075Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2485,7 +4044,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/espn/status/2079903293371781558",
       "publishedAt": "2026-07-22T12:16:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.244Z",
+      "expiresAt": "2026-08-01T22:12:15.211Z",
       "topicIds": [
         "current-events"
       ],
@@ -2546,7 +4105,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-premarket-smci-gev-rklb.html",
       "publishedAt": "2026-07-22T11:54:30.000Z",
-      "expiresAt": "2026-07-25T18:52:02.396Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -2677,7 +4236,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/church/worship/ways-to-throw-satan-off-his-game-with-worship.html",
       "publishedAt": "2026-07-22T11:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.011Z",
+      "expiresAt": "2026-08-01T22:12:12.794Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -2698,7 +4257,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/plus/faith-toolkits/grief-support-toolkit.html",
       "publishedAt": "2026-07-22T11:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.011Z",
+      "expiresAt": "2026-08-01T22:12:12.794Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -2719,7 +4278,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/family/marriage/ways-husbands-make-wives-feel-unloved-without-knowing-it.html",
       "publishedAt": "2026-07-22T11:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.011Z",
+      "expiresAt": "2026-08-01T22:12:12.794Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -2761,7 +4320,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5901981/defense-secretary-pete-hegseth-defends-iran-war-funding-request-at-fiery-hearing",
       "publishedAt": "2026-07-22T10:43:36.000Z",
-      "expiresAt": "2026-07-25T18:51:56.591Z",
+      "expiresAt": "2026-07-25T22:12:10.925Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -2782,7 +4341,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5902047/sen-patty-murray-d-wash-on-defense-secretary-pete-hegseths-senate-testimony",
       "publishedAt": "2026-07-22T10:43:28.000Z",
-      "expiresAt": "2026-07-25T18:51:56.591Z",
+      "expiresAt": "2026-07-25T22:12:10.925Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -2848,7 +4407,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/addiction-baseline-epidemic-homelessness-fentanyl/",
       "publishedAt": "2026-07-22T10:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.867Z",
+      "expiresAt": "2026-08-01T22:12:12.648Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -2869,7 +4428,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/marriage-is-not-a-prize-to-be-won/",
       "publishedAt": "2026-07-22T10:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.867Z",
+      "expiresAt": "2026-08-01T22:12:12.648Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -2890,7 +4449,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/mission-hospitals-21st-century-loftus/",
       "publishedAt": "2026-07-22T10:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.867Z",
+      "expiresAt": "2026-08-01T22:12:12.648Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -2911,7 +4470,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/3d-printed-church-austin-texas/",
       "publishedAt": "2026-07-22T10:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.867Z",
+      "expiresAt": "2026-08-01T22:12:12.648Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -2950,6 +4509,31 @@
       ]
     },
     {
+      "id": "rss-f8ba2f36b44c",
+      "hook": "Trump Receives Fallen Troops, Hegseth Grilled On The Hill, Arizona…",
+      "title": "Trump Receives Fallen Troops, Hegseth Grilled On The Hill, Arizona Primary Results",
+      "lesson": "President Trump travels to Dover Air Force Base today to receive the bodies of service members killed in the Iran war, as he insists Iran is desperate for a deal. Defense Secretary Pete Hegseth got a grilling from both parties on Capitol Hill as he asked for billions more to fund a war Congress never voted to",
+      "source": "Up First",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/f4355107-4837-46c6-a89f-dcb139df46f5/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=f4355107-4837-46c6-a89f-dcb139df46f5&feed=HMwRVgVt&t=podcast&e=nx-s1-5902803&p=510318&d=760&size=12170179",
+      "publishedAt": "2026-07-22T09:54:12.000Z",
+      "expiresAt": "2026-07-25T22:12:10.689Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "npr-up-first",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/f4355107-4837-46c6-a89f-dcb139df46f5/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=f4355107-4837-46c6-a89f-dcb139df46f5&feed=HMwRVgVt&t=podcast&e=nx-s1-5902803&p=510318&d=760&size=12170179"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510318/up-first"
+        }
+      ]
+    },
+    {
       "id": "rss-e3e748cdbb5c",
       "hook": "Travis Scott Was ‘Actually Nervous’ When He Shot His Scenes For ‘The…",
       "title": "Travis Scott Was ‘Actually Nervous’ When He Shot His Scenes For ‘The Odyssey’",
@@ -2957,7 +4541,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/travis-scott-actually-nervous-shooting-the-odyssey-1236300520/",
       "publishedAt": "2026-07-22T09:37:19.000Z",
-      "expiresAt": "2026-08-01T18:52:01.157Z",
+      "expiresAt": "2026-08-01T22:12:16.244Z",
       "topicIds": [
         "current-events"
       ],
@@ -2977,7 +4561,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/church-elder-and-worship-leader-among-dead-in-fresh-wave-of-attacks-in-eastern-drc",
       "publishedAt": "2026-07-22T09:22:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.794Z",
+      "expiresAt": "2026-08-01T22:12:12.523Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3023,7 +4607,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5896456/medicaid-cuts-incarceration-states-obbba",
       "publishedAt": "2026-07-22T09:00:00.000Z",
-      "expiresAt": "2026-07-25T18:51:56.022Z",
+      "expiresAt": "2026-07-25T22:12:10.003Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3044,7 +4628,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5887428/2026-midterm-election-trump-campaign-rally",
       "publishedAt": "2026-07-22T09:00:00.000Z",
-      "expiresAt": "2026-07-25T18:51:56.591Z",
+      "expiresAt": "2026-07-25T22:12:10.925Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3065,7 +4649,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/h-2a-farmworker-protections-profits-trump",
       "publishedAt": "2026-07-22T09:00:00.000Z",
-      "expiresAt": "2026-07-25T18:51:56.879Z",
+      "expiresAt": "2026-07-25T22:12:11.245Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3111,7 +4695,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5895983/morning-news-brief",
       "publishedAt": "2026-07-22T08:47:31.000Z",
-      "expiresAt": "2026-07-25T18:51:56.591Z",
+      "expiresAt": "2026-07-25T22:12:10.925Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3132,7 +4716,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5781021/cdc-director-nominee-erica-schwartz-says-she-hopes-to-shift-the-agencys-tone",
       "publishedAt": "2026-07-22T08:47:24.000Z",
-      "expiresAt": "2026-07-25T18:51:56.591Z",
+      "expiresAt": "2026-07-25T22:12:10.925Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3153,7 +4737,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5883746/its-all-literally-rubble-lebanese-poet-returns-to-see-what-has-become-of-her-home",
       "publishedAt": "2026-07-22T08:47:16.000Z",
-      "expiresAt": "2026-07-25T18:51:56.591Z",
+      "expiresAt": "2026-07-25T22:12:10.925Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3174,7 +4758,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5871201/group-of-indigenous-taiwanese-row-over-100-miles-to-recreate-their-ancestors-journey",
       "publishedAt": "2026-07-22T08:47:02.000Z",
-      "expiresAt": "2026-07-25T18:51:56.591Z",
+      "expiresAt": "2026-07-25T22:12:10.925Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3195,7 +4779,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5902279/ukraines-zelenskyy-fires-top-military-commander-amid-ongoing-protests",
       "publishedAt": "2026-07-22T08:46:42.000Z",
-      "expiresAt": "2026-07-25T18:51:56.591Z",
+      "expiresAt": "2026-07-25T22:12:10.925Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3216,7 +4800,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/catholic-bishops-urge-mps-to-reject-latest-assisted-suicide-bill",
       "publishedAt": "2026-07-22T08:34:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.794Z",
+      "expiresAt": "2026-08-01T22:12:12.523Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3237,7 +4821,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5902198/arizona-primary-results-trump-elections-biggs",
       "publishedAt": "2026-07-22T08:33:21.000Z",
-      "expiresAt": "2026-07-25T18:51:56.022Z",
+      "expiresAt": "2026-07-25T22:12:10.003Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3282,7 +4866,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/erling-haaland-buys-historic-christian-manuscript-donates-it-to-local-library",
       "publishedAt": "2026-07-22T06:50:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.794Z",
+      "expiresAt": "2026-08-01T22:12:12.523Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3303,7 +4887,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/iraqi-pm-asks-christians-to-return-following-mass-exodus",
       "publishedAt": "2026-07-22T06:49:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.794Z",
+      "expiresAt": "2026-08-01T22:12:12.523Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3324,7 +4908,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/christian-group-seeks-commitment-from-andy-burnham-to-tackle-poverty",
       "publishedAt": "2026-07-22T06:36:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.794Z",
+      "expiresAt": "2026-08-01T22:12:12.523Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3911,7 +5495,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://thelinknewspaper.ca/article/k-pop-and-the-sanitization-of-black-culture",
       "publishedAt": "2026-07-22T02:38:56.000Z",
-      "expiresAt": "2026-08-01T18:51:58.330Z",
+      "expiresAt": "2026-08-01T22:12:15.287Z",
       "topicIds": [
         "current-events"
       ],
@@ -4475,7 +6059,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/snoop-dogg-biopic-release-date-1236300241/",
       "publishedAt": "2026-07-22T00:08:55.000Z",
-      "expiresAt": "2026-08-01T18:52:01.157Z",
+      "expiresAt": "2026-08-01T22:12:16.244Z",
       "topicIds": [
         "current-events"
       ],
@@ -4599,7 +6183,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/NYCMayor/status/2079718073058091261",
       "publishedAt": "2026-07-22T00:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.244Z",
+      "expiresAt": "2026-08-01T22:12:15.211Z",
       "topicIds": [
         "current-events"
       ],
@@ -4667,6 +6251,27 @@
         {
           "label": "Full story",
           "url": "https://www.aljazeera.com/news/2026/7/21/explosions-in-iran-as-us-launches-new-strikes?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-4caa4df172e5",
+      "hook": "Important Tuesday News Update—I am Boycotting the White House…",
+      "title": "Important Tuesday News Update—I am Boycotting the White House Correspondents Do-Over",
+      "lesson": "Good evening, everyone.",
+      "source": "The Parnas Perspective",
+      "sourceUrl": "https://api.substack.com/feed/podcast/207959157/6a8fc0a5935e919e0987f9f8713cdeec.mp3",
+      "publishedAt": "2026-07-21T23:38:06.000Z",
+      "expiresAt": "2026-07-25T22:12:15.109Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "aaron-parnas",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://api.substack.com/feed/podcast/207959157/6a8fc0a5935e919e0987f9f8713cdeec.mp3"
         }
       ]
     },
@@ -5097,7 +6702,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079696596879479017",
       "publishedAt": "2026-07-21T22:34:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.244Z",
+      "expiresAt": "2026-08-01T22:12:15.211Z",
       "topicIds": [
         "current-events"
       ],
@@ -5507,7 +7112,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/goldman-sachs-private-markets-platform.html",
       "publishedAt": "2026-07-21T20:51:34.000Z",
-      "expiresAt": "2026-07-25T18:52:02.396Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -5528,7 +7133,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/hbottemiller/status/2079668417150517692",
       "publishedAt": "2026-07-21T20:42:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.244Z",
+      "expiresAt": "2026-08-01T22:12:15.211Z",
       "topicIds": [
         "current-events"
       ],
@@ -5748,7 +7353,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/bets-against-spacex-grow-to-32percent-of-float-as-elon-musk-warns-short-sellers-wont-survive.html",
       "publishedAt": "2026-07-21T20:01:39.000Z",
-      "expiresAt": "2026-07-25T18:52:02.396Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -5787,6 +7392,31 @@
       ]
     },
     {
+      "id": "rss-f5d40934ef98",
+      "hook": "2028 fantasy draft: Republicans",
+      "title": "2028 fantasy draft: Republicans",
+      "lesson": "The next presidential election is more than two years away, but it's not too early to start discussing likely contenders. We do an NFL-style draft of the candidates who may lead the Republican field in 2028. If you missed our Democratic candidate draft, you can catch that here . This episode: voting correspondent",
+      "source": "NPR Politics Podcast",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/00e14135-b935-499c-97a4-b7582d0ba135/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=00e14135-b935-499c-97a4-b7582d0ba135&feed=iDPaKWvZ&t=podcast&e=nx-s1-5893771&p=510310&d=1864&size=29838150",
+      "publishedAt": "2026-07-21T20:00:01.000Z",
+      "expiresAt": "2026-07-25T22:12:10.467Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics-podcast",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/00e14135-b935-499c-97a4-b7582d0ba135/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=00e14135-b935-499c-97a4-b7582d0ba135&feed=iDPaKWvZ&t=podcast&e=nx-s1-5893771&p=510310&d=1864&size=29838150"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510310/npr-politics-podcast"
+        }
+      ]
+    },
+    {
       "id": "rss-74437058b938",
       "hook": "Panthers sending 11 football teams of Charlotte-area students to NFL…",
       "title": "Panthers sending 11 football teams of Charlotte-area students to NFL Flag Championships",
@@ -5794,7 +7424,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.qcnews.com/high-school-sports/panthers-sending-11-teams-of-charlotte-area-studets-to-nfl-flag-football-championships/",
       "publishedAt": "2026-07-21T19:59:16.000Z",
-      "expiresAt": "2026-08-01T18:52:02.043Z",
+      "expiresAt": "2026-08-01T22:12:17.611Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -6016,7 +7646,7 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/national/d4vd-hearing-celeste-rivas-hernandez-unrecognizable-remains-1235180578/",
       "publishedAt": "2026-07-21T19:30:00.000Z",
-      "expiresAt": "2026-08-01T18:52:01.635Z",
+      "expiresAt": "2026-08-01T22:12:16.683Z",
       "topicIds": [
         "current-events"
       ],
@@ -6114,7 +7744,7 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/entertainment/offset-community-service-weed-dispensary-guard-assault-1235180568/",
       "publishedAt": "2026-07-21T18:53:45.000Z",
-      "expiresAt": "2026-08-01T18:52:01.635Z",
+      "expiresAt": "2026-08-01T22:12:16.683Z",
       "topicIds": [
         "current-events"
       ],
@@ -6196,7 +7826,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-rb-values",
       "publishedAt": "2026-07-21T17:54:40.000Z",
-      "expiresAt": "2026-08-01T18:52:02.043Z",
+      "expiresAt": "2026-08-01T22:12:17.611Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -6549,7 +8179,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/ann-widdecombe-was-hit-multiple-times-with-a-hammer-court-hears",
       "publishedAt": "2026-07-21T16:10:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.794Z",
+      "expiresAt": "2026-08-01T22:12:12.523Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -6769,7 +8399,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/iran-war-economy-markets-trump.html",
       "publishedAt": "2026-07-21T14:37:08.000Z",
-      "expiresAt": "2026-07-25T18:52:02.396Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -6901,6 +8531,27 @@
       ]
     },
     {
+      "id": "rss-4ee64e34bcec",
+      "hook": "NEWS: Trump Presidency Enters 'Bleak' Phase, Morale Falls Among…",
+      "title": "NEWS: Trump Presidency Enters 'Bleak' Phase, Morale Falls Among Republicans, New Epstein Investigation, Iran Casualties Concealed",
+      "lesson": "Good morning, everyone.",
+      "source": "The Parnas Perspective",
+      "sourceUrl": "https://api.substack.com/feed/podcast/207905070/a55109f2dafe4833a28edcdf7fd4397e.mp3",
+      "publishedAt": "2026-07-21T14:05:13.000Z",
+      "expiresAt": "2026-07-25T22:12:15.109Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "aaron-parnas",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://api.substack.com/feed/podcast/207905070/a55109f2dafe4833a28edcdf7fd4397e.mp3"
+        }
+      ]
+    },
+    {
       "id": "rss-90b5e3c94a66",
       "hook": "Stocks making the biggest moves premarket: General Motors, 3M,…",
       "title": "Stocks making the biggest moves premarket: General Motors, 3M, Novartis, Nebius & more",
@@ -6908,7 +8559,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/stocks-making-the-biggest-moves-premarket-gm-mmm-nvs-nbis.html",
       "publishedAt": "2026-07-21T13:09:44.000Z",
-      "expiresAt": "2026-07-25T18:52:02.396Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -6929,7 +8580,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/5-lessons-from-20-years-of-climate-surveys-political-party-matters-but-it-doesnt-explain-everything-287056",
       "publishedAt": "2026-07-21T12:46:04.000Z",
-      "expiresAt": "2026-07-25T18:51:56.718Z",
+      "expiresAt": "2026-07-25T22:12:11.050Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -7174,7 +8825,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/health-and-wellness/verses-i-return-to-when-my-body-feels-like-the-enemy.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.011Z",
+      "expiresAt": "2026-08-01T22:12:12.794Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -7195,7 +8846,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/faith/spiritual-life/why-daily-repentance-is-essential-to-thrive-in-our-faith.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.011Z",
+      "expiresAt": "2026-08-01T22:12:12.794Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -7216,7 +8867,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/family/parenting/10-ways-to-thrive-during-the-empty-nest-season.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.011Z",
+      "expiresAt": "2026-08-01T22:12:12.794Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -7317,7 +8968,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/jpmorgan-chase-ceo-jamie-dimon-market-risk.html",
       "publishedAt": "2026-07-21T10:24:07.000Z",
-      "expiresAt": "2026-07-25T18:52:02.396Z",
+      "expiresAt": "2026-07-25T22:12:17.922Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -7356,6 +9007,31 @@
       ]
     },
     {
+      "id": "rss-7c457246b5d1",
+      "hook": "Iran And Yemen's Houthis Blockade, Hegseth On Capitol Hill, Arizona…",
+      "title": "Iran And Yemen's Houthis Blockade, Hegseth On Capitol Hill, Arizona Primary Day",
+      "lesson": "The war between the U.S. and Iran keeps widening as Yemen's Houthi rebels announce a blockade of Saudi Arabia that would choke off another key oil route, even as Iran signals it may be open to talks. Defense Secretary Pete Hegseth heads to Capitol Hill today to ask lawmakers for a nearly 90 billion dollar funding",
+      "source": "Up First",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/2ffaa706-1a12-4772-b268-0a7bb88f0e0b/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=2ffaa706-1a12-4772-b268-0a7bb88f0e0b&feed=HMwRVgVt&t=podcast&e=nx-s1-5901831&p=510318&d=752&size=12033507",
+      "publishedAt": "2026-07-21T10:21:53.000Z",
+      "expiresAt": "2026-07-25T22:12:10.689Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "npr-up-first",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/2ffaa706-1a12-4772-b268-0a7bb88f0e0b/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=2ffaa706-1a12-4772-b268-0a7bb88f0e0b&feed=HMwRVgVt&t=podcast&e=nx-s1-5901831&p=510318&d=752&size=12033507"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510318/up-first"
+        }
+      ]
+    },
+    {
       "id": "rss-f3c0a82208e8",
       "hook": "How to Read the Bible Like the Early Church Did",
       "title": "How to Read the Bible Like the Early Church Did",
@@ -7363,7 +9039,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/how-to-read-bible-like-early-church-fourfold-schreiner/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.867Z",
+      "expiresAt": "2026-08-01T22:12:12.648Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -7424,7 +9100,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/iran-shutters-landmark-church/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:57.867Z",
+      "expiresAt": "2026-08-01T22:12:12.648Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -7613,7 +9289,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://projects.propublica.org/blueberries-farmworker-mistreatment/",
       "publishedAt": "2026-07-21T09:00:00.000Z",
-      "expiresAt": "2026-07-25T18:51:56.879Z",
+      "expiresAt": "2026-07-25T22:12:11.245Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -7731,6 +9407,51 @@
       ]
     },
     {
+      "id": "rss-e3967a711371",
+      "hook": "With 'deed theft' scammers are targeting Black homeowners",
+      "title": "With 'deed theft' scammers are targeting Black homeowners",
+      "lesson": "Longtime homeowners — often Black seniors — are being tricked into signing away the deeds to their own homes, then getting evicted from them. It's called deed theft, and it's rampant in gentrifying neighborhoods like Bed Stuy, where brownstones that redlining once made cheap now sell for millions. New York City",
+      "source": "Code Switch",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/01a0991f-7f32-4fef-8301-a64395996115/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=01a0991f-7f32-4fef-8301-a64395996115&feed=KTjArdE7&t=podcast&e=nx-s1-5893647&p=510312&d=2018&size=32289105",
+      "publishedAt": "2026-07-21T07:00:04.000Z",
+      "expiresAt": "2026-08-01T22:12:10.797Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-code-switch",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/01a0991f-7f32-4fef-8301-a64395996115/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=01a0991f-7f32-4fef-8301-a64395996115&feed=KTjArdE7&t=podcast&e=nx-s1-5893647&p=510312&d=2018&size=32289105"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510312/codeswitch"
+        }
+      ]
+    },
+    {
+      "id": "rss-f0087f3a839a",
+      "hook": "Important: Uncovering Possible Corruption Between Taylor Farms and…",
+      "title": "Important: Uncovering Possible Corruption Between Taylor Farms and Trump Amid Diarrhea Outbreak, 50% Tariffs on Canada, Iran, and More",
+      "lesson": "Good evening, everyone.",
+      "source": "The Parnas Perspective",
+      "sourceUrl": "https://api.substack.com/feed/podcast/207837078/d1f5a241c0c9b5b3bdf7570e4e283367.mp3",
+      "publishedAt": "2026-07-20T22:49:32.000Z",
+      "expiresAt": "2026-07-25T22:12:15.109Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "aaron-parnas",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://api.substack.com/feed/podcast/207837078/d1f5a241c0c9b5b3bdf7570e4e283367.mp3"
+        }
+      ]
+    },
+    {
       "id": "rss-3e5716b99265",
       "hook": "The races we’re watching in Arizona’s primary",
       "title": "The races we’re watching in Arizona’s primary",
@@ -7748,6 +9469,31 @@
         {
           "label": "Listen",
           "url": "https://www.npr.org/2026/07/20/nx-s1-5898460/the-races-were-watching-in-arizonas-primary"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510310/npr-politics-podcast"
+        }
+      ]
+    },
+    {
+      "id": "rss-21fc6abb76c3",
+      "hook": "The races we’re watching in Arizona’s primary",
+      "title": "The races we’re watching in Arizona’s primary",
+      "lesson": "Tuesday is Primary Day in Arizona. We discuss the Republicans hoping to unseat Democratic Gov. Katie Hobbs in November and the competitive primaries for an open Phoenix-area House seat. This episode: senior political correspondent Tamara Keith, political correspondent Ashley Lopez, and KJZZ correspondent Wayne",
+      "source": "NPR Politics Podcast",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/63790d4a-d81c-4325-9ffb-34d87ee4c73e/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=63790d4a-d81c-4325-9ffb-34d87ee4c73e&feed=iDPaKWvZ&t=podcast&e=nx-s1-5898460&p=510310&d=1367&size=21876863",
+      "publishedAt": "2026-07-20T21:03:11.000Z",
+      "expiresAt": "2026-07-25T22:12:10.467Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics-podcast",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/63790d4a-d81c-4325-9ffb-34d87ee4c73e/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=63790d4a-d81c-4325-9ffb-34d87ee4c73e&feed=iDPaKWvZ&t=podcast&e=nx-s1-5898460&p=510310&d=1367&size=21876863"
         },
         {
           "label": "Show page",
@@ -7782,7 +9528,7 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/national/nolan-wells-funeral-parents-mississippi-1235180472/",
       "publishedAt": "2026-07-20T20:55:00.000Z",
-      "expiresAt": "2026-08-01T18:52:01.635Z",
+      "expiresAt": "2026-08-01T22:12:16.683Z",
       "topicIds": [
         "current-events"
       ],
@@ -7802,7 +9548,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/declassified-intelligence-is-not-the-same-as-proof-287482",
       "publishedAt": "2026-07-20T19:06:52.000Z",
-      "expiresAt": "2026-07-25T18:51:56.718Z",
+      "expiresAt": "2026-07-25T22:12:11.050Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -7844,7 +9590,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://highschoolfootballamerica.com/trinity-leads-the-2026-high-school-football-america-kentucky-top-10-powered-by-nfl-play-football/",
       "publishedAt": "2026-07-20T18:00:29.000Z",
-      "expiresAt": "2026-08-01T18:52:02.043Z",
+      "expiresAt": "2026-08-01T22:12:17.611Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -7865,7 +9611,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.bu.edu/articles/2026/what-motivates-black-women-voters/",
       "publishedAt": "2026-07-20T17:00:00.000Z",
-      "expiresAt": "2026-07-25T18:51:57.472Z",
+      "expiresAt": "2026-07-25T22:12:12.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -7886,7 +9632,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-qb-values",
       "publishedAt": "2026-07-20T16:51:38.000Z",
-      "expiresAt": "2026-08-01T18:52:02.043Z",
+      "expiresAt": "2026-08-01T22:12:17.611Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -7907,7 +9653,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/saquon-barkley-police-seek-suspects-break-in-home-pennsylvania",
       "publishedAt": "2026-07-20T16:39:13.000Z",
-      "expiresAt": "2026-08-01T18:52:02.043Z",
+      "expiresAt": "2026-08-01T22:12:17.611Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -8020,6 +9766,27 @@
       ]
     },
     {
+      "id": "rss-3e2d6769d3dc",
+      "hook": "NEWS: World Edits Trump Out of World Cup Celebrations, Military…",
+      "title": "NEWS: World Edits Trump Out of World Cup Celebrations, Military Conceals True Nature of Iran Casualties, Starmer Resigns, and More",
+      "lesson": "Good morning, everyone.",
+      "source": "The Parnas Perspective",
+      "sourceUrl": "https://api.substack.com/feed/podcast/207771211/9f7e660cdebdd0aab8acc9b57bb250fa.mp3",
+      "publishedAt": "2026-07-20T14:07:27.000Z",
+      "expiresAt": "2026-07-25T22:12:15.109Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "aaron-parnas",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://api.substack.com/feed/podcast/207771211/9f7e660cdebdd0aab8acc9b57bb250fa.mp3"
+        }
+      ]
+    },
+    {
       "id": "rss-eb9ac724a5e4",
       "hook": "Your guide to the upcoming 2026 NFL FLAG Championships in Westfield",
       "title": "Your guide to the upcoming 2026 NFL FLAG Championships in Westfield",
@@ -8107,7 +9874,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/what-allegheny-countys-new-court-ordered-mental-health-treatment-program-can-and-cant-do-280112",
       "publishedAt": "2026-07-20T12:27:44.000Z",
-      "expiresAt": "2026-07-25T18:51:56.718Z",
+      "expiresAt": "2026-07-25T22:12:11.050Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8128,7 +9895,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/most-americans-support-conservation-heres-how-the-great-lakes-restoration-initiative-got-politicians-from-both-parties-on-board-too-284887",
       "publishedAt": "2026-07-20T12:25:27.000Z",
-      "expiresAt": "2026-07-25T18:51:56.718Z",
+      "expiresAt": "2026-07-25T22:12:11.050Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8149,7 +9916,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/featuring-trump-on-us-coins-and-bills-would-put-america-in-rare-company-285125",
       "publishedAt": "2026-07-20T12:25:09.000Z",
-      "expiresAt": "2026-07-25T18:51:56.718Z",
+      "expiresAt": "2026-07-25T22:12:11.050Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8170,7 +9937,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/how-americas-newspapers-lost-their-voice-285126",
       "publishedAt": "2026-07-20T12:24:33.000Z",
-      "expiresAt": "2026-07-25T18:51:56.718Z",
+      "expiresAt": "2026-07-25T22:12:11.050Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8288,6 +10055,31 @@
       ]
     },
     {
+      "id": "rss-5307e02a7562",
+      "hook": "US-Iran War Escalates, Congress To-Do List, UK Has A New Prime Minister",
+      "title": "US-Iran War Escalates, Congress To-Do List, UK Has A New Prime Minister",
+      "lesson": "A third U.S. service member has been killed since Friday as the U.S. bombs Iran for a ninth straight night, with Iran vowing not a drop of oil will pass through the Strait of Hormuz while the attacks continue. House Republicans have one week left before the August recess as Speaker Mike Johnson tries to advance",
+      "source": "Up First",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/5d423209-ffa9-487c-89b0-e9757553e40d/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=5d423209-ffa9-487c-89b0-e9757553e40d&feed=HMwRVgVt&t=podcast&e=nx-s1-5900599&p=510318&d=822&size=13161161",
+      "publishedAt": "2026-07-20T10:06:11.000Z",
+      "expiresAt": "2026-07-25T22:12:10.689Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "npr-up-first",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/5d423209-ffa9-487c-89b0-e9757553e40d/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=5d423209-ffa9-487c-89b0-e9757553e40d&feed=HMwRVgVt&t=podcast&e=nx-s1-5900599&p=510318&d=822&size=13161161"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510318/up-first"
+        }
+      ]
+    },
+    {
       "id": "rss-73e0a97ed05e",
       "hook": "Children in This Church Were Sexually Abused. Then They Began…",
       "title": "Children in This Church Were Sexually Abused. Then They Began Abusing Other Kids. Some Continued as Adults.",
@@ -8295,7 +10087,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/old-apostolic-lutheran-church-child-sexual-assault-cycle-abuse",
       "publishedAt": "2026-07-20T10:00:00.000Z",
-      "expiresAt": "2026-07-25T18:51:56.879Z",
+      "expiresAt": "2026-07-25T22:12:11.245Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8336,7 +10128,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/adak-island-alaska-internet-subsidy-fcc",
       "publishedAt": "2026-07-20T09:00:00.000Z",
-      "expiresAt": "2026-07-25T18:51:56.879Z",
+      "expiresAt": "2026-07-25T22:12:11.245Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8430,6 +10222,48 @@
       ]
     },
     {
+      "id": "rss-07fdea8881a7",
+      "hook": "Sunday Update: Republicans Break on Iran War as More Soldiers Die,…",
+      "title": "Sunday Update: Republicans Break on Iran War as More Soldiers Die, World Cup Stadium Boos Trump, Save Act Loses GOP Senator, and More",
+      "lesson": "Good evening, everyone.",
+      "source": "The Parnas Perspective",
+      "sourceUrl": "https://api.substack.com/feed/podcast/207695914/1a6ebf92c347b007c10e587813cd436a.mp3",
+      "publishedAt": "2026-07-19T22:38:14.000Z",
+      "expiresAt": "2026-07-25T22:12:15.109Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "aaron-parnas",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://api.substack.com/feed/podcast/207695914/1a6ebf92c347b007c10e587813cd436a.mp3"
+        }
+      ]
+    },
+    {
+      "id": "rss-013d74bb2a7f",
+      "hook": "Major Good News Update, Exclusive Interview, and Morning Censorship!!",
+      "title": "Major Good News Update, Exclusive Interview, and Morning Censorship!!",
+      "lesson": "Good morning, everyone, and happy Sunday.",
+      "source": "The Parnas Perspective",
+      "sourceUrl": "https://api.substack.com/feed/podcast/207649803/812ef5a9fc11c51c4c8cc21a19e99952.mp3",
+      "publishedAt": "2026-07-19T14:00:43.000Z",
+      "expiresAt": "2026-07-25T22:12:15.109Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "aaron-parnas",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://api.substack.com/feed/podcast/207649803/812ef5a9fc11c51c4c8cc21a19e99952.mp3"
+        }
+      ]
+    },
+    {
       "id": "rss-f679d173e36c",
       "hook": "Black and Latino Leaders Ask: What Do Socialist Wins Mean for New York?",
       "title": "Black and Latino Leaders Ask: What Do Socialist Wins Mean for New York?",
@@ -8437,7 +10271,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.nytimes.com/2026/07/19/nyregion/black-latino-leaders-dsa-nyc.html",
       "publishedAt": "2026-07-19T07:00:08.000Z",
-      "expiresAt": "2026-07-25T18:51:57.472Z",
+      "expiresAt": "2026-07-25T22:12:12.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8476,6 +10310,31 @@
       ]
     },
     {
+      "id": "rss-3e815569b523",
+      "hook": "Infertility doctor secretly fathered dozens of children: how…",
+      "title": "Infertility doctor secretly fathered dozens of children: how strangers became family",
+      "lesson": "What defines a family? For a group of strangers, that question took on a profound, unexpected meaning after DNA tests revealed a hidden, decades-old deception. They discovered they were all half-siblings conceived through artificial insemination in the mid-20th century. Their biological father was not the man who",
+      "source": "Up First",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/47ec8710-b245-49a0-9025-ed7c1e175b8b/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=47ec8710-b245-49a0-9025-ed7c1e175b8b&feed=HMwRVgVt&t=podcast&e=nx-s1-5896461&p=510318&d=1934&size=30955816",
+      "publishedAt": "2026-07-19T07:00:00.000Z",
+      "expiresAt": "2026-07-25T22:12:10.689Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "npr-up-first",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/47ec8710-b245-49a0-9025-ed7c1e175b8b/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=47ec8710-b245-49a0-9025-ed7c1e175b8b&feed=HMwRVgVt&t=podcast&e=nx-s1-5896461&p=510318&d=1934&size=30955816"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510318/up-first"
+        }
+      ]
+    },
+    {
       "id": "rss-be21dda3b8cc",
       "hook": "Hunter Biden on addiction and 'the gift of being publicly shamed' |…",
       "title": "Hunter Biden on addiction and 'the gift of being publicly shamed' | NPR's Newsmakers",
@@ -8483,7 +10342,7 @@
       "source": "Up First",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/39b91f3f-1055-47b5-9313-444c87a90485/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=39b91f3f-1055-47b5-9313-444c87a90485&feed=HMwRVgVt&t=podcast&e=nx-s1-5899095&p=510318&d=2544&size=40711777",
       "publishedAt": "2026-07-19T00:25:06.000Z",
-      "expiresAt": "2026-07-25T18:51:56.462Z",
+      "expiresAt": "2026-07-25T22:12:10.689Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -8508,7 +10367,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://blackpressusa.com/commentary-black-alliance-for-just-immigration-supports-black-voting-rights-2/",
       "publishedAt": "2026-07-18T23:41:27.000Z",
-      "expiresAt": "2026-07-25T18:51:57.472Z",
+      "expiresAt": "2026-07-25T22:12:12.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8522,6 +10381,27 @@
       ]
     },
     {
+      "id": "rss-de51c9e2daad",
+      "hook": "NEWS: Trump Orders Military to \"Open the Gates of Hell,\" U.S. Issues…",
+      "title": "NEWS: Trump Orders Military to \"Open the Gates of Hell,\" U.S. Issues Worldwide Alert, Activates Secret Terrorism Deportation Court",
+      "lesson": "Good evening, everyone.",
+      "source": "The Parnas Perspective",
+      "sourceUrl": "https://api.substack.com/feed/podcast/207590764/dc074937752abe403967b252b7fbff0d.mp3",
+      "publishedAt": "2026-07-18T22:44:10.000Z",
+      "expiresAt": "2026-07-25T22:12:15.109Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "aaron-parnas",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://api.substack.com/feed/podcast/207590764/dc074937752abe403967b252b7fbff0d.mp3"
+        }
+      ]
+    },
+    {
       "id": "rss-df9865a31f62",
       "hook": "New NPR Series: \"We Keep Us Safe\" from the Embedded podcast",
       "title": "New NPR Series: \"We Keep Us Safe\" from the Embedded podcast",
@@ -8529,7 +10409,7 @@
       "source": "NPR Politics Podcast",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/ondemand.npr.org/anon.npr-mp3/npr/nprpolitics/2026/07/20260718_nprpolitics_new_npr_series_we_keep_us_safe_from_the_embedded_podcast_trailer.mp3?t=podcast&e=nx-s1-5891715&p=510310&d=193&size=3091688",
       "publishedAt": "2026-07-18T16:00:01.000Z",
-      "expiresAt": "2026-07-25T18:51:56.339Z",
+      "expiresAt": "2026-07-25T22:12:10.467Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8572,6 +10452,31 @@
       ]
     },
     {
+      "id": "rss-55c39df2c84d",
+      "hook": "ICE Shootings Update, Swift Observatory Rescue, World Cup Final Preview",
+      "title": "ICE Shootings Update, Swift Observatory Rescue, World Cup Final Preview",
+      "lesson": "The latest on two fatal shootings involving federal immigration officers in Texas and Maine. An unprecedented rescue mission to save a valuable space observatory before it burns up in Earth's atmosphere. A preview of the FIFA World Cup final in New Jersey between Spain and Argentina. See pcm.adswizz.com for",
+      "source": "Up First",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/45fd49f1-c3a6-48d1-9110-e0f63a135630/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=45fd49f1-c3a6-48d1-9110-e0f63a135630&feed=HMwRVgVt&t=podcast&e=nx-s1-5897476&p=510318&d=969&size=15508419",
+      "publishedAt": "2026-07-18T15:06:28.000Z",
+      "expiresAt": "2026-07-25T22:12:10.689Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "npr-up-first",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/45fd49f1-c3a6-48d1-9110-e0f63a135630/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=45fd49f1-c3a6-48d1-9110-e0f63a135630&feed=HMwRVgVt&t=podcast&e=nx-s1-5897476&p=510318&d=969&size=15508419"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510318/up-first"
+        }
+      ]
+    },
+    {
       "id": "rss-6e81eeb2e709",
       "hook": "How a Man Once Ordered to Pay Libel Damages Helped Launch an…",
       "title": "How a Man Once Ordered to Pay Libel Damages Helped Launch an Investigation Into Islamic Private Schools",
@@ -8579,7 +10484,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/islamic-private-schools-texas-vouchers-sam-westrop",
       "publishedAt": "2026-07-18T03:10:00.000Z",
-      "expiresAt": "2026-07-25T18:51:56.879Z",
+      "expiresAt": "2026-07-25T22:12:11.245Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8600,7 +10505,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.yahoo.com/news/politics/articles/black-political-caucus-charlotte-mecklenburg-234656649.html",
       "publishedAt": "2026-07-17T23:46:56.000Z",
-      "expiresAt": "2026-07-25T18:51:57.472Z",
+      "expiresAt": "2026-07-25T22:12:12.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8621,7 +10526,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/human-rights-aid-right-wing-causes",
       "publishedAt": "2026-07-17T21:45:00.000Z",
-      "expiresAt": "2026-07-25T18:51:56.879Z",
+      "expiresAt": "2026-07-25T22:12:11.245Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8652,6 +10557,31 @@
         {
           "label": "Listen",
           "url": "https://www.npr.org/2026/07/17/nx-s1-5897372/trump-pushes-unsubstantiated-claims-of-election-fraud-again"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510310/npr-politics-podcast"
+        }
+      ]
+    },
+    {
+      "id": "rss-4704134b7e2a",
+      "hook": "Trump pushes unsubstantiated claims of election fraud — again",
+      "title": "Trump pushes unsubstantiated claims of election fraud — again",
+      "lesson": "In a national address Thursday night, President Trump said he has new evidence of fraud in the American election system. We discuss whether facts back up Trump's claims and what to make of Trump devoting a primetime address to this topic now. This episode: political correspondent Ashley Lopez, voting correspondent",
+      "source": "NPR Politics Podcast",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/f25c8975-7405-4f91-ba7e-093faee6a055/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=f25c8975-7405-4f91-ba7e-093faee6a055&feed=iDPaKWvZ&t=podcast&e=nx-s1-5897372&p=510310&d=1907&size=30516916",
+      "publishedAt": "2026-07-17T20:59:45.000Z",
+      "expiresAt": "2026-07-25T22:12:10.467Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics-podcast",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/f25c8975-7405-4f91-ba7e-093faee6a055/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=f25c8975-7405-4f91-ba7e-093faee6a055&feed=iDPaKWvZ&t=podcast&e=nx-s1-5897372&p=510310&d=1907&size=30516916"
         },
         {
           "label": "Show page",
@@ -8824,6 +10754,30 @@
       ]
     },
     {
+      "id": "rss-60f2b56488f5",
+      "hook": "Why the World Cup is race and class all the way down",
+      "title": "Why the World Cup is race and class all the way down",
+      "lesson": "All good (and complicated) things must come to an end, and the World Cup is no exception. To deal with the anticipatory grief ahead of the Spain v. Argentina final, NPR World Cup and Lionel Messi expert Jasmine Garsd hops on the mic to talk all things fútbol. Lace up your limited edition pink cleats: We're talking",
+      "source": "Code Switch",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/d85b61fe-136f-483c-b298-1832ae6c62e1/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=d85b61fe-136f-483c-b298-1832ae6c62e1&feed=KTjArdE7&t=podcast&e=nx-s1-5896342&p=510312&d=1631&size=26096622",
+      "publishedAt": "2026-07-17T07:00:00.000Z",
+      "expiresAt": "2026-08-01T22:12:10.797Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-code-switch",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/d85b61fe-136f-483c-b298-1832ae6c62e1/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=d85b61fe-136f-483c-b298-1832ae6c62e1&feed=KTjArdE7&t=podcast&e=nx-s1-5896342&p=510312&d=1631&size=26096622"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510312/codeswitch"
+        }
+      ]
+    },
+    {
       "id": "rss-d6cdd5ec5375",
       "hook": "These swing voters shrug at Trump earning billions last year",
       "title": "These swing voters shrug at Trump earning billions last year",
@@ -8849,6 +10803,31 @@
       ]
     },
     {
+      "id": "rss-e1bbc849f93b",
+      "hook": "These swing voters shrug at Trump earning billions last year",
+      "title": "These swing voters shrug at Trump earning billions last year",
+      "lesson": "NPR reporters observed focus groups of 12 Pennsylvania voters who backed former President Biden in 2020 and President Trump in 2024. We discuss their cynicism about politicians and the Iran war, and what they think about democratic socialism. This episode: voting correspondent Miles Parks, political correspondent",
+      "source": "NPR Politics Podcast",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/919838a8-fe7f-44df-8ade-058794d174af/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=919838a8-fe7f-44df-8ade-058794d174af&feed=iDPaKWvZ&t=podcast&e=nx-s1-5895103&p=510310&d=1206&size=19303906",
+      "publishedAt": "2026-07-16T20:27:13.000Z",
+      "expiresAt": "2026-07-25T22:12:10.467Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics-podcast",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/919838a8-fe7f-44df-8ade-058794d174af/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=919838a8-fe7f-44df-8ade-058794d174af&feed=iDPaKWvZ&t=podcast&e=nx-s1-5895103&p=510310&d=1206&size=19303906"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510310/npr-politics-podcast"
+        }
+      ]
+    },
+    {
       "id": "rss-2aea6483e534",
       "hook": "10K views · 71 reactions",
       "title": "10K views · 71 reactions",
@@ -8856,7 +10835,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.facebook.com/reel/1590244832705319/",
       "publishedAt": "2026-07-16T02:30:02.000Z",
-      "expiresAt": "2026-08-01T18:51:58.330Z",
+      "expiresAt": "2026-08-01T22:12:15.287Z",
       "topicIds": [
         "current-events"
       ],
@@ -8918,6 +10897,51 @@
       ]
     },
     {
+      "id": "rss-b6ff8cc37f9a",
+      "hook": "Trump's new legal weapon for prosecuting protestors",
+      "title": "Trump's new legal weapon for prosecuting protestors",
+      "lesson": "This summer, protesters connected to a demonstration outside the Prairieland ICE detention center in North Texas were sentenced to as much as 100 years in prison. It's the first case prosecuted under President Trump's National Security Presidential Memorandum 7, which targets \"extremism on migration, race, and gender\"",
+      "source": "Code Switch",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/01ba745a-e49d-464f-b01f-bb800dc24b26/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=01ba745a-e49d-464f-b01f-bb800dc24b26&feed=KTjArdE7&t=podcast&e=nx-s1-5886291&p=510312&d=1724&size=27584558",
+      "publishedAt": "2026-07-14T07:00:05.000Z",
+      "expiresAt": "2026-08-01T22:12:10.797Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-code-switch",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/01ba745a-e49d-464f-b01f-bb800dc24b26/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=01ba745a-e49d-464f-b01f-bb800dc24b26&feed=KTjArdE7&t=podcast&e=nx-s1-5886291&p=510312&d=1724&size=27584558"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510312/codeswitch"
+        }
+      ]
+    },
+    {
+      "id": "rss-e1f2c977db56",
+      "hook": "A Rising Democrat Said Black Leaders 'Defang The White Left.' He…",
+      "title": "A Rising Democrat Said Black Leaders 'Defang The White Left.' He Told HuffPost He Regrets It.",
+      "lesson": "Sunrise Movement co-founder William Lawrence, who was in a conversation with a Black activist, has alarmed party strategists with his rise in a Michigan swing",
+      "source": "Black Political News",
+      "sourceUrl": "https://www.huffpost.com/entry/surging-progressive-once-said-black-democratic-leaders-defang-the-white-left_n_6a51a01ae4b084b03f7f0f6d",
+      "publishedAt": "2026-07-11T10:00:17.000Z",
+      "expiresAt": "2026-07-25T22:12:12.242Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "black-political-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.huffpost.com/entry/surging-progressive-once-said-black-democratic-leaders-defang-the-white-left_n_6a51a01ae4b084b03f7f0f6d"
+        }
+      ]
+    },
+    {
       "id": "rss-33bb02bbabe0",
       "hook": "Southern Black leaders warn their power is on the line — and…",
       "title": "Southern Black leaders warn their power is on the line — and Democrats are looking elsewhere",
@@ -8925,7 +10949,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.politico.com/news/2026/07/10/black-leaders-democratic-party-redistricting-00991564",
       "publishedAt": "2026-07-10T09:00:00.000Z",
-      "expiresAt": "2026-07-25T18:51:57.472Z",
+      "expiresAt": "2026-07-25T22:12:12.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8963,6 +10987,51 @@
       ]
     },
     {
+      "id": "rss-a97cbc8f2c3f",
+      "hook": "Whose rights just changed? Our SCOTUS debrief",
+      "title": "Whose rights just changed? Our SCOTUS debrief",
+      "lesson": "A lot went down this term in the Supreme Court. So, we’re breaking down the landmark SCOTUS decisions that affect Black voters, trans athletes and immigrants. B.A. Parker and Code Switch producer Jess Kung go over the outcomes of the cases we’ve been watching, and NPR’s immigration correspondent Ximena Bustillo helps",
+      "source": "Code Switch",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/5c157c44-cb56-4aca-a3bd-3c7c600e8791/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=5c157c44-cb56-4aca-a3bd-3c7c600e8791&feed=KTjArdE7&t=podcast&e=nx-s1-5884867&p=510312&d=1740&size=27840767",
+      "publishedAt": "2026-07-10T07:00:01.000Z",
+      "expiresAt": "2026-08-01T22:12:10.797Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-code-switch",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/5c157c44-cb56-4aca-a3bd-3c7c600e8791/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=5c157c44-cb56-4aca-a3bd-3c7c600e8791&feed=KTjArdE7&t=podcast&e=nx-s1-5884867&p=510312&d=1740&size=27840767"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510312/codeswitch"
+        }
+      ]
+    },
+    {
+      "id": "rss-8753466db201",
+      "hook": "Talarico polling stronger with Texas’ Black voters than expected,…",
+      "title": "Talarico polling stronger with Texas’ Black voters than expected, but enthusiasm questions remain",
+      "lesson": "Recent polling from The Texas Politics Project suggests Democratic U.S. Senate nominee James Talarico is performing better with Black voters than his predecessors were at this point in their",
+      "source": "Black Political News",
+      "sourceUrl": "https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/07/09/556636/james-talarico-black-voter-support/",
+      "publishedAt": "2026-07-09T16:33:35.000Z",
+      "expiresAt": "2026-07-25T22:12:12.242Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "black-political-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/07/09/556636/james-talarico-black-voter-support/"
+        }
+      ]
+    },
+    {
       "id": "rss-f662f5c34489",
       "hook": "Leftist California group pushes to add 'Black English' to schools'…",
       "title": "Leftist California group pushes to add 'Black English' to schools' multilingual education program",
@@ -8970,7 +11039,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.foxnews.com/politics/leftist-california-group-pushes-add-black-english-schools-multilingual-education-program",
       "publishedAt": "2026-07-08T15:24:47.000Z",
-      "expiresAt": "2026-07-25T18:51:57.472Z",
+      "expiresAt": "2026-07-25T22:12:12.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8991,7 +11060,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.dw.com/en/assassins-creed-why-pop-culture-is-hooked-on-pirates/a-77871133",
       "publishedAt": "2026-07-08T10:34:32.000Z",
-      "expiresAt": "2026-08-01T18:51:58.330Z",
+      "expiresAt": "2026-08-01T22:12:15.287Z",
       "topicIds": [
         "current-events"
       ],
@@ -9028,6 +11097,30 @@
       ]
     },
     {
+      "id": "rss-6c35ee87e015",
+      "hook": "How anti-DEI hit the military",
+      "title": "How anti-DEI hit the military",
+      "lesson": "Pete Hegseth's Pentagon has been dismantling diversity initiatives and blocking the promotions of high-ranking Black officers. This week, Parker talks with The Atlantic 's Clint Smith, who interviewed two dozen Black service members about the long, contradictory history of Black patriotism and what it means to serve a",
+      "source": "Code Switch",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/ef52ec6f-bea0-44f1-8c43-52b525a3eaba/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=ef52ec6f-bea0-44f1-8c43-52b525a3eaba&feed=KTjArdE7&t=podcast&e=nx-s1-5869453&p=510312&d=2019&size=32304570",
+      "publishedAt": "2026-07-07T07:00:04.000Z",
+      "expiresAt": "2026-08-01T22:12:10.797Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-code-switch",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510312/npr.simplecastaudio.com/acf40eb5-ab43-4086-ae17-f1ef04b15913/episodes/ef52ec6f-bea0-44f1-8c43-52b525a3eaba/audio/128/default.mp3?awCollectionId=acf40eb5-ab43-4086-ae17-f1ef04b15913&awEpisodeId=ef52ec6f-bea0-44f1-8c43-52b525a3eaba&feed=KTjArdE7&t=podcast&e=nx-s1-5869453&p=510312&d=2019&size=32304570"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510312/codeswitch"
+        }
+      ]
+    },
+    {
       "id": "rss-eb492659f43f",
       "hook": "How Lizzo Became One of Pop Culture’s Great Flops",
       "title": "How Lizzo Became One of Pop Culture’s Great Flops",
@@ -9035,7 +11128,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.theatlantic.com/culture/2026/07/music-flop-era/687785/",
       "publishedAt": "2026-07-05T12:00:00.000Z",
-      "expiresAt": "2026-08-01T18:51:58.330Z",
+      "expiresAt": "2026-08-01T22:12:15.287Z",
       "topicIds": [
         "current-events"
       ],
@@ -9055,7 +11148,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/kayla-nicole-advice-black-men",
       "publishedAt": "2026-06-30T18:35:11.000Z",
-      "expiresAt": "2026-08-01T18:51:58.330Z",
+      "expiresAt": "2026-08-01T22:12:15.287Z",
       "topicIds": [
         "current-events"
       ],
@@ -9393,7 +11486,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.complex.com/pop-culture/a/jose-martinez/peter-rosenberg-jason-lee-heated-exchange-culture-vulture-claim",
       "publishedAt": "2026-05-15T15:17:36.000Z",
-      "expiresAt": "2026-08-01T18:51:58.330Z",
+      "expiresAt": "2026-08-01T22:12:15.287Z",
       "topicIds": [
         "current-events"
       ],
@@ -9413,7 +11506,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.catster.com/lifestyle/famous-black-cats/",
       "publishedAt": "2026-04-28T09:18:41.000Z",
-      "expiresAt": "2026-08-01T18:51:58.330Z",
+      "expiresAt": "2026-08-01T22:12:15.287Z",
       "topicIds": [
         "current-events"
       ],
@@ -9433,7 +11526,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://hunewsservice.com/variety/entertainment/the-k-pop-industry-keeps-copying-black-culture-while-ignoring-it/",
       "publishedAt": "2026-04-27T22:13:42.000Z",
-      "expiresAt": "2026-08-01T18:51:58.330Z",
+      "expiresAt": "2026-08-01T22:12:15.287Z",
       "topicIds": [
         "current-events"
       ],
@@ -9453,7 +11546,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
       "publishedAt": "2025-07-03T12:36:00.000Z",
-      "expiresAt": "2026-07-25T18:52:02.161Z",
+      "expiresAt": "2026-07-25T22:12:17.702Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -9474,7 +11567,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-13T13:33:00.000Z",
-      "expiresAt": "2026-07-25T18:52:02.161Z",
+      "expiresAt": "2026-07-25T22:12:17.702Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -9495,7 +11588,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-07T20:26:00.000Z",
-      "expiresAt": "2026-07-25T18:52:02.161Z",
+      "expiresAt": "2026-07-25T22:12:17.702Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -9516,7 +11609,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-06T13:34:00.000Z",
-      "expiresAt": "2026-07-25T18:52:02.161Z",
+      "expiresAt": "2026-07-25T22:12:17.702Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -9537,7 +11630,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-03T13:46:00.000Z",
-      "expiresAt": "2026-07-25T18:52:02.161Z",
+      "expiresAt": "2026-07-25T22:12:17.702Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -9558,7 +11651,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
       "publishedAt": "2024-12-28T00:32:00.000Z",
-      "expiresAt": "2026-07-25T18:52:02.161Z",
+      "expiresAt": "2026-07-25T22:12:17.702Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -9579,7 +11672,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
       "publishedAt": "2024-12-03T14:05:00.000Z",
-      "expiresAt": "2026-07-25T18:52:02.161Z",
+      "expiresAt": "2026-07-25T22:12:17.702Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -9600,7 +11693,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
       "publishedAt": "2024-11-19T08:55:00.000Z",
-      "expiresAt": "2026-07-25T18:52:02.161Z",
+      "expiresAt": "2026-07-25T22:12:17.702Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -9621,7 +11714,7 @@
       "source": "NPR News Now",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/ondemand.npr.org/anon.npr-mp3/npr/specials/2023/11/20231130_specials_db02f9c3-bb6f-4bdb-8121-4773a3192a82.mp3?p=500005&e=nsv2-1701376198544-s1-trailer&d=34&t=podcast&size=555094",
       "publishedAt": "2023-11-30T20:30:51.000Z",
-      "expiresAt": "2026-08-01T18:51:56.089Z",
+      "expiresAt": "2026-08-01T22:12:10.064Z",
       "topicIds": [
         "current-events"
       ],

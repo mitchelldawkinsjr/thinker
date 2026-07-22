@@ -42,8 +42,22 @@ export function Feed() {
   const news = useMemo(() => {
     const byId = new Map<string, (typeof curatedNews)[number]>()
     for (const n of [...curatedNews, ...userNews]) byId.set(n.id, n)
+    // Local test: /feed?demo=youtube&media=video → Play video lightbox
+    if (params.get('demo') === 'youtube') {
+      byId.set('demo-youtube', {
+        id: 'demo-youtube',
+        hook: 'KevOnStage Studios (demo)',
+        title: 'YouTube lightbox test',
+        lesson: 'Tap Play video to open the embed lightbox.',
+        source: 'KevOnStage Studios',
+        sourceUrl: 'https://www.youtube.com/watch?v=cybid3gX8xI',
+        publishedAt: new Date().toISOString(),
+        expiresAt: new Date(Date.now() + 86400000).toISOString(),
+        topicIds: ['current-events'],
+      })
+    }
     return [...byId.values()]
-  }, [curatedNews, userNews])
+  }, [curatedNews, userNews, params])
 
   const resolvedTopic = useMemo(
     () => resolveTopicFilter(topicFilter, subscriptions),

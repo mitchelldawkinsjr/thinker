@@ -286,6 +286,12 @@
   background: #000;
 }
 
+.video-lightbox-player--embed {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
+
 .video-lightbox-open {
   align-self: flex-end;
   display: inline-flex;

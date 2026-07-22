@@ -5,6 +5,7 @@ import {
   NEWS_TTL_DAYS_POLITICS,
 } from '../data/newsTypes'
 import type { TopicId } from '../data/types'
+import { detectMediaKind } from './mediaUrl'
 
 const DAY_MS = 24 * 60 * 60 * 1000
 
@@ -52,6 +53,28 @@ function attr(block: string, name: string, attrName: string): string {
   return m ? m[1] : ''
 }
 
+/** Prefer playable audio/video enclosures over webpage <link> (e.g. Club 520). */
+function mediaEnclosureUrl(block: string): string {
+  const candidates: Array<{ url: string; type: string }> = [
+    {
+      url: attr(block, 'enclosure', 'url'),
+      type: attr(block, 'enclosure', 'type'),
+    },
+    {
+      url: attr(block, 'media:content', 'url'),
+      type: attr(block, 'media:content', 'type'),
+    },
+  ]
+  for (const c of candidates) {
+    const url = decodeHtmlEntities(c.url || '').trim()
+    if (!url) continue
+    const type = (c.type || '').toLowerCase()
+    if (type.startsWith('audio/') || type.startsWith('video/')) return url
+    if (detectMediaKind(url)) return url
+  }
+  return ''
+}
+
 function parseEntries(xml: string): FeedEntry[] {
   const chunks: string[] = []
   const itemRe = /<item[\s>][\s\S]*?<\/item>/gi
@@ -70,10 +93,11 @@ function parseEntries(xml: string): FeedEntry[] {
       const guid = tag(block, 'guid')
       if (guid.startsWith('http')) link = guid
     }
-    if (!link) {
-      link = attr(block, 'enclosure', 'url') || attr(block, 'media:content', 'url') || ''
-    }
     link = decodeHtmlEntities(link)
+    // Podcast / media feeds: enclosure is the playable file; <link> is often a show page
+    const media = mediaEnclosureUrl(block)
+    if (media) link = media
+    else if (!link) link = ''
     const summary =
       tag(block, 'description') ||
       tag(block, 'summary') ||

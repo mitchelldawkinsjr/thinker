@@ -27,9 +27,44 @@ export function mediaPathExt(url: string): string | null {
   }
 }
 
-/** Direct media file links only — article/podcast pages return null. */
+/** YouTube watch / short / embed / youtu.be → video id, or null. */
+export function youtubeVideoId(url: string | undefined | null): string | null {
+  if (!url) return null
+  try {
+    const u = new URL(url)
+    const host = u.hostname.replace(/^www\./, '').toLowerCase()
+    if (host === 'youtu.be') {
+      const id = u.pathname.split('/').filter(Boolean)[0] || ''
+      return /^[\w-]{11}$/.test(id) ? id : null
+    }
+    if (
+      host === 'youtube.com' ||
+      host === 'm.youtube.com' ||
+      host === 'music.youtube.com' ||
+      host === 'youtube-nocookie.com'
+    ) {
+      const v = u.searchParams.get('v')
+      if (v && /^[\w-]{11}$/.test(v)) return v
+      const m = u.pathname.match(/^\/(?:embed|shorts|live)\/([\w-]{11})/)
+      if (m) return m[1]
+    }
+    return null
+  } catch {
+    return null
+  }
+}
+
+/** Embed player URL for lightbox autoplay. */
+export function youtubeEmbedUrl(url: string): string | null {
+  const id = youtubeVideoId(url)
+  if (!id) return null
+  return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`
+}
+
+/** Direct media files + YouTube watch/embed links; article/podcast pages return null. */
 export function detectMediaKind(url: string | undefined | null): MediaKind | null {
   if (!url) return null
+  if (youtubeVideoId(url)) return 'video'
   const ext = mediaPathExt(url)
   if (!ext) return null
   if (AUDIO_EXT.has(ext)) return 'audio'
