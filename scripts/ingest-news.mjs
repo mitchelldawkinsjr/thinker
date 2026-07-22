@@ -464,12 +464,8 @@ async function fetchFeed(feed) {
                   label: 'Al Jazeera podcasts',
                   url: feed.siteUrl || 'https://www.aljazeera.com/podcasts/news-updates/',
                 },
-                { label: 'AllSides', url: 'https://www.allsides.com/' },
               ]
-            : [
-                { label: 'Full story', url: e.link },
-                { label: 'AllSides', url: 'https://www.allsides.com/' },
-              ],
+            : [{ label: 'Full story', url: e.link }],
         }
         return item
       })
@@ -504,6 +500,15 @@ function clampPoliticsExpiry(item, now = Date.now()) {
   return { ...item, expiresAt: new Date(maxExp).toISOString() }
 }
 
+/** Drop legacy hardcoded AllSides chips from scraped cards (seeds keep theirs). */
+function sanitizeAngles(item) {
+  if (!Array.isArray(item.angles) || item.angles.length === 0) return item
+  if (String(item.expiresAt || '').startsWith('2099')) return item
+  const angles = item.angles.filter((a) => a.label !== 'AllSides')
+  if (angles.length === item.angles.length) return item
+  return { ...item, angles }
+}
+
 async function main() {
   const existing = await loadExisting()
   /** @type {NewsItem[]} */
@@ -526,7 +531,7 @@ async function main() {
 
   const byId = new Map()
   for (const item of [...existing, ...scraped, ...SEED]) {
-    const next = clampPoliticsExpiry(item)
+    const next = sanitizeAngles(clampPoliticsExpiry(item))
     if (!isActive(next)) continue
     byId.set(next.id, next)
   }
