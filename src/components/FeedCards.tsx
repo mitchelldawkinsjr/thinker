@@ -217,7 +217,7 @@ export function NewsFeedCard({
     (a) => a.url !== primary && a.label !== 'Full story' && a.label !== 'AllSides',
   )
 
-  const allSidesHref = `https://www.allsides.com/search?search=${encodeURIComponent(news.title)}`
+  const allSidesHref = 'https://www.allsides.com/bias-checker'
   const { body, challenge } = newsCardCopy(news)
 
   return (

@@ -22,8 +22,6 @@ export function Feed() {
   const topicKey = topicFilter
   const topic = topicFilter ? getTopic(topicFilter) : undefined
   const [reshuffle, setReshuffle] = useState(0)
-  /** Bumps after a full loop so freshness re-sorts without changing the daily shuffle seed */
-  const [loopTick, setLoopTick] = useState(0)
   /** Bumps when a card is permanently removed so the mix rebuilds */
   const [hideTick, setHideTick] = useState(0)
   const { items: news, updatedAt } = useNewsItems()
@@ -32,9 +30,9 @@ export function Feed() {
 
   const items = useMemo(
     () => buildMixedFeed(topicFilter, news, scriptures, reshuffle, bookIdeas),
-    // loopTick / hideTick re-run build for freshness + permanent dismiss
+    // hideTick re-runs build after permanent dismiss
     // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional refresh keys
-    [topicFilter, news, scriptures, reshuffle, bookIdeas, loopTick, hideTick],
+    [topicFilter, news, scriptures, reshuffle, bookIdeas, hideTick],
   )
 
   const [index, setIndex] = useState(() => getFeedCursor(topicKey))
@@ -44,11 +42,9 @@ export function Feed() {
     setIndex(getFeedCursor(topicKey))
   }, [topicKey])
 
+  // Clamp only — never stomp a saved cursor when the mix is briefly empty
   useEffect(() => {
-    if (items.length === 0) {
-      setIndex(0)
-      return
-    }
+    if (items.length === 0) return
     setIndex((i) => Math.min(i, items.length - 1))
   }, [items.length, hideTick])
 
@@ -76,21 +72,15 @@ export function Feed() {
   }, [topicKey])
 
   const next = useCallback(() => {
-    if (items.length <= 1) {
-      setLoopTick((t) => t + 1)
-      setIndex(0)
-      return
-    }
-    if (index + 1 >= items.length) {
-      setLoopTick((t) => t + 1)
-      setIndex(0)
-      return
-    }
+    if (items.length === 0) return
+    // Stay on the last card — reset to 1 only on Reshuffle or a new calendar day
+    if (index + 1 >= items.length) return
     setIndex(index + 1)
   }, [index, items.length])
 
   const prev = useCallback(() => {
-    setIndex((i) => (i - 1 + items.length) % Math.max(items.length, 1))
+    if (items.length === 0) return
+    setIndex((i) => Math.max(0, i - 1))
   }, [items.length])
 
   useEffect(() => {

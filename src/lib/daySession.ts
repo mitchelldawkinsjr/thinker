@@ -17,6 +17,17 @@ export function localDayKey(d = new Date()): string {
   return `${y}-${m}-${day}`
 }
 
+/** Accept legacy unpadded keys (`2026-7-22`) as the same day as `2026-07-22`. */
+function normalizeDayKey(key: string): string {
+  const m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(key.trim())
+  if (!m) return key
+  return `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}`
+}
+
+function sameDay(a: string, b: string): boolean {
+  return normalizeDayKey(a) === normalizeDayKey(b)
+}
+
 /**
  * If the calendar day changed since last open, wipe same-day memory (seen + cursor).
  * Kept / hidden stay — bookmarks and permanent dismissals survive overnight.
@@ -25,7 +36,11 @@ export function ensureFreshDay(): { day: string; rolled: boolean } {
   const today = localDayKey()
   try {
     const prev = localStorage.getItem(DAY_KEY)
-    if (prev === today) return { day: today, rolled: false }
+    if (prev && sameDay(prev, today)) {
+      // Migrate legacy unpadded day keys without treating it as a new day
+      if (prev !== today) localStorage.setItem(DAY_KEY, today)
+      return { day: today, rolled: false }
+    }
     localStorage.setItem(DAY_KEY, today)
     clearSeen()
     localStorage.removeItem(CURSOR_KEY)
@@ -43,7 +58,11 @@ function loadCursor(): DayCursor | null {
     if (typeof parsed.day !== 'string' || typeof parsed.index !== 'number') return null
     const topic =
       parsed.topic === null || typeof parsed.topic === 'string' ? parsed.topic : null
-    return { day: parsed.day, topic, index: Math.max(0, Math.floor(parsed.index)) }
+    return {
+      day: normalizeDayKey(parsed.day),
+      topic,
+      index: Math.max(0, Math.floor(parsed.index)),
+    }
   } catch {
     return null
   }
@@ -51,7 +70,10 @@ function loadCursor(): DayCursor | null {
 
 function saveCursor(cursor: DayCursor) {
   try {
-    localStorage.setItem(CURSOR_KEY, JSON.stringify(cursor))
+    localStorage.setItem(
+      CURSOR_KEY,
+      JSON.stringify({ ...cursor, day: normalizeDayKey(cursor.day) }),
+    )
   } catch {
     // ignore quota
   }
@@ -61,7 +83,7 @@ function saveCursor(cursor: DayCursor) {
 export function getFeedCursor(topic: string | null): number {
   const { day } = ensureFreshDay()
   const cursor = loadCursor()
-  if (!cursor || cursor.day !== day) return 0
+  if (!cursor || !sameDay(cursor.day, day)) return 0
   if (cursor.topic !== topic) return 0
   return cursor.index
 }
@@ -79,6 +101,6 @@ export function setFeedCursor(topic: string | null, index: number) {
 export function peekContinue(): { index: number; topic: string | null } | null {
   const { day } = ensureFreshDay()
   const cursor = loadCursor()
-  if (!cursor || cursor.day !== day || cursor.index <= 0) return null
+  if (!cursor || !sameDay(cursor.day, day) || cursor.index <= 0) return null
   return { index: cursor.index, topic: cursor.topic }
 }
