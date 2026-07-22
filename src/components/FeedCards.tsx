@@ -92,8 +92,8 @@ function FeedCardShell({
           )}
           {cta}
           {onNext && (
-            <button type="button" className="idea-btn ghost" onClick={onNext}>
-              Next
+            <button type="button" className="idea-btn ghost" onClick={onNext} aria-label="Next">
+              →
             </button>
           )}
         </div>
@@ -197,13 +197,7 @@ export function AskFeedCard({
         total={total}
         onPrev={onPrev}
         onHide={onHide}
-        cta={
-          onNext ? (
-            <button type="button" className="idea-btn next" onClick={onNext}>
-              Next →
-            </button>
-          ) : undefined
-        }
+        onNext={onNext}
       >
         <p className="feed-card-body">{prompt}</p>
       </FeedCardShell>

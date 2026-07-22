@@ -192,8 +192,8 @@ export function IdeaCard({
               </button>
             )}
             {!compact && onNext && (
-              <button type="button" className="idea-btn next" onClick={onNext}>
-                Next →
+              <button type="button" className="idea-btn ghost" onClick={onNext} aria-label="Next idea">
+                →
               </button>
             )}
           </div>
