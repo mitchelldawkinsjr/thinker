@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Fetch politics / current-events RSS → public/content/news.json
+ * Fetch politics / current-events / finance RSS → public/content/news.json
  * Thinker-shaped cards with tiered TTL from ingest time:
  *   politics → 3 days (headlines go stale fast)
  *   everything else → 10 days
@@ -187,6 +187,21 @@ const FEEDS = [
     url: 'https://rss.app/feeds/v1.1/tAQFDM5ScLlCIIWp.json',
     topicIds: ['football-film', 'sports-biz'],
     limit: 8,
+  },
+  // Finance — MarketWatch (Dow Jones)
+  {
+    name: 'MarketWatch · MarketPulse',
+    url: 'https://feeds.content.dowjones.io/public/rss/mw_marketpulse',
+    topicIds: ['finance', 'current-events'],
+    limit: 8,
+    ttlDays: 3,
+  },
+  {
+    name: 'MarketWatch · Bulletins',
+    url: 'https://feeds.content.dowjones.io/public/rss/mw_bulletins',
+    topicIds: ['finance', 'current-events'],
+    limit: 10,
+    ttlDays: 3,
   },
 ]
 

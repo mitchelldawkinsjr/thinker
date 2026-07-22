@@ -1,15 +1,459 @@
 {
-  "updatedAt": "2026-07-22T03:34:03.260Z",
+  "updatedAt": "2026-07-22T06:13:25.305Z",
   "items": [
+    {
+      "id": "rss-458164a4fd33",
+      "hook": "Burnham pulls back on suggestion to increase income tax allowance",
+      "title": "Burnham pulls back on suggestion to increase income tax allowance",
+      "lesson": "The new prime minister previously said voters were frustrated over the freeze in tax-free personal allowance.",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c935g67wyvgo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-22T06:10:45.000Z",
+      "expiresAt": "2026-07-25T06:13:22.514Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/c935g67wyvgo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-c4101f6fe233",
+      "hook": "Mamdani says New York City can&apos;t arrest Netanyahu but the…",
+      "title": "Mamdani says New York City can&apos;t arrest Netanyahu but the federal government should",
+      "lesson": "New York Mayor Mamdani said the city would not be able to execute an arrest warrant issued by the top war-crimes court for Israel&apos;s Benjamin Netanyahu, but urged the federal government to do",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/g-s1-134880/mamdani-nyc-netanyahu",
+      "publishedAt": "2026-07-22T06:04:29.000Z",
+      "expiresAt": "2026-07-25T06:13:21.818Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/g-s1-134880/mamdani-nyc-netanyahu"
+        }
+      ]
+    },
+    {
+      "id": "rss-160c2240e1ad",
+      "hook": "US defence chief Hegseth says war on Iran has cost $37.5bn, seeks…",
+      "title": "US defence chief Hegseth says war on Iran has cost $37.5bn, seeks $87.6bn more",
+      "lesson": "The cost of Washington's war in Iran has reached $37.5bn. That's according to the US Defense Secretary Pete Hegseth. He told a Senate committee that the Pentagon now needs nearly $90bn in additional funding and says anything less would put US national security at risk. Al Jazeera’s Eva McKend reports from Capitol",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8ff91e6c-a170-4260-a118-b48f0063e243/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T06:03:53.000Z",
+      "expiresAt": "2026-07-25T06:13:21.670Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8ff91e6c-a170-4260-a118-b48f0063e243/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-b74c388b9e7b",
+      "hook": "Chris Mason: Sarwar ministerial role sees promotion of another…",
+      "title": "Chris Mason: Sarwar ministerial role sees promotion of another Starmer critic",
+      "lesson": "Months after calling on Keir Starmer to quit, the Scottish Labour leader is set to become a minister in Burnham's government, the BBC's political editor",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cx2rv14em3jo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-22T05:22:32.000Z",
+      "expiresAt": "2026-07-25T06:13:22.514Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/cx2rv14em3jo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-b832bf2488b2",
+      "hook": "Goats of football: Indian village holds tournament with an…",
+      "title": "Goats of football: Indian village holds tournament with an indigenous twist",
+      "lesson": "In a remote district surrounded by forests and hills, teams from tribal villages compete for football glory - and goats.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/goats-of-football-indian-village-holds-tournament-with-an-indigenous-twist?traffic_source=rss",
+      "publishedAt": "2026-07-22T05:19:05.000Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/goats-of-football-indian-village-holds-tournament-with-an-indigenous-twist?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-2b074c294e95",
+      "hook": "US expands strikes on 11th straight night of attacks",
+      "title": "US expands strikes on 11th straight night of attacks",
+      "lesson": "The US military’s 11th consecutive night of strikes extended to Iranian provinces not previously hit.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/us-expands-strikes-on-11th-straight-night-of-attacks?traffic_source=rss",
+      "publishedAt": "2026-07-22T05:05:25.000Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/us-expands-strikes-on-11th-straight-night-of-attacks?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-adaa0ffa1940",
+      "hook": "Hegseth called a ‘failure’ over Iran as he reveals $37b cost of war",
+      "title": "Hegseth called a ‘failure’ over Iran as he reveals $37b cost of war",
+      "lesson": "US Defense Secretary Pete Hegseth gets into a heated exchange after being called a failed leader by Michigan Senator.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/hegseth-called-a-failure-over-iran-as-he-reveals-37b-cost-of-war?traffic_source=rss",
+      "publishedAt": "2026-07-22T05:02:51.000Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/hegseth-called-a-failure-over-iran-as-he-reveals-37b-cost-of-war?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-67bd2b482710",
+      "hook": "Rep. Blake Moore, R-Utah, on GOP&apos;s efforts to pass budget…",
+      "title": "Rep. Blake Moore, R-Utah, on GOP&apos;s efforts to pass budget reconciliation bill",
+      "lesson": "NPR&apos;s Leila Fadel speaks with Congressman Blake Moore, R-Utah, about Republican efforts to move forward with a $95 billion party-line budget reconciliation",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5897533/rep-blake-moore-r-utah-on-gops-efforts-to-pass-budget-reconciliation-bill",
+      "publishedAt": "2026-07-22T04:55:23.000Z",
+      "expiresAt": "2026-07-25T06:13:21.818Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5897533/rep-blake-moore-r-utah-on-gops-efforts-to-pass-budget-reconciliation-bill"
+        }
+      ]
+    },
+    {
+      "id": "rss-afbba55ff6a4",
+      "hook": "Guyana ferry capsize death toll rises to 53 as survivors describe terror",
+      "title": "Guyana ferry capsize death toll rises to 53 as survivors describe terror",
+      "lesson": "A ferry capsized in Guyana over the weekend, killing at least 53 people.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/guyana-ferry-capsize-death-toll-rises-to-53-as-survivors-describe-terror?traffic_source=rss",
+      "publishedAt": "2026-07-22T04:47:35.000Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/guyana-ferry-capsize-death-toll-rises-to-53-as-survivors-describe-terror?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-f0a7907d7f9e",
+      "hook": "‘Top of the list’: Red-hot LeBron suitor’s telling live stream leak…",
+      "title": "‘Top of the list’: Red-hot LeBron suitor’s telling live stream leak that could end 22-day nervous wait",
+      "lesson": "‘Top of the list’: Red-hot LeBron suitor’s telling live stream leak that could end 22-day nervous wait",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.foxsports.com.au/basketball/nba/nba-lebron-james-news-miami-heat-youtube-leak-sparks-return-rumours-as-rich-paul-says-decision-is-about-fit-news-highlights/news-story/4d18d70c6f963f49cef9791fd79c3a9d",
+      "publishedAt": "2026-07-22T04:42:00.000Z",
+      "expiresAt": "2026-08-01T06:13:25.095Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.foxsports.com.au/basketball/nba/nba-lebron-james-news-miami-heat-youtube-leak-sparks-return-rumours-as-rich-paul-says-decision-is-about-fit-news-highlights/news-story/4d18d70c6f963f49cef9791fd79c3a9d"
+        }
+      ]
+    },
+    {
+      "id": "rss-4e6efe58786f",
+      "hook": "Mamdani: Netanyahu is a war criminal, but New York cannot arrest him",
+      "title": "Mamdani: Netanyahu is a war criminal, but New York cannot arrest him",
+      "lesson": "NYC Mayor Zohran Mamdani releases a video statement calling for Israeli PM Netanyahu to face trial for war crimes.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/aje-onl-nf_new-yorks-mayor-calls-netanyahu-a-war-criminal-210726?traffic_source=rss",
+      "publishedAt": "2026-07-22T04:07:58.000Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/aje-onl-nf_new-yorks-mayor-calls-netanyahu-a-war-criminal-210726?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-146d12f0a568",
+      "hook": "Indian Gaming Association Urges Congress to Protect Tribal…",
+      "title": "Indian Gaming Association Urges Congress to Protect Tribal Sovereignty in Prediction Markets Hearing",
+      "lesson": "Overview: Indian Gaming Association Chairman David Z. Bean urged Congress to protect tribal sovereignty and consumer safeguards by preventing federally regulated prediction markets from expanding sports gambling outside established tribal and state gaming laws. The chairman of the Indian Gaming Association urged",
+      "source": "Congress",
+      "sourceUrl": "https://nativenewsonline.net/sovereignty/indian-gaming-association-urges-congress-to-protect-tribal-sovereignty-in-prediction-markets-hearing/",
+      "publishedAt": "2026-07-22T04:01:00.000Z",
+      "expiresAt": "2026-07-25T06:13:22.724Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://nativenewsonline.net/sovereignty/indian-gaming-association-urges-congress-to-protect-tribal-sovereignty-in-prediction-markets-hearing/"
+        }
+      ]
+    },
+    {
+      "id": "rss-2937f9aa65a7",
+      "hook": "Who will win the war of neo-mercantilists?",
+      "title": "Who will win the war of neo-mercantilists?",
+      "lesson": "China’s high degree of self-sufficiency also reduces its vulnerability to coercion by others",
+      "source": "War",
+      "sourceUrl": "https://www.ft.com/content/a5e9dfe7-6b4d-476d-93a0-193a753b885a",
+      "publishedAt": "2026-07-22T04:00:26.000Z",
+      "expiresAt": "2026-07-25T06:13:22.806Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.ft.com/content/a5e9dfe7-6b4d-476d-93a0-193a753b885a"
+        }
+      ]
+    },
+    {
+      "id": "rss-67b239d91527",
+      "hook": "Rep. Don Beyer urges Congress to reject more Iran war funding",
+      "title": "Rep. Don Beyer urges Congress to reject more Iran war funding",
+      "lesson": "Virginia Congressman Don Beyer (D) joins The Final 5 with Jim Lokay as he calls for Congress to deny additional funding for the Iran war until President Trump presents a path to peace. Rep. Beyer also criticizes Trump’s tariffs amid an affordability crisis and responds to calls for generational change as he seeks",
+      "source": "Congress",
+      "sourceUrl": "https://www.fox5dc.com/video/fmc-n4y17ge72zlvwdzp",
+      "publishedAt": "2026-07-22T03:54:33.000Z",
+      "expiresAt": "2026-07-25T06:13:22.724Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.fox5dc.com/video/fmc-n4y17ge72zlvwdzp"
+        }
+      ]
+    },
+    {
+      "id": "rss-126c4ae3de68",
+      "hook": "Palestine weekly: Ahead of elections, Israel doubles down on attacks",
+      "title": "Palestine weekly: Ahead of elections, Israel doubles down on attacks",
+      "lesson": "Gaza mourns as families are buried after Israeli attacks leave dozens dead, including children and displaced families.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/palestine-weekly-ahead-of-elections-israel-doubles-down-on-attacks?traffic_source=rss",
+      "publishedAt": "2026-07-22T03:46:11.000Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/palestine-weekly-ahead-of-elections-israel-doubles-down-on-attacks?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-e3aede0abf5b",
+      "hook": "Trump says US has no interest in Iran talks as cost of war increases",
+      "title": "Trump says US has no interest in Iran talks as cost of war increases",
+      "lesson": "The US entered its 11th consecutive night of strikes on Iran, while Tehran expanded its offensive against Gulf states. Meanwhile, Pakistan stepped up diplomatic efforts in hopes of salvaging the interim deal between the",
+      "source": "War",
+      "sourceUrl": "https://www.euronews.com/2026/07/22/trump-says-us-has-no-interest-in-iran-talks-as-cost-of-war-increases",
+      "publishedAt": "2026-07-22T03:45:38.000Z",
+      "expiresAt": "2026-07-25T06:13:22.806Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.euronews.com/2026/07/22/trump-says-us-has-no-interest-in-iran-talks-as-cost-of-war-increases"
+        }
+      ]
+    },
+    {
+      "id": "rss-7457392c37af",
+      "hook": "More than 140 dead, missing on refugee boat stranded off Mauritania",
+      "title": "More than 140 dead, missing on refugee boat stranded off Mauritania",
+      "lesson": "Boat carrying migrants and refugees from Africa ran out of fuel, leading to a tragedy with 143 dead and 38 rescued.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/more-than-140-dead-missing-on-refugee-boat-stranded-off-mauritania?traffic_source=rss",
+      "publishedAt": "2026-07-22T03:45:36.000Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/more-than-140-dead-missing-on-refugee-boat-stranded-off-mauritania?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-24e915eaccc1",
+      "hook": "“Did You Not Repeat?”: Tyrese Haliburton Reminds LeBron James of His…",
+      "title": "“Did You Not Repeat?”: Tyrese Haliburton Reminds LeBron James of His Own Championship Feat",
+      "lesson": "Tyrese Haliburton reminded LeBron James about how he won back-to-back titles with the Heat in 2012 and 2013.",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.basketballnews.com/news/basketballnews-nba-active-news-did-you-not-repeat-tyrese-haliburton-reminds-lebron-james-of-his-own-championship-feat/",
+      "publishedAt": "2026-07-22T03:38:11.000Z",
+      "expiresAt": "2026-08-01T06:13:25.095Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.basketballnews.com/news/basketballnews-nba-active-news-did-you-not-repeat-tyrese-haliburton-reminds-lebron-james-of-his-own-championship-feat/"
+        }
+      ]
+    },
+    {
+      "id": "rss-6c288d2bdebe",
+      "hook": "Heat mistakenly upload LeBron intro press conference video",
+      "title": "Heat mistakenly upload LeBron intro press conference video",
+      "lesson": "As the entire basketball world awaits LeBron James' free-agent decision, the Miami Heat may have jumped the gun.The Heat's YouTube channel briefly had a",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.thescore.com/nba/news/3569131/heat-mistakenly-upload-le-bron-intro-press-conference-video",
+      "publishedAt": "2026-07-22T03:37:22.000Z",
+      "expiresAt": "2026-08-01T06:13:25.095Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.thescore.com/nba/news/3569131/heat-mistakenly-upload-le-bron-intro-press-conference-video"
+        }
+      ]
+    },
+    {
+      "id": "rss-07736997a92b",
+      "hook": "France becomes first EU country to officially ban social media for…",
+      "title": "France becomes first EU country to officially ban social media for children",
+      "lesson": "France will ban social media for under-15s from September 1, following the UK and Australia’s moves toward blanket bans.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/france-becomes-first-eu-country-to-officially-ban-social-media-for-children?traffic_source=rss",
+      "publishedAt": "2026-07-22T03:34:11.000Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/france-becomes-first-eu-country-to-officially-ban-social-media-for-children?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-1dc901415aca",
+      "hook": "Naismith Basketball Hall of Fame announces new Stephen Curry exhibit",
+      "title": "Naismith Basketball Hall of Fame announces new Stephen Curry exhibit",
+      "lesson": "Stephen Curry becomes the first active NBA player to have an exhibit at the Naismith Memorial Basketball Hall of Fame.",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.usatoday.com/story/sports/nba/warriors/2026/07/21/naismith-basketball-hall-of-fame-steph-curry-exhibit/91004235007/",
+      "publishedAt": "2026-07-22T03:22:49.000Z",
+      "expiresAt": "2026-08-01T06:13:25.095Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.usatoday.com/story/sports/nba/warriors/2026/07/21/naismith-basketball-hall-of-fame-steph-curry-exhibit/91004235007/"
+        }
+      ]
+    },
+    {
+      "id": "rss-b43da657b307",
+      "hook": "Naismith Basketball Hall of Fame announces new Stephen Curry exhibit",
+      "title": "Naismith Basketball Hall of Fame announces new Stephen Curry exhibit",
+      "lesson": "Naismith Basketball Hall of Fame announces new Stephen Curry exhibit",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://sports.yahoo.com/articles/naismith-basketball-hall-fame-announces-032249860.html",
+      "publishedAt": "2026-07-22T03:22:49.000Z",
+      "expiresAt": "2026-08-01T06:13:25.095Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://sports.yahoo.com/articles/naismith-basketball-hall-fame-announces-032249860.html"
+        }
+      ]
+    },
     {
       "id": "rss-a354b0e4686d",
       "hook": "Wisconsin's 7th District Republican candidates on Congress",
       "title": "Wisconsin's 7th District Republican candidates on Congress",
-      "lesson": "Jessi Ebben, Kevin Hermening, Michael Alfonso, Niina Baum and Don Raihala on the midterms. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Jessi Ebben, Kevin Hermening, Michael Alfonso, Niina Baum and Don Raihala on the midterms.",
       "source": "Congress",
       "sourceUrl": "https://pbswisconsin.org/news-item/wisconsins-7th-district-republican-candidates-on-congress/",
       "publishedAt": "2026-07-22T03:06:08.000Z",
-      "expiresAt": "2026-07-25T03:34:00.934Z",
+      "expiresAt": "2026-07-25T06:13:22.724Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -22,14 +466,54 @@
       ]
     },
     {
+      "id": "rss-a279fc29f229",
+      "hook": "Egor Demin earns Second-Team All-Summer League honor",
+      "title": "Egor Demin earns Second-Team All-Summer League honor",
+      "lesson": "Thanks to a terrific three-game stretch during 2026 NBA Summer League in Las Vegas, former Cougar Egor Demin received a prestigious",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://byucougarswire.usatoday.com/story/sports/college/cougars/mens-basketball/2026/07/21/byu-mens-basketball-egor-demin-nba-summer-league-second-team/91004221007/",
+      "publishedAt": "2026-07-22T03:00:18.000Z",
+      "expiresAt": "2026-08-01T06:13:25.095Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://byucougarswire.usatoday.com/story/sports/college/cougars/mens-basketball/2026/07/21/byu-mens-basketball-egor-demin-nba-summer-league-second-team/91004221007/"
+        }
+      ]
+    },
+    {
+      "id": "rss-9bd82f59153a",
+      "hook": "‘He’s Back to the Drawing Board’ — NBA Champion Reveals LeBron James…",
+      "title": "‘He’s Back to the Drawing Board’ — NBA Champion Reveals LeBron James Made His Free-Agency Decision Then ‘Changed His Mind’",
+      "lesson": "Reports ramped up early last week that LeBron James would announce his next team. After so much anticipation heading into his Fanatics Fest appearance on Thursday, the four-time MVP disappointed the NBA world by saying that he wasn’t ready yet to make a",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://sports.yahoo.com/articles/back-drawing-board-nba-champion-025239582.html",
+      "publishedAt": "2026-07-22T02:52:39.000Z",
+      "expiresAt": "2026-08-01T06:13:25.095Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://sports.yahoo.com/articles/back-drawing-board-nba-champion-025239582.html"
+        }
+      ]
+    },
+    {
       "id": "rss-e0af248b6fa5",
       "hook": "How armed group alliances are reshaping Mali’s conflict and the…",
       "title": "How armed group alliances are reshaping Mali’s conflict and the wider Sahel",
-      "lesson": "A deadly attack near Anefis exposes the growing challenges facing Mali&#039;s military leaders. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "A deadly attack near Anefis exposes the growing challenges facing Mali&#039;s military leaders.",
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/how-armed-group-alliances-are-reshaping-malis-conflict-and-the-wider-sahel?traffic_source=rss",
       "publishedAt": "2026-07-22T02:39:13.000Z",
-      "expiresAt": "2026-07-25T03:33:59.619Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -45,11 +529,11 @@
       "id": "rss-7c9ba552437c",
       "hook": "K-pop and the sanitization of Black culture",
       "title": "K-pop and the sanitization of Black culture",
-      "lesson": "K-pop embodies the pattern of Black music being policed at its source and profited from once repackaged for mainstream audiences. Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "K-pop embodies the pattern of Black music being policed at its source and profited from once repackaged for mainstream audiences.",
       "source": "Black Pop Culture",
       "sourceUrl": "https://thelinknewspaper.ca/article/k-pop-and-the-sanitization-of-black-culture",
       "publishedAt": "2026-07-22T02:38:56.000Z",
-      "expiresAt": "2026-08-01T03:34:01.683Z",
+      "expiresAt": "2026-08-01T06:13:23.605Z",
       "topicIds": [
         "current-events"
       ],
@@ -64,11 +548,11 @@
       "id": "rss-31c20f8d426d",
       "hook": "“Team USA Is a Part of This Decision”: Brian Windhorst Shares…",
       "title": "“Team USA Is a Part of This Decision”: Brian Windhorst Shares Stunning Observation on LeBron James’ Potential Return To Heat",
-      "lesson": "NBA insider Brian Windhorst shares his observations and why he believes that LeBron James is likely to sign with the Heat. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "NBA insider Brian Windhorst shares his observations and why he believes that LeBron James is likely to sign with the Heat.",
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.basketballnews.com/news/basketballnews-nba-active-news-team-usa-is-a-part-of-this-decision-brian-windhorst-shares-stunning-observation-on-lebron-james-potential-return-to-heat/",
       "publishedAt": "2026-07-22T02:38:51.000Z",
-      "expiresAt": "2026-08-01T03:34:03.187Z",
+      "expiresAt": "2026-08-01T06:13:25.095Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -84,11 +568,11 @@
       "id": "rss-2de1ffa8e922",
       "hook": "‘Unprecedented’: OpenAI says AI models autonomously hacked another…",
       "title": "‘Unprecedented’: OpenAI says AI models autonomously hacked another company",
-      "lesson": "OpenAI says an autonomous agent bypassed controls and hacked Hugging Face servers during a cybersecurity test. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "OpenAI says an autonomous agent bypassed controls and hacked Hugging Face servers during a cybersecurity test.",
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/unprecedented-openai-says-ai-models-autonomously-hacked-another-company?traffic_source=rss",
       "publishedAt": "2026-07-22T02:36:55.000Z",
-      "expiresAt": "2026-07-25T03:33:59.619Z",
+      "expiresAt": "2026-07-25T06:13:21.276Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -124,11 +608,11 @@
       "id": "rss-df1823069a43",
       "hook": "House votes to extend government funding, aiming to avoid an…",
       "title": "House votes to extend government funding, aiming to avoid an election year shutdown",
-      "lesson": "Lawmakers are hoping to avoid a third shutdown since last September. The stopgap funding measure now heads to the Senate, where it faces an uncertain Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Lawmakers are hoping to avoid a third shutdown since last September. The stopgap funding measure now heads to the Senate, where it faces an uncertain",
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5902245/government-funding-house-vote-continuing-resolution",
       "publishedAt": "2026-07-22T02:20:15.000Z",
-      "expiresAt": "2026-07-25T03:34:00.148Z",
+      "expiresAt": "2026-07-25T06:13:21.818Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -144,11 +628,11 @@
       "id": "rss-974e7ac75a9e",
       "hook": "Hegseth estimates Iran war has cost $37.5 billion as he defends…",
       "title": "Hegseth estimates Iran war has cost $37.5 billion as he defends funding request at fiery hearing",
-      "lesson": "Defense Secretary Pete Hegseth faced fiery questions and protests Tuesday over the U.S. war with Iran, which he estimated has cost $37.5 billion so far, as Republicans prepare a $95 billion package to fund the military, along with other White House priorities. Hegseth provided the new estimate, up from earlier Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Defense Secretary Pete Hegseth faced fiery questions and protests Tuesday over the U.S. war with Iran, which he estimated has cost $37.5 billion so far, as Republicans prepare a $95 billion package to fund the military, along with other White House priorities. Hegseth provided the new estimate, up from earlier",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-hegseth-estimates-iran-war-has-cost-375-billion-he-defends-funding-request-fiery-hearing",
       "publishedAt": "2026-07-22T02:13:17.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -164,11 +648,11 @@
       "id": "rss-4bc064429740",
       "hook": "Hegseth asks Congress to cough up $67B amid Iran war and impending…",
       "title": "Hegseth asks Congress to cough up $67B amid Iran war and impending budget shortfall: 'Urgent, necessary injection'",
-      "lesson": "War Secretary Pete Hegseth urged senators Tuesday to approve $67 billion in supplemental funding for the Pentagon, calling it an \"urgent, necessary injection\" that would be used \"to address the immediate needs of our department\" amid the war in Iran. \"We live in a dangerous world that requires bold and swift action. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "War Secretary Pete Hegseth urged senators Tuesday to approve $67 billion in supplemental funding for the Pentagon, calling it an \"urgent, necessary injection\" that would be used \"to address the immediate needs of our department\" amid the war in Iran. \"We live in a dangerous world that requires bold and swift action.",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-hegseth-asks-congress-cough-67b-amid-iran-war-and-impending-budget-shortfall-urgent-necessary-injection",
       "publishedAt": "2026-07-22T02:13:17.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -184,11 +668,11 @@
       "id": "rss-708e93e696da",
       "hook": "Hegseth asks Congress for $87B to keep fighting Iran",
       "title": "Hegseth asks Congress for $87B to keep fighting Iran",
-      "lesson": "The Trump administration asked Congress for roughly $87 billion to fund the expanding conflict with Iran as lawmakers press the Pentagon for answers following the deaths of three U.S. service members over the weekend. Defense Secretary Pete Hegseth briefed lawmakers Tuesday in a classified bipartisan meeting before Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The Trump administration asked Congress for roughly $87 billion to fund the expanding conflict with Iran as lawmakers press the Pentagon for answers following the deaths of three U.S. service members over the weekend. Defense Secretary Pete Hegseth briefed lawmakers Tuesday in a classified bipartisan meeting before",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-hegseth-asks-congress-87b-keep-fighting-iran",
       "publishedAt": "2026-07-22T02:13:17.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -197,6 +681,26 @@
         {
           "label": "Full story",
           "url": "https://www.allsides.com/news/2026-07-21-0700/middle-east-hegseth-asks-congress-87b-keep-fighting-iran"
+        }
+      ]
+    },
+    {
+      "id": "rss-2222e3bdfa93",
+      "hook": "Sri Lanka Keeps Policy Rate Unchanged as Iran War Risks Resume",
+      "title": "Sri Lanka Keeps Policy Rate Unchanged as Iran War Risks Resume",
+      "lesson": "Sri Lanka’s central bank kept its benchmark interest rate unchanged, balancing the need to bring inflation back to target while supporting economic growth as renewed conflict between the United States and Iran clouds the global",
+      "source": "War",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-07-22/sri-lanka-keeps-policy-rate-unchanged-as-iran-war-risks-resume",
+      "publishedAt": "2026-07-22T02:02:31.000Z",
+      "expiresAt": "2026-07-25T06:13:22.806Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-22/sri-lanka-keeps-policy-rate-unchanged-as-iran-war-risks-resume"
         }
       ]
     },
@@ -224,11 +728,11 @@
       "id": "rss-54206f583cb8",
       "hook": "Europe wildfires: Spain, France and Sicily burning",
       "title": "Europe wildfires: Spain, France and Sicily burning",
-      "lesson": "Wildfires rage across southern Europe, forcing thousands to flee as extreme heat fuels blazes in Spain, France, Italy and Greece. Wildfires are scorching southern Europe, including Spain, France, Italy and Greece. Thousands of people have been forced from their homes. Al Jazeera’s Imogen Kimber reports. Subscribe to Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Wildfires rage across southern Europe, forcing thousands to flee as extreme heat fuels blazes in Spain, France, Italy and Greece. Wildfires are scorching southern Europe, including Spain, France, Italy and Greece. Thousands of people have been forced from their homes. Al Jazeera’s Imogen Kimber reports. Subscribe to",
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/27b77518-857b-4903-86e1-b48f001f3f82/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T01:53:58.000Z",
-      "expiresAt": "2026-07-25T03:33:59.973Z",
+      "expiresAt": "2026-07-25T06:13:21.670Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -248,11 +752,11 @@
       "id": "rss-782f9f363e62",
       "hook": "Trump to seek Congress approval for Saudi Arabia nuclear energy pact…",
       "title": "Trump to seek Congress approval for Saudi Arabia nuclear energy pact that lacks safeguards, sources say",
-      "lesson": "The Trump administration ​plans to submit to Congress a pact with Saudi Arabia to share nuclear power technology that does not ‌include safeguards the U.S. has long said would stop materials being used in nuclear weapons programs, two sources told Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The Trump administration ​plans to submit to Congress a pact with Saudi Arabia to share nuclear power technology that does not ‌include safeguards the U.S. has long said would stop materials being used in nuclear weapons programs, two sources told",
       "source": "Congress",
       "sourceUrl": "https://www.reuters.com/business/energy/trump-seek-congress-approval-saudi-arabia-nuclear-energy-pact-that-lacks-2026-07-22/",
       "publishedAt": "2026-07-22T01:51:21.000Z",
-      "expiresAt": "2026-07-25T03:34:00.934Z",
+      "expiresAt": "2026-07-25T06:13:22.724Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -365,6 +869,26 @@
       ]
     },
     {
+      "id": "rss-79f2462fa885",
+      "hook": "Think this stock market is in a bubble? These earnings numbers say…",
+      "title": "Think this stock market is in a bubble? These earnings numbers say otherwise.",
+      "lesson": "Think this stock market is in a bubble? These earnings numbers say otherwise.",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=e24a9787-d1ed-4339-83a2-9c6bc7740c24&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T01:01:44.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=e24a9787-d1ed-4339-83a2-9c6bc7740c24&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
       "id": "rss-dadb04ff3279",
       "hook": "Stephen Curry to become first active player with exhibit in…",
       "title": "Stephen Curry to become first active player with exhibit in Basketball Hall of Fame",
@@ -385,14 +909,34 @@
       ]
     },
     {
+      "id": "rss-9df60aa5c7ae",
+      "hook": "Hegseth grilled over growing cost of war with Iran",
+      "title": "Hegseth grilled over growing cost of war with Iran",
+      "lesson": "Hegseth grilled over growing cost of war with Iran",
+      "source": "War",
+      "sourceUrl": "https://www.nbcnews.com/video/shorts/hegseth-grilled-over-growing-cost-of-war-with-iran-267064901748",
+      "publishedAt": "2026-07-22T00:58:16.000Z",
+      "expiresAt": "2026-07-25T06:13:22.806Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.nbcnews.com/video/shorts/hegseth-grilled-over-growing-cost-of-war-with-iran-267064901748"
+        }
+      ]
+    },
+    {
       "id": "rss-f23bfd3ffdf8",
       "hook": "Chile’s Congress puts President Kast’s economic overhaul on track to…",
       "title": "Chile’s Congress puts President Kast’s economic overhaul on track to becoming law",
-      "lesson": "SANTIAGO, Chile (AP) — Chile’s Congress on Tuesday approved nearly all of the remaining changes to a sweeping tax and economic overhaul package promoted by President José Antonio Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "SANTIAGO, Chile (AP) — Chile’s Congress on Tuesday approved nearly all of the remaining changes to a sweeping tax and economic overhaul package promoted by President José Antonio",
       "source": "Congress",
       "sourceUrl": "https://wtop.com/world/2026/07/chiles-congress-puts-president-kasts-economic-overhaul-on-track-to-becoming-law/",
       "publishedAt": "2026-07-22T00:24:00.000Z",
-      "expiresAt": "2026-07-25T03:34:00.934Z",
+      "expiresAt": "2026-07-25T06:13:22.724Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -408,11 +952,11 @@
       "id": "rss-56805aca7c8d",
       "hook": "Pete Hegseth puts Iran war estimate at $37.5 billion as the Pentagon…",
       "title": "Pete Hegseth puts Iran war estimate at $37.5 billion as the Pentagon seeks more money from Congress",
-      "lesson": "The defense secretary’s estimate is up from the $25 billion Pentagon officials gave in late April. NBC News has reported the amount is much Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The defense secretary’s estimate is up from the $25 billion Pentagon officials gave in late April. NBC News has reported the amount is much",
       "source": "War",
       "sourceUrl": "https://www.nbcnews.com/politics/trump-administration/iran-war-cost-estimate-37-billion-pete-hegseth-senate-hearing-rcna588619",
       "publishedAt": "2026-07-22T00:22:24.000Z",
-      "expiresAt": "2026-07-25T03:34:01.002Z",
+      "expiresAt": "2026-07-25T06:13:22.806Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -428,11 +972,11 @@
       "id": "rss-dfc57024b9ca",
       "hook": "Chile's Congress puts President Kast's economic overhaul on track to…",
       "title": "Chile's Congress puts President Kast's economic overhaul on track to becoming law",
-      "lesson": "Chile’s Congress has approved most of a major tax and economic overhaul promoted by President José Antonio Kast. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Chile’s Congress has approved most of a major tax and economic overhaul promoted by President José Antonio Kast.",
       "source": "Congress",
       "sourceUrl": "https://www.clickondetroit.com/business/2026/07/22/chiles-congress-puts-president-kasts-economic-overhaul-on-track-to-becoming-law/",
       "publishedAt": "2026-07-22T00:17:16.000Z",
-      "expiresAt": "2026-07-25T03:34:00.934Z",
+      "expiresAt": "2026-07-25T06:13:22.724Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -528,11 +1072,11 @@
       "id": "rss-0f3cf007f669",
       "hook": "Snoop Dogg Biopic Sets Release&#160;Date",
       "title": "Snoop Dogg Biopic Sets Release&#160;Date",
-      "lesson": "The Universal Pictures film will be directed by Craig Brewer, with Outer Banks star Jonathan Daviss playing the rap legend. Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "The Universal Pictures film will be directed by Craig Brewer, with Outer Banks star Jonathan Daviss playing the rap legend.",
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/snoop-dogg-biopic-release-date-1236300241/",
       "publishedAt": "2026-07-22T00:08:55.000Z",
-      "expiresAt": "2026-08-01T03:34:02.542Z",
+      "expiresAt": "2026-08-01T06:13:24.512Z",
       "topicIds": [
         "current-events"
       ],
@@ -547,11 +1091,11 @@
       "id": "rss-5c007067ed1b",
       "hook": "Trump pushes for peace in Lebanon: President Aoun in US to discuss…",
       "title": "Trump pushes for peace in Lebanon: President Aoun in US to discuss fragile framework",
-      "lesson": "Lebanese President Joseph Aoun is in Washington for the first visit by a Lebanese leader to the White House since 2009. The talks focused on a fragile framework aimed at ending hostilities with Israel, securing an Israeli withdrawal and allowing displaced residents to return to the south. But renewed attacks on Iran Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Lebanese President Joseph Aoun is in Washington for the first visit by a Lebanese leader to the White House since 2009. The talks focused on a fragile framework aimed at ending hostilities with Israel, securing an Israeli withdrawal and allowing displaced residents to return to the south. But renewed attacks on Iran",
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/3ab61acf-57f7-4210-873b-b48f00016a00/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T00:05:20.000Z",
-      "expiresAt": "2026-07-25T03:33:59.973Z",
+      "expiresAt": "2026-07-25T06:13:21.670Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -611,11 +1155,11 @@
       "id": "rss-172e66ff8ce6",
       "hook": "Iran war live: US launches new attacks; Hegseth says war has cost…",
       "title": "Iran war live: US launches new attacks; Hegseth says war has cost $37.5bn",
-      "lesson": "Headline: “Iran war live: US launches new attacks; Hegseth says war has cost $37.5bn”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Iran war live: US launches new attacks; Hegseth says war has cost $37.5bn",
       "source": "War",
       "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/7/22/iran-war-live-us-launches-new-attacks-hegseth-says-war-has-cost-37-5bn",
       "publishedAt": "2026-07-22T00:00:15.000Z",
-      "expiresAt": "2026-07-25T03:34:01.002Z",
+      "expiresAt": "2026-07-25T06:13:22.806Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -631,11 +1175,11 @@
       "id": "rss-cc96fdf1af20",
       "hook": "Trump to seek approval of Congress for US-Saudi nuclear energy pact…",
       "title": "Trump to seek approval of Congress for US-Saudi nuclear energy pact that lacks safeguards",
-      "lesson": "Headline: “Trump to seek approval of Congress for US-Saudi nuclear energy pact that lacks safeguards”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "* * *",
       "source": "Congress",
       "sourceUrl": "https://www.timesofisrael.com/liveblog_entry/trump-to-seek-approval-of-congress-for-us-saudi-nuclear-energy-pact-that-lacks-safeguards-sources/",
       "publishedAt": "2026-07-22T00:00:00.000Z",
-      "expiresAt": "2026-07-25T03:34:00.934Z",
+      "expiresAt": "2026-07-25T06:13:22.724Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -651,11 +1195,11 @@
       "id": "rss-8cf983cd8182",
       "hook": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Benjamin Netanyahu is a war…",
       "title": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Benjamin Netanyahu is a war criminal.",
-      "lesson": "Headline: “RT by @Phil_Lewis_: RT by @Phil_Lewis_: Benjamin Netanyahu is a war criminal.”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Benjamin Netanyahu is a war criminal. Video — @NYCMayor Jul 22, 2026",
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/NYCMayor/status/2079718073058091261",
       "publishedAt": "2026-07-22T00:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.614Z",
+      "expiresAt": "2026-08-01T06:13:23.534Z",
       "topicIds": [
         "current-events"
       ],
@@ -690,11 +1234,11 @@
       "id": "rss-ebbc9914b9f1",
       "hook": "See All the Rappers Touring in 2026",
       "title": "See All the Rappers Touring in 2026",
-      "lesson": "Headline: “See All the Rappers Touring in 2026”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Rappers are hitting the road heavy this year. Continue reading&hellip;",
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/rappers-touring-2026/",
       "publishedAt": "2026-07-21T23:52:58.000Z",
-      "expiresAt": "2026-08-01T03:34:02.834Z",
+      "expiresAt": "2026-08-01T06:13:24.636Z",
       "topicIds": [
         "current-events"
       ],
@@ -729,11 +1273,11 @@
       "id": "rss-076ce7228fa5",
       "hook": "Doja Cat &#038; Latto Team Up for Sexy 2000s-Themed…",
       "title": "Doja Cat &#038; Latto Team Up for Sexy 2000s-Themed &#8216;Okayyy&#8217; Video, Atlanta Rapper to Join Doja&#8217;s Ma Vie World&#160;Tour",
-      "lesson": "Headline: “Doja Cat &#038; Latto Team Up for Sexy 2000s-Themed &#8216;Okayyy&#8217; Video, Atlanta Rapper to Join Doja&#8217;s Ma Vie World&#160;Tour”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "The North American leg of Doja's trek kicks off Oct. 1 in Detroit.",
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/doja-cat-latto-okayyy-video-tour-ma-vie-1236300237/",
       "publishedAt": "2026-07-21T23:37:47.000Z",
-      "expiresAt": "2026-08-01T03:34:02.542Z",
+      "expiresAt": "2026-08-01T06:13:24.512Z",
       "topicIds": [
         "current-events"
       ],
@@ -768,11 +1312,11 @@
       "id": "rss-85b5b11d5a51",
       "hook": "Israel is building a miles-long earthen barrier inside Gaza,…",
       "title": "Israel is building a miles-long earthen barrier inside Gaza, entrenching its division",
-      "lesson": "The Israeli military is quietly but quickly building a giant earthen barrier separating the over 50% of the Gaza Strip it controls from the rest of the territory, according to satellite imagery, further entrenching the division of the tiny Palestinian Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The Israeli military is quietly but quickly building a giant earthen barrier separating the over 50% of the Gaza Strip it controls from the rest of the territory, according to satellite imagery, further entrenching the division of the tiny Palestinian",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-israel-building-miles-long-earthen-barrier-inside-gaza-entrenching-its-division",
       "publishedAt": "2026-07-21T23:31:33.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -788,11 +1332,11 @@
       "id": "rss-f325a9a28a3a",
       "hook": "IDF confirms building massive sand barrier dividing Gaza after…",
       "title": "IDF confirms building massive sand barrier dividing Gaza after satellite imagery emerges",
-      "lesson": "Without any public announcement, the IDF has been building a large sand-wall barrier separating the 50-70% of the Gaza Strip it controls from the areas controlled by Hamas, the military confirmed on Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Without any public announcement, the IDF has been building a large sand-wall barrier separating the 50-70% of the Gaza Strip it controls from the areas controlled by Hamas, the military confirmed on",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-idf-confirms-building-massive-sand-barrier-dividing-gaza-after-satellite-imagery-emerges",
       "publishedAt": "2026-07-21T23:31:31.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -808,11 +1352,11 @@
       "id": "rss-79becd9f01e2",
       "hook": "Israel is building a miles-long earthen barrier inside Gaza,…",
       "title": "Israel is building a miles-long earthen barrier inside Gaza, entrenching its division",
-      "lesson": "The Israeli military is quietly but quickly building a giant earthen barrier separating the over 50% of the Gaza Strip it controls from the rest of the territory, according to satellite imagery, further entrenching the division of the tiny Palestinian Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The Israeli military is quietly but quickly building a giant earthen barrier separating the over 50% of the Gaza Strip it controls from the rest of the territory, according to satellite imagery, further entrenching the division of the tiny Palestinian",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-israel-building-miles-long-earthen-barrier-inside-gaza-entrenching-its-division-0",
       "publishedAt": "2026-07-21T23:31:29.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -845,6 +1389,26 @@
       ]
     },
     {
+      "id": "rss-5e7efadbe2c4",
+      "hook": "Here&#x2019;s how to time your retirement to keep your healthcare…",
+      "title": "Here&#x2019;s how to time your retirement to keep your healthcare costs down",
+      "lesson": "Here&#x2019;s how to time your retirement to keep your healthcare costs down",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=8df4ddad-262c-441c-8d41-c423d4c68a54&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T23:17:29.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=8df4ddad-262c-441c-8d41-c423d4c68a54&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
       "id": "rss-ba331c17bef8",
       "hook": "Harbor seal pup shot in the head euthanized as Congress weighs…",
       "title": "Harbor seal pup shot in the head euthanized as Congress weighs protection changes",
@@ -868,11 +1432,11 @@
       "id": "rss-3ccee1b1f174",
       "hook": "Burnham tells cabinet to tackle living costs at first meeting",
       "title": "Burnham tells cabinet to tackle living costs at first meeting",
-      "lesson": "The new prime minister chaired his first cabinet after announcing a cut to VAT on household electricity. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The new prime minister chaired his first cabinet after announcing a cut to VAT on household electricity.",
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cx2vp4x7gkxo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-21T23:15:33.000Z",
-      "expiresAt": "2026-07-25T03:34:00.748Z",
+      "expiresAt": "2026-07-25T06:13:22.514Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -888,11 +1452,11 @@
       "id": "rss-ddb54f01164c",
       "hook": "WATCH: 'You, sir, are the failure,' Sen. Peters tells Hegseth over…",
       "title": "WATCH: 'You, sir, are the failure,' Sen. Peters tells Hegseth over lack of U.S. strategy in Iran war",
-      "lesson": "Headline: “WATCH: 'You, sir, are the failure,' Sen. Peters tells Hegseth over lack of U.S. strategy in Iran war”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "WATCH: 'You, sir, are the failure,' Sen. Peters tells Hegseth over lack of U.S. strategy in Iran war",
       "source": "War",
       "sourceUrl": "https://www.pbs.org/newshour/politics/watch-you-sir-are-the-failure-sen-peters-tells-hegseth-over-lack-of-u-s-strategy-in-iran-war",
       "publishedAt": "2026-07-21T23:14:45.000Z",
-      "expiresAt": "2026-07-25T03:34:01.002Z",
+      "expiresAt": "2026-07-25T06:13:22.806Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -908,11 +1472,11 @@
       "id": "rss-69a1a4dae0ce",
       "hook": "DOW Identifies an Army Casualty",
       "title": "DOW Identifies an Army Casualty",
-      "lesson": "The Department of War announced the believed-to-be death of an active-duty soldier who was supporting overseas operations in Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The Department of War announced the believed-to-be death of an active-duty soldier who was supporting overseas operations in",
       "source": "War",
       "sourceUrl": "https://www.war.gov/News/Releases/Release/Article/4551903/dow-identifies-an-army-casualty/",
       "publishedAt": "2026-07-21T23:11:23.000Z",
-      "expiresAt": "2026-07-25T03:34:01.002Z",
+      "expiresAt": "2026-07-25T06:13:22.806Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1048,11 +1612,11 @@
       "id": "rss-f508a6f3ace7",
       "hook": "Lil Wayne Shares Unusual Food Rules Like Hating Mayo, Hiding Milk",
       "title": "Lil Wayne Shares Unusual Food Rules Like Hating Mayo, Hiding Milk",
-      "lesson": "Headline: “Lil Wayne Shares Unusual Food Rules Like Hating Mayo, Hiding Milk”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Wayne admits his diet is unhealthy. Continue reading&hellip;",
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/lil-wayne-food-rules-milk-mayo/",
       "publishedAt": "2026-07-21T22:46:16.000Z",
-      "expiresAt": "2026-08-01T03:34:02.834Z",
+      "expiresAt": "2026-08-01T06:13:24.636Z",
       "topicIds": [
         "current-events"
       ],
@@ -1087,11 +1651,11 @@
       "id": "rss-2c9c01130307",
       "hook": "When Joseph Williams refused to leave the public park where he has…",
       "title": "When Joseph Williams refused to leave the public park where he has lived for years, he was charged with a felony for camping He's from East Nashville, a historically Black community that has lost many of its Black residents due to rapid gentrification https://www.npr.org/2026/07/21/nx-s1-5887358/tennessee-homeless-arrest-felony-camping-ban",
-      "lesson": "When Joseph Williams refused to leave the public park where he has lived for years, he was charged with a felony for camping He's from East Nashville, a historically Black community that has lost many of its Black residents due to rapid gentrification npr.org/2026/07/21/nx-s1-588…— philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "When Joseph Williams refused to leave the public park where he has lived for years, he was charged with a felony for camping He's from East Nashville, a historically Black community that has lost many of its Black residents due to rapid gentrification npr.org/2026/07/21/nx-s1-588…— philip lewis (@Phil_Lewis_) Jul 21,",
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079696596879479017",
       "publishedAt": "2026-07-21T22:34:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.614Z",
+      "expiresAt": "2026-08-01T06:13:23.534Z",
       "topicIds": [
         "current-events"
       ],
@@ -1106,11 +1670,11 @@
       "id": "rss-beea6d15ac56",
       "hook": "Burnham sets out priorities: New UK PM addresses cost of living crisis",
       "title": "Burnham sets out priorities: New UK PM addresses cost of living crisis",
-      "lesson": "The UK’s new prime minister, Andy Burnham, has begun setting out his priorities—starting with the cost of living. His government says it will scrap tax on domestic electricity bills from October, saving a typical household around 60 dollars a year. However, critics are questioning the feasibility of the funding plans Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The UK’s new prime minister, Andy Burnham, has begun setting out his priorities—starting with the cost of living. His government says it will scrap tax on domestic electricity bills from October, saving a typical household around 60 dollars a year. However, critics are questioning the feasibility of the funding plans",
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/20602b92-87cd-44c2-a3d1-b48e01725d5d/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T22:28:46.000Z",
-      "expiresAt": "2026-07-25T03:33:59.973Z",
+      "expiresAt": "2026-07-25T06:13:21.670Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1123,6 +1687,26 @@
         {
           "label": "Al Jazeera podcasts",
           "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c79d6b126753",
+      "hook": "Super Micro&#x2019;s stock soars as its margins unexpectedly double",
+      "title": "Super Micro&#x2019;s stock soars as its margins unexpectedly double",
+      "lesson": "Super Micro&#x2019;s stock soars as its margins unexpectedly double",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=d18cf68c-3509-4890-b426-ec910b1cbe4f&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T22:27:20.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=d18cf68c-3509-4890-b426-ec910b1cbe4f&mod=mw_rss_bulletins"
         }
       ]
     },
@@ -1143,6 +1727,26 @@
         {
           "label": "Full story",
           "url": "https://thehill.com/policy/defense/5982033-emergency-funding-military-leaders-iran-war-senate-hearing/"
+        }
+      ]
+    },
+    {
+      "id": "rss-709c1450ba5a",
+      "hook": "Why energy stocks still look so cheap, even after their big rally…",
+      "title": "Why energy stocks still look so cheap, even after their big rally this month",
+      "lesson": "Why energy stocks still look so cheap, even after their big rally this month",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=0ee6455f-a8bd-41b8-99e4-985a55e8e0c9&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T22:08:39.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=0ee6455f-a8bd-41b8-99e4-985a55e8e0c9&mod=mw_rss_bulletins"
         }
       ]
     },
@@ -1190,11 +1794,11 @@
       "id": "rss-ee122ad52f88",
       "hook": "War on Iran: President Donald Trump says US not done yet",
       "title": "War on Iran: President Donald Trump says US not done yet",
-      "lesson": "US President Donald Trump met with Lebanese leader Joseph Aoun in Washington earlier. It was the first time a Lebanese head of state has visited the White House since 2009. And while hailing his relationship with Aoun, he also had strong words for Tehran. Al Jazeera’s Alan Fisher reports. Subscribe to our channel: Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "US President Donald Trump met with Lebanese leader Joseph Aoun in Washington earlier. It was the first time a Lebanese head of state has visited the White House since 2009. And while hailing his relationship with Aoun, he also had strong words for Tehran. Al Jazeera’s Alan Fisher reports. Subscribe to our channel:",
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/9c26e720-d037-41df-a37b-b48e0169ebb0/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T21:57:53.000Z",
-      "expiresAt": "2026-07-25T03:33:59.973Z",
+      "expiresAt": "2026-07-25T06:13:21.670Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1214,11 +1818,11 @@
       "id": "rss-98286c9e7043",
       "hook": "Diddy Wants Woman to Pay for Lawsuit Against Him for Son Assault",
       "title": "Diddy Wants Woman to Pay for Lawsuit Against Him for Son Assault",
-      "lesson": "Headline: “Diddy Wants Woman to Pay for Lawsuit Against Him for Son Assault”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "The woman filed the lawsuit in 2024. Continue reading&hellip;",
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/diddy-woman-pay-lawsuit-king-combs-sexual-assault/",
       "publishedAt": "2026-07-21T21:57:11.000Z",
-      "expiresAt": "2026-08-01T03:34:02.834Z",
+      "expiresAt": "2026-08-01T06:13:24.636Z",
       "topicIds": [
         "current-events"
       ],
@@ -1233,11 +1837,11 @@
       "id": "rss-2935bda79750",
       "hook": "Xzibit Explains How He&#8217;s Kept His Cat Alive for Over 20 Years:…",
       "title": "Xzibit Explains How He&#8217;s Kept His Cat Alive for Over 20 Years: &#8216;She&#8217;s Seen It&#160;All&#8217;",
-      "lesson": "Headline: “Xzibit Explains How He&#8217;s Kept His Cat Alive for Over 20 Years: &#8216;She&#8217;s Seen It&#160;All&#8217;”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Thunder Cat goes back to the days when X was hosting Pimp My Ride .",
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/xzibit-cat-thundercat-20-years-1236300076/",
       "publishedAt": "2026-07-21T21:56:13.000Z",
-      "expiresAt": "2026-08-01T03:34:02.542Z",
+      "expiresAt": "2026-08-01T06:13:24.512Z",
       "topicIds": [
         "current-events"
       ],
@@ -1252,11 +1856,11 @@
       "id": "rss-416a50142625",
       "hook": "Lil Wayne Reveals Top 2 Rappers, Favorite Alien &#038; Why He Hates…",
       "title": "Lil Wayne Reveals Top 2 Rappers, Favorite Alien &#038; Why He Hates Milk: &#8216;I Just Can&#8217;t Look at&#160;It&#8217;",
-      "lesson": "The rap legend sat down with the Friends Keep Secrets podcast for an interesting conversation. Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "The rap legend sat down with the Friends Keep Secrets podcast for an interesting conversation.",
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/lil-wayne-favorite-rappers-aliens-hates-milk-podcast-1236300041/",
       "publishedAt": "2026-07-21T21:45:44.000Z",
-      "expiresAt": "2026-08-01T03:34:02.542Z",
+      "expiresAt": "2026-08-01T06:13:24.512Z",
       "topicIds": [
         "current-events"
       ],
@@ -1271,11 +1875,11 @@
       "id": "rss-083b715641f0",
       "hook": "Gaza artist crafts ouds from aid box wood amid war shortages",
       "title": "Gaza artist crafts ouds from aid box wood amid war shortages",
-      "lesson": "In Gaza, Palestinian artist Suhail Abu Shawish is crafting ouds and repairing musical instruments using wood salvaged from humanitarian aid boxes. With electricity and running water scarce, and the price of wood and strings soaring amid the war, he has turned to improvisation to keep his craft alive. Many instruments Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "In Gaza, Palestinian artist Suhail Abu Shawish is crafting ouds and repairing musical instruments using wood salvaged from humanitarian aid boxes. With electricity and running water scarce, and the price of wood and strings soaring amid the war, he has turned to improvisation to keep his craft alive. Many instruments",
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/2f0a58b6-3004-4f0f-9fda-b48e016175f1/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T21:27:06.000Z",
-      "expiresAt": "2026-07-25T03:33:59.973Z",
+      "expiresAt": "2026-07-25T06:13:21.670Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1295,11 +1899,11 @@
       "id": "rss-80265489435a",
       "hook": "Bond Set For Memphis Mom Accused Of Fatally Shooting Man Found Under…",
       "title": "Bond Set For Memphis Mom Accused Of Fatally Shooting Man Found Under Her Teen Daughter’s Bed",
-      "lesson": "Kendra Scott, 36, told police earlier this month that she &#8220;did what [she] had to do.&#8221; And what she did, allegedly, is fatally shoot a man she found under her 13-year-old daughter&#8217;s bed. The story has been sparking debates across social media platforms about who was right and who was wrong. Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Kendra Scott, 36, told police earlier this month that she &#8220;did what [she] had to do.&#8221; And what she did, allegedly, is fatally shoot a man she found under her 13-year-old daughter&#8217;s bed. The story has been sparking debates across social media platforms about who was right and who was wrong.",
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/memphis-mom-kendra-scott-fatally-shot-man-rodderius-morton-found-daughter-bed/",
       "publishedAt": "2026-07-21T21:22:41.000Z",
-      "expiresAt": "2026-08-01T03:34:03.030Z",
+      "expiresAt": "2026-08-01T06:13:24.892Z",
       "topicIds": [
         "current-events"
       ],
@@ -1311,14 +1915,54 @@
       ]
     },
     {
+      "id": "rss-623a6ed115bb",
+      "hook": "Why Micron and other chip stocks are bouncing back so strongly",
+      "title": "Why Micron and other chip stocks are bouncing back so strongly",
+      "lesson": "Why Micron and other chip stocks are bouncing back so strongly",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=45d8ae07-b7e9-4a04-8e00-c55c7943dbc3&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T21:02:36.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=45d8ae07-b7e9-4a04-8e00-c55c7943dbc3&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-f71ea301067f",
+      "hook": "Scottish Labour leader Anas Sarwar set to become a minister in…",
+      "title": "Scottish Labour leader Anas Sarwar set to become a minister in Burnham's government",
+      "lesson": "It would mean Sarwar leaving the Scottish Parliament and his leader role, then taking up a seat in the House of Lords.",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/ce970y1n7plo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-21T20:56:18.000Z",
+      "expiresAt": "2026-07-25T06:13:22.514Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/ce970y1n7plo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
       "id": "rss-c6f7f1e7fcb9",
       "hook": "Key Glock Is Having Fun &#038; He Doesn&#8217;t Care Who Knows:…",
       "title": "Key Glock Is Having Fun &#038; He Doesn&#8217;t Care Who Knows: &#8216;People Don&#8217;t See This Side of&#160;Me&#8217;",
-      "lesson": "Headline: “Key Glock Is Having Fun &#038; He Doesn&#8217;t Care Who Knows: &#8216;People Don&#8217;t See This Side of&#160;Me&#8217;”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Glizzock released his Project X album in June.",
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/key-glock-interview-project-x-1236284255/",
       "publishedAt": "2026-07-21T20:51:51.000Z",
-      "expiresAt": "2026-08-01T03:34:02.542Z",
+      "expiresAt": "2026-08-01T06:13:24.512Z",
       "topicIds": [
         "current-events"
       ],
@@ -1333,11 +1977,11 @@
       "id": "rss-87c373c91134",
       "hook": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: If you’re trying to keep up…",
       "title": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: If you’re trying to keep up with the unprecedented cyclospora outbreak(s) in the U.S. and you’re confused, you’re not alone. I cannot even count how many headlines, news stories and social media posts in the past 48 hours I’ve seen that are misleading or just flat out wrong. We are simply awash in bad information. We took the paywall down for today's @foodfixco newsletter (for paid subscribers) hoping that it helps more people understand what's going on: https://foodfix.co/navigating-a-very-confusing-cyclospora-news-cycle/",
-      "lesson": "If you’re trying to keep up with the unprecedented cyclospora outbreak(s) in the U.S. and you’re confused, you’re not alone. I cannot even count how many headlines, news stories and social media posts in the past 48 hours I’ve seen that are misleading or just flat out wrong. We are simply awash in bad information. We Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "If you’re trying to keep up with the unprecedented cyclospora outbreak(s) in the U.S. and you’re confused, you’re not alone. I cannot even count how many headlines, news stories and social media posts in the past 48 hours I’ve seen that are misleading or just flat out wrong. We are simply awash in bad information. We",
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/hbottemiller/status/2079668417150517692",
       "publishedAt": "2026-07-21T20:42:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.614Z",
+      "expiresAt": "2026-08-01T06:13:23.534Z",
       "topicIds": [
         "current-events"
       ],
@@ -1352,11 +1996,11 @@
       "id": "rss-96113fa0cf29",
       "hook": "The Best Argument Against Political Polarization Is My Best Friend",
       "title": "The Best Argument Against Political Polarization Is My Best Friend",
-      "lesson": "Headline: “The Best Argument Against Political Polarization Is My Best Friend”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Preview URL: https://www.allsides.com/rss/news",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/featured/2026-07-21-0700/best-argument-against-political-polarization-my-best-friend",
       "publishedAt": "2026-07-21T20:39:59.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1372,11 +2016,11 @@
       "id": "rss-1a6e1ef63fda",
       "hook": "Peace for Lebanon? | This is America",
       "title": "Peace for Lebanon? | This is America",
-      "lesson": "This is America, and This is Donald Trump's push for peace in Lebanon. More than four thousand Lebanese citizens have been killed by Israel since March. Over a million people displaced. Nearly half of southern Lebanon's towns have been damaged or flattened. Lebanon, Israel and the U-S have agreed to a framework to end Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "This is America, and This is Donald Trump's push for peace in Lebanon. More than four thousand Lebanese citizens have been killed by Israel since March. Over a million people displaced. Nearly half of southern Lebanon's towns have been damaged or flattened. Lebanon, Israel and the U-S have agreed to a framework to end",
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/1d62974e-fee7-4f96-b3c4-b48e0153ca7d/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T20:38:05.000Z",
-      "expiresAt": "2026-07-25T03:33:59.973Z",
+      "expiresAt": "2026-07-25T06:13:21.670Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1396,11 +2040,11 @@
       "id": "rss-bb2e3db48c19",
       "hook": "Pete Hegseth said he couldn’t answer “specific numbers” on where an…",
       "title": "Pete Hegseth said he couldn’t answer “specific numbers” on where an extra $75 billion in defense spending has gone https://www.huffposm/entry/live-updates_n_6a5ddaf5e4b063a1f5f200e1/liveblog_6a5fcf62e4b06bbe43f4ed6d",
-      "lesson": "Pete Hegseth said he couldn’t answer “specific numbers” on where an extra $75 billion in defense spending has gone huffpost.com/entry/live-upda…— philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Pete Hegseth said he couldn’t answer “specific numbers” on where an extra $75 billion in defense spending has gone huffpost.com/entry/live-upda…— philip lewis (@Phil_Lewis_) Jul 21,",
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079664753220227401",
       "publishedAt": "2026-07-21T20:28:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.614Z",
+      "expiresAt": "2026-08-01T06:13:23.534Z",
       "topicIds": [
         "current-events"
       ],
@@ -1415,11 +2059,11 @@
       "id": "rss-02c94e06fbda",
       "hook": "UPDATE: Georgia Judge Sets Anthony Edwards&#8217; Monthly Child…",
       "title": "UPDATE: Georgia Judge Sets Anthony Edwards&#8217; Monthly Child Support Amount For Daughter With Ayesha Howard",
-      "lesson": "After more than a year tussling in court, Ayesha Howard and Anthony Edwards have reached the end point of their child support case. The ex-lovers share a daughter named Aubri Summer Edwards, who was born in October 2024. Howard is also the mother of Lil Baby&#8217;s eldest son, Jason, while Edwards reportedly has Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "After more than a year tussling in court, Ayesha Howard and Anthony Edwards have reached the end point of their child support case. The ex-lovers share a daughter named Aubri Summer Edwards, who was born in October 2024. Howard is also the mother of Lil Baby&#8217;s eldest son, Jason, while Edwards reportedly has",
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/update-georgia-judge-establishes-anthony-edward-monthly-child-support-payments-to-ayesha-howard-for-their-daughter/",
       "publishedAt": "2026-07-21T20:23:00.000Z",
-      "expiresAt": "2026-08-01T03:34:03.030Z",
+      "expiresAt": "2026-08-01T06:13:24.892Z",
       "topicIds": [
         "current-events"
       ],
@@ -1434,11 +2078,11 @@
       "id": "rss-480167387c54",
       "hook": "Video Shows Fight Before Travis Scott Removed From Club",
       "title": "Video Shows Fight Before Travis Scott Removed From Club",
-      "lesson": "Headline: “Video Shows Fight Before Travis Scott Removed From Club”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Brawl breaks out at club. Continue reading&hellip;",
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/travis-scott-jordan-clarkson-removed-club-bottle-throwing/",
       "publishedAt": "2026-07-21T20:22:04.000Z",
-      "expiresAt": "2026-08-01T03:34:02.834Z",
+      "expiresAt": "2026-08-01T06:13:24.636Z",
       "topicIds": [
         "current-events"
       ],
@@ -1453,11 +2097,11 @@
       "id": "rss-8519fd6a2bf0",
       "hook": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Update: the bus was carrying…",
       "title": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Update: the bus was carrying students from the Maryland School for the Blind",
-      "lesson": "Update: the bus was carrying students from the Maryland School for the BlindJustin Fenton (@justin_fenton)Happening now: Police respond after school bus crashes into Parkville building thebanner.com/community/loca…— https://x.com/justin_fenton/status/2079653073295700186— @justin_fenton Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Update: the bus was carrying students from the Maryland School for the BlindJustin Fenton (@justin_fenton)Happening now: Police respond after school bus crashes into Parkville building thebanner.com/community/loca…— https://x.com/justin_fenton/status/2079653073295700186— @justin_fenton Jul 21,",
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/justin_fenton/status/2079662711223283916",
       "publishedAt": "2026-07-21T20:20:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.614Z",
+      "expiresAt": "2026-08-01T06:13:23.534Z",
       "topicIds": [
         "current-events"
       ],
@@ -1472,11 +2116,11 @@
       "id": "rss-cbaadba830e6",
       "hook": "Trump hits Canada with slew of new 50% tariffs set to take effect in…",
       "title": "Trump hits Canada with slew of new 50% tariffs set to take effect in 30 days",
-      "lesson": "President Trump takes aim at Canada with his latest round of tariffs hitting a variety of goods at 50%. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "President Trump takes aim at Canada with his latest round of tariffs hitting a variety of goods at 50%.",
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5901957/trump-hits-canada-with-slew-of-new-50-tariffs-set-to-take-effect-in-30-days",
       "publishedAt": "2026-07-21T20:09:34.000Z",
-      "expiresAt": "2026-07-25T03:34:00.148Z",
+      "expiresAt": "2026-07-25T06:13:21.818Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1489,14 +2133,34 @@
       ]
     },
     {
+      "id": "rss-2386aad642f5",
+      "hook": "Dow, S&P 500 and Nasdaq snap 3-day losing streaks as chip stocks rebound",
+      "title": "Dow, S&P 500 and Nasdaq snap 3-day losing streaks as chip stocks rebound",
+      "lesson": "Dow, S&P 500 and Nasdaq snap 3-day losing streaks as chip stocks rebound",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=88a138ff-576f-4d72-a65c-ea209227ed8c&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T20:07:13.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=88a138ff-576f-4d72-a65c-ea209227ed8c&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
       "id": "rss-74437058b938",
       "hook": "Panthers sending 11 football teams of Charlotte-area students to NFL…",
       "title": "Panthers sending 11 football teams of Charlotte-area students to NFL Flag Championships",
-      "lesson": "Headline: “Panthers sending 11 football teams of Charlotte-area students to NFL Flag Championships”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "“We’re standing in a transformative moment in time as doors continue to open.”",
       "source": "NFL & Football News",
       "sourceUrl": "https://www.qcnews.com/high-school-sports/panthers-sending-11-teams-of-charlotte-area-studets-to-nfl-flag-football-championships/",
       "publishedAt": "2026-07-21T19:59:16.000Z",
-      "expiresAt": "2026-08-01T03:34:03.259Z",
+      "expiresAt": "2026-08-01T06:13:25.176Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -1512,11 +2176,11 @@
       "id": "rss-23728a8476a3",
       "hook": "State Dept. again deems Cuba a threat amid talk of U.S. push for…",
       "title": "State Dept. again deems Cuba a threat amid talk of U.S. push for regime change",
-      "lesson": "The Trump administration issued a report on Monday alleging that a multi-decade Cuban influence campaign in the United States has had \"remarkable success\" in infiltrating \"the highest reaches of the U.S. government,\" backing \"left-wing terrorism on American soil\" and turning \"America against Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The Trump administration issued a report on Monday alleging that a multi-decade Cuban influence campaign in the United States has had \"remarkable success\" in infiltrating \"the highest reaches of the U.S. government,\" backing \"left-wing terrorism on American soil\" and turning \"America against",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/defense-and-security-state-dept-again-deems-cuba-threat-amid-talk-us-push-regime-change",
       "publishedAt": "2026-07-21T19:59:08.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1532,11 +2196,11 @@
       "id": "rss-5370a826f6e0",
       "hook": "Explainer: How Israel's Lebanon pilot zones work",
       "title": "Explainer: How Israel's Lebanon pilot zones work",
-      "lesson": "The US has proposed three pilot zones in southern Lebanon—Zawtar al-Gharbiya, Froun and Srifa—as an initial step towards Israel's phased military withdrawal. Lebanese troops have begun deploying to Zawtar al-Gharbiya, clearing roads and removing unexploded ordnance left by Israeli forces. Despite a ceasefire Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The US has proposed three pilot zones in southern Lebanon—Zawtar al-Gharbiya, Froun and Srifa—as an initial step towards Israel's phased military withdrawal. Lebanese troops have begun deploying to Zawtar al-Gharbiya, clearing roads and removing unexploded ordnance left by Israeli forces. Despite a ceasefire",
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/bf3abaaf-909c-4c5e-aa77-b48e01493641/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T19:58:45.000Z",
-      "expiresAt": "2026-07-25T03:33:59.973Z",
+      "expiresAt": "2026-07-25T06:13:21.670Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1556,11 +2220,11 @@
       "id": "rss-d2b7c180e9c0",
       "hook": "State Department report links Cuba to wide range of US protests,…",
       "title": "State Department report links Cuba to wide range of US protests, including George Floyd",
-      "lesson": "The State Department in a new report linked Cuba to a range of protests in the U.S., including demonstrations surrounding the murder of George Floyd in Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The State Department in a new report linked Cuba to a range of protests in the U.S., including demonstrations surrounding the murder of George Floyd in",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/defense-and-security-state-department-report-links-cuba-wide-range-us-protests-including-george-floyd-0",
       "publishedAt": "2026-07-21T19:57:30.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1576,11 +2240,11 @@
       "id": "rss-b514f269e3af",
       "hook": "More than 6K non-citizens registered to vote in New Jersey due to…",
       "title": "More than 6K non-citizens registered to vote in New Jersey due to software issue: Sherrill",
-      "lesson": "Over 6,000 people who were not U.S. citizens were erroneously registered to vote in New Jersey from June 2023 to June 2024 due to a software error in the state's Department of Motor Vehicles, New Jersey Gov. Mikie Sherrill (D) said on Tuesday. Less than 400 individuals in this group actually voted, according to the Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Over 6,000 people who were not U.S. citizens were erroneously registered to vote in New Jersey from June 2023 to June 2024 due to a software error in the state's Department of Motor Vehicles, New Jersey Gov. Mikie Sherrill (D) said on Tuesday. Less than 400 individuals in this group actually voted, according to the",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/voting-rights-and-voter-fraud-more-6k-non-citizens-registered-vote-new-jersey-due-software-issue-sherrill",
       "publishedAt": "2026-07-21T19:56:20.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1596,11 +2260,11 @@
       "id": "rss-41323e7b714f",
       "hook": "French parliament backs social media ban for children under 15",
       "title": "French parliament backs social media ban for children under 15",
-      "lesson": "French lawmakers approved on Tuesday a ban on social media access for children under the age of ​15, as concerns grow around the world over the impact social media ‌have on the health and safety of minors. France becomes the first in Europe to follow Australia, where the world's first ban for under-16s on platforms Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "French lawmakers approved on Tuesday a ban on social media access for children under the age of ​15, as concerns grow around the world over the impact social media ‌have on the health and safety of minors. France becomes the first in Europe to follow Australia, where the world's first ban for under-16s on platforms",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/world-french-parliament-backs-social-media-ban-children-under-15",
       "publishedAt": "2026-07-21T19:56:20.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1616,11 +2280,11 @@
       "id": "rss-d5d9b635d936",
       "hook": "Pentagon Identifies Another Soldier Killed in Iran War",
       "title": "Pentagon Identifies Another Soldier Killed in Iran War",
-      "lesson": "The Pentagon on Tuesday released the name of a U.S. soldier killed during the disposal of an Iranian drone in northern Iraq. Sgt. Michael Emmanuel Swinton, 30, of Fayetteville, N.C., died Saturday during a controlled detonation at Erbil Air Base. The incident is under investigation, the Pentagon said. Sergeant Swinton Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The Pentagon on Tuesday released the name of a U.S. soldier killed during the disposal of an Iranian drone in northern Iraq. Sgt. Michael Emmanuel Swinton, 30, of Fayetteville, N.C., died Saturday during a controlled detonation at Erbil Air Base. The incident is under investigation, the Pentagon said. Sergeant Swinton",
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-pentagon-identifies-another-soldier-killed-iran-war",
       "publishedAt": "2026-07-21T19:56:20.000Z",
-      "expiresAt": "2026-07-25T03:33:59.517Z",
+      "expiresAt": "2026-07-25T06:13:21.167Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1636,11 +2300,11 @@
       "id": "rss-368a6d73ebfb",
       "hook": "Oklahoma Woman Convicted After Allegedly Forcing 11-Year-Old…",
       "title": "Oklahoma Woman Convicted After Allegedly Forcing 11-Year-Old Daughter To Have Stepfather&#8217;s Baby With No Medical Care",
-      "lesson": "An Oklahoma woman was convicted of child sexual abuse after she allegedly forced her 11-year-old daughter to have her husband&#8217;s baby, without medical care. Cherie Walker was found guilty on six counts of child neglect.RELATED:&#160;UPDATE: D4vd Accused Of Having &#8220;Significant&#8221; Amount Of Child Sex Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "An Oklahoma woman was convicted of child sexual abuse after she allegedly forced her 11-year-old daughter to have her husband&#8217;s baby, without medical care. Cherie Walker was found guilty on six counts of child neglect.RELATED:&#160;UPDATE: D4vd Accused Of Having &#8220;Significant&#8221; Amount Of Child Sex",
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/oklahoma-woman-cherie-walker-forcing-11-year-old-daughter-stepfather-baby/",
       "publishedAt": "2026-07-21T19:47:35.000Z",
-      "expiresAt": "2026-08-01T03:34:03.030Z",
+      "expiresAt": "2026-08-01T06:13:24.892Z",
       "topicIds": [
         "current-events"
       ],
@@ -1652,14 +2316,34 @@
       ]
     },
     {
+      "id": "rss-c473cbdb8165",
+      "hook": "An oil lifeline is under threat. Markets haven&apos;t priced in the…",
+      "title": "An oil lifeline is under threat. Markets haven&apos;t priced in the growing crisis.",
+      "lesson": "An oil lifeline is under threat. Markets haven&apos;t priced in the growing crisis.",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=7493d8ae-a438-4571-9be2-3411d8e55902&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T19:35:05.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=7493d8ae-a438-4571-9be2-3411d8e55902&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
       "id": "rss-ac07a5297d6b",
       "hook": "Every 2026 XXL Freshman Shows Their Bars in A Cappella Freestyles",
       "title": "Every 2026 XXL Freshman Shows Their Bars in A Cappella Freestyles",
-      "lesson": "Headline: “Every 2026 XXL Freshman Shows Their Bars in A Cappella Freestyles”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "They are born ready to freestyle. Continue reading&hellip;",
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/2026-xxl-freshman-freestyles/",
       "publishedAt": "2026-07-21T19:33:25.000Z",
-      "expiresAt": "2026-08-01T03:34:02.834Z",
+      "expiresAt": "2026-08-01T06:13:24.636Z",
       "topicIds": [
         "current-events"
       ],
@@ -1674,11 +2358,11 @@
       "id": "rss-02db309f9db0",
       "hook": "Celeste Rivas Hernandez Was &#8220;Unrecognizable,&#8221; Says Cop…",
       "title": "Celeste Rivas Hernandez Was &#8220;Unrecognizable,&#8221; Says Cop Who Saw Remains at D4vd&#160;Hearing",
-      "lesson": "Prosecutors began to lay out the evidence against the 21-year-old singer, who's accused of murdering and dismembering the 14-year-old Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Prosecutors began to lay out the evidence against the 21-year-old singer, who's accused of murdering and dismembering the 14-year-old",
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/national/d4vd-hearing-celeste-rivas-hernandez-unrecognizable-remains-1235180578/",
       "publishedAt": "2026-07-21T19:30:00.000Z",
-      "expiresAt": "2026-08-01T03:34:02.938Z",
+      "expiresAt": "2026-08-01T06:13:24.775Z",
       "topicIds": [
         "current-events"
       ],
@@ -1693,11 +2377,11 @@
       "id": "rss-bbac3f6bd3a8",
       "hook": "Oop! Nancy Grace Claps Back At Social Media Critics Calling Her Out…",
       "title": "Oop! Nancy Grace Claps Back At Social Media Critics Calling Her Out For Digging Into Nolan Wells&#8217; Case (UPDATE)",
-      "lesson": "Nancy Grace is on the case! Hours after Nolan Xavier Wells&#8216; funeral, Grace led a &#8216;Crime Stories&#8217; segment about his disappearance and death. The nearly hour-long segment has since gone viral across social media platforms. While some folks are rejoicing at her highlighting the details of the Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Nancy Grace is on the case! Hours after Nolan Xavier Wells&#8216; funeral, Grace led a &#8216;Crime Stories&#8217; segment about his disappearance and death. The nearly hour-long segment has since gone viral across social media platforms. While some folks are rejoicing at her highlighting the details of the",
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/nancy-grace-nolan-wells-case-investigation-social-media-reactions/",
       "publishedAt": "2026-07-21T19:16:57.000Z",
-      "expiresAt": "2026-08-01T03:34:03.030Z",
+      "expiresAt": "2026-08-01T06:13:24.892Z",
       "topicIds": [
         "current-events"
       ],
@@ -1709,14 +2393,54 @@
       ]
     },
     {
+      "id": "rss-e13cf60a63db",
+      "hook": "Nasdaq leading market&#x2019;s gains in final hour as semiconductor…",
+      "title": "Nasdaq leading market&#x2019;s gains in final hour as semiconductor stocks rally &#x2014; live",
+      "lesson": "Nasdaq leading market&#x2019;s gains in final hour as semiconductor stocks rally &#x2014; live",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=090bb7a1-83ff-4217-a4d5-bda4ae91cafa&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T19:13:24.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=090bb7a1-83ff-4217-a4d5-bda4ae91cafa&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-13d2354150e8",
+      "hook": "Trump looks set to roll out a new set of tariffs. Will markets care?",
+      "title": "Trump looks set to roll out a new set of tariffs. Will markets care?",
+      "lesson": "Trump looks set to roll out a new set of tariffs. Will markets care?",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=e6fc718e-169e-4cce-a7f7-5ee3b0abe01a&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T18:54:21.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=e6fc718e-169e-4cce-a7f7-5ee3b0abe01a&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
       "id": "rss-8d6994d8d8ad",
       "hook": "Offset Gets 50 Hours of Community Service for ‘Regretful’ Assault of…",
       "title": "Offset Gets 50 Hours of Community Service for ‘Regretful’ Assault of Weed Dispensary&#160;Guard",
-      "lesson": "The Migos rapper must also complete an anger management program, refrain from possessing firearms, and stay 100 yards away from the MedMen Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "The Migos rapper must also complete an anger management program, refrain from possessing firearms, and stay 100 yards away from the MedMen",
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/entertainment/offset-community-service-weed-dispensary-guard-assault-1235180568/",
       "publishedAt": "2026-07-21T18:53:45.000Z",
-      "expiresAt": "2026-08-01T03:34:02.938Z",
+      "expiresAt": "2026-08-01T06:13:24.775Z",
       "topicIds": [
         "current-events"
       ],
@@ -1731,11 +2455,11 @@
       "id": "rss-8a7c43f3ba39",
       "hook": "Here&#8217;s Why Cardi B Calls Herself &#8216;Hip-Hop&#8217;s…",
       "title": "Here&#8217;s Why Cardi B Calls Herself &#8216;Hip-Hop&#8217;s Britney&#160;Spears&#8217;",
-      "lesson": "Headline: “Here&#8217;s Why Cardi B Calls Herself &#8216;Hip-Hop&#8217;s Britney&#160;Spears&#8217;”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Cardi's love life continues to be a tabloid favorite.",
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/cardi-b-hip-hop-britney-spears-1236299655/",
       "publishedAt": "2026-07-21T18:36:06.000Z",
-      "expiresAt": "2026-08-01T03:34:02.542Z",
+      "expiresAt": "2026-08-01T06:13:24.512Z",
       "topicIds": [
         "current-events"
       ],
@@ -1774,11 +2498,11 @@
       "id": "rss-d20175b4838d",
       "hook": "PARIS (AP) — French lawmakers adopt a sweeping social media ban for…",
       "title": "PARIS (AP) — French lawmakers adopt a sweeping social media ban for children under 15.",
-      "lesson": "PARIS (AP) — French lawmakers adopt a sweeping social media ban for children under 15.— philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "PARIS (AP) — French lawmakers adopt a sweeping social media ban for children under 15.— philip lewis (@Phil_Lewis_) Jul 21,",
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079629232397812017",
       "publishedAt": "2026-07-21T18:07:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.614Z",
+      "expiresAt": "2026-08-01T06:13:23.534Z",
       "topicIds": [
         "current-events"
       ],
@@ -1793,11 +2517,11 @@
       "id": "rss-abdf52dc2c51",
       "hook": "2026 NFL fantasy football: Top seven RB values",
       "title": "2026 NFL fantasy football: Top seven RB values",
-      "lesson": "Is Omarion Hampton about to break out in Year 2? Will Jordan Mason become the lead back in a resurgent Vikings offense? Matt Okada identifies the top seven fantasy values at running back heading into the 2026 NFL Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Is Omarion Hampton about to break out in Year 2? Will Jordan Mason become the lead back in a resurgent Vikings offense? Matt Okada identifies the top seven fantasy values at running back heading into the 2026 NFL",
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-rb-values",
       "publishedAt": "2026-07-21T17:54:40.000Z",
-      "expiresAt": "2026-08-01T03:34:03.259Z",
+      "expiresAt": "2026-08-01T06:13:25.176Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -1914,6 +2638,26 @@
       ]
     },
     {
+      "id": "rss-c57946093736",
+      "hook": "Tempted to micromanage your micromanaging boss right back?…",
+      "title": "Tempted to micromanage your micromanaging boss right back? Don&#x2019;t. Here&#x2019;s why.",
+      "lesson": "Tempted to micromanage your micromanaging boss right back? Don&#x2019;t. Here&#x2019;s why.",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=64fc0152-01db-4ea1-bf25-28bc196fad8f&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T17:24:35.000Z",
+      "expiresAt": "2026-07-25T06:13:25.304Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=64fc0152-01db-4ea1-bf25-28bc196fad8f&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
       "id": "rss-d6de160699d0",
       "hook": "Salah to Besiktas? Football’s transfer window centre stage after…",
       "title": "Salah to Besiktas? Football’s transfer window centre stage after World Cup",
@@ -1957,11 +2701,11 @@
       "id": "rss-6f9c13e03143",
       "hook": "Sackings, cabinet surprises and policies: Burnham's first 24 hours as PM",
       "title": "Sackings, cabinet surprises and policies: Burnham's first 24 hours as PM",
-      "lesson": "The new prime minister enters Number 10 in a flurry of activity - but he is still facing calls for a snap election. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The new prime minister enters Number 10 in a flurry of activity - but he is still facing calls for a snap election.",
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/c4gjz907pppo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-21T17:14:44.000Z",
-      "expiresAt": "2026-07-25T03:34:00.748Z",
+      "expiresAt": "2026-07-25T06:13:22.514Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2125,11 +2869,11 @@
       "id": "rss-37d372de64ee",
       "hook": "Entergy highlights women leading the future of the utility industry",
       "title": "Entergy highlights women leading the future of the utility industry",
-      "lesson": "At the Global Black Economic Forum Business Summit during the 2026 ESSENCE Festival of Culture™, Entergy convened industry leaders to discuss innovation, resilience, and why women are helping shape the future of the utility Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "At the Global Black Economic Forum Business Summit during the 2026 ESSENCE Festival of Culture™, Entergy convened industry leaders to discuss innovation, resilience, and why women are helping shape the future of the utility",
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/business/entergy-highlights-women-leading-the-future-of-the-utility-industry/",
       "publishedAt": "2026-07-21T16:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:02.447Z",
+      "expiresAt": "2026-08-01T06:13:24.397Z",
       "topicIds": [
         "current-events"
       ],
@@ -2248,11 +2992,11 @@
       "id": "rss-86a30df3ada5",
       "hook": "Jay Z&#8217;s JEALOUSY Rears Its Ugly Head &#8230; UPSET That…",
       "title": "Jay Z&#8217;s JEALOUSY Rears Its Ugly Head &#8230; UPSET That Beyonce Talks To Famous Man! (Pics)",
-      "lesson": "The post Jay Z&#8217;s JEALOUSY Rears Its Ugly Head &#8230; UPSET That Beyonce Talks To Famous Man! (Pics) appeared first on Media Take Out Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "The post Jay Z&#8217;s JEALOUSY Rears Its Ugly Head &#8230; UPSET That Beyonce Talks To Famous Man! (Pics) appeared first on Media Take Out",
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/jay-zs-jealousy-rears-its-ugly-head-upset-that-beyonce-talks-to-famous-man-pics/",
       "publishedAt": "2026-07-21T14:52:27.000Z",
-      "expiresAt": "2026-08-01T03:34:03.114Z",
+      "expiresAt": "2026-08-01T06:13:25.021Z",
       "topicIds": [
         "current-events"
       ],
@@ -2267,11 +3011,11 @@
       "id": "rss-a9445d8c9638",
       "hook": "NFL Baller Le&#8217;Veon Bell ARRESTED &#8230; Broke And UNABLE To…",
       "title": "NFL Baller Le&#8217;Veon Bell ARRESTED &#8230; Broke And UNABLE To Pay Child Support!",
-      "lesson": "The post NFL Baller Le&#8217;Veon Bell ARRESTED &#8230; Broke And UNABLE To Pay Child Support! appeared first on Media Take Out Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "The post NFL Baller Le&#8217;Veon Bell ARRESTED &#8230; Broke And UNABLE To Pay Child Support! appeared first on Media Take Out",
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/nfl-baller-leveon-bell-arrested-broke-and-unable-to-pay-child-support/",
       "publishedAt": "2026-07-21T14:51:26.000Z",
-      "expiresAt": "2026-08-01T03:34:03.114Z",
+      "expiresAt": "2026-08-01T06:13:25.021Z",
       "topicIds": [
         "current-events"
       ],
@@ -2286,11 +3030,11 @@
       "id": "rss-ce5e297e4d4b",
       "hook": "Image",
       "title": "Image",
-      "lesson": "Patrick Beverley (@patbev21)Can’t believe that source lied to me man 🤦🏾‍♂️— https://x.com/patbev21/status/2079552297672036428— philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Patrick Beverley (@patbev21)Can’t believe that source lied to me man 🤦🏾‍♂️— https://x.com/patbev21/status/2079552297672036428— philip lewis (@Phil_Lewis_) Jul 21,",
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079580024731001225",
       "publishedAt": "2026-07-21T14:51:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.614Z",
+      "expiresAt": "2026-08-01T06:13:23.534Z",
       "topicIds": [
         "current-events"
       ],
@@ -2305,11 +3049,11 @@
       "id": "rss-b8deec9947ad",
       "hook": "Malcolm Jamal Warner Left His FORUNE To His Mama … Now Widow Is Suing!",
       "title": "Malcolm Jamal Warner Left His FORUNE To His Mama … Now Widow Is Suing!",
-      "lesson": "FAMILY FEUD OVER THE FORTUNE!! Malcolm-Jamal Warner’s Widow SUES His Mother On The One-Year Anniversary Of His Tragic Death… Accuses The Family Trust Of Hiding Millions She’s Owed From Their Prenup! (DETAILS) Honey, pause your TV reruns and grab your tissues, because a heartbreaking family court battle has officially Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "FAMILY FEUD OVER THE FORTUNE!! Malcolm-Jamal Warner’s Widow SUES His Mother On The One-Year Anniversary Of His Tragic Death… Accuses The Family Trust Of Hiding Millions She’s Owed From Their Prenup! (DETAILS) Honey, pause your TV reruns and grab your tissues, because a heartbreaking family court battle has officially",
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/malcolm-jamal-warner-left-his-forune-to-his-mama-now-widow-is-suing/",
       "publishedAt": "2026-07-21T14:49:05.000Z",
-      "expiresAt": "2026-08-01T03:34:03.114Z",
+      "expiresAt": "2026-08-01T06:13:25.021Z",
       "topicIds": [
         "current-events"
       ],
@@ -2384,11 +3128,11 @@
       "id": "rss-09a3e0a79c3d",
       "hook": "More Than 25 Years In, Method Man And Wife Tamika Are Still…",
       "title": "More Than 25 Years In, Method Man And Wife Tamika Are Still Couple&#8217;s Goals",
-      "lesson": "With their favorite people by their side, the usually private couple put on a sweet public display while two-stepping to their favorite songs, including his classic \"All I Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "With their favorite people by their side, the usually private couple put on a sweet public display while two-stepping to their favorite songs, including his classic \"All I",
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/love/method-man-tamika-smith/",
       "publishedAt": "2026-07-21T14:18:09.000Z",
-      "expiresAt": "2026-08-01T03:34:02.447Z",
+      "expiresAt": "2026-08-01T06:13:24.397Z",
       "topicIds": [
         "current-events"
       ],
@@ -2423,11 +3167,11 @@
       "id": "rss-7e144dd64dd3",
       "hook": "Carl Isom-McDaniel, the man who was flipped into the air by a Bison…",
       "title": "Carl Isom-McDaniel, the man who was flipped into the air by a Bison at Yellowstone, is speaking out about his experience:",
-      "lesson": "Carl Isom-McDaniel, the man who was flipped into the air by a Bison at Yellowstone, is speaking out about his experience: Video — philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Carl Isom-McDaniel, the man who was flipped into the air by a Bison at Yellowstone, is speaking out about his experience: Video — philip lewis (@Phil_Lewis_) Jul 21,",
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079568790686179794",
       "publishedAt": "2026-07-21T14:06:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.614Z",
+      "expiresAt": "2026-08-01T06:13:23.534Z",
       "topicIds": [
         "current-events"
       ],
@@ -2442,11 +3186,11 @@
       "id": "rss-2d712eb0aba3",
       "hook": "5 lessons from 20 years of climate surveys: Political party matters,…",
       "title": "5 lessons from 20 years of climate surveys: Political party matters, but it doesn’t explain everything",
-      "lesson": "Why would a young Republican back solar but reject a carbon tax? Twenty years of survey data shows climate opinion is more complex than party labels Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Why would a young Republican back solar but reject a carbon tax? Twenty years of survey data shows climate opinion is more complex than party labels",
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/5-lessons-from-20-years-of-climate-surveys-political-party-matters-but-it-doesnt-explain-everything-287056",
       "publishedAt": "2026-07-21T12:46:04.000Z",
-      "expiresAt": "2026-07-25T03:34:00.248Z",
+      "expiresAt": "2026-07-25T06:13:22.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2581,11 +3325,11 @@
       "id": "rss-4253f7f72a7d",
       "hook": "First Look: Netflix Unveils New Images From ‘A Different World’",
       "title": "First Look: Netflix Unveils New Images From ‘A Different World’",
-      "lesson": "Maleah Joi Moon leads the next generation of Hillman students, while Kadeem Hardison, Jasmine Guy, Cree Summer and Darryl M. Bell reprise their iconic roles for the September Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Maleah Joi Moon leads the next generation of Hillman students, while Kadeem Hardison, Jasmine Guy, Cree Summer and Darryl M. Bell reprise their iconic roles for the September",
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/entertainment/first-look-netflix-a-different-world/",
       "publishedAt": "2026-07-21T11:51:50.000Z",
-      "expiresAt": "2026-08-01T03:34:02.447Z",
+      "expiresAt": "2026-08-01T06:13:24.397Z",
       "topicIds": [
         "current-events"
       ],
@@ -2624,11 +3368,11 @@
       "id": "rss-f4ef17900f14",
       "hook": "Alpha Kappa Alpha Sorority, Incorporated Welcomes Six Honorary…",
       "title": "Alpha Kappa Alpha Sorority, Incorporated Welcomes Six Honorary Members At 72nd International Boule",
-      "lesson": "The new class brings together women whose accomplishments span medicine, Hollywood, Silicon Valley and corporate America, continuing the sorority's tradition of recognizing exceptional Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "The new class brings together women whose accomplishments span medicine, Hollywood, Silicon Valley and corporate America, continuing the sorority's tradition of recognizing exceptional",
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/culture/alpha-kappa-alpha-sorority-honorary-members-2026/",
       "publishedAt": "2026-07-21T11:27:08.000Z",
-      "expiresAt": "2026-08-01T03:34:02.447Z",
+      "expiresAt": "2026-08-01T06:13:24.397Z",
       "topicIds": [
         "current-events"
       ],
@@ -2667,11 +3411,11 @@
       "id": "rss-025f6d63263d",
       "hook": "The Empties Edit: Why This OSEA Body Serum Is My Summer Staple",
       "title": "The Empties Edit: Why This OSEA Body Serum Is My Summer Staple",
-      "lesson": "One beauty editor explains how this body serum got her through a busy ESSENCE Festival weekend—and why she’s never looking Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "One beauty editor explains how this body serum got her through a busy ESSENCE Festival weekend—and why she’s never looking",
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/uncategorized/the-empties-edit-osea-hyaluronic-body-serum/",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:02.447Z",
+      "expiresAt": "2026-08-01T06:13:24.397Z",
       "topicIds": [
         "current-events"
       ],
@@ -2686,11 +3430,11 @@
       "id": "rss-dfad82933ab8",
       "hook": "5 Verses I Return to When My Body Feels Like the Enemy",
       "title": "5 Verses I Return to When My Body Feels Like the Enemy",
-      "lesson": "The lie that your body is an enemy stems in part from what has morphed into the worship of wellness found in our present wellness-saturated culture. Here are five verses to ground yourself the next time you feel this unwarranted Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The lie that your body is an enemy stems in part from what has morphed into the worship of wellness found in our present wellness-saturated culture. Here are five verses to ground yourself the next time you feel this unwarranted",
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/health-and-wellness/verses-i-return-to-when-my-body-feels-like-the-enemy.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.447Z",
+      "expiresAt": "2026-08-01T06:13:23.331Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -2706,11 +3450,11 @@
       "id": "rss-2a74bfd60cf2",
       "hook": "Why Daily Repentance Is Essential for a Peaceful Life",
       "title": "Why Daily Repentance Is Essential for a Peaceful Life",
-      "lesson": "Headline: “Why Daily Repentance Is Essential for a Peaceful Life”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Why Daily Repentance Is Essential for a Peaceful Life",
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/faith/spiritual-life/why-daily-repentance-is-essential-to-thrive-in-our-faith.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.447Z",
+      "expiresAt": "2026-08-01T06:13:23.331Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -2726,11 +3470,11 @@
       "id": "rss-ec66e1393f0d",
       "hook": "10 Ways to Thrive During the Empty Nest Season",
       "title": "10 Ways to Thrive During the Empty Nest Season",
-      "lesson": "Headline: “10 Ways to Thrive During the Empty Nest Season”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "10 Ways to Thrive During the Empty Nest Season",
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/family/parenting/10-ways-to-thrive-during-the-empty-nest-season.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.447Z",
+      "expiresAt": "2026-08-01T06:13:23.331Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -2746,11 +3490,11 @@
       "id": "rss-839c3f2bca04",
       "hook": "Defense Secretary Pete Hegseth goes to the Hill with nearly $90B…",
       "title": "Defense Secretary Pete Hegseth goes to the Hill with nearly $90B funding request",
-      "lesson": "Defense secretary Pete Hegseth will appear on the Hill on Tuesday. He&apos;s looking for a nearly $90 billion funding boost, as the Iran war once again Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Defense secretary Pete Hegseth will appear on the Hill on Tuesday. He&apos;s looking for a nearly $90 billion funding boost, as the Iran war once again",
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5900838/defense-secretary-pete-hegseth-goes-to-the-hill-with-350b-funding-request",
       "publishedAt": "2026-07-21T10:41:41.000Z",
-      "expiresAt": "2026-07-25T03:34:00.148Z",
+      "expiresAt": "2026-07-25T06:13:21.818Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2766,11 +3510,11 @@
       "id": "rss-5c2a32d017dd",
       "hook": "Sen. Chris Murphy on the Iran war and Pete Hegseth&apos;s upcoming…",
       "title": "Sen. Chris Murphy on the Iran war and Pete Hegseth&apos;s upcoming Senate testimony",
-      "lesson": "NPR&apos;s Michel Martin speaks with Sen. Chris Murphy, D-Conn., about the escalating war in the Middle East and the testimony of Defense Secretary Pete Hegseth in front of a Senate panel on Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "NPR&apos;s Michel Martin speaks with Sen. Chris Murphy, D-Conn., about the escalating war in the Middle East and the testimony of Defense Secretary Pete Hegseth in front of a Senate panel on",
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5900980/sen-chris-murphy-on-the-iran-war-and-pete-hegseths-upcoming-senate-testimony",
       "publishedAt": "2026-07-21T10:41:37.000Z",
-      "expiresAt": "2026-07-25T03:34:00.148Z",
+      "expiresAt": "2026-07-25T06:13:21.818Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2786,11 +3530,11 @@
       "id": "rss-3d7ad7c8bc80",
       "hook": "Trump imposes 50% tariffs on Canadian goods",
       "title": "Trump imposes 50% tariffs on Canadian goods",
-      "lesson": "President Donald Trump on Monday imposed 50% tariffs on most Canadian goods, declaring that Canada has unfairly discriminated against American autos, alcohol and dairy Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "President Donald Trump on Monday imposed 50% tariffs on most Canadian goods, declaring that Canada has unfairly discriminated against American autos, alcohol and dairy",
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5901905/trump-imposes-tariffs-canadian-goods",
       "publishedAt": "2026-07-21T10:31:34.000Z",
-      "expiresAt": "2026-07-25T03:34:00.148Z",
+      "expiresAt": "2026-07-25T06:13:21.818Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2806,11 +3550,11 @@
       "id": "rss-f3c0a82208e8",
       "hook": "How to Read the Bible Like the Early Church Did",
       "title": "How to Read the Bible Like the Early Church Did",
-      "lesson": "Many modern hermeneutics lessons open with an example of how not to interpret. The infamous Augustinian allegory of Luke’s parable of the Good Samaritan is the classic offender. Augustine interprets Luke 10 in the following way: A certain man went down from Jerusalem to Jericho; Adam himself is meant; Jerusalem is the Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Many modern hermeneutics lessons open with an example of how not to interpret. The infamous Augustinian allegory of Luke’s parable of the Good Samaritan is the classic offender. Augustine interprets Luke 10 in the following way: A certain man went down from Jerusalem to Jericho; Adam himself is meant; Jerusalem is the",
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/how-to-read-bible-like-early-church-fourfold-schreiner/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.328Z",
+      "expiresAt": "2026-08-01T06:13:23.185Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -2826,11 +3570,11 @@
       "id": "rss-856a2e975c9c",
       "hook": "Iran Shutters Country’s Last Presbyterian Church",
       "title": "Iran Shutters Country’s Last Presbyterian Church",
-      "lesson": "For 150 years, St. Peter Evangelical Church has maintained a visible and vibrant presence in the Iranian capital of Tehran. Mansour Khajehpour—a former elder at St. Peter—said the Presbyterian church was known to everyone in the neighborhood, where he lived from 1991 to 1993. As a university student, Khajehpour lived Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "For 150 years, St. Peter Evangelical Church has maintained a visible and vibrant presence in the Iranian capital of Tehran. Mansour Khajehpour—a former elder at St. Peter—said the Presbyterian church was known to everyone in the neighborhood, where he lived from 1991 to 1993. As a university student, Khajehpour lived",
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/iran-shutters-landmark-church/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.328Z",
+      "expiresAt": "2026-08-01T06:13:23.185Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -2846,11 +3590,11 @@
       "id": "rss-dd654d9c3a34",
       "hook": "This ‘Odyssey’ Blesses the Peacemakers",
       "title": "This ‘Odyssey’ Blesses the Peacemakers",
-      "lesson": "I sympathize with C. S. Lewis’s claim that movies preempt imagination, locking the fantastic elements of story into set frames. As a professor who teaches film adaptation as well as literature, however, I’d add that tackling multiple reimaginings of a classic can reveal more than sticking to the source material alone. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "I sympathize with C. S. Lewis’s claim that movies preempt imagination, locking the fantastic elements of story into set frames. As a professor who teaches film adaptation as well as literature, however, I’d add that tackling multiple reimaginings of a classic can reveal more than sticking to the source material alone.",
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/the-odyssey-christopher-nolan/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.328Z",
+      "expiresAt": "2026-08-01T06:13:23.185Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -2994,11 +3738,11 @@
       "id": "rss-d074343ed80a",
       "hook": "Starmer ally takes swipe at Burnham's first big policy",
       "title": "Starmer ally takes swipe at Burnham's first big policy",
-      "lesson": "Sir Keir Starmer's former right hand man Darren Jones says Andy Burnham's VAT cut is unfunded. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Sir Keir Starmer's former right hand man Darren Jones says Andy Burnham's VAT cut is unfunded.",
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/c62xzn3j1p2o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-21T09:00:36.000Z",
-      "expiresAt": "2026-07-25T03:34:00.748Z",
+      "expiresAt": "2026-07-25T06:13:22.514Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3034,11 +3778,11 @@
       "id": "rss-12e35c77ec3c",
       "hook": "My Maddening Quest to Find Out if Blueberries Come From Farms Where…",
       "title": "My Maddening Quest to Find Out if Blueberries Come From Farms Where Workers Were Harmed",
-      "lesson": "The post My Maddening Quest to Find Out if Blueberries Come From Farms Where Workers Were Harmed appeared first on ProPublica Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The post My Maddening Quest to Find Out if Blueberries Come From Farms Where Workers Were Harmed appeared first on ProPublica",
       "source": "ProPublica",
       "sourceUrl": "https://projects.propublica.org/blueberries-farmworker-mistreatment/",
       "publishedAt": "2026-07-21T09:00:00.000Z",
-      "expiresAt": "2026-07-25T03:34:00.469Z",
+      "expiresAt": "2026-07-25T06:13:22.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3047,6 +3791,26 @@
         {
           "label": "Full story",
           "url": "https://projects.propublica.org/blueberries-farmworker-mistreatment/"
+        }
+      ]
+    },
+    {
+      "id": "rss-5d7acf75eee6",
+      "hook": "Arizona primaries show GOP voters backing Trump&apos;s picks for key…",
+      "title": "Arizona primaries show GOP voters backing Trump&apos;s picks for key posts",
+      "lesson": "Trump-endorsed candidates won nominations for governor and a key House race. Arizona Democrats choose who can try to flip that Republican-held House",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5901065/midterms-primaries-arizona-elections",
+      "publishedAt": "2026-07-21T09:00:00.000Z",
+      "expiresAt": "2026-07-25T06:13:21.818Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/21/nx-s1-5901065/midterms-primaries-arizona-elections"
         }
       ]
     },
@@ -3114,11 +3878,11 @@
       "id": "rss-060eb1fa54ff",
       "hook": "&#8220;Never Stop Saying His Name&#8221;: Nolan Wells’ Grieving…",
       "title": "&#8220;Never Stop Saying His Name&#8221;: Nolan Wells’ Grieving Parents Speak At His&#160;Funeral",
-      "lesson": "Christine and Elmore Wonsley honor their son at a funeral officiated by Rev. Al Sharpton in Ocean Springs, Mississippi, as investigations into his death Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Christine and Elmore Wonsley honor their son at a funeral officiated by Rev. Al Sharpton in Ocean Springs, Mississippi, as investigations into his death",
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/national/nolan-wells-funeral-parents-mississippi-1235180472/",
       "publishedAt": "2026-07-20T20:55:00.000Z",
-      "expiresAt": "2026-08-01T03:34:02.938Z",
+      "expiresAt": "2026-08-01T06:13:24.775Z",
       "topicIds": [
         "current-events"
       ],
@@ -3133,11 +3897,11 @@
       "id": "rss-53942c8f315c",
       "hook": "Declassified intelligence is not the same as proof",
       "title": "Declassified intelligence is not the same as proof",
-      "lesson": "An international affairs professor with nearly 30 years of experience in the US intelligence community – including at the CIA and NSA – explains how to evaluate the newly released election Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "An international affairs professor with nearly 30 years of experience in the US intelligence community – including at the CIA and NSA – explains how to evaluate the newly released election",
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/declassified-intelligence-is-not-the-same-as-proof-287482",
       "publishedAt": "2026-07-20T19:06:52.000Z",
-      "expiresAt": "2026-07-25T03:34:00.248Z",
+      "expiresAt": "2026-07-25T06:13:22.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3153,11 +3917,11 @@
       "id": "rss-19d8f29c426b",
       "hook": "Trinity leads the 2026 High School Football America Kentucky Top 10,…",
       "title": "Trinity leads the 2026 High School Football America Kentucky Top 10, powered by NFL Play Football",
-      "lesson": "Defending Class 6A state champion Trinity opens the 2026 season at No. 1 in the High School Football America Kentucky Top 10, powered by NFL Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Defending Class 6A state champion Trinity opens the 2026 season at No. 1 in the High School Football America Kentucky Top 10, powered by NFL",
       "source": "NFL & Football News",
       "sourceUrl": "https://highschoolfootballamerica.com/trinity-leads-the-2026-high-school-football-america-kentucky-top-10-powered-by-nfl-play-football/",
       "publishedAt": "2026-07-20T18:00:29.000Z",
-      "expiresAt": "2026-08-01T03:34:03.259Z",
+      "expiresAt": "2026-08-01T06:13:25.176Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3173,11 +3937,11 @@
       "id": "rss-4f1eecd86afe",
       "hook": "2026 NFL fantasy football: Top seven QB values",
       "title": "2026 NFL fantasy football: Top seven QB values",
-      "lesson": "Are Justin Herbert and Dak Prescott being underappreciated? Will Cam Ward break out in Year 2? Matt Okada identifies the top seven fantasy values at quarterback heading into the 2026 NFL Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Are Justin Herbert and Dak Prescott being underappreciated? Will Cam Ward break out in Year 2? Matt Okada identifies the top seven fantasy values at quarterback heading into the 2026 NFL",
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-qb-values",
       "publishedAt": "2026-07-20T16:51:38.000Z",
-      "expiresAt": "2026-08-01T03:34:03.259Z",
+      "expiresAt": "2026-08-01T06:13:25.176Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3193,11 +3957,11 @@
       "id": "rss-3d8c805cc136",
       "hook": "Police seek suspects in break-in at Eagles RB Saquon Barkley's home…",
       "title": "Police seek suspects in break-in at Eagles RB Saquon Barkley's home in Pennsylvania",
-      "lesson": "Police are searching for suspects in connection with a weekend break-in at the home of Philadelphia running back Saquon Barkley. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Police are searching for suspects in connection with a weekend break-in at the home of Philadelphia running back Saquon Barkley.",
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/saquon-barkley-police-seek-suspects-break-in-home-pennsylvania",
       "publishedAt": "2026-07-20T16:39:13.000Z",
-      "expiresAt": "2026-08-01T03:34:03.259Z",
+      "expiresAt": "2026-08-01T06:13:25.176Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3213,11 +3977,11 @@
       "id": "rss-9394c637424a",
       "hook": "Our Favorite Celebrity Looks From The World Cup Final",
       "title": "Our Favorite Celebrity Looks From The World Cup Final",
-      "lesson": "From Beyoncé's all-white ensemble to Rihanna's effortlessly cool aesthetic, scroll ahead to see our favorite celebrity looks from the World Cup Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "From Beyoncé's all-white ensemble to Rihanna's effortlessly cool aesthetic, scroll ahead to see our favorite celebrity looks from the World Cup",
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/fashion/our-favorite-celebrity-looks-from-the-world-cup-final/",
       "publishedAt": "2026-07-20T16:22:17.000Z",
-      "expiresAt": "2026-08-01T03:34:02.447Z",
+      "expiresAt": "2026-08-01T06:13:24.397Z",
       "topicIds": [
         "current-events"
       ],
@@ -3232,11 +3996,11 @@
       "id": "rss-fb19874ff09a",
       "hook": "NFL Kickoff Festival is coming to Melbourne",
       "title": "NFL Kickoff Festival is coming to Melbourne",
-      "lesson": "The official source for NFL news, video highlights, fantasy football, game-day coverage, schedules, stats, scores and more. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The official source for NFL news, video highlights, fantasy football, game-day coverage, schedules, stats, scores and more.",
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/nfl-kickoff-festival-is-coming-to-melbourne",
       "publishedAt": "2026-07-20T16:15:15.000Z",
-      "expiresAt": "2026-08-01T03:34:03.259Z",
+      "expiresAt": "2026-08-01T06:13:25.176Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3252,11 +4016,11 @@
       "id": "rss-7eed97200dce",
       "hook": "Ice-T’s New Solo Album Is On the Way. Here’s Where You Won’t…",
       "title": "Ice-T’s New Solo Album Is On the Way. Here’s Where You Won’t Find&#160;It.",
-      "lesson": "The hip-hop legend's 'Criminal Migraine' will be his first solo project in 20 years, but don't expect to hear it the conventional Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "The hip-hop legend's 'Criminal Migraine' will be his first solo project in 20 years, but don't expect to hear it the conventional",
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/features/editorial/ice-t-criminal-migraine-album-on-the-way-1235180439/",
       "publishedAt": "2026-07-20T14:15:00.000Z",
-      "expiresAt": "2026-08-01T03:34:02.938Z",
+      "expiresAt": "2026-08-01T06:13:24.775Z",
       "topicIds": [
         "current-events"
       ],
@@ -3271,11 +4035,11 @@
       "id": "rss-eb9ac724a5e4",
       "hook": "Your guide to the upcoming 2026 NFL FLAG Championships in Westfield",
       "title": "Your guide to the upcoming 2026 NFL FLAG Championships in Westfield",
-      "lesson": "The world’s best youth flag football players are coming to central Indiana. From July 23–26, the 2026 NFL FLAG Championships presented by Toyota will take over Grand Park Sports Campus in Westfield — home of the Indianapolis Colts Training Camp Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The world’s best youth flag football players are coming to central Indiana. From July 23–26, the 2026 NFL FLAG Championships presented by Toyota will take over Grand Park Sports Campus in Westfield — home of the Indianapolis Colts Training Camp",
       "source": "NFL & Football News",
       "sourceUrl": "https://www.colts.com/news/nfl-flag-football-championship-2026-girls-boys-high-school-grand-park-tickets-schedule-mexico-brazil-spain-canada-training-camp",
       "publishedAt": "2026-07-20T14:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:03.259Z",
+      "expiresAt": "2026-08-01T06:13:25.176Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3291,11 +4055,11 @@
       "id": "rss-f39ba9a11f38",
       "hook": "Fantasy football rankings 2026: Sleepers, breakouts, busts from…",
       "title": "Fantasy football rankings 2026: Sleepers, breakouts, busts from computer that predicted Daniel Jones' season",
-      "lesson": "SportsLine simulated the upcoming NFL season 10,000 times to help form your early 2026 Fantasy football draft strategy Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "SportsLine simulated the upcoming NFL season 10,000 times to help form your early 2026 Fantasy football draft strategy",
       "source": "NFL & Football News",
       "sourceUrl": "https://www.cbssports.com/fantasy/football/news/fantasy-football-rankings-2026-sleepers-breakouts-busts-from-computer-that-predicted-daniel-jones-season/",
       "publishedAt": "2026-07-20T12:30:41.000Z",
-      "expiresAt": "2026-08-01T03:34:03.259Z",
+      "expiresAt": "2026-08-01T06:13:25.176Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3311,11 +4075,11 @@
       "id": "rss-ffab909c370b",
       "hook": "What Allegheny County’s new court-ordered mental health treatment…",
       "title": "What Allegheny County’s new court-ordered mental health treatment program can and can’t do",
-      "lesson": "Allegheny County can now order treatment for people with serious mental illness. But what’s driving results – the order itself or the services behind Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Allegheny County can now order treatment for people with serious mental illness. But what’s driving results – the order itself or the services behind",
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/what-allegheny-countys-new-court-ordered-mental-health-treatment-program-can-and-cant-do-280112",
       "publishedAt": "2026-07-20T12:27:44.000Z",
-      "expiresAt": "2026-07-25T03:34:00.248Z",
+      "expiresAt": "2026-07-25T06:13:22.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3331,11 +4095,11 @@
       "id": "rss-39b3ae647011",
       "hook": "Most Americans support conservation – here’s how the Great Lakes…",
       "title": "Most Americans support conservation – here’s how the Great Lakes Restoration Initiative got politicians from both parties on board too",
-      "lesson": "An analysis of one major effort shows how to get Democrats and Republicans to agree to spend billions of dollars on a decades-long environmental restoration Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "An analysis of one major effort shows how to get Democrats and Republicans to agree to spend billions of dollars on a decades-long environmental restoration",
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/most-americans-support-conservation-heres-how-the-great-lakes-restoration-initiative-got-politicians-from-both-parties-on-board-too-284887",
       "publishedAt": "2026-07-20T12:25:27.000Z",
-      "expiresAt": "2026-07-25T03:34:00.248Z",
+      "expiresAt": "2026-07-25T06:13:22.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3351,11 +4115,11 @@
       "id": "rss-8d24b39eac82",
       "hook": "Featuring Trump on US coins and bills would put America in rare company",
       "title": "Featuring Trump on US coins and bills would put America in rare company",
-      "lesson": "A professor of international relations counted the sitting leaders on over 1,000 of the world’s banknotes and coins; almost every one of them is a king or a Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "A professor of international relations counted the sitting leaders on over 1,000 of the world’s banknotes and coins; almost every one of them is a king or a",
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/featuring-trump-on-us-coins-and-bills-would-put-america-in-rare-company-285125",
       "publishedAt": "2026-07-20T12:25:09.000Z",
-      "expiresAt": "2026-07-25T03:34:00.248Z",
+      "expiresAt": "2026-07-25T06:13:22.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3371,11 +4135,11 @@
       "id": "rss-1ad930031743",
       "hook": "How America’s newspapers lost their voice",
       "title": "How America’s newspapers lost their voice",
-      "lesson": "Despite the steady decline in daily newspaper editorials, a longtime editor suggests ways for news organizations to restore the spirit of editorials that can hold public officials Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Despite the steady decline in daily newspaper editorials, a longtime editor suggests ways for news organizations to restore the spirit of editorials that can hold public officials",
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/how-americas-newspapers-lost-their-voice-285126",
       "publishedAt": "2026-07-20T12:24:33.000Z",
-      "expiresAt": "2026-07-25T03:34:00.248Z",
+      "expiresAt": "2026-07-25T06:13:22.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3391,11 +4155,11 @@
       "id": "rss-2365cd4f9423",
       "hook": "Adam Blackstone and the Secret Sauce Behind Jay-Z’s Yankee…",
       "title": "Adam Blackstone and the Secret Sauce Behind Jay-Z’s Yankee Stadium&#160;Shows",
-      "lesson": "The award-winning multi-instrumentalist breaks down the process behind Hov's string of anniversary shows and what it really means to be a musical Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "The award-winning multi-instrumentalist breaks down the process behind Hov's string of anniversary shows and what it really means to be a musical",
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/features/editorial/adam-blackstone-music-director-jay-z-yankee-stadium-shows-1235180404/",
       "publishedAt": "2026-07-20T12:00:08.000Z",
-      "expiresAt": "2026-08-01T03:34:02.938Z",
+      "expiresAt": "2026-08-01T06:13:24.775Z",
       "topicIds": [
         "current-events"
       ],
@@ -3410,11 +4174,11 @@
       "id": "rss-cd5ad30ee0f8",
       "hook": "3 Ways to Keep Your Marriage Thriving When Things Are Already Good",
       "title": "3 Ways to Keep Your Marriage Thriving When Things Are Already Good",
-      "lesson": "How do you respond when your marriage has hit a stride and is currently in a “sweet spot”? Well, grab your sweetheart and get ready to open the lines of communication, because we’re going to talk about Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "How do you respond when your marriage has hit a stride and is currently in a “sweet spot”? Well, grab your sweetheart and get ready to open the lines of communication, because we’re going to talk about",
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/family/marriage/ways-to-keep-your-marriage-thriving-when-things-are-already-good.html",
       "publishedAt": "2026-07-20T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.447Z",
+      "expiresAt": "2026-08-01T06:13:23.331Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3430,11 +4194,11 @@
       "id": "rss-6ff3eba05bb4",
       "hook": "Camino de Santiago: A Practical Guide for Traveling the Way of St. James",
       "title": "Camino de Santiago: A Practical Guide for Traveling the Way of St. James",
-      "lesson": "Headline: “Camino de Santiago: A Practical Guide for Traveling the Way of St. James”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "Camino de Santiago: A Practical Guide for Traveling the Way of St. James",
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/plus/featured-plus-pdfs/camino-de-santiago-a-practical-guide-for-traveling-the-way-of-st-james.html",
       "publishedAt": "2026-07-20T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.447Z",
+      "expiresAt": "2026-08-01T06:13:23.331Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3450,11 +4214,11 @@
       "id": "rss-cb10656b7e87",
       "hook": "The Addiction the Church Refuses to Confront",
       "title": "The Addiction the Church Refuses to Confront",
-      "lesson": "Headline: “The Addiction the Church Refuses to Confront”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "The Addiction the Church Refuses to Confront",
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/health-and-wellness/the-addiction-the-church-refuses-to-confront.html",
       "publishedAt": "2026-07-20T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.447Z",
+      "expiresAt": "2026-08-01T06:13:23.331Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3470,11 +4234,11 @@
       "id": "rss-73e0a97ed05e",
       "hook": "Children in This Church Were Sexually Abused. Then They Began…",
       "title": "Children in This Church Were Sexually Abused. Then They Began Abusing Other Kids. Some Continued as Adults.",
-      "lesson": "The post Children in This Church Were Sexually Abused. Then They Began Abusing Other Kids. Some Continued as Adults. appeared first on ProPublica Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The post Children in This Church Were Sexually Abused. Then They Began Abusing Other Kids. Some Continued as Adults. appeared first on ProPublica",
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/old-apostolic-lutheran-church-child-sexual-assault-cycle-abuse",
       "publishedAt": "2026-07-20T10:00:00.000Z",
-      "expiresAt": "2026-07-25T03:34:00.469Z",
+      "expiresAt": "2026-07-25T06:13:22.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3490,11 +4254,11 @@
       "id": "rss-754e88c55398",
       "hook": "The Pro-Life Movement’s Widening Division",
       "title": "The Pro-Life Movement’s Widening Division",
-      "lesson": "The Texas Republican Party’s decision last month to reaffirm its&#160;platform plank&#160;calling for “legislation to abolish abortion” divided the pro-life movement.&#160; At issue was the platform’s call for “equal protection of the laws,” code for legislation to make women obtaining abortion, along with abortion Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The Texas Republican Party’s decision last month to reaffirm its&#160;platform plank&#160;calling for “legislation to abolish abortion” divided the pro-life movement.&#160; At issue was the platform’s call for “equal protection of the laws,” code for legislation to make women obtaining abortion, along with abortion",
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/pro-life-movement-widening-division-abortion-abolition-criminalize-women/",
       "publishedAt": "2026-07-20T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.328Z",
+      "expiresAt": "2026-08-01T06:13:23.185Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3510,11 +4274,11 @@
       "id": "rss-c5056dcfb544",
       "hook": "On This Nearly Deserted Alaska Island, You Pay to Keep Hundreds of…",
       "title": "On This Nearly Deserted Alaska Island, You Pay to Keep Hundreds of Empty Buildings Wired for Internet",
-      "lesson": "The post On This Nearly Deserted Alaska Island, You Pay to Keep Hundreds of Empty Buildings Wired for Internet appeared first on ProPublica Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The post On This Nearly Deserted Alaska Island, You Pay to Keep Hundreds of Empty Buildings Wired for Internet appeared first on ProPublica",
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/adak-island-alaska-internet-subsidy-fcc",
       "publishedAt": "2026-07-20T09:00:00.000Z",
-      "expiresAt": "2026-07-25T03:34:00.469Z",
+      "expiresAt": "2026-07-25T06:13:22.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3590,11 +4354,11 @@
       "id": "rss-f679d173e36c",
       "hook": "Black and Latino Leaders Ask: What Do Socialist Wins Mean for New York?",
       "title": "Black and Latino Leaders Ask: What Do Socialist Wins Mean for New York?",
-      "lesson": "Longtime leaders and advocates in minority districts fear that victories by the Democratic Socialists of America in gentrifying neighborhoods could mean political Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Longtime leaders and advocates in minority districts fear that victories by the Democratic Socialists of America in gentrifying neighborhoods could mean political",
       "source": "Black Political News",
       "sourceUrl": "https://www.nytimes.com/2026/07/19/nyregion/black-latino-leaders-dsa-nyc.html",
       "publishedAt": "2026-07-19T07:00:08.000Z",
-      "expiresAt": "2026-07-25T03:34:00.871Z",
+      "expiresAt": "2026-07-25T06:13:22.644Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3607,14 +4371,34 @@
       ]
     },
     {
+      "id": "rss-0544d144ae21",
+      "hook": "COMMENTARY: Black Alliance for Just Immigration Supports Black…",
+      "title": "COMMENTARY: Black Alliance for Just Immigration Supports Black Voting Rights!",
+      "lesson": "OAKLAND POST — Historically, white conservative forces have sought to suppress Black political participation because Black communities have consistently organized, voted, and fought for policies rooted in justice, equity, and collective",
+      "source": "Black Political News",
+      "sourceUrl": "https://blackpressusa.com/commentary-black-alliance-for-just-immigration-supports-black-voting-rights-2/",
+      "publishedAt": "2026-07-18T23:41:27.000Z",
+      "expiresAt": "2026-07-25T06:13:22.644Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://blackpressusa.com/commentary-black-alliance-for-just-immigration-supports-black-voting-rights-2/"
+        }
+      ]
+    },
+    {
       "id": "rss-6e81eeb2e709",
       "hook": "How a Man Once Ordered to Pay Libel Damages Helped Launch an…",
       "title": "How a Man Once Ordered to Pay Libel Damages Helped Launch an Investigation Into Islamic Private Schools",
-      "lesson": "The post How a Man Once Ordered to Pay Libel Damages Helped Launch an Investigation Into Islamic Private Schools appeared first on ProPublica Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The post How a Man Once Ordered to Pay Libel Damages Helped Launch an Investigation Into Islamic Private Schools appeared first on ProPublica",
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/islamic-private-schools-texas-vouchers-sam-westrop",
       "publishedAt": "2026-07-18T03:10:00.000Z",
-      "expiresAt": "2026-07-25T03:34:00.469Z",
+      "expiresAt": "2026-07-25T06:13:22.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3630,11 +4414,11 @@
       "id": "rss-987c66d2bf29",
       "hook": "Black Political Caucus of Charlotte-Mecklenburg challenges NC's $60M…",
       "title": "Black Political Caucus of Charlotte-Mecklenburg challenges NC's $60M I-77 toll lane project",
-      "lesson": "Opposition to the proposed I-77 toll lane project continues to grow as a member of the Mecklenburg County Black Political Caucus is speaking out against renewed efforts to move the project forward. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Opposition to the proposed I-77 toll lane project continues to grow as a member of the Mecklenburg County Black Political Caucus is speaking out against renewed efforts to move the project forward.",
       "source": "Black Political News",
       "sourceUrl": "https://www.yahoo.com/news/politics/articles/black-political-caucus-charlotte-mecklenburg-234656649.html",
       "publishedAt": "2026-07-17T23:46:56.000Z",
-      "expiresAt": "2026-07-25T03:34:00.871Z",
+      "expiresAt": "2026-07-25T06:13:22.644Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3650,11 +4434,11 @@
       "id": "rss-d64fbfde591a",
       "hook": "Trump Officials Want to Use Human Rights Aid to Advocate for White…",
       "title": "Trump Officials Want to Use Human Rights Aid to Advocate for White South Africans and Right-Wing Causes in Europe",
-      "lesson": "The post Trump Officials Want to Use Human Rights Aid to Advocate for White South Africans and Right-Wing Causes in Europe appeared first on ProPublica Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The post Trump Officials Want to Use Human Rights Aid to Advocate for White South Africans and Right-Wing Causes in Europe appeared first on ProPublica",
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/human-rights-aid-right-wing-causes",
       "publishedAt": "2026-07-17T21:45:00.000Z",
-      "expiresAt": "2026-07-25T03:34:00.469Z",
+      "expiresAt": "2026-07-25T06:13:22.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3670,11 +4454,11 @@
       "id": "rss-78643e0a1498",
       "hook": "Court Allows Houston Megachurch to Change Bylaws, Cutting Out Voting…",
       "title": "Court Allows Houston Megachurch to Change Bylaws, Cutting Out Voting Members",
-      "lesson": "Ed Young Sr.’s former church, Second Baptist in Houston, won a significant victory in a lawsuit brought by current and former congregants last year that claimed leadership deceptively changed bylaws to have Young’s son, Ben, succeed him as lead pastor without a public vote.&#160; A Texas judge issued an opinion on Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Ed Young Sr.’s former church, Second Baptist in Houston, won a significant victory in a lawsuit brought by current and former congregants last year that claimed leadership deceptively changed bylaws to have Young’s son, Ben, succeed him as lead pastor without a public vote.&#160; A Texas judge issued an opinion on",
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/second-baptist-houston-lawsuit-dismissed-ed-young/",
       "publishedAt": "2026-07-17T17:28:04.000Z",
-      "expiresAt": "2026-08-01T03:34:01.328Z",
+      "expiresAt": "2026-08-01T06:13:23.185Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3690,11 +4474,11 @@
       "id": "rss-39c4f02d9ef1",
       "hook": "Republicans control Congress, so why is Trump’s SAVE America Act stuck?",
       "title": "Republicans control Congress, so why is Trump’s SAVE America Act stuck?",
-      "lesson": "Republicans hold both chambers and publicly back the president’s signature bill that would curtail mail-in voting and enforce strict voter ID laws. Here, a public policy and politics scholar explains why it still isn’t Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Republicans hold both chambers and publicly back the president’s signature bill that would curtail mail-in voting and enforce strict voter ID laws. Here, a public policy and politics scholar explains why it still isn’t",
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/republicans-control-congress-so-why-is-trumps-save-america-act-stuck-287156",
       "publishedAt": "2026-07-17T17:03:09.000Z",
-      "expiresAt": "2026-07-25T03:34:00.248Z",
+      "expiresAt": "2026-07-25T06:13:22.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3710,11 +4494,11 @@
       "id": "rss-e9f0eb795b7e",
       "hook": "Court Orders Pastor Saeed Abedini to Return 5-Year-Old to Mother",
       "title": "Court Orders Pastor Saeed Abedini to Return 5-Year-Old to Mother",
-      "lesson": "A US federal judge ruled that Saeed Abedini, a pastor who was formerly imprisoned in Iran, must return his 5-year-old daughter to her mother, an Iranian refugee living in Turkey, ending their international custody battle. The child’s mother, Niloofar Aragh, filed a complaint in federal court last month alleging that Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "A US federal judge ruled that Saeed Abedini, a pastor who was formerly imprisoned in Iran, must return his 5-year-old daughter to her mother, an Iranian refugee living in Turkey, ending their international custody battle. The child’s mother, Niloofar Aragh, filed a complaint in federal court last month alleging that",
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/pastor-saeed-abedini-iran-custody-battle/",
       "publishedAt": "2026-07-17T14:13:32.000Z",
-      "expiresAt": "2026-08-01T03:34:01.328Z",
+      "expiresAt": "2026-08-01T06:13:23.185Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3730,11 +4514,11 @@
       "id": "rss-41158dd2efa6",
       "hook": "The Trump administration’s global campaign against ‘radical left…",
       "title": "The Trump administration’s global campaign against ‘radical left terrorism’ is built on a national security memo without congressional approval",
-      "lesson": "Almost a year after President Trump authorized preemptive law enforcement measures based on political or ideological beliefs, a wave of terrorism prosecutions against left-wing protesters has Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Almost a year after President Trump authorized preemptive law enforcement measures based on political or ideological beliefs, a wave of terrorism prosecutions against left-wing protesters has",
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/the-trump-administrations-global-campaign-against-radical-left-terrorism-is-built-on-a-national-security-memo-without-congressional-approval-287276",
       "publishedAt": "2026-07-17T12:17:58.000Z",
-      "expiresAt": "2026-07-25T03:34:00.248Z",
+      "expiresAt": "2026-07-25T06:13:22.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3750,11 +4534,11 @@
       "id": "rss-51202997d551",
       "hook": "How a Paid Expert Reversed His View of a Notoriously Flawed…",
       "title": "How a Paid Expert Reversed His View of a Notoriously Flawed Prosecution in the Rape of a Bestselling Author",
-      "lesson": "The post How a Paid Expert Reversed His View of a Notoriously Flawed Prosecution in the Rape of a Bestselling Author appeared first on ProPublica Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The post How a Paid Expert Reversed His View of a Notoriously Flawed Prosecution in the Rape of a Bestselling Author appeared first on ProPublica",
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/alice-sebold-anthony-broadwater-rape-case-prosecutorial-misconduct-bennett-gershman",
       "publishedAt": "2026-07-17T10:00:00.000Z",
-      "expiresAt": "2026-07-25T03:34:00.469Z",
+      "expiresAt": "2026-07-25T06:13:22.242Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3770,11 +4554,11 @@
       "id": "rss-d3aa7f992b91",
       "hook": "Gambling Is a Moral Crime",
       "title": "Gambling Is a Moral Crime",
-      "lesson": "In October, we celebrate&#160;Christianity Today’s 70th anniversary. We are occasionally republishing some articles from past years that relate to the headlines of 2026. Here’s one from October 26, 1962.&#160; Someone must lose. Gambling has now become the largest illegitimate business in the United States. A recent Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "In October, we celebrate&#160;Christianity Today’s 70th anniversary. We are occasionally republishing some articles from past years that relate to the headlines of 2026. Here’s one from October 26, 1962.&#160; Someone must lose. Gambling has now become the largest illegitimate business in the United States. A recent",
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/gambling-is-a-sin-moral-crime-christianity-today-1962/",
       "publishedAt": "2026-07-17T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.328Z",
+      "expiresAt": "2026-08-01T06:13:23.185Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3790,11 +4574,11 @@
       "id": "rss-1665a856a41c",
       "hook": "The Chinese House Church Leaders Who Didn&#8217;t Win Release",
       "title": "The Chinese House Church Leaders Who Didn&#8217;t Win Release",
-      "lesson": "Around 9 p.m. on October 10, 2025, the power went out in the Beijing home of Ren Zhong and his wife, Wang Cong, leaving the couple and their 3-year-old daughter in darkness. Ren and Wang, who both minister at Zion Church, knew then that the authorities had come for them. Their daughter, Song En, was Read more... The Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Around 9 p.m. on October 10, 2025, the power went out in the Beijing home of Ren Zhong and his wife, Wang Cong, leaving the couple and their 3-year-old daughter in darkness. Ren and Wang, who both minister at Zion Church, knew then that the authorities had come for them. Their daughter, Song En, was Read more... The",
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/china-zion-church-pastors-prison-persecution/",
       "publishedAt": "2026-07-17T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.328Z",
+      "expiresAt": "2026-08-01T06:13:23.185Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3810,11 +4594,11 @@
       "id": "rss-2aea6483e534",
       "hook": "10K views · 71 reactions",
       "title": "10K views · 71 reactions",
-      "lesson": "Beyoncé’s “Lemonade” challenged the boundaries of pop culture and sparked conversations about race, Black womanhood and identity. It’s also one of the 25 most influential works of American Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Beyoncé’s “Lemonade” challenged the boundaries of pop culture and sparked conversations about race, Black womanhood and identity. It’s also one of the 25 most influential works of American",
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.facebook.com/reel/1590244832705319/",
       "publishedAt": "2026-07-16T02:30:02.000Z",
-      "expiresAt": "2026-08-01T03:34:01.683Z",
+      "expiresAt": "2026-08-01T06:13:23.605Z",
       "topicIds": [
         "current-events"
       ],
@@ -3829,11 +4613,11 @@
       "id": "rss-33bb02bbabe0",
       "hook": "Southern Black leaders warn their power is on the line — and…",
       "title": "Southern Black leaders warn their power is on the line — and Democrats are looking elsewhere",
-      "lesson": "Black lawmakers and activists in the Deep South say they are fighting an existential crisis on their own in the wake of a major Supreme Court Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Black lawmakers and activists in the Deep South say they are fighting an existential crisis on their own in the wake of a major Supreme Court",
       "source": "Black Political News",
       "sourceUrl": "https://www.politico.com/news/2026/07/10/black-leaders-democratic-party-redistricting-00991564",
       "publishedAt": "2026-07-10T09:00:00.000Z",
-      "expiresAt": "2026-07-25T03:34:00.871Z",
+      "expiresAt": "2026-07-25T06:13:22.644Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3849,11 +4633,11 @@
       "id": "rss-eb492659f43f",
       "hook": "How Lizzo Became One of Pop Culture’s Great Flops",
       "title": "How Lizzo Became One of Pop Culture’s Great Flops",
-      "lesson": "Headline: “How Lizzo Became One of Pop Culture’s Great Flops”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "lesson": "The singer is experiencing a new form of downward mobility—and she’s not alone.",
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.theatlantic.com/culture/2026/07/music-flop-era/687785/",
       "publishedAt": "2026-07-05T12:00:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.683Z",
+      "expiresAt": "2026-08-01T06:13:23.605Z",
       "topicIds": [
         "current-events"
       ],
@@ -3868,11 +4652,11 @@
       "id": "rss-32e75f443fba",
       "hook": "Kayla Nicole Has One Piece of Advice for Black Men",
       "title": "Kayla Nicole Has One Piece of Advice for Black Men",
-      "lesson": "During the BET Awards, Kayla Nicole spoke about how Black men can better show up for Black women, starting with one clear Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "During the BET Awards, Kayla Nicole spoke about how Black men can better show up for Black women, starting with one clear",
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/kayla-nicole-advice-black-men",
       "publishedAt": "2026-06-30T18:35:11.000Z",
-      "expiresAt": "2026-08-01T03:34:01.683Z",
+      "expiresAt": "2026-08-01T06:13:23.605Z",
       "topicIds": [
         "current-events"
       ],
@@ -3887,11 +4671,11 @@
       "id": "rss-4fb3b359bd2d",
       "hook": "Celebrating the Rhythmic Connection Between Howard University and…",
       "title": "Celebrating the Rhythmic Connection Between Howard University and Go-Go Music During Black Music Month",
-      "lesson": "Howard's welcome for Korean students in the 1890s led to global history-making, and today the world's top K-Pop group follows in their Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "Howard's welcome for Korean students in the 1890s led to global history-making, and today the world's top K-Pop group follows in their",
       "source": "Black Pop Culture",
       "sourceUrl": "https://thedig.howard.edu/all-stories/bts-how-howard-university-helped-elevate-korean-culture-and-how-black-culture-influenced-k-pop",
       "publishedAt": "2026-06-30T13:41:18.000Z",
-      "expiresAt": "2026-08-01T03:34:01.683Z",
+      "expiresAt": "2026-08-01T06:13:23.605Z",
       "topicIds": [
         "current-events"
       ],
@@ -3903,14 +4687,34 @@
       ]
     },
     {
+      "id": "rss-04379e249c71",
+      "hook": "What NY Democratic Socialist wins mean for Black political power",
+      "title": "What NY Democratic Socialist wins mean for Black political power",
+      "lesson": "Progressive challengers oust established politicians in New York primary elections, signaling a new wave of young democratic",
+      "source": "Black Political News",
+      "sourceUrl": "https://defendernetwork.com/news/national/what-ny-democratic-socialist-wins-mean-for-black-political-power/",
+      "publishedAt": "2026-06-29T05:05:08.000Z",
+      "expiresAt": "2026-07-25T06:13:22.644Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://defendernetwork.com/news/national/what-ny-democratic-socialist-wins-mean-for-black-political-power/"
+        }
+      ]
+    },
+    {
       "id": "rss-486efff359ab",
       "hook": "Op-Ed: The Party We Built, The Bill Has Come Due",
       "title": "Op-Ed: The Party We Built, The Bill Has Come Due",
-      "lesson": "Black voters have delivered the Democratic Party victory after victory. The returns have not been mutual. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Black voters have delivered the Democratic Party victory after victory. The returns have not been mutual.",
       "source": "Black Political News",
       "sourceUrl": "https://www.essence.com/news/politics/black-people-democratic-party/",
       "publishedAt": "2026-06-27T15:14:41.000Z",
-      "expiresAt": "2026-07-25T03:34:00.871Z",
+      "expiresAt": "2026-07-25T06:13:22.644Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3926,11 +4730,11 @@
       "id": "rss-cd6f70ea7d7c",
       "hook": "Leon Black Walks Out Of Epstein Interview After Being Subpoenaed,…",
       "title": "Leon Black Walks Out Of Epstein Interview After Being Subpoenaed, Decries ‘Political Stunt’",
-      "lesson": "Black paid Epstein $170 million over the course of five years for financial advice. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Black paid Epstein $170 million over the course of five years for financial advice.",
       "source": "Black Political News",
       "sourceUrl": "https://www.forbes.com/sites/alisondurkee/2026/06/26/leon-black-walks-out-of-epstein-interview-after-being-subpoenaed-decries-political-stunt/",
       "publishedAt": "2026-06-26T18:17:36.000Z",
-      "expiresAt": "2026-07-25T03:34:00.871Z",
+      "expiresAt": "2026-07-25T06:13:22.644Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3946,11 +4750,11 @@
       "id": "rss-b30be2a855c0",
       "hook": "Black political power predates democratic socialism",
       "title": "Black political power predates democratic socialism",
-      "lesson": "Tuesday’s Democratic primaries confirmed what has been building in New York politics for years: the emergence of a new progressive coalition increasingly skeptical of neoliberal politics and traditional Democratic Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Tuesday’s Democratic primaries confirmed what has been building in New York politics for years: the emergence of a new progressive coalition increasingly skeptical of neoliberal politics and traditional Democratic",
       "source": "Black Political News",
       "sourceUrl": "https://www.nydailynews.com/2026/06/25/black-political-power-predates-democratic-socialism/",
       "publishedAt": "2026-06-25T09:00:42.000Z",
-      "expiresAt": "2026-07-25T03:34:00.871Z",
+      "expiresAt": "2026-07-25T06:13:22.644Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3966,11 +4770,11 @@
       "id": "rss-49f1900bc695",
       "hook": "David Oyelowo Apologizes for Using ‘Slavery’ and ‘Subservience’ to…",
       "title": "David Oyelowo Apologizes for Using ‘Slavery’ and ‘Subservience’ to Describe Black Southern Accents",
-      "lesson": "The 'Selma' star said that he has \"deep respect and great love for Black people of all kinds.\" Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "lesson": "The 'Selma' star said that he has \"deep respect and great love for Black people of all kinds.\"",
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.complex.com/pop-culture/a/jaelaniturnerwilliams/david-oyelowo-apologizes-black-british-actors",
       "publishedAt": "2026-06-16T16:52:14.000Z",
-      "expiresAt": "2026-08-01T03:34:01.683Z",
+      "expiresAt": "2026-08-01T06:13:23.605Z",
       "topicIds": [
         "current-events"
       ],
@@ -3985,11 +4789,11 @@
       "id": "rss-85cf7ce5d14e",
       "hook": "Disclosure Day: What does Spielberg’s latest film tell us about the…",
       "title": "Disclosure Day: What does Spielberg’s latest film tell us about the Church?",
-      "lesson": "Disclosure Day asks some of the right questions and hints at all of the wrong answers, writes David Robertson. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Disclosure Day asks some of the right questions and hints at all of the wrong answers, writes David Robertson.",
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/disclosure-day-what-does-spielbergs-latest-film-tell-us-about-the-church",
       "publishedAt": "2026-06-16T08:32:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.256Z",
+      "expiresAt": "2026-08-01T06:13:23.070Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4005,11 +4809,11 @@
       "id": "rss-edbaded1b8e3",
       "hook": "11,000 sign petition against two-tier policing",
       "title": "11,000 sign petition against two-tier policing",
-      "lesson": "The petition references the case of Luke Salmons who said that officers were made to chant \"Islam is a religion of peace\" at one police training Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The petition references the case of Luke Salmons who said that officers were made to chant \"Islam is a religion of peace\" at one police training",
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/11-000-sign-petition-against-two-tier-policing",
       "publishedAt": "2026-06-16T07:36:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.256Z",
+      "expiresAt": "2026-08-01T06:13:23.070Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4063,11 +4867,11 @@
       "id": "rss-6ef7c7ff608e",
       "hook": "African Christian leaders demand justice after Mozambican bishop…",
       "title": "African Christian leaders demand justice after Mozambican bishop shot dead",
-      "lesson": "Christian leaders across Africa have called for a full investigation into the killing of a Mozambican bishop who was shot dead at his Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Christian leaders across Africa have called for a full investigation into the killing of a Mozambican bishop who was shot dead at his",
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/african-christian-leaders-demand-justice-after-mozambican-bishop-shot-dead",
       "publishedAt": "2026-06-15T13:47:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.256Z",
+      "expiresAt": "2026-08-01T06:13:23.070Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4083,11 +4887,11 @@
       "id": "rss-0bb66d8a7e1f",
       "hook": "Lebanese Christians on the brink as peace deal agreed",
       "title": "Lebanese Christians on the brink as peace deal agreed",
-      "lesson": "The Christian population of the Middle East has drastically declined due to ongoing conflict. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "The Christian population of the Middle East has drastically declined due to ongoing conflict.",
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/lebanese-christians-on-the-brink-as-peace-deal-agreed",
       "publishedAt": "2026-06-15T13:32:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.256Z",
+      "expiresAt": "2026-08-01T06:13:23.070Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4103,11 +4907,11 @@
       "id": "rss-7b4dfe873143",
       "hook": "A Christian reflection on men’s health week: Jesus - the man we were…",
       "title": "A Christian reflection on men’s health week: Jesus - the man we were created to be",
-      "lesson": "As Men’s Health Week reminds us of the challenges many men face, perhaps there is no better time to look again at Jesus Christ. In Him we find not only a model for manhood, but the way to life Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "As Men’s Health Week reminds us of the challenges many men face, perhaps there is no better time to look again at Jesus Christ. In Him we find not only a model for manhood, but the way to life",
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/a-christian-reflection-on-mens-health-week-jesus-the-man-we-were-created-to-be",
       "publishedAt": "2026-06-15T10:35:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.256Z",
+      "expiresAt": "2026-08-01T06:13:23.070Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4123,11 +4927,11 @@
       "id": "rss-660fd7730af6",
       "hook": "Kyiv’s Dormition Cathedral badly damaged in major Russian strikes on…",
       "title": "Kyiv’s Dormition Cathedral badly damaged in major Russian strikes on Ukrainian capital",
-      "lesson": "Kyiv’s historic Dormition Cathedral, part of the UNESCO-listed Pechersk Lavra monastery complex, caught fire overnight after a wave of Russian missile and drone strikes on the Ukrainian Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "lesson": "Kyiv’s historic Dormition Cathedral, part of the UNESCO-listed Pechersk Lavra monastery complex, caught fire overnight after a wave of Russian missile and drone strikes on the Ukrainian",
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/kyivs-dormition-cathedral-badly-damaged-in-major-russian-strikes-on-ukrainian-capital",
       "publishedAt": "2026-06-15T09:32:00.000Z",
-      "expiresAt": "2026-08-01T03:34:01.256Z",
+      "expiresAt": "2026-08-01T06:13:23.070Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4176,6 +4980,204 @@
         {
           "label": "Full story",
           "url": "https://www.theguardian.com/us-news/2026/may/27/alabama-voting-rights-act-maps"
+        }
+      ]
+    },
+    {
+      "id": "rss-4b6440946cc1",
+      "hook": "22 Famous Black Cats (With Pictures and Videos)",
+      "title": "22 Famous Black Cats (With Pictures and Videos)",
+      "lesson": "The black cat has long proved alluring to pop culture creators and moving pictures, let's take a look at some of the most famous black cats on",
+      "source": "Black Pop Culture",
+      "sourceUrl": "https://www.catster.com/lifestyle/famous-black-cats/",
+      "publishedAt": "2026-04-28T09:18:41.000Z",
+      "expiresAt": "2026-08-01T06:13:23.605Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.catster.com/lifestyle/famous-black-cats/"
+        }
+      ]
+    },
+    {
+      "id": "rss-f8fe18629083",
+      "hook": "The K-Pop Industry Keeps Copying Black Culture While Ignoring It",
+      "title": "The K-Pop Industry Keeps Copying Black Culture While Ignoring It",
+      "lesson": "BTS released an album teaser video featuring Koreans at Howard University, where they first recorded music in the United States in 1896, based on a Washington Post article. K-pop uses this video to portray the genre’s origins in the United States. In the animated scenes, Korean men are shown singing in front of the",
+      "source": "Black Pop Culture",
+      "sourceUrl": "https://hunewsservice.com/variety/entertainment/the-k-pop-industry-keeps-copying-black-culture-while-ignoring-it/",
+      "publishedAt": "2026-04-27T22:13:42.000Z",
+      "expiresAt": "2026-08-01T06:13:23.605Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://hunewsservice.com/variety/entertainment/the-k-pop-industry-keeps-copying-black-culture-while-ignoring-it/"
+        }
+      ]
+    },
+    {
+      "id": "rss-4eb90d006d49",
+      "hook": "Jobless claims fall to lowest level since mid-May",
+      "title": "Jobless claims fall to lowest level since mid-May",
+      "lesson": "Jobless claims fall to lowest level since mid-May",
+      "source": "MarketWatch · MarketPulse",
+      "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
+      "publishedAt": "2025-07-03T12:36:00.000Z",
+      "expiresAt": "2026-07-25T06:13:25.284Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse"
+        }
+      ]
+    },
+    {
+      "id": "rss-34fbca45f7eb",
+      "hook": "Jobless claims stay low in latest week",
+      "title": "Jobless claims stay low in latest week",
+      "lesson": "Jobless claims stay low in latest week",
+      "source": "MarketWatch · MarketPulse",
+      "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
+      "publishedAt": "2025-02-13T13:33:00.000Z",
+      "expiresAt": "2026-07-25T06:13:25.284Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse"
+        }
+      ]
+    },
+    {
+      "id": "rss-f0af94650c29",
+      "hook": "Consumer credit growth soars in December",
+      "title": "Consumer credit growth soars in December",
+      "lesson": "Consumer credit growth soars in December",
+      "source": "MarketWatch · MarketPulse",
+      "sourceUrl": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
+      "publishedAt": "2025-02-07T20:26:00.000Z",
+      "expiresAt": "2026-07-25T06:13:25.284Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse"
+        }
+      ]
+    },
+    {
+      "id": "rss-55312dcebd8e",
+      "hook": "U.S. productivity slows down in fourth quarter while unit labor…",
+      "title": "U.S. productivity slows down in fourth quarter while unit labor costs accelerate",
+      "lesson": "U.S. productivity slows down in fourth quarter while unit labor costs accelerate",
+      "source": "MarketWatch · MarketPulse",
+      "sourceUrl": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
+      "publishedAt": "2025-02-06T13:34:00.000Z",
+      "expiresAt": "2026-07-25T06:13:25.284Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse"
+        }
+      ]
+    },
+    {
+      "id": "rss-046496872302",
+      "hook": "Beyond to buy rights to Buy Buy Baby brand and reunite it with Bed…",
+      "title": "Beyond to buy rights to Buy Buy Baby brand and reunite it with Bed Bath & Beyond",
+      "lesson": "Beyond to buy rights to Buy Buy Baby brand and reunite it with Bed Bath & Beyond",
+      "source": "MarketWatch · MarketPulse",
+      "sourceUrl": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
+      "publishedAt": "2025-02-03T13:46:00.000Z",
+      "expiresAt": "2026-07-25T06:13:25.284Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse"
+        }
+      ]
+    },
+    {
+      "id": "rss-66cbb901cf7d",
+      "hook": "Trump asks Supreme Court to pause TikTok ban",
+      "title": "Trump asks Supreme Court to pause TikTok ban",
+      "lesson": "Trump asks Supreme Court to pause TikTok ban",
+      "source": "MarketWatch · MarketPulse",
+      "sourceUrl": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
+      "publishedAt": "2024-12-28T00:32:00.000Z",
+      "expiresAt": "2026-07-25T06:13:25.284Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse"
+        }
+      ]
+    },
+    {
+      "id": "rss-c3b5f5e9a145",
+      "hook": "Amazon says it had best-ever Thanksgiving Holiday week with record…",
+      "title": "Amazon says it had best-ever Thanksgiving Holiday week with record sales and number of items sold",
+      "lesson": "Amazon says it had best-ever Thanksgiving Holiday week with record sales and number of items sold",
+      "source": "MarketWatch · MarketPulse",
+      "sourceUrl": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
+      "publishedAt": "2024-12-03T14:05:00.000Z",
+      "expiresAt": "2026-07-25T06:13:25.284Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse"
+        }
+      ]
+    },
+    {
+      "id": "rss-f1c2ed323e06",
+      "hook": "U.S. stock futures and bond yields drop on reports Putin has updated…",
+      "title": "U.S. stock futures and bond yields drop on reports Putin has updated nuclear doctrine",
+      "lesson": "U.S. stock futures and bond yields drop on reports Putin has updated nuclear doctrine",
+      "source": "MarketWatch · MarketPulse",
+      "sourceUrl": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
+      "publishedAt": "2024-11-19T08:55:00.000Z",
+      "expiresAt": "2026-07-25T06:13:25.284Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse"
         }
       ]
     }
