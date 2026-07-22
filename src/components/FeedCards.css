@@ -227,3 +227,279 @@
     transform: translateY(0) scale(1);
   }
 }
+
+.feed-card-body-tight {
+  flex: 0;
+}
+
+.reaction-hud {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.1rem;
+  font-size: 0.88rem;
+  color: color-mix(in srgb, white 62%, transparent);
+  font-variant-numeric: tabular-nums;
+}
+
+.reaction-hud strong {
+  color: color-mix(in srgb, white 94%, transparent);
+  font-weight: 700;
+}
+
+.reaction-arena {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 180px;
+  margin: 0.15rem 0 0.25rem;
+  border-radius: 1rem;
+  border: 1px dashed color-mix(in srgb, var(--card-accent) 35%, transparent);
+  background:
+    radial-gradient(80% 70% at 50% 40%, color-mix(in srgb, var(--card-accent) 10%, transparent), transparent 70%),
+    color-mix(in srgb, black 22%, transparent);
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+}
+
+.reaction-arena.is-live {
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--card-accent) 45%, transparent);
+}
+
+.reaction-arena-msg {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: color-mix(in srgb, white 72%, transparent);
+  pointer-events: none;
+}
+
+.reaction-target {
+  appearance: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0.85rem;
+  background: var(--card-accent);
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--card-accent) 35%, transparent),
+    0 8px 20px color-mix(in srgb, black 35%, transparent);
+  cursor: pointer;
+  transition: transform 0.08s ease;
+  touch-action: manipulation;
+}
+
+.reaction-target:active {
+  transform: scale(0.92);
+}
+
+.reaction-target:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+.spot-arena {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 180px;
+  margin: 0.15rem 0 0.25rem;
+  padding: 0.55rem;
+  border-radius: 1rem;
+  border: 1px dashed color-mix(in srgb, var(--card-accent) 35%, transparent);
+  background: color-mix(in srgb, black 22%, transparent);
+  overflow: hidden;
+  touch-action: manipulation;
+  user-select: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.spot-arena.is-live {
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--card-accent) 45%, transparent);
+}
+
+.spot-arena.is-miss {
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, #f87171 55%, transparent);
+}
+
+.spot-grid {
+  display: grid;
+  gap: 0.4rem;
+  width: 100%;
+  height: 168px;
+}
+
+.spot-tile {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0.55rem;
+  cursor: pointer;
+  transition: transform 0.08s ease;
+  touch-action: manipulation;
+}
+
+.spot-tile:active {
+  transform: scale(0.94);
+}
+
+.spot-tile:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.memory-arena {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 180px;
+  margin: 0.15rem 0 0.25rem;
+  padding: 0.55rem;
+  border-radius: 1rem;
+  border: 1px dashed color-mix(in srgb, var(--card-accent) 35%, transparent);
+  background: color-mix(in srgb, black 22%, transparent);
+  overflow: hidden;
+  touch-action: manipulation;
+  user-select: none;
+}
+
+.memory-arena.is-live {
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--card-accent) 45%, transparent);
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  width: 100%;
+  height: 168px;
+}
+
+.memory-pad {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0.85rem;
+  background: var(--pad-base);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, white 12%, transparent);
+  cursor: pointer;
+  transition:
+    background 0.12s ease,
+    transform 0.08s ease,
+    filter 0.12s ease;
+  touch-action: manipulation;
+}
+
+.memory-pad.is-lit {
+  background: var(--pad-lit);
+  filter: brightness(1.15);
+  transform: scale(0.98);
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--pad-lit) 55%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, white 25%, transparent);
+}
+
+.memory-pad.is-locked {
+  cursor: default;
+}
+
+.memory-pad:disabled {
+  cursor: default;
+}
+
+.memory-pad:not(:disabled):active {
+  transform: scale(0.95);
+}
+
+.memory-pad:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.math-arena {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 180px;
+  margin: 0.15rem 0 0.25rem;
+  padding: 0.7rem 0.65rem;
+  border-radius: 1rem;
+  border: 1px dashed color-mix(in srgb, var(--card-accent) 35%, transparent);
+  background: color-mix(in srgb, black 22%, transparent);
+  overflow: hidden;
+  touch-action: manipulation;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.math-arena.is-live {
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--card-accent) 45%, transparent);
+}
+
+.math-arena.is-miss {
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, #f87171 55%, transparent);
+}
+
+.math-prompt {
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: color-mix(in srgb, white 94%, transparent);
+  font-variant-numeric: tabular-nums;
+}
+
+.math-choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.45rem;
+}
+
+.math-choice {
+  appearance: none;
+  margin: 0;
+  padding: 0.7rem 0.4rem;
+  border: 1px solid color-mix(in srgb, white 16%, transparent);
+  border-radius: 0.75rem;
+  background: color-mix(in srgb, white 8%, transparent);
+  color: color-mix(in srgb, white 94%, transparent);
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition:
+    background 0.12s ease,
+    transform 0.08s ease;
+  touch-action: manipulation;
+}
+
+.math-choice:active {
+  transform: scale(0.96);
+  background: color-mix(in srgb, var(--card-accent) 28%, transparent);
+}
+
+.math-choice:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}

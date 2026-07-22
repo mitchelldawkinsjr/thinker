@@ -37,6 +37,13 @@ export type FeedItem =
       id: string
       scripture: ScriptureItem
     }
+  | {
+      kind: 'game'
+      id: string
+      gameId: 'reaction' | 'spot' | 'memory' | 'math'
+      title: string
+      blurb: string
+    }
 
 /**
  * Round-robin by weight without duplicating items.
@@ -201,6 +208,39 @@ function scriptureItems(
     }))
 }
 
+function gameItems(): FeedItem[] {
+  return [
+    {
+      kind: 'game',
+      id: 'game-reaction',
+      gameId: 'reaction',
+      title: 'Click rush',
+      blurb: 'Tap the box as it jumps. Ten seconds — how many can you land?',
+    },
+    {
+      kind: 'game',
+      id: 'game-spot',
+      gameId: 'spot',
+      title: 'Spot it',
+      blurb: 'One tile is a shade off. Find it before the clock runs out.',
+    },
+    {
+      kind: 'game',
+      id: 'game-memory',
+      gameId: 'memory',
+      title: 'Sequence',
+      blurb: 'Watch the pads light up, then repeat the chain. Grow your memory one step at a time.',
+    },
+    {
+      kind: 'game',
+      id: 'game-math',
+      gameId: 'math',
+      title: 'Quick math',
+      blurb: 'Solve as many as you can in ten seconds. Tap the right answer — speed counts.',
+    },
+  ]
+}
+
 /** Kind cadence weights — higher = denser early in the feed, still one card each */
 const FEED_WEIGHTS = {
   ideas: 2,
@@ -208,6 +248,7 @@ const FEED_WEIGHTS = {
   scripture: 2,
   resources: 1,
   books: 1,
+  games: 1,
 } as const
 
 /**
@@ -233,6 +274,7 @@ export function buildMixedFeed(
   )
   const resourcesQ = sortByFreshness(seededShuffle(resourceItems(topic), seed ^ 2))
   const booksQ = sortByFreshness(seededShuffle(bookItems(topic), seed ^ 3))
+  const gamesQ = sortByFreshness(seededShuffle(gameItems(), seed ^ 7))
 
   return filterHidden(
     weightedInterleave([
@@ -241,6 +283,7 @@ export function buildMixedFeed(
       { items: scriptureQ, weight: FEED_WEIGHTS.scripture },
       { items: resourcesQ, weight: FEED_WEIGHTS.resources },
       { items: booksQ, weight: FEED_WEIGHTS.books },
+      { items: gamesQ, weight: FEED_WEIGHTS.games },
     ]),
   )
 }
@@ -251,6 +294,7 @@ const LABELS = {
   book: 'Gutenberg',
   news: 'News · Politics',
   scripture: 'Scripture',
+  game: 'Brain game',
 } as const
 
 export const feedKindLabel = (kind: FeedItem['kind']) => LABELS[kind]
