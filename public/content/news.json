@@ -1,6 +1,363 @@
 {
-  "updatedAt": "2026-07-22T17:09:47.534Z",
+  "updatedAt": "2026-07-22T18:21:06.903Z",
   "items": [
+    {
+      "id": "rss-3d86c11581cc",
+      "hook": "How ‘Wounds To Wisdom’ Turned Honest Conversations Into A Documentary",
+      "title": "How ‘Wounds To Wisdom’ Turned Honest Conversations Into A Documentary",
+      "lesson": "Premiering at the Martha's Vineyard African American Film Festival, the project features Jonathan Majors, D Smoke and everyday Black men sharing deeply personal",
+      "source": "Essence",
+      "sourceUrl": "https://www.essence.com/entertainment/wounds-to-wisdom-documentary-mvaaff/",
+      "publishedAt": "2026-07-22T18:19:53.000Z",
+      "expiresAt": "2026-08-01T18:21:04.446Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "essence",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.essence.com/entertainment/wounds-to-wisdom-documentary-mvaaff/"
+        }
+      ]
+    },
+    {
+      "id": "rss-ebce8809bbfa",
+      "hook": "US judge sets 2027 trial date for Venezuela’s Maduro and wife",
+      "title": "US judge sets 2027 trial date for Venezuela’s Maduro and wife",
+      "lesson": "Former President Maduro pleads not guilty to drug charges; lawyer plans to challenge legality of US military operation.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/us-judge-sets-2027-trial-date-for-venezuelas-maduro-and-wife?traffic_source=rss",
+      "publishedAt": "2026-07-22T18:00:52.000Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/us-judge-sets-2027-trial-date-for-venezuelas-maduro-and-wife?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-254b754d7883",
+      "hook": "Iran warns of wider response after Trump threatens strikes on…",
+      "title": "Iran warns of wider response after Trump threatens strikes on infrastructure",
+      "lesson": "Iran has responded to US President Donald Trump’s latest threats over attacks on vessels in the Strait of Hormuz. Trump warned that any Iranian attack on ships would trigger US strikes on bridges and power plants inside Iran, including near Tehran. Tehran said the warning represents a new escalation and vowed to",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/99e09d6e-cb00-4b61-b55f-b48f01263f96/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T17:51:30.000Z",
+      "expiresAt": "2026-07-25T18:20:59.758Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/99e09d6e-cb00-4b61-b55f-b48f01263f96/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-77f73e61c27d",
+      "hook": "Documentary 'State of Firsts' Follows Sarah McBride’s Historic…",
+      "title": "Documentary 'State of Firsts' Follows Sarah McBride’s Historic Journey to Congress",
+      "lesson": "A new documentary, State of Firsts, released during Pride Month, chronicles Rep. Sarah McBride (D-Del.)’s historic path to Congress amid growing anti-transgender rhetoric. It is now showing in select theaters across the country. Directed by trans filmmaker Chase Joynt, the documentary offers a behind-the-scenes look",
+      "source": "Congress",
+      "sourceUrl": "https://msmagazine.com/2026/07/22/state-of-firsts-documentary-review-sarah-mcbride-trans-congress/",
+      "publishedAt": "2026-07-22T17:48:07.000Z",
+      "expiresAt": "2026-07-25T18:21:02.589Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://msmagazine.com/2026/07/22/state-of-firsts-documentary-review-sarah-mcbride-trans-congress/"
+        }
+      ]
+    },
+    {
+      "id": "rss-6b081fac598a",
+      "hook": "Trump’s war on Iran is unpopular and expensive. He’s perfectly OK…",
+      "title": "Trump’s war on Iran is unpopular and expensive. He’s perfectly OK with that",
+      "lesson": "Trump’s response to the Iran war’s mounting death toll and astronomical costs? ‘It won’t have any impact on me’",
+      "source": "War",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/jul/22/trump-iran-war-unpopular-expensive",
+      "publishedAt": "2026-07-22T17:37:32.000Z",
+      "expiresAt": "2026-07-25T18:21:02.676Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.theguardian.com/us-news/2026/jul/22/trump-iran-war-unpopular-expensive"
+        }
+      ]
+    },
+    {
+      "id": "rss-db0459535ac5",
+      "hook": "Anonymous food donations reach Indian student protesters",
+      "title": "Anonymous food donations reach Indian student protesters",
+      "lesson": "Anonymous donors are using food delivery apps to send food to student protesters in New Delhi",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/anonymous-food-donations-reach-indian-student-protesters?traffic_source=rss",
+      "publishedAt": "2026-07-22T17:35:37.000Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/anonymous-food-donations-reach-indian-student-protesters?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-9589a994a581",
+      "hook": "JaNa Craig Responds After Kenny Rodriguez Accuses Her Of Assault &…",
+      "title": "JaNa Craig Responds After Kenny Rodriguez Accuses Her Of Assault & Addresses Alleged Racist Texts Following Their Breakup (VIDEOS)",
+      "lesson": "It’s been a year since ‘Love Island USA’ Season 6 stars JaNa Craig and Kenny Rodriguez decided to call it quits. Many were shocked when the news hit the timeline, especially after JaNa’s best friend, Charmane, along with fellow Love Island USA co-stars Serena Page and Leah Kateb, seemingly hinted at Kenny sending",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/jana-craig-kordell-beckham-react-kenny-rodriguez-texts-assault-claim-breakup/",
+      "publishedAt": "2026-07-22T17:34:44.000Z",
+      "expiresAt": "2026-08-01T18:21:06.112Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/jana-craig-kordell-beckham-react-kenny-rodriguez-texts-assault-claim-breakup/"
+        }
+      ]
+    },
+    {
+      "id": "rss-cb5885913aad",
+      "hook": "Natalie Fleet leaves 'triggering' safeguarding minister role",
+      "title": "Natalie Fleet leaves 'triggering' safeguarding minister role",
+      "lesson": "The MP for Bolsover has spoken about how she was groomed and raped as a teenager.",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cq56g2n083do?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-22T17:33:56.000Z",
+      "expiresAt": "2026-07-25T18:21:02.347Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "bbc-politics",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/cq56g2n083do?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-799a12ea5927",
+      "hook": "Judge Greg Mathis Shares What He Believes Caused Nolan Xavier Wells’…",
+      "title": "Judge Greg Mathis Shares What He Believes Caused Nolan Xavier Wells’ Death (VIDEO)",
+      "lesson": "Judge Greg Mathis is sharing what he believes happened to Nolan Xavier Wells. He thinks the 18-year-old was killed, according to an interview with ‘The Art of Dialogue. But ultimately, he said, he’s said he’s aligned with prosecutors presenting the case to a grand jury. His comments on the case surfaced just a day",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/judge-greg-mathis-shares-what-he-believes-happened-to-nolan-xavier-wells-horn-island-autopsy-results/",
+      "publishedAt": "2026-07-22T17:30:15.000Z",
+      "expiresAt": "2026-08-01T18:21:06.112Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/judge-greg-mathis-shares-what-he-believes-happened-to-nolan-xavier-wells-horn-island-autopsy-results/"
+        }
+      ]
+    },
+    {
+      "id": "rss-42b73f35a42e",
+      "hook": "Stocks making the biggest moves midday: Super Micro Computer, EQT,…",
+      "title": "Stocks making the biggest moves midday: Super Micro Computer, EQT, AAR, Chubb, Pegasystems & more",
+      "lesson": "These are the stocks posting the largest moves midday.",
+      "source": "CNBC · Finance",
+      "sourceUrl": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-midday-smci-eqt-air-cb-pega.html",
+      "publishedAt": "2026-07-22T17:25:55.000Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "feedId": "cnbc-finance",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-midday-smci-eqt-air-cb-pega.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-8a1be7e206f7",
+      "hook": "Pooh Shiesty Denied Bond for Third Time in Gucci Mane Case",
+      "title": "Pooh Shiesty Denied Bond for Third Time in Gucci Mane Case",
+      "lesson": "Trial is scheduled to start in February 2027. Continue reading…",
+      "source": "XXL",
+      "sourceUrl": "https://www.xxlmag.com/pooh-shiesty-denied-bond-third-time-gucci-mane-case/",
+      "publishedAt": "2026-07-22T17:21:07.000Z",
+      "expiresAt": "2026-08-01T18:21:05.876Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "xxl",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.xxlmag.com/pooh-shiesty-denied-bond-third-time-gucci-mane-case/"
+        }
+      ]
+    },
+    {
+      "id": "rss-4e0dc94e2c2a",
+      "hook": "Trump attends dignified transfer of U.S. service members killed in…",
+      "title": "Trump attends dignified transfer of U.S. service members killed in Iran war",
+      "lesson": "President Trump traveled to Dover Air Force Base to attend the dignified transfer of U.S. service members killed in the conflict with Iran. NBC News' Courtney Kube has details on the ceremony and the lives",
+      "source": "War",
+      "sourceUrl": "https://www.nbcnews.com/now/video/trump-attends-dignified-transfer-of-u-s-service-members-killed-in-iran-war-267104325689",
+      "publishedAt": "2026-07-22T17:20:48.000Z",
+      "expiresAt": "2026-07-25T18:21:02.676Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.nbcnews.com/now/video/trump-attends-dignified-transfer-of-u-s-service-members-killed-in-iran-war-267104325689"
+        }
+      ]
+    },
+    {
+      "id": "rss-bfef43172554",
+      "hook": "Trump attends return of US soldiers killed in Iran war",
+      "title": "Trump attends return of US soldiers killed in Iran war",
+      "lesson": "President Donald Trump attended a ceremony at Dover Air Force Base in Delaware for four U.S. service members who returned to American soil in flag-draped",
+      "source": "War",
+      "sourceUrl": "https://www.detroitnews.com/story/news/politics/2026/07/22/trump-dignified-transfer-us-soldiers-killed-iran-war/91010710007/",
+      "publishedAt": "2026-07-22T17:19:22.000Z",
+      "expiresAt": "2026-07-25T18:21:02.676Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.detroitnews.com/story/news/politics/2026/07/22/trump-dignified-transfer-us-soldiers-killed-iran-war/91010710007/"
+        }
+      ]
+    },
+    {
+      "id": "rss-2d3162572f32",
+      "hook": "Trump push for Syrian intervention against Hezbollah ‘short-sighted’",
+      "title": "Trump push for Syrian intervention against Hezbollah ‘short-sighted’",
+      "lesson": "Analysts say US president's pressure on Damascus to intervene in Lebanon could undermine domestic security.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/features/2026/7/22/trump-push-for-syrian-intervention-against-hezbollah-short-sighted?traffic_source=rss",
+      "publishedAt": "2026-07-22T17:18:14.000Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/features/2026/7/22/trump-push-for-syrian-intervention-against-hezbollah-short-sighted?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-d2aa6cbe5e27",
+      "hook": "Evangelical Views Toward Israel Slip to New Low",
+      "title": "Evangelical Views Toward Israel Slip to New Low",
+      "lesson": "Evangelical Christians are not immune to growing negative sentiment toward Israel among Americans, a new Pew Research Center survey found. While white evangelicals are still more likely to back Israel’s government than other religious groups, their support has plunged since the outbreak of the Israel-Hamas war. The",
+      "source": "Christianity Today",
+      "sourceUrl": "https://www.christianitytoday.com/2026/07/israel-gaza-war-american-evangelical-christians-survey/",
+      "publishedAt": "2026-07-22T17:16:25.000Z",
+      "expiresAt": "2026-08-01T18:21:03.339Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "feedId": "christianity-today",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christianitytoday.com/2026/07/israel-gaza-war-american-evangelical-christians-survey/"
+        }
+      ]
+    },
+    {
+      "id": "rss-b6ef84651353",
+      "hook": "House passes stopgap funding bill. Why a government shutdown remains…",
+      "title": "House passes stopgap funding bill. Why a government shutdown remains possible",
+      "lesson": "The House passed a short-term funding measure to keep the government open ahead of the Sept. 30 funding deadline, but Senate approval is still",
+      "source": "Congress",
+      "sourceUrl": "https://www.commercialappeal.com/story/news/politics/2026/07/22/house-passes-government-shutdown-bill-senate/91007770007/",
+      "publishedAt": "2026-07-22T17:15:37.000Z",
+      "expiresAt": "2026-07-25T18:21:02.589Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.commercialappeal.com/story/news/politics/2026/07/22/house-passes-government-shutdown-bill-senate/91007770007/"
+        }
+      ]
+    },
+    {
+      "id": "rss-5143d246ecfd",
+      "hook": "Steph Curry becomes first active NBA player with Basketball Hall of…",
+      "title": "Steph Curry becomes first active NBA player with Basketball Hall of Fame exhibit",
+      "lesson": "Golden State Warriors star Steph Curry is set to become the first active NBA player to be honored with a Naismith Basketball Hall of Fame",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steph-curry-naismith-basketball-hall-fame/1951532/",
+      "publishedAt": "2026-07-22T17:14:28.000Z",
+      "expiresAt": "2026-08-01T18:21:06.287Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steph-curry-naismith-basketball-hall-fame/1951532/"
+        }
+      ]
+    },
     {
       "id": "rss-477cbf3f0150",
       "hook": "The Secrets Behind Beyoncé’s Big, Bouncy Curls",
@@ -9,14 +366,36 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/hair/the-secrets-behind-beyonce-big-bouncy-curls/",
       "publishedAt": "2026-07-22T17:08:38.000Z",
-      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "expiresAt": "2026-08-01T18:21:04.446Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "essence",
       "angles": [
         {
           "label": "Full story",
           "url": "https://www.essence.com/hair/the-secrets-behind-beyonce-big-bouncy-curls/"
+        }
+      ]
+    },
+    {
+      "id": "rss-96acd20736f3",
+      "hook": "Hamas’s new leader calls for permanent Gaza ceasefire",
+      "title": "Hamas’s new leader calls for permanent Gaza ceasefire",
+      "lesson": "In his first speech since being elected Hamas political chief, Khalil al-Hayya called for a permanent ceasefire in Gaza.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/hamass-new-leader-calls-for-permanent-gaza-ceasefire?traffic_source=rss",
+      "publishedAt": "2026-07-22T17:02:50.000Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/hamass-new-leader-calls-for-permanent-gaza-ceasefire?traffic_source=rss"
         }
       ]
     },
@@ -28,11 +407,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-rfk-jr-freezes-1b-medicaid-california-minnesota-over-fraud-fears",
       "publishedAt": "2026-07-22T17:02:44.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -48,11 +428,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-trump-admin-freezes-over-1b-medicaid-funds-minnesota-california",
       "publishedAt": "2026-07-22T17:01:19.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -80,22 +461,43 @@
       ]
     },
     {
-      "id": "rss-42b73f35a42e",
-      "hook": "Stocks making the biggest moves midday: Super Micro Computer, EQT,…",
-      "title": "Stocks making the biggest moves midday: Super Micro Computer, EQT, AAR, Chubb, Pegasystems & more",
-      "lesson": "These are the stocks posting the largest moves midday.",
-      "source": "CNBC · Finance",
-      "sourceUrl": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-midday-smci-eqt-air-cb-pega.html",
-      "publishedAt": "2026-07-22T16:59:55.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "id": "rss-42c96e51acb7",
+      "hook": "OMB Bloodbath Faces Second Trial for Alleged Role in 2017 Murder",
+      "title": "OMB Bloodbath Faces Second Trial for Alleged Role in 2017 Murder",
+      "lesson": "Newly-acquired access to the rapper's phone has allowed the case to be tried again. Continue reading…",
+      "source": "XXL",
+      "sourceUrl": "https://www.xxlmag.com/omb-bloodbath-second-trial-houston-gang-murder/",
+      "publishedAt": "2026-07-22T17:00:19.000Z",
+      "expiresAt": "2026-08-01T18:21:05.876Z",
       "topicIds": [
-        "finance",
         "current-events"
       ],
+      "feedId": "xxl",
       "angles": [
         {
           "label": "Full story",
-          "url": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-midday-smci-eqt-air-cb-pega.html"
+          "url": "https://www.xxlmag.com/omb-bloodbath-second-trial-houston-gang-murder/"
+        }
+      ]
+    },
+    {
+      "id": "rss-ba0cb854eb7d",
+      "hook": "Congress will force Dershowitz to testify on Epstein: Letter",
+      "title": "Congress will force Dershowitz to testify on Epstein: Letter",
+      "lesson": "Dershowitz told NewsNation, “First I am hearing it,” and stated he has not received a formal letter to speak before the Oversight",
+      "source": "Congress",
+      "sourceUrl": "https://www.newsnationnow.com/politics/jeffrey-epstein-alan-dershowtiz-testify-epstein-letter-compel/",
+      "publishedAt": "2026-07-22T16:58:42.000Z",
+      "expiresAt": "2026-07-25T18:21:02.589Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.newsnationnow.com/politics/jeffrey-epstein-alan-dershowtiz-testify-epstein-letter-compel/"
         }
       ]
     },
@@ -107,15 +509,58 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-trump-administration-says-its-deferring-1b-medicaid-payments-california-and-minnesota",
       "publishedAt": "2026-07-22T16:57:42.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
           "url": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-trump-administration-says-its-deferring-1b-medicaid-payments-california-and-minnesota"
+        }
+      ]
+    },
+    {
+      "id": "rss-7935de2251e7",
+      "hook": "Mayor Bowser pushes back as Congress debates bill that would curb…",
+      "title": "Mayor Bowser pushes back as Congress debates bill that would curb DC's taxing power",
+      "lesson": "Congress is set to debate a bill Wednesday that would require D.C. to get congressional approval before raising taxes or fees.",
+      "source": "Congress",
+      "sourceUrl": "https://wjla.com/news/local/dc-taxing-authority-review-act-congress-mayor-muriel-bowser-home-rule-tax-increases-house-oversight-james-comer",
+      "publishedAt": "2026-07-22T16:54:53.000Z",
+      "expiresAt": "2026-07-25T18:21:02.589Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://wjla.com/news/local/dc-taxing-authority-review-act-congress-mayor-muriel-bowser-home-rule-tax-increases-house-oversight-james-comer"
+        }
+      ]
+    },
+    {
+      "id": "rss-eb0e3b4879cb",
+      "hook": "WNBA, NBA and FIBA to host fourth Women's Basketball Without Borders…",
+      "title": "WNBA, NBA and FIBA to host fourth Women's Basketball Without Borders All-Star camp",
+      "lesson": "Forty of the world's top high school girls' basketball prospects will learn from current and former WNBA and FIBA players and",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.nba.com/news/wnba-bwb-camp-2026-wnba-all-star",
+      "publishedAt": "2026-07-22T16:50:14.000Z",
+      "expiresAt": "2026-08-01T18:21:06.287Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.nba.com/news/wnba-bwb-camp-2026-wnba-all-star"
         }
       ]
     },
@@ -127,14 +572,57 @@
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/identified-roberto-hernandez-being-found-inside-clothing-donation-box-texas/",
       "publishedAt": "2026-07-22T16:48:22.000Z",
-      "expiresAt": "2026-08-01T17:09:46.488Z",
+      "expiresAt": "2026-08-01T18:21:06.112Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "the-shade-room",
       "angles": [
         {
           "label": "Full story",
           "url": "https://theshaderoom.com/identified-roberto-hernandez-being-found-inside-clothing-donation-box-texas/"
+        }
+      ]
+    },
+    {
+      "id": "rss-cd5ec15524f9",
+      "hook": "Closer look at new coaches for 2026-27 season",
+      "title": "Closer look at new coaches for 2026-27 season",
+      "lesson": "The NBA saw 1/5 of its teams change coaches in the offseason. How will those new faces impact their teams in 2026-27?",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.nba.com/news/closer-look-new-coaches-2026-27",
+      "publishedAt": "2026-07-22T16:42:57.000Z",
+      "expiresAt": "2026-08-01T18:21:06.287Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.nba.com/news/closer-look-new-coaches-2026-27"
+        }
+      ]
+    },
+    {
+      "id": "rss-b192e9000b90",
+      "hook": "Darline Graham says her brother’s work ‘took him from us’ - Live Updates",
+      "title": "Darline Graham says her brother’s work ‘took him from us’ - Live Updates",
+      "lesson": "The Senate Budget Committee met for the first time since the death of the panel’s chair.",
+      "source": "Congress",
+      "sourceUrl": "https://www.politico.com/live-updates/2026/07/22/congress/grahams-cause-of-death-01007853",
+      "publishedAt": "2026-07-22T16:39:29.000Z",
+      "expiresAt": "2026-07-25T18:21:02.589Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "congress",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.politico.com/live-updates/2026/07/22/congress/grahams-cause-of-death-01007853"
         }
       ]
     },
@@ -146,10 +634,11 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/snoop-dogg-biopic-premiere-summer-2027/",
       "publishedAt": "2026-07-22T16:37:52.000Z",
-      "expiresAt": "2026-08-01T17:09:46.260Z",
+      "expiresAt": "2026-08-01T18:21:05.876Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "xxl",
       "angles": [
         {
           "label": "Full story",
@@ -165,11 +654,12 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/irans-judiciary-warns-against-infiltrators-announces-new-executions?traffic_source=rss",
       "publishedAt": "2026-07-22T16:35:33.000Z",
-      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera",
       "angles": [
         {
           "label": "Full story",
@@ -185,11 +675,12 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/justice-for-lorenzo-protests-disrupt-houston-council-meeting?traffic_source=rss",
       "publishedAt": "2026-07-22T16:34:24.000Z",
-      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera",
       "angles": [
         {
           "label": "Full story",
@@ -205,11 +696,12 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.newsday.com/sports/basketball/victor-wembanyama-caitlin-clark-derrick-rose-2k-a79003",
       "publishedAt": "2026-07-22T16:32:33.000Z",
-      "expiresAt": "2026-08-01T17:09:47.030Z",
+      "expiresAt": "2026-08-01T18:21:06.287Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
       ],
+      "feedId": "nba-basketball-news",
       "angles": [
         {
           "label": "Full story",
@@ -225,14 +717,57 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/tyga-starface-album-1980s-alter-ego/",
       "publishedAt": "2026-07-22T16:28:56.000Z",
-      "expiresAt": "2026-08-01T17:09:46.260Z",
+      "expiresAt": "2026-08-01T18:21:05.876Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "xxl",
       "angles": [
         {
           "label": "Full story",
           "url": "https://www.xxlmag.com/tyga-starface-album-1980s-alter-ego/"
+        }
+      ]
+    },
+    {
+      "id": "rss-b8a19a9570ca",
+      "hook": "Detroit Pistons Delivered Bad Jalen Duren News To Kings In NBA Offseason",
+      "title": "Detroit Pistons Delivered Bad Jalen Duren News To Kings In NBA Offseason",
+      "lesson": "The Detroit Pistons watched two teams express interest in Jalen Duren at the start of NBA free agency in June 2026. The Los Angeles Lakers and the Sacramento Kings both hosted Duren for meetings, making it clear that they would be open to exploring sign-and-trade scenarios with Detroit. However, the Lakers pivoted to",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://sports.yahoo.com/articles/detroit-pistons-delivered-bad-jalen-162714999.html",
+      "publishedAt": "2026-07-22T16:27:14.000Z",
+      "expiresAt": "2026-08-01T18:21:06.287Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://sports.yahoo.com/articles/detroit-pistons-delivered-bad-jalen-162714999.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-14ac7c180c35",
+      "hook": "4 US soldiers killed in Iran war return to American soil",
+      "title": "4 US soldiers killed in Iran war return to American soil",
+      "lesson": "Four U.S. service members returned to American soil in flag-draped caskets on Wednesday after being killed in Iranian attacks in the Middle",
+      "source": "War",
+      "sourceUrl": "https://www.militarytimes.com/news/your-military/2026/07/22/4-us-soldiers-killed-in-iran-war-return-to-american-soil/",
+      "publishedAt": "2026-07-22T16:20:22.000Z",
+      "expiresAt": "2026-07-25T18:21:02.676Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "war",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.militarytimes.com/news/your-military/2026/07/22/4-us-soldiers-killed-in-iran-war-return-to-american-soil/"
         }
       ]
     },
@@ -244,10 +779,11 @@
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/florida-mom-carla-nishikura-three-children-found-living-in-home-covered-with-feces/",
       "publishedAt": "2026-07-22T16:18:57.000Z",
-      "expiresAt": "2026-08-01T17:09:46.488Z",
+      "expiresAt": "2026-08-01T18:21:06.112Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "the-shade-room",
       "angles": [
         {
           "label": "Full story",
@@ -263,11 +799,12 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cgk4x44mm50o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T16:18:30.000Z",
-      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "expiresAt": "2026-07-25T18:21:02.347Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "bbc-politics",
       "angles": [
         {
           "label": "Full story",
@@ -283,14 +820,36 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079963925240492423",
       "publishedAt": "2026-07-22T16:16:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "expiresAt": "2026-08-01T18:21:03.607Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "philip-lewis",
       "angles": [
         {
           "label": "Full story",
           "url": "https://x.com/Phil_Lewis_/status/2079963925240492423"
+        }
+      ]
+    },
+    {
+      "id": "rss-2694f1b93306",
+      "hook": "‘Just Poetic,’ ‘Instant Purchase’ – Basketball World Reacts to NBA…",
+      "title": "‘Just Poetic,’ ‘Instant Purchase’ – Basketball World Reacts to NBA 2K27’s Cover Featuring Caitlin Clark, Victor Wembanyama",
+      "lesson": "The basketball world got its first look at NBA 2K27 today. Every year, many people sit on the edge of their seats to see who the cover athletes will be for each",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://sports.yahoo.com/articles/just-poetic-instant-purchase-basketball-161511837.html",
+      "publishedAt": "2026-07-22T16:15:11.000Z",
+      "expiresAt": "2026-08-01T18:21:06.287Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://sports.yahoo.com/articles/just-poetic-instant-purchase-basketball-161511837.html"
         }
       ]
     },
@@ -302,11 +861,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=6f3fbf2a-dcd9-402b-aff4-7ffc062222f6&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-22T16:13:17.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -322,11 +882,12 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/9eeb65e5-ebeb-4c1a-a9c5-b48f010ac4ba/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T16:11:25.000Z",
-      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "expiresAt": "2026-07-25T18:20:59.758Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera-news-feed",
       "angles": [
         {
           "label": "Listen",
@@ -339,6 +900,48 @@
       ]
     },
     {
+      "id": "rss-887d8aba246e",
+      "hook": "‘LeBron Knows Where He’s Going’ — Ex-NFL Player Claims Heat’s Leaked…",
+      "title": "‘LeBron Knows Where He’s Going’ — Ex-NFL Player Claims Heat’s Leaked Introductory Press Conference Was No Accident",
+      "lesson": "An accidental YouTube upload may have spoiled the most anticipated decision of the NBA offseason after an unlisted livestream link titled “LeBron James Introductory Press Conference” appeared on the Miami Heat official channel late Tuesday night. The post was quickly removed, and the Heat issued a statement blaming a",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://sports.yahoo.com/articles/lebron-knows-where-going-ex-160925927.html",
+      "publishedAt": "2026-07-22T16:09:25.000Z",
+      "expiresAt": "2026-08-01T18:21:06.287Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://sports.yahoo.com/articles/lebron-knows-where-going-ex-160925927.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-ebaaffe31105",
+      "hook": "Dallas Mavericks announce preseason schedule",
+      "title": "Dallas Mavericks announce preseason schedule",
+      "lesson": "The Mavericks' preseason schedule is highlighted by a pair of games against the Houston Rockets as part of the 2026 NBA China",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.dallasnews.com/sports/mavericks/article/dallas-mavericks-preseason-schedule-china-rockets-22355562.php",
+      "publishedAt": "2026-07-22T16:09:19.000Z",
+      "expiresAt": "2026-08-01T18:21:06.287Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "feedId": "nba-basketball-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.dallasnews.com/sports/mavericks/article/dallas-mavericks-preseason-schedule-china-rockets-22355562.php"
+        }
+      ]
+    },
+    {
       "id": "rss-ca5588304454",
       "hook": "Civil society organizations present recommendations to the United…",
       "title": "Civil society organizations present recommendations to the United States Congress for a genuine democratic transition in Venezuela",
@@ -346,11 +949,12 @@
       "source": "Congress",
       "sourceUrl": "https://www.wola.org/2026/07/civil-society-organizations-present-recommendations-to-the-united-states-congress-for-a-genuine-democratic-transition-in-venezuela/",
       "publishedAt": "2026-07-22T16:09:06.000Z",
-      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "expiresAt": "2026-07-25T18:21:02.589Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "congress",
       "angles": [
         {
           "label": "Full story",
@@ -386,11 +990,12 @@
       "source": "Congress",
       "sourceUrl": "https://thehill.com/opinion/congress-blog/5981167-house-must-pass-oaa/",
       "publishedAt": "2026-07-22T16:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "expiresAt": "2026-07-25T18:21:02.589Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "congress",
       "angles": [
         {
           "label": "Full story",
@@ -406,15 +1011,37 @@
       "source": "Congress",
       "sourceUrl": "https://www.startribune.com/time-is-running-short-for-congress-to-reverse-a-looming-ban-on-hemp-derived-thc-products/601869136",
       "publishedAt": "2026-07-22T16:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "expiresAt": "2026-07-25T18:21:02.589Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "congress",
       "angles": [
         {
           "label": "Full story",
           "url": "https://www.startribune.com/time-is-running-short-for-congress-to-reverse-a-looming-ban-on-hemp-derived-thc-products/601869136"
+        }
+      ]
+    },
+    {
+      "id": "rss-3bfac57300fd",
+      "hook": "NFL Flag Football Teams Arrive in Indy",
+      "title": "NFL Flag Football Teams Arrive in Indy",
+      "lesson": "Indianapolis News, Indiana Weather, Indiana News, Indiana Traffic, Indiana Local News, Indiana Sports, Community, Entertainment",
+      "source": "NFL & Football News",
+      "sourceUrl": "https://fox59.com/video/nfl-flag-football-teams-arrive-in-indy/11995127/",
+      "publishedAt": "2026-07-22T15:55:00.000Z",
+      "expiresAt": "2026-08-01T18:21:06.370Z",
+      "topicIds": [
+        "football-film",
+        "sports-biz"
+      ],
+      "feedId": "nfl-football-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://fox59.com/video/nfl-flag-football-teams-arrive-in-indy/11995127/"
         }
       ]
     },
@@ -426,11 +1053,12 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/war-on-iran-hegseth-wants-70b-more-to-keep-fighting?traffic_source=rss",
       "publishedAt": "2026-07-22T15:52:54.000Z",
-      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera",
       "angles": [
         {
           "label": "Full story",
@@ -446,11 +1074,12 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/proposed-us-saudi-nuclear-energy-deal-what-we-know-so-far?traffic_source=rss",
       "publishedAt": "2026-07-22T15:46:56.000Z",
-      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera",
       "angles": [
         {
           "label": "Full story",
@@ -466,11 +1095,12 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/c0ejwedl1gno?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T15:43:55.000Z",
-      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "expiresAt": "2026-07-25T18:21:02.347Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "bbc-politics",
       "angles": [
         {
           "label": "Full story",
@@ -486,11 +1116,12 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5897383/dc-reflecting-pool-saga-influencers",
       "publishedAt": "2026-07-22T15:41:39.000Z",
-      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "expiresAt": "2026-07-25T18:20:59.915Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "npr-politics",
       "angles": [
         {
           "label": "Full story",
@@ -506,11 +1137,12 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/video/counting-the-cost/2026/7/22/why-are-billionaires-growing-richer-than-ever?traffic_source=rss",
       "publishedAt": "2026-07-22T15:38:26.000Z",
-      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera",
       "angles": [
         {
           "label": "Full story",
@@ -546,11 +1178,12 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/from-towns-to-zones-why-israel-gives-military-names-to-civilian-areas?traffic_source=rss",
       "publishedAt": "2026-07-22T15:36:51.000Z",
-      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "expiresAt": "2026-07-25T18:20:59.491Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera",
       "angles": [
         {
           "label": "Full story",
@@ -566,10 +1199,11 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/blueface-detained-police-swatting-call-people-killed/",
       "publishedAt": "2026-07-22T15:34:19.000Z",
-      "expiresAt": "2026-08-01T17:09:46.260Z",
+      "expiresAt": "2026-08-01T18:21:05.876Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "xxl",
       "angles": [
         {
           "label": "Full story",
@@ -585,11 +1219,12 @@
       "source": "War",
       "sourceUrl": "https://www.politico.com/live-updates/2026/07/22/congress/house-democrats-ready-iran-war-powers-vote-01007705",
       "publishedAt": "2026-07-22T15:34:01.000Z",
-      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "expiresAt": "2026-07-25T18:21:02.676Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "war",
       "angles": [
         {
           "label": "Full story",
@@ -664,11 +1299,12 @@
       "source": "War",
       "sourceUrl": "https://www.usatoday.com/story/news/politics/2026/07/22/house-speaker-mike-johnson-end-iran-war/91006777007/",
       "publishedAt": "2026-07-22T15:25:52.000Z",
-      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "expiresAt": "2026-07-25T18:21:02.676Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "war",
       "angles": [
         {
           "label": "Full story",
@@ -724,11 +1360,12 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/22/kalshi-launches-election-hub-for-prediction-markets-ahead-of-midterms.html",
       "publishedAt": "2026-07-22T15:23:02.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "cnbc-finance",
       "angles": [
         {
           "label": "Full story",
@@ -744,14 +1381,36 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/lifestyle/essence-festival-friend-group-tradition/",
       "publishedAt": "2026-07-22T15:21:16.000Z",
-      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "expiresAt": "2026-08-01T18:21:04.446Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "essence",
       "angles": [
         {
           "label": "Full story",
           "url": "https://www.essence.com/lifestyle/essence-festival-friend-group-tradition/"
+        }
+      ]
+    },
+    {
+      "id": "rss-89f1241c6d5e",
+      "hook": "2026 Rotoworld Fantasy Football Team Previews Hub",
+      "title": "2026 Rotoworld Fantasy Football Team Previews Hub",
+      "lesson": "Get ready for 2026 fantasy football drafts with in-depth previews for all 32 teams throughout the summer.",
+      "source": "NFL & Football News",
+      "sourceUrl": "https://www.nbcsports.com/fantasy/football/news/2026-rotoworld-fantasy-football-team-previews-hub",
+      "publishedAt": "2026-07-22T15:21:00.000Z",
+      "expiresAt": "2026-08-01T18:21:06.370Z",
+      "topicIds": [
+        "football-film",
+        "sports-biz"
+      ],
+      "feedId": "nfl-football-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.nbcsports.com/fantasy/football/news/2026-rotoworld-fantasy-football-team-previews-hub"
         }
       ]
     },
@@ -803,11 +1462,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/science-white-house-admits-it-used-keywords-kill-billions-worth-california-research-grants",
       "publishedAt": "2026-07-22T15:07:46.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -823,11 +1483,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/technology-socialist-case-against-nationalizing-ai",
       "publishedAt": "2026-07-22T15:07:46.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -843,11 +1504,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/technology-ais-bad-reputation-its-own-making",
       "publishedAt": "2026-07-22T15:07:46.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -863,11 +1525,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/elections-officials-sought-downplay-chinas-link-2020-election",
       "publishedAt": "2026-07-22T15:07:46.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -883,11 +1546,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/criminal-justice-ousted-venezuelan-president-maduros-wednesday-court-hearing-what-we-know",
       "publishedAt": "2026-07-22T15:07:46.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -903,11 +1567,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/donald-trump-smithsonian-pushes-back-trumps-radical-revisionism-claims",
       "publishedAt": "2026-07-22T15:07:46.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -923,10 +1588,11 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/fashion/imaan-hammam-victorias-secret-bra-campaign-profile/",
       "publishedAt": "2026-07-22T15:06:26.000Z",
-      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "expiresAt": "2026-08-01T18:21:04.446Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "essence",
       "angles": [
         {
           "label": "Full story",
@@ -942,11 +1608,12 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/why-christopher-nolan-odyssey-haunts-us-right-now/",
       "publishedAt": "2026-07-22T15:04:03.000Z",
-      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "expiresAt": "2026-08-01T18:21:03.339Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christianity-today",
       "angles": [
         {
           "label": "Full story",
@@ -962,11 +1629,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/elections-trump-backed-candidates-win-primaries-key-battleground-state",
       "publishedAt": "2026-07-22T14:56:04.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -982,11 +1650,12 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/fba4f385-ee31-4a2c-88cb-b48f00f5c43c/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T14:55:09.000Z",
-      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "expiresAt": "2026-07-25T18:20:59.758Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera-news-feed",
       "angles": [
         {
           "label": "Listen",
@@ -1026,10 +1695,11 @@
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/love-island-star-jana-is-accused-of-beating-her-bf-details-video/",
       "publishedAt": "2026-07-22T14:55:03.000Z",
-      "expiresAt": "2026-08-01T17:09:46.966Z",
+      "expiresAt": "2026-08-01T18:21:06.206Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "mediatakeout",
       "angles": [
         {
           "label": "Full story",
@@ -1045,11 +1715,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/supreme-court-supreme-court-urged-strike-down-federal-distilling-prohibition",
       "publishedAt": "2026-07-22T14:54:00.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -1085,11 +1756,12 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/technology-chick-fil-hit-data-breach-what-we-know",
       "publishedAt": "2026-07-22T14:51:56.000Z",
-      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "expiresAt": "2026-07-25T18:20:59.343Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "allsides",
       "angles": [
         {
           "label": "Full story",
@@ -1105,10 +1777,11 @@
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/fetty-wap-engaged-to-buxom-ig-influencer-all-the-details-about-his-fiance/",
       "publishedAt": "2026-07-22T14:45:35.000Z",
-      "expiresAt": "2026-08-01T17:09:46.966Z",
+      "expiresAt": "2026-08-01T18:21:06.206Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "mediatakeout",
       "angles": [
         {
           "label": "Full story",
@@ -1124,10 +1797,11 @@
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/broke-nfler-leveon-bell-has-7-kids-6-baby-mamas-pays-millions-in-child-support/",
       "publishedAt": "2026-07-22T14:44:26.000Z",
-      "expiresAt": "2026-08-01T17:09:46.966Z",
+      "expiresAt": "2026-08-01T18:21:06.206Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "mediatakeout",
       "angles": [
         {
           "label": "Full story",
@@ -1163,11 +1837,12 @@
       "source": "War",
       "sourceUrl": "https://www.thedailybeast.com/panicked-trump-gets-desperate-with-war-crimes-threat/",
       "publishedAt": "2026-07-22T14:38:29.000Z",
-      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "expiresAt": "2026-07-25T18:21:02.676Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "war",
       "angles": [
         {
           "label": "Full story",
@@ -1183,10 +1858,11 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079935040708841711",
       "publishedAt": "2026-07-22T14:22:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "expiresAt": "2026-08-01T18:21:03.607Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "philip-lewis",
       "angles": [
         {
           "label": "Full story",
@@ -1202,11 +1878,12 @@
       "source": "War",
       "sourceUrl": "https://www.bloomberg.com/news/articles/2026-07-22/ghana-keeps-rates-at-14-as-us-iran-war-drives-inflation-risk",
       "publishedAt": "2026-07-22T14:19:04.000Z",
-      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "expiresAt": "2026-07-25T18:21:02.676Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "war",
       "angles": [
         {
           "label": "Full story",
@@ -1222,11 +1899,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=d3ac2c9c-3d17-4d37-813d-f89cc3d24011&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-22T14:08:44.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -1262,10 +1940,11 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/movies-tv/malcolm-jamal-warner-widow-sues-mother-prenuptial-agreement-1235180657/",
       "publishedAt": "2026-07-22T14:01:23.000Z",
-      "expiresAt": "2026-08-01T17:09:46.368Z",
+      "expiresAt": "2026-08-01T18:21:05.978Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "vibe",
       "angles": [
         {
           "label": "Full story",
@@ -1281,11 +1960,12 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cdrvyl5lxy1o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T13:34:17.000Z",
-      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "expiresAt": "2026-07-25T18:21:02.347Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "bbc-politics",
       "angles": [
         {
           "label": "Full story",
@@ -1301,11 +1981,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=d0bb1f45-2734-4f91-bcab-cbf52a20c753&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-22T13:32:12.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -1341,10 +2022,11 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/entertainment/watch-a24-misty-green-trailer/",
       "publishedAt": "2026-07-22T13:17:43.000Z",
-      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "expiresAt": "2026-08-01T18:21:04.446Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "essence",
       "angles": [
         {
           "label": "Full story",
@@ -1380,10 +2062,11 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079913926347633100",
       "publishedAt": "2026-07-22T12:58:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "expiresAt": "2026-08-01T18:21:03.607Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "philip-lewis",
       "angles": [
         {
           "label": "Full story",
@@ -1399,11 +2082,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=afe6df28-9461-4328-9b4e-955509c41ebd&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-22T12:47:59.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -1419,14 +2103,36 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/news/mourning-nolan-xavier-wells-why-this-loss-feels-so-personal/",
       "publishedAt": "2026-07-22T12:43:45.000Z",
-      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "expiresAt": "2026-08-01T18:21:04.446Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "essence",
       "angles": [
         {
           "label": "Full story",
           "url": "https://www.essence.com/news/mourning-nolan-xavier-wells-why-this-loss-feels-so-personal/"
+        }
+      ]
+    },
+    {
+      "id": "rss-52a6bd2c52a9",
+      "hook": "Ranking the NFL rookie running backs best positioned for instant…",
+      "title": "Ranking the NFL rookie running backs best positioned for instant production",
+      "lesson": "These running backs are in line to make an instant rookie impact on the NFL.",
+      "source": "NFL & Football News",
+      "sourceUrl": "https://www.cbssports.com/nfl/news/2026-nfl-rookie-running-back-rankings-fantasy-football/",
+      "publishedAt": "2026-07-22T12:31:22.000Z",
+      "expiresAt": "2026-08-01T18:21:06.370Z",
+      "topicIds": [
+        "football-film",
+        "sports-biz"
+      ],
+      "feedId": "nfl-football-news",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cbssports.com/nfl/news/2026-nfl-rookie-running-back-rankings-fantasy-football/"
         }
       ]
     },
@@ -1438,11 +2144,12 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/the-antifa-terrorism-threat-the-trump-administration-describes-does-not-exist-287748",
       "publishedAt": "2026-07-22T12:28:46.000Z",
-      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "expiresAt": "2026-07-25T18:21:00.043Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "the-conversation-politics",
       "angles": [
         {
           "label": "Full story",
@@ -1458,11 +2165,12 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/philadelphias-criminal-justice-fines-and-fees-fall-hardest-on-poorest-neighborhoods-286417",
       "publishedAt": "2026-07-22T12:28:28.000Z",
-      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "expiresAt": "2026-07-25T18:21:00.043Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "the-conversation-politics",
       "angles": [
         {
           "label": "Full story",
@@ -1478,11 +2186,12 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cz64l78n5vpo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T12:26:03.000Z",
-      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "expiresAt": "2026-07-25T18:21:02.347Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "bbc-politics",
       "angles": [
         {
           "label": "Full story",
@@ -1518,10 +2227,11 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/espn/status/2079903293371781558",
       "publishedAt": "2026-07-22T12:16:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "expiresAt": "2026-08-01T18:21:03.607Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "philip-lewis",
       "angles": [
         {
           "label": "Full story",
@@ -1537,11 +2247,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=3afa612d-9437-48d7-96a2-523abbe93096&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-22T12:01:08.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -1577,11 +2288,12 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-premarket-smci-gev-rklb.html",
       "publishedAt": "2026-07-22T11:54:30.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "cnbc-finance",
       "angles": [
         {
           "label": "Full story",
@@ -1597,11 +2309,12 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/c0daf384-53cc-480a-9724-b48f00c1a871/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T11:45:16.000Z",
-      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "expiresAt": "2026-07-25T18:20:59.758Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera-news-feed",
       "angles": [
         {
           "label": "Listen",
@@ -1661,11 +2374,12 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/5ca7178f-cabd-4d6a-a4fb-b48f00b9e11a/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T11:17:02.000Z",
-      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "expiresAt": "2026-07-25T18:20:59.758Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera-news-feed",
       "angles": [
         {
           "label": "Listen",
@@ -1705,11 +2419,12 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/church/worship/ways-to-throw-satan-off-his-game-with-worship.html",
       "publishedAt": "2026-07-22T11:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.829Z",
+      "expiresAt": "2026-08-01T18:21:03.451Z",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
+      "feedId": "crosswalk",
       "angles": [
         {
           "label": "Full story",
@@ -1725,11 +2440,12 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/plus/faith-toolkits/grief-support-toolkit.html",
       "publishedAt": "2026-07-22T11:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.829Z",
+      "expiresAt": "2026-08-01T18:21:03.451Z",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
+      "feedId": "crosswalk",
       "angles": [
         {
           "label": "Full story",
@@ -1745,11 +2461,12 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/family/marriage/ways-husbands-make-wives-feel-unloved-without-knowing-it.html",
       "publishedAt": "2026-07-22T11:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.829Z",
+      "expiresAt": "2026-08-01T18:21:03.451Z",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
+      "feedId": "crosswalk",
       "angles": [
         {
           "label": "Full story",
@@ -1765,11 +2482,12 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/c935g67wyvgo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T10:55:51.000Z",
-      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "expiresAt": "2026-07-25T18:21:02.347Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "bbc-politics",
       "angles": [
         {
           "label": "Full story",
@@ -1785,11 +2503,12 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5901981/defense-secretary-pete-hegseth-defends-iran-war-funding-request-at-fiery-hearing",
       "publishedAt": "2026-07-22T10:43:36.000Z",
-      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "expiresAt": "2026-07-25T18:20:59.915Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "npr-politics",
       "angles": [
         {
           "label": "Full story",
@@ -1805,11 +2524,12 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5902047/sen-patty-murray-d-wash-on-defense-secretary-pete-hegseths-senate-testimony",
       "publishedAt": "2026-07-22T10:43:28.000Z",
-      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "expiresAt": "2026-07-25T18:20:59.915Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "npr-politics",
       "angles": [
         {
           "label": "Full story",
@@ -1825,11 +2545,12 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/d87fc3a4-a867-4dcf-bd25-b48f00b045b7/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T10:41:58.000Z",
-      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "expiresAt": "2026-07-25T18:20:59.758Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera-news-feed",
       "angles": [
         {
           "label": "Listen",
@@ -1869,11 +2590,12 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/addiction-baseline-epidemic-homelessness-fentanyl/",
       "publishedAt": "2026-07-22T10:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "expiresAt": "2026-08-01T18:21:03.339Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christianity-today",
       "angles": [
         {
           "label": "Full story",
@@ -1889,11 +2611,12 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/marriage-is-not-a-prize-to-be-won/",
       "publishedAt": "2026-07-22T10:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "expiresAt": "2026-08-01T18:21:03.339Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christianity-today",
       "angles": [
         {
           "label": "Full story",
@@ -1909,11 +2632,12 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/mission-hospitals-21st-century-loftus/",
       "publishedAt": "2026-07-22T10:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "expiresAt": "2026-08-01T18:21:03.339Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christianity-today",
       "angles": [
         {
           "label": "Full story",
@@ -1929,11 +2653,12 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/3d-printed-church-austin-texas/",
       "publishedAt": "2026-07-22T10:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "expiresAt": "2026-08-01T18:21:03.339Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christianity-today",
       "angles": [
         {
           "label": "Full story",
@@ -1949,10 +2674,11 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/travis-scott-actually-nervous-shooting-the-odyssey-1236300520/",
       "publishedAt": "2026-07-22T09:37:19.000Z",
-      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "expiresAt": "2026-08-01T18:21:05.551Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "billboard-rb-hip-hop",
       "angles": [
         {
           "label": "Full story",
@@ -1968,11 +2694,12 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/church-elder-and-worship-leader-among-dead-in-fresh-wave-of-attacks-in-eastern-drc",
       "publishedAt": "2026-07-22T09:22:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "expiresAt": "2026-08-01T18:21:02.857Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christian-today",
       "angles": [
         {
           "label": "Full story",
@@ -1988,11 +2715,12 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/e820c941-dcad-4c44-a975-b48f00976076/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T09:11:37.000Z",
-      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "expiresAt": "2026-07-25T18:20:59.758Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera-news-feed",
       "angles": [
         {
           "label": "Listen",
@@ -2012,11 +2740,12 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5896456/medicaid-cuts-incarceration-states-obbba",
       "publishedAt": "2026-07-22T09:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "expiresAt": "2026-07-25T18:20:59.915Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "npr-politics",
       "angles": [
         {
           "label": "Full story",
@@ -2032,11 +2761,12 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5887428/2026-midterm-election-trump-campaign-rally",
       "publishedAt": "2026-07-22T09:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "expiresAt": "2026-07-25T18:20:59.915Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "npr-politics",
       "angles": [
         {
           "label": "Full story",
@@ -2052,11 +2782,12 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/h-2a-farmworker-protections-profits-trump",
       "publishedAt": "2026-07-22T09:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:43.980Z",
+      "expiresAt": "2026-07-25T18:21:00.199Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "propublica",
       "angles": [
         {
           "label": "Full story",
@@ -2072,11 +2803,12 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a38abc10-c422-4f22-ba27-b48f0091ff50/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T08:51:54.000Z",
-      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "expiresAt": "2026-07-25T18:20:59.758Z",
       "topicIds": [
         "current-events",
         "politics"
       ],
+      "feedId": "al-jazeera-news-feed",
       "angles": [
         {
           "label": "Listen",
@@ -2096,11 +2828,12 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/catholic-bishops-urge-mps-to-reject-latest-assisted-suicide-bill",
       "publishedAt": "2026-07-22T08:34:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "expiresAt": "2026-08-01T18:21:02.857Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christian-today",
       "angles": [
         {
           "label": "Full story",
@@ -2116,11 +2849,12 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5902198/arizona-primary-results-trump-elections-biggs",
       "publishedAt": "2026-07-22T08:33:21.000Z",
-      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "expiresAt": "2026-07-25T18:20:59.915Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "npr-politics",
       "angles": [
         {
           "label": "Full story",
@@ -2160,11 +2894,12 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/erling-haaland-buys-historic-christian-manuscript-donates-it-to-local-library",
       "publishedAt": "2026-07-22T06:50:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "expiresAt": "2026-08-01T18:21:02.857Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christian-today",
       "angles": [
         {
           "label": "Full story",
@@ -2180,11 +2915,12 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/iraqi-pm-asks-christians-to-return-following-mass-exodus",
       "publishedAt": "2026-07-22T06:49:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "expiresAt": "2026-08-01T18:21:02.857Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christian-today",
       "angles": [
         {
           "label": "Full story",
@@ -2200,11 +2936,12 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/christian-group-seeks-commitment-from-andy-burnham-to-tackle-poverty",
       "publishedAt": "2026-07-22T06:36:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "expiresAt": "2026-08-01T18:21:02.857Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christian-today",
       "angles": [
         {
           "label": "Full story",
@@ -2260,11 +2997,12 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/g-s1-134880/mamdani-nyc-netanyahu",
       "publishedAt": "2026-07-22T06:04:29.000Z",
-      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "expiresAt": "2026-07-25T18:20:59.915Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "npr-politics",
       "angles": [
         {
           "label": "Full story",
@@ -2404,11 +3142,12 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5897533/rep-blake-moore-r-utah-on-gops-efforts-to-pass-budget-reconciliation-bill",
       "publishedAt": "2026-07-22T04:55:23.000Z",
-      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "expiresAt": "2026-07-25T18:20:59.915Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "npr-politics",
       "angles": [
         {
           "label": "Full story",
@@ -2784,10 +3523,11 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://thelinknewspaper.ca/article/k-pop-and-the-sanitization-of-black-culture",
       "publishedAt": "2026-07-22T02:38:56.000Z",
-      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "expiresAt": "2026-08-01T18:21:03.678Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "black-pop-culture",
       "angles": [
         {
           "label": "Full story",
@@ -3127,11 +3867,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=e24a9787-d1ed-4339-83a2-9c6bc7740c24&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-22T01:01:44.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -3346,10 +4087,11 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/snoop-dogg-biopic-release-date-1236300241/",
       "publishedAt": "2026-07-22T00:08:55.000Z",
-      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "expiresAt": "2026-08-01T18:21:05.551Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "billboard-rb-hip-hop",
       "angles": [
         {
           "label": "Full story",
@@ -3469,10 +4211,11 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/NYCMayor/status/2079718073058091261",
       "publishedAt": "2026-07-22T00:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "expiresAt": "2026-08-01T18:21:03.607Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "philip-lewis",
       "angles": [
         {
           "label": "Full story",
@@ -3566,10 +4309,11 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/doja-cat-latto-okayyy-video-tour-ma-vie-1236300237/",
       "publishedAt": "2026-07-21T23:37:47.000Z",
-      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "expiresAt": "2026-08-01T18:21:05.551Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "billboard-rb-hip-hop",
       "angles": [
         {
           "label": "Full story",
@@ -3705,11 +4449,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=8df4ddad-262c-441c-8d41-c423d4c68a54&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-21T23:17:29.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -3964,10 +4709,11 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079696596879479017",
       "publishedAt": "2026-07-21T22:34:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "expiresAt": "2026-08-01T18:21:03.607Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "philip-lewis",
       "angles": [
         {
           "label": "Full story",
@@ -4027,11 +4773,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=d18cf68c-3509-4890-b426-ec910b1cbe4f&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-21T22:27:20.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -4067,11 +4814,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=0ee6455f-a8bd-41b8-99e4-985a55e8e0c9&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-21T22:08:39.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -4189,10 +4937,11 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/xzibit-cat-thundercat-20-years-1236300076/",
       "publishedAt": "2026-07-21T21:56:13.000Z",
-      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "expiresAt": "2026-08-01T18:21:05.551Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "billboard-rb-hip-hop",
       "angles": [
         {
           "label": "Full story",
@@ -4227,10 +4976,11 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/lil-wayne-favorite-rappers-aliens-hates-milk-podcast-1236300041/",
       "publishedAt": "2026-07-21T21:45:44.000Z",
-      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "expiresAt": "2026-08-01T18:21:05.551Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "billboard-rb-hip-hop",
       "angles": [
         {
           "label": "Full story",
@@ -4289,11 +5039,12 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=45d8ae07-b7e9-4a04-8e00-c55c7943dbc3&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-21T21:02:36.000Z",
-      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "expiresAt": "2026-07-25T18:21:06.521Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-bulletins",
       "angles": [
         {
           "label": "Full story",
@@ -4348,10 +5099,11 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/key-glock-interview-project-x-1236284255/",
       "publishedAt": "2026-07-21T20:51:51.000Z",
-      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "expiresAt": "2026-08-01T18:21:05.551Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "billboard-rb-hip-hop",
       "angles": [
         {
           "label": "Full story",
@@ -4367,11 +5119,12 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/goldman-sachs-private-markets-platform.html",
       "publishedAt": "2026-07-21T20:51:34.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "cnbc-finance",
       "angles": [
         {
           "label": "Full story",
@@ -4387,10 +5140,11 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/hbottemiller/status/2079668417150517692",
       "publishedAt": "2026-07-21T20:42:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "expiresAt": "2026-08-01T18:21:03.607Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "philip-lewis",
       "angles": [
         {
           "label": "Full story",
@@ -4450,10 +5204,11 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079664753220227401",
       "publishedAt": "2026-07-21T20:28:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "expiresAt": "2026-08-01T18:21:03.607Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "philip-lewis",
       "angles": [
         {
           "label": "Full story",
@@ -4605,11 +5360,12 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/bets-against-spacex-grow-to-32percent-of-float-as-elon-musk-warns-short-sellers-wont-survive.html",
       "publishedAt": "2026-07-21T20:01:39.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "cnbc-finance",
       "angles": [
         {
           "label": "Full story",
@@ -4625,11 +5381,12 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.qcnews.com/high-school-sports/panthers-sending-11-teams-of-charlotte-area-studets-to-nfl-flag-football-championships/",
       "publishedAt": "2026-07-21T19:59:16.000Z",
-      "expiresAt": "2026-08-01T17:09:47.103Z",
+      "expiresAt": "2026-08-01T18:21:06.370Z",
       "topicIds": [
         "football-film",
         "sports-biz"
       ],
+      "feedId": "nfl-football-news",
       "angles": [
         {
           "label": "Full story",
@@ -4846,10 +5603,11 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/national/d4vd-hearing-celeste-rivas-hernandez-unrecognizable-remains-1235180578/",
       "publishedAt": "2026-07-21T19:30:00.000Z",
-      "expiresAt": "2026-08-01T17:09:46.368Z",
+      "expiresAt": "2026-08-01T18:21:05.978Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "vibe",
       "angles": [
         {
           "label": "Full story",
@@ -4943,10 +5701,11 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/entertainment/offset-community-service-weed-dispensary-guard-assault-1235180568/",
       "publishedAt": "2026-07-21T18:53:45.000Z",
-      "expiresAt": "2026-08-01T17:09:46.368Z",
+      "expiresAt": "2026-08-01T18:21:05.978Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "vibe",
       "angles": [
         {
           "label": "Full story",
@@ -5024,11 +5783,12 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-rb-values",
       "publishedAt": "2026-07-21T17:54:40.000Z",
-      "expiresAt": "2026-08-01T17:09:47.103Z",
+      "expiresAt": "2026-08-01T18:21:06.370Z",
       "topicIds": [
         "football-film",
         "sports-biz"
       ],
+      "feedId": "nfl-football-news",
       "angles": [
         {
           "label": "Full story",
@@ -5376,11 +6136,12 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/ann-widdecombe-was-hit-multiple-times-with-a-hammer-court-hears",
       "publishedAt": "2026-07-21T16:10:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "expiresAt": "2026-08-01T18:21:02.857Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christian-today",
       "angles": [
         {
           "label": "Full story",
@@ -5595,11 +6356,12 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/iran-war-economy-markets-trump.html",
       "publishedAt": "2026-07-21T14:37:08.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "cnbc-finance",
       "angles": [
         {
           "label": "Full story",
@@ -5733,11 +6495,12 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/stocks-making-the-biggest-moves-premarket-gm-mmm-nvs-nbis.html",
       "publishedAt": "2026-07-21T13:09:44.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "cnbc-finance",
       "angles": [
         {
           "label": "Full story",
@@ -5753,11 +6516,12 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/5-lessons-from-20-years-of-climate-surveys-political-party-matters-but-it-doesnt-explain-everything-287056",
       "publishedAt": "2026-07-21T12:46:04.000Z",
-      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "expiresAt": "2026-07-25T18:21:00.043Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "the-conversation-politics",
       "angles": [
         {
           "label": "Full story",
@@ -5997,11 +6761,12 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/health-and-wellness/verses-i-return-to-when-my-body-feels-like-the-enemy.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.829Z",
+      "expiresAt": "2026-08-01T18:21:03.451Z",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
+      "feedId": "crosswalk",
       "angles": [
         {
           "label": "Full story",
@@ -6017,11 +6782,12 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/faith/spiritual-life/why-daily-repentance-is-essential-to-thrive-in-our-faith.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.829Z",
+      "expiresAt": "2026-08-01T18:21:03.451Z",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
+      "feedId": "crosswalk",
       "angles": [
         {
           "label": "Full story",
@@ -6037,11 +6803,12 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/family/parenting/10-ways-to-thrive-during-the-empty-nest-season.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.829Z",
+      "expiresAt": "2026-08-01T18:21:03.451Z",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
+      "feedId": "crosswalk",
       "angles": [
         {
           "label": "Full story",
@@ -6137,11 +6904,12 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/jpmorgan-chase-ceo-jamie-dimon-market-risk.html",
       "publishedAt": "2026-07-21T10:24:07.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "cnbc-finance",
       "angles": [
         {
           "label": "Full story",
@@ -6157,11 +6925,12 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/how-to-read-bible-like-early-church-fourfold-schreiner/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "expiresAt": "2026-08-01T18:21:03.339Z",
       "topicIds": [
         "current-events",
         "mental-models"
       ],
+      "feedId": "christianity-today",
       "angles": [
         {
           "label": "Full story",
@@ -6206,6 +6975,27 @@
         {
           "label": "Full story",
           "url": "https://www.christianitytoday.com/2026/07/the-odyssey-christopher-nolan/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c2e28fc57aeb",
+      "hook": "Iran Shutters Country’s Oldest Protestant Church",
+      "title": "Iran Shutters Country’s Oldest Protestant Church",
+      "lesson": "For 150 years, St. Peter Evangelical Church has maintained a visible and vibrant presence in the Iranian capital of Tehran. Mansour Khajehpour—a former elder at St. Peter—said the Presbyterian church was known to everyone in the neighborhood, where he lived from 1991 to 1993. As a university student, Khajehpour lived",
+      "source": "Christianity Today",
+      "sourceUrl": "https://www.christianitytoday.com/2026/07/iran-shutters-landmark-church/",
+      "publishedAt": "2026-07-21T10:00:00.000Z",
+      "expiresAt": "2026-08-01T18:21:03.339Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "feedId": "christianity-today",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christianitytoday.com/2026/07/iran-shutters-landmark-church/"
         }
       ]
     },
@@ -6385,11 +7175,12 @@
       "source": "ProPublica",
       "sourceUrl": "https://projects.propublica.org/blueberries-farmworker-mistreatment/",
       "publishedAt": "2026-07-21T09:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:43.980Z",
+      "expiresAt": "2026-07-25T18:21:00.199Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "propublica",
       "angles": [
         {
           "label": "Full story",
@@ -6504,10 +7295,11 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/national/nolan-wells-funeral-parents-mississippi-1235180472/",
       "publishedAt": "2026-07-20T20:55:00.000Z",
-      "expiresAt": "2026-08-01T17:09:46.368Z",
+      "expiresAt": "2026-08-01T18:21:05.978Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "vibe",
       "angles": [
         {
           "label": "Full story",
@@ -6523,11 +7315,12 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/declassified-intelligence-is-not-the-same-as-proof-287482",
       "publishedAt": "2026-07-20T19:06:52.000Z",
-      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "expiresAt": "2026-07-25T18:21:00.043Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "the-conversation-politics",
       "angles": [
         {
           "label": "Full story",
@@ -6543,11 +7336,12 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/20/capital-one-bet-big-on-discover-now-it-must-prove-the-gamble-was-worth-it-.html",
       "publishedAt": "2026-07-20T18:14:23.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "cnbc-finance",
       "angles": [
         {
           "label": "Full story",
@@ -6563,11 +7357,12 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://highschoolfootballamerica.com/trinity-leads-the-2026-high-school-football-america-kentucky-top-10-powered-by-nfl-play-football/",
       "publishedAt": "2026-07-20T18:00:29.000Z",
-      "expiresAt": "2026-08-01T17:09:47.103Z",
+      "expiresAt": "2026-08-01T18:21:06.370Z",
       "topicIds": [
         "football-film",
         "sports-biz"
       ],
+      "feedId": "nfl-football-news",
       "angles": [
         {
           "label": "Full story",
@@ -6583,11 +7378,12 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.bu.edu/articles/2026/what-motivates-black-women-voters/",
       "publishedAt": "2026-07-20T17:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "expiresAt": "2026-07-25T18:21:02.501Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "black-political-news",
       "angles": [
         {
           "label": "Full story",
@@ -6603,11 +7399,12 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-qb-values",
       "publishedAt": "2026-07-20T16:51:38.000Z",
-      "expiresAt": "2026-08-01T17:09:47.103Z",
+      "expiresAt": "2026-08-01T18:21:06.370Z",
       "topicIds": [
         "football-film",
         "sports-biz"
       ],
+      "feedId": "nfl-football-news",
       "angles": [
         {
           "label": "Full story",
@@ -6623,11 +7420,12 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/saquon-barkley-police-seek-suspects-break-in-home-pennsylvania",
       "publishedAt": "2026-07-20T16:39:13.000Z",
-      "expiresAt": "2026-08-01T17:09:47.103Z",
+      "expiresAt": "2026-08-01T18:21:06.370Z",
       "topicIds": [
         "football-film",
         "sports-biz"
       ],
+      "feedId": "nfl-football-news",
       "angles": [
         {
           "label": "Full story",
@@ -6682,11 +7480,12 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/20/stocks-making-the-biggest-moves-midday-amd-achr-spcx-iren.html",
       "publishedAt": "2026-07-20T15:52:30.000Z",
-      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "expiresAt": "2026-07-25T18:21:06.901Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "cnbc-finance",
       "angles": [
         {
           "label": "Full story",
@@ -6721,10 +7520,11 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/features/editorial/ice-t-criminal-migraine-album-on-the-way-1235180439/",
       "publishedAt": "2026-07-20T14:15:00.000Z",
-      "expiresAt": "2026-08-01T17:09:46.368Z",
+      "expiresAt": "2026-08-01T18:21:05.978Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "vibe",
       "angles": [
         {
           "label": "Full story",
@@ -6820,11 +7620,12 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/what-allegheny-countys-new-court-ordered-mental-health-treatment-program-can-and-cant-do-280112",
       "publishedAt": "2026-07-20T12:27:44.000Z",
-      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "expiresAt": "2026-07-25T18:21:00.043Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "the-conversation-politics",
       "angles": [
         {
           "label": "Full story",
@@ -6840,11 +7641,12 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/most-americans-support-conservation-heres-how-the-great-lakes-restoration-initiative-got-politicians-from-both-parties-on-board-too-284887",
       "publishedAt": "2026-07-20T12:25:27.000Z",
-      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "expiresAt": "2026-07-25T18:21:00.043Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "the-conversation-politics",
       "angles": [
         {
           "label": "Full story",
@@ -6860,11 +7662,12 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/featuring-trump-on-us-coins-and-bills-would-put-america-in-rare-company-285125",
       "publishedAt": "2026-07-20T12:25:09.000Z",
-      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "expiresAt": "2026-07-25T18:21:00.043Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "the-conversation-politics",
       "angles": [
         {
           "label": "Full story",
@@ -6880,11 +7683,12 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/how-americas-newspapers-lost-their-voice-285126",
       "publishedAt": "2026-07-20T12:24:33.000Z",
-      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "expiresAt": "2026-07-25T18:21:00.043Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "the-conversation-politics",
       "angles": [
         {
           "label": "Full story",
@@ -6979,11 +7783,12 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/old-apostolic-lutheran-church-child-sexual-assault-cycle-abuse",
       "publishedAt": "2026-07-20T10:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:43.980Z",
+      "expiresAt": "2026-07-25T18:21:00.199Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "propublica",
       "angles": [
         {
           "label": "Full story",
@@ -7019,11 +7824,12 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/adak-island-alaska-internet-subsidy-fcc",
       "publishedAt": "2026-07-20T09:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:43.980Z",
+      "expiresAt": "2026-07-25T18:21:00.199Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "propublica",
       "angles": [
         {
           "label": "Full story",
@@ -7119,11 +7925,12 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.nytimes.com/2026/07/19/nyregion/black-latino-leaders-dsa-nyc.html",
       "publishedAt": "2026-07-19T07:00:08.000Z",
-      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "expiresAt": "2026-07-25T18:21:02.501Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "black-political-news",
       "angles": [
         {
           "label": "Full story",
@@ -7139,11 +7946,12 @@
       "source": "Black Political News",
       "sourceUrl": "https://blackpressusa.com/commentary-black-alliance-for-just-immigration-supports-black-voting-rights-2/",
       "publishedAt": "2026-07-18T23:41:27.000Z",
-      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "expiresAt": "2026-07-25T18:21:02.501Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "black-political-news",
       "angles": [
         {
           "label": "Full story",
@@ -7159,11 +7967,12 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/islamic-private-schools-texas-vouchers-sam-westrop",
       "publishedAt": "2026-07-18T03:10:00.000Z",
-      "expiresAt": "2026-07-25T17:09:43.980Z",
+      "expiresAt": "2026-07-25T18:21:00.199Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "propublica",
       "angles": [
         {
           "label": "Full story",
@@ -7179,11 +7988,12 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.yahoo.com/news/politics/articles/black-political-caucus-charlotte-mecklenburg-234656649.html",
       "publishedAt": "2026-07-17T23:46:56.000Z",
-      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "expiresAt": "2026-07-25T18:21:02.501Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "black-political-news",
       "angles": [
         {
           "label": "Full story",
@@ -7199,11 +8009,12 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/human-rights-aid-right-wing-causes",
       "publishedAt": "2026-07-17T21:45:00.000Z",
-      "expiresAt": "2026-07-25T17:09:43.980Z",
+      "expiresAt": "2026-07-25T18:21:00.199Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "propublica",
       "angles": [
         {
           "label": "Full story",
@@ -7359,10 +8170,11 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.facebook.com/reel/1590244832705319/",
       "publishedAt": "2026-07-16T02:30:02.000Z",
-      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "expiresAt": "2026-08-01T18:21:03.678Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "black-pop-culture",
       "angles": [
         {
           "label": "Full story",
@@ -7378,11 +8190,12 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.politico.com/news/2026/07/10/black-leaders-democratic-party-redistricting-00991564",
       "publishedAt": "2026-07-10T09:00:00.000Z",
-      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "expiresAt": "2026-07-25T18:21:02.501Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "black-political-news",
       "angles": [
         {
           "label": "Full story",
@@ -7398,11 +8211,12 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.foxnews.com/politics/leftist-california-group-pushes-add-black-english-schools-multilingual-education-program",
       "publishedAt": "2026-07-08T15:24:47.000Z",
-      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "expiresAt": "2026-07-25T18:21:02.501Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "black-political-news",
       "angles": [
         {
           "label": "Full story",
@@ -7418,10 +8232,11 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.dw.com/en/assassins-creed-why-pop-culture-is-hooked-on-pirates/a-77871133",
       "publishedAt": "2026-07-08T10:34:32.000Z",
-      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "expiresAt": "2026-08-01T18:21:03.678Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "black-pop-culture",
       "angles": [
         {
           "label": "Full story",
@@ -7437,10 +8252,11 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.theatlantic.com/culture/2026/07/music-flop-era/687785/",
       "publishedAt": "2026-07-05T12:00:00.000Z",
-      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "expiresAt": "2026-08-01T18:21:03.678Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "black-pop-culture",
       "angles": [
         {
           "label": "Full story",
@@ -7456,10 +8272,11 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/kayla-nicole-advice-black-men",
       "publishedAt": "2026-06-30T18:35:11.000Z",
-      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "expiresAt": "2026-08-01T18:21:03.678Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "black-pop-culture",
       "angles": [
         {
           "label": "Full story",
@@ -7494,11 +8311,12 @@
       "source": "Black Political News",
       "sourceUrl": "https://defendernetwork.com/news/national/what-ny-democratic-socialist-wins-mean-for-black-political-power/",
       "publishedAt": "2026-06-29T05:05:08.000Z",
-      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "expiresAt": "2026-07-25T18:21:02.501Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "black-political-news",
       "angles": [
         {
           "label": "Full story",
@@ -7514,11 +8332,12 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.essence.com/news/politics/black-people-democratic-party/",
       "publishedAt": "2026-06-27T15:14:41.000Z",
-      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "expiresAt": "2026-07-25T18:21:02.501Z",
       "topicIds": [
         "politics",
         "current-events"
       ],
+      "feedId": "black-political-news",
       "angles": [
         {
           "label": "Full story",
@@ -7791,10 +8610,11 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.complex.com/pop-culture/a/jose-martinez/peter-rosenberg-jason-lee-heated-exchange-culture-vulture-claim",
       "publishedAt": "2026-05-15T15:17:36.000Z",
-      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "expiresAt": "2026-08-01T18:21:03.678Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "black-pop-culture",
       "angles": [
         {
           "label": "Full story",
@@ -7810,10 +8630,11 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.catster.com/lifestyle/famous-black-cats/",
       "publishedAt": "2026-04-28T09:18:41.000Z",
-      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "expiresAt": "2026-08-01T18:21:03.678Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "black-pop-culture",
       "angles": [
         {
           "label": "Full story",
@@ -7829,10 +8650,11 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://hunewsservice.com/variety/entertainment/the-k-pop-industry-keeps-copying-black-culture-while-ignoring-it/",
       "publishedAt": "2026-04-27T22:13:42.000Z",
-      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "expiresAt": "2026-08-01T18:21:03.678Z",
       "topicIds": [
         "current-events"
       ],
+      "feedId": "black-pop-culture",
       "angles": [
         {
           "label": "Full story",
@@ -7848,11 +8670,12 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
       "publishedAt": "2025-07-03T12:36:00.000Z",
-      "expiresAt": "2026-07-25T17:09:47.293Z",
+      "expiresAt": "2026-07-25T18:21:06.503Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-marketpulse",
       "angles": [
         {
           "label": "Full story",
@@ -7868,11 +8691,12 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-13T13:33:00.000Z",
-      "expiresAt": "2026-07-25T17:09:47.293Z",
+      "expiresAt": "2026-07-25T18:21:06.503Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-marketpulse",
       "angles": [
         {
           "label": "Full story",
@@ -7888,11 +8712,12 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-07T20:26:00.000Z",
-      "expiresAt": "2026-07-25T17:09:47.293Z",
+      "expiresAt": "2026-07-25T18:21:06.503Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-marketpulse",
       "angles": [
         {
           "label": "Full story",
@@ -7908,11 +8733,12 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-06T13:34:00.000Z",
-      "expiresAt": "2026-07-25T17:09:47.293Z",
+      "expiresAt": "2026-07-25T18:21:06.503Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-marketpulse",
       "angles": [
         {
           "label": "Full story",
@@ -7928,11 +8754,12 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-03T13:46:00.000Z",
-      "expiresAt": "2026-07-25T17:09:47.293Z",
+      "expiresAt": "2026-07-25T18:21:06.503Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-marketpulse",
       "angles": [
         {
           "label": "Full story",
@@ -7948,11 +8775,12 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
       "publishedAt": "2024-12-28T00:32:00.000Z",
-      "expiresAt": "2026-07-25T17:09:47.293Z",
+      "expiresAt": "2026-07-25T18:21:06.503Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-marketpulse",
       "angles": [
         {
           "label": "Full story",
@@ -7968,11 +8796,12 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
       "publishedAt": "2024-12-03T14:05:00.000Z",
-      "expiresAt": "2026-07-25T17:09:47.293Z",
+      "expiresAt": "2026-07-25T18:21:06.503Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-marketpulse",
       "angles": [
         {
           "label": "Full story",
@@ -7988,11 +8817,12 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
       "publishedAt": "2024-11-19T08:55:00.000Z",
-      "expiresAt": "2026-07-25T17:09:47.293Z",
+      "expiresAt": "2026-07-25T18:21:06.503Z",
       "topicIds": [
         "finance",
         "current-events"
       ],
+      "feedId": "marketwatch-marketpulse",
       "angles": [
         {
           "label": "Full story",

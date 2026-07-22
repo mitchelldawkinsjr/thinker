@@ -20,16 +20,25 @@ RUN npm run build
 # --- serve ---
 FROM nginx:1.27-alpine
 
+RUN apk add --no-cache nodejs
+
 COPY nginx/default.conf.template /etc/nginx/templates/default.conf.template
 COPY --from=build /app/dist /usr/share/nginx/html
+COPY scripts/feed-proxy-server.mjs /opt/thinker/feed-proxy-server.mjs
+COPY scripts/lib/feedProxy.mjs /opt/thinker/lib/feedProxy.mjs
+COPY docker/entrypoint.sh /opt/thinker/entrypoint.sh
+RUN chmod +x /opt/thinker/entrypoint.sh
 
 # Runtime: Ollama fallback + OpenAI Ask (set OPENAI_API_KEY in compose/.env)
 ENV OLLAMA_URL=http://host.docker.internal:11434
 ENV OPENAI_API_KEY=
 ENV OPENAI_MODEL=gpt-4o-mini
 ENV OPENAI_CONFIGURED=false
+ENV FEED_PROXY_PORT=3091
 
 EXPOSE 80
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD wget -q --spider http://127.0.0.1/healthz || exit 1
+
+ENTRYPOINT ["/opt/thinker/entrypoint.sh"]
