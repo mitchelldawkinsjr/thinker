@@ -1,6 +1,2217 @@
 {
-  "updatedAt": "2026-07-22T06:18:02.805Z",
+  "updatedAt": "2026-07-22T17:09:47.534Z",
   "items": [
+    {
+      "id": "rss-477cbf3f0150",
+      "hook": "The Secrets Behind Beyoncé’s Big, Bouncy Curls",
+      "title": "The Secrets Behind Beyoncé’s Big, Bouncy Curls",
+      "lesson": "Beyoncé's hairstylist Neal Farinah breaks down how to achieve the perfect summer-proof roller set curls.",
+      "source": "Essence",
+      "sourceUrl": "https://www.essence.com/hair/the-secrets-behind-beyonce-big-bouncy-curls/",
+      "publishedAt": "2026-07-22T17:08:38.000Z",
+      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.essence.com/hair/the-secrets-behind-beyonce-big-bouncy-curls/"
+        }
+      ]
+    },
+    {
+      "id": "rss-a6a022eca21b",
+      "hook": "RFK Jr. Freezes $1B in Medicaid to California, Minnesota over Fraud…",
+      "title": "RFK Jr. Freezes $1B in Medicaid to California, Minnesota over Fraud Fears",
+      "lesson": "The Centers for Medicare and Medicaid Services (CMS) is holding back roughly $867.5 million from California and $199 million from Minnesota, HHS said in a news release. The department stressed the money is being deferred, not cut, and that both states can recover it by documenting that the claims meet federal Medicaid",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-rfk-jr-freezes-1b-medicaid-california-minnesota-over-fraud-fears",
+      "publishedAt": "2026-07-22T17:02:44.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-rfk-jr-freezes-1b-medicaid-california-minnesota-over-fraud-fears"
+        }
+      ]
+    },
+    {
+      "id": "rss-59171ca6e7b4",
+      "hook": "Trump admin freezes over $1B in Medicaid funds for Minnesota, California",
+      "title": "Trump admin freezes over $1B in Medicaid funds for Minnesota, California",
+      "lesson": "The Trump administration is pausing more than $1 billion in Medicaid payments to California and Minnesota over alleged fraud concerns, officials announced Tuesday. Tuesday marked the second time Trump targeted the two states' Democratic governors — California Gov. Gavin Newsom and Minnesota Gov. Tim Walz — for alleged",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-trump-admin-freezes-over-1b-medicaid-funds-minnesota-california",
+      "publishedAt": "2026-07-22T17:01:19.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-trump-admin-freezes-over-1b-medicaid-funds-minnesota-california"
+        }
+      ]
+    },
+    {
+      "id": "rss-1f3a284d7604",
+      "hook": "OMB Bloodbath Faces Second Trial Over Alleged Role in 2017 Murder",
+      "title": "OMB Bloodbath Faces Second Trial Over Alleged Role in 2017 Murder",
+      "lesson": "Newly-acquired access to the rapper's phone has allowed the case to be tried again. Continue reading…",
+      "source": "XXL",
+      "sourceUrl": "https://www.xxlmag.com/omb-bloodbath-second-trial-houston-gang-murder/",
+      "publishedAt": "2026-07-22T17:00:19.000Z",
+      "expiresAt": "2026-08-01T17:09:46.260Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.xxlmag.com/omb-bloodbath-second-trial-houston-gang-murder/"
+        }
+      ]
+    },
+    {
+      "id": "rss-42b73f35a42e",
+      "hook": "Stocks making the biggest moves midday: Super Micro Computer, EQT,…",
+      "title": "Stocks making the biggest moves midday: Super Micro Computer, EQT, AAR, Chubb, Pegasystems & more",
+      "lesson": "These are the stocks posting the largest moves midday.",
+      "source": "CNBC · Finance",
+      "sourceUrl": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-midday-smci-eqt-air-cb-pega.html",
+      "publishedAt": "2026-07-22T16:59:55.000Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-midday-smci-eqt-air-cb-pega.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-1a37fc1621ad",
+      "hook": "Trump administration says it's deferring $1B in Medicaid payments to…",
+      "title": "Trump administration says it's deferring $1B in Medicaid payments to California and Minnesota",
+      "lesson": "The Trump administration on Tuesday said it was deferring more than $1 billion in Medicaid payments to Minnesota and California because of \"suspected fraud and noncompliance,\" the latest in a series of punitive steps it has linked to allegations of fraud in mostly Democratic-led states. Health Secretary Robert F.",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-trump-administration-says-its-deferring-1b-medicaid-payments-california-and-minnesota",
+      "publishedAt": "2026-07-22T16:57:42.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/banking-and-finance-trump-administration-says-its-deferring-1b-medicaid-payments-california-and-minnesota"
+        }
+      ]
+    },
+    {
+      "id": "rss-7c8d4a7eafc5",
+      "hook": "Say, WHAT?! Body Identified After Reportedly Being Found Inside…",
+      "title": "Say, WHAT?! Body Identified After Reportedly Being Found Inside Clothing Donation Box In Texas",
+      "lesson": "A dead body was found inside a clothing donation box in Odessa, Texas. According to the Odessa Police Department, officers responded to the corner of East Eighth Street and Coleman Avenue on Friday, July 17. Most recently, the body has been identified.RELATED: 2024 Child Neglect Probe Into Celeste Rivas Hernandez’s",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/identified-roberto-hernandez-being-found-inside-clothing-donation-box-texas/",
+      "publishedAt": "2026-07-22T16:48:22.000Z",
+      "expiresAt": "2026-08-01T17:09:46.488Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/identified-roberto-hernandez-being-found-inside-clothing-donation-box-texas/"
+        }
+      ]
+    },
+    {
+      "id": "rss-a428435f44e9",
+      "hook": "Snoop Dogg's Biopic Will Premiere Next Summer",
+      "title": "Snoop Dogg's Biopic Will Premiere Next Summer",
+      "lesson": "Snoop's biopic on the way. Continue reading…",
+      "source": "XXL",
+      "sourceUrl": "https://www.xxlmag.com/snoop-dogg-biopic-premiere-summer-2027/",
+      "publishedAt": "2026-07-22T16:37:52.000Z",
+      "expiresAt": "2026-08-01T17:09:46.260Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.xxlmag.com/snoop-dogg-biopic-premiere-summer-2027/"
+        }
+      ]
+    },
+    {
+      "id": "rss-49ccf3c458aa",
+      "hook": "Iran’s judiciary warns against ‘infiltrators’, announces new executions",
+      "title": "Iran’s judiciary warns against ‘infiltrators’, announces new executions",
+      "lesson": "Many cases related to security offences are prosecuted using a law announced after last year's 12-day war with Israel.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/irans-judiciary-warns-against-infiltrators-announces-new-executions?traffic_source=rss",
+      "publishedAt": "2026-07-22T16:35:33.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/irans-judiciary-warns-against-infiltrators-announces-new-executions?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-799f4dfda91a",
+      "hook": "‘Justice for Lorenzo’ protests disrupt Houston council meeting",
+      "title": "‘Justice for Lorenzo’ protests disrupt Houston council meeting",
+      "lesson": "Protesters shouted ‘Justice for Lorenzo’ at a Houston, Texas, city council meeting on Tuesday after an ICE shooting.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/justice-for-lorenzo-protests-disrupt-houston-council-meeting?traffic_source=rss",
+      "publishedAt": "2026-07-22T16:34:24.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/justice-for-lorenzo-protests-disrupt-houston-council-meeting?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-fedef2452d3c",
+      "hook": "Victor Wembanyama, Caitlin Clark and Derrick Rose tabbed as NBA 2K…",
+      "title": "Victor Wembanyama, Caitlin Clark and Derrick Rose tabbed as NBA 2K cover athletes",
+      "lesson": "Victor Wembanyama, Caitlin Clark and Derrick Rose have been revealed as the cover athletes for NBA 2K27.",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.newsday.com/sports/basketball/victor-wembanyama-caitlin-clark-derrick-rose-2k-a79003",
+      "publishedAt": "2026-07-22T16:32:33.000Z",
+      "expiresAt": "2026-08-01T17:09:47.030Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.newsday.com/sports/basketball/victor-wembanyama-caitlin-clark-derrick-rose-2k-a79003"
+        }
+      ]
+    },
+    {
+      "id": "rss-2c7dbd55ba52",
+      "hook": "Tyga Announces New 1980s-Inspired Starface Album",
+      "title": "Tyga Announces New 1980s-Inspired Starface Album",
+      "lesson": "Get your hairspray ready. Continue reading…",
+      "source": "XXL",
+      "sourceUrl": "https://www.xxlmag.com/tyga-starface-album-1980s-alter-ego/",
+      "publishedAt": "2026-07-22T16:28:56.000Z",
+      "expiresAt": "2026-08-01T17:09:46.260Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.xxlmag.com/tyga-starface-album-1980s-alter-ego/"
+        }
+      ]
+    },
+    {
+      "id": "rss-4d5828db9b01",
+      "hook": "Florida Mom Arrested & Charged After Three Children Reportedly Found…",
+      "title": "Florida Mom Arrested & Charged After Three Children Reportedly Found Living In Home Covered With Feces",
+      "lesson": "A Florida mom was arrested after deputies conducted a wellness check at her residence in Palm Coast. Law enforcement found Carla Nishikura allegedly living with her three children in a feces-covered home.RELATED: Say, WHAT?! 20-Year-Old Florida Woman Reportedly Indicted After Allegedly Giving Birth In Toilet & Letting",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/florida-mom-carla-nishikura-three-children-found-living-in-home-covered-with-feces/",
+      "publishedAt": "2026-07-22T16:18:57.000Z",
+      "expiresAt": "2026-08-01T17:09:46.488Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/florida-mom-carla-nishikura-three-children-found-living-in-home-covered-with-feces/"
+        }
+      ]
+    },
+    {
+      "id": "rss-7fd710f3e65e",
+      "hook": "Burnham rebukes ministers after prisoner releases joke",
+      "title": "Burnham rebukes ministers after prisoner releases joke",
+      "lesson": "It comes after Wes Streeting apologises over comments caught on camera ahead of Tuesday's cabinet.",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cgk4x44mm50o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-22T16:18:30.000Z",
+      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/cgk4x44mm50o?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-f3ca2ca14708",
+      "hook": "“Love Island” season 7 couple Olandria Carthen and Nic…",
+      "title": "“Love Island” season 7 couple Olandria Carthen and Nic Vansteenberghe have broken up, PEOPLE reports https://people.com/olandria-carthen-nic-vansteenberghe-break-up-source-exclusive-12023929",
+      "lesson": "“Love Island” season 7 couple Olandria Carthen and Nic Vansteenberghe have broken up, PEOPLE reports people.com/olandria-carthen-…— philip lewis (@Phil_Lewis_) Jul 22,",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/Phil_Lewis_/status/2079963925240492423",
+      "publishedAt": "2026-07-22T16:16:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/Phil_Lewis_/status/2079963925240492423"
+        }
+      ]
+    },
+    {
+      "id": "rss-2bb2283a881d",
+      "hook": "The Fed-preferred inflation gauge PCE is being tweaked under Kevin Warsh",
+      "title": "The Fed-preferred inflation gauge PCE is being tweaked under Kevin Warsh",
+      "lesson": "The Fed-preferred inflation gauge PCE is being tweaked under Kevin Warsh",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=6f3fbf2a-dcd9-402b-aff4-7ffc062222f6&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T16:13:17.000Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=6f3fbf2a-dcd9-402b-aff4-7ffc062222f6&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-00418e3bf2bb",
+      "hook": "New Hamas leader Khalil al-Hayya outlines priorities in first…",
+      "title": "New Hamas leader Khalil al-Hayya outlines priorities in first statement since taking office",
+      "lesson": "Hamas’s newly elected political bureau chief Khalil al-Hayya has made his first public statement since taking over the group’s leadership. Hayya said Hamas’s priorities include restoring what he called a dignified life for Palestinians in Gaza and accelerating reconstruction. He rejected any conditions linking Gaza’s",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/9eeb65e5-ebeb-4c1a-a9c5-b48f010ac4ba/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T16:11:25.000Z",
+      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/9eeb65e5-ebeb-4c1a-a9c5-b48f010ac4ba/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-ca5588304454",
+      "hook": "Civil society organizations present recommendations to the United…",
+      "title": "Civil society organizations present recommendations to the United States Congress for a genuine democratic transition in Venezuela",
+      "lesson": "In a public hearing before the U.S. Congress’s Tom Lantos Human Rights Commission, a panel of experts and representatives of civil society organizations analyzed Venezuela’s institutional, humanitarian, and political situation, which was worsened by the recent earthquakes of June 24. Beyond the natural disaster, the",
+      "source": "Congress",
+      "sourceUrl": "https://www.wola.org/2026/07/civil-society-organizations-present-recommendations-to-the-united-states-congress-for-a-genuine-democratic-transition-in-venezuela/",
+      "publishedAt": "2026-07-22T16:09:06.000Z",
+      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.wola.org/2026/07/civil-society-organizations-present-recommendations-to-the-united-states-congress-for-a-genuine-democratic-transition-in-venezuela/"
+        }
+      ]
+    },
+    {
+      "id": "rss-6d465c0eba56",
+      "hook": "'This Feels Like the Aging Rock Star' -- NBA Analyst Rips LeBron…",
+      "title": "'This Feels Like the Aging Rock Star' -- NBA Analyst Rips LeBron James As 'Annoying' Free-Agency Saga Reaches Week 3",
+      "lesson": "NBA Analyst Jason McIntyre rips LeBron James' delayed free agency decision, comparing the 41-year-old's wait to an aging rock",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.profootballnetwork.com/nba/aging-rock-star-nba-analyst-rips-lebron-james-annoying-free-agency-saga-week-3/",
+      "publishedAt": "2026-07-22T16:07:10.000Z",
+      "expiresAt": "2026-08-01T17:09:47.030Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.profootballnetwork.com/nba/aging-rock-star-nba-analyst-rips-lebron-james-annoying-free-agency-saga-week-3/"
+        }
+      ]
+    },
+    {
+      "id": "rss-db22aea548b6",
+      "hook": "Congress must get the Older Americans Act reauthorization across the…",
+      "title": "Congress must get the Older Americans Act reauthorization across the finish line",
+      "lesson": "Following the Senate’s unanimous passage of the bipartisan Older Americans Act reauthorization on July 14, advocates are calling on the House of Representatives to approve the bill to ensure",
+      "source": "Congress",
+      "sourceUrl": "https://thehill.com/opinion/congress-blog/5981167-house-must-pass-oaa/",
+      "publishedAt": "2026-07-22T16:00:00.000Z",
+      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://thehill.com/opinion/congress-blog/5981167-house-must-pass-oaa/"
+        }
+      ]
+    },
+    {
+      "id": "rss-852bff8feabd",
+      "hook": "Time is running short for Congress to reverse a looming ban on…",
+      "title": "Time is running short for Congress to reverse a looming ban on hemp-derived THC products",
+      "lesson": "THC-infused beverages and edibles won’t disappear from Minnesota store shelves if the ban takes effect in November, but the impact on manufacturers and retailers could be",
+      "source": "Congress",
+      "sourceUrl": "https://www.startribune.com/time-is-running-short-for-congress-to-reverse-a-looming-ban-on-hemp-derived-thc-products/601869136",
+      "publishedAt": "2026-07-22T16:00:00.000Z",
+      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.startribune.com/time-is-running-short-for-congress-to-reverse-a-looming-ban-on-hemp-derived-thc-products/601869136"
+        }
+      ]
+    },
+    {
+      "id": "rss-f4386ed95f3b",
+      "hook": "War on Iran: Hegseth wants $70B more to keep fighting",
+      "title": "War on Iran: Hegseth wants $70B more to keep fighting",
+      "lesson": "Iran activated air defence systems across Tehran on the 11th night of US strikes.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/war-on-iran-hegseth-wants-70b-more-to-keep-fighting?traffic_source=rss",
+      "publishedAt": "2026-07-22T15:52:54.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/war-on-iran-hegseth-wants-70b-more-to-keep-fighting?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-497d01ecb47f",
+      "hook": "Proposed US-Saudi nuclear energy deal: What we know so far",
+      "title": "Proposed US-Saudi nuclear energy deal: What we know so far",
+      "lesson": "Reports suggest ‌the Trump administration backs a pact with Saudi Arabia allowing it to enrich uranium.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/proposed-us-saudi-nuclear-energy-deal-what-we-know-so-far?traffic_source=rss",
+      "publishedAt": "2026-07-22T15:46:56.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/proposed-us-saudi-nuclear-energy-deal-what-we-know-so-far?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-0542d7842514",
+      "hook": "PC Harper's widow criticises early prisoner release plan as Burnham…",
+      "title": "PC Harper's widow criticises early prisoner release plan as Burnham to review scheme",
+      "lesson": "Lissie Harper says the possible early release of prisoners is \"deplorable\", after reports that two of PC Harper's killers could be freed",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c0ejwedl1gno?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-22T15:43:55.000Z",
+      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/c0ejwedl1gno?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-14f75e9f52a0",
+      "hook": "People are watching the Reflecting Pool like reality TV. What does…",
+      "title": "People are watching the Reflecting Pool like reality TV. What does that say about us?",
+      "lesson": "It's not just watching paint dry. The twists and turns of the Reflecting Pool repairs, originally a two-week project, have kept bloggers and viewers busy all",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5897383/dc-reflecting-pool-saga-influencers",
+      "publishedAt": "2026-07-22T15:41:39.000Z",
+      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5897383/dc-reflecting-pool-saga-influencers"
+        }
+      ]
+    },
+    {
+      "id": "rss-f380c32fd4a5",
+      "hook": "Why are billionaires growing richer than ever?",
+      "title": "Why are billionaires growing richer than ever?",
+      "lesson": "Billionaires are on the rise as the rest struggle with inequality, poverty and cost of living crisis.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/counting-the-cost/2026/7/22/why-are-billionaires-growing-richer-than-ever?traffic_source=rss",
+      "publishedAt": "2026-07-22T15:38:26.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/counting-the-cost/2026/7/22/why-are-billionaires-growing-richer-than-ever?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-5dda4a83eafe",
+      "hook": "Congressional stock trading curb due to get House vote amid public…",
+      "title": "Congressional stock trading curb due to get House vote amid public support for a ban",
+      "lesson": "The House is scheduled to vote on Wednesday on a bill that would bar members of Congress from purchasing additional stocks while in",
+      "source": "Congress",
+      "sourceUrl": "https://www.cnbc.com/2026/07/22/house-congressional-stock-trading.html",
+      "publishedAt": "2026-07-22T15:38:01.000Z",
+      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cnbc.com/2026/07/22/house-congressional-stock-trading.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-a029406b922f",
+      "hook": "From towns to zones: Why Israel gives military names to civilian areas",
+      "title": "From towns to zones: Why Israel gives military names to civilian areas",
+      "lesson": "Israeli authorities are increasingly applying security terminology for residential areas where people live.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/from-towns-to-zones-why-israel-gives-military-names-to-civilian-areas?traffic_source=rss",
+      "publishedAt": "2026-07-22T15:36:51.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/from-towns-to-zones-why-israel-gives-military-names-to-civilian-areas?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-b46875a1b512",
+      "hook": "Blueface Detained by Police on Livestream After Swatting Call",
+      "title": "Blueface Detained by Police on Livestream After Swatting Call",
+      "lesson": "Close call. Continue reading…",
+      "source": "XXL",
+      "sourceUrl": "https://www.xxlmag.com/blueface-detained-police-swatting-call-people-killed/",
+      "publishedAt": "2026-07-22T15:34:19.000Z",
+      "expiresAt": "2026-08-01T17:09:46.260Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.xxlmag.com/blueface-detained-police-swatting-call-people-killed/"
+        }
+      ]
+    },
+    {
+      "id": "rss-ab79a294d4d6",
+      "hook": "House Democrats ready Iran war powers vote - Live Updates",
+      "title": "House Democrats ready Iran war powers vote - Live Updates",
+      "lesson": "Democrats are preparing to debate a measure to rein in Trump’s authority in Iran Wednesday with a final vote Thursday.",
+      "source": "War",
+      "sourceUrl": "https://www.politico.com/live-updates/2026/07/22/congress/house-democrats-ready-iran-war-powers-vote-01007705",
+      "publishedAt": "2026-07-22T15:34:01.000Z",
+      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.politico.com/live-updates/2026/07/22/congress/house-democrats-ready-iran-war-powers-vote-01007705"
+        }
+      ]
+    },
+    {
+      "id": "rss-bde63654cb5a",
+      "hook": "Hip-Hop Artists We Lost in 2026",
+      "title": "Hip-Hop Artists We Lost in 2026",
+      "lesson": "R.I.P. Continue reading…",
+      "source": "XXL",
+      "sourceUrl": "https://www.xxlmag.com/hip-hop-artists-lost-2026/",
+      "publishedAt": "2026-07-22T15:33:51.000Z",
+      "expiresAt": "2026-08-01T17:09:46.260Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.xxlmag.com/hip-hop-artists-lost-2026/"
+        }
+      ]
+    },
+    {
+      "id": "rss-05a0ff11a645",
+      "hook": "Elon and the Other Gaza",
+      "title": "Elon and the Other Gaza",
+      "lesson": "How the world's richest man helped trigger an HIV crisis in one of the world's poorest countries.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/people-power/2026/7/22/elon-and-the-other-gaza?traffic_source=rss",
+      "publishedAt": "2026-07-22T15:30:00.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/people-power/2026/7/22/elon-and-the-other-gaza?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-250ee76b6307",
+      "hook": "As Congress grapples with budget issues, OC business leaders urge…",
+      "title": "As Congress grapples with budget issues, OC business leaders urge lawmakers to renew ‘critical’ transportation funding",
+      "lesson": "A bevy of federal transportation funding is set to expire this fall, which OC business advocates say could disrupt the regional economy if not",
+      "source": "Congress",
+      "sourceUrl": "https://www.ocregister.com/2026/07/22/as-congress-grapples-with-budget-issues-oc-business-leaders-urge-lawmakers-to-renew-critical-transportation-funding/",
+      "publishedAt": "2026-07-22T15:27:23.000Z",
+      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.ocregister.com/2026/07/22/as-congress-grapples-with-budget-issues-oc-business-leaders-urge-lawmakers-to-renew-critical-transportation-funding/"
+        }
+      ]
+    },
+    {
+      "id": "rss-f644834410ab",
+      "hook": "'We got to wrap it up.' House Speaker Johnson pushes to end Iran war",
+      "title": "'We got to wrap it up.' House Speaker Johnson pushes to end Iran war",
+      "lesson": "As strikes intensify in the Iran war, House Speaker Mike Johnson, a top Trump ally, pushed for an end to the fighting.",
+      "source": "War",
+      "sourceUrl": "https://www.usatoday.com/story/news/politics/2026/07/22/house-speaker-mike-johnson-end-iran-war/91006777007/",
+      "publishedAt": "2026-07-22T15:25:52.000Z",
+      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.usatoday.com/story/news/politics/2026/07/22/house-speaker-mike-johnson-end-iran-war/91006777007/"
+        }
+      ]
+    },
+    {
+      "id": "rss-e1456cb5df9f",
+      "hook": "Trump threatens to bomb Iranian bridges, power plants over ship attacks",
+      "title": "Trump threatens to bomb Iranian bridges, power plants over ship attacks",
+      "lesson": "Iranian official says Tehran would retaliate by targeting 'energy facilities in which the United States has interests'.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/trump-threatens-to-bomb-iranian-bridges-power-plants-over-ship-attacks?traffic_source=rss",
+      "publishedAt": "2026-07-22T15:24:13.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/trump-threatens-to-bomb-iranian-bridges-power-plants-over-ship-attacks?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-34fcfbd944a5",
+      "hook": "The Morocco-Algeria rivalry is remaking Europe’s North Africa policy",
+      "title": "The Morocco-Algeria rivalry is remaking Europe’s North Africa policy",
+      "lesson": "As Rabat and Algiers compete for influence, closer ties with one now carry consequences for relations with the other.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/opinions/2026/7/22/the-morocco-algeria-rivalry-is-remaking-europes-north-africa-policy?traffic_source=rss",
+      "publishedAt": "2026-07-22T15:23:56.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/opinions/2026/7/22/the-morocco-algeria-rivalry-is-remaking-europes-north-africa-policy?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-c710dd397a97",
+      "hook": "Kalshi launches election hub for prediction markets ahead of midterms",
+      "title": "Kalshi launches election hub for prediction markets ahead of midterms",
+      "lesson": "The company said the page gives viewers of its event contracts a central place to see speculators' outlook for the midterm",
+      "source": "CNBC · Finance",
+      "sourceUrl": "https://www.cnbc.com/2026/07/22/kalshi-launches-election-hub-for-prediction-markets-ahead-of-midterms.html",
+      "publishedAt": "2026-07-22T15:23:02.000Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cnbc.com/2026/07/22/kalshi-launches-election-hub-for-prediction-markets-ahead-of-midterms.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-d518dd52416d",
+      "hook": "We Didn’t Outgrow ESSENCE Festival—We Grew With It",
+      "title": "We Didn’t Outgrow ESSENCE Festival—We Grew With It",
+      "lesson": "A New Orleans native who has been coming to ESSENCE Festival of Culture for decades with her friend group, affectionately called \"The Happy Hour Ladies,\" recounts the sense of community they find every year at the",
+      "source": "Essence",
+      "sourceUrl": "https://www.essence.com/lifestyle/essence-festival-friend-group-tradition/",
+      "publishedAt": "2026-07-22T15:21:16.000Z",
+      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.essence.com/lifestyle/essence-festival-friend-group-tradition/"
+        }
+      ]
+    },
+    {
+      "id": "rss-599fd30d4cf6",
+      "hook": "Tick bites snag Congress’ attention as red meat allergies rise",
+      "title": "Tick bites snag Congress’ attention as red meat allergies rise",
+      "lesson": "Rep. Morgan Griffith would love to eat an all-beef hot dog. But the eight-term Virginia Republican from one of the biggest cattle-producing districts in Congress doesn’t eat red meat — against his will. Griffith is one of the at least 450,000 Americans who have been diagnosed with alpha-gal syndrome, a disease caused",
+      "source": "Congress",
+      "sourceUrl": "https://rollcall.com/2026/07/22/tick-bites-snag-congress-attention-as-red-meat-allergies-rise/",
+      "publishedAt": "2026-07-22T15:20:40.000Z",
+      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://rollcall.com/2026/07/22/tick-bites-snag-congress-attention-as-red-meat-allergies-rise/"
+        }
+      ]
+    },
+    {
+      "id": "rss-105e19879339",
+      "hook": "French model recruiter with close ties to Jeffrey Epstein found dead",
+      "title": "French model recruiter with close ties to Jeffrey Epstein found dead",
+      "lesson": "Under investigation in France, Daniel Siad was accused of helping Epstein to traffic and abuse women.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/french-model-recruiter-with-close-ties-to-jeffrey-epstein-found-dead?traffic_source=rss",
+      "publishedAt": "2026-07-22T15:12:32.000Z",
+      "expiresAt": "2026-07-25T17:09:42.801Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/7/22/french-model-recruiter-with-close-ties-to-jeffrey-epstein-found-dead?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-7a558d26061a",
+      "hook": "White House admits it used keywords to kill billions worth of…",
+      "title": "White House admits it used keywords to kill billions worth of California research grants",
+      "lesson": "Federal agencies that terminated more than a thousand research grants at the University of California last year admitted that they used keywords related to diversity, gender, vaccine hesitancy and COVID-19 to screen for projects that ran afoul of the Trump administration's priorities. It's an admission that lawyers",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/science-white-house-admits-it-used-keywords-kill-billions-worth-california-research-grants",
+      "publishedAt": "2026-07-22T15:07:46.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/science-white-house-admits-it-used-keywords-kill-billions-worth-california-research-grants"
+        }
+      ]
+    },
+    {
+      "id": "rss-af8baad1c231",
+      "hook": "The Socialist Case Against Nationalizing AI",
+      "title": "The Socialist Case Against Nationalizing AI",
+      "lesson": "Bernie Sanders wants to nationalize AI. In \"The Case for Nationalizing Artificial Intelligence,\" Dustin Guastella makes the case for Sanders's proposal: the big AI labs should be half-nationalized, transferring 50 percent of their stock into a public fund. In a picture illustrating the article, Bernie Sanders can be",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/technology-socialist-case-against-nationalizing-ai",
+      "publishedAt": "2026-07-22T15:07:46.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/technology-socialist-case-against-nationalizing-ai"
+        }
+      ]
+    },
+    {
+      "id": "rss-1db009a5bc79",
+      "hook": "AI's Bad Reputation Is of Its Own Making",
+      "title": "AI's Bad Reputation Is of Its Own Making",
+      "lesson": "I am possessed by a fundamental conviction that geopolitical supremacy is built on cutting-edge industry. And I've been waiting for this moment, the moment when tech companies would cease being \"agile\" and built to pivot and start digging in the ground with major capital-intensive investments in hardware. Data centers",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/technology-ais-bad-reputation-its-own-making",
+      "publishedAt": "2026-07-22T15:07:46.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/technology-ais-bad-reputation-its-own-making"
+        }
+      ]
+    },
+    {
+      "id": "rss-c57104125dd4",
+      "hook": "Officials Sought to Downplay China's Link to 2020 Election",
+      "title": "Officials Sought to Downplay China's Link to 2020 Election",
+      "lesson": "Newly declassified documents illustrate attempts by foreign actors to influence U.S. elections and by some American intelligence agencies to downplay election-related connections. \"I'm basically running a shadow government across the FBI at this point,\" FBI agent Nikki Floris wrote in 2020 to a colleague whose name",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/elections-officials-sought-downplay-chinas-link-2020-election",
+      "publishedAt": "2026-07-22T15:07:46.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/elections-officials-sought-downplay-chinas-link-2020-election"
+        }
+      ]
+    },
+    {
+      "id": "rss-96747fcca700",
+      "hook": "Ousted Venezuelan President Maduro's Wednesday Court Hearing: What…",
+      "title": "Ousted Venezuelan President Maduro's Wednesday Court Hearing: What We Know",
+      "lesson": "Nicolás Maduro has a status conference set in New York City federal court on Wednesday, marking the latest chapter in an unprecedented legal and political saga that has reshaped Venezuela's leadership. The ousted Venezuelan president faces U.S. charges related to narco-terrorism, cocaine trafficking and weapons",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/criminal-justice-ousted-venezuelan-president-maduros-wednesday-court-hearing-what-we-know",
+      "publishedAt": "2026-07-22T15:07:46.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/criminal-justice-ousted-venezuelan-president-maduros-wednesday-court-hearing-what-we-know"
+        }
+      ]
+    },
+    {
+      "id": "rss-b57b28327d45",
+      "hook": "Smithsonian pushes back on Trump's 'radical revisionism' claims",
+      "title": "Smithsonian pushes back on Trump's 'radical revisionism' claims",
+      "lesson": "The second part of a hearing will be held Wednesday in the latest step in the Trump administration's push to change how the Smithsonian presents U.S. history. The hearing, \"Oversight of the Smithsonian: Radical Revisionism at the National Museum of American History,\" follows testimony given Tuesday from museum",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/donald-trump-smithsonian-pushes-back-trumps-radical-revisionism-claims",
+      "publishedAt": "2026-07-22T15:07:46.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/donald-trump-smithsonian-pushes-back-trumps-radical-revisionism-claims"
+        }
+      ]
+    },
+    {
+      "id": "rss-28e822e2d3aa",
+      "hook": "Imaan Hammam Discusses Her Favorite And ‘Very Sexy’ Victoria’s…",
+      "title": "Imaan Hammam Discusses Her Favorite And ‘Very Sexy’ Victoria’s Secret Bra",
+      "lesson": "Victoria's Secret just released their latest push-up bra collection—here's how supermodel Imaan Hammam's wears her favorite",
+      "source": "Essence",
+      "sourceUrl": "https://www.essence.com/fashion/imaan-hammam-victorias-secret-bra-campaign-profile/",
+      "publishedAt": "2026-07-22T15:06:26.000Z",
+      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.essence.com/fashion/imaan-hammam-victorias-secret-bra-campaign-profile/"
+        }
+      ]
+    },
+    {
+      "id": "rss-3f3d0e8d5dcf",
+      "hook": "Why Christopher Nolan’s ‘Odyssey’ Haunts Us Right Now",
+      "title": "Why Christopher Nolan’s ‘Odyssey’ Haunts Us Right Now",
+      "lesson": "This piece was adapted from Russell Moore’s newsletter. Subscribe here. One of the biggest cultural events this summer isn’t a superhero sequel or a streaming series. It’s a 3,000-year-old Greek poem. That The Odyssey would be a box office powerhouse is not all that unexpected—after all, filmmaker Christopher Nolan",
+      "source": "Christianity Today",
+      "sourceUrl": "https://www.christianitytoday.com/2026/07/why-christopher-nolan-odyssey-haunts-us-right-now/",
+      "publishedAt": "2026-07-22T15:04:03.000Z",
+      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christianitytoday.com/2026/07/why-christopher-nolan-odyssey-haunts-us-right-now/"
+        }
+      ]
+    },
+    {
+      "id": "rss-0d0cee896c8e",
+      "hook": "Trump-Backed Candidates Win Primaries In Key Battleground State",
+      "title": "Trump-Backed Candidates Win Primaries In Key Battleground State",
+      "lesson": "Trump-backed candidates proved to be successful in Arizona's primary election Tuesday night. Most notably, Trump-favorite Republican Rep. Andy Biggs won the GOP primary spot in Arizona's gubernatorial election. A White House ally and Arizona lawmaker, Biggs is now set to compete against incumbent Democratic Gov. Katie",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/elections-trump-backed-candidates-win-primaries-key-battleground-state",
+      "publishedAt": "2026-07-22T14:56:04.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/elections-trump-backed-candidates-win-primaries-key-battleground-state"
+        }
+      ]
+    },
+    {
+      "id": "rss-3cd8bb1f0824",
+      "hook": "Trump warns Iran: US will bomb infrastructure for every ship attack…",
+      "title": "Trump warns Iran: US will bomb infrastructure for every ship attack in Strait of Hormuz",
+      "lesson": "President Donald Trump has warned that the US will attack Iranian infrastructure every time Tehran targets ships in the Strait of Hormuz. In a post on social media, Trump said that anytime Iran shoots at a ship in the Strait of Hormuz, \"the United States will bomb and destroy one bridge or power plant, including those",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/fba4f385-ee31-4a2c-88cb-b48f00f5c43c/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T14:55:09.000Z",
+      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/fba4f385-ee31-4a2c-88cb-b48f00f5c43c/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-922bf6ab2412",
+      "hook": "NBA 2K27 cover athlete: Why Victor Wembanyama was chosen for 2026…",
+      "title": "NBA 2K27 cover athlete: Why Victor Wembanyama was chosen for 2026 video game",
+      "lesson": "The Sporting News examines NBA 2K's decision to name Wembanyama its cover athlete in 2026.",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://sports.yahoo.com/articles/nba-2k27-cover-athlete-why-145509754.html",
+      "publishedAt": "2026-07-22T14:55:09.000Z",
+      "expiresAt": "2026-08-01T17:09:47.030Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://sports.yahoo.com/articles/nba-2k27-cover-athlete-why-145509754.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-30c44f9cdea1",
+      "hook": "Love Island Star JaNa Is Accused Of BEATING Her BF !! (Details & Video)",
+      "title": "Love Island Star JaNa Is Accused Of BEATING Her BF !! (Details & Video)",
+      "lesson": "EXPLOSIVE WAR OF WORDS!! ‘Love Island’ Star Kenny Rodriguez Breaks Silence On JaNa Craig Breakup… Accuses Her Of ‘Physical Abuse’ While She Claps Back Threatening To Expose 70+ Screenshots! (RECEIPTS) Honey, lock your villa doors and grab your popcorn, because the Love Island USA Season 6 post-show fallout just",
+      "source": "MediaTakeOut",
+      "sourceUrl": "https://mediatakeout.com/love-island-star-jana-is-accused-of-beating-her-bf-details-video/",
+      "publishedAt": "2026-07-22T14:55:03.000Z",
+      "expiresAt": "2026-08-01T17:09:46.966Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://mediatakeout.com/love-island-star-jana-is-accused-of-beating-her-bf-details-video/"
+        }
+      ]
+    },
+    {
+      "id": "rss-63a41910791b",
+      "hook": "Supreme Court urged to strike down federal distilling prohibition",
+      "title": "Supreme Court urged to strike down federal distilling prohibition",
+      "lesson": "The Supreme Court has been asked to decide whether a federal law barring the home distilling of alcohol is unconstitutional, after a pair of federal appeals courts issued conflicting rulings on the legality of the longstanding statute. The Buckeye Institute, a conservative think tank, is backing an appeal to the high",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/supreme-court-supreme-court-urged-strike-down-federal-distilling-prohibition",
+      "publishedAt": "2026-07-22T14:54:00.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/supreme-court-supreme-court-urged-strike-down-federal-distilling-prohibition"
+        }
+      ]
+    },
+    {
+      "id": "rss-ebf67943c241",
+      "hook": "Who will control Congress? Latest polls show who's winning the 2026…",
+      "title": "Who will control Congress? Latest polls show who's winning the 2026 midterms",
+      "lesson": "New voter polls, primary results and key battleground races offer clues, odds and predictions about who may win control of Congress after 2026",
+      "source": "Congress",
+      "sourceUrl": "https://www.delawareonline.com/story/news/2026/07/22/2026-midterms-polls-congress-house-senate-control/91007193007/",
+      "publishedAt": "2026-07-22T14:52:24.000Z",
+      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.delawareonline.com/story/news/2026/07/22/2026-midterms-polls-congress-house-senate-control/91007193007/"
+        }
+      ]
+    },
+    {
+      "id": "rss-349097bef07e",
+      "hook": "Chick-fil-A Hit With Data Breach: What We Know",
+      "title": "Chick-fil-A Hit With Data Breach: What We Know",
+      "lesson": "Chick-fil-A was hit by a data breach last month with customers' email addresses, mobile pay numbers and partial credit card details among the information potentially exposed, according to a report and details on state government websites. The fast food chain reported the data breach in letters sent to affected",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-07-22-0700/technology-chick-fil-hit-data-breach-what-we-know",
+      "publishedAt": "2026-07-22T14:51:56.000Z",
+      "expiresAt": "2026-07-25T17:09:42.735Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-07-22-0700/technology-chick-fil-hit-data-breach-what-we-know"
+        }
+      ]
+    },
+    {
+      "id": "rss-b1b9cc249fab",
+      "hook": "Fetty Wap ENGAGED To Buxom IG Influencer … ALL THE DETAILS About His…",
+      "title": "Fetty Wap ENGAGED To Buxom IG Influencer … ALL THE DETAILS About His Fiance!",
+      "lesson": "The post Fetty Wap ENGAGED To Buxom IG Influencer … ALL THE DETAILS About His Fiance! appeared first on Media Take Out .",
+      "source": "MediaTakeOut",
+      "sourceUrl": "https://mediatakeout.com/fetty-wap-engaged-to-buxom-ig-influencer-all-the-details-about-his-fiance/",
+      "publishedAt": "2026-07-22T14:45:35.000Z",
+      "expiresAt": "2026-08-01T17:09:46.966Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://mediatakeout.com/fetty-wap-engaged-to-buxom-ig-influencer-all-the-details-about-his-fiance/"
+        }
+      ]
+    },
+    {
+      "id": "rss-1169b08334c6",
+      "hook": "Broke NFLer LeVeon Bell Has 7 KIDS … 6 BABY MAMAs … Pays MILLIONS In…",
+      "title": "Broke NFLer LeVeon Bell Has 7 KIDS … 6 BABY MAMAs … Pays MILLIONS In Child Support!",
+      "lesson": "The post Broke NFLer LeVeon Bell Has 7 KIDS … 6 BABY MAMAs … Pays MILLIONS In Child Support! appeared first on Media Take Out",
+      "source": "MediaTakeOut",
+      "sourceUrl": "https://mediatakeout.com/broke-nfler-leveon-bell-has-7-kids-6-baby-mamas-pays-millions-in-child-support/",
+      "publishedAt": "2026-07-22T14:44:26.000Z",
+      "expiresAt": "2026-08-01T17:09:46.966Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://mediatakeout.com/broke-nfler-leveon-bell-has-7-kids-6-baby-mamas-pays-millions-in-child-support/"
+        }
+      ]
+    },
+    {
+      "id": "rss-930d0640206a",
+      "hook": "Siekerka: Congress Should Protect NJ Businesses from European Mandates",
+      "title": "Siekerka: Congress Should Protect NJ Businesses from European Mandates",
+      "lesson": "NJBIA President and CEO Michele Siekerka released the following op-ed in support of the Protect USA Act, which seeks to shield U.S. companies from",
+      "source": "Congress",
+      "sourceUrl": "https://njbia.org/siekerka-congress-should-protect-nj-businesses-from-european-mandates/",
+      "publishedAt": "2026-07-22T14:38:42.000Z",
+      "expiresAt": "2026-07-25T17:09:44.336Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://njbia.org/siekerka-congress-should-protect-nj-businesses-from-european-mandates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-419a1f9f2c30",
+      "hook": "Panicked Trump Gets Desperate With War Crimes Threat",
+      "title": "Panicked Trump Gets Desperate With War Crimes Threat",
+      "lesson": "The president threatened to bomb Iranian bridges and power plants.",
+      "source": "War",
+      "sourceUrl": "https://www.thedailybeast.com/panicked-trump-gets-desperate-with-war-crimes-threat/",
+      "publishedAt": "2026-07-22T14:38:29.000Z",
+      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.thedailybeast.com/panicked-trump-gets-desperate-with-war-crimes-threat/"
+        }
+      ]
+    },
+    {
+      "id": "rss-75d5a7998ffc",
+      "hook": "Ben Crump has released the second autopsy for Nolan Wells: This…",
+      "title": "Ben Crump has released the second autopsy for Nolan Wells: This independent autopsy of Nolan Wells finds the cause and manner of death are both “undetermined — pending investigation”",
+      "lesson": "Ben Crump has released the second autopsy for Nolan Wells: This independent autopsy of Nolan Wells finds the cause and manner of death are both “undetermined — pending investigation”— philip lewis (@Phil_Lewis_) Jul 22,",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/Phil_Lewis_/status/2079935040708841711",
+      "publishedAt": "2026-07-22T14:22:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/Phil_Lewis_/status/2079935040708841711"
+        }
+      ]
+    },
+    {
+      "id": "rss-7f07bcb3c233",
+      "hook": "Ghana Holds Rate Steady as US-Iran War Drives Inflation Risk",
+      "title": "Ghana Holds Rate Steady as US-Iran War Drives Inflation Risk",
+      "lesson": "Ghana’s central bank joined a growing number of peers keeping interest rates higher for longer as renewed hostilities between the US and Iran bring fresh inflation",
+      "source": "War",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-07-22/ghana-keeps-rates-at-14-as-us-iran-war-drives-inflation-risk",
+      "publishedAt": "2026-07-22T14:19:04.000Z",
+      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-22/ghana-keeps-rates-at-14-as-us-iran-war-drives-inflation-risk"
+        }
+      ]
+    },
+    {
+      "id": "rss-2922fac385c3",
+      "hook": "SpaceX shares resume recent decline after one-session respite",
+      "title": "SpaceX shares resume recent decline after one-session respite",
+      "lesson": "SpaceX shares resume recent decline after one-session respite",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=d3ac2c9c-3d17-4d37-813d-f89cc3d24011&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T14:08:44.000Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=d3ac2c9c-3d17-4d37-813d-f89cc3d24011&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-25008c526f01",
+      "hook": "A War Restrained by the People",
+      "title": "A War Restrained by the People",
+      "lesson": "Trump’s ambitions are being checked by the American voter.",
+      "source": "War",
+      "sourceUrl": "https://www.nationalreview.com/2026/07/a-war-restrained-by-the-people/",
+      "publishedAt": "2026-07-22T14:03:41.000Z",
+      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.nationalreview.com/2026/07/a-war-restrained-by-the-people/"
+        }
+      ]
+    },
+    {
+      "id": "rss-a2ae8d1d3062",
+      "hook": "Malcolm-Jamal Warner’s Widow Sues His Mother Over Prenuptial Agreement",
+      "title": "Malcolm-Jamal Warner’s Widow Sues His Mother Over Prenuptial Agreement",
+      "lesson": "Child actor's widow claims she is owed up to $6 million from actor's estate",
+      "source": "Vibe",
+      "sourceUrl": "https://www.vibe.com/news/movies-tv/malcolm-jamal-warner-widow-sues-mother-prenuptial-agreement-1235180657/",
+      "publishedAt": "2026-07-22T14:01:23.000Z",
+      "expiresAt": "2026-08-01T17:09:46.368Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.vibe.com/news/movies-tv/malcolm-jamal-warner-widow-sues-mother-prenuptial-agreement-1235180657/"
+        }
+      ]
+    },
+    {
+      "id": "rss-2ac067ac4ad6",
+      "hook": "Defence must cut waste and maximise value for money, says Streeting",
+      "title": "Defence must cut waste and maximise value for money, says Streeting",
+      "lesson": "A £15bn increase in military spending announced by the last government is not yet fully funded.",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cdrvyl5lxy1o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-22T13:34:17.000Z",
+      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/cdrvyl5lxy1o?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-044f0a60b073",
+      "hook": "U.S. stock-market ‘fear gauge’ is on the rise at the opening bell —…",
+      "title": "U.S. stock-market ‘fear gauge’ is on the rise at the opening bell — follow live",
+      "lesson": "U.S. stock-market ‘fear gauge’ is on the rise at the opening bell — follow live",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=d0bb1f45-2734-4f91-bcab-cbf52a20c753&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T13:32:12.000Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=d0bb1f45-2734-4f91-bcab-cbf52a20c753&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-2f7fd8ccf948",
+      "hook": "The Iran war has cost the US $37.5 billion dollars, says Defense…",
+      "title": "The Iran war has cost the US $37.5 billion dollars, says Defense Secretary Pete Hesgseth",
+      "lesson": "The Iran war has cost the US $37.5 billion dollars, says Defense Secretary Pete Hesgseth",
+      "source": "War",
+      "sourceUrl": "https://www.france24.com/en/the-iran-war-has-cost-the-us-37-5-billion-dollars-says-defense-secretary-pete-hesgseth",
+      "publishedAt": "2026-07-22T13:26:23.000Z",
+      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.france24.com/en/the-iran-war-has-cost-the-us-37-5-billion-dollars-says-defense-secretary-pete-hesgseth"
+        }
+      ]
+    },
+    {
+      "id": "rss-64a4d7f3124c",
+      "hook": "WATCH: Chris Rock Returns To The Director’s Chair With First Trailer…",
+      "title": "WATCH: Chris Rock Returns To The Director’s Chair With First Trailer For A24’s ‘Misty Green’",
+      "lesson": "Rosalind Eleazar headlines the drama with Daniel Kaluuya, leading an ensemble cast ahead of the film's world premiere at TIFF.",
+      "source": "Essence",
+      "sourceUrl": "https://www.essence.com/entertainment/watch-a24-misty-green-trailer/",
+      "publishedAt": "2026-07-22T13:17:43.000Z",
+      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.essence.com/entertainment/watch-a24-misty-green-trailer/"
+        }
+      ]
+    },
+    {
+      "id": "rss-8bf9c1010aef",
+      "hook": "When it comes to war in Iran, Congress must wield power of the purse",
+      "title": "When it comes to war in Iran, Congress must wield power of the purse",
+      "lesson": "Though Trump and Hegseth may have sidestepped Congress’s power to approve war, the legislative branch still holds the purse",
+      "source": "War",
+      "sourceUrl": "https://www.seattletimes.com/opinion/editorials/when-it-comes-to-war-in-iran-congress-must-wield-power-of-the-purse/",
+      "publishedAt": "2026-07-22T13:00:00.000Z",
+      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.seattletimes.com/opinion/editorials/when-it-comes-to-war-in-iran-congress-must-wield-power-of-the-purse/"
+        }
+      ]
+    },
+    {
+      "id": "rss-ad07738e4dde",
+      "hook": "“A French professional model recruiter who for over a decade…",
+      "title": "“A French professional model recruiter who for over a decade arranged for the late sex offender Jeffrey Epstein to meet multiple models, was found dead in his home near Paris” https://www.cnn.com/2026/07/22/europe/model-recruiter-epstein-dead-france-intl?Date=20260722&Profile=cnnbrk&utm_content=1784721266&utm_medium=social&utm_source=twitter",
+      "lesson": "“A French professional model recruiter who for over a decade arranged for the late sex offender Jeffrey Epstein to meet multiple models, was found dead in his home near Paris” cnn.com/2026/07/22/europe/mo…— philip lewis (@Phil_Lewis_) Jul 22,",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/Phil_Lewis_/status/2079913926347633100",
+      "publishedAt": "2026-07-22T12:58:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/Phil_Lewis_/status/2079913926347633100"
+        }
+      ]
+    },
+    {
+      "id": "rss-3eba05d6c482",
+      "hook": "Finding the silver lining in an AI stock selloff",
+      "title": "Finding the silver lining in an AI stock selloff",
+      "lesson": "Finding the silver lining in an AI stock selloff",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=afe6df28-9461-4328-9b4e-955509c41ebd&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T12:47:59.000Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=afe6df28-9461-4328-9b4e-955509c41ebd&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-2017ec3e4b6a",
+      "hook": "Mourning Nolan Xavier Wells: Why This Loss Feels So Personal For The…",
+      "title": "Mourning Nolan Xavier Wells: Why This Loss Feels So Personal For The Black Community",
+      "lesson": "The untimely death of the promising 18-year-old Mississippi football star—and the lack of answers surrounding it—is, unfortunately, far too familiar for",
+      "source": "Essence",
+      "sourceUrl": "https://www.essence.com/news/mourning-nolan-xavier-wells-why-this-loss-feels-so-personal/",
+      "publishedAt": "2026-07-22T12:43:45.000Z",
+      "expiresAt": "2026-08-01T17:09:45.744Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.essence.com/news/mourning-nolan-xavier-wells-why-this-loss-feels-so-personal/"
+        }
+      ]
+    },
+    {
+      "id": "rss-0561294c7213",
+      "hook": "The antifa terrorism threat the Trump administration describes does…",
+      "title": "The antifa terrorism threat the Trump administration describes does not exist",
+      "lesson": "Antifa is a scattered movement of local collectives that opposes fascism. It has no leader, command hierarchy, funding structure or record of deadly",
+      "source": "The Conversation · Politics",
+      "sourceUrl": "https://theconversation.com/the-antifa-terrorism-threat-the-trump-administration-describes-does-not-exist-287748",
+      "publishedAt": "2026-07-22T12:28:46.000Z",
+      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theconversation.com/the-antifa-terrorism-threat-the-trump-administration-describes-does-not-exist-287748"
+        }
+      ]
+    },
+    {
+      "id": "rss-28aa71958a9a",
+      "hook": "Philadelphia’s criminal justice fines and fees fall hardest on…",
+      "title": "Philadelphia’s criminal justice fines and fees fall hardest on poorest neighborhoods",
+      "lesson": "New research maps where legal financial obligations are concentrated – and finds they overlap with poverty, violence and racial",
+      "source": "The Conversation · Politics",
+      "sourceUrl": "https://theconversation.com/philadelphias-criminal-justice-fines-and-fees-fall-hardest-on-poorest-neighborhoods-286417",
+      "publishedAt": "2026-07-22T12:28:28.000Z",
+      "expiresAt": "2026-07-25T17:09:43.500Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theconversation.com/philadelphias-criminal-justice-fines-and-fees-fall-hardest-on-poorest-neighborhoods-286417"
+        }
+      ]
+    },
+    {
+      "id": "rss-527fa7c8fbdc",
+      "hook": "Most bus fares in England to be capped at £2 from January",
+      "title": "Most bus fares in England to be capped at £2 from January",
+      "lesson": "The government says the policy will \"help with the cost of living and give people the breathing space they need\"",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cz64l78n5vpo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-22T12:26:03.000Z",
+      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/cz64l78n5vpo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-d3ec05f76e66",
+      "hook": "Trump says 'we're not finished at all' as US strikes intensify in Iran",
+      "title": "Trump says 'we're not finished at all' as US strikes intensify in Iran",
+      "lesson": "President Donald Trump is scheduled to attend the dignified transfer of remains for U.S. service members killed in the Iran War, as the conflict enters its 11th day as strikes ramp",
+      "source": "War",
+      "sourceUrl": "https://www.wbaltv.com/article/trump-says-not-finished-us-strikes-intensify-iran-war/73227368",
+      "publishedAt": "2026-07-22T12:24:00.000Z",
+      "expiresAt": "2026-07-25T17:09:44.415Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.wbaltv.com/article/trump-says-not-finished-us-strikes-intensify-iran-war/73227368"
+        }
+      ]
+    },
+    {
+      "id": "rss-eee5b380bba6",
+      "hook": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: The Miami Heat accidentally…",
+      "title": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: The Miami Heat accidentally posted, then deleted, a scheduled YouTube livestream titled “LeBron James Introductory Press Conference” for July 27. A team spokesperson told @ShamsCharania the link was mistakenly published while preparing for a possible James signing. http://spr.ly/6016BEWDtQ",
+      "lesson": "The Miami Heat accidentally posted, then deleted, a scheduled YouTube livestream titled “LeBron James Introductory Press Conference” for July 27. A team spokesperson told @ShamsCharania the link was mistakenly published while preparing for a possible James signing. spr.ly/6016BEWDtQ— @espn Jul 22,",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/espn/status/2079903293371781558",
+      "publishedAt": "2026-07-22T12:16:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.984Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/espn/status/2079903293371781558"
+        }
+      ]
+    },
+    {
+      "id": "rss-f975a22c3707",
+      "hook": "Economic calendar: U.S. unemployment claims are the next data point…",
+      "title": "Economic calendar: U.S. unemployment claims are the next data point to watch",
+      "lesson": "Economic calendar: U.S. unemployment claims are the next data point to watch",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=3afa612d-9437-48d7-96a2-523abbe93096&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-22T12:01:08.000Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=3afa612d-9437-48d7-96a2-523abbe93096&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-569df7f90172",
+      "hook": "‘I Talked to James the Other Night’ — NBA Champion Shares 6-Word…",
+      "title": "‘I Talked to James the Other Night’ — NBA Champion Shares 6-Word Message From James Harden Amid Cavaliers’ LeBron James Pursuit",
+      "lesson": "The Cleveland Cavaliers remain one of the te‌‌ams mos‌t clo‌‌s‌ely li‌‌nke‌d to LeBron James as discussions about his future continue. Former NBA cham‌‌pion Channing Frye recently sh‌‌are‌‌d a conversation with Cavaliers star James Harden that made the rumors even more",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://sports.yahoo.com/articles/talked-james-other-night-nba-120001278.html",
+      "publishedAt": "2026-07-22T12:00:01.000Z",
+      "expiresAt": "2026-08-01T17:09:47.030Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://sports.yahoo.com/articles/talked-james-other-night-nba-120001278.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-a79916415f25",
+      "hook": "Stocks making the biggest moves premarket: Super Micro Computer, GE…",
+      "title": "Stocks making the biggest moves premarket: Super Micro Computer, GE Vernova, Rocket Lab and more",
+      "lesson": "These are the stocks posting the largest moves premarket.",
+      "source": "CNBC · Finance",
+      "sourceUrl": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-premarket-smci-gev-rklb.html",
+      "publishedAt": "2026-07-22T11:54:30.000Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cnbc.com/2026/07/22/stocks-making-the-biggest-moves-premarket-smci-gev-rklb.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-7db709d6c2d8",
+      "hook": "‘Alive or dead?’: Gaza families await answers on missing loved ones",
+      "title": "‘Alive or dead?’: Gaza families await answers on missing loved ones",
+      "lesson": "Thousands of Palestinian families have no idea if their loved ones are alive or dead, whether they’re detained in Israeli prisons or buried under the piles of rubble across Gaza. Some people have been missing for months, others for years. Israeli restrictions on heavy machinery entering the Strip means the recovery of",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/c0daf384-53cc-480a-9724-b48f00c1a871/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T11:45:16.000Z",
+      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/c0daf384-53cc-480a-9724-b48f00c1a871/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-5f5412b0f1b2",
+      "hook": "Five NBA players headline Spain's roster for August FIBA window",
+      "title": "Five NBA players headline Spain's roster for August FIBA window",
+      "lesson": "Spain have announced their 15-man roster for the upcoming FIBA World Cup 2027 Qualifiers. The squad, coached by Chus Mateo, features five NBA",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://basketnews.com/news-252428-five-nba-players-headline-spains-roster-for-august-fiba-window.html",
+      "publishedAt": "2026-07-22T11:32:44.000Z",
+      "expiresAt": "2026-08-01T17:09:47.030Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://basketnews.com/news-252428-five-nba-players-headline-spains-roster-for-august-fiba-window.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-6d7957ce4d59",
+      "hook": "‘Could Take Deep Into August’ — NBA Insiders Drop Troubling Update…",
+      "title": "‘Could Take Deep Into August’ — NBA Insiders Drop Troubling Update on Jalen Duren’s Restricted Free-Agency Standoff With Pistons",
+      "lesson": "Three weeks into NBA free agency, Detroit Pistons center Jalen Duren has yet to sign a new deal. The situation doesn’t appear to be improving anytime soon, either, as league insiders Ramona Shelburne and Jake Fischer have revealed troubling details about the restricted free agent’s contract standoff with the",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://sports.yahoo.com/articles/could-deep-august-nba-insiders-112443571.html",
+      "publishedAt": "2026-07-22T11:24:43.000Z",
+      "expiresAt": "2026-08-01T17:09:47.030Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://sports.yahoo.com/articles/could-deep-august-nba-insiders-112443571.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-e0de2d43579b",
+      "hook": "Oil prices hit six-week high as Middle East supply disruption fears grow",
+      "title": "Oil prices hit six-week high as Middle East supply disruption fears grow",
+      "lesson": "Oil prices have climbed to their highest levels in nearly six weeks. Escalating hostilities between the US and Iran have fuelled concern about disruptions to global energy supplies. Al Jazeera’s Yousef Mawry reports from Sanaa, Yemen. Subscribe to our channel: http://bit.ly/AJSubscribe Follow us on X:",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/5ca7178f-cabd-4d6a-a4fb-b48f00b9e11a/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T11:17:02.000Z",
+      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/5ca7178f-cabd-4d6a-a4fb-b48f00b9e11a/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-00b879d35151",
+      "hook": "‘They All Gonna Have Agendas’ — NBA Analyst Raises Red Flag Over…",
+      "title": "‘They All Gonna Have Agendas’ — NBA Analyst Raises Red Flag Over LeBron James’ Fit With Eastern Conference Suitor",
+      "lesson": "The Philadelphia 76ers are coming up as one of the hottest teams linked to LeBron James, and the idea of him joining an already star-studded roster has generated plenty of excitement. On paper, it looks like a move that could turn the Sixers into an instant title",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://sports.yahoo.com/articles/gonna-agendas-nba-analyst-raises-110007984.html",
+      "publishedAt": "2026-07-22T11:00:07.000Z",
+      "expiresAt": "2026-08-01T17:09:47.030Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://sports.yahoo.com/articles/gonna-agendas-nba-analyst-raises-110007984.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-2ade58d49671",
+      "hook": "5 Amazing Ways to Throw Satan off His Game with Worship",
+      "title": "5 Amazing Ways to Throw Satan off His Game with Worship",
+      "lesson": "Satan loves to throw challenges at you. If you can worship during his tricks, you’ll come to learn that praise and worship are not about how you feel. It's about worshipping God and trusting His",
+      "source": "Crosswalk",
+      "sourceUrl": "https://www.crosswalk.com/church/worship/ways-to-throw-satan-off-his-game-with-worship.html",
+      "publishedAt": "2026-07-22T11:00:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.829Z",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.crosswalk.com/church/worship/ways-to-throw-satan-off-his-game-with-worship.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-5961d5737294",
+      "hook": "Grief Support Toolkit",
+      "title": "Grief Support Toolkit",
+      "lesson": "Grief Support Toolkit",
+      "source": "Crosswalk",
+      "sourceUrl": "https://www.crosswalk.com/plus/faith-toolkits/grief-support-toolkit.html",
+      "publishedAt": "2026-07-22T11:00:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.829Z",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.crosswalk.com/plus/faith-toolkits/grief-support-toolkit.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-b95e1f948032",
+      "hook": "5 Ways Husbands Make Wives Feel Unloved without Knowing It",
+      "title": "5 Ways Husbands Make Wives Feel Unloved without Knowing It",
+      "lesson": "5 Ways Husbands Make Wives Feel Unloved without Knowing It",
+      "source": "Crosswalk",
+      "sourceUrl": "https://www.crosswalk.com/family/marriage/ways-husbands-make-wives-feel-unloved-without-knowing-it.html",
+      "publishedAt": "2026-07-22T11:00:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.829Z",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.crosswalk.com/family/marriage/ways-husbands-make-wives-feel-unloved-without-knowing-it.html"
+        }
+      ]
+    },
+    {
+      "id": "rss-7124f5f2fcfd",
+      "hook": "No immediate change to income tax allowance, says Burnham",
+      "title": "No immediate change to income tax allowance, says Burnham",
+      "lesson": "The new prime minister previously said voters were frustrated over the freeze in tax-free personal allowance.",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c935g67wyvgo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-07-22T10:55:51.000Z",
+      "expiresAt": "2026-07-25T17:09:44.166Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/c935g67wyvgo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-7aae2986b47d",
+      "hook": "Defense Secretary Pete Hegseth defends Iran war funding request at…",
+      "title": "Defense Secretary Pete Hegseth defends Iran war funding request at fiery hearing",
+      "lesson": "Defense Secretary Pete Hegseth faced a barrage of questions about the war with Iran from lawmakers on Tuesday, as the administration seeks more money for the escalating",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5901981/defense-secretary-pete-hegseth-defends-iran-war-funding-request-at-fiery-hearing",
+      "publishedAt": "2026-07-22T10:43:36.000Z",
+      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5901981/defense-secretary-pete-hegseth-defends-iran-war-funding-request-at-fiery-hearing"
+        }
+      ]
+    },
+    {
+      "id": "rss-0246ac66c5e9",
+      "hook": "Sen. Patty Murray, D-Wash., on Defense Secretary Pete Hegseth's…",
+      "title": "Sen. Patty Murray, D-Wash., on Defense Secretary Pete Hegseth's Senate testimony",
+      "lesson": "NPR's Leila Fadel speaks with Democratic Sen. Patty Murray of Washington about the administration's Iran war objectives following the testimony of Defense Secretary Pete",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5902047/sen-patty-murray-d-wash-on-defense-secretary-pete-hegseths-senate-testimony",
+      "publishedAt": "2026-07-22T10:43:28.000Z",
+      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5902047/sen-patty-murray-d-wash-on-defense-secretary-pete-hegseths-senate-testimony"
+        }
+      ]
+    },
+    {
+      "id": "rss-1f906bb5399a",
+      "hook": "Jordan intercepts Iranian missiles as concern grows over attacks on…",
+      "title": "Jordan intercepts Iranian missiles as concern grows over attacks on Gulf infrastructure",
+      "lesson": "Jordan says it has shot down four Iranian drones. Authorities say the interceptions caused no injuries or damage. And Iran's military has said it targeted a US military site in Bahrain. It said drones hit an aircraft repair and maintenance facility at Isa Air Base. Earlier, Tehran said it had also launched drones at a",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/d87fc3a4-a867-4dcf-bd25-b48f00b045b7/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T10:41:58.000Z",
+      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/d87fc3a4-a867-4dcf-bd25-b48f00b045b7/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-ee99437e72a3",
+      "hook": "Former Kansas Assistant Norm Roberts Draws NBA Comparison for Tyran…",
+      "title": "Former Kansas Assistant Norm Roberts Draws NBA Comparison for Tyran Stokes",
+      "lesson": "Retired Kansas assistant coach Norm Roberts compared incoming freshman Tyran Stokes' game to one of the NBA's biggest stars of the past",
+      "source": "NBA & Basketball News",
+      "sourceUrl": "https://www.si.com/college/kansas/basketball/former-kansas-assistant-norm-roberts-draws-nba-comparison-for-tyran-stokes",
+      "publishedAt": "2026-07-22T10:40:00.000Z",
+      "expiresAt": "2026-08-01T17:09:47.030Z",
+      "topicIds": [
+        "nba-analytics",
+        "sports-biz"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.si.com/college/kansas/basketball/former-kansas-assistant-norm-roberts-draws-nba-comparison-for-tyran-stokes"
+        }
+      ]
+    },
+    {
+      "id": "rss-537c6dee4af6",
+      "hook": "From an Old Addiction Baseline to a New Epidemic",
+      "title": "From an Old Addiction Baseline to a New Epidemic",
+      "lesson": "Addiction is nothing new in our country. Sometimes it’s hidden away and people with abnormal habits can still lead mostly normal lives. But numerous studies over the years have linked substance abuse and homelessness. One oft-cited study showed that more than four out of five chronically homeless people have had",
+      "source": "Christianity Today",
+      "sourceUrl": "https://www.christianitytoday.com/2026/07/addiction-baseline-epidemic-homelessness-fentanyl/",
+      "publishedAt": "2026-07-22T10:00:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christianitytoday.com/2026/07/addiction-baseline-epidemic-homelessness-fentanyl/"
+        }
+      ]
+    },
+    {
+      "id": "rss-f986d0a313c3",
+      "hook": "Marriage Is Not a Prize to Be Won",
+      "title": "Marriage Is Not a Prize to Be Won",
+      "lesson": "When I heard that Hulu was producing a show called Ring by Spring Break, a shiver went down my spine. According to its logline, the new show will drop Christian college students in Cabo, where “faith battles temptation in paradise.” “Will they leave engaged or graduate alone?” the promotional copy asks, mirroring the",
+      "source": "Christianity Today",
+      "sourceUrl": "https://www.christianitytoday.com/2026/07/marriage-is-not-a-prize-to-be-won/",
+      "publishedAt": "2026-07-22T10:00:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christianitytoday.com/2026/07/marriage-is-not-a-prize-to-be-won/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c7bab72351c6",
+      "hook": "Where Do Mission Hospitals Fit in the 21st Century?",
+      "title": "Where Do Mission Hospitals Fit in the 21st Century?",
+      "lesson": "Mission hospitals were a remarkably successful strategy in 20th-century mission work, especially in Africa. A century ago, the average mission organization would find the highest-elevation spot it could in a region (to reduce the risk of malaria) and build a hospital, a school, and a church on that site. Over time,",
+      "source": "Christianity Today",
+      "sourceUrl": "https://www.christianitytoday.com/2026/07/mission-hospitals-21st-century-loftus/",
+      "publishedAt": "2026-07-22T10:00:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christianitytoday.com/2026/07/mission-hospitals-21st-century-loftus/"
+        }
+      ]
+    },
+    {
+      "id": "rss-68f6d36bad9f",
+      "hook": "An Austin Church Needs a New Building. It’s Going to Print It.",
+      "title": "An Austin Church Needs a New Building. It’s Going to Print It.",
+      "lesson": "In a closet of the chapel of St. Mark’s Episcopal Church in Austin, Texas, is a box of abandoned plans. Decades’ worth of blueprints, mockups, and hopes for a new building sit untouched. Originally constructed in 1959, the structure has limped along for at least the last 30 years. The main nave comprises remnants from",
+      "source": "Christianity Today",
+      "sourceUrl": "https://www.christianitytoday.com/2026/07/3d-printed-church-austin-texas/",
+      "publishedAt": "2026-07-22T10:00:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.666Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christianitytoday.com/2026/07/3d-printed-church-austin-texas/"
+        }
+      ]
+    },
+    {
+      "id": "rss-e3e748cdbb5c",
+      "hook": "Travis Scott Was ‘Actually Nervous’ When He Shot His Scenes For ‘The…",
+      "title": "Travis Scott Was ‘Actually Nervous’ When He Shot His Scenes For ‘The Odyssey’",
+      "lesson": "Scott was out of his comfort zone, as every star in Chris Nolan's star-heavy project watched on as he delivered his lines.",
+      "source": "Billboard R&B/Hip-Hop",
+      "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/travis-scott-actually-nervous-shooting-the-odyssey-1236300520/",
+      "publishedAt": "2026-07-22T09:37:19.000Z",
+      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.billboard.com/music/rb-hip-hop/travis-scott-actually-nervous-shooting-the-odyssey-1236300520/"
+        }
+      ]
+    },
+    {
+      "id": "rss-6b442d7584f3",
+      "hook": "Church elder and worship leader among dead in fresh wave of attacks…",
+      "title": "Church elder and worship leader among dead in fresh wave of attacks in eastern DRC",
+      "lesson": "A church elder and a worship leader were among six people killed in an attack on a rural Christian community in eastern Democratic Republic of Congo",
+      "source": "Christian Today",
+      "sourceUrl": "https://www.christiantoday.com/news/church-elder-and-worship-leader-among-dead-in-fresh-wave-of-attacks-in-eastern-drc",
+      "publishedAt": "2026-07-22T09:22:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christiantoday.com/news/church-elder-and-worship-leader-among-dead-in-fresh-wave-of-attacks-in-eastern-drc"
+        }
+      ]
+    },
+    {
+      "id": "rss-b1691a773342",
+      "hook": "‘Won’t back down’: Indian student protesters return after police…",
+      "title": "‘Won’t back down’: Indian student protesters return after police crackdown",
+      "lesson": "Supporters of the youth-led Cockroach Janta Party (CJP) have been protesting against the Indian prime minister and his education minister. The unrest was triggered by the cancellation of a national medical entrance exam after question papers were leaked. Around 2 million students sat the exam in May, but it ⁠was later",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/e820c941-dcad-4c44-a975-b48f00976076/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T09:11:37.000Z",
+      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/e820c941-dcad-4c44-a975-b48f00976076/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-8b43bf7baa6c",
+      "hook": "States want to bring Medicaid behind bars. Federal changes make that…",
+      "title": "States want to bring Medicaid behind bars. Federal changes make that harder",
+      "lesson": "Funding cuts and program changes required by President Trump's big budget law are forcing states to rethink bipartisan efforts to bring Medicaid into jails and",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5896456/medicaid-cuts-incarceration-states-obbba",
+      "publishedAt": "2026-07-22T09:00:00.000Z",
+      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5896456/medicaid-cuts-incarceration-states-obbba"
+        }
+      ]
+    },
+    {
+      "id": "rss-0160d4c59460",
+      "hook": "Trump has campaigned more so far in 2026 midterms than he did at…",
+      "title": "Trump has campaigned more so far in 2026 midterms than he did at this point in 2018",
+      "lesson": "Heading to Georgia on Wednesday, President Trump is campaigning more often this year than he did in the same period for 2018 and has already rallied for a dozen candidates in toss-up",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5887428/2026-midterm-election-trump-campaign-rally",
+      "publishedAt": "2026-07-22T09:00:00.000Z",
+      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5887428/2026-midterm-election-trump-campaign-rally"
+        }
+      ]
+    },
+    {
+      "id": "rss-fe1deb47532d",
+      "hook": "How the Government’s Obligation to Keep Foreign Workers Safe…",
+      "title": "How the Government’s Obligation to Keep Foreign Workers Safe Collided With Its Efforts to Keep Farms Afloat",
+      "lesson": "The post How the Government’s Obligation to Keep Foreign Workers Safe Collided With Its Efforts to Keep Farms Afloat appeared first on ProPublica",
+      "source": "ProPublica",
+      "sourceUrl": "https://www.propublica.org/article/h-2a-farmworker-protections-profits-trump",
+      "publishedAt": "2026-07-22T09:00:00.000Z",
+      "expiresAt": "2026-07-25T17:09:43.980Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.propublica.org/article/h-2a-farmworker-protections-profits-trump"
+        }
+      ]
+    },
+    {
+      "id": "rss-99c9c0b25f14",
+      "hook": "Zelenskyy sacks Ukraine military chief Syrskyi as drones hit Russian…",
+      "title": "Zelenskyy sacks Ukraine military chief Syrskyi as drones hit Russian warehouses",
+      "lesson": "Ukrainian drones have hit warehouses belonging to Russia's largest online retailer in the Krasnodar region. The company's co-founder says several people were injured in the strike. On Saturday, a similar attack killed at least eight workers, sparking fires and disrupting operations. Ukraine's President Volodymyr",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a38abc10-c422-4f22-ba27-b48f0091ff50/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T08:51:54.000Z",
+      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a38abc10-c422-4f22-ba27-b48f0091ff50/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-b0f75e8a356c",
+      "hook": "Catholic bishops urge MPs to reject latest assisted suicide bill",
+      "title": "Catholic bishops urge MPs to reject latest assisted suicide bill",
+      "lesson": "The Catholic Bishops' Conference of England and Wales has called on MPs to vote down the Terminally Ill Adults (End of Life) Bill, warning that the legislation is \"deeply flawed\" and poses serious risks to vulnerable people, medical professionals and the health care",
+      "source": "Christian Today",
+      "sourceUrl": "https://www.christiantoday.com/news/catholic-bishops-urge-mps-to-reject-latest-assisted-suicide-bill",
+      "publishedAt": "2026-07-22T08:34:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christiantoday.com/news/catholic-bishops-urge-mps-to-reject-latest-assisted-suicide-bill"
+        }
+      ]
+    },
+    {
+      "id": "rss-20f382c2edd8",
+      "hook": "Trump-backed candidates, 2020 election deniers, win Arizona primaries",
+      "title": "Trump-backed candidates, 2020 election deniers, win Arizona primaries",
+      "lesson": "The primaries set the field for what are expected to be heated contests for Congress and governor in a swing state this fall.",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5902198/arizona-primary-results-trump-elections-biggs",
+      "publishedAt": "2026-07-22T08:33:21.000Z",
+      "expiresAt": "2026-07-25T17:09:43.394Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5902198/arizona-primary-results-trump-elections-biggs"
+        }
+      ]
+    },
+    {
+      "id": "rss-2e66756643a2",
+      "hook": "Greece objects to EU sanctions on Russian LNG shipping",
+      "title": "Greece objects to EU sanctions on Russian LNG shipping",
+      "lesson": "Greece is objecting to part of the European Commisson's latest sanctions package targeting Russian gas exports. They say that it could hurt the Greek shipping industry more than it would hit the Russian market. Al Jazeera’s John Psaropoulos reports from Piraeus, Greece. Subscribe to our channel:",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/7ade8d36-edf5-49c1-9437-b48f0085faf8/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-07-22T08:08:06.000Z",
+      "expiresAt": "2026-07-25T17:09:43.153Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/7ade8d36-edf5-49c1-9437-b48f0085faf8/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Al Jazeera podcasts",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-12c078d59434",
+      "hook": "Erling Haaland buys historic Christian manuscript, donates it to…",
+      "title": "Erling Haaland buys historic Christian manuscript, donates it to local library",
+      "lesson": "Haaland bought the manuscript together with his father, who was also a professional footballer in his day.",
+      "source": "Christian Today",
+      "sourceUrl": "https://www.christiantoday.com/news/erling-haaland-buys-historic-christian-manuscript-donates-it-to-local-library",
+      "publishedAt": "2026-07-22T06:50:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christiantoday.com/news/erling-haaland-buys-historic-christian-manuscript-donates-it-to-local-library"
+        }
+      ]
+    },
+    {
+      "id": "rss-97ec5468ceb9",
+      "hook": "Iraqi PM asks Christians to return following mass exodus",
+      "title": "Iraqi PM asks Christians to return following mass exodus",
+      "lesson": "Does he really want them back or is it a move to impress Donald Trump?",
+      "source": "Christian Today",
+      "sourceUrl": "https://www.christiantoday.com/news/iraqi-pm-asks-christians-to-return-following-mass-exodus",
+      "publishedAt": "2026-07-22T06:49:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christiantoday.com/news/iraqi-pm-asks-christians-to-return-following-mass-exodus"
+        }
+      ]
+    },
+    {
+      "id": "rss-ed5fb3058b8a",
+      "hook": "Christian group seeks 'commitment' from Andy Burnham to tackle poverty",
+      "title": "Christian group seeks 'commitment' from Andy Burnham to tackle poverty",
+      "lesson": "Christians Against Poverty (CAP) has called upon incoming Prime Minister Andy Burnham to make a “commitment” to tackling poverty.",
+      "source": "Christian Today",
+      "sourceUrl": "https://www.christiantoday.com/news/christian-group-seeks-commitment-from-andy-burnham-to-tackle-poverty",
+      "publishedAt": "2026-07-22T06:36:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christiantoday.com/news/christian-group-seeks-commitment-from-andy-burnham-to-tackle-poverty"
+        }
+      ]
+    },
     {
       "id": "rss-458164a4fd33",
       "hook": "Burnham pulls back on suggestion to increase income tax allowance",
@@ -30,6 +2241,26 @@
       "sourceUrl": "https://www.npr.org/2026/07/22/g-s1-134880/mamdani-nyc-netanyahu",
       "publishedAt": "2026-07-22T06:04:29.000Z",
       "expiresAt": "2026-07-25T06:17:59.562Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/g-s1-134880/mamdani-nyc-netanyahu"
+        }
+      ]
+    },
+    {
+      "id": "rss-f05675d8210e",
+      "hook": "Mamdani says New York City can't arrest Netanyahu but the federal…",
+      "title": "Mamdani says New York City can't arrest Netanyahu but the federal government should",
+      "lesson": "New York Mayor Mamdani said the city would not be able to execute an arrest warrant issued by the top war-crimes court for Israel's Benjamin Netanyahu, but urged the federal government to do",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/g-s1-134880/mamdani-nyc-netanyahu",
+      "publishedAt": "2026-07-22T06:04:29.000Z",
+      "expiresAt": "2026-07-25T17:09:43.394Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -73,7 +2304,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cx2rv14em3jo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-22T05:22:32.000Z",
-      "expiresAt": "2026-07-25T06:18:00.125Z",
+      "expiresAt": "2026-07-25T17:09:44.166Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -154,6 +2385,26 @@
       "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5897533/rep-blake-moore-r-utah-on-gops-efforts-to-pass-budget-reconciliation-bill",
       "publishedAt": "2026-07-22T04:55:23.000Z",
       "expiresAt": "2026-07-25T06:17:59.562Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/07/22/nx-s1-5897533/rep-blake-moore-r-utah-on-gops-efforts-to-pass-budget-reconciliation-bill"
+        }
+      ]
+    },
+    {
+      "id": "rss-54629e21d42b",
+      "hook": "Rep. Blake Moore, R-Utah, on GOP's efforts to pass budget…",
+      "title": "Rep. Blake Moore, R-Utah, on GOP's efforts to pass budget reconciliation bill",
+      "lesson": "NPR's Leila Fadel speaks with Congressman Blake Moore, R-Utah, about Republican efforts to move forward with a $95 billion party-line budget reconciliation",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/07/22/nx-s1-5897533/rep-blake-moore-r-utah-on-gops-efforts-to-pass-budget-reconciliation-bill",
+      "publishedAt": "2026-07-22T04:55:23.000Z",
+      "expiresAt": "2026-07-25T17:09:43.394Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -533,7 +2784,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://thelinknewspaper.ca/article/k-pop-and-the-sanitization-of-black-culture",
       "publishedAt": "2026-07-22T02:38:56.000Z",
-      "expiresAt": "2026-08-01T06:18:01.073Z",
+      "expiresAt": "2026-08-01T17:09:45.071Z",
       "topicIds": [
         "current-events"
       ],
@@ -876,7 +3127,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=e24a9787-d1ed-4339-83a2-9c6bc7740c24&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-22T01:01:44.000Z",
-      "expiresAt": "2026-07-25T06:18:02.517Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -1088,6 +3339,25 @@
       ]
     },
     {
+      "id": "rss-73c9b33b8c36",
+      "hook": "Snoop Dogg Biopic Sets Release Date",
+      "title": "Snoop Dogg Biopic Sets Release Date",
+      "lesson": "The Universal Pictures film will be directed by Craig Brewer, with Outer Banks star Jonathan Daviss playing the rap legend.",
+      "source": "Billboard R&B/Hip-Hop",
+      "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/snoop-dogg-biopic-release-date-1236300241/",
+      "publishedAt": "2026-07-22T00:08:55.000Z",
+      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.billboard.com/music/rb-hip-hop/snoop-dogg-biopic-release-date-1236300241/"
+        }
+      ]
+    },
+    {
       "id": "rss-5c007067ed1b",
       "hook": "Trump pushes for peace in Lebanon: President Aoun in US to discuss…",
       "title": "Trump pushes for peace in Lebanon: President Aoun in US to discuss fragile framework",
@@ -1199,7 +3469,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/NYCMayor/status/2079718073058091261",
       "publishedAt": "2026-07-22T00:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:01.006Z",
+      "expiresAt": "2026-08-01T17:09:44.984Z",
       "topicIds": [
         "current-events"
       ],
@@ -1278,6 +3548,25 @@
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/doja-cat-latto-okayyy-video-tour-ma-vie-1236300237/",
       "publishedAt": "2026-07-21T23:37:47.000Z",
       "expiresAt": "2026-08-01T06:18:01.847Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.billboard.com/music/rb-hip-hop/doja-cat-latto-okayyy-video-tour-ma-vie-1236300237/"
+        }
+      ]
+    },
+    {
+      "id": "rss-e8e0b3400e4a",
+      "hook": "Doja Cat & Latto Team Up for Sexy 2000s-Themed ‘Okayyy’ Video,…",
+      "title": "Doja Cat & Latto Team Up for Sexy 2000s-Themed ‘Okayyy’ Video, Atlanta Rapper to Join Doja’s Ma Vie World Tour",
+      "lesson": "The North American leg of Doja's trek kicks off Oct. 1 in Detroit.",
+      "source": "Billboard R&B/Hip-Hop",
+      "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/doja-cat-latto-okayyy-video-tour-ma-vie-1236300237/",
+      "publishedAt": "2026-07-21T23:37:47.000Z",
+      "expiresAt": "2026-08-01T17:09:45.851Z",
       "topicIds": [
         "current-events"
       ],
@@ -1397,6 +3686,26 @@
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=8df4ddad-262c-441c-8d41-c423d4c68a54&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-21T23:17:29.000Z",
       "expiresAt": "2026-07-25T06:18:02.517Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=8df4ddad-262c-441c-8d41-c423d4c68a54&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
+      "id": "rss-ff2d8999f8fe",
+      "hook": "Here’s how to time your retirement to keep your healthcare costs down",
+      "title": "Here’s how to time your retirement to keep your healthcare costs down",
+      "lesson": "Here’s how to time your retirement to keep your healthcare costs down",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=8df4ddad-262c-441c-8d41-c423d4c68a54&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T23:17:29.000Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -1655,7 +3964,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079696596879479017",
       "publishedAt": "2026-07-21T22:34:00.000Z",
-      "expiresAt": "2026-08-01T06:18:01.006Z",
+      "expiresAt": "2026-08-01T17:09:44.984Z",
       "topicIds": [
         "current-events"
       ],
@@ -1711,6 +4020,26 @@
       ]
     },
     {
+      "id": "rss-e8cd59b52be1",
+      "hook": "Super Micro’s stock soars as its margins unexpectedly double",
+      "title": "Super Micro’s stock soars as its margins unexpectedly double",
+      "lesson": "Super Micro’s stock soars as its margins unexpectedly double",
+      "source": "MarketWatch · Bulletins",
+      "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=d18cf68c-3509-4890-b426-ec910b1cbe4f&mod=mw_rss_bulletins",
+      "publishedAt": "2026-07-21T22:27:20.000Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.marketwatch.com/bulletins/redirect/go?g=d18cf68c-3509-4890-b426-ec910b1cbe4f&mod=mw_rss_bulletins"
+        }
+      ]
+    },
+    {
       "id": "rss-3e4ac71de9a5",
       "hook": "5 takeaways from Hegseth, Caine hearing on emergency Iran funding",
       "title": "5 takeaways from Hegseth, Caine hearing on emergency Iran funding",
@@ -1738,7 +4067,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=0ee6455f-a8bd-41b8-99e4-985a55e8e0c9&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-21T22:08:39.000Z",
-      "expiresAt": "2026-07-25T06:18:02.517Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -1853,6 +4182,25 @@
       ]
     },
     {
+      "id": "rss-66101992501b",
+      "hook": "Xzibit Explains How He’s Kept His Cat Alive for Over 20 Years:…",
+      "title": "Xzibit Explains How He’s Kept His Cat Alive for Over 20 Years: ‘She’s Seen It All’",
+      "lesson": "Thunder Cat goes back to the days when X was hosting Pimp My Ride .",
+      "source": "Billboard R&B/Hip-Hop",
+      "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/xzibit-cat-thundercat-20-years-1236300076/",
+      "publishedAt": "2026-07-21T21:56:13.000Z",
+      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.billboard.com/music/rb-hip-hop/xzibit-cat-thundercat-20-years-1236300076/"
+        }
+      ]
+    },
+    {
       "id": "rss-416a50142625",
       "hook": "Lil Wayne Reveals Top 2 Rappers, Favorite Alien &#038; Why He Hates…",
       "title": "Lil Wayne Reveals Top 2 Rappers, Favorite Alien &#038; Why He Hates Milk: &#8216;I Just Can&#8217;t Look at&#160;It&#8217;",
@@ -1861,6 +4209,25 @@
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/lil-wayne-favorite-rappers-aliens-hates-milk-podcast-1236300041/",
       "publishedAt": "2026-07-21T21:45:44.000Z",
       "expiresAt": "2026-08-01T06:18:01.847Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.billboard.com/music/rb-hip-hop/lil-wayne-favorite-rappers-aliens-hates-milk-podcast-1236300041/"
+        }
+      ]
+    },
+    {
+      "id": "rss-877c525a0b46",
+      "hook": "Lil Wayne Reveals Top 2 Rappers, Favorite Alien & Why He Hates Milk:…",
+      "title": "Lil Wayne Reveals Top 2 Rappers, Favorite Alien & Why He Hates Milk: ‘I Just Can’t Look at It’",
+      "lesson": "The rap legend sat down with the Friends Keep Secrets podcast for an interesting conversation.",
+      "source": "Billboard R&B/Hip-Hop",
+      "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/lil-wayne-favorite-rappers-aliens-hates-milk-podcast-1236300041/",
+      "publishedAt": "2026-07-21T21:45:44.000Z",
+      "expiresAt": "2026-08-01T17:09:45.851Z",
       "topicIds": [
         "current-events"
       ],
@@ -1899,11 +4266,11 @@
       "id": "rss-80265489435a",
       "hook": "Bond Set For Memphis Mom Accused Of Fatally Shooting Man Found Under…",
       "title": "Bond Set For Memphis Mom Accused Of Fatally Shooting Man Found Under Her Teen Daughter’s Bed",
-      "lesson": "Kendra Scott, 36, told police earlier this month that she &#8220;did what [she] had to do.&#8221; And what she did, allegedly, is fatally shoot a man she found under her 13-year-old daughter&#8217;s bed. The story has been sparking debates across social media platforms about who was right and who was wrong.",
+      "lesson": "Kendra Scott, 36, told police earlier this month that she “did what [she] had to do.” And what she did, allegedly, is fatally shoot a man she found under her 13-year-old daughter’s bed. The story has been sparking debates across social media platforms about who was right and who was wrong. Here’s what we know [...]",
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/memphis-mom-kendra-scott-fatally-shot-man-rodderius-morton-found-daughter-bed/",
       "publishedAt": "2026-07-21T21:22:41.000Z",
-      "expiresAt": "2026-08-01T06:18:02.093Z",
+      "expiresAt": "2026-08-01T17:09:46.488Z",
       "topicIds": [
         "current-events"
       ],
@@ -1922,7 +4289,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=45d8ae07-b7e9-4a04-8e00-c55c7943dbc3&mod=mw_rss_bulletins",
       "publishedAt": "2026-07-21T21:02:36.000Z",
-      "expiresAt": "2026-07-25T06:18:02.517Z",
+      "expiresAt": "2026-07-25T17:09:47.300Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -1974,6 +4341,25 @@
       ]
     },
     {
+      "id": "rss-69ef1a98e7d1",
+      "hook": "Key Glock Is Having Fun & He Doesn’t Care Who Knows: ‘People Don’t…",
+      "title": "Key Glock Is Having Fun & He Doesn’t Care Who Knows: ‘People Don’t See This Side of Me’",
+      "lesson": "Glizzock released his Project X album in June.",
+      "source": "Billboard R&B/Hip-Hop",
+      "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/key-glock-interview-project-x-1236284255/",
+      "publishedAt": "2026-07-21T20:51:51.000Z",
+      "expiresAt": "2026-08-01T17:09:45.851Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.billboard.com/music/rb-hip-hop/key-glock-interview-project-x-1236284255/"
+        }
+      ]
+    },
+    {
       "id": "rss-32df0b363430",
       "hook": "Goldman Sachs creates private markets platform as rich investors…",
       "title": "Goldman Sachs creates private markets platform as rich investors seek the next SpaceX and Stripe",
@@ -1981,7 +4367,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/goldman-sachs-private-markets-platform.html",
       "publishedAt": "2026-07-21T20:51:34.000Z",
-      "expiresAt": "2026-07-25T06:18:02.804Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -2001,7 +4387,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/hbottemiller/status/2079668417150517692",
       "publishedAt": "2026-07-21T20:42:00.000Z",
-      "expiresAt": "2026-08-01T06:18:01.006Z",
+      "expiresAt": "2026-08-01T17:09:44.984Z",
       "topicIds": [
         "current-events"
       ],
@@ -2064,7 +4450,7 @@
       "source": "Philip Lewis",
       "sourceUrl": "https://x.com/Phil_Lewis_/status/2079664753220227401",
       "publishedAt": "2026-07-21T20:28:00.000Z",
-      "expiresAt": "2026-08-01T06:18:01.006Z",
+      "expiresAt": "2026-08-01T17:09:44.984Z",
       "topicIds": [
         "current-events"
       ],
@@ -2084,6 +4470,25 @@
       "sourceUrl": "https://theshaderoom.com/update-georgia-judge-establishes-anthony-edward-monthly-child-support-payments-to-ayesha-howard-for-their-daughter/",
       "publishedAt": "2026-07-21T20:23:00.000Z",
       "expiresAt": "2026-08-01T06:18:02.093Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/update-georgia-judge-establishes-anthony-edward-monthly-child-support-payments-to-ayesha-howard-for-their-daughter/"
+        }
+      ]
+    },
+    {
+      "id": "rss-83c64e91c454",
+      "hook": "UPDATE: Georgia Judge Sets Anthony Edwards’ Monthly Child Support…",
+      "title": "UPDATE: Georgia Judge Sets Anthony Edwards’ Monthly Child Support Amount For Daughter With Ayesha Howard",
+      "lesson": "After more than a year tussling in court, Ayesha Howard and Anthony Edwards have reached the end point of their child support case. The ex-lovers share a daughter named Aubri Summer Edwards, who was born in October 2024. Howard is also the mother of Lil Baby’s eldest son, Jason, while Edwards reportedly has three",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/update-georgia-judge-establishes-anthony-edward-monthly-child-support-payments-to-ayesha-howard-for-their-daughter/",
+      "publishedAt": "2026-07-21T20:23:00.000Z",
+      "expiresAt": "2026-08-01T17:09:46.488Z",
       "topicIds": [
         "current-events"
       ],
@@ -2193,6 +4598,26 @@
       ]
     },
     {
+      "id": "rss-de6a7b1d3f8d",
+      "hook": "Bets against SpaceX grow to 32% of float as Elon Musk warns short…",
+      "title": "Bets against SpaceX grow to 32% of float as Elon Musk warns short sellers won't survive",
+      "lesson": "About 206 million SpaceX shares are now sold short, representing roughly 32% of the company's publicly tradable float, according to",
+      "source": "CNBC · Finance",
+      "sourceUrl": "https://www.cnbc.com/2026/07/21/bets-against-spacex-grow-to-32percent-of-float-as-elon-musk-warns-short-sellers-wont-survive.html",
+      "publishedAt": "2026-07-21T20:01:39.000Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cnbc.com/2026/07/21/bets-against-spacex-grow-to-32percent-of-float-as-elon-musk-warns-short-sellers-wont-survive.html"
+        }
+      ]
+    },
+    {
       "id": "rss-74437058b938",
       "hook": "Panthers sending 11 football teams of Charlotte-area students to NFL…",
       "title": "Panthers sending 11 football teams of Charlotte-area students to NFL Flag Championships",
@@ -2200,7 +4625,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.qcnews.com/high-school-sports/panthers-sending-11-teams-of-charlotte-area-studets-to-nfl-flag-football-championships/",
       "publishedAt": "2026-07-21T19:59:16.000Z",
-      "expiresAt": "2026-08-01T06:18:02.311Z",
+      "expiresAt": "2026-08-01T17:09:47.103Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -2414,6 +4839,25 @@
       ]
     },
     {
+      "id": "rss-b53a0f526e22",
+      "hook": "Celeste Rivas Hernandez Was “Unrecognizable,” Says Cop Who Saw…",
+      "title": "Celeste Rivas Hernandez Was “Unrecognizable,” Says Cop Who Saw Remains at D4vd Hearing",
+      "lesson": "Prosecutors began to lay out the evidence against the 21-year-old singer, who's accused of murdering and dismembering the 14-year-old",
+      "source": "Vibe",
+      "sourceUrl": "https://www.vibe.com/news/national/d4vd-hearing-celeste-rivas-hernandez-unrecognizable-remains-1235180578/",
+      "publishedAt": "2026-07-21T19:30:00.000Z",
+      "expiresAt": "2026-08-01T17:09:46.368Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.vibe.com/news/national/d4vd-hearing-celeste-rivas-hernandez-unrecognizable-remains-1235180578/"
+        }
+      ]
+    },
+    {
       "id": "rss-bbac3f6bd3a8",
       "hook": "Oop! Nancy Grace Claps Back At Social Media Critics Calling Her Out…",
       "title": "Oop! Nancy Grace Claps Back At Social Media Critics Calling Her Out For Digging Into Nolan Wells&#8217; Case (UPDATE)",
@@ -2481,6 +4925,25 @@
       "sourceUrl": "https://www.vibe.com/news/entertainment/offset-community-service-weed-dispensary-guard-assault-1235180568/",
       "publishedAt": "2026-07-21T18:53:45.000Z",
       "expiresAt": "2026-08-01T06:18:02.015Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.vibe.com/news/entertainment/offset-community-service-weed-dispensary-guard-assault-1235180568/"
+        }
+      ]
+    },
+    {
+      "id": "rss-e540c77d20ab",
+      "hook": "Offset Gets 50 Hours of Community Service for ‘Regretful’ Assault of…",
+      "title": "Offset Gets 50 Hours of Community Service for ‘Regretful’ Assault of Weed Dispensary Guard",
+      "lesson": "The Migos rapper must also complete an anger management program, refrain from possessing firearms, and stay 100 yards away from the MedMen",
+      "source": "Vibe",
+      "sourceUrl": "https://www.vibe.com/news/entertainment/offset-community-service-weed-dispensary-guard-assault-1235180568/",
+      "publishedAt": "2026-07-21T18:53:45.000Z",
+      "expiresAt": "2026-08-01T17:09:46.368Z",
       "topicIds": [
         "current-events"
       ],
@@ -2561,7 +5024,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-rb-values",
       "publishedAt": "2026-07-21T17:54:40.000Z",
-      "expiresAt": "2026-08-01T06:18:02.311Z",
+      "expiresAt": "2026-08-01T17:09:47.103Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -2906,6 +5369,26 @@
       ]
     },
     {
+      "id": "rss-b2e1a1ad5c86",
+      "hook": "Ann Widdecombe was hit multiple times with a hammer, court hears",
+      "title": "Ann Widdecombe was hit multiple times with a hammer, court hears",
+      "lesson": "Former MP Ann Widdecombe was struck 21 times on the head with a hammer as she ate lunch, prosecutors told a London court on",
+      "source": "Christian Today",
+      "sourceUrl": "https://www.christiantoday.com/news/ann-widdecombe-was-hit-multiple-times-with-a-hammer-court-hears",
+      "publishedAt": "2026-07-21T16:10:00.000Z",
+      "expiresAt": "2026-08-01T17:09:44.528Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.christiantoday.com/news/ann-widdecombe-was-hit-multiple-times-with-a-hammer-court-hears"
+        }
+      ]
+    },
+    {
       "id": "rss-37d372de64ee",
       "hook": "Entergy highlights women leading the future of the utility industry",
       "title": "Entergy highlights women leading the future of the utility industry",
@@ -2913,7 +5396,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/business/entergy-highlights-women-leading-the-future-of-the-utility-industry/",
       "publishedAt": "2026-07-21T16:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:01.770Z",
+      "expiresAt": "2026-08-01T17:09:45.744Z",
       "topicIds": [
         "current-events"
       ],
@@ -3112,7 +5595,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/iran-war-economy-markets-trump.html",
       "publishedAt": "2026-07-21T14:37:08.000Z",
-      "expiresAt": "2026-07-25T06:18:02.804Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -3250,7 +5733,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/21/stocks-making-the-biggest-moves-premarket-gm-mmm-nvs-nbis.html",
       "publishedAt": "2026-07-21T13:09:44.000Z",
-      "expiresAt": "2026-07-25T06:18:02.804Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -3270,7 +5753,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/5-lessons-from-20-years-of-climate-surveys-political-party-matters-but-it-doesnt-explain-everything-287056",
       "publishedAt": "2026-07-21T12:46:04.000Z",
-      "expiresAt": "2026-07-25T06:17:59.665Z",
+      "expiresAt": "2026-07-25T17:09:43.500Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3514,7 +5997,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/health-and-wellness/verses-i-return-to-when-my-body-feels-like-the-enemy.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:00.866Z",
+      "expiresAt": "2026-08-01T17:09:44.829Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3534,7 +6017,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/faith/spiritual-life/why-daily-repentance-is-essential-to-thrive-in-our-faith.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:00.866Z",
+      "expiresAt": "2026-08-01T17:09:44.829Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3554,7 +6037,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/family/parenting/10-ways-to-thrive-during-the-empty-nest-season.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:00.866Z",
+      "expiresAt": "2026-08-01T17:09:44.829Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3647,6 +6130,26 @@
       ]
     },
     {
+      "id": "rss-51d36a1fb247",
+      "hook": "Jamie Dimon says markets underestimate risks and he wouldn't buy…",
+      "title": "Jamie Dimon says markets underestimate risks and he wouldn't buy stocks or Treasurys at current prices",
+      "lesson": "Comments from JPMorgan Chase CEO Jamie Dimon contrast with investors' recent willingness to look past wars, tariffs and other",
+      "source": "CNBC · Finance",
+      "sourceUrl": "https://www.cnbc.com/2026/07/21/jpmorgan-chase-ceo-jamie-dimon-market-risk.html",
+      "publishedAt": "2026-07-21T10:24:07.000Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
+      "topicIds": [
+        "finance",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.cnbc.com/2026/07/21/jpmorgan-chase-ceo-jamie-dimon-market-risk.html"
+        }
+      ]
+    },
+    {
       "id": "rss-f3c0a82208e8",
       "hook": "How to Read the Bible Like the Early Church Did",
       "title": "How to Read the Bible Like the Early Church Did",
@@ -3654,7 +6157,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/how-to-read-bible-like-early-church-fourfold-schreiner/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:00.761Z",
+      "expiresAt": "2026-08-01T17:09:44.666Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3674,7 +6177,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/iran-shutters-landmark-church/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:00.761Z",
+      "expiresAt": "2026-08-01T17:09:44.666Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3694,7 +6197,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/the-odyssey-christopher-nolan/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:00.761Z",
+      "expiresAt": "2026-08-01T17:09:44.666Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3882,7 +6385,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://projects.propublica.org/blueberries-farmworker-mistreatment/",
       "publishedAt": "2026-07-21T09:00:00.000Z",
-      "expiresAt": "2026-07-25T06:17:59.864Z",
+      "expiresAt": "2026-07-25T17:09:43.980Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3994,6 +6497,25 @@
       ]
     },
     {
+      "id": "rss-d935bc9d5742",
+      "hook": "“Never Stop Saying His Name”: Nolan Wells’ Grieving Parents Speak At…",
+      "title": "“Never Stop Saying His Name”: Nolan Wells’ Grieving Parents Speak At His Funeral",
+      "lesson": "Christine and Elmore Wonsley honor their son at a funeral officiated by Rev. Al Sharpton in Ocean Springs, Mississippi, as investigations into his death",
+      "source": "Vibe",
+      "sourceUrl": "https://www.vibe.com/news/national/nolan-wells-funeral-parents-mississippi-1235180472/",
+      "publishedAt": "2026-07-20T20:55:00.000Z",
+      "expiresAt": "2026-08-01T17:09:46.368Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.vibe.com/news/national/nolan-wells-funeral-parents-mississippi-1235180472/"
+        }
+      ]
+    },
+    {
       "id": "rss-53942c8f315c",
       "hook": "Declassified intelligence is not the same as proof",
       "title": "Declassified intelligence is not the same as proof",
@@ -4001,7 +6523,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/declassified-intelligence-is-not-the-same-as-proof-287482",
       "publishedAt": "2026-07-20T19:06:52.000Z",
-      "expiresAt": "2026-07-25T06:17:59.665Z",
+      "expiresAt": "2026-07-25T17:09:43.500Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4021,7 +6543,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/20/capital-one-bet-big-on-discover-now-it-must-prove-the-gamble-was-worth-it-.html",
       "publishedAt": "2026-07-20T18:14:23.000Z",
-      "expiresAt": "2026-07-25T06:18:02.804Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -4041,7 +6563,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://highschoolfootballamerica.com/trinity-leads-the-2026-high-school-football-america-kentucky-top-10-powered-by-nfl-play-football/",
       "publishedAt": "2026-07-20T18:00:29.000Z",
-      "expiresAt": "2026-08-01T06:18:02.311Z",
+      "expiresAt": "2026-08-01T17:09:47.103Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -4054,6 +6576,26 @@
       ]
     },
     {
+      "id": "rss-d770ee8435c6",
+      "hook": "What Motivates Black Women Voters?",
+      "title": "What Motivates Black Women Voters?",
+      "lesson": "In a new study, Boston University political scientist Christine Slaughter explores how they viewed Kamala Harris’ 2024 presidential",
+      "source": "Black Political News",
+      "sourceUrl": "https://www.bu.edu/articles/2026/what-motivates-black-women-voters/",
+      "publishedAt": "2026-07-20T17:00:00.000Z",
+      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bu.edu/articles/2026/what-motivates-black-women-voters/"
+        }
+      ]
+    },
+    {
       "id": "rss-4f1eecd86afe",
       "hook": "2026 NFL fantasy football: Top seven QB values",
       "title": "2026 NFL fantasy football: Top seven QB values",
@@ -4061,7 +6603,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-qb-values",
       "publishedAt": "2026-07-20T16:51:38.000Z",
-      "expiresAt": "2026-08-01T06:18:02.311Z",
+      "expiresAt": "2026-08-01T17:09:47.103Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -4081,7 +6623,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/saquon-barkley-police-seek-suspects-break-in-home-pennsylvania",
       "publishedAt": "2026-07-20T16:39:13.000Z",
-      "expiresAt": "2026-08-01T06:18:02.311Z",
+      "expiresAt": "2026-08-01T17:09:47.103Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -4120,7 +6662,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/nfl-kickoff-festival-is-coming-to-melbourne",
       "publishedAt": "2026-07-20T16:15:15.000Z",
-      "expiresAt": "2026-08-01T06:18:02.311Z",
+      "expiresAt": "2026-08-01T17:09:47.103Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -4140,7 +6682,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/07/20/stocks-making-the-biggest-moves-midday-amd-achr-spcx-iren.html",
       "publishedAt": "2026-07-20T15:52:30.000Z",
-      "expiresAt": "2026-07-25T06:18:02.804Z",
+      "expiresAt": "2026-07-25T17:09:47.532Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -4172,6 +6714,25 @@
       ]
     },
     {
+      "id": "rss-7b3aedf6800f",
+      "hook": "Ice-T’s New Solo Album Is On the Way. Here’s Where You Won’t Find It.",
+      "title": "Ice-T’s New Solo Album Is On the Way. Here’s Where You Won’t Find It.",
+      "lesson": "The hip-hop legend's 'Criminal Migraine' will be his first solo project in 20 years, but don't expect to hear it the conventional",
+      "source": "Vibe",
+      "sourceUrl": "https://www.vibe.com/features/editorial/ice-t-criminal-migraine-album-on-the-way-1235180439/",
+      "publishedAt": "2026-07-20T14:15:00.000Z",
+      "expiresAt": "2026-08-01T17:09:46.368Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.vibe.com/features/editorial/ice-t-criminal-migraine-album-on-the-way-1235180439/"
+        }
+      ]
+    },
+    {
       "id": "rss-eb9ac724a5e4",
       "hook": "Your guide to the upcoming 2026 NFL FLAG Championships in Westfield",
       "title": "Your guide to the upcoming 2026 NFL FLAG Championships in Westfield",
@@ -4179,7 +6740,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.colts.com/news/nfl-flag-football-championship-2026-girls-boys-high-school-grand-park-tickets-schedule-mexico-brazil-spain-canada-training-camp",
       "publishedAt": "2026-07-20T14:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:02.311Z",
+      "expiresAt": "2026-08-01T17:09:47.103Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -4239,7 +6800,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.cbssports.com/fantasy/football/news/fantasy-football-rankings-2026-sleepers-breakouts-busts-from-computer-that-predicted-daniel-jones-season/",
       "publishedAt": "2026-07-20T12:30:41.000Z",
-      "expiresAt": "2026-08-01T06:18:02.311Z",
+      "expiresAt": "2026-08-01T17:09:47.103Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -4259,7 +6820,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/what-allegheny-countys-new-court-ordered-mental-health-treatment-program-can-and-cant-do-280112",
       "publishedAt": "2026-07-20T12:27:44.000Z",
-      "expiresAt": "2026-07-25T06:17:59.665Z",
+      "expiresAt": "2026-07-25T17:09:43.500Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4279,7 +6840,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/most-americans-support-conservation-heres-how-the-great-lakes-restoration-initiative-got-politicians-from-both-parties-on-board-too-284887",
       "publishedAt": "2026-07-20T12:25:27.000Z",
-      "expiresAt": "2026-07-25T06:17:59.665Z",
+      "expiresAt": "2026-07-25T17:09:43.500Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4299,7 +6860,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/featuring-trump-on-us-coins-and-bills-would-put-america-in-rare-company-285125",
       "publishedAt": "2026-07-20T12:25:09.000Z",
-      "expiresAt": "2026-07-25T06:17:59.665Z",
+      "expiresAt": "2026-07-25T17:09:43.500Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4319,7 +6880,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/how-americas-newspapers-lost-their-voice-285126",
       "publishedAt": "2026-07-20T12:24:33.000Z",
-      "expiresAt": "2026-07-25T06:17:59.665Z",
+      "expiresAt": "2026-07-25T17:09:43.500Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4418,7 +6979,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/old-apostolic-lutheran-church-child-sexual-assault-cycle-abuse",
       "publishedAt": "2026-07-20T10:00:00.000Z",
-      "expiresAt": "2026-07-25T06:17:59.864Z",
+      "expiresAt": "2026-07-25T17:09:43.980Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4458,7 +7019,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/adak-island-alaska-internet-subsidy-fcc",
       "publishedAt": "2026-07-20T09:00:00.000Z",
-      "expiresAt": "2026-07-25T06:17:59.864Z",
+      "expiresAt": "2026-07-25T17:09:43.980Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4558,7 +7119,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.nytimes.com/2026/07/19/nyregion/black-latino-leaders-dsa-nyc.html",
       "publishedAt": "2026-07-19T07:00:08.000Z",
-      "expiresAt": "2026-07-25T06:18:00.303Z",
+      "expiresAt": "2026-07-25T17:09:44.262Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4578,7 +7139,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://blackpressusa.com/commentary-black-alliance-for-just-immigration-supports-black-voting-rights-2/",
       "publishedAt": "2026-07-18T23:41:27.000Z",
-      "expiresAt": "2026-07-25T06:18:00.303Z",
+      "expiresAt": "2026-07-25T17:09:44.262Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4598,7 +7159,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/islamic-private-schools-texas-vouchers-sam-westrop",
       "publishedAt": "2026-07-18T03:10:00.000Z",
-      "expiresAt": "2026-07-25T06:17:59.864Z",
+      "expiresAt": "2026-07-25T17:09:43.980Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4618,7 +7179,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.yahoo.com/news/politics/articles/black-political-caucus-charlotte-mecklenburg-234656649.html",
       "publishedAt": "2026-07-17T23:46:56.000Z",
-      "expiresAt": "2026-07-25T06:18:00.303Z",
+      "expiresAt": "2026-07-25T17:09:44.262Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4638,7 +7199,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/human-rights-aid-right-wing-causes",
       "publishedAt": "2026-07-17T21:45:00.000Z",
-      "expiresAt": "2026-07-25T06:17:59.864Z",
+      "expiresAt": "2026-07-25T17:09:43.980Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4798,7 +7359,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.facebook.com/reel/1590244832705319/",
       "publishedAt": "2026-07-16T02:30:02.000Z",
-      "expiresAt": "2026-08-01T06:18:01.073Z",
+      "expiresAt": "2026-08-01T17:09:45.071Z",
       "topicIds": [
         "current-events"
       ],
@@ -4817,7 +7378,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.politico.com/news/2026/07/10/black-leaders-democratic-party-redistricting-00991564",
       "publishedAt": "2026-07-10T09:00:00.000Z",
-      "expiresAt": "2026-07-25T06:18:00.303Z",
+      "expiresAt": "2026-07-25T17:09:44.262Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4830,6 +7391,45 @@
       ]
     },
     {
+      "id": "rss-f662f5c34489",
+      "hook": "Leftist California group pushes to add 'Black English' to schools'…",
+      "title": "Leftist California group pushes to add 'Black English' to schools' multilingual education program",
+      "lesson": "BlackECE wants AAVE added to a California dual language learners program, arguing Black English is a legitimate language deserving school",
+      "source": "Black Political News",
+      "sourceUrl": "https://www.foxnews.com/politics/leftist-california-group-pushes-add-black-english-schools-multilingual-education-program",
+      "publishedAt": "2026-07-08T15:24:47.000Z",
+      "expiresAt": "2026-07-25T17:09:44.262Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.foxnews.com/politics/leftist-california-group-pushes-add-black-english-schools-multilingual-education-program"
+        }
+      ]
+    },
+    {
+      "id": "rss-726dd818d7d2",
+      "hook": "Assassin's Creed: Why pop culture is hooked on pirates",
+      "title": "Assassin's Creed: Why pop culture is hooked on pirates",
+      "lesson": "Pirates have captured our imagination for centuries. With \"Assassin's Creed Black Flag Resynced,\" gamers can now head off on another pirate adventure. How has our concept of pirates evolved with pop",
+      "source": "Black Pop Culture",
+      "sourceUrl": "https://www.dw.com/en/assassins-creed-why-pop-culture-is-hooked-on-pirates/a-77871133",
+      "publishedAt": "2026-07-08T10:34:32.000Z",
+      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.dw.com/en/assassins-creed-why-pop-culture-is-hooked-on-pirates/a-77871133"
+        }
+      ]
+    },
+    {
       "id": "rss-eb492659f43f",
       "hook": "How Lizzo Became One of Pop Culture’s Great Flops",
       "title": "How Lizzo Became One of Pop Culture’s Great Flops",
@@ -4837,7 +7437,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.theatlantic.com/culture/2026/07/music-flop-era/687785/",
       "publishedAt": "2026-07-05T12:00:00.000Z",
-      "expiresAt": "2026-08-01T06:18:01.073Z",
+      "expiresAt": "2026-08-01T17:09:45.071Z",
       "topicIds": [
         "current-events"
       ],
@@ -4856,7 +7456,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/kayla-nicole-advice-black-men",
       "publishedAt": "2026-06-30T18:35:11.000Z",
-      "expiresAt": "2026-08-01T06:18:01.073Z",
+      "expiresAt": "2026-08-01T17:09:45.071Z",
       "topicIds": [
         "current-events"
       ],
@@ -4894,7 +7494,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://defendernetwork.com/news/national/what-ny-democratic-socialist-wins-mean-for-black-political-power/",
       "publishedAt": "2026-06-29T05:05:08.000Z",
-      "expiresAt": "2026-07-25T06:18:00.303Z",
+      "expiresAt": "2026-07-25T17:09:44.262Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4914,7 +7514,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.essence.com/news/politics/black-people-democratic-party/",
       "publishedAt": "2026-06-27T15:14:41.000Z",
-      "expiresAt": "2026-07-25T06:18:00.303Z",
+      "expiresAt": "2026-07-25T17:09:44.262Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5184,6 +7784,25 @@
       ]
     },
     {
+      "id": "rss-2dc4095fafc2",
+      "hook": "Peter Rosenberg and Jason Lee Get Into Heated Exchange Over 'Culture…",
+      "title": "Peter Rosenberg and Jason Lee Get Into Heated Exchange Over 'Culture Vulture' Claim",
+      "lesson": "Things got intense on 'The Ebro Laura Rosenberg Show' over Jason Lee claiming Peter Rosenberg is a \"culture vulture.\"",
+      "source": "Black Pop Culture",
+      "sourceUrl": "https://www.complex.com/pop-culture/a/jose-martinez/peter-rosenberg-jason-lee-heated-exchange-culture-vulture-claim",
+      "publishedAt": "2026-05-15T15:17:36.000Z",
+      "expiresAt": "2026-08-01T17:09:45.071Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.complex.com/pop-culture/a/jose-martinez/peter-rosenberg-jason-lee-heated-exchange-culture-vulture-claim"
+        }
+      ]
+    },
+    {
       "id": "rss-4b6440946cc1",
       "hook": "22 Famous Black Cats (With Pictures and Videos)",
       "title": "22 Famous Black Cats (With Pictures and Videos)",
@@ -5191,7 +7810,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.catster.com/lifestyle/famous-black-cats/",
       "publishedAt": "2026-04-28T09:18:41.000Z",
-      "expiresAt": "2026-08-01T06:18:01.073Z",
+      "expiresAt": "2026-08-01T17:09:45.071Z",
       "topicIds": [
         "current-events"
       ],
@@ -5210,7 +7829,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://hunewsservice.com/variety/entertainment/the-k-pop-industry-keeps-copying-black-culture-while-ignoring-it/",
       "publishedAt": "2026-04-27T22:13:42.000Z",
-      "expiresAt": "2026-08-01T06:18:01.073Z",
+      "expiresAt": "2026-08-01T17:09:45.071Z",
       "topicIds": [
         "current-events"
       ],
@@ -5229,7 +7848,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
       "publishedAt": "2025-07-03T12:36:00.000Z",
-      "expiresAt": "2026-07-25T06:18:02.497Z",
+      "expiresAt": "2026-07-25T17:09:47.293Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -5249,7 +7868,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-13T13:33:00.000Z",
-      "expiresAt": "2026-07-25T06:18:02.497Z",
+      "expiresAt": "2026-07-25T17:09:47.293Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -5269,7 +7888,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-07T20:26:00.000Z",
-      "expiresAt": "2026-07-25T06:18:02.497Z",
+      "expiresAt": "2026-07-25T17:09:47.293Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -5289,7 +7908,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-06T13:34:00.000Z",
-      "expiresAt": "2026-07-25T06:18:02.497Z",
+      "expiresAt": "2026-07-25T17:09:47.293Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -5309,7 +7928,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-03T13:46:00.000Z",
-      "expiresAt": "2026-07-25T06:18:02.497Z",
+      "expiresAt": "2026-07-25T17:09:47.293Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -5329,7 +7948,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
       "publishedAt": "2024-12-28T00:32:00.000Z",
-      "expiresAt": "2026-07-25T06:18:02.497Z",
+      "expiresAt": "2026-07-25T17:09:47.293Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -5349,7 +7968,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
       "publishedAt": "2024-12-03T14:05:00.000Z",
-      "expiresAt": "2026-07-25T06:18:02.497Z",
+      "expiresAt": "2026-07-25T17:09:47.293Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -5369,7 +7988,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
       "publishedAt": "2024-11-19T08:55:00.000Z",
-      "expiresAt": "2026-07-25T06:18:02.497Z",
+      "expiresAt": "2026-07-25T17:09:47.293Z",
       "topicIds": [
         "finance",
         "current-events"
