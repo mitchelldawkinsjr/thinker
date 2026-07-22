@@ -1,14 +1,17 @@
 import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
-import { getIdeasByTopic } from '../data/ideas'
-import { useBookIdeas } from '../hooks/useBookIdeas'
 import type { Topic } from '../data/types'
 import './TopicChip.css'
 
-export function TopicChip({ topic, large }: { topic: Topic; large?: boolean }) {
-  const { items: bookIdeas } = useBookIdeas()
-  const count = getIdeasByTopic(topic.id, bookIdeas).length
-
+export function TopicChip({
+  topic,
+  large,
+  ideaCount,
+}: {
+  topic: Topic
+  large?: boolean
+  ideaCount: number
+}) {
   return (
     <Link
       to={`/topics/${topic.id}`}
@@ -22,7 +25,7 @@ export function TopicChip({ topic, large }: { topic: Topic; large?: boolean }) {
     >
       <span className="topic-chip-name">#{topic.name}</span>
       {large && <span className="topic-chip-tag">{topic.tagline}</span>}
-      <span className="topic-chip-count">{count} ideas</span>
+      <span className="topic-chip-count">{ideaCount} ideas</span>
     </Link>
   )
 }

@@ -49,19 +49,6 @@ function BookCard({
   )
 }
 
-function SearchBookCard({ book }: { book: GutenbergBook }) {
-  const meta = curatedGutenbergMeta[book.id]
-  return (
-    <BookCard
-      id={book.id}
-      title={book.title}
-      author={book.authors[0] ?? meta?.author ?? 'Unknown'}
-      why={meta?.why}
-      coverUrl={book.coverUrl}
-    />
-  )
-}
-
 export function Books() {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<GutenbergBook[] | null>(null)
@@ -125,7 +112,14 @@ export function Books() {
           ) : (
             <div className="books-grid">
               {results.map((book) => (
-                <SearchBookCard key={book.id} book={book} />
+                <BookCard
+                  key={book.id}
+                  id={book.id}
+                  title={book.title}
+                  author={book.authors[0] ?? curatedGutenbergMeta[book.id]?.author ?? 'Unknown'}
+                  why={curatedGutenbergMeta[book.id]?.why}
+                  coverUrl={book.coverUrl}
+                />
               ))}
             </div>
           )}

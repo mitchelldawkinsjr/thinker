@@ -175,38 +175,6 @@ export function BookFeedCard({
   )
 }
 
-export function AskFeedCard({
-  prompt,
-  children,
-  onNext,
-  onPrev,
-  onHide,
-  index,
-  total,
-}: {
-  prompt: string
-  children: ReactNode
-} & NavProps) {
-  return (
-    <div className="ask-feed-wrap">
-      <FeedCardShell
-        accent="#ff4d3a"
-        surface="#1a2332"
-        kind="Ask · llm-runtime"
-        title="Go deeper"
-        index={index}
-        total={total}
-        onPrev={onPrev}
-        onHide={onHide}
-        onNext={onNext}
-      >
-        <p className="feed-card-body">{prompt}</p>
-      </FeedCardShell>
-      <div className="ask-feed-panel">{children}</div>
-    </div>
-  )
-}
-
 export function NewsFeedCard({
   news,
   onNext,

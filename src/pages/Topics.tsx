@@ -1,8 +1,12 @@
 import { topics } from '../data/topics'
+import { getIdeasByTopic } from '../data/ideas'
 import { TopicChip } from '../components/TopicChip'
+import { useBookIdeas } from '../hooks/useBookIdeas'
 import './Topics.css'
 
 export function Topics() {
+  const { items: bookIdeas } = useBookIdeas()
+
   return (
     <div className="topics-page">
       <header className="topics-head">
@@ -14,7 +18,12 @@ export function Topics() {
       </header>
       <div className="topics-grid">
         {topics.map((t) => (
-          <TopicChip key={t.id} topic={t} large />
+          <TopicChip
+            key={t.id}
+            topic={t}
+            large
+            ideaCount={getIdeasByTopic(t.id, bookIdeas).length}
+          />
         ))}
       </div>
     </div>

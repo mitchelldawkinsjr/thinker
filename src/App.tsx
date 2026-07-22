@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { KeptProvider } from './hooks/useKept'
 import { Nav } from './components/Nav'
 import { Home } from './pages/Home'
@@ -28,7 +28,6 @@ export default function App() {
               <Route path="/resources" element={<Resources />} />
               <Route path="/books" element={<Books />} />
               <Route path="/kept" element={<Kept />} />
-              <Route path="/library" element={<Navigate to="/kept" replace />} />
             </Routes>
           </main>
           <ReloadPrompt />

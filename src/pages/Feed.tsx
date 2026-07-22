@@ -8,9 +8,7 @@ import { useScriptures } from '../hooks/useScriptures'
 import { getFeedCursor, setFeedCursor } from '../lib/daySession'
 import { hideFromPool, markSeen } from '../lib/feedRotation'
 import { IdeaCard } from '../components/IdeaCard'
-import { AskPanel } from '../components/AskPanel'
 import {
-  AskFeedCard,
   BookFeedCard,
   NewsFeedCard,
   ResourceFeedCard,
@@ -105,7 +103,7 @@ export function Feed() {
   }, [next, prev])
 
   const counts = useMemo(() => {
-    const c = { idea: 0, resource: 0, book: 0, ask: 0, news: 0, scripture: 0 }
+    const c = { idea: 0, resource: 0, book: 0, news: 0, scripture: 0 }
     for (const it of items) c[it.kind]++
     return c
   }, [items])
@@ -128,7 +126,6 @@ export function Feed() {
           <span>{counts.scripture} scripture</span>
           <span>{counts.resource} sites</span>
           <span>{counts.book} books</span>
-          <span>{counts.ask} asks</span>
           <button type="button" className="feed-reshuffle" onClick={reshuffleFeed}>
             Reshuffle
           </button>
@@ -188,19 +185,6 @@ export function Feed() {
             url={item.url}
             {...nav}
           />
-        )}
-
-        {item?.kind === 'ask' && (
-          <AskFeedCard key={item.id} prompt={item.prompt} {...nav}>
-            <AskPanel
-              compact
-              initialQuestion={item.prompt}
-              ideaTitle={item.ideaTitle}
-              ideaBody={item.ideaBody}
-              topicId={item.topicId}
-              topicName={item.topicId ? getTopic(item.topicId)?.name : undefined}
-            />
-          </AskFeedCard>
         )}
       </div>
 

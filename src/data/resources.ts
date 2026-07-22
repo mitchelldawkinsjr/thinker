@@ -18,22 +18,11 @@ export interface LearningResource {
   category: ResourceCategory
   /** Optional Thinker topic affinity */
   topicHints?: string[]
-  /**
-   * How this resource appears in the home feed.
-   * `news` = skip free-site cards; content comes from RSS ingest instead.
-   */
-  feedAs?: 'resource' | 'news'
 }
 
-/** RSS ingest sources (incl. rss.app topic feeds) — not free-site destinations. */
-export function isNewsFeedSource(r: LearningResource): boolean {
-  if (r.feedAs === 'news') return true
-  return /rss\.app\/feeds/i.test(r.url)
-}
-
-/** Sites people can open — excludes feed JSON / ingest-only rows. */
+/** Sites people can open — excludes raw feed JSON endpoints. */
 export function browseableResources(): LearningResource[] {
-  return learningResources.filter((r) => !isNewsFeedSource(r))
+  return learningResources.filter((r) => !/rss\.app\/feeds/i.test(r.url))
 }
 
 export const resourceCategories: { id: ResourceCategory | 'all'; label: string }[] = [
@@ -478,74 +467,6 @@ export const learningResources: LearningResource[] = [
     blurb: 'Nonprofit investigations into tech’s impact on privacy and fairness.',
     category: 'news',
     topicHints: ['current-events', 'ai-agents'],
-  },
-  {
-    id: 'philip-lewis',
-    name: 'Philip Lewis',
-    url: 'https://rss.app/feeds/v1.1/DMmESHzgp7DfJBh9.json',
-    blurb:
-      'Chronological X posts on culture, sports, and Black community news — ingested into Thinker news cards.',
-    category: 'news',
-    topicHints: ['current-events'],
-    feedAs: 'news',
-  },
-  {
-    id: 'black-political-news',
-    name: 'Black Political News',
-    url: 'https://rss.app/feeds/v1.1/tXmxv8nuAzRRkvTG.json',
-    blurb:
-      'Headlines on Black politics and civic power — ingested into Thinker news cards.',
-    category: 'news',
-    topicHints: ['politics', 'current-events'],
-    feedAs: 'news',
-  },
-  {
-    id: 'black-pop-culture',
-    name: 'Black Pop Culture',
-    url: 'https://rss.app/feeds/v1.1/twaYgziGNNhuhsNL.json',
-    blurb:
-      'Black pop culture and entertainment headlines — ingested into Thinker news cards.',
-    category: 'news',
-    topicHints: ['current-events'],
-    feedAs: 'news',
-  },
-  {
-    id: 'congress-news',
-    name: 'Congress',
-    url: 'https://rss.app/feeds/v1.1/tcKJj9qeKSubFqWa.json',
-    blurb:
-      'Capitol Hill and congressional headlines — ingested into Thinker news cards.',
-    category: 'news',
-    topicHints: ['politics', 'current-events'],
-    feedAs: 'news',
-  },
-  {
-    id: 'war-news',
-    name: 'War',
-    url: 'https://rss.app/feeds/v1.1/tPxxxGsDpoflsm8c.json',
-    blurb:
-      'Conflict and defense headlines — ingested into Thinker news cards.',
-    category: 'news',
-    topicHints: ['politics', 'current-events'],
-    feedAs: 'news',
-  },
-  {
-    id: 'nba-basketball-news',
-    name: 'NBA & Basketball News',
-    url: 'https://rss.app/feeds/v1.1/tCcjmK096Kle1DEN.json',
-    blurb: 'NBA and basketball headlines — ingested into Thinker news cards.',
-    category: 'news',
-    topicHints: ['nba-analytics', 'sports-biz'],
-    feedAs: 'news',
-  },
-  {
-    id: 'nfl-football-news',
-    name: 'NFL & Football News',
-    url: 'https://rss.app/feeds/v1.1/tAQFDM5ScLlCIIWp.json',
-    blurb: 'NFL and football headlines — ingested into Thinker news cards.',
-    category: 'news',
-    topicHints: ['football-film', 'sports-biz'],
-    feedAs: 'news',
   },
   {
     id: 'christian-today',

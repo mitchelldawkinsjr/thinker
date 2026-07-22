@@ -1,8 +1,3 @@
-import { browseableResources } from '../data/resources'
-import { topics } from '../data/topics'
-import { curatedGutenbergMeta, gutenbergUrl } from '../data/gutenberg'
-import { buildSlimCatalog } from './exploreFast'
-
 export type ExploreLink = {
   title: string
   url: string
@@ -45,32 +40,10 @@ export function pickFastModel(available: string[]): string {
   return available[0] || preferred
 }
 
-/** @deprecated use buildSlimCatalog — kept for callers */
-export function buildCatalogBlock(topicId?: string): string {
-  return buildSlimCatalog(topicId)
-}
-
-/** Full catalog — only for offline tooling / debugging */
-export function buildFullCatalogBlock(): string {
-  const topicLines = topics.map((t) => `- ${t.id}: #${t.name} — ${t.tagline}`).join('\n')
-  const resourceLines = browseableResources()
-    .map((r) => `- ${r.name} | ${r.url} | ${r.category} | ${r.blurb}`)
-    .join('\n')
-  const bookLines = Object.entries(curatedGutenbergMeta)
-    .map(([id, meta]) => `- ${meta.title} (${meta.author}) | ${gutenbergUrl(Number(id))} | ${meta.why}`)
-    .join('\n')
-  return `THINKER TOPICS:\n${topicLines}\n\nFREE SITES:\n${resourceLines}\n\nGUTENBERG PRIMARIES:\n${bookLines}`
-}
-
 type OllamaChatResponse = {
   message?: { content?: string }
   model?: string
   error?: string
-  total_duration?: number
-  eval_count?: number
-  eval_duration?: number
-  prompt_eval_count?: number
-  prompt_eval_duration?: number
 }
 
 function parseExploreJson(content: string): {
@@ -79,17 +52,7 @@ function parseExploreJson(content: string): {
   links?: ExploreLink[]
   topics?: string[]
 } {
-  const trimmed = content.trim()
-  try {
-    return JSON.parse(trimmed)
-  } catch {
-    const start = trimmed.indexOf('{')
-    const end = trimmed.lastIndexOf('}')
-    if (start >= 0 && end > start) {
-      return JSON.parse(trimmed.slice(start, end + 1))
-    }
-    throw new Error('Model did not return JSON')
-  }
+  return JSON.parse(content.trim())
 }
 
 export async function listOllamaModels(): Promise<string[]> {

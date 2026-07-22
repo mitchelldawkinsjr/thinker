@@ -7,7 +7,6 @@ import {
 } from 'react'
 
 const STORAGE_KEY = 'thinker-kept'
-const LEGACY_KEY = 'thinker-stash'
 
 type KeptContextValue = {
   kept: Set<string>
@@ -19,7 +18,7 @@ const KeptContext = createContext<KeptContextValue | null>(null)
 
 function loadKept(): Set<string> {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY) ?? localStorage.getItem(LEGACY_KEY)
+    const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return new Set()
     return new Set(JSON.parse(raw) as string[])
   } catch {

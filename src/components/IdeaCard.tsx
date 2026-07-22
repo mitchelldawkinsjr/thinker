@@ -16,8 +16,6 @@ type Props = {
   onHide?: () => void
   index?: number
   total?: number
-  /** When true, start with Ask panel open (still dismissible) */
-  askOpenByDefault?: boolean
 }
 
 function TrashIcon() {
@@ -48,7 +46,6 @@ export function IdeaCard({
   onHide,
   index,
   total,
-  askOpenByDefault = false,
 }: Props) {
   const topic = getTopic(idea.topicId)
   const { kept, toggle } = useKept()
@@ -57,7 +54,7 @@ export function IdeaCard({
   const { hook, lesson, takeaway, example, hasMore } = presentIdea(idea)
 
   const [expanded, setExpanded] = useState(compact ? true : false)
-  const [askOpen, setAskOpen] = useState(askOpenByDefault)
+  const [askOpen, setAskOpen] = useState(false)
 
   const showHookAsTitle = hook !== idea.title
 

@@ -8,12 +8,6 @@ import {
   type ExploreResult,
 } from '../lib/ollama'
 import { buildSlimCatalog, exploreInstant } from '../lib/exploreFast'
-import {
-  averageAskLatency,
-  formatWait,
-  loadAskLatencies,
-  recordAskLatency,
-} from '../lib/askLatency'
 import './AskPanel.css'
 
 type Props = {
@@ -23,6 +17,11 @@ type Props = {
   topicId?: string
   compact?: boolean
   initialQuestion?: string
+}
+
+function formatWait(ms: number): string {
+  if (ms < 1000) return `${ms}ms`
+  return `${(ms / 1000).toFixed(1)}s`
 }
 
 function ResultBlock({
@@ -110,10 +109,6 @@ export function AskPanel({
   const [model, setModel] = useState(getConfiguredModel())
   const [available, setAvailable] = useState<string[] | null>(null)
   const [elapsedMs, setElapsedMs] = useState(0)
-  const [avgWaitMs, setAvgWaitMs] = useState<number | null>(() =>
-    averageAskLatency(loadAskLatencies()),
-  )
-  const [sampleCount, setSampleCount] = useState(() => loadAskLatencies().length)
   const abortRef = useRef<AbortController | null>(null)
   const llmStartedAt = useRef<number | null>(null)
 
@@ -134,7 +129,6 @@ export function AskPanel({
     }
   }, [])
 
-  // Live elapsed timer while the LLM is thinking
   useEffect(() => {
     if (!refining || llmStartedAt.current == null) return
     const tick = () => setElapsedMs(Math.round(performance.now() - (llmStartedAt.current ?? 0)))
@@ -159,7 +153,6 @@ export function AskPanel({
       topicId,
     }
 
-    // 1) Instant path — always first
     const t0 = performance.now()
     const quick = exploreInstant(ctx)
     quick.latencyMs = Math.round(performance.now() - t0)
@@ -169,7 +162,6 @@ export function AskPanel({
     setLoading(false)
     setElapsedMs(0)
 
-    // 2) LLM answer appends below — never replaces instant
     if (available && available.length === 0) return
 
     llmStartedAt.current = performance.now()
@@ -183,9 +175,6 @@ export function AskPanel({
 
       const waitMs = out.latencyMs ?? Math.round(performance.now() - (llmStartedAt.current ?? 0))
       out.latencyMs = waitMs
-      const samples = recordAskLatency(waitMs)
-      setAvgWaitMs(averageAskLatency(samples))
-      setSampleCount(samples.length)
       setElapsedMs(waitMs)
       setAi(out)
     } catch (err) {
@@ -262,27 +251,15 @@ export function AskPanel({
           <button type="submit" className="btn btn-primary" disabled={loading || !question.trim()}>
             {loading ? 'Thinking…' : 'Explore'}
           </button>
-          {(showTimer || avgWaitMs != null) && (
+          {showTimer && (
             <p className="ask-wait" aria-live="polite">
-              {refining && (
+              {refining ? (
                 <span className="ask-wait-live">
                   {formatWait(elapsedMs)}
                   <span className="ask-wait-dot" aria-hidden />
                 </span>
-              )}
-              {!refining && ai && elapsedMs > 0 && (
+              ) : (
                 <span className="ask-wait-done">last {formatWait(elapsedMs)}</span>
-              )}
-              {avgWaitMs != null && (
-                <span className="ask-wait-avg">
-                  avg {formatWait(avgWaitMs)}
-                  {sampleCount > 0 && (
-                    <span className="ask-wait-n">
-                      {' '}
-                      · {sampleCount} ask{sampleCount === 1 ? '' : 's'}
-                    </span>
-                  )}
-                </span>
               )}
             </p>
           )}

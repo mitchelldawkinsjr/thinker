@@ -1,7 +1,9 @@
 import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { topics } from '../data/topics'
+import { getIdeasByTopic } from '../data/ideas'
 import { TopicChip } from '../components/TopicChip'
+import { useBookIdeas } from '../hooks/useBookIdeas'
 import { peekContinue } from '../lib/daySession'
 import './Home.css'
 
@@ -14,6 +16,7 @@ const floatingIdeas = [
 
 export function Home() {
   const featured = topics.slice(0, 6)
+  const { items: bookIdeas } = useBookIdeas()
   const cont = peekContinue()
   const continueTo = cont?.topic ? `/feed?topic=${encodeURIComponent(cont.topic)}` : '/feed'
 
@@ -79,7 +82,12 @@ export function Home() {
         </div>
         <div className="topic-grid">
           {featured.map((t) => (
-            <TopicChip key={t.id} topic={t} large />
+            <TopicChip
+              key={t.id}
+              topic={t}
+              large
+              ideaCount={getIdeasByTopic(t.id, bookIdeas).length}
+            />
           ))}
         </div>
         <div className="section-foot">

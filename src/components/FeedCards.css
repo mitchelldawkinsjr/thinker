@@ -217,22 +217,6 @@
   flex-wrap: wrap;
 }
 
-.feed-card-actions--ask {
-  margin-top: 0.5rem;
-}
-
-.ask-feed-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  width: min(100%, 560px);
-}
-
-.ask-feed-panel {
-  width: 100%;
-}
-
 @keyframes card-in {
   from {
     opacity: 0;

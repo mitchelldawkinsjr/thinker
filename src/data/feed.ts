@@ -28,14 +28,6 @@ export type FeedItem =
       topicId?: TopicId
     }
   | {
-      kind: 'ask'
-      id: string
-      prompt: string
-      topicId?: TopicId
-      ideaTitle?: string
-      ideaBody?: string
-    }
-  | {
       kind: 'news'
       id: string
       news: NewsItem
@@ -133,26 +125,6 @@ function ideaItems(topicFilter?: string, extraIdeas: Idea[] = []): FeedItem[] {
   }))
 }
 
-function askItems(topicFilter?: string, extraIdeas: Idea[] = []): FeedItem[] {
-  const catalog = mergeIdeas(extraIdeas)
-  const pool = topicFilter
-    ? catalog.filter((i) => i.topicId === topicFilter)
-    : catalog
-  const samples = seededShuffle(pool, daySeed('ask')).slice(
-    0,
-    Math.min(10, Math.ceil(pool.length / 5) || 1),
-  )
-
-  return samples.map((idea) => ({
-    kind: 'ask' as const,
-    id: `ask-${idea.id}`,
-    prompt: `What should I read next to go deeper on “${idea.title}”?`,
-    topicId: idea.topicId,
-    ideaTitle: idea.title,
-    ideaBody: idea.body,
-  }))
-}
-
 function newsItems(news: NewsItem[], topicFilter?: string): FeedItem[] {
   return news
     .filter((n) => {
@@ -236,11 +208,10 @@ const FEED_WEIGHTS = {
   scripture: 2,
   resources: 1,
   books: 1,
-  asks: 1,
 } as const
 
 /**
- * Total mix: ideas (+ book summaries) + news + scripture + sites + Gutenberg + ask,
+ * Total mix: ideas (+ book summaries) + news + scripture + sites + Gutenberg,
  * freshness-weighted so cards don't go stale. Each card id appears at most once.
  */
 export function buildMixedFeed(
@@ -262,9 +233,6 @@ export function buildMixedFeed(
   )
   const resourcesQ = sortByFreshness(seededShuffle(resourceItems(topic), seed ^ 2))
   const booksQ = sortByFreshness(seededShuffle(bookItems(topic), seed ^ 3))
-  const asksQ = sortByFreshness(
-    seededShuffle(askItems(topic, extraIdeas), seed ^ 4),
-  )
 
   return filterHidden(
     weightedInterleave([
@@ -273,7 +241,6 @@ export function buildMixedFeed(
       { items: scriptureQ, weight: FEED_WEIGHTS.scripture },
       { items: resourcesQ, weight: FEED_WEIGHTS.resources },
       { items: booksQ, weight: FEED_WEIGHTS.books },
-      { items: asksQ, weight: FEED_WEIGHTS.asks },
     ]),
   )
 }
@@ -282,7 +249,6 @@ const LABELS = {
   idea: 'Idea',
   resource: 'Free site',
   book: 'Gutenberg',
-  ask: 'Ask LLM',
   news: 'News · Politics',
   scripture: 'Scripture',
 } as const

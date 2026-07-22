@@ -69,10 +69,6 @@ export function hideFromPool(id: string) {
   saveHidden(ids)
 }
 
-export function isHidden(id: string): boolean {
-  return loadHidden().has(id)
-}
-
 export function filterHidden<T extends { id: string }>(items: T[]): T[] {
   const hidden = loadHidden()
   if (hidden.size === 0) return items

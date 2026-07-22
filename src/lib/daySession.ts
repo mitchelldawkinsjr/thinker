@@ -9,9 +9,12 @@ type DayCursor = {
   index: number
 }
 
-/** Local calendar day — “new day to start thinking” follows the device clock. */
+/** Local calendar day key (YYYY-MM-DD). */
 export function localDayKey(d = new Date()): string {
-  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`
+  const y = d.getFullYear()
+  const m = String(d.getMonth() + 1).padStart(2, '0')
+  const day = String(d.getDate()).padStart(2, '0')
+  return `${y}-${m}-${day}`
 }
 
 /**

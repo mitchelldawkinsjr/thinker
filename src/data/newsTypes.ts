@@ -25,12 +25,9 @@ export type NewsFile = {
   items: NewsItem[]
 }
 
-/** Politics / hard news — short pool lifetime (matches ingest) */
+/** Days a news card stays in the live feed (matches ingest) */
 export const NEWS_TTL_DAYS_POLITICS = 3
-/** Culture, sports, faith, general current-events */
 export const NEWS_TTL_DAYS_DEFAULT = 10
-/** @deprecated Prefer NEWS_TTL_DAYS_POLITICS / NEWS_TTL_DAYS_DEFAULT */
-export const NEWS_TTL_DAYS = NEWS_TTL_DAYS_DEFAULT
 
 export function isNewsActive(item: NewsItem, now = Date.now()): boolean {
   const exp = Date.parse(item.expiresAt)
