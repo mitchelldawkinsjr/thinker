@@ -1,4 +1,4 @@
-import { learningResources } from '../data/resources'
+import { browseableResources } from '../data/resources'
 import { topics } from '../data/topics'
 import { curatedGutenbergMeta, gutenbergUrl } from '../data/gutenberg'
 import { buildSlimCatalog } from './exploreFast'
@@ -53,7 +53,7 @@ export function buildCatalogBlock(topicId?: string): string {
 /** Full catalog — only for offline tooling / debugging */
 export function buildFullCatalogBlock(): string {
   const topicLines = topics.map((t) => `- ${t.id}: #${t.name} — ${t.tagline}`).join('\n')
-  const resourceLines = learningResources
+  const resourceLines = browseableResources()
     .map((r) => `- ${r.name} | ${r.url} | ${r.category} | ${r.blurb}`)
     .join('\n')
   const bookLines = Object.entries(curatedGutenbergMeta)

@@ -1,4 +1,4 @@
-import { learningResources } from '../data/resources'
+import { browseableResources } from '../data/resources'
 import { topics } from '../data/topics'
 import { curatedGutenbergMeta, gutenbergUrl } from '../data/gutenberg'
 import type { TopicId } from '../data/types'
@@ -50,7 +50,7 @@ export function exploreInstant(ctx: ExploreContext): ExploreResult {
     topicIds.push(ctx.topicId as TopicId)
   }
 
-  const resourceHits = learningResources
+  const resourceHits = browseableResources()
     .map((r) => ({
       r,
       score:
@@ -86,8 +86,8 @@ export function exploreInstant(ctx: ExploreContext): ExploreResult {
 
   // Always give at least one solid default path
   if (links.length === 0) {
-    const fallback = learningResources.find((r) => r.id === 'sep')
-      ?? learningResources[0]
+    const sites = browseableResources()
+    const fallback = sites.find((r) => r.id === 'sep') ?? sites[0]
     links.push({ title: fallback.name, url: fallback.url, why: fallback.blurb })
   }
 
@@ -118,17 +118,18 @@ export function buildSlimCatalog(topicId?: string): string {
     .map((t) => `- ${t.id}: ${t.name}`)
     .join('\n')
 
-  const sites = learningResources
+  const sites = browseableResources()
     .filter((r) => !topicId || r.topicHints?.includes(topicId) || r.category === 'thinking')
     .slice(0, 10)
 
   // If filter too tight, pad with high-signal defaults
+  const allBrowseable = browseableResources()
   const padded =
     sites.length >= 6
       ? sites
       : [
           ...sites,
-          ...learningResources.filter((r) => !sites.includes(r)).slice(0, 6 - sites.length),
+          ...allBrowseable.filter((r) => !sites.includes(r)).slice(0, 6 - sites.length),
         ]
 
   const resourceLines = padded

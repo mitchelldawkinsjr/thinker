@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  learningResources,
+  browseableResources,
   resourceCategories,
   sourceLists,
   type ResourceCategory,
@@ -14,7 +14,7 @@ export function Resources() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return learningResources.filter((r) => {
+    return browseableResources().filter((r) => {
       if (category !== 'all' && r.category !== category) return false
       if (!q) return true
       return (
