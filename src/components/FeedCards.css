@@ -129,10 +129,46 @@
   border-radius: 0 10px 10px 0;
 }
 
+.feed-card-dismiss {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto 0 0.15rem;
+}
+
+.feed-card-trash {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+  border-radius: 0.55rem;
+  background: transparent;
+  color: color-mix(in srgb, white 42%, transparent);
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+.feed-card-trash:hover {
+  color: #f87171;
+  background: color-mix(in srgb, #f87171 16%, transparent);
+}
+
+.feed-card-trash:focus-visible {
+  outline: 2px solid color-mix(in srgb, #f87171 70%, white);
+  outline-offset: 2px;
+}
+
 .feed-card-foot {
   position: relative;
-  margin-top: auto;
-  padding-top: 0.5rem;
+  margin-top: 0;
+  padding-top: 0.85rem;
   border-top: 1px solid color-mix(in srgb, white 12%, transparent);
 }
 

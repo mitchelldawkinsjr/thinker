@@ -8,7 +8,7 @@ import {
 import type { Idea, TopicId } from './types'
 import type { NewsItem } from './newsTypes'
 import type { ScriptureItem } from './scriptureTypes'
-import { daySeed, seededShuffle, sortByFreshness } from '../lib/feedRotation'
+import { daySeed, filterHidden, seededShuffle, sortByFreshness } from '../lib/feedRotation'
 
 export type FeedItem =
   | { kind: 'idea'; id: string; idea: Idea }
@@ -219,14 +219,16 @@ export function buildMixedFeed(
     seededShuffle(askItems(topic, extraIdeas), seed ^ 4),
   )
 
-  return weightedInterleave([
-    { items: ideasQ, weight: FEED_WEIGHTS.ideas },
-    { items: newsQ, weight: FEED_WEIGHTS.news },
-    { items: scriptureQ, weight: FEED_WEIGHTS.scripture },
-    { items: resourcesQ, weight: FEED_WEIGHTS.resources },
-    { items: booksQ, weight: FEED_WEIGHTS.books },
-    { items: asksQ, weight: FEED_WEIGHTS.asks },
-  ])
+  return filterHidden(
+    weightedInterleave([
+      { items: ideasQ, weight: FEED_WEIGHTS.ideas },
+      { items: newsQ, weight: FEED_WEIGHTS.news },
+      { items: scriptureQ, weight: FEED_WEIGHTS.scripture },
+      { items: resourcesQ, weight: FEED_WEIGHTS.resources },
+      { items: booksQ, weight: FEED_WEIGHTS.books },
+      { items: asksQ, weight: FEED_WEIGHTS.asks },
+    ]),
+  )
 }
 
 const LABELS = {

@@ -1,4 +1,6 @@
 const STORAGE_KEY = 'thinker-feed-seen-v1'
+const HIDDEN_KEY = 'thinker-feed-hidden-v1'
+const HIDDEN_CAP = 2000
 
 /** Cards seen within this window get a hard penalty so they don't reappear immediately */
 const RECENT_HOURS = 18
@@ -24,6 +26,48 @@ function save(map: SeenMap) {
   } catch {
     // ignore quota
   }
+}
+
+function loadHidden(): Set<string> {
+  try {
+    const raw = localStorage.getItem(HIDDEN_KEY)
+    if (!raw) return new Set()
+    const arr = JSON.parse(raw) as unknown
+    if (!Array.isArray(arr)) return new Set()
+    return new Set(arr.filter((x): x is string => typeof x === 'string'))
+  } catch {
+    return new Set()
+  }
+}
+
+function saveHidden(ids: Set<string>) {
+  try {
+    localStorage.setItem(HIDDEN_KEY, JSON.stringify([...ids]))
+  } catch {
+    // ignore quota
+  }
+}
+
+/** Permanently remove a card from the local feed pool (never show again on this device). */
+export function hideFromPool(id: string) {
+  const ids = loadHidden()
+  ids.add(id)
+  if (ids.size > HIDDEN_CAP) {
+    const trimmed = [...ids].slice(ids.size - HIDDEN_CAP)
+    saveHidden(new Set(trimmed))
+    return
+  }
+  saveHidden(ids)
+}
+
+export function isHidden(id: string): boolean {
+  return loadHidden().has(id)
+}
+
+export function filterHidden<T extends { id: string }>(items: T[]): T[] {
+  const hidden = loadHidden()
+  if (hidden.size === 0) return items
+  return items.filter((item) => !hidden.has(item.id))
 }
 
 /** Lower score = show sooner (unseen / stale first) */

@@ -14,8 +14,23 @@ import './FeedCards.css'
 type NavProps = {
   onNext?: () => void
   onPrev?: () => void
+  onHide?: () => void
   index?: number
   total?: number
+}
+
+function TrashIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path
+        d="M9 3h6m-8 4h10m-9 0v11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V7M10 11v5m4-5v5"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
 }
 
 function FeedCardShell({
@@ -27,6 +42,7 @@ function FeedCardShell({
   cta,
   onNext,
   onPrev,
+  onHide,
   index,
   total,
 }: {
@@ -36,6 +52,7 @@ function FeedCardShell({
   title: string
   children: ReactNode
   cta?: ReactNode
+  onHide?: () => void
 } & NavProps) {
   return (
     <article
@@ -53,6 +70,19 @@ function FeedCardShell({
       </header>
       <h2 className="feed-card-title">{title}</h2>
       {children}
+      {onHide && (
+        <div className="feed-card-dismiss">
+          <button
+            type="button"
+            className="feed-card-trash"
+            onClick={onHide}
+            aria-label="Remove from feed forever"
+            title="Never show again"
+          >
+            <TrashIcon />
+          </button>
+        </div>
+      )}
       <footer className="feed-card-foot">
         <div className="feed-card-actions">
           {onPrev && (
@@ -76,6 +106,7 @@ export function ResourceFeedCard({
   resource,
   onNext,
   onPrev,
+  onHide,
   index,
   total,
 }: {
@@ -91,6 +122,7 @@ export function ResourceFeedCard({
       total={total}
       onPrev={onPrev}
       onNext={onNext}
+      onHide={onHide}
       cta={
         <a className="idea-btn next" href={resource.url} target="_blank" rel="noreferrer">
           Open site →
@@ -110,6 +142,7 @@ export function BookFeedCard({
   url,
   onNext,
   onPrev,
+  onHide,
   index,
   total,
 }: {
@@ -128,6 +161,7 @@ export function BookFeedCard({
       total={total}
       onPrev={onPrev}
       onNext={onNext}
+      onHide={onHide}
       cta={
         <a className="idea-btn next" href={url} target="_blank" rel="noreferrer">
           Read on Gutenberg →
@@ -145,6 +179,7 @@ export function AskFeedCard({
   children,
   onNext,
   onPrev,
+  onHide,
   index,
   total,
 }: {
@@ -161,6 +196,7 @@ export function AskFeedCard({
         index={index}
         total={total}
         onPrev={onPrev}
+        onHide={onHide}
         cta={
           onNext ? (
             <button type="button" className="idea-btn next" onClick={onNext}>
@@ -180,6 +216,7 @@ export function NewsFeedCard({
   news,
   onNext,
   onPrev,
+  onHide,
   index,
   total,
 }: {
@@ -198,6 +235,7 @@ export function NewsFeedCard({
       total={total}
       onPrev={onPrev}
       onNext={onNext}
+      onHide={onHide}
       cta={
         <a className="idea-btn next" href={primary} target="_blank" rel="noreferrer">
           Read source →
@@ -229,6 +267,7 @@ export function ScriptureFeedCard({
   scripture,
   onNext,
   onPrev,
+  onHide,
   index,
   total,
 }: {
@@ -252,6 +291,7 @@ export function ScriptureFeedCard({
       total={total}
       onPrev={onPrev}
       onNext={onNext}
+      onHide={onHide}
       cta={
         <a className="idea-btn next" href={open.href} target="_blank" rel="noreferrer">
           {open.via === 'scriptura' ? 'Open in Scriptura →' : 'Open passage →'}
