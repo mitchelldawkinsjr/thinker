@@ -384,21 +384,16 @@ function hookFromTitle(title) {
   return `${(sp > 40 ? cut.slice(0, sp) : cut).trim()}…`
 }
 
-function lessonFrom(summary, title, lessonStyle = 'politics') {
-  const s = summary || ''
-  const culture = lessonStyle === 'culture'
-  if (s.length >= 80) {
+/** Summary only — headline challenges are rendered in the UI, not glued on. */
+function lessonFrom(summary, title) {
+  const s = (summary || '').trim()
+  if (s.length >= 40) {
     const cut = s.slice(0, 320)
     const sp = cut.lastIndexOf(' ')
-    const body = `${(sp > 120 ? cut.slice(0, sp) : cut).trim()}`
-    return culture
-      ? `${body} Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?`
-      : `${body} Ask: who benefits, what’s the mechanism, and what would change your mind?`
+    return `${(sp > 120 ? cut.slice(0, sp) : cut).trim()}`
   }
-  if (culture) {
-    return `Headline: “${title}”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.`
-  }
-  return `Headline: “${title}”. Before reacting, name the incentive, the veto points, and one primary source you’d check. Then decide if this is signal or noise.`
+  if (s.length > 0) return s
+  return title.trim()
 }
 
 function idFor(url, title) {
@@ -451,7 +446,7 @@ async function fetchFeed(feed) {
           id: idFor(e.link, e.title),
           hook: hookFromTitle(e.title),
           title: e.title,
-          lesson: lessonFrom(e.summary, e.title, feed.lessonStyle),
+          lesson: lessonFrom(e.summary, e.title),
           source: feed.name,
           sourceUrl: e.link,
           publishedAt,

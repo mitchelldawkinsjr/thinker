@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import type { LearningResource } from '../data/resources'
 import type { NewsItem } from '../data/newsTypes'
 import type { ScriptureItem } from '../data/scriptureTypes'
+import { newsCardCopy } from '../lib/newsChallenge'
 import {
   preferredPassageUrl,
   probeScriptura,
@@ -249,6 +250,7 @@ export function NewsFeedCard({
   )
 
   const allSidesHref = `https://www.allsides.com/search?search=${encodeURIComponent(news.title)}`
+  const { body, challenge } = newsCardCopy(news)
 
   return (
     <FeedCardShell
@@ -268,7 +270,11 @@ export function NewsFeedCard({
       }
     >
       <p className="feed-card-author">{news.title}</p>
-      <p className="feed-card-body">{news.lesson}</p>
+      <p className="feed-card-body">{body}</p>
+      <aside className="feed-card-challenge" aria-label="Challenge the headline">
+        <span className="feed-card-challenge-kicker">Think</span>
+        <p className="feed-card-challenge-q">{challenge}</p>
+      </aside>
       <p className="feed-card-hint">
         {news.source}
         {news.publishedAt

@@ -10,6 +10,8 @@ export type NewsItem = {
   hook: string
   title: string
   lesson: string
+  /** Optional override; otherwise derived from title + topics at render */
+  challenge?: string
   source: string
   sourceUrl: string
   publishedAt: string
