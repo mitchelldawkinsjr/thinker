@@ -12,6 +12,7 @@ import dns from 'node:dns'
 import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { decodeHtmlEntities } from './lib/htmlEntities.mjs'
 
 dns.setDefaultResultOrder('ipv4first')
 
@@ -483,28 +484,14 @@ async function fetchChapter(bookId, chapter) {
 }
 
 function stripTags(s) {
-  return String(s || '')
-    .replace(/<[^>]+>/g, '')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&#8217;/g, "'")
+  return decodeHtmlEntities(String(s || '').replace(/<[^>]+>/g, ''))
+    .replace(/\u00A0/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 }
 
 function decodeEntities(s) {
-  return String(s || '')
-    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
-    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
+  return decodeHtmlEntities(s)
 }
 
 /** Parse "(Galatians 3:29)" or "(1 John 4:7-8)" from BLB blockquote. */

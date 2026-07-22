@@ -12,6 +12,7 @@ import dns from 'node:dns'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { decodeHtmlEntities } from './lib/htmlEntities.mjs'
 
 dns.setDefaultResultOrder('ipv4first')
 
@@ -52,20 +53,12 @@ function sleep(ms) {
 }
 
 function stripHtml(html) {
-  return String(html || '')
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#8217;/g, "'")
-    .replace(/&#8220;/g, '"')
-    .replace(/&#8221;/g, '"')
-    .replace(/&#8230;/g, '…')
-    .replace(/&#39;/g, "'")
-    .replace(/&hellip;/g, '…')
+  return decodeHtmlEntities(
+    String(html || '')
+      .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+      .replace(/<[^>]+>/g, ' '),
+  )
+    .replace(/\u00A0/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 }

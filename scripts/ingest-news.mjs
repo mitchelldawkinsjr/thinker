@@ -13,6 +13,7 @@ import dns from 'node:dns'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { decodeHtmlEntities } from './lib/htmlEntities.mjs'
 
 // Prefer IPv4 — some feeds (e.g. Al Jazeera) fail on unreachable IPv6 routes
 dns.setDefaultResultOrder('ipv4first')
@@ -296,15 +297,12 @@ const SEED = /** @type {NewsItem[]} */ ([
 ])
 
 function stripHtml(html) {
-  return String(html || '')
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
+  return decodeHtmlEntities(
+    String(html || '')
+      .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+      .replace(/<[^>]+>/g, ' '),
+  )
+    .replace(/\u00A0/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 }
@@ -328,12 +326,7 @@ function attr(block, name, attrName) {
 }
 
 function decodeEntities(s) {
-  return String(s || '')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
+  return decodeHtmlEntities(s)
 }
 
 function parseEntries(xml) {
