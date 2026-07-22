@@ -46,7 +46,7 @@ export type FeedItem =
   | {
       kind: 'game'
       id: string
-      gameId: 'reaction' | 'spot' | 'memory' | 'math'
+      gameId: 'reaction' | 'spot' | 'memory' | 'math' | 'gravity'
       title: string
       blurb: string
     }
@@ -264,6 +264,14 @@ function gameItems(): FeedItem[] {
       gameId: 'math',
       title: 'Quick math',
       blurb: 'Head math on the clock — mix of +, −, ×, and ÷. Tap the right answer fast.',
+    },
+    {
+      kind: 'game',
+      id: 'game-gravity',
+      gameId: 'gravity',
+      title: 'Gravity drop',
+      blurb:
+        'Dial gravity preference, then catch falling orbs. Higher g is faster — and worth more points.',
     },
   ]
 }

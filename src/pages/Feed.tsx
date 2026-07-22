@@ -14,6 +14,7 @@ import { resolvePlayableUrl } from '../lib/mediaUrl'
 import { IdeaCard } from '../components/IdeaCard'
 import {
   BookFeedCard,
+  GravityGameFeedCard,
   MathGameFeedCard,
   MemoryGameFeedCard,
   NewsFeedCard,
@@ -65,9 +66,12 @@ export function Feed() {
   )
 
   const [index, setIndex] = useState(() => getFeedCursor(topicKey))
+  /** Direction for card enter animation: next → from right, prev → from left */
+  const [slideDir, setSlideDir] = useState<'next' | 'prev' | null>(null)
 
   // Topic change: restore today’s cursor for that topic
   useEffect(() => {
+    setSlideDir(null)
     setIndex(getFeedCursor(topicKey))
   }, [topicKey])
 
@@ -94,6 +98,16 @@ export function Feed() {
     if (i >= 0) setIndex(i)
   }, [items, mediaWant])
 
+  // Jump to a brain game for local testing (?game=reaction|spot|memory|math|gravity)
+  const gameWant = params.get('game')
+  useEffect(() => {
+    if (!gameWant || items.length === 0) return
+    const i = items.findIndex(
+      (it) => it.kind === 'game' && it.gameId === gameWant,
+    )
+    if (i >= 0) setIndex(i)
+  }, [items, gameWant])
+
   const item = items[index]
 
   useEffect(() => {
@@ -102,11 +116,13 @@ export function Feed() {
 
   const hideCurrent = useCallback(() => {
     if (!item?.id) return
+    setSlideDir(null)
     hideFromPool(item.id)
     setHideTick((t) => t + 1)
   }, [item?.id])
 
   const reshuffleFeed = useCallback(() => {
+    setSlideDir(null)
     setReshuffle((n) => n + 1)
     setIndex(0)
     setFeedCursor(topicKey, 0)
@@ -116,13 +132,15 @@ export function Feed() {
     if (items.length === 0) return
     // Stay on the last card — reset to 1 only on Reshuffle or a new calendar day
     if (index + 1 >= items.length) return
+    setSlideDir('next')
     setIndex(index + 1)
   }, [index, items.length])
 
   const prev = useCallback(() => {
-    if (items.length === 0) return
-    setIndex((i) => Math.max(0, i - 1))
-  }, [items.length])
+    if (items.length === 0 || index <= 0) return
+    setSlideDir('prev')
+    setIndex(index - 1)
+  }, [index, items.length])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -190,7 +208,7 @@ export function Feed() {
         )}
       </header>
 
-      <div className="feed-stage">
+      <div className="feed-stage" data-slide={slideDir ?? undefined}>
         {!item && <p className="feed-empty">Nothing in this mix yet.</p>}
 
         {item?.kind === 'idea' && (
@@ -249,6 +267,15 @@ export function Feed() {
 
         {item?.kind === 'game' && item.gameId === 'math' && (
           <MathGameFeedCard
+            key={item.id}
+            title={item.title}
+            blurb={item.blurb}
+            {...nav}
+          />
+        )}
+
+        {item?.kind === 'game' && item.gameId === 'gravity' && (
+          <GravityGameFeedCard
             key={item.id}
             title={item.title}
             blurb={item.blurb}

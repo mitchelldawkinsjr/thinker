@@ -67,7 +67,7 @@ export const KIND_LABELS: { key: ContentKindKey; label: string; hint: string }[]
   { key: 'scripture', label: 'Scripture', hint: 'Daily promises and curated passages' },
   { key: 'resources', label: 'Free sites', hint: 'Curated learning sites and your additions' },
   { key: 'books', label: 'Gutenberg', hint: 'Public-domain books in the mix' },
-  { key: 'games', label: 'Brain games', hint: 'Quick reaction, memory, and math games' },
+  { key: 'games', label: 'Brain games', hint: 'Quick reaction, memory, math, and gravity games' },
 ]
 
 function isTopicId(v: unknown): v is TopicId {

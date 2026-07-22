@@ -86,6 +86,62 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  overflow: hidden;
+  padding-inline: 0.25rem;
+}
+
+/* Kill the default vertical fade-up while browsing the feed */
+.feed-stage .feed-card,
+.feed-stage .idea-card {
+  animation: card-fade-in 0.35s ease-out;
+}
+
+/* → next: card enters from the right; ← prev: from the left */
+.feed-stage[data-slide='next'] .feed-card,
+.feed-stage[data-slide='next'] .idea-card {
+  animation: card-slide-from-right 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.feed-stage[data-slide='prev'] .feed-card,
+.feed-stage[data-slide='prev'] .idea-card {
+  animation: card-slide-from-left 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes card-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes card-slide-from-right {
+  from {
+    transform: translateX(110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes card-slide-from-left {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feed-stage .feed-card,
+  .feed-stage .idea-card,
+  .feed-stage[data-slide] .feed-card,
+  .feed-stage[data-slide] .idea-card {
+    animation: none;
+  }
 }
 
 .feed-idea-stack {

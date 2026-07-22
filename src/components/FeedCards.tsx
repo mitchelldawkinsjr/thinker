@@ -1163,3 +1163,364 @@ export function MathGameFeedCard({
     </FeedCardShell>
   )
 }
+
+/** SpaceBnB-style preference 0–100 → displayed m/s² (0.1–19.6). */
+function gravityMs2(pref: number) {
+  return 0.1 + (19.6 - 0.1) * (pref / 100)
+}
+
+/** Fall acceleration in px/s² — higher preference = harder drop. */
+function gravityAccel(pref: number) {
+  return 220 + (2200 - 220) * (pref / 100)
+}
+
+/** Bounce preview height (px up) — low g = tall slow bounce, like the CodePen. */
+function bounceHeight(pref: number) {
+  return 8 + (72 - 8) * (1 - pref / 100)
+}
+
+/** Bounce cycle seconds — high g = fast bounce timescale. */
+function bouncePeriod(pref: number) {
+  return 1.6 - (1.6 - 0.28) * (pref / 100)
+}
+
+type GravityOrb = {
+  id: number
+  x: number
+  y: number
+  vx: number
+  vy: number
+  r: number
+}
+
+const GRAVITY_ROUND_MS = 15_000
+const CATCHER_W = 64
+const CATCHER_H = 12
+const ORB_R = 11
+
+export function GravityGameFeedCard({
+  title,
+  blurb,
+  onNext,
+  onPrev,
+  onHide,
+  index,
+  total,
+}: {
+  title: string
+  blurb: string
+} & NavProps) {
+  const arenaRef = useRef<HTMLDivElement>(null)
+  const endAtRef = useRef(0)
+  const scoreRef = useRef(0)
+  const prefRef = useRef(50)
+  const catcherXRef = useRef(0.5)
+  const orbsRef = useRef<GravityOrb[]>([])
+  const nextIdRef = useRef(1)
+  const spawnAtRef = useRef(0)
+  const rafRef = useRef(0)
+  const lastTsRef = useRef(0)
+
+  const [phase, setPhase] = useState<Phase>('ready')
+  const [score, setScore] = useState(0)
+  const [best, setBest] = useState(() => getGameHighScore('gravity'))
+  const [secsLeft, setSecsLeft] = useState(15)
+  const [pref, setPref] = useState(50)
+  const [catcherX, setCatcherX] = useState(0.5)
+  const [orbs, setOrbs] = useState<GravityOrb[]>([])
+  const [isNewBest, setIsNewBest] = useState(false)
+
+  const ms2 = gravityMs2(pref)
+  const bounceY = bounceHeight(pref)
+  const bounceT = bouncePeriod(pref)
+
+  useEffect(() => {
+    prefRef.current = pref
+  }, [pref])
+
+  useEffect(() => {
+    catcherXRef.current = catcherX
+  }, [catcherX])
+
+  useEffect(() => {
+    if (phase !== 'playing') return
+    let finished = false
+    const tick = () => {
+      const left = Math.max(0, endAtRef.current - Date.now())
+      setSecsLeft(Math.ceil(left / 1000))
+      if (left > 0 || finished) return
+      finished = true
+
+      const finalScore = scoreRef.current
+      const prevBest = getGameHighScore('gravity')
+      const nextBest = recordGameScore('gravity', finalScore)
+      setBest(nextBest)
+      setIsNewBest(finalScore > prevBest)
+      setPhase('done')
+      orbsRef.current = []
+      setOrbs([])
+    }
+    tick()
+    const id = window.setInterval(tick, 100)
+    return () => window.clearInterval(id)
+  }, [phase])
+
+  useEffect(() => {
+    if (phase !== 'playing') {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current)
+      rafRef.current = 0
+      return
+    }
+
+    lastTsRef.current = 0
+    spawnAtRef.current = performance.now() + 280
+
+    const loop = (ts: number) => {
+      const arena = arenaRef.current
+      if (!arena) {
+        rafRef.current = requestAnimationFrame(loop)
+        return
+      }
+
+      const dt = lastTsRef.current ? Math.min(0.04, (ts - lastTsRef.current) / 1000) : 0
+      lastTsRef.current = ts
+
+      const w = arena.clientWidth
+      const h = arena.clientHeight
+      const floorY = h - CATCHER_H - 6
+      const p = prefRef.current
+      const accel = gravityAccel(p)
+      const points = Math.max(1, Math.round(1 + p / 20))
+
+      if (ts >= spawnAtRef.current) {
+        const margin = ORB_R + 8
+        orbsRef.current.push({
+          id: nextIdRef.current++,
+          x: margin + Math.random() * Math.max(1, w - margin * 2),
+          y: -ORB_R,
+          vx: (Math.random() - 0.5) * 40,
+          vy: 20 + Math.random() * 40,
+          r: ORB_R,
+        })
+        // Higher g → denser spawns (harder, more reward chances)
+        const gap = 900 - (900 - 380) * (p / 100)
+        spawnAtRef.current = ts + gap
+      }
+
+      const cx = catcherXRef.current * w
+      const half = CATCHER_W / 2
+      const next: GravityOrb[] = []
+
+      for (const orb of orbsRef.current) {
+        let { x, y, vx, vy, r, id } = orb
+        vy += accel * dt
+        x += vx * dt
+        y += vy * dt
+
+        if (x < r) {
+          x = r
+          vx = Math.abs(vx) * 0.4
+        } else if (x > w - r) {
+          x = w - r
+          vx = -Math.abs(vx) * 0.4
+        }
+
+        const catchTop = floorY - r
+        const inCatchX = x >= cx - half && x <= cx + half
+        if (y >= catchTop && y <= floorY + r && vy >= 0 && inCatchX) {
+          scoreRef.current += points
+          setScore(scoreRef.current)
+          continue
+        }
+
+        if (y - r > h + 20) continue
+        next.push({ id, x, y, vx, vy, r })
+      }
+
+      orbsRef.current = next
+      setOrbs(next.slice())
+      rafRef.current = requestAnimationFrame(loop)
+    }
+
+    rafRef.current = requestAnimationFrame(loop)
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current)
+      rafRef.current = 0
+    }
+  }, [phase])
+
+  const setCatcherFromClientX = (clientX: number) => {
+    const arena = arenaRef.current
+    if (!arena) return
+    const rect = arena.getBoundingClientRect()
+    const x = (clientX - rect.left) / Math.max(1, rect.width)
+    const clamped = Math.min(0.92, Math.max(0.08, x))
+    catcherXRef.current = clamped
+    setCatcherX(clamped)
+  }
+
+  const onArenaPointer = (e: ReactPointerEvent) => {
+    if (phase !== 'playing') return
+    e.preventDefault()
+    ;(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId)
+    setCatcherFromClientX(e.clientX)
+  }
+
+  const onArenaMove = (e: ReactPointerEvent) => {
+    if (phase !== 'playing') return
+    setCatcherFromClientX(e.clientX)
+  }
+
+  const start = () => {
+    scoreRef.current = 0
+    setScore(0)
+    setIsNewBest(false)
+    setSecsLeft(15)
+    orbsRef.current = []
+    setOrbs([])
+    nextIdRef.current = 1
+    catcherXRef.current = 0.5
+    setCatcherX(0.5)
+    endAtRef.current = Date.now() + GRAVITY_ROUND_MS
+    setPhase('playing')
+  }
+
+  const onPrefChange = (v: number) => {
+    const next = Math.min(100, Math.max(0, v))
+    prefRef.current = next
+    setPref(next)
+  }
+
+  const challenge =
+    best > 0
+      ? `Beat your high score of ${best}.`
+      : 'Set a high score — it sticks on this device.'
+
+  const gLabel = ms2 < 10 ? `0${ms2.toFixed(1)}` : ms2.toFixed(1)
+
+  return (
+    <FeedCardShell
+      accent="#99dff4"
+      surface="#0e1418"
+      kind="Brain game · gravity"
+      title={title}
+      index={index}
+      total={total}
+      onPrev={onPrev}
+      onNext={onNext}
+      onHide={onHide}
+      cta={
+        phase === 'playing' ? undefined : (
+          <button type="button" className="idea-btn next" onClick={start}>
+            {phase === 'done' ? 'Play again' : 'Start · 15s'}
+          </button>
+        )
+      }
+    >
+      <p className="feed-card-body feed-card-body-tight">{blurb}</p>
+      <aside className="feed-card-challenge" aria-label="High score challenge">
+        <span className="feed-card-challenge-kicker">Challenge</span>
+        <p className="feed-card-challenge-q">{challenge}</p>
+      </aside>
+
+      <div className="reaction-hud" aria-live="polite">
+        <span>
+          Score <strong>{score}</strong>
+        </span>
+        <span>
+          Best <strong>{best}</strong>
+        </span>
+        <span>
+          Time{' '}
+          <strong>
+            {phase === 'playing' ? secsLeft : phase === 'ready' ? 15 : 0}s
+          </strong>
+        </span>
+      </div>
+
+      <div
+        className="gravity-console"
+        style={
+          {
+            '--grav-ui':
+              pref < 40 ? '#198d00' : pref < 70 ? '#ffb300' : '#c50000',
+            '--range-gradient': `${pref}%`,
+            '--bounce-y': `${-bounceY}px`,
+            '--bounce-period': `${bounceT}s`,
+          } as CSSProperties
+        }
+      >
+        <div className="gravity-pref">
+          <div className="gravity-readout" aria-live="polite">
+            <span className="gravity-number">{gLabel}</span>
+            <span className="gravity-units">M/S/S</span>
+          </div>
+          <label className="gravity-slider-label" htmlFor="gravity-pref-range">
+            Gravity preference
+          </label>
+          <input
+            id="gravity-pref-range"
+            className="gravity-range"
+            type="range"
+            min={0}
+            max={100}
+            step={1}
+            value={pref}
+            onChange={(e) => onPrefChange(Number(e.target.value))}
+            aria-valuetext={`${gLabel} meters per second squared`}
+          />
+          <div className="gravity-bounce" aria-hidden>
+            <span className="gravity-bounce-label">bounce sim</span>
+            <div className="gravity-bounce-shaft">
+              <span className="gravity-bounce-ball" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          ref={arenaRef}
+          className={`gravity-arena ${phase === 'playing' ? 'is-live' : ''}`}
+          aria-label="Gravity drop arena"
+          onPointerDown={onArenaPointer}
+          onPointerMove={onArenaMove}
+        >
+          {phase === 'ready' && (
+            <p className="reaction-arena-msg">
+              Set gravity, hit Start, then drag to catch orbs. High g pays more.
+            </p>
+          )}
+          {phase === 'done' && (
+            <p className="reaction-arena-msg">
+              {isNewBest
+                ? `New high score — ${score}!`
+                : `Round over — ${score} point${score === 1 ? '' : 's'}.`}
+            </p>
+          )}
+          {phase === 'playing' && (
+            <>
+              {orbs.map((orb) => (
+                <span
+                  key={orb.id}
+                  className="gravity-orb"
+                  style={{
+                    width: orb.r * 2,
+                    height: orb.r * 2,
+                    transform: `translate(${orb.x - orb.r}px, ${orb.y - orb.r}px)`,
+                  }}
+                />
+              ))}
+              <span
+                className="gravity-catcher"
+                style={{
+                  width: CATCHER_W,
+                  height: CATCHER_H,
+                  left: `calc(${catcherX * 100}% - ${CATCHER_W / 2}px)`,
+                }}
+              />
+            </>
+          )}
+        </div>
+      </div>
+    </FeedCardShell>
+  )
+}

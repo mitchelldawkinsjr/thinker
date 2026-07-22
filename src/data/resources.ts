@@ -329,6 +329,14 @@ export const learningResources: LearningResource[] = [
     topicHints: ['ai-frontend'],
   },
   {
+    id: 'free-frontend',
+    name: 'FreeFrontend',
+    url: 'https://freefrontend.com/',
+    blurb: 'Curated free HTML, CSS, and JS snippets — UI patterns you can study and reuse.',
+    category: 'tech',
+    topicHints: ['ai-frontend'],
+  },
+  {
     id: 'devto',
     name: 'DEV Community',
     url: 'https://dev.to/',

@@ -1,4 +1,4 @@
-export type GameScoreId = 'reaction' | 'spot' | 'memory' | 'math'
+export type GameScoreId = 'reaction' | 'spot' | 'memory' | 'math' | 'gravity'
 
 function storageKey(id: GameScoreId) {
   return `thinker-game-${id}-best`
