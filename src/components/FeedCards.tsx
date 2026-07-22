@@ -721,11 +721,19 @@ export function MemoryGameFeedCard({
   const seqRef = useRef<number[]>([])
   const inputIdxRef = useRef(0)
   const scoreRef = useRef(0)
+  const phaseRef = useRef<MemoryPhase>('ready')
   const [phase, setPhase] = useState<MemoryPhase>('ready')
   const [score, setScore] = useState(0)
   const [best, setBest] = useState(() => getGameHighScore('memory'))
   const [lit, setLit] = useState(-1)
+  const [steps, setSteps] = useState(0)
+  const [matched, setMatched] = useState(0)
   const [isNewBest, setIsNewBest] = useState(false)
+
+  const go = useCallback((next: MemoryPhase) => {
+    phaseRef.current = next
+    setPhase(next)
+  }, [])
 
   useEffect(() => {
     return () => {
@@ -733,31 +741,40 @@ export function MemoryGameFeedCard({
     }
   }, [])
 
-  const finish = useCallback((finalScore: number) => {
-    const prevBest = getGameHighScore('memory')
-    const nextBest = recordGameScore('memory', finalScore)
-    setBest(nextBest)
-    setIsNewBest(finalScore > prevBest)
-    setLit(-1)
-    setPhase('done')
-  }, [])
-
-  const playSequence = useCallback(async (seq: number[], runId: number) => {
-    setPhase('watch')
-    setLit(-1)
-    await sleep(350)
-    for (const pad of seq) {
-      if (runIdRef.current !== runId) return
-      setLit(pad)
-      await sleep(420)
-      if (runIdRef.current !== runId) return
+  const finish = useCallback(
+    (finalScore: number) => {
+      const prevBest = getGameHighScore('memory')
+      const nextBest = recordGameScore('memory', finalScore)
+      setBest(nextBest)
+      setIsNewBest(finalScore > prevBest)
       setLit(-1)
-      await sleep(160)
-    }
-    if (runIdRef.current !== runId) return
-    inputIdxRef.current = 0
-    setPhase('input')
-  }, [])
+      go('done')
+    },
+    [go],
+  )
+
+  const playSequence = useCallback(
+    async (seq: number[], runId: number) => {
+      go('watch')
+      setSteps(seq.length)
+      setMatched(0)
+      setLit(-1)
+      await sleep(400)
+      for (let i = 0; i < seq.length; i++) {
+        if (runIdRef.current !== runId) return
+        setLit(seq[i]!)
+        await sleep(480)
+        if (runIdRef.current !== runId) return
+        setLit(-1)
+        // Gap between flashes; slightly longer after the last so it registers
+        await sleep(i === seq.length - 1 ? 280 : 180)
+      }
+      if (runIdRef.current !== runId) return
+      inputIdxRef.current = 0
+      go('input')
+    },
+    [go],
+  )
 
   const start = () => {
     const runId = ++runIdRef.current
@@ -765,31 +782,47 @@ export function MemoryGameFeedCard({
     setScore(0)
     setIsNewBest(false)
     setLit(-1)
+    setMatched(0)
     const seq = [randomPad()]
     seqRef.current = seq
     inputIdxRef.current = 0
+    setSteps(seq.length)
     void playSequence(seq, runId)
   }
 
   const onPad = (pad: number) => {
-    if (phase !== 'input') return
-    const runId = runIdRef.current
+    // Ref check — avoids stale React state rejecting the last matching tap
+    if (phaseRef.current !== 'input') return
+
     const expected = seqRef.current[inputIdxRef.current]
+    if (expected === undefined) return
+
     setLit(pad)
     window.setTimeout(() => {
-      if (runIdRef.current === runId) setLit(-1)
-    }, 160)
+      if (phaseRef.current === 'input') setLit(-1)
+    }, 140)
 
     if (pad !== expected) {
       finish(scoreRef.current)
       return
     }
 
-    inputIdxRef.current += 1
-    if (inputIdxRef.current < seqRef.current.length) return
+    const nextIdx = inputIdxRef.current + 1
+    inputIdxRef.current = nextIdx
+    setMatched(nextIdx)
 
-    scoreRef.current = seqRef.current.length
-    setScore(scoreRef.current)
+    // Still more pads to match in this shown sequence
+    if (nextIdx < seqRef.current.length) return
+
+    // Full sequence matched — lock input before growing/replaying
+    const completed = seqRef.current.length
+    scoreRef.current = completed
+    setScore(completed)
+    go('watch')
+    setLit(-1)
+    setMatched(0)
+
+    const runId = runIdRef.current
     seqRef.current = [...seqRef.current, randomPad()]
     void playSequence(seqRef.current, runId)
   }
@@ -801,9 +834,9 @@ export function MemoryGameFeedCard({
 
   const status =
     phase === 'watch'
-      ? 'Watch…'
+      ? `Watch ${steps}…`
       : phase === 'input'
-        ? 'Your turn'
+        ? `Your turn · ${matched}/${steps}`
         : phase === 'done'
           ? isNewBest
             ? `New high score — ${score}!`
@@ -852,7 +885,7 @@ export function MemoryGameFeedCard({
         aria-label="Memory sequence pads"
       >
         {phase === 'ready' && (
-          <p className="reaction-arena-msg">Hit Start, watch the sequence, then tap it back.</p>
+          <p className="reaction-arena-msg">Hit Start, watch the sequence, then tap every pad that lit — in order.</p>
         )}
         {phase === 'done' && (
           <p className="reaction-arena-msg">
@@ -875,10 +908,7 @@ export function MemoryGameFeedCard({
                   } as CSSProperties
                 }
                 disabled={phase !== 'input'}
-                onPointerDown={(e) => {
-                  e.preventDefault()
-                  onPad(pad.id)
-                }}
+                onClick={() => onPad(pad.id)}
                 aria-label={`Pad ${pad.id + 1}`}
               />
             ))}

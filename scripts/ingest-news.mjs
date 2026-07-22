@@ -203,6 +203,13 @@ const FEEDS = [
     limit: 10,
     ttlDays: 3,
   },
+  {
+    name: 'CNBC · Finance',
+    url: 'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664',
+    topicIds: ['finance', 'current-events'],
+    limit: 10,
+    ttlDays: 3,
+  },
 ]
 
 const SEED = /** @type {NewsItem[]} */ ([
