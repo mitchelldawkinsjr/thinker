@@ -93,7 +93,7 @@ function FeedCardShell({
           {cta}
           {onNext && (
             <button type="button" className="idea-btn ghost" onClick={onNext}>
-              Skip
+              Next
             </button>
           )}
         </div>
