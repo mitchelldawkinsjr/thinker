@@ -236,7 +236,7 @@ function gameItems(): FeedItem[] {
       id: 'game-math',
       gameId: 'math',
       title: 'Quick math',
-      blurb: 'Solve as many as you can in ten seconds. Tap the right answer — speed counts.',
+      blurb: 'Head math on the clock — mix of +, −, ×, and ÷. Tap the right answer fast.',
     },
   ]
 }

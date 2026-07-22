@@ -934,47 +934,71 @@ function shuffleNums(arr: number[]) {
   return a
 }
 
+function pickOp(weights: { add: number; sub: number; mul: number; div: number }) {
+  const total = weights.add + weights.sub + weights.mul + weights.div
+  let r = Math.random() * total
+  if ((r -= weights.add) < 0) return '+' as const
+  if ((r -= weights.sub) < 0) return '−' as const
+  if ((r -= weights.mul) < 0) return '×' as const
+  return '÷' as const
+}
+
 function makeMathPrompt(score: number): MathPrompt {
-  const tier = Math.min(3, Math.floor(score / 4))
+  const tier = Math.min(2, Math.floor(score / 3))
+  // Quick head math — mix + − × ÷ from the start; harder numbers as score rises
+  const op =
+    tier === 0
+      ? pickOp({ add: 3, sub: 3, mul: 3, div: 2 })
+      : tier === 1
+        ? pickOp({ add: 2, sub: 2, mul: 3, div: 3 })
+        : pickOp({ add: 2, sub: 2, mul: 3, div: 3 })
+
   let a: number
   let b: number
-  let op: '+' | '−' | '×'
   let answer: number
 
-  if (tier === 0) {
-    a = 2 + Math.floor(Math.random() * 9)
-    b = 2 + Math.floor(Math.random() * 9)
-    op = Math.random() < 0.55 ? '+' : '−'
-    if (op === '−' && b > a) [a, b] = [b, a]
-    answer = op === '+' ? a + b : a - b
-  } else if (tier === 1) {
-    a = 3 + Math.floor(Math.random() * 10)
-    b = 2 + Math.floor(Math.random() * 9)
-    op = Math.random() < 0.45 ? '+' : Math.random() < 0.5 ? '−' : '×'
-    if (op === '−' && b > a) [a, b] = [b, a]
-    if (op === '×') {
-      a = 2 + Math.floor(Math.random() * 9)
-      b = 2 + Math.floor(Math.random() * 8)
-    }
-    answer = op === '+' ? a + b : op === '−' ? a - b : a * b
+  if (op === '×') {
+    const max = tier === 0 ? 9 : tier === 1 ? 11 : 12
+    a = 2 + Math.floor(Math.random() * (max - 1))
+    b = 2 + Math.floor(Math.random() * (max - 1))
+    answer = a * b
+  } else if (op === '÷') {
+    // Always clean integer division
+    const max = tier === 0 ? 9 : tier === 1 ? 11 : 12
+    b = 2 + Math.floor(Math.random() * (max - 1))
+    answer = 2 + Math.floor(Math.random() * (max - 1))
+    a = b * answer
+  } else if (op === '+') {
+    const span = tier === 0 ? 12 : tier === 1 ? 20 : 30
+    a = 3 + Math.floor(Math.random() * span)
+    b = 2 + Math.floor(Math.random() * span)
+    answer = a + b
   } else {
-    a = 4 + Math.floor(Math.random() * 12)
-    b = 3 + Math.floor(Math.random() * 9)
-    op = Math.random() < 0.35 ? '+' : Math.random() < 0.5 ? '−' : '×'
-    if (op === '−' && b > a) [a, b] = [b, a]
-    if (op === '×') {
-      a = 3 + Math.floor(Math.random() * 9)
-      b = 3 + Math.floor(Math.random() * 8)
-    }
-    answer = op === '+' ? a + b : op === '−' ? a - b : a * b
+    const span = tier === 0 ? 12 : tier === 1 ? 20 : 30
+    a = 5 + Math.floor(Math.random() * span)
+    b = 2 + Math.floor(Math.random() * Math.min(a - 1, span))
+    if (b >= a) b = Math.max(1, a - 1)
+    answer = a - b
   }
 
   const wrong = new Set<number>()
   while (wrong.size < 2) {
-    const delta = (Math.floor(Math.random() * 5) + 1) * (Math.random() < 0.5 ? -1 : 1)
-    const candidate = answer + delta
-    if (candidate !== answer && candidate >= 0) wrong.add(candidate)
+    let candidate: number
+    if (op === '×' || op === '÷') {
+      // Plausible nearby factors / quotients, not just ±1
+      const jitter = (1 + Math.floor(Math.random() * 4)) * (Math.random() < 0.5 ? -1 : 1)
+      candidate = answer + jitter
+      if (op === '×' && Math.random() < 0.4) candidate = a * (b + (Math.random() < 0.5 ? -1 : 1))
+      if (op === '÷' && Math.random() < 0.4) candidate = answer + (Math.random() < 0.5 ? -1 : 1) * b
+    } else {
+      const delta = (Math.floor(Math.random() * 6) + 1) * (Math.random() < 0.5 ? -1 : 1)
+      candidate = answer + delta
+    }
+    if (Number.isFinite(candidate) && candidate !== answer && candidate >= 0) {
+      wrong.add(Math.floor(candidate))
+    }
   }
+
   return {
     label: `${a} ${op} ${b}`,
     answer,
