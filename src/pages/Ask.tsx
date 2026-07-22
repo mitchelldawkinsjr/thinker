@@ -8,16 +8,16 @@ export function Ask() {
       <aside className="ask-aside">
         <h2>How this works</h2>
         <p>
-          Instant catalog paths first, then your VPS <strong>llm-runtime</strong> (Ollama)
+          Instant catalog paths first, then <strong>OpenAI</strong> (or Ollama fallback)
           appends a short answer with outbound links from Thinker’s resources and Gutenberg —
           so you dig deeper on purpose instead of endless scrolling.
         </p>
         <ul>
           <li>
-            Default: <code>phi3:mini</code> (fast bounce)
+            Default: <code>gpt-4o-mini</code> (~fractions of a cent per ask)
           </li>
           <li>
-            Quality upgrade: pick a larger model in the menu when available
+            Fallback: local/VPS Ollama if no <code>OPENAI_API_KEY</code>
           </li>
           <li>Follow-up chips refill the box so you can keep going</li>
         </ul>

@@ -22,7 +22,7 @@ Deepstash-style microlearning PWA — bite-sized ideas on AI, sports, history, p
 ```bash
 git clone git@github.com:mitchelldawkinsjr/thinker.git
 cd thinker
-cp .env.example .env   # optional — for Ask / Ollama
+cp .env.example .env   # optional — for Ask (OpenAI or Ollama)
 npm install
 npm run dev
 ```
@@ -31,15 +31,22 @@ Open the URL Vite prints (usually `http://127.0.0.1:5173`).
 
 ### Optional: Ask (LLM)
 
-Ask uses Ollama via a Vite proxy.
+Ask prefers OpenAI via a Vite proxy (API key stays on the server). Ollama is the fallback.
 
-1. Copy env and set your runtime URL:
+1. Copy env:
 
 ```bash
 cp .env.example .env
 ```
 
-2. Edit `.env`:
+2. Edit `.env` (OpenAI preferred):
+
+```bash
+OPENAI_API_KEY=sk-...
+OPENAI_MODEL=gpt-4o-mini
+```
+
+Or Ollama fallback:
 
 ```bash
 OLLAMA_URL=http://127.0.0.1:11434
@@ -48,7 +55,7 @@ VITE_OLLAMA_MODEL=phi3:mini
 
 3. Restart `npm run dev`.
 
-Without Ollama, the rest of the app still works — Ask falls back to instant catalog answers.
+Without either, the rest of the app still works — Ask falls back to instant catalog answers.
 
 ---
 

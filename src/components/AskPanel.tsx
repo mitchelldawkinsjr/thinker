@@ -7,6 +7,11 @@ import {
   pickFastModel,
   type ExploreResult,
 } from '../lib/ollama'
+import {
+  exploreWithOpenAI,
+  getOpenAIModel,
+  isOpenAIConfigured,
+} from '../lib/openai'
 import { buildSlimCatalog, exploreInstant } from '../lib/exploreFast'
 import './AskPanel.css'
 
@@ -18,6 +23,8 @@ type Props = {
   compact?: boolean
   initialQuestion?: string
 }
+
+type Provider = 'openai' | 'ollama' | 'none'
 
 function formatWait(ms: number): string {
   if (ms < 1000) return `${ms}ms`
@@ -106,7 +113,8 @@ export function AskPanel({
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [refining, setRefining] = useState(false)
-  const [model, setModel] = useState(getConfiguredModel())
+  const [provider, setProvider] = useState<Provider | null>(null)
+  const [model, setModel] = useState(getOpenAIModel())
   const [available, setAvailable] = useState<string[] | null>(null)
   const [elapsedMs, setElapsedMs] = useState(0)
   const abortRef = useRef<AbortController | null>(null)
@@ -114,15 +122,31 @@ export function AskPanel({
 
   useEffect(() => {
     let cancelled = false
-    listOllamaModels()
-      .then((names) => {
+    ;(async () => {
+      const openaiOk = await isOpenAIConfigured()
+      if (cancelled) return
+      if (openaiOk) {
+        const preferred = getOpenAIModel() || 'gpt-4o-mini'
+        setProvider('openai')
+        setModel(preferred)
+        // gpt-4o-mini first — default; other cheap options follow
+        setAvailable([...new Set(['gpt-4o-mini', preferred, 'gpt-5-nano'])])
+        return
+      }
+
+      try {
+        const names = await listOllamaModels()
         if (cancelled) return
+        setProvider(names.length ? 'ollama' : 'none')
         setAvailable(names)
         setModel(pickFastModel(names))
-      })
-      .catch(() => {
-        if (!cancelled) setAvailable([])
-      })
+      } catch {
+        if (!cancelled) {
+          setProvider('none')
+          setAvailable([])
+        }
+      }
+    })()
     return () => {
       cancelled = true
       abortRef.current?.abort()
@@ -162,15 +186,16 @@ export function AskPanel({
     setLoading(false)
     setElapsedMs(0)
 
-    if (available && available.length === 0) return
+    if (provider === 'none' || provider == null) return
 
     llmStartedAt.current = performance.now()
     setRefining(true)
     try {
-      const out = await exploreQuestion(ctx, buildSlimCatalog(topicId), {
-        model,
-        signal: ac.signal,
-      })
+      const catalog = buildSlimCatalog(topicId)
+      const out =
+        provider === 'openai'
+          ? await exploreWithOpenAI(ctx, catalog, { model, signal: ac.signal })
+          : await exploreQuestion(ctx, catalog, { model, signal: ac.signal })
       if (ac.signal.aborted) return
 
       const waitMs = out.latencyMs ?? Math.round(performance.now() - (llmStartedAt.current ?? 0))
@@ -206,6 +231,9 @@ export function AskPanel({
   }, [initialQuestion])
 
   const showTimer = refining || (ai != null && elapsedMs > 0)
+  const offline =
+    provider === 'none' ||
+    (provider === 'ollama' && available && available.length === 0)
 
   return (
     <section className={`ask-panel ${compact ? 'ask-panel--compact' : ''}`}>
@@ -217,22 +245,25 @@ export function AskPanel({
             Instant catalog paths first — AI answer appends below when ready.
           </p>
         </div>
-        <label className="ask-model">
-          <span>Model</span>
-          <select value={model} onChange={(e) => setModel(e.target.value)}>
-            {(available?.length ? available : [model]).map((name) => (
-              <option key={name} value={name}>
-                {name}
-              </option>
-            ))}
-          </select>
-        </label>
+        {provider !== 'none' && provider != null && (
+          <label className="ask-model">
+            <span>Model</span>
+            <select value={model} onChange={(e) => setModel(e.target.value)}>
+              {(available?.length ? available : [model || getConfiguredModel()]).map((name) => (
+                <option key={name} value={name}>
+                  {name}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
       </header>
 
-      {available && available.length === 0 && (
+      {offline && (
         <p className="ask-warn">
-          Ollama proxy offline — instant catalog answers still work. For LLM refine, confirm
-          Tailscale → VPS <code>llm-runtime</code> and restart <code>npm run dev</code>.
+          No LLM configured — instant catalog answers still work. Add{' '}
+          <code>OPENAI_API_KEY</code> to <code>.env</code> (preferred) or confirm Tailscale → VPS{' '}
+          <code>llm-runtime</code>, then restart <code>npm run dev</code>.
         </p>
       )}
 
