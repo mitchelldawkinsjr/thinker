@@ -10,6 +10,7 @@ import { useSubscriptions } from '../hooks/useSubscriptions'
 import { useUserNewsItems } from '../hooks/useUserNews'
 import { getFeedCursor, setFeedCursor } from '../lib/daySession'
 import { hideFromPool, markSeen } from '../lib/feedRotation'
+import { resolvePlayableUrl } from '../lib/mediaUrl'
 import { IdeaCard } from '../components/IdeaCard'
 import {
   BookFeedCard,
@@ -80,6 +81,18 @@ export function Feed() {
   useEffect(() => {
     setFeedCursor(topicKey, index)
   }, [topicKey, index])
+
+  // Jump to first direct audio/video news card for local testing (?media=audio|video)
+  const mediaWant = params.get('media')
+  useEffect(() => {
+    if (mediaWant !== 'audio' && mediaWant !== 'video') return
+    if (items.length === 0) return
+    const i = items.findIndex((it) => {
+      if (it.kind !== 'news') return false
+      return resolvePlayableUrl(it.news.sourceUrl, it.news.angles).kind === mediaWant
+    })
+    if (i >= 0) setIndex(i)
+  }, [items, mediaWant])
 
   const item = items[index]
 

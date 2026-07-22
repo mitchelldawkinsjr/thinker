@@ -1,4 +1,11 @@
-import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
+import {
+  useEffect,
+  useId,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from 'react'
 import { createPortal } from 'react-dom'
 import { detectMediaKind, type MediaKind } from '../lib/mediaUrl'
 import './CardMedia.css'
@@ -54,6 +61,174 @@ export function ExternalCta({
   )
 }
 
+function formatTime(seconds: number): string {
+  if (!Number.isFinite(seconds) || seconds < 0) return '0:00'
+  const m = Math.floor(seconds / 60)
+  const s = Math.floor(seconds % 60)
+  return `${m}:${s.toString().padStart(2, '0')}`
+}
+
+function InlineAudioPlayer({ src }: { src: string }) {
+  const audioRef = useRef<HTMLAudioElement>(null)
+  const [playing, setPlaying] = useState(false)
+  const [current, setCurrent] = useState(0)
+  const [duration, setDuration] = useState(0)
+  const [scrubbing, setScrubbing] = useState(false)
+  const progress = duration > 0 ? Math.min(100, (current / duration) * 100) : 0
+
+  useEffect(() => {
+    const el = audioRef.current
+    if (!el) return
+
+    const onTime = () => {
+      if (!scrubbing) setCurrent(el.currentTime)
+    }
+    const onMeta = () => setDuration(el.duration || 0)
+    const onPlay = () => setPlaying(true)
+    const onPause = () => setPlaying(false)
+    const onEnded = () => {
+      setPlaying(false)
+      setCurrent(0)
+    }
+
+    el.addEventListener('timeupdate', onTime)
+    el.addEventListener('loadedmetadata', onMeta)
+    el.addEventListener('durationchange', onMeta)
+    el.addEventListener('play', onPlay)
+    el.addEventListener('pause', onPause)
+    el.addEventListener('ended', onEnded)
+    return () => {
+      el.removeEventListener('timeupdate', onTime)
+      el.removeEventListener('loadedmetadata', onMeta)
+      el.removeEventListener('durationchange', onMeta)
+      el.removeEventListener('play', onPlay)
+      el.removeEventListener('pause', onPause)
+      el.removeEventListener('ended', onEnded)
+      el.pause()
+    }
+  }, [src, scrubbing])
+
+  const toggle = async () => {
+    const el = audioRef.current
+    if (!el) return
+    if (el.paused) {
+      try {
+        await el.play()
+      } catch {
+        /* blocked / failed — stay paused */
+      }
+    } else {
+      el.pause()
+    }
+  }
+
+  const seek = (ratio: number) => {
+    const el = audioRef.current
+    if (!el || !Number.isFinite(el.duration) || el.duration <= 0) return
+    const next = Math.max(0, Math.min(1, ratio)) * el.duration
+    el.currentTime = next
+    setCurrent(next)
+  }
+
+  const skipBy = (delta: number) => {
+    const el = audioRef.current
+    if (!el) return
+    const max = Number.isFinite(el.duration) && el.duration > 0 ? el.duration : Number.POSITIVE_INFINITY
+    const next = Math.max(0, Math.min(max, el.currentTime + delta))
+    el.currentTime = next
+    setCurrent(next)
+  }
+
+  return (
+    <div className="card-audio">
+      <audio ref={audioRef} preload="none" src={src} />
+      <div className="card-audio-transport">
+        <button
+          type="button"
+          className="card-audio-skip"
+          onClick={() => skipBy(-10)}
+          aria-label="Rewind 10 seconds"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path
+              d="M8.5 7.5v9L3.5 12l5-4.5zM15.5 7.5v9L10.5 12l5-4.5z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>10</span>
+        </button>
+        <button
+          type="button"
+          className={`card-audio-play ${playing ? 'is-playing' : ''}`}
+          onClick={() => void toggle()}
+          aria-label={playing ? 'Pause' : 'Play'}
+        >
+          {playing ? (
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+              <rect x="5" y="4" width="5" height="16" rx="1.2" />
+              <rect x="14" y="4" width="5" height="16" rx="1.2" />
+            </svg>
+          ) : (
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+              <path d="M7.5 4.8v14.4L19.2 12 7.5 4.8z" />
+            </svg>
+          )}
+        </button>
+        <button
+          type="button"
+          className="card-audio-skip"
+          onClick={() => skipBy(10)}
+          aria-label="Forward 10 seconds"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path
+              d="M8.5 7.5v9L13.5 12l-5-4.5zM15.5 7.5v9L20.5 12l-5-4.5z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>10</span>
+        </button>
+      </div>
+
+      <div className="card-audio-main">
+        <div className="card-audio-meta">
+          <span className="card-audio-kicker">Listen</span>
+          <span className="card-audio-time" aria-live="off">
+            {formatTime(current)}
+            <span className="card-audio-time-sep">/</span>
+            {duration > 0 ? formatTime(duration) : '–:––'}
+          </span>
+        </div>
+        <input
+          className="card-audio-seek"
+          type="range"
+          min={0}
+          max={1000}
+          step={1}
+          value={Math.round(progress * 10)}
+          aria-label="Seek"
+          style={{ '--seek-progress': `${progress}%` } as CSSProperties}
+          onPointerDown={() => setScrubbing(true)}
+          onPointerUp={(e) => {
+            setScrubbing(false)
+            seek(Number(e.currentTarget.value) / 1000)
+          }}
+          onChange={(e) => {
+            const ratio = Number(e.target.value) / 1000
+            if (duration > 0) setCurrent(ratio * duration)
+            if (!scrubbing) seek(ratio)
+          }}
+        />
+      </div>
+
+      <a className="card-audio-open" href={src} target="_blank" rel="noreferrer" title="Open file">
+        <ExternalLinkIcon />
+        <span className="visually-hidden">Open file</span>
+      </a>
+    </div>
+  )
+}
+
 type SourceMediaParts = {
   kind: MediaKind | null
   /** Inline player (audio) — render above the action row */
@@ -72,14 +247,7 @@ export function sourceMediaParts(
   if (kind === 'audio') {
     return {
       kind,
-      media: (
-        <div className="card-media card-media--audio">
-          <audio className="card-media-audio" controls preload="none" src={url} />
-          <a className="card-media-open" href={url} target="_blank" rel="noreferrer">
-            Open file <ExternalLinkIcon />
-          </a>
-        </div>
-      ),
+      media: <InlineAudioPlayer src={url} />,
       cta: null,
     }
   }

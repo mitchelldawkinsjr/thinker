@@ -36,3 +36,17 @@ export function detectMediaKind(url: string | undefined | null): MediaKind | nul
   if (VIDEO_EXT.has(ext)) return 'video'
   return null
 }
+
+/** Prefer a direct audio/video file URL when the card has one. */
+export function resolvePlayableUrl(
+  sourceUrl: string,
+  angles?: Array<{ url: string }> | null,
+): { url: string; kind: MediaKind | null } {
+  const candidates = [...(angles ?? []).map((a) => a.url), sourceUrl].filter(Boolean)
+  for (const url of candidates) {
+    const kind = detectMediaKind(url)
+    if (kind) return { url, kind }
+  }
+  const url = angles?.[0]?.url || sourceUrl
+  return { url, kind: detectMediaKind(url) }
+}

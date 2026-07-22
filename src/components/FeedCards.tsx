@@ -14,6 +14,7 @@ import {
   warmScripturaProbe,
 } from '../lib/scriptureLinks'
 import { ExternalCta, sourceMediaParts } from './CardMedia'
+import { resolvePlayableUrl } from '../lib/mediaUrl'
 import './IdeaCard.css'
 import './FeedCards.css'
 
@@ -196,7 +197,7 @@ export function NewsFeedCard({
   news: NewsItem
 } & NavProps) {
   const topics = news.topicIds.map((t) => `#${t}`).join(' · ')
-  const primary = news.angles?.[0]?.url ?? news.sourceUrl
+  const primary = resolvePlayableUrl(news.sourceUrl, news.angles).url
   const parts = sourceMediaParts(primary, 'Read source')
   const isPolitics = news.topicIds.includes('politics')
   const [copied, setCopied] = useState(false)
