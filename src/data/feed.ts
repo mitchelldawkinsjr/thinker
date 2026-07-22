@@ -167,11 +167,58 @@ function newsItems(news: NewsItem[], topicFilter?: string): FeedItem[] {
     }))
 }
 
+function dayOfYear(date = new Date()) {
+  const start = Date.UTC(date.getFullYear(), 0, 0)
+  const now = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate())
+  return Math.floor((now - start) / 86400000)
+}
+
+/** Recent doys ending at today (handles year wrap). Oldest → today. */
+function recentDoys(windowDays: number, from = new Date()) {
+  const out: number[] = []
+  for (let i = windowDays - 1; i >= 0; i--) {
+    const d = new Date(from.getFullYear(), from.getMonth(), from.getDate() - i)
+    out.push(dayOfYear(d))
+  }
+  return out
+}
+
+const BLB_ID_RE = /^blb-promise-doy-(\d+)$/
+/** Lookback if today's promise isn't in the ingested window yet */
+const BLB_LOOKBACK_DAYS = 21
+
+/**
+ * Curated passages stay; BLB Daily Promises collapse to today's doy
+ * (or the nearest earlier day still in the pool).
+ */
+function filterDailyPromises(scriptures: ScriptureItem[]): ScriptureItem[] {
+  const curated: ScriptureItem[] = []
+  const byDoy = new Map<number, ScriptureItem>()
+
+  for (const s of scriptures) {
+    const m = BLB_ID_RE.exec(s.id)
+    if (!m) {
+      curated.push(s)
+      continue
+    }
+    byDoy.set(Number(m[1]), s)
+  }
+
+  if (byDoy.size === 0) return curated
+
+  const doys = recentDoys(BLB_LOOKBACK_DAYS)
+  for (let i = doys.length - 1; i >= 0; i--) {
+    const hit = byDoy.get(doys[i])
+    if (hit) return [...curated, hit]
+  }
+  return curated
+}
+
 function scriptureItems(
   scriptures: ScriptureItem[],
   topicFilter?: string,
 ): FeedItem[] {
-  return scriptures
+  return filterDailyPromises(scriptures)
     .filter((s) => {
       if (!topicFilter) return true
       return s.topicIds.includes(topicFilter as TopicId)
