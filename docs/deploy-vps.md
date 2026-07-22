@@ -34,7 +34,11 @@ curl -fsS http://127.0.0.1:8055/healthz
 ```
 OLLAMA_URL=http://host.docker.internal:11434
 VITE_OLLAMA_MODEL=mistral:latest
+VITE_OPENAI_MODEL=gpt-4o-mini
+OPENAI_API_KEY=sk-...
+OPENAI_MODEL=gpt-4o-mini
+OPENAI_CONFIGURED=true
 PORT=8055
 ```
 
-`OLLAMA_URL` points at host-published llm-runtime (Ollama). Rebuild after changing `VITE_OLLAMA_MODEL`.
+`OPENAI_API_KEY` enables Ask refine via nginx → api.openai.com (key stays on the server). Set `OPENAI_CONFIGURED=true` when the key is present. `OLLAMA_URL` is the fallback. Rebuild after changing `VITE_*` build args.

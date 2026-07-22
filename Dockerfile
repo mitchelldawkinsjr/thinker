@@ -12,6 +12,9 @@ COPY . .
 ARG VITE_OLLAMA_MODEL=mistral:latest
 ENV VITE_OLLAMA_MODEL=$VITE_OLLAMA_MODEL
 
+ARG VITE_OPENAI_MODEL=gpt-4o-mini
+ENV VITE_OPENAI_MODEL=$VITE_OPENAI_MODEL
+
 RUN npm run build
 
 # --- serve ---
@@ -20,8 +23,11 @@ FROM nginx:1.27-alpine
 COPY nginx/default.conf.template /etc/nginx/templates/default.conf.template
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Runtime: set OLLAMA_URL to your llm-runtime / Ollama host
+# Runtime: Ollama fallback + OpenAI Ask (set OPENAI_API_KEY in compose/.env)
 ENV OLLAMA_URL=http://host.docker.internal:11434
+ENV OPENAI_API_KEY=
+ENV OPENAI_MODEL=gpt-4o-mini
+ENV OPENAI_CONFIGURED=false
 
 EXPOSE 80
 

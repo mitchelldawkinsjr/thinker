@@ -10,6 +10,8 @@ export async function isOpenAIConfigured(): Promise<boolean> {
   try {
     const res = await fetch('/api/openai/status')
     if (!res.ok) return false
+    const ct = res.headers.get('content-type') || ''
+    if (!ct.includes('application/json')) return false
     const data = (await res.json()) as { configured?: boolean }
     return Boolean(data.configured)
   } catch {

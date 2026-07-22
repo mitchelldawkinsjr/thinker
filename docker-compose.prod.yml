@@ -12,6 +12,7 @@ services:
       context: .
       args:
         VITE_OLLAMA_MODEL: ${VITE_OLLAMA_MODEL:-mistral:latest}
+        VITE_OPENAI_MODEL: ${VITE_OPENAI_MODEL:-gpt-4o-mini}
     image: thinker:latest
     container_name: thinker-app
     restart: unless-stopped
@@ -20,6 +21,10 @@ services:
     environment:
       # Host-published llm-runtime (Ollama on :11434)
       OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      # nginx status JSON — set true in /opt/thinker/.env when key is present
+      OPENAI_CONFIGURED: ${OPENAI_CONFIGURED:-false}
     extra_hosts:
       - "host.docker.internal:host-gateway"
     networks:

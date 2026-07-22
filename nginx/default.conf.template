@@ -43,6 +43,26 @@ server {
     return 301 /api/ollama/;
   }
 
+  # OpenAI Ask refine — key injected from container env (never in the static JS bundle)
+  location = /api/openai/status {
+    default_type application/json;
+    add_header Cache-Control "no-store";
+    return 200 '{"configured":${OPENAI_CONFIGURED},"model":"${OPENAI_MODEL}"}';
+  }
+
+  location = /api/openai/chat/completions {
+    proxy_pass https://api.openai.com/v1/chat/completions;
+    proxy_http_version 1.1;
+    proxy_ssl_server_name on;
+    proxy_set_header Host api.openai.com;
+    proxy_set_header Authorization "Bearer ${OPENAI_API_KEY}";
+    proxy_set_header Content-Type $content_type;
+    proxy_set_header Connection "";
+    proxy_read_timeout 120s;
+    proxy_send_timeout 120s;
+    proxy_connect_timeout 30s;
+  }
+
   # Cache hashed Vite assets aggressively
   location /assets/ {
     try_files $uri =404;
