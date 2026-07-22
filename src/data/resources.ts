@@ -18,6 +18,11 @@ export interface LearningResource {
   category: ResourceCategory
   /** Optional Thinker topic affinity */
   topicHints?: string[]
+  /**
+   * How this resource appears in the home feed.
+   * `news` = skip free-site cards; content comes from RSS ingest instead.
+   */
+  feedAs?: 'resource' | 'news'
 }
 
 export const resourceCategories: { id: ResourceCategory | 'all'; label: string }[] = [
@@ -468,9 +473,11 @@ export const learningResources: LearningResource[] = [
     name: 'Philip Lewis',
     url: 'https://rss.app/feeds/v1.1/DMmESHzgp7DfJBh9.json',
     blurb:
-      'Chronological X posts and RTs on culture, sports, and Black community news — via RSS.app, no algorithm.',
+      'Chronological X posts and RTs on culture, sports, and Black community news — weekly ingest into the Thinker feed mix (not a free-site card).',
     category: 'news',
     topicHints: ['current-events'],
+    /** Ingested as news cards — keep off the free-site lane */
+    feedAs: 'news',
   },
   {
     id: 'black-political-news',

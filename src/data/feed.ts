@@ -111,6 +111,7 @@ function bookItems(topicFilter?: string): FeedItem[] {
 function resourceItems(topicFilter?: string): FeedItem[] {
   return learningResources
     .filter((r) => {
+      if (r.feedAs === 'news') return false
       if (!topicFilter) return true
       return r.topicHints?.includes(topicFilter)
     })

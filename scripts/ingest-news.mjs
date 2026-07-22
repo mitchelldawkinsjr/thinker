@@ -120,6 +120,13 @@ const FEEDS = [
   },
   // Black pop culture / music — verified XML only
   {
+    name: 'Philip Lewis',
+    url: 'https://rss.app/feeds/v1.1/DMmESHzgp7DfJBh9.json',
+    topicIds: ['current-events'],
+    limit: 8,
+    lessonStyle: 'culture',
+  },
+  {
     name: 'Black Pop Culture',
     url: 'https://rss.app/feeds/v1.1/twaYgziGNNhuhsNL.json',
     topicIds: ['current-events'],

@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-07-22T03:13:53.396Z",
+  "updatedAt": "2026-07-22T03:31:22.290Z",
   "items": [
+    {
+      "id": "rss-a354b0e4686d",
+      "hook": "Wisconsin's 7th District Republican candidates on Congress",
+      "title": "Wisconsin's 7th District Republican candidates on Congress",
+      "lesson": "Jessi Ebben, Kevin Hermening, Michael Alfonso, Niina Baum and Don Raihala on the midterms. Ask: who benefits, what’s the mechanism, and what would change your mind?",
+      "source": "Congress",
+      "sourceUrl": "https://pbswisconsin.org/news-item/wisconsins-7th-district-republican-candidates-on-congress/",
+      "publishedAt": "2026-07-22T03:06:08.000Z",
+      "expiresAt": "2026-07-25T03:31:19.592Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://pbswisconsin.org/news-item/wisconsins-7th-district-republican-candidates-on-congress/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
     {
       "id": "rss-e0af248b6fa5",
       "hook": "How armed group alliances are reshaping Mali’s conflict and the…",
@@ -9,7 +33,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/how-armed-group-alliances-are-reshaping-malis-conflict-and-the-wider-sahel?traffic_source=rss",
       "publishedAt": "2026-07-22T02:39:13.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -33,7 +57,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://thelinknewspaper.ca/article/k-pop-and-the-sanitization-of-black-culture",
       "publishedAt": "2026-07-22T02:38:56.000Z",
-      "expiresAt": "2026-08-01T03:13:50.468Z",
+      "expiresAt": "2026-08-01T03:31:20.458Z",
       "topicIds": [
         "current-events"
       ],
@@ -56,7 +80,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.basketballnews.com/news/basketballnews-nba-active-news-team-usa-is-a-part-of-this-decision-brian-windhorst-shares-stunning-observation-on-lebron-james-potential-return-to-heat/",
       "publishedAt": "2026-07-22T02:38:51.000Z",
-      "expiresAt": "2026-08-01T03:13:53.367Z",
+      "expiresAt": "2026-08-01T03:31:22.200Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -80,7 +104,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/unprecedented-openai-says-ai-models-autonomously-hacked-another-company?traffic_source=rss",
       "publishedAt": "2026-07-22T02:36:55.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -104,7 +128,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/us-targets-china-in-move-to-ban-military-grade-drone-imports?traffic_source=rss",
       "publishedAt": "2026-07-22T02:21:57.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -128,7 +152,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5902245/government-funding-house-vote-continuing-resolution",
       "publishedAt": "2026-07-22T02:20:15.000Z",
-      "expiresAt": "2026-07-25T03:13:49.291Z",
+      "expiresAt": "2026-07-25T03:31:18.659Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -152,7 +176,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-hegseth-estimates-iran-war-has-cost-375-billion-he-defends-funding-request-fiery-hearing",
       "publishedAt": "2026-07-22T02:13:17.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -176,7 +200,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-hegseth-asks-congress-cough-67b-amid-iran-war-and-impending-budget-shortfall-urgent-necessary-injection",
       "publishedAt": "2026-07-22T02:13:17.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -200,7 +224,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-hegseth-asks-congress-87b-keep-fighting-iran",
       "publishedAt": "2026-07-22T02:13:17.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -224,7 +248,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/22/us-says-more-than-1400-infected-by-parasitic-cyclospora-illness-outbreak?traffic_source=rss",
       "publishedAt": "2026-07-22T02:01:28.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -248,7 +272,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/27b77518-857b-4903-86e1-b48f001f3f82/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T01:53:58.000Z",
-      "expiresAt": "2026-07-25T03:13:49.151Z",
+      "expiresAt": "2026-07-25T03:31:18.479Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -276,7 +300,7 @@
       "source": "Congress",
       "sourceUrl": "https://www.reuters.com/business/energy/trump-seek-congress-approval-saudi-arabia-nuclear-energy-pact-that-lacks-2026-07-22/",
       "publishedAt": "2026-07-22T01:51:21.000Z",
-      "expiresAt": "2026-07-25T03:13:49.929Z",
+      "expiresAt": "2026-07-25T03:31:19.592Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -300,7 +324,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/desperate-families-search-rubble-weeks-after-venezuela-earthquakes?traffic_source=rss",
       "publishedAt": "2026-07-22T01:45:35.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -324,7 +348,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://basketnews.com/news-252405-celtics-enter-race-with-heat-for-bradley-beal-per-nba-insider.html",
       "publishedAt": "2026-07-22T01:37:48.000Z",
-      "expiresAt": "2026-08-01T03:13:53.367Z",
+      "expiresAt": "2026-08-01T03:31:22.200Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -348,7 +372,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://sports.yahoo.com/videos/did-lebron-just-nba-hint-012249583.html",
       "publishedAt": "2026-07-22T01:22:49.000Z",
-      "expiresAt": "2026-08-01T03:13:53.367Z",
+      "expiresAt": "2026-08-01T03:31:22.200Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -372,7 +396,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/aje-onl-nf_gavito-cant-see-pilot-zones-working-in-lebanon-210726?traffic_source=rss",
       "publishedAt": "2026-07-22T01:21:29.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -396,7 +420,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/22/leopard-caught-on-camera-storming-into-a-store-in-rajasthan-india?traffic_source=rss",
       "publishedAt": "2026-07-22T01:17:06.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -420,7 +444,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.nbcsports.com/nba/news/stephen-curry-to-become-first-active-player-with-exhibit-in-basketball-hall-of-fame",
       "publishedAt": "2026-07-22T00:59:08.000Z",
-      "expiresAt": "2026-08-01T03:13:53.367Z",
+      "expiresAt": "2026-08-01T03:31:22.200Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -444,7 +468,7 @@
       "source": "Congress",
       "sourceUrl": "https://wtop.com/world/2026/07/chiles-congress-puts-president-kasts-economic-overhaul-on-track-to-becoming-law/",
       "publishedAt": "2026-07-22T00:24:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.929Z",
+      "expiresAt": "2026-07-25T03:31:19.592Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -468,7 +492,7 @@
       "source": "War",
       "sourceUrl": "https://www.nbcnews.com/politics/trump-administration/iran-war-cost-estimate-37-billion-pete-hegseth-senate-hearing-rcna588619",
       "publishedAt": "2026-07-22T00:22:24.000Z",
-      "expiresAt": "2026-07-25T03:13:49.964Z",
+      "expiresAt": "2026-07-25T03:31:19.670Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -492,7 +516,7 @@
       "source": "Congress",
       "sourceUrl": "https://www.clickondetroit.com/business/2026/07/22/chiles-congress-puts-president-kasts-economic-overhaul-on-track-to-becoming-law/",
       "publishedAt": "2026-07-22T00:17:16.000Z",
-      "expiresAt": "2026-07-25T03:13:49.929Z",
+      "expiresAt": "2026-07-25T03:31:19.592Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -516,7 +540,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://sports.yahoo.com/articles/anthony-edwards-rejects-face-nba-001419251.html",
       "publishedAt": "2026-07-22T00:14:19.000Z",
-      "expiresAt": "2026-08-01T03:13:53.367Z",
+      "expiresAt": "2026-08-01T03:31:22.200Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -540,7 +564,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://sports.yahoo.com/articles/ex-warriors-nba-champion-jonathan-001209176.html",
       "publishedAt": "2026-07-22T00:12:09.000Z",
-      "expiresAt": "2026-08-01T03:13:53.367Z",
+      "expiresAt": "2026-08-01T03:31:22.200Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -564,7 +588,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.sportingnews.com/us/nba/los-angeles-lakers/news/ex-warriors-nba-champion-jonathan-kuminga-gets-45-million-lakers-sign-and-trade-update/b558d2fc9129d67f2608805d",
       "publishedAt": "2026-07-22T00:12:09.000Z",
-      "expiresAt": "2026-08-01T03:13:53.367Z",
+      "expiresAt": "2026-08-01T03:31:22.200Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -588,7 +612,7 @@
       "source": "NBA & Basketball News",
       "sourceUrl": "https://www.westernmassnews.com/2026/07/22/twelve-time-nba-all-star-coming-basketball-hall-fame/",
       "publishedAt": "2026-07-22T00:10:27.000Z",
-      "expiresAt": "2026-08-01T03:13:53.367Z",
+      "expiresAt": "2026-08-01T03:31:22.200Z",
       "topicIds": [
         "nba-analytics",
         "sports-biz"
@@ -612,7 +636,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/snoop-dogg-biopic-release-date-1236300241/",
       "publishedAt": "2026-07-22T00:08:55.000Z",
-      "expiresAt": "2026-08-01T03:13:50.589Z",
+      "expiresAt": "2026-08-01T03:31:21.459Z",
       "topicIds": [
         "current-events"
       ],
@@ -635,7 +659,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/3ab61acf-57f7-4210-873b-b48f00016a00/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-22T00:05:20.000Z",
-      "expiresAt": "2026-07-25T03:13:49.151Z",
+      "expiresAt": "2026-07-25T03:31:18.479Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -687,7 +711,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/7/22/iran-war-live-us-launches-new-attacks-hegseth-says-war-has-cost-37-5bn?traffic_source=rss",
       "publishedAt": "2026-07-22T00:00:15.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -711,7 +735,7 @@
       "source": "War",
       "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/7/22/iran-war-live-us-launches-new-attacks-hegseth-says-war-has-cost-37-5bn",
       "publishedAt": "2026-07-22T00:00:15.000Z",
-      "expiresAt": "2026-07-25T03:13:49.964Z",
+      "expiresAt": "2026-07-25T03:31:19.670Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -735,7 +759,7 @@
       "source": "Congress",
       "sourceUrl": "https://www.timesofisrael.com/liveblog_entry/trump-to-seek-approval-of-congress-for-us-saudi-nuclear-energy-pact-that-lacks-safeguards-sources/",
       "publishedAt": "2026-07-22T00:00:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.929Z",
+      "expiresAt": "2026-07-25T03:31:19.592Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -744,6 +768,29 @@
         {
           "label": "Full story",
           "url": "https://www.timesofisrael.com/liveblog_entry/trump-to-seek-approval-of-congress-for-us-saudi-nuclear-energy-pact-that-lacks-safeguards-sources/"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
+      "id": "rss-8cf983cd8182",
+      "hook": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Benjamin Netanyahu is a war…",
+      "title": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Benjamin Netanyahu is a war criminal.",
+      "lesson": "Headline: “RT by @Phil_Lewis_: RT by @Phil_Lewis_: Benjamin Netanyahu is a war criminal.”. Before reacting, name the cultural signal, who’s amplifying it, and one primary source you’d check. Then decide if this is signal or noise.",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/NYCMayor/status/2079718073058091261",
+      "publishedAt": "2026-07-22T00:00:00.000Z",
+      "expiresAt": "2026-08-01T03:31:20.379Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/NYCMayor/status/2079718073058091261"
         },
         {
           "label": "AllSides",
@@ -783,7 +830,7 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/rappers-touring-2026/",
       "publishedAt": "2026-07-21T23:52:58.000Z",
-      "expiresAt": "2026-08-01T03:13:53.028Z",
+      "expiresAt": "2026-08-01T03:31:21.755Z",
       "topicIds": [
         "current-events"
       ],
@@ -806,7 +853,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/21/explosions-in-iran-as-us-launches-new-strikes?traffic_source=rss",
       "publishedAt": "2026-07-21T23:46:00.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -830,7 +877,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/doja-cat-latto-okayyy-video-tour-ma-vie-1236300237/",
       "publishedAt": "2026-07-21T23:37:47.000Z",
-      "expiresAt": "2026-08-01T03:13:50.589Z",
+      "expiresAt": "2026-08-01T03:31:21.459Z",
       "topicIds": [
         "current-events"
       ],
@@ -853,7 +900,7 @@
       "source": "Congress",
       "sourceUrl": "https://latinamericareports.com/de-la-espriellas-defeat-in-congress-could-signal-turbulent-term-in-office/14963/",
       "publishedAt": "2026-07-21T23:31:44.000Z",
-      "expiresAt": "2026-07-25T03:13:49.929Z",
+      "expiresAt": "2026-07-25T03:31:19.592Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -877,7 +924,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-israel-building-miles-long-earthen-barrier-inside-gaza-entrenching-its-division",
       "publishedAt": "2026-07-21T23:31:33.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -901,7 +948,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-idf-confirms-building-massive-sand-barrier-dividing-gaza-after-satellite-imagery-emerges",
       "publishedAt": "2026-07-21T23:31:31.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -925,7 +972,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-israel-building-miles-long-earthen-barrier-inside-gaza-entrenching-its-division-0",
       "publishedAt": "2026-07-21T23:31:29.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -973,7 +1020,7 @@
       "source": "Congress",
       "sourceUrl": "https://komonews.com/news/local/harbor-seal-pup-shot-in-the-head-euthanized-as-lawmakers-weigh-changes-to-marine-mammal-protection-brain-tissue-sr3-wildlife-rehabilitation-center-ct-scans",
       "publishedAt": "2026-07-21T23:17:06.000Z",
-      "expiresAt": "2026-07-25T03:13:49.929Z",
+      "expiresAt": "2026-07-25T03:31:19.592Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -997,7 +1044,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cx2vp4x7gkxo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-21T23:15:33.000Z",
-      "expiresAt": "2026-07-25T03:13:49.816Z",
+      "expiresAt": "2026-07-25T03:31:19.389Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1021,7 +1068,7 @@
       "source": "War",
       "sourceUrl": "https://www.pbs.org/newshour/politics/watch-you-sir-are-the-failure-sen-peters-tells-hegseth-over-lack-of-u-s-strategy-in-iran-war",
       "publishedAt": "2026-07-21T23:14:45.000Z",
-      "expiresAt": "2026-07-25T03:13:49.964Z",
+      "expiresAt": "2026-07-25T03:31:19.670Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1045,7 +1092,7 @@
       "source": "War",
       "sourceUrl": "https://www.war.gov/News/Releases/Release/Article/4551903/dow-identifies-an-army-casualty/",
       "publishedAt": "2026-07-21T23:11:23.000Z",
-      "expiresAt": "2026-07-25T03:13:49.964Z",
+      "expiresAt": "2026-07-25T03:31:19.670Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1117,7 +1164,7 @@
       "source": "War",
       "sourceUrl": "https://www.independent.co.uk/news/world/americas/us-politics/pete-hegseth-iran-war-senate-hearing-b3019146.html",
       "publishedAt": "2026-07-21T22:57:24.000Z",
-      "expiresAt": "2026-07-25T03:13:49.964Z",
+      "expiresAt": "2026-07-25T03:31:19.670Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1141,7 +1188,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/video/2026/7/21/lebanese-army-deploys-in-pilot-zones-under-us-backed-plan?traffic_source=rss",
       "publishedAt": "2026-07-21T22:56:12.000Z",
-      "expiresAt": "2026-07-25T03:13:48.998Z",
+      "expiresAt": "2026-07-25T03:31:18.196Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1213,7 +1260,7 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/lil-wayne-food-rules-milk-mayo/",
       "publishedAt": "2026-07-21T22:46:16.000Z",
-      "expiresAt": "2026-08-01T03:13:53.028Z",
+      "expiresAt": "2026-08-01T03:31:21.755Z",
       "topicIds": [
         "current-events"
       ],
@@ -1236,7 +1283,7 @@
       "source": "War",
       "sourceUrl": "https://www.theatlantic.com/national-security/2026/07/iran-war-trump-hegseth/688016/",
       "publishedAt": "2026-07-21T22:38:04.000Z",
-      "expiresAt": "2026-07-25T03:13:49.964Z",
+      "expiresAt": "2026-07-25T03:31:19.670Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1253,6 +1300,29 @@
       ]
     },
     {
+      "id": "rss-2c9c01130307",
+      "hook": "When Joseph Williams refused to leave the public park where he has…",
+      "title": "When Joseph Williams refused to leave the public park where he has lived for years, he was charged with a felony for camping He's from East Nashville, a historically Black community that has lost many of its Black residents due to rapid gentrification https://www.npr.org/2026/07/21/nx-s1-5887358/tennessee-homeless-arrest-felony-camping-ban",
+      "lesson": "When Joseph Williams refused to leave the public park where he has lived for years, he was charged with a felony for camping He's from East Nashville, a historically Black community that has lost many of its Black residents due to rapid gentrification npr.org/2026/07/21/nx-s1-588…— philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/Phil_Lewis_/status/2079696596879479017",
+      "publishedAt": "2026-07-21T22:34:00.000Z",
+      "expiresAt": "2026-08-01T03:31:20.379Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/Phil_Lewis_/status/2079696596879479017"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
       "id": "rss-beea6d15ac56",
       "hook": "Burnham sets out priorities: New UK PM addresses cost of living crisis",
       "title": "Burnham sets out priorities: New UK PM addresses cost of living crisis",
@@ -1260,7 +1330,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/20602b92-87cd-44c2-a3d1-b48e01725d5d/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T22:28:46.000Z",
-      "expiresAt": "2026-07-25T03:13:49.151Z",
+      "expiresAt": "2026-07-25T03:31:18.479Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1288,7 +1358,7 @@
       "source": "War",
       "sourceUrl": "https://thehill.com/policy/defense/5982033-emergency-funding-military-leaders-iran-war-senate-hearing/",
       "publishedAt": "2026-07-21T22:20:45.000Z",
-      "expiresAt": "2026-07-25T03:13:49.964Z",
+      "expiresAt": "2026-07-25T03:31:19.670Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1336,7 +1406,7 @@
       "source": "War",
       "sourceUrl": "https://www.aljazeera.com/news/2026/7/21/zelenskyy-replaces-ukraine-military-chief-after-protests",
       "publishedAt": "2026-07-21T21:58:32.000Z",
-      "expiresAt": "2026-07-25T03:13:49.964Z",
+      "expiresAt": "2026-07-25T03:31:19.670Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1360,7 +1430,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/9c26e720-d037-41df-a37b-b48e0169ebb0/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T21:57:53.000Z",
-      "expiresAt": "2026-07-25T03:13:49.151Z",
+      "expiresAt": "2026-07-25T03:31:18.479Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1388,7 +1458,7 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/diddy-woman-pay-lawsuit-king-combs-sexual-assault/",
       "publishedAt": "2026-07-21T21:57:11.000Z",
-      "expiresAt": "2026-08-01T03:13:53.028Z",
+      "expiresAt": "2026-08-01T03:31:21.755Z",
       "topicIds": [
         "current-events"
       ],
@@ -1411,7 +1481,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/xzibit-cat-thundercat-20-years-1236300076/",
       "publishedAt": "2026-07-21T21:56:13.000Z",
-      "expiresAt": "2026-08-01T03:13:50.589Z",
+      "expiresAt": "2026-08-01T03:31:21.459Z",
       "topicIds": [
         "current-events"
       ],
@@ -1434,7 +1504,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/lil-wayne-favorite-rappers-aliens-hates-milk-podcast-1236300041/",
       "publishedAt": "2026-07-21T21:45:44.000Z",
-      "expiresAt": "2026-08-01T03:13:50.589Z",
+      "expiresAt": "2026-08-01T03:31:21.459Z",
       "topicIds": [
         "current-events"
       ],
@@ -1457,7 +1527,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/2f0a58b6-3004-4f0f-9fda-b48e016175f1/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T21:27:06.000Z",
-      "expiresAt": "2026-07-25T03:13:49.151Z",
+      "expiresAt": "2026-07-25T03:31:18.479Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1485,7 +1555,7 @@
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/memphis-mom-kendra-scott-fatally-shot-man-rodderius-morton-found-daughter-bed/",
       "publishedAt": "2026-07-21T21:22:41.000Z",
-      "expiresAt": "2026-08-01T03:13:53.251Z",
+      "expiresAt": "2026-08-01T03:31:22.020Z",
       "topicIds": [
         "current-events"
       ],
@@ -1508,7 +1578,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/key-glock-interview-project-x-1236284255/",
       "publishedAt": "2026-07-21T20:51:51.000Z",
-      "expiresAt": "2026-08-01T03:13:50.589Z",
+      "expiresAt": "2026-08-01T03:31:21.459Z",
       "topicIds": [
         "current-events"
       ],
@@ -1524,6 +1594,29 @@
       ]
     },
     {
+      "id": "rss-87c373c91134",
+      "hook": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: If you’re trying to keep up…",
+      "title": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: If you’re trying to keep up with the unprecedented cyclospora outbreak(s) in the U.S. and you’re confused, you’re not alone. I cannot even count how many headlines, news stories and social media posts in the past 48 hours I’ve seen that are misleading or just flat out wrong. We are simply awash in bad information. We took the paywall down for today's @foodfixco newsletter (for paid subscribers) hoping that it helps more people understand what's going on: https://foodfix.co/navigating-a-very-confusing-cyclospora-news-cycle/",
+      "lesson": "If you’re trying to keep up with the unprecedented cyclospora outbreak(s) in the U.S. and you’re confused, you’re not alone. I cannot even count how many headlines, news stories and social media posts in the past 48 hours I’ve seen that are misleading or just flat out wrong. We are simply awash in bad information. We Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/hbottemiller/status/2079668417150517692",
+      "publishedAt": "2026-07-21T20:42:00.000Z",
+      "expiresAt": "2026-08-01T03:31:20.379Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/hbottemiller/status/2079668417150517692"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
       "id": "rss-96113fa0cf29",
       "hook": "The Best Argument Against Political Polarization Is My Best Friend",
       "title": "The Best Argument Against Political Polarization Is My Best Friend",
@@ -1531,7 +1624,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/featured/2026-07-21-0700/best-argument-against-political-polarization-my-best-friend",
       "publishedAt": "2026-07-21T20:39:59.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1555,7 +1648,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/1d62974e-fee7-4f96-b3c4-b48e0153ca7d/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T20:38:05.000Z",
-      "expiresAt": "2026-07-25T03:13:49.151Z",
+      "expiresAt": "2026-07-25T03:31:18.479Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1576,6 +1669,29 @@
       ]
     },
     {
+      "id": "rss-bb2e3db48c19",
+      "hook": "Pete Hegseth said he couldn’t answer “specific numbers” on where an…",
+      "title": "Pete Hegseth said he couldn’t answer “specific numbers” on where an extra $75 billion in defense spending has gone https://www.huffposm/entry/live-updates_n_6a5ddaf5e4b063a1f5f200e1/liveblog_6a5fcf62e4b06bbe43f4ed6d",
+      "lesson": "Pete Hegseth said he couldn’t answer “specific numbers” on where an extra $75 billion in defense spending has gone huffpost.com/entry/live-upda…— philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/Phil_Lewis_/status/2079664753220227401",
+      "publishedAt": "2026-07-21T20:28:00.000Z",
+      "expiresAt": "2026-08-01T03:31:20.379Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/Phil_Lewis_/status/2079664753220227401"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
       "id": "rss-02c94e06fbda",
       "hook": "UPDATE: Georgia Judge Sets Anthony Edwards&#8217; Monthly Child…",
       "title": "UPDATE: Georgia Judge Sets Anthony Edwards&#8217; Monthly Child Support Amount For Daughter With Ayesha Howard",
@@ -1583,7 +1699,7 @@
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/update-georgia-judge-establishes-anthony-edward-monthly-child-support-payments-to-ayesha-howard-for-their-daughter/",
       "publishedAt": "2026-07-21T20:23:00.000Z",
-      "expiresAt": "2026-08-01T03:13:53.251Z",
+      "expiresAt": "2026-08-01T03:31:22.020Z",
       "topicIds": [
         "current-events"
       ],
@@ -1606,7 +1722,7 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/travis-scott-jordan-clarkson-removed-club-bottle-throwing/",
       "publishedAt": "2026-07-21T20:22:04.000Z",
-      "expiresAt": "2026-08-01T03:13:53.028Z",
+      "expiresAt": "2026-08-01T03:31:21.755Z",
       "topicIds": [
         "current-events"
       ],
@@ -1622,6 +1738,29 @@
       ]
     },
     {
+      "id": "rss-8519fd6a2bf0",
+      "hook": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Update: the bus was carrying…",
+      "title": "RT by @Phil_Lewis_: RT by @Phil_Lewis_: Update: the bus was carrying students from the Maryland School for the Blind",
+      "lesson": "Update: the bus was carrying students from the Maryland School for the BlindJustin Fenton (@justin_fenton)Happening now: Police respond after school bus crashes into Parkville building thebanner.com/community/loca…— https://x.com/justin_fenton/status/2079653073295700186— @justin_fenton Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/justin_fenton/status/2079662711223283916",
+      "publishedAt": "2026-07-21T20:20:00.000Z",
+      "expiresAt": "2026-08-01T03:31:20.379Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/justin_fenton/status/2079662711223283916"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
       "id": "rss-cbaadba830e6",
       "hook": "Trump hits Canada with slew of new 50% tariffs set to take effect in…",
       "title": "Trump hits Canada with slew of new 50% tariffs set to take effect in 30 days",
@@ -1629,7 +1768,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5901957/trump-hits-canada-with-slew-of-new-50-tariffs-set-to-take-effect-in-30-days",
       "publishedAt": "2026-07-21T20:09:34.000Z",
-      "expiresAt": "2026-07-25T03:13:49.291Z",
+      "expiresAt": "2026-07-25T03:31:18.659Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1653,7 +1792,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.qcnews.com/high-school-sports/panthers-sending-11-teams-of-charlotte-area-studets-to-nfl-flag-football-championships/",
       "publishedAt": "2026-07-21T19:59:16.000Z",
-      "expiresAt": "2026-08-01T03:13:53.394Z",
+      "expiresAt": "2026-08-01T03:31:22.289Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -1677,7 +1816,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/defense-and-security-state-dept-again-deems-cuba-threat-amid-talk-us-push-regime-change",
       "publishedAt": "2026-07-21T19:59:08.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1701,7 +1840,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/bf3abaaf-909c-4c5e-aa77-b48e01493641/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T19:58:45.000Z",
-      "expiresAt": "2026-07-25T03:13:49.151Z",
+      "expiresAt": "2026-07-25T03:31:18.479Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1729,7 +1868,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/defense-and-security-state-department-report-links-cuba-wide-range-us-protests-including-george-floyd-0",
       "publishedAt": "2026-07-21T19:57:30.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1753,7 +1892,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/voting-rights-and-voter-fraud-more-6k-non-citizens-registered-vote-new-jersey-due-software-issue-sherrill",
       "publishedAt": "2026-07-21T19:56:20.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1777,7 +1916,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/world-french-parliament-backs-social-media-ban-children-under-15",
       "publishedAt": "2026-07-21T19:56:20.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1801,7 +1940,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-07-21-0700/middle-east-pentagon-identifies-another-soldier-killed-iran-war",
       "publishedAt": "2026-07-21T19:56:20.000Z",
-      "expiresAt": "2026-07-25T03:13:48.859Z",
+      "expiresAt": "2026-07-25T03:31:18.071Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1825,7 +1964,7 @@
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/oklahoma-woman-cherie-walker-forcing-11-year-old-daughter-stepfather-baby/",
       "publishedAt": "2026-07-21T19:47:35.000Z",
-      "expiresAt": "2026-08-01T03:13:53.251Z",
+      "expiresAt": "2026-08-01T03:31:22.020Z",
       "topicIds": [
         "current-events"
       ],
@@ -1848,7 +1987,7 @@
       "source": "XXL",
       "sourceUrl": "https://www.xxlmag.com/2026-xxl-freshman-freestyles/",
       "publishedAt": "2026-07-21T19:33:25.000Z",
-      "expiresAt": "2026-08-01T03:13:53.028Z",
+      "expiresAt": "2026-08-01T03:31:21.755Z",
       "topicIds": [
         "current-events"
       ],
@@ -1871,7 +2010,7 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/national/d4vd-hearing-celeste-rivas-hernandez-unrecognizable-remains-1235180578/",
       "publishedAt": "2026-07-21T19:30:00.000Z",
-      "expiresAt": "2026-08-01T03:13:53.163Z",
+      "expiresAt": "2026-08-01T03:31:21.852Z",
       "topicIds": [
         "current-events"
       ],
@@ -1894,7 +2033,7 @@
       "source": "The Shade Room",
       "sourceUrl": "https://theshaderoom.com/nancy-grace-nolan-wells-case-investigation-social-media-reactions/",
       "publishedAt": "2026-07-21T19:16:57.000Z",
-      "expiresAt": "2026-08-01T03:13:53.251Z",
+      "expiresAt": "2026-08-01T03:31:22.020Z",
       "topicIds": [
         "current-events"
       ],
@@ -1917,7 +2056,7 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/entertainment/offset-community-service-weed-dispensary-guard-assault-1235180568/",
       "publishedAt": "2026-07-21T18:53:45.000Z",
-      "expiresAt": "2026-08-01T03:13:53.163Z",
+      "expiresAt": "2026-08-01T03:31:21.852Z",
       "topicIds": [
         "current-events"
       ],
@@ -1940,7 +2079,7 @@
       "source": "Billboard R&B/Hip-Hop",
       "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/cardi-b-hip-hop-britney-spears-1236299655/",
       "publishedAt": "2026-07-21T18:36:06.000Z",
-      "expiresAt": "2026-08-01T03:13:50.589Z",
+      "expiresAt": "2026-08-01T03:31:21.459Z",
       "topicIds": [
         "current-events"
       ],
@@ -1963,7 +2102,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/659e5dfb-7c1d-45b5-8f66-b48e0130f1bb/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-07-21T18:30:26.000Z",
-      "expiresAt": "2026-07-25T03:13:49.151Z",
+      "expiresAt": "2026-07-25T03:31:18.479Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1984,6 +2123,29 @@
       ]
     },
     {
+      "id": "rss-d20175b4838d",
+      "hook": "PARIS (AP) — French lawmakers adopt a sweeping social media ban for…",
+      "title": "PARIS (AP) — French lawmakers adopt a sweeping social media ban for children under 15.",
+      "lesson": "PARIS (AP) — French lawmakers adopt a sweeping social media ban for children under 15.— philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/Phil_Lewis_/status/2079629232397812017",
+      "publishedAt": "2026-07-21T18:07:00.000Z",
+      "expiresAt": "2026-08-01T03:31:20.379Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/Phil_Lewis_/status/2079629232397812017"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
       "id": "rss-abdf52dc2c51",
       "hook": "2026 NFL fantasy football: Top seven RB values",
       "title": "2026 NFL fantasy football: Top seven RB values",
@@ -1991,7 +2153,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-rb-values",
       "publishedAt": "2026-07-21T17:54:40.000Z",
-      "expiresAt": "2026-08-01T03:13:53.394Z",
+      "expiresAt": "2026-08-01T03:31:22.289Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -2187,7 +2349,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/c4gjz907pppo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-21T17:14:44.000Z",
-      "expiresAt": "2026-07-25T03:13:49.816Z",
+      "expiresAt": "2026-07-25T03:31:19.389Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2387,7 +2549,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/business/entergy-highlights-women-leading-the-future-of-the-utility-industry/",
       "publishedAt": "2026-07-21T16:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:27.129Z",
+      "expiresAt": "2026-08-01T03:31:21.357Z",
       "topicIds": [
         "current-events"
       ],
@@ -2410,7 +2572,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/ckg4we9g58do?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-21T15:50:17.000Z",
-      "expiresAt": "2026-07-25T03:13:49.816Z",
+      "expiresAt": "2026-07-25T03:31:19.389Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2534,7 +2696,7 @@
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/jay-zs-jealousy-rears-its-ugly-head-upset-that-beyonce-talks-to-famous-man-pics/",
       "publishedAt": "2026-07-21T14:52:27.000Z",
-      "expiresAt": "2026-08-01T03:13:53.335Z",
+      "expiresAt": "2026-08-01T03:31:22.134Z",
       "topicIds": [
         "current-events"
       ],
@@ -2557,7 +2719,7 @@
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/nfl-baller-leveon-bell-arrested-broke-and-unable-to-pay-child-support/",
       "publishedAt": "2026-07-21T14:51:26.000Z",
-      "expiresAt": "2026-08-01T03:13:53.335Z",
+      "expiresAt": "2026-08-01T03:31:22.134Z",
       "topicIds": [
         "current-events"
       ],
@@ -2573,6 +2735,29 @@
       ]
     },
     {
+      "id": "rss-ce5e297e4d4b",
+      "hook": "Image",
+      "title": "Image",
+      "lesson": "Patrick Beverley (@patbev21)Can’t believe that source lied to me man 🤦🏾‍♂️— https://x.com/patbev21/status/2079552297672036428— philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/Phil_Lewis_/status/2079580024731001225",
+      "publishedAt": "2026-07-21T14:51:00.000Z",
+      "expiresAt": "2026-08-01T03:31:20.379Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/Phil_Lewis_/status/2079580024731001225"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
       "id": "rss-b8deec9947ad",
       "hook": "Malcolm Jamal Warner Left His FORUNE To His Mama … Now Widow Is Suing!",
       "title": "Malcolm Jamal Warner Left His FORUNE To His Mama … Now Widow Is Suing!",
@@ -2580,7 +2765,7 @@
       "source": "MediaTakeOut",
       "sourceUrl": "https://mediatakeout.com/malcolm-jamal-warner-left-his-forune-to-his-mama-now-widow-is-suing/",
       "publishedAt": "2026-07-21T14:49:05.000Z",
-      "expiresAt": "2026-08-01T03:13:53.335Z",
+      "expiresAt": "2026-08-01T03:31:22.134Z",
       "topicIds": [
         "current-events"
       ],
@@ -2651,7 +2836,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cjwxll8jyz8o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-21T14:25:22.000Z",
-      "expiresAt": "2026-07-25T03:13:49.816Z",
+      "expiresAt": "2026-07-25T03:31:19.389Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2675,7 +2860,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/love/method-man-tamika-smith/",
       "publishedAt": "2026-07-21T14:18:09.000Z",
-      "expiresAt": "2026-08-01T03:13:27.129Z",
+      "expiresAt": "2026-08-01T03:31:21.357Z",
       "topicIds": [
         "current-events"
       ],
@@ -2715,6 +2900,29 @@
       ]
     },
     {
+      "id": "rss-7e144dd64dd3",
+      "hook": "Carl Isom-McDaniel, the man who was flipped into the air by a Bison…",
+      "title": "Carl Isom-McDaniel, the man who was flipped into the air by a Bison at Yellowstone, is speaking out about his experience:",
+      "lesson": "Carl Isom-McDaniel, the man who was flipped into the air by a Bison at Yellowstone, is speaking out about his experience: Video — philip lewis (@Phil_Lewis_) Jul 21, Ask: what’s the cultural signal vs noise? Who’s amplifying this, and what would change your take?",
+      "source": "Philip Lewis",
+      "sourceUrl": "https://x.com/Phil_Lewis_/status/2079568790686179794",
+      "publishedAt": "2026-07-21T14:06:00.000Z",
+      "expiresAt": "2026-08-01T03:31:20.379Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://x.com/Phil_Lewis_/status/2079568790686179794"
+        },
+        {
+          "label": "AllSides",
+          "url": "https://www.allsides.com/"
+        }
+      ]
+    },
+    {
       "id": "rss-2d712eb0aba3",
       "hook": "5 lessons from 20 years of climate surveys: Political party matters,…",
       "title": "5 lessons from 20 years of climate surveys: Political party matters, but it doesn’t explain everything",
@@ -2722,7 +2930,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/5-lessons-from-20-years-of-climate-surveys-political-party-matters-but-it-doesnt-explain-everything-287056",
       "publishedAt": "2026-07-21T12:46:04.000Z",
-      "expiresAt": "2026-07-25T03:13:49.572Z",
+      "expiresAt": "2026-07-25T03:31:18.867Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2865,7 +3073,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/entertainment/first-look-netflix-a-different-world/",
       "publishedAt": "2026-07-21T11:51:50.000Z",
-      "expiresAt": "2026-08-01T03:13:27.129Z",
+      "expiresAt": "2026-08-01T03:31:21.357Z",
       "topicIds": [
         "current-events"
       ],
@@ -2916,7 +3124,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/culture/alpha-kappa-alpha-sorority-honorary-members-2026/",
       "publishedAt": "2026-07-21T11:27:08.000Z",
-      "expiresAt": "2026-08-01T03:13:27.129Z",
+      "expiresAt": "2026-08-01T03:31:21.357Z",
       "topicIds": [
         "current-events"
       ],
@@ -2967,7 +3175,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/uncategorized/the-empties-edit-osea-hyaluronic-body-serum/",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:27.129Z",
+      "expiresAt": "2026-08-01T03:31:21.357Z",
       "topicIds": [
         "current-events"
       ],
@@ -2990,7 +3198,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/health-and-wellness/verses-i-return-to-when-my-body-feels-like-the-enemy.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.373Z",
+      "expiresAt": "2026-08-01T03:31:20.198Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3014,7 +3222,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/faith/spiritual-life/why-daily-repentance-is-essential-to-thrive-in-our-faith.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.373Z",
+      "expiresAt": "2026-08-01T03:31:20.198Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3038,7 +3246,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/family/parenting/10-ways-to-thrive-during-the-empty-nest-season.html",
       "publishedAt": "2026-07-21T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.373Z",
+      "expiresAt": "2026-08-01T03:31:20.198Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3062,7 +3270,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5900838/defense-secretary-pete-hegseth-goes-to-the-hill-with-350b-funding-request",
       "publishedAt": "2026-07-21T10:41:41.000Z",
-      "expiresAt": "2026-07-25T03:13:49.291Z",
+      "expiresAt": "2026-07-25T03:31:18.659Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3086,7 +3294,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5900980/sen-chris-murphy-on-the-iran-war-and-pete-hegseths-upcoming-senate-testimony",
       "publishedAt": "2026-07-21T10:41:37.000Z",
-      "expiresAt": "2026-07-25T03:13:49.291Z",
+      "expiresAt": "2026-07-25T03:31:18.659Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3110,7 +3318,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5901905/trump-imposes-tariffs-canadian-goods",
       "publishedAt": "2026-07-21T10:31:34.000Z",
-      "expiresAt": "2026-07-25T03:13:49.291Z",
+      "expiresAt": "2026-07-25T03:31:18.659Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3134,7 +3342,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/how-to-read-bible-like-early-church-fourfold-schreiner/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.262Z",
+      "expiresAt": "2026-08-01T03:31:20.058Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3158,7 +3366,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/iran-shutters-landmark-church/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.262Z",
+      "expiresAt": "2026-08-01T03:31:20.058Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3182,7 +3390,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/the-odyssey-christopher-nolan/",
       "publishedAt": "2026-07-21T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.262Z",
+      "expiresAt": "2026-08-01T03:31:20.058Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3234,7 +3442,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cz97x8k4zqzo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-21T09:15:55.000Z",
-      "expiresAt": "2026-07-25T03:13:49.816Z",
+      "expiresAt": "2026-07-25T03:31:19.389Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3358,7 +3566,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/c62xzn3j1p2o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-07-21T09:00:36.000Z",
-      "expiresAt": "2026-07-25T03:13:49.816Z",
+      "expiresAt": "2026-07-25T03:31:19.389Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3382,7 +3590,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5901065/midterms-primaries-arizona-elections",
       "publishedAt": "2026-07-21T09:00:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.291Z",
+      "expiresAt": "2026-07-25T03:31:18.659Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3406,7 +3614,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://projects.propublica.org/blueberries-farmworker-mistreatment/",
       "publishedAt": "2026-07-21T09:00:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.701Z",
+      "expiresAt": "2026-07-25T03:31:19.004Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3478,7 +3686,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/21/nx-s1-5901113/new-air-force-one-going-out-of-commission-to-get-safety-upgrades",
       "publishedAt": "2026-07-21T08:44:35.000Z",
-      "expiresAt": "2026-07-25T03:13:49.291Z",
+      "expiresAt": "2026-07-25T03:31:18.659Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3502,7 +3710,7 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/news/national/nolan-wells-funeral-parents-mississippi-1235180472/",
       "publishedAt": "2026-07-20T20:55:00.000Z",
-      "expiresAt": "2026-08-01T03:13:53.163Z",
+      "expiresAt": "2026-08-01T03:31:21.852Z",
       "topicIds": [
         "current-events"
       ],
@@ -3525,7 +3733,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/declassified-intelligence-is-not-the-same-as-proof-287482",
       "publishedAt": "2026-07-20T19:06:52.000Z",
-      "expiresAt": "2026-07-25T03:13:49.572Z",
+      "expiresAt": "2026-07-25T03:31:18.867Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3549,7 +3757,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://highschoolfootballamerica.com/trinity-leads-the-2026-high-school-football-america-kentucky-top-10-powered-by-nfl-play-football/",
       "publishedAt": "2026-07-20T18:00:29.000Z",
-      "expiresAt": "2026-08-01T03:13:53.394Z",
+      "expiresAt": "2026-08-01T03:31:22.289Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3573,7 +3781,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/2026-nfl-fantasy-football-top-seven-qb-values",
       "publishedAt": "2026-07-20T16:51:38.000Z",
-      "expiresAt": "2026-08-01T03:13:53.394Z",
+      "expiresAt": "2026-08-01T03:31:22.289Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3597,7 +3805,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/saquon-barkley-police-seek-suspects-break-in-home-pennsylvania",
       "publishedAt": "2026-07-20T16:39:13.000Z",
-      "expiresAt": "2026-08-01T03:13:53.394Z",
+      "expiresAt": "2026-08-01T03:31:22.289Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3621,7 +3829,7 @@
       "source": "Essence",
       "sourceUrl": "https://www.essence.com/fashion/our-favorite-celebrity-looks-from-the-world-cup-final/",
       "publishedAt": "2026-07-20T16:22:17.000Z",
-      "expiresAt": "2026-08-01T03:13:27.129Z",
+      "expiresAt": "2026-08-01T03:31:21.357Z",
       "topicIds": [
         "current-events"
       ],
@@ -3644,7 +3852,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.nfl.com/news/nfl-kickoff-festival-is-coming-to-melbourne",
       "publishedAt": "2026-07-20T16:15:15.000Z",
-      "expiresAt": "2026-08-01T03:13:53.394Z",
+      "expiresAt": "2026-08-01T03:31:22.289Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3668,7 +3876,7 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/features/editorial/ice-t-criminal-migraine-album-on-the-way-1235180439/",
       "publishedAt": "2026-07-20T14:15:00.000Z",
-      "expiresAt": "2026-08-01T03:13:53.163Z",
+      "expiresAt": "2026-08-01T03:31:21.852Z",
       "topicIds": [
         "current-events"
       ],
@@ -3691,7 +3899,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.colts.com/news/nfl-flag-football-championship-2026-girls-boys-high-school-grand-park-tickets-schedule-mexico-brazil-spain-canada-training-camp",
       "publishedAt": "2026-07-20T14:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:53.394Z",
+      "expiresAt": "2026-08-01T03:31:22.289Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3715,7 +3923,7 @@
       "source": "NFL & Football News",
       "sourceUrl": "https://www.cbssports.com/fantasy/football/news/fantasy-football-rankings-2026-sleepers-breakouts-busts-from-computer-that-predicted-daniel-jones-season/",
       "publishedAt": "2026-07-20T12:30:41.000Z",
-      "expiresAt": "2026-08-01T03:13:53.394Z",
+      "expiresAt": "2026-08-01T03:31:22.289Z",
       "topicIds": [
         "football-film",
         "sports-biz"
@@ -3739,7 +3947,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/what-allegheny-countys-new-court-ordered-mental-health-treatment-program-can-and-cant-do-280112",
       "publishedAt": "2026-07-20T12:27:44.000Z",
-      "expiresAt": "2026-07-25T03:13:49.572Z",
+      "expiresAt": "2026-07-25T03:31:18.867Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3763,7 +3971,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/most-americans-support-conservation-heres-how-the-great-lakes-restoration-initiative-got-politicians-from-both-parties-on-board-too-284887",
       "publishedAt": "2026-07-20T12:25:27.000Z",
-      "expiresAt": "2026-07-25T03:13:49.572Z",
+      "expiresAt": "2026-07-25T03:31:18.867Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3787,7 +3995,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/featuring-trump-on-us-coins-and-bills-would-put-america-in-rare-company-285125",
       "publishedAt": "2026-07-20T12:25:09.000Z",
-      "expiresAt": "2026-07-25T03:13:49.572Z",
+      "expiresAt": "2026-07-25T03:31:18.867Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3811,7 +4019,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/how-americas-newspapers-lost-their-voice-285126",
       "publishedAt": "2026-07-20T12:24:33.000Z",
-      "expiresAt": "2026-07-25T03:13:49.572Z",
+      "expiresAt": "2026-07-25T03:31:18.867Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3835,7 +4043,7 @@
       "source": "Vibe",
       "sourceUrl": "https://www.vibe.com/features/editorial/adam-blackstone-music-director-jay-z-yankee-stadium-shows-1235180404/",
       "publishedAt": "2026-07-20T12:00:08.000Z",
-      "expiresAt": "2026-08-01T03:13:53.163Z",
+      "expiresAt": "2026-08-01T03:31:21.852Z",
       "topicIds": [
         "current-events"
       ],
@@ -3858,7 +4066,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/family/marriage/ways-to-keep-your-marriage-thriving-when-things-are-already-good.html",
       "publishedAt": "2026-07-20T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.373Z",
+      "expiresAt": "2026-08-01T03:31:20.198Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3882,7 +4090,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/plus/featured-plus-pdfs/camino-de-santiago-a-practical-guide-for-traveling-the-way-of-st-james.html",
       "publishedAt": "2026-07-20T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.373Z",
+      "expiresAt": "2026-08-01T03:31:20.198Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3906,7 +4114,7 @@
       "source": "Crosswalk",
       "sourceUrl": "https://www.crosswalk.com/health-and-wellness/the-addiction-the-church-refuses-to-confront.html",
       "publishedAt": "2026-07-20T11:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.373Z",
+      "expiresAt": "2026-08-01T03:31:20.198Z",
       "topicIds": [
         "mental-models",
         "current-events"
@@ -3930,7 +4138,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/old-apostolic-lutheran-church-child-sexual-assault-cycle-abuse",
       "publishedAt": "2026-07-20T10:00:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.701Z",
+      "expiresAt": "2026-07-25T03:31:19.004Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3954,7 +4162,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/pro-life-movement-widening-division-abortion-abolition-criminalize-women/",
       "publishedAt": "2026-07-20T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.262Z",
+      "expiresAt": "2026-08-01T03:31:20.058Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -3978,7 +4186,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/adak-island-alaska-internet-subsidy-fcc",
       "publishedAt": "2026-07-20T09:00:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.701Z",
+      "expiresAt": "2026-07-25T03:31:19.004Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4002,7 +4210,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/07/20/nx-s1-5897469/with-just-a-week-left-until-august-recess-congress-faces-long-to-do-list",
       "publishedAt": "2026-07-20T08:42:17.000Z",
-      "expiresAt": "2026-07-25T03:13:49.291Z",
+      "expiresAt": "2026-07-25T03:31:18.659Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4074,7 +4282,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.nytimes.com/2026/07/19/nyregion/black-latino-leaders-dsa-nyc.html",
       "publishedAt": "2026-07-19T07:00:08.000Z",
-      "expiresAt": "2026-07-25T03:13:49.898Z",
+      "expiresAt": "2026-07-25T03:31:19.518Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4098,7 +4306,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/islamic-private-schools-texas-vouchers-sam-westrop",
       "publishedAt": "2026-07-18T03:10:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.701Z",
+      "expiresAt": "2026-07-25T03:31:19.004Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4122,7 +4330,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.yahoo.com/news/politics/articles/black-political-caucus-charlotte-mecklenburg-234656649.html",
       "publishedAt": "2026-07-17T23:46:56.000Z",
-      "expiresAt": "2026-07-25T03:13:49.898Z",
+      "expiresAt": "2026-07-25T03:31:19.518Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4146,7 +4354,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/human-rights-aid-right-wing-causes",
       "publishedAt": "2026-07-17T21:45:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.701Z",
+      "expiresAt": "2026-07-25T03:31:19.004Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4170,7 +4378,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/second-baptist-houston-lawsuit-dismissed-ed-young/",
       "publishedAt": "2026-07-17T17:28:04.000Z",
-      "expiresAt": "2026-08-01T03:13:50.262Z",
+      "expiresAt": "2026-08-01T03:31:20.058Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4194,7 +4402,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/republicans-control-congress-so-why-is-trumps-save-america-act-stuck-287156",
       "publishedAt": "2026-07-17T17:03:09.000Z",
-      "expiresAt": "2026-07-25T03:13:49.572Z",
+      "expiresAt": "2026-07-25T03:31:18.867Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4218,7 +4426,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/pastor-saeed-abedini-iran-custody-battle/",
       "publishedAt": "2026-07-17T14:13:32.000Z",
-      "expiresAt": "2026-08-01T03:13:50.262Z",
+      "expiresAt": "2026-08-01T03:31:20.058Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4242,7 +4450,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/the-trump-administrations-global-campaign-against-radical-left-terrorism-is-built-on-a-national-security-memo-without-congressional-approval-287276",
       "publishedAt": "2026-07-17T12:17:58.000Z",
-      "expiresAt": "2026-07-25T03:13:49.572Z",
+      "expiresAt": "2026-07-25T03:31:18.867Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4266,7 +4474,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/alice-sebold-anthony-broadwater-rape-case-prosecutorial-misconduct-bennett-gershman",
       "publishedAt": "2026-07-17T10:00:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.701Z",
+      "expiresAt": "2026-07-25T03:31:19.004Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4290,7 +4498,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/gambling-is-a-sin-moral-crime-christianity-today-1962/",
       "publishedAt": "2026-07-17T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.262Z",
+      "expiresAt": "2026-08-01T03:31:20.058Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4314,7 +4522,7 @@
       "source": "Christianity Today",
       "sourceUrl": "https://www.christianitytoday.com/2026/07/china-zion-church-pastors-prison-persecution/",
       "publishedAt": "2026-07-17T10:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.262Z",
+      "expiresAt": "2026-08-01T03:31:20.058Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4338,7 +4546,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.facebook.com/reel/1590244832705319/",
       "publishedAt": "2026-07-16T02:30:02.000Z",
-      "expiresAt": "2026-08-01T03:13:50.468Z",
+      "expiresAt": "2026-08-01T03:31:20.458Z",
       "topicIds": [
         "current-events"
       ],
@@ -4361,7 +4569,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.politico.com/news/2026/07/10/black-leaders-democratic-party-redistricting-00991564",
       "publishedAt": "2026-07-10T09:00:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.898Z",
+      "expiresAt": "2026-07-25T03:31:19.518Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4385,7 +4593,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.theatlantic.com/culture/2026/07/music-flop-era/687785/",
       "publishedAt": "2026-07-05T12:00:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.468Z",
+      "expiresAt": "2026-08-01T03:31:20.458Z",
       "topicIds": [
         "current-events"
       ],
@@ -4408,7 +4616,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/kayla-nicole-advice-black-men",
       "publishedAt": "2026-06-30T18:35:11.000Z",
-      "expiresAt": "2026-08-01T03:13:50.468Z",
+      "expiresAt": "2026-08-01T03:31:20.458Z",
       "topicIds": [
         "current-events"
       ],
@@ -4431,7 +4639,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://thedig.howard.edu/all-stories/bts-how-howard-university-helped-elevate-korean-culture-and-how-black-culture-influenced-k-pop",
       "publishedAt": "2026-06-30T13:41:18.000Z",
-      "expiresAt": "2026-08-01T03:13:50.468Z",
+      "expiresAt": "2026-08-01T03:31:20.458Z",
       "topicIds": [
         "current-events"
       ],
@@ -4454,7 +4662,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.essence.com/news/politics/black-people-democratic-party/",
       "publishedAt": "2026-06-27T15:14:41.000Z",
-      "expiresAt": "2026-07-25T03:13:49.898Z",
+      "expiresAt": "2026-07-25T03:31:19.518Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4478,7 +4686,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.forbes.com/sites/alisondurkee/2026/06/26/leon-black-walks-out-of-epstein-interview-after-being-subpoenaed-decries-political-stunt/",
       "publishedAt": "2026-06-26T18:17:36.000Z",
-      "expiresAt": "2026-07-25T03:13:49.898Z",
+      "expiresAt": "2026-07-25T03:31:19.518Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4502,7 +4710,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.nydailynews.com/2026/06/25/black-political-power-predates-democratic-socialism/",
       "publishedAt": "2026-06-25T09:00:42.000Z",
-      "expiresAt": "2026-07-25T03:13:49.898Z",
+      "expiresAt": "2026-07-25T03:31:19.518Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4526,7 +4734,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.complex.com/pop-culture/a/jaelaniturnerwilliams/david-oyelowo-apologizes-black-british-actors",
       "publishedAt": "2026-06-16T16:52:14.000Z",
-      "expiresAt": "2026-08-01T03:13:50.468Z",
+      "expiresAt": "2026-08-01T03:31:20.458Z",
       "topicIds": [
         "current-events"
       ],
@@ -4549,7 +4757,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/disclosure-day-what-does-spielbergs-latest-film-tell-us-about-the-church",
       "publishedAt": "2026-06-16T08:32:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.181Z",
+      "expiresAt": "2026-08-01T03:31:19.988Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4573,7 +4781,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/11-000-sign-petition-against-two-tier-policing",
       "publishedAt": "2026-06-16T07:36:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.181Z",
+      "expiresAt": "2026-08-01T03:31:19.988Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4597,7 +4805,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.kotatv.com/2026/06/15/black-hills-con-2026-draws-pop-culture-fans-rapid-city/",
       "publishedAt": "2026-06-15T23:30:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.468Z",
+      "expiresAt": "2026-08-01T03:31:20.458Z",
       "topicIds": [
         "current-events"
       ],
@@ -4620,7 +4828,7 @@
       "source": "Black Pop Culture",
       "sourceUrl": "https://www.kotatv.com/video/2026/06/15/black-hills-con-2026-draws-pop-culture-fans-rapid-city/",
       "publishedAt": "2026-06-15T21:33:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.468Z",
+      "expiresAt": "2026-08-01T03:31:20.458Z",
       "topicIds": [
         "current-events"
       ],
@@ -4643,7 +4851,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/african-christian-leaders-demand-justice-after-mozambican-bishop-shot-dead",
       "publishedAt": "2026-06-15T13:47:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.181Z",
+      "expiresAt": "2026-08-01T03:31:19.988Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4667,7 +4875,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/lebanese-christians-on-the-brink-as-peace-deal-agreed",
       "publishedAt": "2026-06-15T13:32:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.181Z",
+      "expiresAt": "2026-08-01T03:31:19.988Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4691,7 +4899,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/a-christian-reflection-on-mens-health-week-jesus-the-man-we-were-created-to-be",
       "publishedAt": "2026-06-15T10:35:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.181Z",
+      "expiresAt": "2026-08-01T03:31:19.988Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4715,7 +4923,7 @@
       "source": "Christian Today",
       "sourceUrl": "https://www.christiantoday.com/news/kyivs-dormition-cathedral-badly-damaged-in-major-russian-strikes-on-ukrainian-capital",
       "publishedAt": "2026-06-15T09:32:00.000Z",
-      "expiresAt": "2026-08-01T03:13:50.181Z",
+      "expiresAt": "2026-08-01T03:31:19.988Z",
       "topicIds": [
         "current-events",
         "mental-models"
@@ -4739,7 +4947,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://veritenews.org/2026/06/09/louisiana-black-political-power/",
       "publishedAt": "2026-06-09T10:00:00.000Z",
-      "expiresAt": "2026-07-25T03:13:49.898Z",
+      "expiresAt": "2026-07-25T03:31:19.518Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4763,7 +4971,7 @@
       "source": "Black Political News",
       "sourceUrl": "https://www.theguardian.com/us-news/2026/may/27/alabama-voting-rights-act-maps",
       "publishedAt": "2026-05-27T13:00:19.000Z",
-      "expiresAt": "2026-07-25T03:13:49.898Z",
+      "expiresAt": "2026-07-25T03:31:19.518Z",
       "topicIds": [
         "politics",
         "current-events"
