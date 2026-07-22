@@ -215,6 +215,12 @@
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.feed-card-actions > .idea-btn--next {
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 @keyframes card-in {

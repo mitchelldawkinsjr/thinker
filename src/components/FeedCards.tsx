@@ -13,6 +13,7 @@ import {
   probeScriptura,
   warmScripturaProbe,
 } from '../lib/scriptureLinks'
+import { ExternalCta, sourceMediaParts } from './CardMedia'
 import './IdeaCard.css'
 import './FeedCards.css'
 
@@ -44,6 +45,7 @@ function FeedCardShell({
   kind,
   title,
   children,
+  media,
   cta,
   onNext,
   onPrev,
@@ -56,6 +58,8 @@ function FeedCardShell({
   kind: string
   title: string
   children: ReactNode
+  /** Inline player above the action row (audio) */
+  media?: ReactNode
   cta?: ReactNode
   onHide?: () => void
 } & NavProps) {
@@ -75,6 +79,7 @@ function FeedCardShell({
       </header>
       <h2 className="feed-card-title">{title}</h2>
       {children}
+      {media}
       {onHide && (
         <div className="feed-card-dismiss">
           <button
@@ -97,7 +102,12 @@ function FeedCardShell({
           )}
           {cta}
           {onNext && (
-            <button type="button" className="idea-btn ghost" onClick={onNext} aria-label="Next">
+            <button
+              type="button"
+              className="idea-btn ghost idea-btn--next"
+              onClick={onNext}
+              aria-label="Next"
+            >
               →
             </button>
           )}
@@ -117,6 +127,7 @@ export function ResourceFeedCard({
 }: {
   resource: LearningResource
 } & NavProps) {
+  const parts = sourceMediaParts(resource.url, 'Open site')
   return (
     <FeedCardShell
       accent="#38bdf8"
@@ -128,11 +139,8 @@ export function ResourceFeedCard({
       onPrev={onPrev}
       onNext={onNext}
       onHide={onHide}
-      cta={
-        <a className="idea-btn next" href={resource.url} target="_blank" rel="noreferrer">
-          Open site →
-        </a>
-      }
+      media={parts.media}
+      cta={parts.cta}
     >
       <p className="feed-card-body">{resource.blurb}</p>
       <p className="feed-card-hint">Open the real site — leave the infinite scroll behind.</p>
@@ -156,6 +164,7 @@ export function BookFeedCard({
   why: string
   url: string
 } & NavProps) {
+  const parts = sourceMediaParts(url, 'Read on Gutenberg')
   return (
     <FeedCardShell
       accent="#d4a574"
@@ -167,11 +176,8 @@ export function BookFeedCard({
       onPrev={onPrev}
       onNext={onNext}
       onHide={onHide}
-      cta={
-        <a className="idea-btn next" href={url} target="_blank" rel="noreferrer">
-          Read on Gutenberg →
-        </a>
-      }
+      media={parts.media}
+      cta={parts.cta}
     >
       <p className="feed-card-author">{author}</p>
       <p className="feed-card-body">{why}</p>
@@ -191,6 +197,7 @@ export function NewsFeedCard({
 } & NavProps) {
   const topics = news.topicIds.map((t) => `#${t}`).join(' · ')
   const primary = news.angles?.[0]?.url ?? news.sourceUrl
+  const parts = sourceMediaParts(primary, 'Read source')
   const isPolitics = news.topicIds.includes('politics')
   const [copied, setCopied] = useState(false)
 
@@ -235,11 +242,8 @@ export function NewsFeedCard({
       onPrev={onPrev}
       onNext={onNext}
       onHide={onHide}
-      cta={
-        <a className="idea-btn next" href={primary} target="_blank" rel="noreferrer">
-          Read source →
-        </a>
-      }
+      media={parts.media}
+      cta={parts.cta}
     >
       <p className="feed-card-author">{news.title}</p>
       <p className="feed-card-body">{body}</p>
@@ -312,9 +316,9 @@ export function ScriptureFeedCard({
       onNext={onNext}
       onHide={onHide}
       cta={
-        <a className="idea-btn next" href={open.href} target="_blank" rel="noreferrer">
-          {open.via === 'scriptura' ? 'Open in Scriptura →' : 'Open passage →'}
-        </a>
+        <ExternalCta href={open.href}>
+          {open.via === 'scriptura' ? 'Open in Scriptura' : 'Open passage'}
+        </ExternalCta>
       }
     >
       <p className="feed-card-author">{scripture.reference}</p>

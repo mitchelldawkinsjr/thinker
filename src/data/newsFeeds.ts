@@ -18,6 +18,19 @@ export const curatedNewsFeeds: CuratedNewsFeed[] = [
     topicIds: ['current-events', 'politics'],
   },
   { id: 'npr-politics', name: 'NPR Politics', topicIds: ['politics', 'current-events'] },
+  { id: 'npr-news-now', name: 'NPR News Now', topicIds: ['current-events'] },
+  {
+    id: 'npr-politics-podcast',
+    name: 'NPR Politics Podcast',
+    topicIds: ['politics', 'current-events'],
+  },
+  { id: 'npr-up-first', name: 'Up First', topicIds: ['current-events', 'politics'] },
+  { id: 'npr-code-switch', name: 'Code Switch', topicIds: ['current-events'] },
+  {
+    id: 'npr-morning-edition',
+    name: 'Morning Edition',
+    topicIds: ['current-events', 'politics'],
+  },
   {
     id: 'the-conversation-politics',
     name: 'The Conversation · Politics',

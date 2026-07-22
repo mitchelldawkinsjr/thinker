@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from 'react'
+import { ExternalLinkIcon } from '../components/CardMedia'
 import {
   GUTENBERG_HOME,
   curatedGutenbergMeta,
@@ -43,7 +44,9 @@ function BookCard({
         <h3>{title}</h3>
         <p className="book-author">{author}</p>
         {why && <p className="book-why">{why}</p>}
-        <span className="book-link">Read free on Gutenberg →</span>
+        <span className="book-link">
+          Read free on Gutenberg <ExternalLinkIcon />
+        </span>
       </div>
     </a>
   )

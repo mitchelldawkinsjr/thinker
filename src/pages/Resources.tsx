@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ExternalLinkIcon } from '../components/CardMedia'
 import { customSitesToResources } from '../data/feed'
 import {
   browseableResources,
@@ -89,7 +90,9 @@ export function Resources() {
             <span className="resource-cat">{r.category}</span>
             <h2>{r.name}</h2>
             <p>{r.blurb}</p>
-            <span className="resource-open">Open site →</span>
+            <span className="resource-open">
+              Open site <ExternalLinkIcon />
+            </span>
           </a>
         ))}
       </div>

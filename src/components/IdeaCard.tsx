@@ -6,6 +6,7 @@ import { getTopic } from '../data/topics'
 import { gutenbergUrl } from '../data/gutenberg'
 import { useKept } from '../hooks/useKept'
 import { AskPanel } from './AskPanel'
+import { ExternalLinkIcon, sourceMediaParts } from './CardMedia'
 import './IdeaCard.css'
 
 type Props = {
@@ -51,6 +52,9 @@ export function IdeaCard({
   const { kept, toggle } = useKept()
   const saved = kept.has(idea.id)
   const sourceHref = resolveSourceUrl(idea)
+  const sourceParts = sourceHref
+    ? sourceMediaParts(sourceHref, 'Source', 'idea-btn ghost idea-btn--link')
+    : null
   const { hook, lesson, takeaway, example, hasMore } = presentIdea(idea)
 
   const [expanded, setExpanded] = useState(compact ? true : false)
@@ -143,7 +147,17 @@ export function IdeaCard({
                 rel="noreferrer"
               >
                 {idea.source}
-                {idea.gutenbergId ? ' ↗ Gutenberg' : ' ↗'}
+                {idea.gutenbergId ? (
+                  <>
+                    {' '}
+                    Gutenberg <ExternalLinkIcon />
+                  </>
+                ) : (
+                  <>
+                    {' '}
+                    <ExternalLinkIcon />
+                  </>
+                )}
               </a>
             ) : (
               <span className="idea-source">{idea.source}</span>
@@ -154,22 +168,15 @@ export function IdeaCard({
             <span className="idea-type">{idea.sourceType}</span>
           </div>
 
+          {sourceParts?.media}
+
           <div className="idea-actions">
             {!compact && onPrev && (
               <button type="button" className="idea-btn ghost" onClick={onPrev} aria-label="Previous idea">
                 ←
               </button>
             )}
-            {sourceHref && (
-              <a
-                className="idea-btn ghost idea-btn--link"
-                href={sourceHref}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Source
-              </a>
-            )}
+            {sourceParts?.cta}
             <button
               type="button"
               className={`idea-btn keep ${saved ? 'is-kept' : ''}`}
@@ -189,7 +196,12 @@ export function IdeaCard({
               </button>
             )}
             {!compact && onNext && (
-              <button type="button" className="idea-btn ghost" onClick={onNext} aria-label="Next idea">
+              <button
+                type="button"
+                className="idea-btn ghost idea-btn--next"
+                onClick={onNext}
+                aria-label="Next idea"
+              >
                 →
               </button>
             )}

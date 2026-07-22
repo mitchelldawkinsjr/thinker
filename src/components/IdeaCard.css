@@ -230,6 +230,9 @@
 }
 
 .idea-source--link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   color: color-mix(in srgb, var(--card-accent) 55%, white);
   text-decoration: none;
 }
@@ -242,15 +245,6 @@
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-}
-
-.idea-source--link {
-  color: color-mix(in srgb, var(--card-accent) 55%, white);
-  text-decoration: none;
-}
-
-.idea-source--link:hover {
-  text-decoration: underline;
 }
 
 .idea-pg {
@@ -270,6 +264,13 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.idea-actions > .idea-btn--next {
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .idea-btn {
