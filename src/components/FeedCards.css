@@ -213,14 +213,40 @@
 .feed-card-actions {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  gap: 0.4rem;
+  flex-wrap: nowrap;
   width: 100%;
+  min-width: 0;
+}
+
+.feed-card-actions > .idea-btn,
+.feed-card-actions > a.idea-btn {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .feed-card-actions > .idea-btn--next {
   margin-left: auto;
   flex-shrink: 0;
+}
+
+@media (max-width: 420px) {
+  .feed-card {
+    padding-inline: 1.15rem;
+  }
+
+  .feed-card-actions {
+    gap: 0.28rem;
+  }
+
+  .feed-card-actions .idea-btn {
+    font-size: 0.78rem;
+    padding: 0.55rem 0.7rem;
+  }
+
+  .feed-card-actions .idea-btn.ghost {
+    padding-inline: 0.62rem;
+  }
 }
 
 @keyframes card-in {

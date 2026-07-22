@@ -192,7 +192,7 @@ export function IdeaCard({
                 onClick={() => setAskOpen((v) => !v)}
                 aria-expanded={askOpen}
               >
-                {askOpen ? 'Hide ask' : 'Ask'}
+                {askOpen ? 'Hide' : 'Ask'}
               </button>
             )}
             {!compact && onNext && (

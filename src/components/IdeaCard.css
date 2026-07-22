@@ -263,9 +263,16 @@
 .idea-actions {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   width: 100%;
-  flex-wrap: wrap;
+  min-width: 0;
+  flex-wrap: nowrap;
+}
+
+.idea-actions > .idea-btn,
+.idea-actions > a.idea-btn {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .idea-actions > .idea-btn--next {
@@ -283,6 +290,25 @@
   border-radius: 999px;
   padding: 0.65rem 1.1rem;
   transition: transform 0.15s, background 0.15s, color 0.15s;
+}
+
+@media (max-width: 420px) {
+  .idea-card {
+    padding-inline: 1.15rem;
+  }
+
+  .idea-actions {
+    gap: 0.28rem;
+  }
+
+  .idea-actions .idea-btn {
+    font-size: 0.78rem;
+    padding: 0.55rem 0.7rem;
+  }
+
+  .idea-actions .idea-btn.ghost {
+    padding-inline: 0.62rem;
+  }
 }
 
 .idea-btn:active {
