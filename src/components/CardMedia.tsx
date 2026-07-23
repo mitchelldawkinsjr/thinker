@@ -68,13 +68,42 @@ function formatTime(seconds: number): string {
   return `${m}:${s.toString().padStart(2, '0')}`
 }
 
-function InlineAudioPlayer({ src }: { src: string }) {
+export type AudioTrackMeta = {
+  title?: string
+  artist?: string
+}
+
+function applyMediaSession(meta: AudioTrackMeta | undefined) {
+  if (typeof navigator === 'undefined' || !('mediaSession' in navigator)) return
+  const title = meta?.title?.trim() || 'Audio'
+  const artist = meta?.artist?.trim() || 'Thinker'
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title,
+      artist,
+      album: 'Thinker',
+    })
+  } catch {
+    // Older WebViews may reject MediaMetadata
+  }
+}
+
+function InlineAudioPlayer({
+  src,
+  title,
+  artist,
+}: {
+  src: string
+  title?: string
+  artist?: string
+}) {
   const audioRef = useRef<HTMLAudioElement>(null)
   const [playing, setPlaying] = useState(false)
   const [current, setCurrent] = useState(0)
   const [duration, setDuration] = useState(0)
   const [scrubbing, setScrubbing] = useState(false)
   const progress = duration > 0 ? Math.min(100, (current / duration) * 100) : 0
+  const trackMeta = { title, artist }
 
   useEffect(() => {
     const el = audioRef.current
@@ -84,7 +113,10 @@ function InlineAudioPlayer({ src }: { src: string }) {
       if (!scrubbing) setCurrent(el.currentTime)
     }
     const onMeta = () => setDuration(el.duration || 0)
-    const onPlay = () => setPlaying(true)
+    const onPlay = () => {
+      setPlaying(true)
+      applyMediaSession(trackMeta)
+    }
     const onPause = () => setPlaying(false)
     const onEnded = () => {
       setPlaying(false)
@@ -106,13 +138,56 @@ function InlineAudioPlayer({ src }: { src: string }) {
       el.removeEventListener('ended', onEnded)
       el.pause()
     }
-  }, [src, scrubbing])
+  }, [src, scrubbing, title, artist])
+
+  useEffect(() => {
+    if (typeof navigator === 'undefined' || !('mediaSession' in navigator)) return
+
+    const skipLock = (delta: number) => {
+      const el = audioRef.current
+      if (!el) return
+      const max =
+        Number.isFinite(el.duration) && el.duration > 0 ? el.duration : Number.POSITIVE_INFINITY
+      const next = Math.max(0, Math.min(max, el.currentTime + delta))
+      el.currentTime = next
+      setCurrent(next)
+    }
+
+    try {
+      navigator.mediaSession.setActionHandler('play', () => {
+        void audioRef.current?.play()
+      })
+      navigator.mediaSession.setActionHandler('pause', () => {
+        audioRef.current?.pause()
+      })
+      navigator.mediaSession.setActionHandler('seekbackward', (details) => {
+        skipLock(-(details.seekOffset || 10))
+      })
+      navigator.mediaSession.setActionHandler('seekforward', (details) => {
+        skipLock(details.seekOffset || 10)
+      })
+    } catch {
+      // ignore unsupported handlers
+    }
+
+    return () => {
+      try {
+        navigator.mediaSession.setActionHandler('play', null)
+        navigator.mediaSession.setActionHandler('pause', null)
+        navigator.mediaSession.setActionHandler('seekbackward', null)
+        navigator.mediaSession.setActionHandler('seekforward', null)
+      } catch {
+        // ignore
+      }
+    }
+  }, [src])
 
   const toggle = async () => {
     const el = audioRef.current
     if (!el) return
     if (el.paused) {
       try {
+        applyMediaSession(trackMeta)
         await el.play()
       } catch {
         /* blocked / failed — stay paused */
@@ -242,12 +317,13 @@ export function sourceMediaParts(
   url: string,
   fallbackLabel: string,
   ctaClassName = 'idea-btn next',
+  track?: AudioTrackMeta,
 ): SourceMediaParts {
   const kind = detectMediaKind(url)
   if (kind === 'audio') {
     return {
       kind,
-      media: <InlineAudioPlayer src={url} />,
+      media: <InlineAudioPlayer src={url} title={track?.title} artist={track?.artist} />,
       cta: null,
     }
   }

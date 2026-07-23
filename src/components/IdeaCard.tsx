@@ -53,10 +53,16 @@ export function IdeaCard({
   const saved = kept.has(idea.id)
   const sourceHref = resolveSourceUrl(idea)
   const audioParts = idea.audioUrl
-    ? sourceMediaParts(idea.audioUrl, 'Listen', 'idea-btn ghost idea-btn--link')
+    ? sourceMediaParts(idea.audioUrl, 'Listen', 'idea-btn ghost idea-btn--link', {
+        title: idea.title,
+        artist: idea.source.replace(/\s*\+\s*audio\s*$/i, '').trim(),
+      })
     : null
   const sourceParts = sourceHref
-    ? sourceMediaParts(sourceHref, 'Source', 'idea-btn ghost idea-btn--link')
+    ? sourceMediaParts(sourceHref, 'Source', 'idea-btn ghost idea-btn--link', {
+        title: idea.title,
+        artist: idea.source,
+      })
     : null
   // Prefer dedicated audioUrl for the player; keep sourceUrl as the page CTA when present.
   const media = audioParts?.media ?? sourceParts?.media

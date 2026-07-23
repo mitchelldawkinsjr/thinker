@@ -198,7 +198,10 @@ export function NewsFeedCard({
 } & NavProps) {
   const topics = news.topicIds.map((t) => `#${t}`).join(' · ')
   const primary = resolvePlayableUrl(news.sourceUrl, news.angles).url
-  const parts = sourceMediaParts(primary, 'Read source')
+  const parts = sourceMediaParts(primary, 'Read source', 'idea-btn next', {
+    title: news.title || news.hook,
+    artist: news.source,
+  })
   const isPolitics = news.topicIds.includes('politics')
   const [copied, setCopied] = useState(false)
 

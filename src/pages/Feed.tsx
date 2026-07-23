@@ -8,7 +8,7 @@ import { useNewsItems } from '../hooks/useNews'
 import { useScriptures } from '../hooks/useScriptures'
 import { useSubscriptions } from '../hooks/useSubscriptions'
 import { useUserNewsItems } from '../hooks/useUserNews'
-import { getFeedCursor, setFeedCursor } from '../lib/daySession'
+import { getFeedCursor, getFeedCursorItemId, setFeedCursor, stabilizeFeedOrder } from '../lib/daySession'
 import { hideFromPool, markSeen } from '../lib/feedRotation'
 import { resolvePlayableUrl } from '../lib/mediaUrl'
 import { IdeaCard } from '../components/IdeaCard'
@@ -64,20 +64,20 @@ export function Feed() {
     [topicFilter, subscriptions],
   )
 
-  const items = useMemo(
-    () =>
-      buildMixedFeed({
-        topicFilter: resolvedTopic,
-        news,
-        scriptures,
-        reshuffleKey: reshuffle,
-        extraIdeas: bookIdeas,
-        subscriptions,
-      }),
+  const items = useMemo(() => {
+    const mixed = buildMixedFeed({
+      topicFilter: resolvedTopic,
+      news,
+      scriptures,
+      reshuffleKey: reshuffle,
+      extraIdeas: bookIdeas,
+      subscriptions,
+    })
+    // Freeze today’s order so remounts / async loads / markSeen don’t reshuffle mid-session
+    return stabilizeFeedOrder(mixed, topicKey, reshuffle)
     // hideTick re-runs build after permanent dismiss
     // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional refresh keys
-    [resolvedTopic, news, scriptures, reshuffle, bookIdeas, subscriptions, hideTick],
-  )
+  }, [resolvedTopic, news, scriptures, reshuffle, bookIdeas, subscriptions, hideTick, topicKey])
 
   const [index, setIndex] = useState(() => getFeedCursor(topicKey))
   /** Direction for card enter animation: next → from right, prev → from left */
@@ -89,16 +89,25 @@ export function Feed() {
     setIndex(getFeedCursor(topicKey))
   }, [topicKey])
 
-  // Clamp only — never stomp a saved cursor when the mix is briefly empty
+  // Prefer saved card id over raw index when the mix changes (async content, remount)
   useEffect(() => {
     if (items.length === 0) return
+    const savedId = getFeedCursorItemId(topicKey)
+    if (savedId) {
+      const at = items.findIndex((it) => it.id === savedId)
+      if (at >= 0) {
+        setIndex(at)
+        return
+      }
+    }
     setIndex((i) => Math.min(i, items.length - 1))
-  }, [items.length, hideTick])
+  }, [items, topicKey, hideTick])
 
-  // Persist card position for today only (device localStorage)
+  // Persist card position + id for today only (device localStorage)
   useEffect(() => {
-    setFeedCursor(topicKey, index)
-  }, [topicKey, index])
+    const id = items[index]?.id
+    setFeedCursor(topicKey, index, id)
+  }, [topicKey, index, items])
 
   // Jump to first direct audio/video news card for local testing (?media=audio|video)
   const mediaWant = params.get('media')
@@ -139,7 +148,7 @@ export function Feed() {
     setSlideDir(null)
     setReshuffle((n) => n + 1)
     setIndex(0)
-    setFeedCursor(topicKey, 0)
+    setFeedCursor(topicKey, 0, null)
   }, [topicKey])
 
   const next = useCallback(() => {
