@@ -200,7 +200,7 @@ export function IdeaCard({
           <div className="idea-actions">
             {!compact && onPrev && (
               <button type="button" className="idea-btn ghost" onClick={onPrev} aria-label="Previous idea">
-                ←
+                ↑
               </button>
             )}
             {sourceCta}
@@ -234,7 +234,7 @@ export function IdeaCard({
                 onClick={onNext}
                 aria-label="Next idea"
               >
-                →
+                ↓
               </button>
             )}
           </div>

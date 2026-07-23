@@ -1,6 +1,6 @@
-import { useMemo, useState, useEffect, useCallback } from 'react'
+import { useMemo, useState, useEffect, useCallback, type ReactNode } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { buildMixedFeed, feedKindLabel } from '../data/feed'
+import { buildMixedFeed, feedKindLabel, type FeedItem } from '../data/feed'
 import { resolveTopicFilter } from '../data/subscriptions'
 import { getTopic } from '../data/topics'
 import { useBookIdeas } from '../hooks/useBookIdeas'
@@ -8,7 +8,12 @@ import { useNewsItems } from '../hooks/useNews'
 import { useScriptures } from '../hooks/useScriptures'
 import { useSubscriptions } from '../hooks/useSubscriptions'
 import { useUserNewsItems } from '../hooks/useUserNews'
-import { getFeedCursor, getFeedCursorItemId, setFeedCursor, stabilizeFeedOrder } from '../lib/daySession'
+import {
+  getFeedCursor,
+  getFeedCursorItemId,
+  setFeedCursor,
+  stabilizeFeedOrder,
+} from '../lib/daySession'
 import { hideFromPool, markSeen } from '../lib/feedRotation'
 import { resolvePlayableUrl } from '../lib/mediaUrl'
 import { IdeaCard } from '../components/IdeaCard'
@@ -24,6 +29,56 @@ import {
   SpotGameFeedCard,
 } from '../components/FeedCards'
 import './Feed.css'
+
+/** Matches CodePen comment-card fly-off duration */
+const DECK_MS = 600
+
+type NavProps = {
+  index: number
+  total: number
+  onNext: () => void
+  onPrev: () => void
+  onHide: () => void
+}
+
+function renderFeedCard(item: FeedItem, nav: NavProps): ReactNode {
+  switch (item.kind) {
+    case 'idea':
+      return <IdeaCard idea={item.idea} {...nav} />
+    case 'news':
+      return <NewsFeedCard news={item.news} {...nav} />
+    case 'scripture':
+      return <ScriptureFeedCard scripture={item.scripture} {...nav} />
+    case 'resource':
+      return <ResourceFeedCard resource={item.resource} {...nav} />
+    case 'book':
+      return (
+        <BookFeedCard
+          title={item.title}
+          author={item.author}
+          why={item.why}
+          url={item.url}
+          {...nav}
+        />
+      )
+    case 'game':
+      if (item.gameId === 'reaction') {
+        return <ReactionGameFeedCard title={item.title} blurb={item.blurb} {...nav} />
+      }
+      if (item.gameId === 'spot') {
+        return <SpotGameFeedCard title={item.title} blurb={item.blurb} {...nav} />
+      }
+      if (item.gameId === 'memory') {
+        return <MemoryGameFeedCard title={item.title} blurb={item.blurb} {...nav} />
+      }
+      if (item.gameId === 'math') {
+        return <MathGameFeedCard title={item.title} blurb={item.blurb} {...nav} />
+      }
+      return <GravityGameFeedCard title={item.title} blurb={item.blurb} {...nav} />
+    default:
+      return null
+  }
+}
 
 export function Feed() {
   const [params] = useSearchParams()
@@ -80,12 +135,19 @@ export function Feed() {
   }, [resolvedTopic, news, scriptures, reshuffle, bookIdeas, subscriptions, hideTick, topicKey])
 
   const [index, setIndex] = useState(() => getFeedCursor(topicKey))
-  /** Direction for card enter animation: next → from right, prev → from left */
+  /** Direction for card enter animation: next → fly off up/left, prev → mirrored */
   const [slideDir, setSlideDir] = useState<'next' | 'prev' | null>(null)
+  /** Outgoing card kept mounted for the CodePen-style stack fly-off */
+  const [leaving, setLeaving] = useState<{
+    item: FeedItem
+    dir: 'next' | 'prev'
+    fromIndex: number
+  } | null>(null)
 
   // Topic change: restore today’s cursor for that topic
   useEffect(() => {
     setSlideDir(null)
+    setLeaving(null)
     setIndex(getFeedCursor(topicKey))
   }, [topicKey])
 
@@ -137,33 +199,44 @@ export function Feed() {
     if (item?.id) markSeen(item.id)
   }, [item?.id])
 
+  useEffect(() => {
+    if (!leaving) return
+    const t = window.setTimeout(() => setLeaving(null), DECK_MS)
+    return () => window.clearTimeout(t)
+  }, [leaving])
+
   const hideCurrent = useCallback(() => {
     if (!item?.id) return
     setSlideDir(null)
+    setLeaving(null)
     hideFromPool(item.id)
     setHideTick((t) => t + 1)
   }, [item?.id])
 
   const reshuffleFeed = useCallback(() => {
     setSlideDir(null)
+    setLeaving(null)
     setReshuffle((n) => n + 1)
     setIndex(0)
     setFeedCursor(topicKey, 0, null)
   }, [topicKey])
 
   const next = useCallback(() => {
-    if (items.length === 0) return
-    // Stay on the last card — reset to 1 only on Reshuffle or a new calendar day
+    if (items.length === 0 || leaving) return
     if (index + 1 >= items.length) return
+    const current = items[index]
+    if (current) setLeaving({ item: current, dir: 'next', fromIndex: index })
     setSlideDir('next')
     setIndex(index + 1)
-  }, [index, items.length])
+  }, [index, items, leaving])
 
   const prev = useCallback(() => {
-    if (items.length === 0 || index <= 0) return
+    if (items.length === 0 || leaving || index <= 0) return
+    const current = items[index]
+    if (current) setLeaving({ item: current, dir: 'prev', fromIndex: index })
     setSlideDir('prev')
     setIndex(index - 1)
-  }, [index, items.length])
+  }, [index, items, leaving])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -180,7 +253,21 @@ export function Feed() {
     return c
   }, [items])
 
-  const nav = { index, total: items.length, onNext: next, onPrev: prev, onHide: hideCurrent }
+  const nav: NavProps = {
+    index,
+    total: items.length,
+    onNext: next,
+    onPrev: prev,
+    onHide: hideCurrent,
+  }
+
+  const frozenNav: NavProps = {
+    index: leaving?.fromIndex ?? index,
+    total: items.length,
+    onNext: () => {},
+    onPrev: () => {},
+    onHide: () => {},
+  }
 
   return (
     <div className="feed">
@@ -231,79 +318,31 @@ export function Feed() {
         )}
       </header>
 
-      <div className="feed-stage" data-slide={slideDir ?? undefined}>
-        {!item && <p className="feed-empty">Nothing in this mix yet.</p>}
+      <div
+        className="feed-stage feed-deck"
+        data-slide={slideDir ?? undefined}
+        data-animating={leaving ? 'true' : undefined}
+      >
+        {!item && !leaving && <p className="feed-empty">Nothing in this mix yet.</p>}
 
-        {item?.kind === 'idea' && (
-          <IdeaCard key={item.id} idea={item.idea} {...nav} />
+        {leaving && (
+          <div
+            className={`feed-deck-sheet is-out is-${leaving.dir}`}
+            key={`out-${leaving.item.id}`}
+            aria-hidden
+          >
+            {renderFeedCard(leaving.item, frozenNav)}
+          </div>
         )}
 
-        {item?.kind === 'news' && (
-          <NewsFeedCard key={item.id} news={item.news} {...nav} />
-        )}
-
-        {item?.kind === 'scripture' && (
-          <ScriptureFeedCard key={item.id} scripture={item.scripture} {...nav} />
-        )}
-
-        {item?.kind === 'resource' && (
-          <ResourceFeedCard key={item.id} resource={item.resource} {...nav} />
-        )}
-
-        {item?.kind === 'book' && (
-          <BookFeedCard
+        {item && (
+          <div
+            className={`feed-deck-sheet is-current${slideDir ? ' is-enter' : ''}`}
             key={item.id}
-            title={item.title}
-            author={item.author}
-            why={item.why}
-            url={item.url}
-            {...nav}
-          />
-        )}
-
-        {item?.kind === 'game' && item.gameId === 'reaction' && (
-          <ReactionGameFeedCard
-            key={item.id}
-            title={item.title}
-            blurb={item.blurb}
-            {...nav}
-          />
-        )}
-
-        {item?.kind === 'game' && item.gameId === 'spot' && (
-          <SpotGameFeedCard
-            key={item.id}
-            title={item.title}
-            blurb={item.blurb}
-            {...nav}
-          />
-        )}
-
-        {item?.kind === 'game' && item.gameId === 'memory' && (
-          <MemoryGameFeedCard
-            key={item.id}
-            title={item.title}
-            blurb={item.blurb}
-            {...nav}
-          />
-        )}
-
-        {item?.kind === 'game' && item.gameId === 'math' && (
-          <MathGameFeedCard
-            key={item.id}
-            title={item.title}
-            blurb={item.blurb}
-            {...nav}
-          />
-        )}
-
-        {item?.kind === 'game' && item.gameId === 'gravity' && (
-          <GravityGameFeedCard
-            key={item.id}
-            title={item.title}
-            blurb={item.blurb}
-            {...nav}
-          />
+            data-enter={slideDir ?? undefined}
+          >
+            {renderFeedCard(item, nav)}
+          </div>
         )}
       </div>
 

@@ -98,7 +98,7 @@ function FeedCardShell({
         <div className="feed-card-actions">
           {onPrev && (
             <button type="button" className="idea-btn ghost" onClick={onPrev} aria-label="Previous">
-              ←
+              ↑
             </button>
           )}
           {cta}
@@ -109,7 +109,7 @@ function FeedCardShell({
               onClick={onNext}
               aria-label="Next"
             >
-              →
+              ↓
             </button>
           )}
         </div>

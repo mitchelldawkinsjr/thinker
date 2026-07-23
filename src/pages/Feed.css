@@ -87,60 +87,127 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  overflow: hidden;
   padding-inline: 0.25rem;
+  padding-block: 0.75rem 1.5rem;
 }
 
-/* Kill the default vertical fade-up while browsing the feed */
-.feed-stage .feed-card,
-.feed-stage .idea-card {
-  animation: card-fade-in 0.35s ease-out;
+/* Stacked deck — inspired by https://codepen.io/shshaw/pen/KzYXvP (upright, no tilt) */
+.feed-deck {
+  width: min(100%, 560px);
+  margin-inline: auto;
+  isolation: isolate;
 }
 
-/* → next: card enters from the right; ← prev: from the left */
-.feed-stage[data-slide='next'] .feed-card,
-.feed-stage[data-slide='next'] .idea-card {
-  animation: card-slide-from-right 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+.feed-deck-sheet {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform-origin: 50% 0;
 }
 
-.feed-stage[data-slide='prev'] .feed-card,
-.feed-stage[data-slide='prev'] .idea-card {
-  animation: card-slide-from-left 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+.feed-deck-sheet.is-current {
+  z-index: 10;
+  transform: none;
 }
 
-@keyframes card-fade-in {
-  from {
-    opacity: 0;
+.feed-deck-sheet.is-current.is-enter[data-enter='next'],
+.feed-deck-sheet.is-current.is-enter[data-enter='prev'] {
+  animation: deck-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.feed-deck-sheet.is-out {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.25rem;
+  right: 0.25rem;
+  width: auto;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.feed-deck-sheet.is-out.is-next {
+  animation: deck-out-next 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.feed-deck-sheet.is-out.is-prev {
+  animation: deck-out-prev 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Disable nested card entrance so the deck owns the motion */
+.feed-deck .feed-card,
+.feed-deck .idea-card {
+  animation: none !important;
+  /* Neutral depth shadow — card-surface tinted shadows read muddy on light bg */
+  box-shadow:
+    0 1px 2px color-mix(in srgb, var(--ink) 10%, transparent),
+    0 10px 24px color-mix(in srgb, var(--ink) 12%, transparent),
+    0 28px 56px color-mix(in srgb, var(--ink) 14%, transparent),
+    0 1px 0 color-mix(in srgb, white 12%, transparent) inset;
+}
+
+.feed-deck .idea-stack,
+.feed-deck .feed-card,
+.feed-deck .idea-card {
+  width: min(100%, 520px);
+}
+
+@keyframes deck-settle {
+  0% {
+    transform: translateY(16px) scale(0.985);
+    opacity: 0.88;
   }
-  to {
+  100% {
+    transform: none;
     opacity: 1;
   }
 }
 
-@keyframes card-slide-from-right {
-  from {
-    transform: translateX(110%);
+@keyframes deck-out-next {
+  0% {
+    z-index: 20;
+    transform: translateY(0);
+    opacity: 1;
   }
-  to {
-    transform: translateX(0);
+  55% {
+    transform: translateY(-108%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-125%);
+    opacity: 0;
   }
 }
 
-@keyframes card-slide-from-left {
-  from {
-    transform: translateX(-110%);
+@keyframes deck-out-prev {
+  0% {
+    z-index: 20;
+    transform: translateY(0);
+    opacity: 1;
   }
-  to {
-    transform: translateX(0);
+  55% {
+    transform: translateY(108%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(125%);
+    opacity: 0;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .feed-stage .feed-card,
-  .feed-stage .idea-card,
-  .feed-stage[data-slide] .feed-card,
-  .feed-stage[data-slide] .idea-card {
+  .feed-deck-sheet.is-current,
+  .feed-deck-sheet.is-current.is-enter,
+  .feed-deck-sheet.is-out.is-next,
+  .feed-deck-sheet.is-out.is-prev {
     animation: none;
+    transform: none;
+    opacity: 1;
+  }
+
+  .feed-deck-sheet.is-out {
+    display: none;
   }
 }
 
