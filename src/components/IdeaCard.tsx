@@ -6,7 +6,7 @@ import { getTopic } from '../data/topics'
 import { gutenbergUrl } from '../data/gutenberg'
 import { useKept } from '../hooks/useKept'
 import { AskPanel } from './AskPanel'
-import { ExternalLinkIcon, sourceMediaParts } from './CardMedia'
+import { ExternalCta, ExternalLinkIcon, sourceMediaParts } from './CardMedia'
 import './IdeaCard.css'
 
 type Props = {
@@ -152,7 +152,9 @@ export function IdeaCard({
                 target="_blank"
                 rel="noreferrer"
               >
-                {idea.source}
+                {idea.audioPageUrl
+                  ? idea.source.replace(/\s*\+\s*audio\s*$/i, '').trim()
+                  : idea.source}
                 {idea.gutenbergId ? (
                   <>
                     {' '}
@@ -168,6 +170,19 @@ export function IdeaCard({
             ) : (
               <span className="idea-source">{idea.source}</span>
             )}
+            {idea.audioPageUrl ? (
+              <>
+                <span className="idea-sep">·</span>
+                <a
+                  className="idea-source idea-source--link"
+                  href={idea.audioPageUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  20 Minute Books <ExternalLinkIcon />
+                </a>
+              </>
+            ) : null}
             <span className="idea-sep">·</span>
             <span>{idea.readMinutes} min</span>
             <span className="idea-sep">·</span>
@@ -183,6 +198,11 @@ export function IdeaCard({
               </button>
             )}
             {sourceCta}
+            {idea.audioPageUrl ? (
+              <ExternalCta href={idea.audioPageUrl} className="idea-btn ghost idea-btn--link">
+                20 min
+              </ExternalCta>
+            ) : null}
             <button
               type="button"
               className={`idea-btn keep ${saved ? 'is-kept' : ''}`}

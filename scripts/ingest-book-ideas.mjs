@@ -43,6 +43,7 @@ const MAX_20MIN_AUDIO_ONLY = 48
  *   sourceType: 'book',
  *   sourceUrl: string,
  *   audioUrl?: string,
+ *   audioPageUrl?: string,
  *   readMinutes: number,
  * }} Idea
  */
@@ -386,9 +387,14 @@ function mergeByTitle(fiveMin, twentyMin) {
     if (!key) continue
     const existing = byNorm.get(key)
     if (existing) {
+      const page =
+        audio.sourceUrl && !/\.mp3(\?|$)/i.test(audio.sourceUrl)
+          ? audio.sourceUrl
+          : existing.audioPageUrl
       byNorm.set(key, {
         ...existing,
         audioUrl: audio.audioUrl || existing.audioUrl,
+        ...(page ? { audioPageUrl: page } : {}),
         readMinutes: audio.audioUrl
           ? Math.max(existing.readMinutes || 5, audio.readMinutes || 20)
           : existing.readMinutes,
@@ -498,10 +504,13 @@ async function main() {
       byId.set(id, {
         ...item,
         audioUrl: fresh.audioUrl,
+        ...(fresh.audioPageUrl ? { audioPageUrl: fresh.audioPageUrl } : {}),
         readMinutes: Math.max(item.readMinutes || 5, fresh.readMinutes || 20),
         takeaway: item.takeaway || fresh.takeaway,
         source: withAudioCredit(item.source),
       })
+    } else if (fresh?.audioPageUrl && !item.audioPageUrl) {
+      byId.set(id, { ...item, audioPageUrl: fresh.audioPageUrl })
     } else {
       byId.set(id, item)
     }
@@ -525,8 +534,16 @@ async function main() {
     byTitle.set(
       key,
       score(item) >= score(prev)
-        ? { ...item, audioUrl: item.audioUrl || prev.audioUrl }
-        : { ...prev, audioUrl: prev.audioUrl || item.audioUrl },
+        ? {
+            ...item,
+            audioUrl: item.audioUrl || prev.audioUrl,
+            audioPageUrl: item.audioPageUrl || prev.audioPageUrl,
+          }
+        : {
+            ...prev,
+            audioUrl: prev.audioUrl || item.audioUrl,
+            audioPageUrl: prev.audioPageUrl || item.audioPageUrl,
+          },
     )
   }
 

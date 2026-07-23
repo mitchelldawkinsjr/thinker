@@ -44,6 +44,8 @@ export interface Idea {
   sourceUrl?: string
   /** Optional MP3 (or other audio) for inline playback — e.g. 20 Minute Books */
   audioUrl?: string
+  /** Written summary / episode page for the audio (when sourceUrl is a different summary) */
+  audioPageUrl?: string
   readMinutes: number
   /** When this card entered the live pool (book-summary ingest) */
   ingestedAt?: string

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T14:25:19.490Z",
+  "updatedAt": "2026-07-23T15:06:03.824Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -28,7 +28,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/5-levels-of-leadership-summary/",
       "readMinutes": 27,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/5%20Levels%20of%20Leadership.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/5%20Levels%20of%20Leadership.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/5-levels-of-leadership"
     },
     {
       "id": "booksum-42ce05445e37",
@@ -55,7 +56,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/adults-in-the-room-summary/",
       "readMinutes": 22,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Adults%20in%20The%20Room.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Adults%20in%20The%20Room.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/adults-in-the-room"
     },
     {
       "id": "20min-ff41a0dce8f5",
@@ -83,7 +85,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/angrynomics-summary/",
       "readMinutes": 23,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Angrynomics.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Angrynomics.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/angrynomics"
     },
     {
       "id": "booksum-95b53b0f37f6",
@@ -338,7 +341,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/dare-to-lead-summary-2/",
       "readMinutes": 22,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Dare%20to%20Lead.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Dare%20to%20Lead.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/dare-to-lead"
     },
     {
       "id": "booksum-e2fd404a45a6",
@@ -430,7 +434,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/economics-for-the-common-good-summary/",
       "readMinutes": 38,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Economics%20for%20the%20Common%20Good.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Economics%20for%20the%20Common%20Good.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/economics-for-the-common-good"
     },
     {
       "id": "booksum-796a2ba36264",
@@ -604,7 +609,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/how-to-take-smart-notes-summary/",
       "readMinutes": 22,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/How%20to%20Take%20Smart%20Notes.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/How%20to%20Take%20Smart%20Notes.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/how-to-take-smart-notes"
     },
     {
       "id": "booksum-5c2f0b8017fa",
@@ -685,7 +691,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/just-keep-buying-summary/",
       "readMinutes": 22,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Just%20Keep%20Buying.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Just%20Keep%20Buying.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/just-keep-buying"
     },
     {
       "id": "20min-5c4fc5d641c4",
@@ -713,7 +720,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/letters-to-a-young-athlete-summary/",
       "readMinutes": 30,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Letters%20to%20a%20Young%20Athlete.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Letters%20to%20a%20Young%20Athlete.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/letters-to-a-young-athlete"
     },
     {
       "id": "booksum-1da9ba7dec9c",
@@ -727,7 +735,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/liars-leakers-and-liberals-summary/",
       "readMinutes": 31,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Liars%2C%20Leakers%2C%20and%20Liberals.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Liars%2C%20Leakers%2C%20and%20Liberals.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/liars-leakers-and-liberals"
     },
     {
       "id": "booksum-eb92a97c266b",
@@ -741,7 +750,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/life-3-0-summary/",
       "readMinutes": 24,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Life%203%200.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Life%203%200.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/life-3-dot-0"
     },
     {
       "id": "20min-a28b5264ec9c",
@@ -769,7 +779,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/mastering-leadership-summary/",
       "readMinutes": 22,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Mastering%20Leadership.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Mastering%20Leadership.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/mastering-leadership"
     },
     {
       "id": "booksum-c0ba50672032",
@@ -783,7 +794,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/mastering-the-market-cycle-summary/",
       "readMinutes": 24,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Mastering%20the%20Market%20Cycle.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Mastering%20the%20Market%20Cycle.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/mastering-the-market-cycle"
     },
     {
       "id": "booksum-dafc6d49bac5",
@@ -851,7 +863,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/new-dark-age-summary/",
       "readMinutes": 33,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/New%20Dark%20Age.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/New%20Dark%20Age.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/new-dark-age"
     },
     {
       "id": "booksum-498946a51017",
@@ -878,7 +891,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/on-the-origin-of-time-summary/",
       "readMinutes": 23,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/On%20the%20Origin%20of%20Time.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/On%20the%20Origin%20of%20Time.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/on-the-origin-of-time"
     },
     {
       "id": "booksum-47ea0669a8ef",
@@ -905,7 +919,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/origin-story-summary/",
       "readMinutes": 44,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Origin%20Story.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Origin%20Story.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/origin-story"
     },
     {
       "id": "booksum-37dc8f8b8bd5",
@@ -945,7 +960,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/powers-and-thrones-summary/",
       "readMinutes": 41,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Powers%20and%20Thrones.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Powers%20and%20Thrones.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/powers-and-thrones"
     },
     {
       "id": "booksum-362901229816",
@@ -972,7 +988,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/profit-over-people-summary/",
       "readMinutes": 23,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Profit%20Over%20People.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Profit%20Over%20People.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/profit-over-people"
     },
     {
       "id": "booksum-08ef258fa1a0",
@@ -1013,7 +1030,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/range-summary/",
       "readMinutes": 28,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Range.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Range.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/range"
     },
     {
       "id": "20min-7ba0cbd2d8f0",
@@ -1041,7 +1059,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/renegades-summary/",
       "readMinutes": 27,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Renegades.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Renegades.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/renegades"
     },
     {
       "id": "20min-fc47a18d6a60",
@@ -1097,7 +1116,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/rich-dads-cashflow-quadrant-summary/",
       "readMinutes": 35,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Rich%20Dad%E2%80%99s%20Cashflow%20Quadrant.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Rich%20Dad%E2%80%99s%20Cashflow%20Quadrant.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/rich-dads-cashflow-quadrant"
     },
     {
       "id": "booksum-6741610ffab5",
@@ -1124,7 +1144,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/skin-in-the-game-summary/",
       "readMinutes": 23,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Skin%20in%20the%20Game.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Skin%20in%20the%20Game.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/skin-in-the-game"
     },
     {
       "id": "20min-3dcb8296b1bb",
@@ -1298,7 +1319,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-age-of-spiritual-machines-summary/",
       "readMinutes": 22,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Age%20of%20Spiritual%20Machines.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Age%20of%20Spiritual%20Machines.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-age-of-spiritual-machines"
     },
     {
       "id": "booksum-0220156b5317",
@@ -1312,7 +1334,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-art-of-rhetoric-summary/",
       "readMinutes": 24,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Art%20of%20Rhetoric.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Art%20of%20Rhetoric.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-art-of-rhetoric"
     },
     {
       "id": "booksum-06df1c982013",
@@ -1381,7 +1404,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-confidence-game-summary/",
       "readMinutes": 24,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Confidence%20Game.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Confidence%20Game.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-confidence-game"
     },
     {
       "id": "20min-f4fc7483cb93",
@@ -1436,7 +1460,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-drama-of-the-gifted-child-summary/",
       "readMinutes": 17,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Drama%20of%20the%20Gifted%20Child.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Drama%20of%20the%20Gifted%20Child.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-drama-of-the-gifted-child"
     },
     {
       "id": "20min-e61186818702",
@@ -1477,7 +1502,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-evolution-of-everything-summary/",
       "readMinutes": 27,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Evolution%20of%20Everything.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Evolution%20of%20Everything.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-evolution-of-everything"
     },
     {
       "id": "booksum-5dc9c8f9ac92",
@@ -1585,7 +1611,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-mamba-mentality-summary/",
       "readMinutes": 17,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Mamba%20Mentality.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Mamba%20Mentality.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-mamba-mentality"
     },
     {
       "id": "booksum-96857ec157b6",
@@ -1612,7 +1639,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-optimistic-child-summary/",
       "readMinutes": 26,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Optimistic%20Child.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Optimistic%20Child.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-optimistic-child"
     },
     {
       "id": "booksum-6f2a5021571e",
@@ -1626,7 +1654,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-origins-of-totalitarianism-summary/",
       "readMinutes": 26,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Origins%20of%20Totalitarianism.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Origins%20of%20Totalitarianism.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-origins-of-totalitarianism"
     },
     {
       "id": "booksum-644b18003dcf",
@@ -1733,7 +1762,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-republic-summary/",
       "readMinutes": 25,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Republic.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Republic.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-republic"
     },
     {
       "id": "20min-f34a0767dc9a",
@@ -1831,7 +1861,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-tale-of-the-dueling-neurosurgeons-summary/",
       "readMinutes": 35,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Tale%20of%20the%20Dueling%20Neurosurgeons.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Tale%20of%20the%20Dueling%20Neurosurgeons.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-tale-of-the-dueling-neurosurgeons"
     },
     {
       "id": "booksum-cef1f48f5e5c",
@@ -1845,7 +1876,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-total-money-makeover-summary/",
       "readMinutes": 28,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Total%20Money%20Makeover.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Total%20Money%20Makeover.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-total-money-makeover"
     },
     {
       "id": "booksum-a29845588c47",
@@ -1872,7 +1904,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-way-of-zen-summary/",
       "readMinutes": 32,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Way%20of%20Zen.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Way%20of%20Zen.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-way-of-zen"
     },
     {
       "id": "20min-78544b61651d",
@@ -1900,7 +1933,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-wealth-of-nations-summary/",
       "readMinutes": 13,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Wealth%20of%20Nations.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Wealth%20of%20Nations.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/the-wealth-of-nations"
     },
     {
       "id": "booksum-f3b0566aede0",
@@ -2020,7 +2054,8 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/your-money-or-your-life-summary/",
       "readMinutes": 30,
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Your%20Money%20or%20Your%20Life.mp3"
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Your%20Money%20or%20Your%20Life.mp3",
+      "audioPageUrl": "https://www.20minutebooks.com/your-money-or-your-life"
     },
     {
       "id": "booksum-54a4b4efb4f9",
