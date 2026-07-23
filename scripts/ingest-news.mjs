@@ -375,11 +375,13 @@ const SEED = /** @type {NewsItem[]} */ ([
 ])
 
 function stripHtml(html) {
-  return decodeHtmlEntities(
-    String(html || '')
-      .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-      .replace(/<[^>]+>/g, ' '),
+  // Decode entities first — Reddit Atom encodes markup as &lt;img…&gt;, so tag
+  // stripping must run on the decoded HTML or the card body shows raw markup.
+  const decoded = decodeHtmlEntities(
+    String(html || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1'),
   )
+  return decoded
+    .replace(/<[^>]+>/g, ' ')
     .replace(/\u00A0/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
@@ -425,6 +427,8 @@ const MEDIA_EXTS = new Set([
   'mkv',
 ])
 
+const IMAGE_EXTS = new Set(['jpg', 'jpeg', 'png', 'gif', 'webp', 'avif', 'bmp', 'svg'])
+
 function mediaPathExt(url) {
   try {
     const path = new URL(url, 'https://example.invalid').pathname
@@ -435,6 +439,18 @@ function mediaPathExt(url) {
   } catch {
     return null
   }
+}
+
+function isHttpUrl(url) {
+  return /^https?:\/\//i.test(url)
+}
+
+function isImageUrl(url, type = '', medium = '') {
+  if (String(medium || '').toLowerCase() === 'image') return true
+  const t = String(type || '').toLowerCase()
+  if (t.startsWith('image/')) return true
+  const ext = mediaPathExt(url)
+  return !!(ext && IMAGE_EXTS.has(ext))
 }
 
 /** Prefer playable audio/video enclosures over webpage <link> (e.g. Club 520). */
@@ -456,6 +472,54 @@ function mediaEnclosureUrl(block) {
     if (type.startsWith('audio/') || type.startsWith('video/')) return url
     const ext = mediaPathExt(url)
     if (ext && MEDIA_EXTS.has(ext)) return url
+  }
+  return ''
+}
+
+function attrFromOpenTag(openTagAttrs, attrName) {
+  const m = String(openTagAttrs || '').match(
+    new RegExp(`(?:^|\\s)${attrName}=["']([^"']+)["']`, 'i'),
+  )
+  return m ? m[1] : ''
+}
+
+/** First usable image: media:thumbnail, image enclosure/content, then <img> in HTML body. */
+function entryImageUrl(block) {
+  const thumb = decodeEntities(
+    attr(block, 'media:thumbnail', 'url') || attr(block, 'thumbnail', 'url') || '',
+  ).trim()
+  if (thumb && isHttpUrl(thumb)) return thumb
+
+  const mediaRe = /<(?:media:content|enclosure)(\s[^>]*)?\/?>/gi
+  let m
+  while ((m = mediaRe.exec(block))) {
+    const attrs = m[1] || ''
+    const url = decodeEntities(attrFromOpenTag(attrs, 'url')).trim()
+    if (!url || !isHttpUrl(url)) continue
+    const type = attrFromOpenTag(attrs, 'type')
+    const medium = attrFromOpenTag(attrs, 'medium')
+    if (isImageUrl(url, type, medium)) return url
+  }
+
+  const htmlParts = []
+  for (const name of ['description', 'summary', 'content', 'content:encoded']) {
+    const re = new RegExp(
+      `<(?:${name}|[^:>]+:${name})(?:\\s[^>]*)?>([\\s\\S]*?)</(?:${name}|[^:>]+:${name})>`,
+      'i',
+    )
+    const hit = block.match(re)
+    if (hit) htmlParts.push(hit[1])
+  }
+  const html = decodeEntities(
+    htmlParts.join(' ').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1'),
+  )
+  const imgRe = /<img\b[^>]*\bsrc=["']([^"']+)["']/gi
+  while ((m = imgRe.exec(html))) {
+    const src = decodeEntities(m[1] || '').trim()
+    if (!src || !isHttpUrl(src)) continue
+    if (/redditstatic\.com/i.test(src) && /icon|award|emoji|snoo/i.test(src)) continue
+    if (/\b(emoji|award|icon)\b/i.test(src)) continue
+    return src
   }
   return ''
 }
@@ -495,7 +559,8 @@ function parseEntries(xml) {
       tag(block, 'updated') ||
       tag(block, 'dc:date') ||
       ''
-    return { title, link, summary, published }
+    const imageUrl = entryImageUrl(block) || undefined
+    return { title, link, summary, published, imageUrl }
   })
 }
 
@@ -503,12 +568,28 @@ function parseEntries(xml) {
 function parseJsonFeed(text) {
   const data = JSON.parse(text)
   const items = Array.isArray(data.items) ? data.items : []
-  return items.map((it) => ({
-    title: stripHtml(it.title || ''),
-    link: String(it.url || it.external_url || '').trim(),
-    summary: stripHtml(it.content_text || it.summary || it.content_html || ''),
-    published: String(it.date_published || it.date_modified || ''),
-  }))
+  return items.map((it) => {
+    let imageUrl = String(it.image || it.banner_image || '').trim()
+    if (!imageUrl && Array.isArray(it.attachments)) {
+      for (const a of it.attachments) {
+        const url = String(a.url || '').trim()
+        if (url && isImageUrl(url, a.mime_type || '')) {
+          imageUrl = url
+          break
+        }
+      }
+    }
+    if (!imageUrl && it.content_html) {
+      imageUrl = entryImageUrl(`<content>${it.content_html}</content>`)
+    }
+    return {
+      title: stripHtml(it.title || ''),
+      link: String(it.url || it.external_url || '').trim(),
+      summary: stripHtml(it.content_text || it.summary || it.content_html || ''),
+      published: String(it.date_published || it.date_modified || ''),
+      imageUrl: imageUrl || undefined,
+    }
+  })
 }
 
 function parseFeedBody(text, feedUrl) {
@@ -596,6 +677,7 @@ async function fetchFeed(feed) {
           expiresAt: expiresFrom(ttlDays, ingestedAt),
           topicIds: feed.topicIds,
           feedId: feed.id,
+          imageUrl: e.imageUrl,
           angles: isPodcast
             ? [
                 { label: 'Listen', url: e.link },

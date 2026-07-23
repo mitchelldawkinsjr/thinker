@@ -15,6 +15,8 @@ export type NewsItem = {
   challenge?: string
   source: string
   sourceUrl: string
+  /** Optional thumbnail from RSS/Atom (e.g. Reddit media:thumbnail) */
+  imageUrl?: string
   publishedAt: string
   expiresAt: string
   topicIds: TopicId[]
