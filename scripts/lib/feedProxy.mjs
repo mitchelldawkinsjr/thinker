@@ -3,11 +3,14 @@
  * GET /api/feed-proxy?url=<https URL>
  */
 import dns from 'node:dns/promises'
+import https from 'node:https'
 import { isIP } from 'node:net'
 
 const MAX_BYTES = 2 * 1024 * 1024
 const TIMEOUT_MS = 20_000
-const UA = 'ThinkerFeedProxy/1.0 (+https://thinker.360web.cloud)'
+const PUBLIC_DNS = ['8.8.8.8', '1.1.1.1']
+const UA =
+  'Mozilla/5.0 (compatible; ThinkerFeedProxy/1.0; +https://thinker.360web.cloud) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 
 /** @param {string} ip */
 function isPrivateIp(ip) {
@@ -27,8 +30,43 @@ function isPrivateIp(ip) {
 }
 
 /**
+ * System DNS first; fall back to public resolvers when the OS returns NXDOMAIN
+ * (common in locked-down sandboxes that still allow egress by IP).
+ * @param {string} host
+ * @returns {Promise<Array<{ address: string, family: number }>>}
+ */
+async function lookupHost(host) {
+  try {
+    const records = await dns.lookup(host, { all: true, verbatim: true })
+    if (records.length) return records
+  } catch {
+    // fall through to public DNS
+  }
+  const resolver = new dns.Resolver()
+  resolver.setServers(PUBLIC_DNS)
+  /** @type {Array<{ address: string, family: number }>} */
+  const out = []
+  try {
+    for (const address of await resolver.resolve4(host)) {
+      out.push({ address, family: 4 })
+    }
+  } catch {
+    // ignore
+  }
+  try {
+    for (const address of await resolver.resolve6(host)) {
+      out.push({ address, family: 6 })
+    }
+  } catch {
+    // ignore
+  }
+  if (!out.length) throw new Error('Could not resolve host')
+  return out
+}
+
+/**
  * @param {string} rawUrl
- * @returns {Promise<{ ok: true, url: URL } | { ok: false, status: number, error: string }>}
+ * @returns {Promise<{ ok: true, url: URL, records: Array<{ address: string, family: number }> } | { ok: false, status: number, error: string }>}
  */
 export async function validateFeedUrl(rawUrl) {
   if (!rawUrl || typeof rawUrl !== 'string') {
@@ -53,17 +91,92 @@ export async function validateFeedUrl(rawUrl) {
   if (isIP(host) && isPrivateIp(host)) {
     return { ok: false, status: 400, error: 'Private IP addresses are not allowed' }
   }
+  let records
   try {
-    const records = await dns.lookup(host, { all: true, verbatim: true })
-    for (const r of records) {
-      if (isPrivateIp(r.address)) {
-        return { ok: false, status: 400, error: 'Host resolves to a private address' }
-      }
-    }
+    records = isIP(host)
+      ? [{ address: host, family: isIP(host) }]
+      : await lookupHost(host)
   } catch {
     return { ok: false, status: 400, error: 'Could not resolve host' }
   }
-  return { ok: true, url: parsed }
+  for (const r of records) {
+    if (isPrivateIp(r.address)) {
+      return { ok: false, status: 400, error: 'Host resolves to a private address' }
+    }
+  }
+  return { ok: true, url: parsed, records }
+}
+
+/**
+ * HTTPS GET via resolved IP + SNI so we don't depend on the OS stub resolver for fetch().
+ * @param {URL} url
+ * @param {Array<{ address: string, family: number }>} records
+ * @param {AbortSignal} signal
+ */
+function httpsGetByIp(url, records, signal) {
+  const ip = records[0]?.address
+  if (!ip) return Promise.reject(new Error('No resolved address'))
+
+  return new Promise((resolve, reject) => {
+    /** @type {import('node:http').IncomingMessage | null} */
+    let incoming = null
+    const req = https.request(
+      {
+        host: ip,
+        servername: url.hostname,
+        path: `${url.pathname}${url.search}`,
+        method: 'GET',
+        headers: {
+          Host: url.hostname,
+          'User-Agent': UA,
+          Accept:
+            'application/rss+xml, application/atom+xml, application/xml, text/xml, application/json, */*',
+        },
+        timeout: TIMEOUT_MS,
+      },
+      (res) => {
+        incoming = res
+        /** @type {Buffer[]} */
+        const chunks = []
+        let total = 0
+        res.on('data', (chunk) => {
+          total += chunk.length
+          if (total > MAX_BYTES) {
+            req.destroy()
+            reject(new Error('Feed response too large'))
+            return
+          }
+          chunks.push(chunk)
+        })
+        res.on('end', () => {
+          resolve({
+            statusCode: res.statusCode || 0,
+            statusMessage: res.statusMessage || '',
+            contentType: res.headers['content-type'] || 'application/octet-stream',
+            body: Buffer.concat(chunks),
+          })
+        })
+      },
+    )
+
+    const onAbort = () => {
+      req.destroy()
+      incoming?.destroy()
+      reject(new Error('Aborted'))
+    }
+    if (signal.aborted) {
+      onAbort()
+      return
+    }
+    signal.addEventListener('abort', onAbort, { once: true })
+
+    req.on('timeout', () => {
+      req.destroy()
+      reject(new Error('Upstream timeout'))
+    })
+    req.on('error', reject)
+    req.end()
+  })
 }
 
 /**
@@ -77,32 +190,22 @@ export async function proxyFeed(rawUrl) {
   const ctrl = new AbortController()
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS)
   try {
-    const res = await fetch(checked.url.href, {
-      signal: ctrl.signal,
-      redirect: 'follow',
-      headers: {
-        'User-Agent': UA,
-        Accept:
-          'application/rss+xml, application/atom+xml, application/xml, text/xml, application/json, */*',
-      },
-    })
-    const buf = Buffer.from(await res.arrayBuffer())
-    if (buf.byteLength > MAX_BYTES) {
+    const upstream = await httpsGetByIp(checked.url, checked.records, ctrl.signal)
+    if (upstream.body.byteLength > MAX_BYTES) {
       return { ok: false, status: 502, error: 'Feed response too large' }
     }
-    const contentType = res.headers.get('content-type') || 'application/octet-stream'
-    if (!res.ok) {
+    if (upstream.statusCode < 200 || upstream.statusCode >= 300) {
       return {
         ok: false,
         status: 502,
-        error: `Upstream ${res.status} ${res.statusText}`,
+        error: `Upstream ${upstream.statusCode} ${upstream.statusMessage}`,
       }
     }
     return {
       ok: true,
       status: 200,
-      contentType,
-      body: buf.toString('utf8'),
+      contentType: String(upstream.contentType),
+      body: upstream.body.toString('utf8'),
     }
   } catch (err) {
     const message = err instanceof Error ? err.message : 'Feed proxy failed'

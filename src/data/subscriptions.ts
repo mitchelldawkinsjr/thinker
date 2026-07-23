@@ -38,7 +38,7 @@ export type Subscriptions = {
 }
 
 export const STORAGE_KEY = 'thinker-subscriptions-v1'
-export const USER_NEWS_CACHE_KEY = 'thinker-user-news-v1'
+export const USER_NEWS_CACHE_KEY = 'thinker-user-news-v2'
 export const MAX_CUSTOM_SITES = 30
 export const MAX_CUSTOM_FEEDS = 20
 

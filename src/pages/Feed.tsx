@@ -135,7 +135,7 @@ export function Feed() {
   }, [resolvedTopic, news, scriptures, reshuffle, bookIdeas, subscriptions, hideTick, topicKey])
 
   const [index, setIndex] = useState(() => getFeedCursor(topicKey))
-  /** Direction for card enter animation: next → fly off up/left, prev → mirrored */
+  /** Direction for card enter animation: next → fly off left, prev → fly off right */
   const [slideDir, setSlideDir] = useState<'next' | 'prev' | null>(null)
   /** Outgoing card kept mounted for the CodePen-style stack fly-off */
   const [leaving, setLeaving] = useState<{

@@ -98,7 +98,7 @@ function FeedCardShell({
         <div className="feed-card-actions">
           {onPrev && (
             <button type="button" className="idea-btn ghost" onClick={onPrev} aria-label="Previous">
-              ↑
+              ←
             </button>
           )}
           {cta}
@@ -109,7 +109,7 @@ function FeedCardShell({
               onClick={onNext}
               aria-label="Next"
             >
-              ↓
+              →
             </button>
           )}
         </div>
@@ -250,6 +250,17 @@ export function NewsFeedCard({
       cta={parts.cta}
     >
       <p className="feed-card-author">{news.title}</p>
+      {news.imageUrl ? (
+        <figure className="feed-card-image">
+          <img
+            src={news.imageUrl}
+            alt=""
+            loading="lazy"
+            referrerPolicy="no-referrer"
+            decoding="async"
+          />
+        </figure>
+      ) : null}
       <p className="feed-card-body">{body}</p>
       {challenge ? (
         <aside className="feed-card-challenge" aria-label="Challenge the headline">

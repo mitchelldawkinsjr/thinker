@@ -5,7 +5,7 @@ import {
   NEWS_TTL_DAYS_POLITICS,
 } from '../data/newsTypes'
 import type { TopicId } from '../data/types'
-import { detectMediaKind } from './mediaUrl'
+import { detectMediaKind, mediaPathExt } from './mediaUrl'
 
 const DAY_MS = 24 * 60 * 60 * 1000
 
@@ -14,6 +14,8 @@ export type FeedEntry = {
   link: string
   summary: string
   published: string
+  /** Card thumbnail when the feed exposes one (Reddit media:thumbnail, img, etc.) */
+  imageUrl?: string
 }
 
 export type FeedMeta = {
@@ -25,11 +27,13 @@ export type FeedMeta = {
 }
 
 function stripHtml(html: string): string {
-  return decodeHtmlEntities(
-    String(html || '')
-      .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-      .replace(/<[^>]+>/g, ' '),
+  // Decode entities first — Reddit Atom encodes markup as &lt;img…&gt;, so tag
+  // stripping must run on the decoded HTML or the card body shows raw markup.
+  const decoded = decodeHtmlEntities(
+    String(html || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1'),
   )
+  return decoded
+    .replace(/<[^>]+>/g, ' ')
     .replace(/\u00A0/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
@@ -53,6 +57,20 @@ function attr(block: string, name: string, attrName: string): string {
   return m ? m[1] : ''
 }
 
+const IMAGE_EXTS = new Set(['jpg', 'jpeg', 'png', 'gif', 'webp', 'avif', 'bmp', 'svg'])
+
+function isHttpUrl(url: string): boolean {
+  return /^https?:\/\//i.test(url)
+}
+
+function isImageUrl(url: string, type = '', medium = ''): boolean {
+  if (medium.toLowerCase() === 'image') return true
+  const t = type.toLowerCase()
+  if (t.startsWith('image/')) return true
+  const ext = mediaPathExt(url)
+  return !!(ext && IMAGE_EXTS.has(ext))
+}
+
 /** Prefer playable audio/video enclosures over webpage <link> (e.g. Club 520). */
 function mediaEnclosureUrl(block: string): string {
   const candidates: Array<{ url: string; type: string }> = [
@@ -71,6 +89,55 @@ function mediaEnclosureUrl(block: string): string {
     const type = (c.type || '').toLowerCase()
     if (type.startsWith('audio/') || type.startsWith('video/')) return url
     if (detectMediaKind(url)) return url
+  }
+  return ''
+}
+
+function attrFromOpenTag(openTagAttrs: string, attrName: string): string {
+  const m = openTagAttrs.match(
+    new RegExp(`(?:^|\\s)${attrName}=["']([^"']+)["']`, 'i'),
+  )
+  return m ? m[1] : ''
+}
+
+/** First usable image: media:thumbnail, image enclosure/content, then <img> in HTML body. */
+function entryImageUrl(block: string): string {
+  const thumb = decodeHtmlEntities(
+    attr(block, 'media:thumbnail', 'url') || attr(block, 'thumbnail', 'url') || '',
+  ).trim()
+  if (thumb && isHttpUrl(thumb)) return thumb
+
+  const mediaRe = /<(?:media:content|enclosure)(\s[^>]*)?\/?>/gi
+  let m: RegExpExecArray | null
+  while ((m = mediaRe.exec(block))) {
+    const attrs = m[1] || ''
+    const url = decodeHtmlEntities(attrFromOpenTag(attrs, 'url')).trim()
+    if (!url || !isHttpUrl(url)) continue
+    const type = attrFromOpenTag(attrs, 'type')
+    const medium = attrFromOpenTag(attrs, 'medium')
+    if (isImageUrl(url, type, medium)) return url
+  }
+
+  const htmlParts: string[] = []
+  for (const name of ['description', 'summary', 'content', 'content:encoded']) {
+    const re = new RegExp(
+      `<(?:${name}|[^:>]+:${name})(?:\\s[^>]*)?>([\\s\\S]*?)</(?:${name}|[^:>]+:${name})>`,
+      'i',
+    )
+    const hit = block.match(re)
+    if (hit) htmlParts.push(hit[1])
+  }
+  const html = decodeHtmlEntities(
+    htmlParts.join(' ').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1'),
+  )
+  const imgRe = /<img\b[^>]*\bsrc=["']([^"']+)["']/gi
+  while ((m = imgRe.exec(html))) {
+    const src = decodeHtmlEntities(m[1] || '').trim()
+    if (!src || !isHttpUrl(src)) continue
+    // Skip tiny chrome / award icons that show up in Reddit HTML
+    if (/redditstatic\.com/i.test(src) && /icon|award|emoji|snoo/i.test(src)) continue
+    if (/\b(emoji|award|icon)\b/i.test(src)) continue
+    return src
   }
   return ''
 }
@@ -110,7 +177,8 @@ function parseEntries(xml: string): FeedEntry[] {
       tag(block, 'updated') ||
       tag(block, 'dc:date') ||
       ''
-    return { title, link, summary, published }
+    const imageUrl = entryImageUrl(block) || undefined
+    return { title, link, summary, published, imageUrl }
   })
 }
 
@@ -125,15 +193,34 @@ function parseJsonFeed(text: string): FeedEntry[] {
       content_html?: string
       date_published?: string
       date_modified?: string
+      image?: string
+      banner_image?: string
+      attachments?: Array<{ url?: string; mime_type?: string }>
     }>
   }
   const items = Array.isArray(data.items) ? data.items : []
-  return items.map((it) => ({
-    title: stripHtml(it.title || ''),
-    link: String(it.url || it.external_url || '').trim(),
-    summary: stripHtml(it.content_text || it.summary || it.content_html || ''),
-    published: String(it.date_published || it.date_modified || ''),
-  }))
+  return items.map((it) => {
+    let imageUrl = String(it.image || it.banner_image || '').trim()
+    if (!imageUrl && Array.isArray(it.attachments)) {
+      for (const a of it.attachments) {
+        const url = String(a.url || '').trim()
+        if (url && isImageUrl(url, a.mime_type || '')) {
+          imageUrl = url
+          break
+        }
+      }
+    }
+    if (!imageUrl && it.content_html) {
+      imageUrl = entryImageUrl(`<content>${it.content_html}</content>`)
+    }
+    return {
+      title: stripHtml(it.title || ''),
+      link: String(it.url || it.external_url || '').trim(),
+      summary: stripHtml(it.content_text || it.summary || it.content_html || ''),
+      published: String(it.date_published || it.date_modified || ''),
+      imageUrl: imageUrl || undefined,
+    }
+  })
 }
 
 export function parseFeedBody(text: string, feedUrl: string): FeedEntry[] {
@@ -205,6 +292,7 @@ export async function entriesToNewsItems(
       expiresAt: new Date(now + ttlDays * DAY_MS).toISOString(),
       topicIds: meta.topicIds,
       feedId: meta.feedId,
+      imageUrl: e.imageUrl,
       angles: [{ label: 'Full story', url: e.link }],
     })
   }
