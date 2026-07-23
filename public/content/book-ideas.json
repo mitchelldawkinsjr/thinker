@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-07-22T17:13:01.193Z",
-  "source": "https://5minutebooksummary.com",
+  "updatedAt": "2026-07-23T14:25:19.490Z",
+  "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
+    {
+      "id": "20min-9766095e53bc",
+      "topicId": "building-products",
+      "title": "100 Things Every Designer Needs to Know About People",
+      "hook": "A ~27-minute listen on “100 Things Every Designer Needs to Know About…”",
+      "body": "The essential guide for every designer from a behavioral psychologist",
+      "lesson": "The essential guide for every designer from a behavioral psychologist. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Susan M. Weinschenk",
+      "source": "20 Minute Books · Susan M. Weinschenk",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/100-things-every-designer-needs-to-know-about-people",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/100%20Things%20Every%20Designer%20Needs%20to%20Know%20About%20People.mp3",
+      "readMinutes": 27
+    },
     {
       "id": "booksum-f79bd4015652",
       "topicId": "building-products",
@@ -9,11 +23,12 @@
       "hook": "A 5-minute look at “5 Levels of Leadership”",
       "body": "In his book, 5 Levels of Leadership, John C. Maxwell presents a comprehensive guide to becoming an effective leader. The book is divided into 20 chapters, each focusing on a specific level of leadership. Maxwell’s approach to leadership is based on the idea that leadership is not just about power or control, but rather about […]",
       "lesson": "In his book, 5 Levels of Leadership, John C. Maxwell presents a comprehensive guide to becoming an effective leader. The book is divided into 20 chapters, each focusing on a specific level of leadership. Maxwell’s approach to leadership is based on the idea that leadership is not just about power or control, but rather about […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · John C. Maxwell",
-      "source": "5 Minute Book Summary · John C. Maxwell",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · John C. Maxwell + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/5-levels-of-leadership-summary/",
-      "readMinutes": 5
+      "readMinutes": 27,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/5%20Levels%20of%20Leadership.mp3"
     },
     {
       "id": "booksum-42ce05445e37",
@@ -35,11 +50,26 @@
       "hook": "A 5-minute look at “Adults in The Room”",
       "body": "Adults in The Room is a book written by Yanis Varoufakis, a Greek economist and former Minister of Finance for Greece. The book is a memoir of his experience during the Greek financial crisis of 2015. It provides an insider’s perspective on the events that led to the crisis, the negotiations with the European Union […]",
       "lesson": "Adults in The Room is a book written by Yanis Varoufakis, a Greek economist and former Minister of Finance for Greece. The book is a memoir of his experience during the Greek financial crisis of 2015. It provides an insider’s perspective on the events that led to the crisis, the negotiations with the European Union […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Yanis Varoufakis",
-      "source": "5 Minute Book Summary · Yanis Varoufakis",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Yanis Varoufakis + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/adults-in-the-room-summary/",
-      "readMinutes": 5
+      "readMinutes": 22,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Adults%20in%20The%20Room.mp3"
+    },
+    {
+      "id": "20min-ff41a0dce8f5",
+      "topicId": "building-products",
+      "title": "All You Have to Do Is Ask",
+      "hook": "A ~25-minute listen on “All You Have to Do Is Ask”",
+      "body": "How to Master the Most Important Skill for Success",
+      "lesson": "How to Master the Most Important Skill for Success. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Wayne Baker",
+      "source": "20 Minute Books · Wayne Baker",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/all-you-have-to-do-is-ask",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/All%20You%20Have%20to%20Do%20Is%20Ask.mp3",
+      "readMinutes": 25
     },
     {
       "id": "booksum-2cb265f666e5",
@@ -48,11 +78,12 @@
       "hook": "A 5-minute look at “Angrynomics”",
       "body": "Angrynomics is a book written by Eric Lonergan and Mark Blyth, published in 2013. The book explores the idea of “anger-driven economics” and how it affects the global economy. The authors argue that anger is a powerful force that can drive economic policies and decisions, and that it is often used as a tool by […]",
       "lesson": "Angrynomics is a book written by Eric Lonergan and Mark Blyth, published in 2013. The book explores the idea of “anger-driven economics” and how it affects the global economy. The authors argue that anger is a powerful force that can drive economic policies and decisions, and that it is often used as a tool by […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Eric Lonergan and Mark Blyth",
-      "source": "5 Minute Book Summary · Eric Lonergan and Mark Blyth",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Eric Lonergan and Mark Blyth + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/angrynomics-summary/",
-      "readMinutes": 5
+      "readMinutes": 23,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Angrynomics.mp3"
     },
     {
       "id": "booksum-95b53b0f37f6",
@@ -66,6 +97,20 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/antifragile-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-f9497d3acdeb",
+      "topicId": "mental-models",
+      "title": "Antimatter",
+      "hook": "A ~24-minute listen on “Antimatter”",
+      "body": "A must-read classic of modern science",
+      "lesson": "A must-read classic of modern science. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Frank Close",
+      "source": "20 Minute Books · Frank Close",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/antimatter",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Antimatter.mp3",
+      "readMinutes": 24
     },
     {
       "id": "booksum-13faa2d5df46",
@@ -120,6 +165,34 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-63b4b3cc91dd",
+      "topicId": "ai-frontend",
+      "title": "Big Data",
+      "hook": "A ~36-minute listen on “Big Data”",
+      "body": "A Revolution That Will Transform How We Live, Work and Think",
+      "lesson": "A Revolution That Will Transform How We Live, Work and Think. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Viktor Mayer-Schönberger and Kenneth Cukier",
+      "source": "20 Minute Books · Viktor Mayer-Schönberger and Kenneth Cukier",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/big-data",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Big%20Data.mp3",
+      "readMinutes": 36
+    },
+    {
+      "id": "20min-5654d59d9fe8",
+      "topicId": "mental-models",
+      "title": "Blink",
+      "hook": "A ~30-minute listen on “Blink”",
+      "body": "The Power of Thinking Without Thinking",
+      "lesson": "The Power of Thinking Without Thinking. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Malcolm Gladwell",
+      "source": "20 Minute Books · Malcolm Gladwell",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/blink",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Blink.mp3",
+      "readMinutes": 30
+    },
+    {
       "id": "booksum-ded9c72bea46",
       "topicId": "history",
       "title": "Blood Feud",
@@ -131,6 +204,48 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/blood-feud-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-fb33ed7795a1",
+      "topicId": "building-products",
+      "title": "Bounce",
+      "hook": "A ~27-minute listen on “Bounce”",
+      "body": "The Myth of Talent and the Power of Practice",
+      "lesson": "The Myth of Talent and the Power of Practice. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Matthew Syed",
+      "source": "20 Minute Books · Matthew Syed",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/bounce",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Bounce.mp3",
+      "readMinutes": 27
+    },
+    {
+      "id": "20min-b4e08fe2fc18",
+      "topicId": "mental-models",
+      "title": "Brain Wash",
+      "hook": "A ~34-minute listen on “Brain Wash”",
+      "body": "Detox Your Mind for Clearer Thinking, Deeper Relationships, and Lasting Happiness",
+      "lesson": "Detox Your Mind for Clearer Thinking, Deeper Relationships, and Lasting Happiness. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · David Perlmutter, Austin Perlmutter and Kristin Loberg",
+      "source": "20 Minute Books · David Perlmutter, Austin Perlmutter and Kristin Loberg",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/brain-wash",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Brain%20Wash.mp3",
+      "readMinutes": 34
+    },
+    {
+      "id": "20min-3043861dd2c5",
+      "topicId": "mental-models",
+      "title": "Can't Even",
+      "hook": "A ~23-minute listen on “Can't Even”",
+      "body": "How Millennials Became the Burnout Generation",
+      "lesson": "How Millennials Became the Burnout Generation. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Anne Helen Petersen",
+      "source": "20 Minute Books · Anne Helen Petersen",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/cant-even",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Can%27t%20Even.mp3",
+      "readMinutes": 23
     },
     {
       "id": "booksum-b437f1e937c6",
@@ -172,6 +287,20 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-ad1d4b168412",
+      "topicId": "building-products",
+      "title": "Content Rules",
+      "hook": "A ~23-minute listen on “Content Rules”",
+      "body": "How to Create Killer Blogs, Podcasts, Videos, Ebooks, Webinars (and more) that Engage Customers and Ignite Your Business",
+      "lesson": "How to Create Killer Blogs, Podcasts, Videos, Ebooks, Webinars (and more) that Engage Customers and Ignite Your Business. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Ann Handley & C.C. Chapman",
+      "source": "20 Minute Books · Ann Handley & C.C. Chapman",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/content-rules",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Content%20Rules.mp3",
+      "readMinutes": 23
+    },
+    {
       "id": "booksum-282efaa3bb48",
       "topicId": "building-products",
       "title": "Create Space",
@@ -204,11 +333,12 @@
       "hook": "A 5-minute look at “Dare to Lead”",
       "body": "Brené Brown’s “Dare to Lead” is a groundbreaking book that provides a comprehensive guide to developing leadership skills. The book is based on Brown’s extensive research on leadership and her personal experiences. It is divided into four parts, each of which focuses on a different aspect of leadership. In the first part of the book, […]",
       "lesson": "Brené Brown’s “Dare to Lead” is a groundbreaking book that provides a comprehensive guide to developing leadership skills. The book is based on Brown’s extensive research on leadership and her personal experiences. It is divided into four parts, each of which focuses on a different aspect of leadership. In the first part of the book, […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Brené Brown",
-      "source": "5 Minute Book Summary · Brené Brown",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Brené Brown + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/dare-to-lead-summary-2/",
-      "readMinutes": 5
+      "readMinutes": 22,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Dare%20to%20Lead.mp3"
     },
     {
       "id": "booksum-e2fd404a45a6",
@@ -295,11 +425,12 @@
       "hook": "A 5-minute look at “Economics for the Common Good”",
       "body": "Economics for the Common Good is a book written by Jean Tirole, a Nobel Prize-winning economist, that aims to provide readers with an understanding of how economics can be used for the common good. The book is divided into three parts, each of which focuses on a different aspect of economics and how it can […]",
       "lesson": "Economics for the Common Good is a book written by Jean Tirole, a Nobel Prize-winning economist, that aims to provide readers with an understanding of how economics can be used for the common good. The book is divided into three parts, each of which focuses on a different aspect of economics and how it can […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Jean Tirole",
-      "source": "5 Minute Book Summary · Jean Tirole",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Jean Tirole + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/economics-for-the-common-good-summary/",
-      "readMinutes": 5
+      "readMinutes": 38,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Economics%20for%20the%20Common%20Good.mp3"
     },
     {
       "id": "booksum-796a2ba36264",
@@ -326,6 +457,20 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/everything-i-know-about-love-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-7933383e9356",
+      "topicId": "mental-models",
+      "title": "Evolve Your Brain",
+      "hook": "A ~23-minute listen on “Evolve Your Brain”",
+      "body": "The Science of Changing Your Mind",
+      "lesson": "The Science of Changing Your Mind. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Joe Dispenza",
+      "source": "20 Minute Books · Joe Dispenza",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/evolve-your-brain",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Evolve%20Your%20Brain.mp3",
+      "readMinutes": 23
     },
     {
       "id": "booksum-02c7af1e5d80",
@@ -393,6 +538,34 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-1c0a5d85555c",
+      "topicId": "finance",
+      "title": "Happy Money",
+      "hook": "A ~20-minute listen on “Happy Money”",
+      "body": "The New Science of Smarter Spending",
+      "lesson": "The New Science of Smarter Spending. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Ken Honda",
+      "source": "20 Minute Books · Ken Honda",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/happy-money",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Happy%20Money.mp3",
+      "readMinutes": 20
+    },
+    {
+      "id": "20min-c9be66fe0b9c",
+      "topicId": "mental-models",
+      "title": "Helgoland",
+      "hook": "A ~27-minute listen on “Helgoland”",
+      "body": "Making Sense of the Quantum Revolution",
+      "lesson": "Making Sense of the Quantum Revolution. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Carlo Rovelli",
+      "source": "20 Minute Books · Carlo Rovelli",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/helgoland",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Helgoland.mp3",
+      "readMinutes": 27
+    },
+    {
       "id": "booksum-8c2ef3dbb7e8",
       "topicId": "mental-models",
       "title": "Hidden Valley Road",
@@ -406,17 +579,32 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-aed67e00cc2c",
+      "topicId": "mental-models",
+      "title": "How Music Works",
+      "hook": "A ~27-minute listen on “How Music Works”",
+      "body": "How circumstance and creativity collide in tune",
+      "lesson": "How circumstance and creativity collide in tune. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · David Byrne",
+      "source": "20 Minute Books · David Byrne",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/how-music-works",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/How%20Music%20Works.mp3",
+      "readMinutes": 27
+    },
+    {
       "id": "booksum-8944c3cecb72",
       "topicId": "mental-models",
       "title": "How to Take Smart Notes",
       "hook": "A 5-minute look at “How to Take Smart Notes”",
       "body": "In his book, “How to Take Smart Notes,” Sönke Ahrens provides a comprehensive guide to taking effective and organized notes. The book is divided into three parts, with each part focusing on a different aspect of note-taking. The first part introduces the concept of “Zettelkasten,” a German method of note-taking that involves creating a collection […]",
       "lesson": "In his book, “How to Take Smart Notes,” Sönke Ahrens provides a comprehensive guide to taking effective and organized notes. The book is divided into three parts, with each part focusing on a different aspect of note-taking. The first part introduces the concept of “Zettelkasten,” a German method of note-taking that involves creating a collection […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Sönke Ahrens",
-      "source": "5 Minute Book Summary · Sönke Ahrens",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Sönke Ahrens + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/how-to-take-smart-notes-summary/",
-      "readMinutes": 5
+      "readMinutes": 22,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/How%20to%20Take%20Smart%20Notes.mp3"
     },
     {
       "id": "booksum-5c2f0b8017fa",
@@ -445,6 +633,34 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-000baefd4fb9",
+      "topicId": "building-products",
+      "title": "Impromptu",
+      "hook": "A ~22-minute listen on “Impromptu”",
+      "body": "Amplifying Our Humanity Through AI",
+      "lesson": "Amplifying Our Humanity Through AI. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Reid Hoffman with GPT-4",
+      "source": "20 Minute Books · Reid Hoffman with GPT-4",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/impromptu",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Impromptu.mp3",
+      "readMinutes": 22
+    },
+    {
+      "id": "20min-025a4a516ba5",
+      "topicId": "history",
+      "title": "In Pursuit of the Unknown",
+      "hook": "A ~31-minute listen on “In Pursuit of the Unknown”",
+      "body": "17 Equations That Changed the World",
+      "lesson": "17 Equations That Changed the World. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Ian Stewart",
+      "source": "20 Minute Books · Ian Stewart",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/in-pursuit-of-the-unknown",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/In%20Pursuit%20of%20the%20Unknown.mp3",
+      "readMinutes": 31
+    },
+    {
       "id": "booksum-191f1e4361a9",
       "topicId": "history",
       "title": "Isaac’s Storm",
@@ -464,11 +680,26 @@
       "hook": "A 5-minute look at “Just Keep Buying”",
       "body": "Just Keep Buying by Nick Maggiulli is a book that delves into the world of investing and personal finance. The book’s central idea is that in order to achieve long-term financial success, individuals need to focus on the basics of investing and saving, rather than chasing after get-rich-quick schemes or trying to time the market. […]",
       "lesson": "Just Keep Buying by Nick Maggiulli is a book that delves into the world of investing and personal finance. The book’s central idea is that in order to achieve long-term financial success, individuals need to focus on the basics of investing and saving, rather than chasing after get-rich-quick schemes or trying to time the market. […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Nick Maggiulli",
-      "source": "5 Minute Book Summary · Nick Maggiulli",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Nick Maggiulli + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/just-keep-buying-summary/",
-      "readMinutes": 5
+      "readMinutes": 22,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Just%20Keep%20Buying.mp3"
+    },
+    {
+      "id": "20min-5c4fc5d641c4",
+      "topicId": "building-products",
+      "title": "Keep Going",
+      "hook": "A ~29-minute listen on “Keep Going”",
+      "body": "10 Ways to Stay Creative in Good Times and Bad",
+      "lesson": "10 Ways to Stay Creative in Good Times and Bad. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Austin Kleon",
+      "source": "20 Minute Books · Austin Kleon",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/keep-going",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Keep%20Going.mp3",
+      "readMinutes": 29
     },
     {
       "id": "booksum-1daf5c5af5a1",
@@ -477,11 +708,12 @@
       "hook": "A 5-minute look at “Letters to a Young Athlete”",
       "body": "Letters to a Young Athlete is a book written by NBA star Chris Bosh. The book is a collection of letters that Bosh wrote to a young athlete who wanted to pursue a career in basketball. In these letters, Bosh shares his own experiences, both positive and negative, and offers advice on how to navigate […]",
       "lesson": "Letters to a Young Athlete is a book written by NBA star Chris Bosh. The book is a collection of letters that Bosh wrote to a young athlete who wanted to pursue a career in basketball. In these letters, Bosh shares his own experiences, both positive and negative, and offers advice on how to navigate […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Chris Bosh",
-      "source": "5 Minute Book Summary · Chris Bosh",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Chris Bosh + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/letters-to-a-young-athlete-summary/",
-      "readMinutes": 5
+      "readMinutes": 30,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Letters%20to%20a%20Young%20Athlete.mp3"
     },
     {
       "id": "booksum-1da9ba7dec9c",
@@ -490,11 +722,12 @@
       "hook": "A 5-minute look at “Liars, Leakers, and Liberals”",
       "body": "Liars, Leakers, and Liberals is a book written by Judge Jeanine Pirro, a well-known television personality and former judge. The book was published in 2018 and is a political commentary that addresses the issues that the author believes are plaguing the United States. The book is divided into several chapters, each of which focuses on […]",
       "lesson": "Liars, Leakers, and Liberals is a book written by Judge Jeanine Pirro, a well-known television personality and former judge. The book was published in 2018 and is a political commentary that addresses the issues that the author believes are plaguing the United States. The book is divided into several chapters, each of which focuses on […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Judge Jeanine Pirro",
-      "source": "5 Minute Book Summary · Judge Jeanine Pirro",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Judge Jeanine Pirro + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/liars-leakers-and-liberals-summary/",
-      "readMinutes": 5
+      "readMinutes": 31,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Liars%2C%20Leakers%2C%20and%20Liberals.mp3"
     },
     {
       "id": "booksum-eb92a97c266b",
@@ -503,11 +736,26 @@
       "hook": "A 5-minute look at “Life 3.0”",
       "body": "Life 3.0: Being Human in the Age of Artificial Intelligence is a thought-provoking book by Max Tegmark that explores the future of humanity in the age of artificial intelligence. The book delves into the potential impact of AI on various aspects of our lives, including our jobs, our relationships, and our very existence. In the […]",
       "lesson": "Life 3.0: Being Human in the Age of Artificial Intelligence is a thought-provoking book by Max Tegmark that explores the future of humanity in the age of artificial intelligence. The book delves into the potential impact of AI on various aspects of our lives, including our jobs, our relationships, and our very existence. In the […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Max Tegmark",
-      "source": "5 Minute Book Summary · Max Tegmark",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Max Tegmark + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/life-3-0-summary/",
-      "readMinutes": 5
+      "readMinutes": 24,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Life%203%200.mp3"
+    },
+    {
+      "id": "20min-a28b5264ec9c",
+      "topicId": "history",
+      "title": "Maid",
+      "hook": "A ~30-minute listen on “Maid”",
+      "body": "Hard Work, Low Pay, and a Mother's Will to Survive",
+      "lesson": "Hard Work, Low Pay, and a Mother's Will to Survive. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Stephanie Land",
+      "source": "20 Minute Books · Stephanie Land",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/maid",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Maid.mp3",
+      "readMinutes": 30
     },
     {
       "id": "booksum-a193b47470ca",
@@ -516,11 +764,12 @@
       "hook": "A 5-minute look at “Mastering Leadership”",
       "body": "Mastering Leadership is a book written by Robert J. Anderson and William A. Adams, published in 2008. The book is designed to help readers develop their leadership skills and become more effective leaders. The book is divided into several chapters, each focusing on a specific aspect of leadership. In this summary, we will provide an […]",
       "lesson": "Mastering Leadership is a book written by Robert J. Anderson and William A. Adams, published in 2008. The book is designed to help readers develop their leadership skills and become more effective leaders. The book is divided into several chapters, each focusing on a specific aspect of leadership. In this summary, we will provide an […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Robert J. Anderson and William A. Adams",
-      "source": "5 Minute Book Summary · Robert J. Anderson and William A. Adams",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Robert J. Anderson and William A. Adams + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/mastering-leadership-summary/",
-      "readMinutes": 5
+      "readMinutes": 22,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Mastering%20Leadership.mp3"
     },
     {
       "id": "booksum-c0ba50672032",
@@ -529,11 +778,12 @@
       "hook": "A 5-minute look at “Mastering the Market Cycle”",
       "body": "Mastering the Market Cycle is a book written by Howard Marks, a renowned investor and founder of Oaktree Capital Management. The book provides valuable insights into the investment world and teaches readers how to navigate market cycles to achieve long-term success. The book is divided into eleven chapters, each focusing on a different aspect of […]",
       "lesson": "Mastering the Market Cycle is a book written by Howard Marks, a renowned investor and founder of Oaktree Capital Management. The book provides valuable insights into the investment world and teaches readers how to navigate market cycles to achieve long-term success. The book is divided into eleven chapters, each focusing on a different aspect of […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Howard Marks",
-      "source": "5 Minute Book Summary · Howard Marks",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Howard Marks + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/mastering-the-market-cycle-summary/",
-      "readMinutes": 5
+      "readMinutes": 24,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Mastering%20the%20Market%20Cycle.mp3"
     },
     {
       "id": "booksum-dafc6d49bac5",
@@ -562,17 +812,46 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-8900a7e5e9db",
+      "topicId": "finance",
+      "title": "Narrative Economics",
+      "hook": "A ~35-minute listen on “Narrative Economics”",
+      "body": "How Stories Go Viral and Drive Major Economic Events",
+      "lesson": "How Stories Go Viral and Drive Major Economic Events. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Robert J. Shiller",
+      "source": "20 Minute Books · Robert J. Shiller",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/narrative-economics",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Narrative%20Economics.mp3",
+      "readMinutes": 35
+    },
+    {
+      "id": "20min-0d3e77bfc8d2",
+      "topicId": "mental-models",
+      "title": "Never Finished",
+      "hook": "A ~23-minute listen on “Never Finished”",
+      "body": "Unshackle Your Mind and Win the War Within",
+      "lesson": "Unshackle Your Mind and Win the War Within. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · David Goggins",
+      "source": "20 Minute Books · David Goggins",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/never-finished",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Never%20Finished.mp3",
+      "readMinutes": 23
+    },
+    {
       "id": "booksum-585e31e1ec1a",
       "topicId": "ai-frontend",
       "title": "New Dark Age",
       "hook": "A 5-minute look at “New Dark Age”",
       "body": "New Dark Age is a book written by James Bridle that explores the dark side of the digital age. The book delves into the ways in which technology has changed our lives, and not always for the better. Bridle argues that we are living in a new dark age, where the promise of a better […]",
       "lesson": "New Dark Age is a book written by James Bridle that explores the dark side of the digital age. The book delves into the ways in which technology has changed our lives, and not always for the better. Bridle argues that we are living in a new dark age, where the promise of a better […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · James Bridle",
-      "source": "5 Minute Book Summary · James Bridle",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · James Bridle + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/new-dark-age-summary/",
-      "readMinutes": 5
+      "readMinutes": 33,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/New%20Dark%20Age.mp3"
     },
     {
       "id": "booksum-498946a51017",
@@ -594,11 +873,12 @@
       "hook": "A 5-minute look at “On the Origin of Time”",
       "body": "On the Origin of Time is a groundbreaking book by renowned theoretical physicist Thomas Hertog. In this book, Hertog explores the origins of time and the nature of the universe. He challenges the traditional view of time as a static concept and proposes a new theory that suggests time is dynamic and constantly changing. Hertog’s […]",
       "lesson": "On the Origin of Time is a groundbreaking book by renowned theoretical physicist Thomas Hertog. In this book, Hertog explores the origins of time and the nature of the universe. He challenges the traditional view of time as a static concept and proposes a new theory that suggests time is dynamic and constantly changing. Hertog’s […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Thomas Hertog",
-      "source": "5 Minute Book Summary · Thomas Hertog",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Thomas Hertog + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/on-the-origin-of-time-summary/",
-      "readMinutes": 5
+      "readMinutes": 23,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/On%20the%20Origin%20of%20Time.mp3"
     },
     {
       "id": "booksum-47ea0669a8ef",
@@ -620,11 +900,12 @@
       "hook": "A 5-minute look at “Origin Story”",
       "body": "Origin Story by David Christian is a book that explores the history of humanity from the very beginning. The book covers the entirety of human history, from the Big Bang to the present day, and it does so in a way that is both engaging and informative. The book is divided into several chapters, each […]",
       "lesson": "Origin Story by David Christian is a book that explores the history of humanity from the very beginning. The book covers the entirety of human history, from the Big Bang to the present day, and it does so in a way that is both engaging and informative. The book is divided into several chapters, each […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · David Christian",
-      "source": "5 Minute Book Summary · David Christian",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · David Christian + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/origin-story-summary/",
-      "readMinutes": 5
+      "readMinutes": 44,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Origin%20Story.mp3"
     },
     {
       "id": "booksum-37dc8f8b8bd5",
@@ -659,11 +940,12 @@
       "hook": "A 5-minute look at “Powers and Thrones”",
       "body": "Dan Jones’ “Powers and Thrones” is a historical narrative that explores the complex and often violent relationship between politics and religion throughout history. The book delves into the rise and fall of empires, the power struggles between rulers and religious leaders, and the ways in which religion has been used as a tool of control […]",
       "lesson": "Dan Jones’ “Powers and Thrones” is a historical narrative that explores the complex and often violent relationship between politics and religion throughout history. The book delves into the rise and fall of empires, the power struggles between rulers and religious leaders, and the ways in which religion has been used as a tool of control […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Dan Jones",
-      "source": "5 Minute Book Summary · Dan Jones",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Dan Jones + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/powers-and-thrones-summary/",
-      "readMinutes": 5
+      "readMinutes": 41,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Powers%20and%20Thrones.mp3"
     },
     {
       "id": "booksum-362901229816",
@@ -685,11 +967,12 @@
       "hook": "A 5-minute look at “Profit Over People”",
       "body": "Profit Over People by Noam Chomsky is a thought-provoking book that delves into the negative impact of unrestricted free markets on society. The author argues that the pursuit of profit by corporations often leads to detrimental consequences for the environment and the general public. Throughout the book, Chomsky provides numerous examples of how corporations prioritize […]",
       "lesson": "Profit Over People by Noam Chomsky is a thought-provoking book that delves into the negative impact of unrestricted free markets on society. The author argues that the pursuit of profit by corporations often leads to detrimental consequences for the environment and the general public. Throughout the book, Chomsky provides numerous examples of how corporations prioritize […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Noam Chomsky",
-      "source": "5 Minute Book Summary · Noam Chomsky",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Noam Chomsky + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/profit-over-people-summary/",
-      "readMinutes": 5
+      "readMinutes": 23,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Profit%20Over%20People.mp3"
     },
     {
       "id": "booksum-08ef258fa1a0",
@@ -705,17 +988,46 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-2feb1fc17f2e",
+      "topicId": "mental-models",
+      "title": "Proust and the Squid",
+      "hook": "A ~30-minute listen on “Proust and the Squid”",
+      "body": "The Story and Science of the Reading Brain",
+      "lesson": "The Story and Science of the Reading Brain. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Maryanne Wolf",
+      "source": "20 Minute Books · Maryanne Wolf",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/proust-and-the-squid",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Proust%20and%20the%20Squid.mp3",
+      "readMinutes": 30
+    },
+    {
       "id": "booksum-3722893fce37",
       "topicId": "sports-biz",
       "title": "Range",
       "hook": "A 5-minute look at “Range”",
       "body": "In his book “Range,” David Epstein explores the concept of “range” – the idea that being a generalist can often be more valuable than being a specialist. Through extensive research and interviews with experts in various fields, Epstein argues that in today’s rapidly changing world, the ability to adapt and learn quickly is more important […]",
       "lesson": "In his book “Range,” David Epstein explores the concept of “range” – the idea that being a generalist can often be more valuable than being a specialist. Through extensive research and interviews with experts in various fields, Epstein argues that in today’s rapidly changing world, the ability to adapt and learn quickly is more important […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · David Epstein",
-      "source": "5 Minute Book Summary · David Epstein",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · David Epstein + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/range-summary/",
-      "readMinutes": 5
+      "readMinutes": 28,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Range.mp3"
+    },
+    {
+      "id": "20min-7ba0cbd2d8f0",
+      "topicId": "building-products",
+      "title": "Remarkable",
+      "hook": "A ~20-minute listen on “Remarkable”",
+      "body": "Proven Insights to Accelerate Your Career",
+      "lesson": "Proven Insights to Accelerate Your Career. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · David Kronfeld",
+      "source": "20 Minute Books · David Kronfeld",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/remarkable",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Remarkable.mp3",
+      "readMinutes": 20
     },
     {
       "id": "booksum-6c628efeacca",
@@ -724,11 +1036,54 @@
       "hook": "A 5-minute look at “Renegades”",
       "body": "Renegades is a book written by former President of the United States, Barack Obama, and legendary singer and songwriter, Bruce Springsteen. The book is a collection of conversations between the two men, covering a wide range of topics such as race, fatherhood, marriage, and their respective careers. In this book summary, we will introduce the […]",
       "lesson": "Renegades is a book written by former President of the United States, Barack Obama, and legendary singer and songwriter, Bruce Springsteen. The book is a collection of conversations between the two men, covering a wide range of topics such as race, fatherhood, marriage, and their respective careers. In this book summary, we will introduce the […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Barack Obama and Bruce Springsteen",
-      "source": "5 Minute Book Summary · Barack Obama and Bruce Springsteen",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Barack Obama and Bruce Springsteen + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/renegades-summary/",
-      "readMinutes": 5
+      "readMinutes": 27,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Renegades.mp3"
+    },
+    {
+      "id": "20min-fc47a18d6a60",
+      "topicId": "mental-models",
+      "title": "Resurrecting Sex",
+      "hook": "A ~29-minute listen on “Resurrecting Sex”",
+      "body": "Solving Sexual Problems and Revolutionizing Your Relationship",
+      "lesson": "Solving Sexual Problems and Revolutionizing Your Relationship. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · David Schnarch",
+      "source": "20 Minute Books · David Schnarch",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/resurrecting-sex",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Resurrecting%20Sex.mp3",
+      "readMinutes": 29
+    },
+    {
+      "id": "20min-e5d0c3ac8eda",
+      "topicId": "building-products",
+      "title": "Return on Ambition",
+      "hook": "A ~21-minute listen on “Return on Ambition”",
+      "body": "A Radical Approach to Your Achievement, Growth, and Well-Being",
+      "lesson": "A Radical Approach to Your Achievement, Growth, and Well-Being. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Nicolai Chen Nielsen and Nicolai Tillisch",
+      "source": "20 Minute Books · Nicolai Chen Nielsen and Nicolai Tillisch",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/return-on-ambition",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Return%20on%20Ambition.mp3",
+      "readMinutes": 21
+    },
+    {
+      "id": "20min-7487a15e51e6",
+      "topicId": "finance",
+      "title": "Rich Dad, Poor Dad",
+      "hook": "A ~32-minute listen on “Rich Dad, Poor Dad”",
+      "body": "What the Rich Teach Their Kids about Money – That the Poor and the Middle Class Do Not!",
+      "lesson": "What the Rich Teach Their Kids about Money – That the Poor and the Middle Class Do Not! Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Robert T. Kiyosaki",
+      "source": "20 Minute Books · Robert T. Kiyosaki",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/rich-dad-poor-dad",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Rich%20Dad%2C%20Poor%20Dad.mp3",
+      "readMinutes": 32
     },
     {
       "id": "booksum-f639048d0428",
@@ -737,11 +1092,12 @@
       "hook": "A 5-minute look at “Rich Dad’s Cashflow Quadrant”",
       "body": "Rich Dad’s Cashflow Quadrant is a book that teaches readers about the different types of people in the world and how they approach money. The book is written by Robert T. Kiyosaki and Sharon L. Lechter and is based on the idea that there are four different types of people when it comes to money: […]",
       "lesson": "Rich Dad’s Cashflow Quadrant is a book that teaches readers about the different types of people in the world and how they approach money. The book is written by Robert T. Kiyosaki and Sharon L. Lechter and is based on the idea that there are four different types of people when it comes to money: […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Robert T. Kiyosaki with Sharon L. Lechter",
-      "source": "5 Minute Book Summary · Robert T. Kiyosaki with Sharon L. Lechter",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Robert T. Kiyosaki with Sharon L. Lechter + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/rich-dads-cashflow-quadrant-summary/",
-      "readMinutes": 5
+      "readMinutes": 35,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Rich%20Dad%E2%80%99s%20Cashflow%20Quadrant.mp3"
     },
     {
       "id": "booksum-6741610ffab5",
@@ -763,11 +1119,26 @@
       "hook": "A 5-minute look at “Skin in the Game”",
       "body": "Nassim Nicholas Taleb’s “Skin in the Game” is a thought-provoking book that challenges readers to rethink their understanding of risk, uncertainty, and the role of luck in our lives. The book is divided into three parts, with each part exploring different aspects of the author’s philosophy on the subject matter. In this book summary, we […]",
       "lesson": "Nassim Nicholas Taleb’s “Skin in the Game” is a thought-provoking book that challenges readers to rethink their understanding of risk, uncertainty, and the role of luck in our lives. The book is divided into three parts, with each part exploring different aspects of the author’s philosophy on the subject matter. In this book summary, we […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Nassim Nicholas Taleb",
-      "source": "5 Minute Book Summary · Nassim Nicholas Taleb",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Nassim Nicholas Taleb + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/skin-in-the-game-summary/",
-      "readMinutes": 5
+      "readMinutes": 23,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Skin%20in%20the%20Game.mp3"
+    },
+    {
+      "id": "20min-3dcb8296b1bb",
+      "topicId": "mental-models",
+      "title": "Smarter Not Harder",
+      "hook": "A ~24-minute listen on “Smarter Not Harder”",
+      "body": "The Biohacker's Guide to Getting the Body and Mind You Want",
+      "lesson": "The Biohacker's Guide to Getting the Body and Mind You Want. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Dave Asprey",
+      "source": "20 Minute Books · Dave Asprey",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/smarter-not-harder",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Smarter%20Not%20Harder.mp3",
+      "readMinutes": 24
     },
     {
       "id": "booksum-87af14c2605d",
@@ -835,6 +1206,20 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-d4780f5251f3",
+      "topicId": "building-products",
+      "title": "Talk Triggers",
+      "hook": "A ~17-minute listen on “Talk Triggers”",
+      "body": "The Complete Guide to Creating Customers with Word of Mouth",
+      "lesson": "The Complete Guide to Creating Customers with Word of Mouth. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Jay Baer and Daniel Lemin",
+      "source": "20 Minute Books · Jay Baer and Daniel Lemin",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/talk-triggers",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Talk%20Triggers.mp3",
+      "readMinutes": 17
+    },
+    {
       "id": "booksum-facf292c0b70",
       "topicId": "sports-biz",
       "title": "Talking to GOATs",
@@ -848,6 +1233,20 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-b6692d11c51d",
+      "topicId": "mental-models",
+      "title": "Talking to Strangers",
+      "hook": "A ~31-minute listen on “Talking to Strangers”",
+      "body": "What We Should Know about the People We Don’t Know",
+      "lesson": "What We Should Know about the People We Don’t Know. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Malcolm Gladwell",
+      "source": "20 Minute Books · Malcolm Gladwell",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/talking-to-strangers",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Talking%20to%20Strangers.mp3",
+      "readMinutes": 31
+    },
+    {
       "id": "booksum-b3fa62caa97a",
       "topicId": "building-products",
       "title": "Team of Teams",
@@ -859,6 +1258,20 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/team-of-teams-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-0dcda18c59b3",
+      "topicId": "building-products",
+      "title": "The 22 Immutable Laws of Marketing",
+      "hook": "A ~19-minute listen on “The 22 Immutable Laws of Marketing”",
+      "body": "Violate Them At Your Own Risk!",
+      "lesson": "Violate Them At Your Own Risk! Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Al Ries and Jack Trout",
+      "source": "20 Minute Books · Al Ries and Jack Trout",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-22-immutable-laws-of-marketing",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%2022%20Immutable%20Laws%20of%20Marketing.mp3",
+      "readMinutes": 19
     },
     {
       "id": "booksum-17c0f86623aa",
@@ -880,11 +1293,12 @@
       "hook": "A 5-minute look at “The Age of Spiritual Machines”",
       "body": "The Age of Spiritual Machines is a book written by Ray Kurzweil, published in 1999. The book explores the concept of the Singularity, which is a hypothetical point in time when artificial intelligence will surpass human intelligence. The book also discusses the implications of this event and how it will change the world as we […]",
       "lesson": "The Age of Spiritual Machines is a book written by Ray Kurzweil, published in 1999. The book explores the concept of the Singularity, which is a hypothetical point in time when artificial intelligence will surpass human intelligence. The book also discusses the implications of this event and how it will change the world as we […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Ray Kurzweil",
-      "source": "5 Minute Book Summary · Ray Kurzweil",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Ray Kurzweil + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-age-of-spiritual-machines-summary/",
-      "readMinutes": 5
+      "readMinutes": 22,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Age%20of%20Spiritual%20Machines.mp3"
     },
     {
       "id": "booksum-0220156b5317",
@@ -893,11 +1307,12 @@
       "hook": "A 5-minute look at “The Art of Rhetoric”",
       "body": "Aristotle’s “The Art of Rhetoric” is a timeless classic that explores the art of persuasion and communication. The book is divided into three parts, with the first two parts focusing on the theory of rhetoric and the third part providing practical advice on how to use rhetoric in everyday life. In this book summary, we […]",
       "lesson": "Aristotle’s “The Art of Rhetoric” is a timeless classic that explores the art of persuasion and communication. The book is divided into three parts, with the first two parts focusing on the theory of rhetoric and the third part providing practical advice on how to use rhetoric in everyday life. In this book summary, we […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Aristotle",
-      "source": "5 Minute Book Summary · Aristotle",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Aristotle + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-art-of-rhetoric-summary/",
-      "readMinutes": 5
+      "readMinutes": 24,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Art%20of%20Rhetoric.mp3"
     },
     {
       "id": "booksum-06df1c982013",
@@ -913,17 +1328,74 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-2d1149deaaff",
+      "topicId": "mental-models",
+      "title": "The Book of Humans",
+      "hook": "A ~24-minute listen on “The Book of Humans”",
+      "body": "A Brief History of Culture, Sex, War and the Evolution of Us",
+      "lesson": "A Brief History of Culture, Sex, War and the Evolution of Us. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Adam Rutherford",
+      "source": "20 Minute Books · Adam Rutherford",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-book-of-humans",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Book%20of%20Humans.mp3",
+      "readMinutes": 24
+    },
+    {
+      "id": "20min-cba5955e00b3",
+      "topicId": "mental-models",
+      "title": "The Brain",
+      "hook": "A ~24-minute listen on “The Brain”",
+      "body": "The Story of You",
+      "lesson": "The Story of You. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · David Eagleman",
+      "source": "20 Minute Books · David Eagleman",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-brain",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Brain.mp3",
+      "readMinutes": 24
+    },
+    {
+      "id": "20min-b6a6e04ed482",
+      "topicId": "building-products",
+      "title": "The Brand Gap",
+      "hook": "A ~21-minute listen on “The Brand Gap”",
+      "body": "How to Bridge the Distance Between Business Strategy and Design",
+      "lesson": "How to Bridge the Distance Between Business Strategy and Design. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Marty Neumeier",
+      "source": "20 Minute Books · Marty Neumeier",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-brand-gap",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Brand%20Gap.mp3",
+      "readMinutes": 21
+    },
+    {
       "id": "booksum-fd5d39e5fe59",
       "topicId": "mental-models",
       "title": "The Confidence Game",
       "hook": "A 5-minute look at “The Confidence Game”",
       "body": "The Confidence Game is a non-fiction book written by Maria Konnikova. Published in 2016, the book explores the psychology and mechanics of confidence scams and cons. The book delves into the history of cons, the psychological manipulation techniques used by con artists, and the impact of these scams on society. Throughout the book, Konnikova interviews […]",
       "lesson": "The Confidence Game is a non-fiction book written by Maria Konnikova. Published in 2016, the book explores the psychology and mechanics of confidence scams and cons. The book delves into the history of cons, the psychological manipulation techniques used by con artists, and the impact of these scams on society. Throughout the book, Konnikova interviews […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Maria Konnikova",
-      "source": "5 Minute Book Summary · Maria Konnikova",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Maria Konnikova + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-confidence-game-summary/",
-      "readMinutes": 5
+      "readMinutes": 24,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Confidence%20Game.mp3"
+    },
+    {
+      "id": "20min-f4fc7483cb93",
+      "topicId": "building-products",
+      "title": "The Daily Stoic",
+      "hook": "A ~37-minute listen on “The Daily Stoic”",
+      "body": "366 Meditations on Wisdom, Perseverance and the Art of Living",
+      "lesson": "366 Meditations on Wisdom, Perseverance and the Art of Living. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Ryan Holiday & Stephen Hanselman",
+      "source": "20 Minute Books · Ryan Holiday & Stephen Hanselman",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-daily-stoic",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Daily%20Stoic.mp3",
+      "readMinutes": 37
     },
     {
       "id": "booksum-11e822ccc7db",
@@ -939,17 +1411,46 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-53ae56ee1977",
+      "topicId": "building-products",
+      "title": "The Design of Everyday Things",
+      "hook": "A ~24-minute listen on “The Design of Everyday Things”",
+      "body": "The cognitive psychology of good design",
+      "lesson": "The cognitive psychology of good design. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Donald A. Norman",
+      "source": "20 Minute Books · Donald A. Norman",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-design-of-everyday-things",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Design%20of%20Everyday%20Things.mp3",
+      "readMinutes": 24
+    },
+    {
       "id": "booksum-dda2b165aabf",
       "topicId": "mental-models",
       "title": "The Drama of the Gifted Child",
       "hook": "A 5-minute look at “The Drama of the Gifted Child”",
       "body": "The Drama of the Gifted Child by Alice Miller is a thought-provoking book that delves into the psyche of gifted children and how their upbringing can impact their emotional and psychological well-being. The book explores the idea that gifted children are often overlooked and misunderstood, and their unique needs are not always met. Miller argues […]",
       "lesson": "The Drama of the Gifted Child by Alice Miller is a thought-provoking book that delves into the psyche of gifted children and how their upbringing can impact their emotional and psychological well-being. The book explores the idea that gifted children are often overlooked and misunderstood, and their unique needs are not always met. Miller argues […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Alice Miller",
-      "source": "5 Minute Book Summary · Alice Miller",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Alice Miller + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-drama-of-the-gifted-child-summary/",
-      "readMinutes": 5
+      "readMinutes": 17,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Drama%20of%20the%20Gifted%20Child.mp3"
+    },
+    {
+      "id": "20min-e61186818702",
+      "topicId": "mental-models",
+      "title": "The Dreamer and the Fantasy Relationship",
+      "hook": "A ~23-minute listen on “The Dreamer and the Fantasy Relationship”",
+      "body": "How to have happier relationships and stop being drawn to unavailable men",
+      "lesson": "How to have happier relationships and stop being drawn to unavailable men. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Natalie Lue",
+      "source": "20 Minute Books · Natalie Lue",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-dreamer-and-the-fantasy-relationship",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Dreamer%20and%20the%20Fantasy%20Relationship.mp3",
+      "readMinutes": 23
     },
     {
       "id": "booksum-8306255edb7d",
@@ -971,11 +1472,12 @@
       "hook": "A 5-minute look at “The Evolution of Everything”",
       "body": "The Evolution of Everything is a book written by Matt Ridley that explores the concept of how ideas, products, companies, and even species evolve over time. The book delves into the various ways that evolution works and how it has shaped our world. Ridley argues that evolution is not just a biological process, but a […]",
       "lesson": "The Evolution of Everything is a book written by Matt Ridley that explores the concept of how ideas, products, companies, and even species evolve over time. The book delves into the various ways that evolution works and how it has shaped our world. Ridley argues that evolution is not just a biological process, but a […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Matt Ridley",
-      "source": "5 Minute Book Summary · Matt Ridley",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Matt Ridley + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-evolution-of-everything-summary/",
-      "readMinutes": 5
+      "readMinutes": 27,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Evolution%20of%20Everything.mp3"
     },
     {
       "id": "booksum-5dc9c8f9ac92",
@@ -989,6 +1491,20 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-free-time-formula-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-12ee1e23876e",
+      "topicId": "mental-models",
+      "title": "The God Delusion",
+      "hook": "A ~34-minute listen on “The God Delusion”",
+      "body": "The Science behind Atheism",
+      "lesson": "The Science behind Atheism. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Richard Dawkins",
+      "source": "20 Minute Books · Richard Dawkins",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-god-delusion",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20God%20Delusion.mp3",
+      "readMinutes": 34
     },
     {
       "id": "booksum-5731d10d368f",
@@ -1017,6 +1533,34 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-76912b2bd4c4",
+      "topicId": "history",
+      "title": "The Harvard Psychedelic Club",
+      "hook": "A ~16-minute listen on “The Harvard Psychedelic Club”",
+      "body": "How Timothy Leary, Ram Dass, Huston Smith, and Andrew Weil Killed the Fifties and Ushered in a New Age for America",
+      "lesson": "How Timothy Leary, Ram Dass, Huston Smith, and Andrew Weil Killed the Fifties and Ushered in a New Age for America. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Don Lattin",
+      "source": "20 Minute Books · Don Lattin",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-harvard-psychedelic-club",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Harvard%20Psychedelic%20Club.mp3",
+      "readMinutes": 16
+    },
+    {
+      "id": "20min-146418fa0743",
+      "topicId": "building-products",
+      "title": "The Human Edge",
+      "hook": "A ~30-minute listen on “The Human Edge”",
+      "body": "How Curiosity and Creativity are Your Superpowers in the Digital Economy",
+      "lesson": "How Curiosity and Creativity are Your Superpowers in the Digital Economy. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Greg Orme",
+      "source": "20 Minute Books · Greg Orme",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-human-edge",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Human%20Edge.mp3",
+      "readMinutes": 30
+    },
+    {
       "id": "booksum-5e0755fb06ea",
       "topicId": "building-products",
       "title": "The Leadership Challenge",
@@ -1036,11 +1580,12 @@
       "hook": "A 5-minute look at “The Mamba Mentality”",
       "body": "Kobe Bryant, the legendary NBA player, has written a book that delves into his mindset and approach to basketball. The Mamba Mentality: How I Play is a must-read for anyone who wants to understand the drive and dedication it takes to become a champion. In this book, Kobe shares his personal experiences, insights, and strategies […]",
       "lesson": "Kobe Bryant, the legendary NBA player, has written a book that delves into his mindset and approach to basketball. The Mamba Mentality: How I Play is a must-read for anyone who wants to understand the drive and dedication it takes to become a champion. In this book, Kobe shares his personal experiences, insights, and strategies […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Kobe Bryant",
-      "source": "5 Minute Book Summary · Kobe Bryant",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Kobe Bryant + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-mamba-mentality-summary/",
-      "readMinutes": 5
+      "readMinutes": 17,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Mamba%20Mentality.mp3"
     },
     {
       "id": "booksum-96857ec157b6",
@@ -1062,11 +1607,12 @@
       "hook": "A 5-minute look at “The Optimistic Child”",
       "body": "The Optimistic Child by Martin E.P. Seligman is a groundbreaking book that explores the concept of optimism and how it can be nurtured in children. The book is based on decades of research and provides practical advice on how parents, teachers, and caregivers can help children develop a positive outlook on life. In this book […]",
       "lesson": "The Optimistic Child by Martin E.P. Seligman is a groundbreaking book that explores the concept of optimism and how it can be nurtured in children. The book is based on decades of research and provides practical advice on how parents, teachers, and caregivers can help children develop a positive outlook on life. In this book […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Martin E.P. Seligman",
-      "source": "5 Minute Book Summary · Martin E.P. Seligman",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Martin E.P. Seligman + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-optimistic-child-summary/",
-      "readMinutes": 5
+      "readMinutes": 26,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Optimistic%20Child.mp3"
     },
     {
       "id": "booksum-6f2a5021571e",
@@ -1075,11 +1621,12 @@
       "hook": "A 5-minute look at “The Origins of Totalitarianism”",
       "body": "Hannah Arendt’s “The Origins of Totalitarianism” is a seminal work in the field of political theory. First published in 1951, the book explores the conditions that gave rise to totalitarian regimes in the 20th century, and the ideologies that underpinned them. Arendt argues that totalitarianism is not simply a matter of economic or political systems, […]",
       "lesson": "Hannah Arendt’s “The Origins of Totalitarianism” is a seminal work in the field of political theory. First published in 1951, the book explores the conditions that gave rise to totalitarian regimes in the 20th century, and the ideologies that underpinned them. Arendt argues that totalitarianism is not simply a matter of economic or political systems, […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Hannah Arendt",
-      "source": "5 Minute Book Summary · Hannah Arendt",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Hannah Arendt + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-origins-of-totalitarianism-summary/",
-      "readMinutes": 5
+      "readMinutes": 26,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Origins%20of%20Totalitarianism.mp3"
     },
     {
       "id": "booksum-644b18003dcf",
@@ -1121,6 +1668,34 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-57900b8ac95e",
+      "topicId": "building-products",
+      "title": "The Practice",
+      "hook": "A ~25-minute listen on “The Practice”",
+      "body": "Shipping Creative Work",
+      "lesson": "Shipping Creative Work. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Seth Godin",
+      "source": "20 Minute Books · Seth Godin",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-practice",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Practice.mp3",
+      "readMinutes": 25
+    },
+    {
+      "id": "20min-bc9877455689",
+      "topicId": "building-products",
+      "title": "The Presentation Secrets of Steve Jobs",
+      "hook": "A ~29-minute listen on “The Presentation Secrets of Steve Jobs”",
+      "body": "Master the gold standard for presentations",
+      "lesson": "Master the gold standard for presentations. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Carmine Gallo",
+      "source": "20 Minute Books · Carmine Gallo",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-presentation-secrets-of-steve-jobs",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Presentation%20Secrets%20of%20Steve%20Jobs.mp3",
+      "readMinutes": 29
+    },
+    {
       "id": "booksum-7827f1728856",
       "topicId": "mental-models",
       "title": "The Price You Pay for College",
@@ -1153,11 +1728,96 @@
       "hook": "A 5-minute look at “The Republic”",
       "body": "The Republic by Plato is a classic work of philosophy that explores the nature of justice, the ideal state, and the role of the philosopher in society. The book is divided into ten sections, each of which focuses on a different aspect of these themes. In this summary, we will provide a brief overview of […]",
       "lesson": "The Republic by Plato is a classic work of philosophy that explores the nature of justice, the ideal state, and the role of the philosopher in society. The book is divided into ten sections, each of which focuses on a different aspect of these themes. In this summary, we will provide a brief overview of […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Plato",
-      "source": "5 Minute Book Summary · Plato",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Plato + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-republic-summary/",
-      "readMinutes": 5
+      "readMinutes": 25,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Republic.mp3"
+    },
+    {
+      "id": "20min-f34a0767dc9a",
+      "topicId": "mental-models",
+      "title": "The Rules of Contagion",
+      "hook": "A ~31-minute listen on “The Rules of Contagion”",
+      "body": "Why Things Spread – and Why They Stop",
+      "lesson": "Why Things Spread – and Why They Stop. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Adam Kucharski",
+      "source": "20 Minute Books · Adam Kucharski",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-rules-of-contagion",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Rules%20of%20Contagion.mp3",
+      "readMinutes": 31
+    },
+    {
+      "id": "20min-e20a0ca5ff12",
+      "topicId": "mental-models",
+      "title": "The School of Life",
+      "hook": "A ~29-minute listen on “The School of Life”",
+      "body": "An Emotional Education",
+      "lesson": "An Emotional Education. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Alain de Botton and The School of Life",
+      "source": "20 Minute Books · Alain de Botton and The School of Life",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-school-of-life",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20School%20of%20Life.mp3",
+      "readMinutes": 29
+    },
+    {
+      "id": "20min-0b7f8d4d7ce1",
+      "topicId": "building-products",
+      "title": "The Search",
+      "hook": "A ~18-minute listen on “The Search”",
+      "body": "Finding Meaningful Work in a Post-Career World",
+      "lesson": "Finding Meaningful Work in a Post-Career World. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Bruce Feiler",
+      "source": "20 Minute Books · Bruce Feiler",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-search",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Search.mp3",
+      "readMinutes": 18
+    },
+    {
+      "id": "20min-81eae0646d33",
+      "topicId": "mental-models",
+      "title": "The Singularity Is Near",
+      "hook": "A ~28-minute listen on “The Singularity Is Near”",
+      "body": "When Humans Transcend Biology",
+      "lesson": "When Humans Transcend Biology. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Ray Kurzweil",
+      "source": "20 Minute Books · Ray Kurzweil",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-singularity-is-near",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Singularity%20Is%20Near.mp3",
+      "readMinutes": 28
+    },
+    {
+      "id": "20min-c4d73091f956",
+      "topicId": "history",
+      "title": "The Souls of Black Folk",
+      "hook": "A ~23-minute listen on “The Souls of Black Folk”",
+      "body": "An account of the conditions of African Americans after the end of slavery",
+      "lesson": "An account of the conditions of African Americans after the end of slavery. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · W.E.B. Du Bois",
+      "source": "20 Minute Books · W.E.B. Du Bois",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-souls-of-black-folk",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Souls%20of%20Black%20Folk.mp3",
+      "readMinutes": 23
+    },
+    {
+      "id": "20min-8095f104b06e",
+      "topicId": "mental-models",
+      "title": "The Strange Order of Things",
+      "hook": "A ~25-minute listen on “The Strange Order of Things”",
+      "body": "Life, Feeling, and the Making of Cultures",
+      "lesson": "Life, Feeling, and the Making of Cultures. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Antonio Damasio",
+      "source": "20 Minute Books · Antonio Damasio",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-strange-order-of-things",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Strange%20Order%20of%20Things.mp3",
+      "readMinutes": 25
     },
     {
       "id": "booksum-e3526d78984e",
@@ -1166,11 +1826,12 @@
       "hook": "A 5-minute look at “The Tale of the Dueling Neurosurgeons”",
       "body": "The Tale of the Dueling Neurosurgeons is a non-fiction book written by Sam Kean. The book explores the history of neurosurgery, from its early days to the present. It is a fascinating account of the men and women who have dedicated their lives to understanding the workings of the human brain, and how their discoveries […]",
       "lesson": "The Tale of the Dueling Neurosurgeons is a non-fiction book written by Sam Kean. The book explores the history of neurosurgery, from its early days to the present. It is a fascinating account of the men and women who have dedicated their lives to understanding the workings of the human brain, and how their discoveries […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Sam Kean",
-      "source": "5 Minute Book Summary · Sam Kean",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Sam Kean + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-tale-of-the-dueling-neurosurgeons-summary/",
-      "readMinutes": 5
+      "readMinutes": 35,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Tale%20of%20the%20Dueling%20Neurosurgeons.mp3"
     },
     {
       "id": "booksum-cef1f48f5e5c",
@@ -1179,11 +1840,12 @@
       "hook": "A 5-minute look at “The Total Money Makeover”",
       "body": "Dave Ramsey’s “The Total Money Makeover” is a comprehensive guide to financial freedom. The book provides practical advice on how to get out of debt, build wealth, and secure your financial future. Ramsey’s approach is straightforward and easy to follow, making it an excellent resource for anyone looking to take control of their finances. Chapter […]",
       "lesson": "Dave Ramsey’s “The Total Money Makeover” is a comprehensive guide to financial freedom. The book provides practical advice on how to get out of debt, build wealth, and secure your financial future. Ramsey’s approach is straightforward and easy to follow, making it an excellent resource for anyone looking to take control of their finances. Chapter […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Dave Ramsey",
-      "source": "5 Minute Book Summary · Dave Ramsey",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Dave Ramsey + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-total-money-makeover-summary/",
-      "readMinutes": 5
+      "readMinutes": 28,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Total%20Money%20Makeover.mp3"
     },
     {
       "id": "booksum-a29845588c47",
@@ -1205,11 +1867,26 @@
       "hook": "A 5-minute look at “The Way of Zen”",
       "body": "The Way of Zen is a book written by Alan W. Watts, an eminent British philosopher and writer, who was also an expert on Eastern philosophy and religion. The book was first published in 1957 and has since become a classic text on Zen Buddhism. In this book, Watts provides an in-depth exploration of the […]",
       "lesson": "The Way of Zen is a book written by Alan W. Watts, an eminent British philosopher and writer, who was also an expert on Eastern philosophy and religion. The book was first published in 1957 and has since become a classic text on Zen Buddhism. In this book, Watts provides an in-depth exploration of the […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Alan W. Watts",
-      "source": "5 Minute Book Summary · Alan W. Watts",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Alan W. Watts + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-way-of-zen-summary/",
-      "readMinutes": 5
+      "readMinutes": 32,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Way%20of%20Zen.mp3"
+    },
+    {
+      "id": "20min-78544b61651d",
+      "topicId": "mental-models",
+      "title": "The Way We Eat Now",
+      "hook": "A ~28-minute listen on “The Way We Eat Now”",
+      "body": "How the Food Revolution Has Transformed Our Lives, Our Bodies, and Our World",
+      "lesson": "How the Food Revolution Has Transformed Our Lives, Our Bodies, and Our World. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Bee Wilson",
+      "source": "20 Minute Books · Bee Wilson",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-way-we-eat-now",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Way%20We%20Eat%20Now.mp3",
+      "readMinutes": 28
     },
     {
       "id": "booksum-311a25e041aa",
@@ -1218,11 +1895,12 @@
       "hook": "A 5-minute look at “The Wealth of Nations”",
       "body": "The Wealth of Nations, written by Adam Smith, is a seminal work in the field of economics. First published in 1776, the book is considered one of the most influential works ever written on the subject. In it, Smith outlines his theories on the nature of wealth and how it is created, as well as […]",
       "lesson": "The Wealth of Nations, written by Adam Smith, is a seminal work in the field of economics. First published in 1776, the book is considered one of the most influential works ever written on the subject. In it, Smith outlines his theories on the nature of wealth and how it is created, as well as […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Adam Smith",
-      "source": "5 Minute Book Summary · Adam Smith",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Adam Smith + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-wealth-of-nations-summary/",
-      "readMinutes": 5
+      "readMinutes": 13,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Wealth%20of%20Nations.mp3"
     },
     {
       "id": "booksum-f3b0566aede0",
@@ -1264,6 +1942,20 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-084611de4def",
+      "topicId": "mental-models",
+      "title": "Welcome to the Universe",
+      "hook": "A ~32-minute listen on “Welcome to the Universe”",
+      "body": "An Astrophysical Tour",
+      "lesson": "An Astrophysical Tour. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Neil deGrasse Tyson, Michael A. Strauss & J. Richard Gott",
+      "source": "20 Minute Books · Neil deGrasse Tyson, Michael A. Strauss & J. Richard Gott",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/welcome-to-the-universe",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Welcome%20to%20the%20Universe.mp3",
+      "readMinutes": 32
+    },
+    {
       "id": "booksum-e50c82cc1be2",
       "topicId": "mental-models",
       "title": "What’s Going on in There",
@@ -1275,6 +1967,20 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/whats-going-on-in-there-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-0c8d9eca0c8f",
+      "topicId": "building-products",
+      "title": "Win at Work and Succeed at Life",
+      "hook": "A ~24-minute listen on “Win at Work and Succeed at Life”",
+      "body": "5 Principles to Free Yourself from the Cult of Overwork",
+      "lesson": "5 Principles to Free Yourself from the Cult of Overwork. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Michael Hyatt and Megan Hyatt Miller",
+      "source": "20 Minute Books · Michael Hyatt and Megan Hyatt Miller",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/win-at-work-and-succeed-at-life",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Win%20at%20Work%20and%20Succeed%20at%20Life.mp3",
+      "readMinutes": 24
     },
     {
       "id": "booksum-efaa25407c17",
@@ -1309,11 +2015,12 @@
       "hook": "A 5-minute look at “Your Money or Your Life”",
       "body": "Your Money or Your Life is a personal finance book that focuses on the relationship between money and life. The book is written by Vicki Robin and Joe Dominguez and was first published in 1992. The central idea of the book is that money is a tool that can be used to improve one’s life, […]",
       "lesson": "Your Money or Your Life is a personal finance book that focuses on the relationship between money and life. The book is written by Vicki Robin and Joe Dominguez and was first published in 1992. The central idea of the book is that money is a tool that can be used to improve one’s life, […] Open the summary, pick one idea you’d actually try, then come back.",
-      "takeaway": "Read the summary · Vicki Robin and Joe Dominguez",
-      "source": "5 Minute Book Summary · Vicki Robin and Joe Dominguez",
+      "takeaway": "Read or listen · 20 Minute Books",
+      "source": "5 Minute Book Summary · Vicki Robin and Joe Dominguez + audio",
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/your-money-or-your-life-summary/",
-      "readMinutes": 5
+      "readMinutes": 30,
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Your%20Money%20or%20Your%20Life.mp3"
     },
     {
       "id": "booksum-54a4b4efb4f9",

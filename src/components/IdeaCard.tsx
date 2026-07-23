@@ -52,9 +52,15 @@ export function IdeaCard({
   const { kept, toggle } = useKept()
   const saved = kept.has(idea.id)
   const sourceHref = resolveSourceUrl(idea)
+  const audioParts = idea.audioUrl
+    ? sourceMediaParts(idea.audioUrl, 'Listen', 'idea-btn ghost idea-btn--link')
+    : null
   const sourceParts = sourceHref
     ? sourceMediaParts(sourceHref, 'Source', 'idea-btn ghost idea-btn--link')
     : null
+  // Prefer dedicated audioUrl for the player; keep sourceUrl as the page CTA when present.
+  const media = audioParts?.media ?? sourceParts?.media
+  const sourceCta = sourceParts?.cta
   const { hook, lesson, takeaway, example, hasMore } = presentIdea(idea)
 
   const [expanded, setExpanded] = useState(compact ? true : false)
@@ -168,7 +174,7 @@ export function IdeaCard({
             <span className="idea-type">{idea.sourceType}</span>
           </div>
 
-          {sourceParts?.media}
+          {media}
 
           <div className="idea-actions">
             {!compact && onPrev && (
@@ -176,7 +182,7 @@ export function IdeaCard({
                 ←
               </button>
             )}
-            {sourceParts?.cta}
+            {sourceCta}
             <button
               type="button"
               className={`idea-btn keep ${saved ? 'is-kept' : ''}`}

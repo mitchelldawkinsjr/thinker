@@ -21,7 +21,7 @@ export type BookIdeasFile = {
 /** Bundled fallback — replaced/merged by `npm run ingest:book-ideas` */
 export const bookIdeasSeed: BookIdeasFile = {
   updatedAt: '2026-07-21T00:00:00.000Z',
-  source: 'https://5minutebooksummary.com',
+  source: 'https://5minutebooksummary.com + https://www.20minutebooks.com/rss/',
   ttlDays: BOOK_IDEA_TTL_DAYS,
   items: [],
   retired: [],

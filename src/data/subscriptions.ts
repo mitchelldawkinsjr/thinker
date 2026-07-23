@@ -62,7 +62,7 @@ export const DEFAULT_SUBSCRIPTIONS: Subscriptions = {
 
 export const KIND_LABELS: { key: ContentKindKey; label: string; hint: string }[] = [
   { key: 'ideas', label: 'Ideas', hint: 'Microlearning cards from the catalog' },
-  { key: 'bookIdeas', label: 'Book summaries', hint: 'Weekly book-summary cards in the idea pool' },
+  { key: 'bookIdeas', label: 'Book summaries', hint: '5- and 20-minute book summary cards (text + audio)' },
   { key: 'news', label: 'News', hint: 'Curated RSS lessons and your custom feeds' },
   { key: 'scripture', label: 'Scripture', hint: 'Daily promises and curated passages' },
   { key: 'resources', label: 'Free sites', hint: 'Curated learning sites and your additions' },

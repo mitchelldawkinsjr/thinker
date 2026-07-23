@@ -42,6 +42,8 @@ export interface Idea {
   gutenbergId?: number
   /** Direct link to the article, site, or book page */
   sourceUrl?: string
+  /** Optional MP3 (or other audio) for inline playback — e.g. 20 Minute Books */
+  audioUrl?: string
   readMinutes: number
   /** When this card entered the live pool (book-summary ingest) */
   ingestedAt?: string

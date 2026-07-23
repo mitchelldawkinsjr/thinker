@@ -130,9 +130,13 @@ export function stripLegacyAsk(lesson: string): string {
   return t.replace(LEGACY_ASK, '').trim()
 }
 
-export function newsCardCopy(item: NewsItem): { body: string; challenge: string } {
+export function newsCardCopy(item: NewsItem): { body: string; challenge: string | null } {
   const style = challengeStyleFor(item.topicIds)
   const body = stripLegacyAsk(item.lesson)
+  // Sports headlines stay straight — no Think prompt
+  if (style === 'sports') {
+    return { body: body || item.title, challenge: null }
+  }
   const challenge =
     item.challenge?.trim() ||
     pickNewsChallenge(item.id, item.title, style)
