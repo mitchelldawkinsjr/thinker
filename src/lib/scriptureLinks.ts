@@ -1,4 +1,4 @@
-/** boll.s life / Protestant canon book numbers → api.bible / Scriptura USFM ids */
+/** boll.s life / Protestant canon book numbers → YouVersion / Bible.com USFM ids */
 
 const BOLLS_TO_USFM: Record<number, string> = {
   1: 'GEN',
@@ -69,10 +69,10 @@ const BOLLS_TO_USFM: Record<number, string> = {
   66: 'REV',
 }
 
-const BOLLS_BASE = 'https://bolls.life'
-const DEFAULT_SCRIPTURA = 'https://scriptura.360web.cloud'
-const PREFER_KEY = 'thinker-prefer-scriptura'
-const PROBE_TTL_MS = 10 * 60 * 1000
+/** YouVersion version id + abbreviation for Amplified Bible */
+const BIBLE_VERSION_ID = 116
+const BIBLE_VERSION_ABBR = 'AMP'
+const BIBLE_APP_BASE = 'https://www.bible.com/bible'
 
 export type ScriptureRef = {
   bookId: number
@@ -80,7 +80,6 @@ export type ScriptureRef = {
   verseStart?: number
   verseEnd?: number
   translation?: string
-  /** Legacy bolls URL from seed/ingest — used if we cannot build one */
   sourceUrl?: string
 }
 
@@ -88,104 +87,19 @@ export function bollsToUsfm(bookId: number): string | null {
   return BOLLS_TO_USFM[bookId] ?? null
 }
 
-export function getScripturaBase(): string {
-  const fromEnv = import.meta.env.VITE_SCRIPTURA_URL?.trim()
-  return (fromEnv || DEFAULT_SCRIPTURA).replace(/\/$/, '')
-}
-
-export function bollsPassageUrl(ref: ScriptureRef): string {
-  if (ref.sourceUrl?.includes('bolls.life')) return ref.sourceUrl
-  const tr = ref.translation || 'WEB'
-  return `${BOLLS_BASE}/${tr}/${ref.bookId}/${ref.chapter}/`
-}
-
-export function scripturaPassageUrl(ref: ScriptureRef): string | null {
-  const book = bollsToUsfm(ref.bookId)
-  if (!book) return null
-  const q = new URLSearchParams({
-    book,
-    chapter: String(ref.chapter),
-  })
+/**
+ * YouVersion / Bible App deep-link.
+ * Pattern: https://www.bible.com/bible/116/PSA.51.AMP
+ * With verse: …/PRO.3.5.AMP  or range …/PRO.3.5-6.AMP
+ */
+export function bibleAppPassageUrl(ref: ScriptureRef): string {
+  const book = bollsToUsfm(ref.bookId) ?? 'PSA'
+  let passage = `${book}.${ref.chapter}`
   if (ref.verseStart && ref.verseStart > 0) {
-    q.set('verse', String(ref.verseStart))
-  }
-  return `${getScripturaBase()}/?${q}`
-}
-
-function readPreferScriptura(): boolean {
-  try {
-    const raw = localStorage.getItem(PREFER_KEY)
-    if (raw === '0') return false
-    if (raw === '1') return true
-  } catch {
-    /* ignore */
-  }
-  return true
-}
-
-function writePreferScriptura(prefer: boolean) {
-  try {
-    localStorage.setItem(PREFER_KEY, prefer ? '1' : '0')
-  } catch {
-    /* ignore */
-  }
-}
-
-let lastProbeAt = 0
-let probing: Promise<boolean> | null = null
-
-/** Lightweight reachability probe — falls back to bolls when Scriptura is down. */
-export async function probeScriptura(force = false): Promise<boolean> {
-  const now = Date.now()
-  if (!force && now - lastProbeAt < PROBE_TTL_MS && probing == null) {
-    return readPreferScriptura()
-  }
-  if (probing) return probing
-
-  probing = (async () => {
-    try {
-      const ctrl = new AbortController()
-      const t = window.setTimeout(() => ctrl.abort(), 3500)
-      // mode: no-cors still resolves if the host is reachable (opaque response)
-      await fetch(getScripturaBase() + '/', {
-        method: 'HEAD',
-        mode: 'no-cors',
-        cache: 'no-store',
-        signal: ctrl.signal,
-      })
-      window.clearTimeout(t)
-      writePreferScriptura(true)
-      lastProbeAt = Date.now()
-      return true
-    } catch {
-      writePreferScriptura(false)
-      lastProbeAt = Date.now()
-      return false
-    } finally {
-      probing = null
+    passage += `.${ref.verseStart}`
+    if (ref.verseEnd && ref.verseEnd > ref.verseStart) {
+      passage += `-${ref.verseEnd}`
     }
-  })()
-
-  return probing
-}
-
-/** Prefer Scriptura; bounce to bolls when probe failed or USFM unknown. */
-export function preferredPassageUrl(ref: ScriptureRef): {
-  href: string
-  via: 'scriptura' | 'bolls'
-  fallbackHref: string
-} {
-  const bolls = bollsPassageUrl(ref)
-  const scriptura = scripturaPassageUrl(ref)
-  const prefer = readPreferScriptura()
-
-  if (prefer && scriptura) {
-    return { href: scriptura, via: 'scriptura', fallbackHref: bolls }
   }
-  return { href: bolls, via: 'bolls', fallbackHref: bolls }
-}
-
-/** Call once on scripture card mount / feed load. */
-export function warmScripturaProbe() {
-  void probeScriptura()
+  return `${BIBLE_APP_BASE}/${BIBLE_VERSION_ID}/${passage}.${BIBLE_VERSION_ABBR}`
 }

@@ -8,11 +8,7 @@ import {
   getGameHighScore,
   recordGameScore,
 } from '../lib/gameScores'
-import {
-  preferredPassageUrl,
-  probeScriptura,
-  warmScripturaProbe,
-} from '../lib/scriptureLinks'
+import { bibleAppPassageUrl } from '../lib/scriptureLinks'
 import { ExternalCta, sourceMediaParts } from './CardMedia'
 import { resolvePlayableUrl } from '../lib/mediaUrl'
 import './IdeaCard.css'
@@ -314,12 +310,7 @@ export function ScriptureFeedCard({
   scripture: ScriptureItem
 } & NavProps) {
   const topics = scripture.topicIds.map((t) => `#${t}`).join(' · ')
-  const [open, setOpen] = useState(() => preferredPassageUrl(scripture))
-
-  useEffect(() => {
-    warmScripturaProbe()
-    void probeScriptura().then(() => setOpen(preferredPassageUrl(scripture)))
-  }, [scripture])
+  const href = bibleAppPassageUrl(scripture)
 
   return (
     <FeedCardShell
@@ -332,11 +323,7 @@ export function ScriptureFeedCard({
       onPrev={onPrev}
       onNext={onNext}
       onHide={onHide}
-      cta={
-        <ExternalCta href={open.href}>
-          {open.via === 'scriptura' ? 'Open in Scriptura' : 'Open passage'}
-        </ExternalCta>
-      }
+      cta={<ExternalCta href={href}>Bible App</ExternalCta>}
     >
       <p className="feed-card-author">{scripture.reference}</p>
       <blockquote className="feed-card-verse">“{scripture.text}”</blockquote>
@@ -349,27 +336,6 @@ export function ScriptureFeedCard({
             ·{' '}
             <a href={scripture.sourceUrl} target="_blank" rel="noreferrer">
               BLB Daily Promise
-            </a>
-          </>
-        )}
-        {open.via === 'scriptura' ? (
-          <>
-            {' '}
-            · via{' '}
-            <a href={open.href} target="_blank" rel="noreferrer">
-              Scriptura
-            </a>
-            {' · '}
-            <a href={open.fallbackHref} target="_blank" rel="noreferrer">
-              bolls.life fallback
-            </a>
-          </>
-        ) : (
-          <>
-            {' '}
-            · Scriptura offline · via{' '}
-            <a href={open.href} target="_blank" rel="noreferrer">
-              bolls.life
             </a>
           </>
         )}
