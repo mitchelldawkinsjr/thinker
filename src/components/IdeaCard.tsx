@@ -19,6 +19,70 @@ const AskPanel = lazy(() =>
   import('./AskPanel').then((m) => ({ default: m.AskPanel })),
 )
 
+function KeepIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path
+        d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1Z"
+        stroke="currentColor"
+        strokeWidth="1.85"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
+function ShareIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <circle cx="18" cy="5" r="2.5" stroke="currentColor" strokeWidth="1.85" />
+      <circle cx="6" cy="12" r="2.5" stroke="currentColor" strokeWidth="1.85" />
+      <circle cx="18" cy="19" r="2.5" stroke="currentColor" strokeWidth="1.85" />
+      <path
+        d="M8.4 10.8 15.6 6.7M8.4 13.2l7.2 4.1"
+        stroke="currentColor"
+        strokeWidth="1.85"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
+function AskIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path
+        d="M8.5 18.5 5 21v-4.2A7.5 7.5 0 1 1 12 19.5"
+        stroke="currentColor"
+        strokeWidth="1.85"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.8 9.6c0-1.3 1-2.2 2.2-2.2s2.2.9 2.2 2.2c0 1.1-.7 1.7-1.6 2.2-.7.4-1.1.8-1.1 1.5"
+        stroke="currentColor"
+        strokeWidth="1.85"
+        strokeLinecap="round"
+      />
+      <circle cx="12" cy="16.2" r="0.9" fill="currentColor" />
+    </svg>
+  )
+}
+
+function CheckIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path
+        d="m5 12.5 4.2 4.2L19 7.5"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 type Props = {
   idea: Idea
   compact?: boolean
@@ -288,69 +352,100 @@ export function IdeaCard({
           {media}
 
           <div className="idea-actions">
-            {!compact && onPrev && (
-              <button type="button" className="idea-btn ghost" onClick={onPrev} aria-label="Previous idea">
-                ←
-              </button>
-            )}
-            {sourceCta}
-            {idea.audioPageUrl ? (
-              <ExternalCta href={idea.audioPageUrl} className="idea-btn ghost idea-btn--link">
-                20 min
-              </ExternalCta>
-            ) : null}
-            {!reviewing && (
-              <button
-                type="button"
-                className={`idea-btn keep ${saved ? 'is-kept' : ''}`}
-                onClick={onKeepClick}
-                aria-pressed={saved}
-                aria-expanded={!compact && flipped}
-              >
-                {saved ? 'Kept' : 'Keep'}
-              </button>
-            )}
-            {sourceThought && !reviewing && (
-              <button
-                type="button"
-                className="idea-btn ghost"
-                onClick={() => demote(sourceThought.id)}
-                title="Send back to Thoughts to edit, then promote again"
-              >
-                Back to thought
-              </button>
-            )}
-            {compact && saved && !reviewing && !sourceThought && (
-              <button
-                type="button"
-                className="idea-btn ghost"
-                onClick={openKeepNote}
-                aria-expanded={flipped}
-              >
-                {keepThought?.note.trim() ? 'Edit note' : 'Add note'}
-              </button>
-            )}
-            {(compact || saved) && !reviewing && (
-              <button type="button" className="idea-btn ghost" onClick={() => void onShare()}>
-                {shareStatusLabel(shareResult)}
-              </button>
-            )}
-            {!compact && (
-              <button
-                type="button"
-                className={`idea-btn ghost ${askOpen ? 'is-active' : ''}`}
-                onClick={() => setAskOpen((v) => !v)}
-                aria-expanded={askOpen}
-              >
-                {askOpen ? 'Hide' : 'Ask'}
-              </button>
-            )}
+            <div className="idea-actions-main">
+              {!compact && onPrev && (
+                <button
+                  type="button"
+                  className="idea-btn ghost idea-btn--icon"
+                  onClick={onPrev}
+                  aria-label="Previous idea"
+                  title="Previous"
+                >
+                  ←
+                </button>
+              )}
+              {sourceCta}
+              {idea.audioPageUrl ? (
+                <ExternalCta
+                  href={idea.audioPageUrl}
+                  className="idea-btn ghost idea-btn--link idea-btn--compact-label"
+                >
+                  <span className="idea-btn-label">20 min</span>
+                </ExternalCta>
+              ) : null}
+              {!reviewing && (
+                <button
+                  type="button"
+                  className={`idea-btn keep idea-btn--icon ${saved ? 'is-kept' : ''}`}
+                  onClick={onKeepClick}
+                  aria-pressed={saved}
+                  aria-expanded={!compact && flipped}
+                  aria-label={saved ? 'Kept' : 'Keep'}
+                  title={saved ? 'Kept' : 'Keep'}
+                >
+                  <KeepIcon />
+                </button>
+              )}
+              {sourceThought && !reviewing && (
+                <button
+                  type="button"
+                  className="idea-btn ghost idea-btn--compact-label"
+                  onClick={() => demote(sourceThought.id)}
+                  title="Send back to Thoughts to edit, then promote again"
+                  aria-label="Back to thought"
+                >
+                  <span className="idea-btn-label">Back</span>
+                </button>
+              )}
+              {compact && saved && !reviewing && !sourceThought && (
+                <button
+                  type="button"
+                  className="idea-btn ghost idea-btn--compact-label"
+                  onClick={openKeepNote}
+                  aria-expanded={flipped}
+                  aria-label={keepThought?.note.trim() ? 'Edit note' : 'Add note'}
+                  title={keepThought?.note.trim() ? 'Edit note' : 'Add note'}
+                >
+                  <span className="idea-btn-label">
+                    {keepThought?.note.trim() ? 'Edit' : 'Note'}
+                  </span>
+                </button>
+              )}
+              {(compact || saved) && !reviewing && (
+                <button
+                  type="button"
+                  className="idea-btn ghost idea-btn--icon"
+                  onClick={() => void onShare()}
+                  aria-label={shareStatusLabel(shareResult)}
+                  title={shareStatusLabel(shareResult)}
+                >
+                  {shareResult === 'shared' || shareResult === 'copied' ? (
+                    <CheckIcon />
+                  ) : (
+                    <ShareIcon />
+                  )}
+                </button>
+              )}
+              {!compact && (
+                <button
+                  type="button"
+                  className={`idea-btn ghost idea-btn--icon ${askOpen ? 'is-active' : ''}`}
+                  onClick={() => setAskOpen((v) => !v)}
+                  aria-expanded={askOpen}
+                  aria-label={askOpen ? 'Hide ask' : 'Ask'}
+                  title={askOpen ? 'Hide ask' : 'Ask'}
+                >
+                  <AskIcon />
+                </button>
+              )}
+            </div>
             {!compact && onNext && (
               <button
                 type="button"
-                className="idea-btn ghost idea-btn--next"
+                className="idea-btn ghost idea-btn--next idea-btn--icon"
                 onClick={onNext}
                 aria-label="Next idea"
+                title="Next"
               >
                 →
               </button>
