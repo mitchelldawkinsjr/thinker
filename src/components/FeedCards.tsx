@@ -9,6 +9,7 @@ import { bibleAppPassageUrl } from '../lib/scriptureLinks'
 import { ExternalCta, ImageLightboxTrigger, sourceMediaParts } from './CardMedia'
 import { CardFlip, CardNoteBack } from './CardFlip'
 import { TrashIcon } from './TrashIcon'
+import { BookIcon, KeepIcon, NextIcon, PrevIcon } from './ActionIcons'
 import { resolvePlayableUrl } from '../lib/mediaUrl'
 import { formatAudioTime } from '../lib/formatTime'
 import { useThoughts } from '../hooks/useThoughts'
@@ -85,20 +86,29 @@ export function FeedCardShell({
       )}
       <footer className="feed-card-foot">
         <div className="feed-card-actions">
-          {onPrev && (
-            <button type="button" className="idea-btn ghost" onClick={onPrev} aria-label="Previous">
-              ←
-            </button>
-          )}
-          {cta}
+          <div className="feed-card-actions-main">
+            {onPrev && (
+              <button
+                type="button"
+                className="idea-btn ghost idea-btn--icon"
+                onClick={onPrev}
+                aria-label="Previous"
+                title="Previous"
+              >
+                <PrevIcon />
+              </button>
+            )}
+            {cta}
+          </div>
           {onNext && (
             <button
               type="button"
-              className="idea-btn ghost idea-btn--next"
+              className="idea-btn ghost idea-btn--next idea-btn--icon"
               onClick={onNext}
               aria-label="Next"
+              title="Next"
             >
-              →
+              <NextIcon />
             </button>
           )}
         </div>
@@ -144,12 +154,15 @@ export function ResourceFeedCard({
               {parts.cta}
               <button
                 type="button"
-                className={`idea-btn keep ${alreadyKept ? 'is-kept' : ''}`}
+                className={`idea-btn keep idea-btn--labeled ${alreadyKept ? 'is-kept' : ''}`}
                 onClick={() => setFlipped(true)}
                 aria-expanded={flipped}
                 aria-pressed={alreadyKept}
+                aria-label={alreadyKept ? 'Kept' : 'Keep'}
+                title={alreadyKept ? 'Kept' : 'Keep'}
               >
-                {alreadyKept ? 'Kept' : 'Keep'}
+                <KeepIcon />
+                <span className="idea-btn-label">{alreadyKept ? 'Kept' : 'Keep'}</span>
               </button>
             </>
           }
@@ -227,12 +240,15 @@ export function BookFeedCard({
               {parts.cta}
               <button
                 type="button"
-                className={`idea-btn keep ${alreadyKept ? 'is-kept' : ''}`}
+                className={`idea-btn keep idea-btn--labeled ${alreadyKept ? 'is-kept' : ''}`}
                 onClick={() => setFlipped(true)}
                 aria-expanded={flipped}
                 aria-pressed={alreadyKept}
+                aria-label={alreadyKept ? 'Kept' : 'Keep'}
+                title={alreadyKept ? 'Kept' : 'Keep'}
               >
-                {alreadyKept ? 'Kept' : 'Keep'}
+                <KeepIcon />
+                <span className="idea-btn-label">{alreadyKept ? 'Kept' : 'Keep'}</span>
               </button>
             </>
           }
@@ -356,7 +372,7 @@ export function NewsFeedCard({
           {parts.cta}
           <button
             type="button"
-            className={`idea-btn keep ${alreadyKept ? 'is-kept' : ''}`}
+            className={`idea-btn keep idea-btn--labeled ${alreadyKept ? 'is-kept' : ''}`}
             onClick={() => {
               setNoteMode('keep')
               setMomentAt(0)
@@ -364,8 +380,11 @@ export function NewsFeedCard({
             }}
             aria-expanded={flipped}
             aria-pressed={alreadyKept}
+            aria-label={alreadyKept ? 'Kept' : 'Keep'}
+            title={alreadyKept ? 'Kept' : 'Keep'}
           >
-            {alreadyKept ? 'Kept' : 'Keep'}
+            <KeepIcon />
+            <span className="idea-btn-label">{alreadyKept ? 'Kept' : 'Keep'}</span>
           </button>
         </>
       }
@@ -474,15 +493,20 @@ export function ScriptureFeedCard({
       onHide={onHide}
       cta={
         <>
-          <ExternalCta href={href}>Bible App</ExternalCta>
+          <ExternalCta href={href} icon={<BookIcon />} aria-label="Bible App">
+            Bible App
+          </ExternalCta>
           <button
             type="button"
-            className={`idea-btn keep ${alreadyKept ? 'is-kept' : ''}`}
+            className={`idea-btn keep idea-btn--labeled ${alreadyKept ? 'is-kept' : ''}`}
             onClick={() => setFlipped(true)}
             aria-expanded={flipped}
             aria-pressed={alreadyKept}
+            aria-label={alreadyKept ? 'Kept' : 'Keep'}
+            title={alreadyKept ? 'Kept' : 'Keep'}
           >
-            {alreadyKept ? 'Kept' : 'Keep'}
+            <KeepIcon />
+            <span className="idea-btn-label">{alreadyKept ? 'Kept' : 'Keep'}</span>
           </button>
         </>
       }

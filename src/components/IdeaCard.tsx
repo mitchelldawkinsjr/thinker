@@ -11,6 +11,17 @@ import { useThoughts } from '../hooks/useThoughts'
 import { ExternalCta, ExternalLinkIcon, sourceMediaParts } from './CardMedia'
 import { CardFlip, CardNoteBack } from './CardFlip'
 import { TrashIcon } from './TrashIcon'
+import {
+  AskIcon,
+  BookIcon,
+  CheckIcon,
+  KeepIcon,
+  NextIcon,
+  NoteIcon,
+  PrevIcon,
+  ShareIcon,
+  UndoIcon,
+} from './ActionIcons'
 import { formatAudioTime } from '../lib/formatTime'
 import { shareIdea, shareStatusLabel, type ShareResult } from '../lib/exportThought'
 import './IdeaCard.css'
@@ -18,70 +29,6 @@ import './IdeaCard.css'
 const AskPanel = lazy(() =>
   import('./AskPanel').then((m) => ({ default: m.AskPanel })),
 )
-
-function KeepIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1Z"
-        stroke="currentColor"
-        strokeWidth="1.85"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function ShareIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <circle cx="18" cy="5" r="2.5" stroke="currentColor" strokeWidth="1.85" />
-      <circle cx="6" cy="12" r="2.5" stroke="currentColor" strokeWidth="1.85" />
-      <circle cx="18" cy="19" r="2.5" stroke="currentColor" strokeWidth="1.85" />
-      <path
-        d="M8.4 10.8 15.6 6.7M8.4 13.2l7.2 4.1"
-        stroke="currentColor"
-        strokeWidth="1.85"
-        strokeLinecap="round"
-      />
-    </svg>
-  )
-}
-
-function AskIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M8.5 18.5 5 21v-4.2A7.5 7.5 0 1 1 12 19.5"
-        stroke="currentColor"
-        strokeWidth="1.85"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M9.8 9.6c0-1.3 1-2.2 2.2-2.2s2.2.9 2.2 2.2c0 1.1-.7 1.7-1.6 2.2-.7.4-1.1.8-1.1 1.5"
-        stroke="currentColor"
-        strokeWidth="1.85"
-        strokeLinecap="round"
-      />
-      <circle cx="12" cy="16.2" r="0.9" fill="currentColor" />
-    </svg>
-  )
-}
-
-function CheckIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="m5 12.5 4.2 4.2L19 7.5"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
 
 type Props = {
   idea: Idea
@@ -361,22 +308,24 @@ export function IdeaCard({
                   aria-label="Previous idea"
                   title="Previous"
                 >
-                  ←
+                  <PrevIcon />
                 </button>
               )}
               {sourceCta}
               {idea.audioPageUrl ? (
                 <ExternalCta
                   href={idea.audioPageUrl}
-                  className="idea-btn ghost idea-btn--link idea-btn--compact-label"
+                  className="idea-btn ghost idea-btn--link"
+                  icon={<BookIcon />}
+                  aria-label="20 Minute Books"
                 >
-                  <span className="idea-btn-label">20 min</span>
+                  20 min
                 </ExternalCta>
               ) : null}
               {!reviewing && (
                 <button
                   type="button"
-                  className={`idea-btn keep idea-btn--icon ${saved ? 'is-kept' : ''}`}
+                  className={`idea-btn keep idea-btn--labeled ${saved ? 'is-kept' : ''}`}
                   onClick={onKeepClick}
                   aria-pressed={saved}
                   aria-expanded={!compact && flipped}
@@ -384,28 +333,31 @@ export function IdeaCard({
                   title={saved ? 'Kept' : 'Keep'}
                 >
                   <KeepIcon />
+                  <span className="idea-btn-label">{saved ? 'Kept' : 'Keep'}</span>
                 </button>
               )}
               {sourceThought && !reviewing && (
                 <button
                   type="button"
-                  className="idea-btn ghost idea-btn--compact-label"
+                  className="idea-btn ghost idea-btn--labeled"
                   onClick={() => demote(sourceThought.id)}
                   title="Send back to Thoughts to edit, then promote again"
                   aria-label="Back to thought"
                 >
+                  <UndoIcon />
                   <span className="idea-btn-label">Back</span>
                 </button>
               )}
               {compact && saved && !reviewing && !sourceThought && (
                 <button
                   type="button"
-                  className="idea-btn ghost idea-btn--compact-label"
+                  className="idea-btn ghost idea-btn--labeled"
                   onClick={openKeepNote}
                   aria-expanded={flipped}
                   aria-label={keepThought?.note.trim() ? 'Edit note' : 'Add note'}
                   title={keepThought?.note.trim() ? 'Edit note' : 'Add note'}
                 >
+                  <NoteIcon />
                   <span className="idea-btn-label">
                     {keepThought?.note.trim() ? 'Edit' : 'Note'}
                   </span>
@@ -414,7 +366,7 @@ export function IdeaCard({
               {(compact || saved) && !reviewing && (
                 <button
                   type="button"
-                  className="idea-btn ghost idea-btn--icon"
+                  className="idea-btn ghost idea-btn--labeled"
                   onClick={() => void onShare()}
                   aria-label={shareStatusLabel(shareResult)}
                   title={shareStatusLabel(shareResult)}
@@ -424,18 +376,20 @@ export function IdeaCard({
                   ) : (
                     <ShareIcon />
                   )}
+                  <span className="idea-btn-label">{shareStatusLabel(shareResult)}</span>
                 </button>
               )}
               {!compact && (
                 <button
                   type="button"
-                  className={`idea-btn ghost idea-btn--icon ${askOpen ? 'is-active' : ''}`}
+                  className={`idea-btn ghost idea-btn--labeled ${askOpen ? 'is-active' : ''}`}
                   onClick={() => setAskOpen((v) => !v)}
                   aria-expanded={askOpen}
                   aria-label={askOpen ? 'Hide ask' : 'Ask'}
                   title={askOpen ? 'Hide ask' : 'Ask'}
                 >
                   <AskIcon />
+                  <span className="idea-btn-label">{askOpen ? 'Hide' : 'Ask'}</span>
                 </button>
               )}
             </div>
@@ -447,7 +401,7 @@ export function IdeaCard({
                 aria-label="Next idea"
                 title="Next"
               >
-                →
+                <NextIcon />
               </button>
             )}
           </div>

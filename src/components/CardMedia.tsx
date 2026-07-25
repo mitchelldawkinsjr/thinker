@@ -9,55 +9,42 @@ import {
 import { createPortal } from 'react-dom'
 import { detectMediaKind, youtubeEmbedUrl, type MediaKind } from '../lib/mediaUrl'
 import { formatAudioTime } from '../lib/formatTime'
+import { BookIcon, LinkIcon, PlayIcon } from './ActionIcons'
 import './CardMedia.css'
 
 export function ExternalLinkIcon() {
-  return (
-    <svg
-      className="card-media-ext-icon"
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
-      fill="none"
-      aria-hidden
-    >
-      <path
-        d="M14 4h6v6M20 4l-9 9"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M10 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-4"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
+  return <LinkIcon size={14} />
 }
 
-/** Outbound link CTA with the shared external-page icon. */
+/** Outbound link CTA — icon always present; label hides when the action row is tight. */
 export function ExternalCta({
   href,
   children,
   className = 'idea-btn next',
+  icon,
+  'aria-label': ariaLabel,
 }: {
   href: string
   children: ReactNode
   className?: string
+  icon?: ReactNode
+  'aria-label'?: string
 }) {
+  const label =
+    typeof children === 'string'
+      ? children
+      : ariaLabel ?? 'Open link'
   return (
     <a
-      className={`${className} idea-btn--ext`.trim()}
+      className={`${className} idea-btn--ext idea-btn--labeled`.trim()}
       href={href}
       target="_blank"
       rel="noreferrer"
+      aria-label={ariaLabel ?? label}
+      title={ariaLabel ?? label}
     >
-      {children}
-      <ExternalLinkIcon />
+      {icon ?? <LinkIcon />}
+      <span className="idea-btn-label">{children}</span>
     </a>
   )
 }
@@ -594,11 +581,18 @@ export function sourceMediaParts(
       cta: <VideoPlayCta url={url} className={ctaClassName} />,
     }
   }
+  const lower = fallbackLabel.toLowerCase()
+  const icon =
+    lower.includes('gutenberg') || lower.includes('bible') || lower.includes('book') ? (
+      <BookIcon />
+    ) : (
+      <LinkIcon />
+    )
   return {
     kind: null,
     media: null,
     cta: (
-      <ExternalCta href={url} className={ctaClassName}>
+      <ExternalCta href={url} className={ctaClassName} icon={icon}>
         {fallbackLabel}
       </ExternalCta>
     ),
@@ -611,10 +605,13 @@ function VideoPlayCta({ url, className }: { url: string; className?: string }) {
     <>
       <button
         type="button"
-        className={className ?? 'idea-btn next'}
+        className={`${className ?? 'idea-btn next'} idea-btn--labeled`.trim()}
         onClick={() => setOpen(true)}
+        aria-label="Play video"
+        title="Play video"
       >
-        Play video →
+        <PlayIcon />
+        <span className="idea-btn-label">Play video</span>
       </button>
       {open && <VideoLightbox url={url} onClose={() => setOpen(false)} />}
     </>

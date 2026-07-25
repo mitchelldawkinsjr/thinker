@@ -293,6 +293,7 @@
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
 }
 
 .idea-pg {
@@ -315,6 +316,8 @@
   width: 100%;
   min-width: 0;
   flex-wrap: nowrap;
+  container-type: inline-size;
+  container-name: card-actions;
 }
 
 .idea-actions-main {
@@ -365,8 +368,41 @@
   padding: 0;
 }
 
-.idea-btn--compact-label {
-  padding-inline: 0.75rem;
+.idea-btn--labeled {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.idea-btn-label {
+  line-height: 1;
+}
+
+/* Collapse every labeled action to icon-only when the footer is tight */
+@container card-actions (max-width: 480px) {
+  .idea-actions .idea-btn-label,
+  .idea-actions-main .idea-btn-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .idea-actions .idea-btn--labeled,
+  .idea-actions-main .idea-btn--labeled,
+  .idea-actions a.idea-btn--ext,
+  .idea-actions-main a.idea-btn--ext {
+    width: 2.35rem;
+    height: 2.35rem;
+    padding: 0;
+    gap: 0;
+  }
 }
 
 @media (max-width: 420px) {
@@ -381,27 +417,27 @@
 
   .idea-actions .idea-btn {
     font-size: 0.78rem;
-    padding: 0.55rem 0.7rem;
   }
 
-  .idea-actions .idea-btn.ghost {
-    padding-inline: 0.62rem;
-  }
-
-  .idea-actions .idea-btn--icon {
+  .idea-actions .idea-btn--icon,
+  .idea-actions .idea-btn--labeled,
+  .idea-actions a.idea-btn--ext {
     width: 2.2rem;
     height: 2.2rem;
     padding: 0;
+    gap: 0;
   }
 
-  /* Source / 20 min links: icon only on narrow cards */
-  .idea-actions a.idea-btn--link {
-    font-size: 0;
-    padding-inline: 0.55rem;
-    gap: 0;
-    min-width: 2.2rem;
-    min-height: 2.2rem;
-    justify-content: center;
+  .idea-actions .idea-btn-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 }
 

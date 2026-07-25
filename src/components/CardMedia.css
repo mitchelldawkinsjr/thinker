@@ -295,8 +295,15 @@
 .idea-btn--ext {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   text-decoration: none;
+}
+
+.idea-btn--ext svg,
+.idea-btn--labeled svg,
+.idea-btn--icon svg {
+  flex-shrink: 0;
 }
 
 .video-lightbox {
