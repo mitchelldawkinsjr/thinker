@@ -9,6 +9,17 @@ export type ContentKindKey =
   | 'books'
   | 'games'
 
+/** Kinds that participate in weightedInterleave (bookIdeas share the ideas queue). */
+export type KindWeightKey =
+  | 'ideas'
+  | 'news'
+  | 'scripture'
+  | 'resources'
+  | 'books'
+  | 'games'
+
+export type KindWeights = Record<KindWeightKey, number>
+
 export type CustomSite = {
   id: string
   name: string
@@ -17,19 +28,87 @@ export type CustomSite = {
   topicHints?: TopicId[]
 }
 
+/** How often a custom RSS feed / content kind appears (1 = rare, 5 = frequent). */
+export const CUSTOM_FEED_WEIGHT_MIN = 1
+export const CUSTOM_FEED_WEIGHT_MAX = 5
+export const CUSTOM_FEED_WEIGHT_DEFAULT = 3
+
+/** Default mix cadence for content kinds */
+export const DEFAULT_KIND_WEIGHTS: KindWeights = {
+  ideas: 2,
+  news: 2,
+  scripture: 1,
+  resources: 1,
+  books: 1,
+  games: 1,
+}
+
+export const KIND_WEIGHT_LABELS: {
+  key: KindWeightKey
+  label: string
+  hint: string
+}[] = [
+  { key: 'ideas', label: 'Ideas', hint: 'Catalog + book summaries + your approved drafts' },
+  { key: 'news', label: 'News', hint: 'Curated outlets and your RSS feeds' },
+  { key: 'scripture', label: 'Scripture', hint: 'Daily promise + evergreen rotation' },
+  { key: 'resources', label: 'Free sites', hint: 'Curated learning sites' },
+  { key: 'books', label: 'Books', hint: 'Project Gutenberg picks' },
+  { key: 'games', label: 'Quick games', hint: 'Reaction, memory, math, gravity' },
+]
 export type CustomFeed = {
   id: string
   name: string
   url: string
   topicIds: TopicId[]
   limit: number
+  /** Relative presence in My feed — 1 sparse … 5 dense (default 3). */
+  weight: number
   enabled: boolean
+}
+
+export function clampFeedWeight(n: unknown): number {
+  if (typeof n !== 'number' || Number.isNaN(n)) return CUSTOM_FEED_WEIGHT_DEFAULT
+  return Math.min(
+    CUSTOM_FEED_WEIGHT_MAX,
+    Math.max(CUSTOM_FEED_WEIGHT_MIN, Math.round(n)),
+  )
+}
+
+export function clampKindWeight(n: unknown, fallback = 1): number {
+  if (typeof n !== 'number' || Number.isNaN(n)) return fallback
+  return Math.min(
+    CUSTOM_FEED_WEIGHT_MAX,
+    Math.max(CUSTOM_FEED_WEIGHT_MIN, Math.round(n)),
+  )
+}
+
+export function normalizeKindWeights(raw: unknown): KindWeights {
+  const src =
+    raw && typeof raw === 'object' ? (raw as Record<string, unknown>) : {}
+  const out = { ...DEFAULT_KIND_WEIGHTS }
+  for (const key of Object.keys(DEFAULT_KIND_WEIGHTS) as KindWeightKey[]) {
+    if (key in src) out[key] = clampKindWeight(src[key], DEFAULT_KIND_WEIGHTS[key])
+  }
+  return out
+}
+
+/**
+ * How many items a custom feed may contribute to the mix.
+ * Weight 3 ≈ configured limit; 1 ≈ ⅓; 5 ≈ ~1.7× (capped at 20).
+ */
+export function itemCapForFeedWeight(limit: number, weight: unknown): number {
+  const w = clampFeedWeight(weight)
+  const base = typeof limit === 'number' && limit > 0 ? Math.min(20, Math.floor(limit)) : 8
+  const scaled = Math.round((base * w) / CUSTOM_FEED_WEIGHT_DEFAULT)
+  return Math.min(20, Math.max(1, scaled))
 }
 
 export type SubscriptionKinds = Record<ContentKindKey, boolean>
 
 export type Subscriptions = {
   kinds: SubscriptionKinds
+  /** Relative mix cadence per kind (1 sparse … 5 dense). */
+  kindWeights: KindWeights
   /** Empty = all topics */
   topics: TopicId[]
   disabledFeedIds: string[]
@@ -54,6 +133,7 @@ export const DEFAULT_KINDS: SubscriptionKinds = {
 
 export const DEFAULT_SUBSCRIPTIONS: Subscriptions = {
   kinds: { ...DEFAULT_KINDS },
+  kindWeights: { ...DEFAULT_KIND_WEIGHTS },
   topics: [],
   disabledFeedIds: [],
   customSites: [],
@@ -61,17 +141,17 @@ export const DEFAULT_SUBSCRIPTIONS: Subscriptions = {
 }
 
 export const KIND_LABELS: { key: ContentKindKey; label: string; hint: string }[] = [
-  { key: 'ideas', label: 'Ideas', hint: 'Microlearning cards from the catalog' },
+  { key: 'ideas', label: 'Ideas', hint: 'Bite-sized idea cards from the catalog' },
   { key: 'bookIdeas', label: 'Book summaries', hint: '5- and 20-minute book summary cards (text + audio)' },
   { key: 'news', label: 'News', hint: 'Curated RSS lessons and your custom feeds' },
-  { key: 'scripture', label: 'Scripture', hint: 'Daily promises and curated passages' },
+  { key: 'scripture', label: 'Scripture', hint: 'Daily promise + a 5-day rotating evergreen set' },
   { key: 'resources', label: 'Free sites', hint: 'Curated learning sites and your additions' },
-  { key: 'books', label: 'Gutenberg', hint: 'Public-domain books in the mix' },
-  { key: 'games', label: 'Brain games', hint: 'Quick reaction, memory, math, and gravity games' },
+  { key: 'books', label: 'Books', hint: 'Public-domain books (Project Gutenberg) in the mix' },
+  { key: 'games', label: 'Quick games', hint: 'Reaction, memory, math, and gravity games' },
 ]
 
 function isTopicId(v: unknown): v is TopicId {
-  return typeof v === 'string' && v.length > 0
+  return typeof v === 'string' && v.trim().length > 0
 }
 
 function normalizeCustomSite(raw: unknown): CustomSite | null {
@@ -103,6 +183,7 @@ function normalizeCustomFeed(raw: unknown): CustomFeed | null {
     url: o.url,
     topicIds: Array.isArray(o.topicIds) ? o.topicIds.filter(isTopicId) : ['current-events'],
     limit: typeof o.limit === 'number' && o.limit > 0 ? Math.min(20, Math.floor(o.limit)) : 8,
+    weight: clampFeedWeight(o.weight),
     enabled: o.enabled !== false,
   }
 }
@@ -118,6 +199,7 @@ export function normalizeSubscriptions(raw: unknown): Subscriptions {
   }
   return {
     kinds,
+    kindWeights: normalizeKindWeights(o.kindWeights),
     topics: Array.isArray(o.topics) ? o.topics.filter(isTopicId) : [],
     disabledFeedIds: Array.isArray(o.disabledFeedIds)
       ? o.disabledFeedIds.filter((x): x is string => typeof x === 'string')

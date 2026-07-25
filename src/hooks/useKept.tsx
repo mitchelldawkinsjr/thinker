@@ -1,8 +1,10 @@
 import {
   createContext,
+  useCallback,
   useContext,
-  useState,
   useEffect,
+  useMemo,
+  useState,
   type ReactNode,
 } from 'react'
 
@@ -33,20 +35,21 @@ export function KeptProvider({ children }: { children: ReactNode }) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...kept]))
   }, [kept])
 
-  function toggle(id: string) {
+  const toggle = useCallback((id: string) => {
     setKept((prev) => {
       const next = new Set(prev)
       if (next.has(id)) next.delete(id)
       else next.add(id)
       return next
     })
-  }
+  }, [])
 
-  return (
-    <KeptContext.Provider value={{ kept, toggle, count: kept.size }}>
-      {children}
-    </KeptContext.Provider>
+  const value = useMemo(
+    () => ({ kept, toggle, count: kept.size }),
+    [kept, toggle],
   )
+
+  return <KeptContext.Provider value={value}>{children}</KeptContext.Provider>
 }
 
 export function useKept() {

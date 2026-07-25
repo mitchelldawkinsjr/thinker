@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { NewsItem } from '../data/newsTypes'
 import { activeNews } from '../data/newsTypes'
-import { USER_NEWS_CACHE_KEY, type CustomFeed } from '../data/subscriptions'
+import { USER_NEWS_CACHE_KEY, itemCapForFeedWeight, type CustomFeed } from '../data/subscriptions'
 import { fetchFeedViaProxy, parseFeedToNewsItems } from '../lib/parseFeed'
 
 const REFRESH_MS = 6 * 60 * 60 * 1000
@@ -52,7 +52,7 @@ async function fetchOneFeed(feed: CustomFeed): Promise<NewsItem[]> {
   return parseFeedToNewsItems(body, feed.url, {
     name: feed.name,
     topicIds: feed.topicIds,
-    limit: feed.limit,
+    limit: itemCapForFeedWeight(feed.limit, feed.weight),
     feedId: `user-${feed.id}`,
   })
 }
@@ -73,7 +73,9 @@ export function useUserNewsItems(feeds: CustomFeed[]) {
   })
   const [refreshing, setRefreshing] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const feedsKey = JSON.stringify(feeds.map((f) => [f.id, f.url, f.enabled, f.limit, f.name]))
+  const feedsKey = JSON.stringify(
+    feeds.map((f) => [f.id, f.url, f.enabled, f.limit, f.weight, f.name]),
+  )
   const inFlight = useRef(false)
 
   const refresh = useCallback(
@@ -92,7 +94,15 @@ export function useUserNewsItems(feeds: CustomFeed[]) {
         const now = Date.now()
         for (const feed of enabled) {
           const existing = cache.byFeedId[feed.id]
-          if (!force && existing && !isStale(existing.fetchedAt, now)) continue
+          const needed = itemCapForFeedWeight(feed.limit, feed.weight)
+          if (
+            !force &&
+            existing &&
+            !isStale(existing.fetchedAt, now) &&
+            existing.items.length >= needed
+          ) {
+            continue
+          }
           try {
             const next = await fetchOneFeed(feed)
             cache.byFeedId[feed.id] = {

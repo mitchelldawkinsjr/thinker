@@ -10,7 +10,15 @@ import type { NewsItem } from './newsTypes'
 import type { ScriptureItem } from './scriptureTypes'
 import { daySeed, filterHidden, seededShuffle, sortByFreshness } from '../lib/feedRotation'
 import {
+  activeEvergreenScriptures,
+  isDailyScripture,
+} from '../lib/scriptureRotation'
+import {
+  clampFeedWeight,
+  CUSTOM_FEED_WEIGHT_DEFAULT,
+  itemCapForFeedWeight,
   matchesTopicFilter,
+  type CustomFeed,
   type CustomSite,
   type Subscriptions,
 } from './subscriptions'
@@ -54,36 +62,86 @@ export type FeedItem =
 export type TopicFilter = string | string[] | undefined
 
 /**
+ * Spread weight slots across the cycle instead of clumping
+ * (e.g. weight 2 → [A,B,C,A,B] not [A,A,B,B,C]).
+ */
+function buildWeightPattern(weights: number[]): number[] {
+  const active = weights
+    .map((w, i) => ({ i, w: Math.max(0, Math.floor(w)) }))
+    .filter((x) => x.w > 0)
+  if (active.length === 0) return []
+
+  const remaining = new Map(active.map((a) => [a.i, a.w]))
+  const pattern: number[] = []
+  let left = active.reduce((s, a) => s + a.w, 0)
+  while (left > 0) {
+    for (const { i } of active) {
+      const rem = remaining.get(i) ?? 0
+      if (rem <= 0) continue
+      pattern.push(i)
+      remaining.set(i, rem - 1)
+      left--
+    }
+  }
+  return pattern
+}
+
+/**
  * Round-robin by weight without duplicating items.
  * weight 2 ≈ two pulls per cycle vs weight 1 — each card still appears once.
+ * Prefer skipping a queue when it would repeat the previous kind and another
+ * queue still has cards (stops scripture/news doubles when the mix thins out).
  */
-function weightedInterleave<T extends { id: string }>(
+function weightedInterleave<T extends { id: string; kind?: string }>(
   queues: { items: T[]; weight: number }[],
 ): T[] {
   const qs = queues.map((q) => ({
     items: [...q.items],
     weight: Math.max(1, Math.floor(q.weight)),
   }))
-  const pattern: number[] = []
-  qs.forEach((q, i) => {
-    for (let w = 0; w < q.weight; w++) pattern.push(i)
-  })
+  const pattern = buildWeightPattern(qs.map((q) => q.weight))
 
   const out: T[] = []
   const used = new Set<string>()
+  let lastKind: string | undefined
   let added = true
   while (added) {
     added = false
-    for (const qi of pattern) {
+    for (let pi = 0; pi < pattern.length; pi++) {
+      const qi = pattern[pi]
       const q = qs[qi]
-      while (q.items.length) {
-        const next = q.items.shift()!
-        if (used.has(next.id)) continue
-        used.add(next.id)
-        out.push(next)
-        added = true
-        break
+      const pick = (): T | undefined => {
+        while (q.items.length) {
+          const next = q.items.shift()!
+          if (used.has(next.id)) continue
+          return next
+        }
+        return undefined
       }
+
+      let next = pick()
+      if (!next) continue
+
+      // Prefer not placing the same kind twice in a row when another queue still has cards
+      if (lastKind && next.kind === lastKind) {
+        for (let aj = 0; aj < qs.length; aj++) {
+          if (aj === qi) continue
+          const altQ = qs[aj]
+          const altIdx = altQ.items.findIndex(
+            (it) => !used.has(it.id) && it.kind !== lastKind,
+          )
+          if (altIdx < 0) continue
+          const [alt] = altQ.items.splice(altIdx, 1)
+          q.items.unshift(next)
+          next = alt
+          break
+        }
+      }
+
+      used.add(next.id)
+      out.push(next)
+      lastKind = next.kind
+      added = true
     }
   }
   return out
@@ -156,23 +214,60 @@ function resolveNewsFeedId(n: NewsItem): string | undefined {
   return curatedNewsFeeds.find((f) => f.name === n.source)?.id
 }
 
+/** Default weight for curated outlets when mixing against custom RSS. */
+const CURATED_NEWS_WEIGHT = CUSTOM_FEED_WEIGHT_DEFAULT
+
 function newsItems(
   news: NewsItem[],
   topicFilter?: TopicFilter,
   disabledFeedIds: string[] = [],
+  customFeeds: CustomFeed[] = [],
+  seed = 0,
 ): FeedItem[] {
   const muted = new Set(disabledFeedIds)
-  return news
-    .filter((n) => {
-      const feedId = resolveNewsFeedId(n)
-      if (feedId && muted.has(feedId)) return false
-      return matchesTopicFilter(n.topicIds, topicFilter)
-    })
-    .map((n) => ({
+  const weightByFeedId = new Map<string, number>()
+  const capByFeedId = new Map<string, number>()
+  for (const f of customFeeds) {
+    if (!f.enabled) continue
+    const fid = `user-${f.id}`
+    weightByFeedId.set(fid, clampFeedWeight(f.weight))
+    capByFeedId.set(fid, itemCapForFeedWeight(f.limit, f.weight))
+  }
+
+  const filtered = news.filter((n) => {
+    const feedId = resolveNewsFeedId(n)
+    if (feedId && muted.has(feedId)) return false
+    return matchesTopicFilter(n.topicIds, topicFilter)
+  })
+
+  const byFeed = new Map<string, FeedItem[]>()
+  const taken = new Map<string, number>()
+  for (const n of filtered) {
+    const feedId = resolveNewsFeedId(n) ?? '_unknown'
+    const cap = capByFeedId.get(feedId)
+    if (cap !== undefined) {
+      const nTaken = taken.get(feedId) ?? 0
+      if (nTaken >= cap) continue
+      taken.set(feedId, nTaken + 1)
+    }
+    const list = byFeed.get(feedId) ?? []
+    list.push({
       kind: 'news' as const,
       id: `news-${n.id}`,
       news: n,
-    }))
+    })
+    byFeed.set(feedId, list)
+  }
+
+  const queues = [...byFeed.entries()].map(([feedId, items], idx) => ({
+    items: sortByFreshness(seededShuffle(items, seed ^ (idx * 17 + 3))),
+    weight: weightByFeedId.get(feedId) ?? CURATED_NEWS_WEIGHT,
+  }))
+
+  if (queues.length === 0) return []
+  if (queues.length === 1) return queues[0].items
+  // Preserve source mix — don’t flat-shuffle after this
+  return weightedInterleave(queues)
 }
 
 function dayOfYear(date = new Date()) {
@@ -196,37 +291,39 @@ const BLB_ID_RE = /^blb-promise-doy-(\d+)$/
 const BLB_LOOKBACK_DAYS = 21
 
 /**
- * Curated passages stay; BLB Daily Promises collapse to today's doy
- * (or the nearest earlier day still in the pool).
+ * Evergreen → active 5-day cohort (then rest until the cycle returns).
+ * Daily promises → today's doy only (or nearest earlier still in the pool).
  */
-function filterDailyPromises(scriptures: ScriptureItem[]): ScriptureItem[] {
-  const curated: ScriptureItem[] = []
+function filterScripturesForFeed(scriptures: ScriptureItem[]): ScriptureItem[] {
+  const evergreen: ScriptureItem[] = []
   const byDoy = new Map<number, ScriptureItem>()
 
   for (const s of scriptures) {
-    const m = BLB_ID_RE.exec(s.id)
-    if (!m) {
-      curated.push(s)
+    if (isDailyScripture(s)) {
+      const m = BLB_ID_RE.exec(s.id)
+      if (m) byDoy.set(Number(m[1]), s)
       continue
     }
-    byDoy.set(Number(m[1]), s)
+    evergreen.push(s)
   }
 
-  if (byDoy.size === 0) return curated
+  const active = activeEvergreenScriptures(evergreen)
+
+  if (byDoy.size === 0) return active
 
   const doys = recentDoys(BLB_LOOKBACK_DAYS)
   for (let i = doys.length - 1; i >= 0; i--) {
     const hit = byDoy.get(doys[i])
-    if (hit) return [...curated, hit]
+    if (hit) return [...active, hit]
   }
-  return curated
+  return active
 }
 
 function scriptureItems(
   scriptures: ScriptureItem[],
   topicFilter?: TopicFilter,
 ): FeedItem[] {
-  return filterDailyPromises(scriptures)
+  return filterScripturesForFeed(scriptures)
     .filter((s) => matchesTopicFilter(s.topicIds, topicFilter))
     .map((s) => ({
       kind: 'scripture' as const,
@@ -276,11 +373,11 @@ function gameItems(): FeedItem[] {
   ]
 }
 
-/** Kind cadence weights — higher = denser early in the feed, still one card each */
-const FEED_WEIGHTS = {
+/** Kind cadence weights — higher = denser early in the feed, still one card each. */
+export const DEFAULT_FEED_WEIGHTS = {
   ideas: 2,
   news: 2,
-  scripture: 2,
+  scripture: 1,
   resources: 1,
   books: 1,
   games: 1,
@@ -299,37 +396,11 @@ export type BuildMixedFeedOptions = {
  * Total mix: ideas (+ book summaries) + news + scripture + sites + Gutenberg,
  * freshness-weighted so cards don't go stale. Each card id appears at most once.
  */
-export function buildMixedFeed(
-  topicFilter?: string | null,
-  news?: NewsItem[],
-  scriptures?: ScriptureItem[],
-  reshuffleKey?: number,
-  extraIdeas?: Idea[],
-  subscriptions?: Subscriptions,
-): FeedItem[]
-export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[]
-export function buildMixedFeed(
-  topicFilterOrOpts?: string | null | BuildMixedFeedOptions,
-  news: NewsItem[] = [],
-  scriptures: ScriptureItem[] = [],
-  reshuffleKey = 0,
-  extraIdeas: Idea[] = [],
-  subscriptions?: Subscriptions,
-): FeedItem[] {
-  const opts: BuildMixedFeedOptions =
-    topicFilterOrOpts && typeof topicFilterOrOpts === 'object'
-      ? topicFilterOrOpts
-      : {
-          topicFilter: topicFilterOrOpts || undefined,
-          news,
-          scriptures,
-          reshuffleKey,
-          extraIdeas,
-          subscriptions,
-        }
-
+export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
+  const opts = options
   const subs = opts.subscriptions
   const kinds = subs?.kinds
+  const weights = subs?.kindWeights ?? DEFAULT_FEED_WEIGHTS
   const topic = opts.topicFilter
   const seed = daySeed(`r${opts.reshuffleKey ?? 0}:${JSON.stringify(topic ?? 'all')}`)
 
@@ -340,11 +411,12 @@ export function buildMixedFeed(
       : []
   const newsQ =
     !kinds || kinds.news
-      ? sortByFreshness(
-          seededShuffle(
-            newsItems(opts.news ?? [], topic, subs?.disabledFeedIds ?? []),
-            seed ^ 1,
-          ),
+      ? newsItems(
+          opts.news ?? [],
+          topic,
+          subs?.disabledFeedIds ?? [],
+          subs?.customFeeds ?? [],
+          seed ^ 1,
         )
       : []
   const scriptureQ =
@@ -370,12 +442,12 @@ export function buildMixedFeed(
 
   return filterHidden(
     weightedInterleave([
-      { items: ideasQ, weight: FEED_WEIGHTS.ideas },
-      { items: newsQ, weight: FEED_WEIGHTS.news },
-      { items: scriptureQ, weight: FEED_WEIGHTS.scripture },
-      { items: resourcesQ, weight: FEED_WEIGHTS.resources },
-      { items: booksQ, weight: FEED_WEIGHTS.books },
-      { items: gamesQ, weight: FEED_WEIGHTS.games },
+      { items: ideasQ, weight: weights.ideas },
+      { items: newsQ, weight: weights.news },
+      { items: scriptureQ, weight: weights.scripture },
+      { items: resourcesQ, weight: weights.resources },
+      { items: booksQ, weight: weights.books },
+      { items: gamesQ, weight: weights.games },
     ]),
   )
 }
@@ -383,10 +455,10 @@ export function buildMixedFeed(
 const LABELS = {
   idea: 'Idea',
   resource: 'Free site',
-  book: 'Gutenberg',
-  news: 'News · Politics',
+  book: 'Book',
+  news: 'News',
   scripture: 'Scripture',
-  game: 'Brain game',
+  game: 'Quick game',
 } as const
 
 export const feedKindLabel = (kind: FeedItem['kind']) => LABELS[kind]

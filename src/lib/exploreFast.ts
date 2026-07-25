@@ -1,5 +1,5 @@
 import { browseableResources } from '../data/resources'
-import { topics } from '../data/topics'
+import { getTopics } from '../data/topics'
 import { curatedGutenbergMeta, gutenbergUrl } from '../data/gutenberg'
 import type { TopicId } from '../data/types'
 import type { ExploreContext, ExploreLink, ExploreResult } from './ollama'
@@ -10,7 +10,7 @@ const STOP = new Set([
   'can', 'you', 'read', 'learn', 'more', 'deeper', 'go', 'this', 'that', 'it',
 ])
 
-function tokens(text: string): string[] {
+export function tokens(text: string): string[] {
   return text
     .toLowerCase()
     .replace(/[^a-z0-9\s-]/g, ' ')
@@ -18,7 +18,7 @@ function tokens(text: string): string[] {
     .filter((t) => t.length > 2 && !STOP.has(t))
 }
 
-function scoreText(hay: string, queryTokens: string[]): number {
+export function scoreText(hay: string, queryTokens: string[]): number {
   const h = hay.toLowerCase()
   let score = 0
   for (const t of queryTokens) {
@@ -37,6 +37,7 @@ export function exploreInstant(ctx: ExploreContext): ExploreResult {
     .join(' ')
   const qTokens = tokens(blob)
 
+  const topics = getTopics()
   const topicScores = topics.map((t) => ({
     t,
     score:
@@ -114,7 +115,7 @@ export function exploreInstant(ctx: ExploreContext): ExploreResult {
 
 /** Slim catalog for LLM — topic-filtered, ~10 sites + matching books */
 export function buildSlimCatalog(topicId?: string): string {
-  const topicLines = topics
+  const topicLines = getTopics()
     .map((t) => `- ${t.id}: ${t.name}`)
     .join('\n')
 

@@ -5,3 +5,7 @@
 .app-shell main {
   min-height: calc(100vh - 90px);
 }
+
+.route-fallback {
+  min-height: 40vh;
+}

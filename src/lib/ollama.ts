@@ -55,6 +55,35 @@ function parseExploreJson(content: string): {
   return JSON.parse(content.trim())
 }
 
+/**
+ * Shared explore prompt (Ollama + OpenAI): the user's own thoughts are
+ * the primary evidence; the catalog is the fallback for links.
+ */
+export function buildExploreSystemPrompt(
+  catalogBlock: string,
+  thoughtsBlock?: string,
+): string {
+  return `Thinker research guide. The user keeps ideas and writes thoughts (notes on listening moments and scripture) — their THOUGHTS below are your primary evidence.
+Reply ONLY compact JSON:
+{"answer":"max 60 words","digDeeper":["q1","q2"],"links":[{"title":"t","url":"https://...","why":"short"}],"topics":["topic-id"]}
+Rules: ground the answer in THOUGHTS when relevant and name which one it builds on; connect them to the question rather than answering generically; if THOUGHTS are empty or unrelated, answer from general knowledge and the catalog. Links: use ONLY catalog URLs; never invent links; no social-feed URLs; 2 digDeeper max; 3 links max.
+
+THOUGHTS (user's kept items):
+${thoughtsBlock?.trim() || '(none matched this question)'}
+
+CATALOG:
+${catalogBlock}`
+}
+
+export function buildExploreUserParts(ctx: ExploreContext): string[] {
+  return [
+    ctx.topicId ? `topic:${ctx.topicId}` : null,
+    ctx.ideaTitle ? `idea:${ctx.ideaTitle}` : null,
+    ctx.ideaBody ? `idea context:${ctx.ideaBody.slice(0, 300)}` : null,
+    ctx.question,
+  ].filter((p): p is string => Boolean(p))
+}
+
 export async function listOllamaModels(): Promise<string[]> {
   const res = await fetch('/api/ollama/api/tags')
   if (!res.ok) throw new Error(`Ollama unreachable (${res.status})`)
@@ -65,23 +94,13 @@ export async function listOllamaModels(): Promise<string[]> {
 export async function exploreQuestion(
   ctx: ExploreContext,
   catalogBlock: string,
-  opts?: { model?: string; signal?: AbortSignal },
+  opts?: { model?: string; signal?: AbortSignal; thoughtsBlock?: string },
 ): Promise<ExploreResult> {
   const model = opts?.model || getConfiguredModel()
   const t0 = performance.now()
 
-  const system = `Thinker research guide. Reply ONLY compact JSON:
-{"answer":"max 50 words","digDeeper":["q1","q2"],"links":[{"title":"t","url":"https://...","why":"short"}],"topics":["topic-id"]}
-Rules: use ONLY catalog URLs; never invent links; no social-feed URLs; 2 digDeeper max; 3 links max.
-
-CATALOG:
-${catalogBlock}`
-
-  const userParts = [
-    ctx.topicId ? `topic:${ctx.topicId}` : null,
-    ctx.ideaTitle ? `idea:${ctx.ideaTitle}` : null,
-    ctx.question,
-  ].filter(Boolean)
+  const system = buildExploreSystemPrompt(catalogBlock, opts?.thoughtsBlock)
+  const userParts = buildExploreUserParts(ctx)
 
   const res = await fetch('/api/ollama/api/chat', {
     method: 'POST',
@@ -94,7 +113,7 @@ ${catalogBlock}`
       keep_alive: '30m',
       options: {
         temperature: 0.2,
-        num_predict: 220,
+        num_predict: 300,
       },
       messages: [
         { role: 'system', content: system },

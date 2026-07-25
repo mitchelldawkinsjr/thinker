@@ -1,4 +1,10 @@
-import type { ExploreContext, ExploreLink, ExploreResult } from './ollama'
+import {
+  buildExploreSystemPrompt,
+  buildExploreUserParts,
+  type ExploreContext,
+  type ExploreLink,
+  type ExploreResult,
+} from './ollama'
 
 const DEFAULT_MODEL = 'gpt-4o-mini'
 
@@ -38,23 +44,13 @@ function parseExploreJson(content: string): {
 export async function exploreWithOpenAI(
   ctx: ExploreContext,
   catalogBlock: string,
-  opts?: { model?: string; signal?: AbortSignal },
+  opts?: { model?: string; signal?: AbortSignal; thoughtsBlock?: string },
 ): Promise<ExploreResult> {
   const model = opts?.model || getOpenAIModel()
   const t0 = performance.now()
 
-  const system = `Thinker research guide. Reply ONLY compact JSON:
-{"answer":"max 50 words","digDeeper":["q1","q2"],"links":[{"title":"t","url":"https://...","why":"short"}],"topics":["topic-id"]}
-Rules: use ONLY catalog URLs; never invent links; no social-feed URLs; 2 digDeeper max; 3 links max.
-
-CATALOG:
-${catalogBlock}`
-
-  const userParts = [
-    ctx.topicId ? `topic:${ctx.topicId}` : null,
-    ctx.ideaTitle ? `idea:${ctx.ideaTitle}` : null,
-    ctx.question,
-  ].filter(Boolean)
+  const system = buildExploreSystemPrompt(catalogBlock, opts?.thoughtsBlock)
+  const userParts = buildExploreUserParts(ctx)
 
   const res = await fetch('/api/openai/chat/completions', {
     method: 'POST',
@@ -63,7 +59,7 @@ ${catalogBlock}`
     body: JSON.stringify({
       model,
       temperature: 0.2,
-      max_tokens: 220,
+      max_tokens: 300,
       response_format: { type: 'json_object' },
       messages: [
         { role: 'system', content: system },

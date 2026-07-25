@@ -9,6 +9,10 @@ import {
 } from 'react'
 import type { TopicId } from '../data/types'
 import {
+  clampFeedWeight,
+  clampKindWeight,
+  CUSTOM_FEED_WEIGHT_DEFAULT,
+  DEFAULT_KIND_WEIGHTS,
   DEFAULT_SUBSCRIPTIONS,
   loadSubscriptions,
   MAX_CUSTOM_FEEDS,
@@ -18,16 +22,20 @@ import {
   type ContentKindKey,
   type CustomFeed,
   type CustomSite,
+  type KindWeightKey,
   type Subscriptions,
 } from '../data/subscriptions'
 
 type SubscriptionsContextValue = {
   subscriptions: Subscriptions
   setKind: (key: ContentKindKey, on: boolean) => void
+  setKindWeight: (key: KindWeightKey, weight: number) => void
+  resetKindWeights: () => void
   setTopics: (topics: TopicId[]) => void
   toggleTopic: (topicId: TopicId) => void
   setFeedMuted: (feedId: string, muted: boolean) => void
   addCustomSite: (site: Omit<CustomSite, 'id'> & { id?: string }) => string | null
+  updateCustomSite: (id: string, patch: Partial<CustomSite>) => void
   removeCustomSite: (id: string) => void
   addCustomFeed: (feed: Omit<CustomFeed, 'id'> & { id?: string }) => string | null
   updateCustomFeed: (id: string, patch: Partial<CustomFeed>) => void
@@ -48,6 +56,23 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
     setSubscriptions((prev) => ({
       ...prev,
       kinds: { ...prev.kinds, [key]: on },
+    }))
+  }, [])
+
+  const setKindWeight = useCallback((key: KindWeightKey, weight: number) => {
+    setSubscriptions((prev) => ({
+      ...prev,
+      kindWeights: {
+        ...prev.kindWeights,
+        [key]: clampKindWeight(weight, DEFAULT_KIND_WEIGHTS[key]),
+      },
+    }))
+  }, [])
+
+  const resetKindWeights = useCallback(() => {
+    setSubscriptions((prev) => ({
+      ...prev,
+      kindWeights: { ...DEFAULT_KIND_WEIGHTS },
     }))
   }, [])
 
@@ -107,6 +132,31 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
     }))
   }, [])
 
+  const updateCustomSite = useCallback((id: string, patch: Partial<CustomSite>) => {
+    setSubscriptions((prev) => ({
+      ...prev,
+      customSites: prev.customSites.map((s) => {
+        if (s.id !== id) return s
+        return {
+          ...s,
+          ...patch,
+          name: patch.name !== undefined ? patch.name.trim() : s.name,
+          url: patch.url !== undefined ? patch.url.trim() : s.url,
+          blurb:
+            patch.blurb !== undefined
+              ? patch.blurb.trim() || undefined
+              : s.blurb,
+          topicHints:
+            patch.topicHints !== undefined
+              ? patch.topicHints.length
+                ? patch.topicHints
+                : undefined
+              : s.topicHints,
+        }
+      }),
+    }))
+  }, [])
+
   const addCustomFeed = useCallback(
     (feed: Omit<CustomFeed, 'id'> & { id?: string }): string | null => {
       const id = feed.id ?? newId('feed')
@@ -124,6 +174,7 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
               url: feed.url.trim(),
               topicIds: feed.topicIds.length ? feed.topicIds : ['current-events'],
               limit: feed.limit,
+              weight: clampFeedWeight(feed.weight ?? CUSTOM_FEED_WEIGHT_DEFAULT),
               enabled: feed.enabled !== false,
             },
           ],
@@ -137,7 +188,12 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
   const updateCustomFeed = useCallback((id: string, patch: Partial<CustomFeed>) => {
     setSubscriptions((prev) => ({
       ...prev,
-      customFeeds: prev.customFeeds.map((f) => (f.id === id ? { ...f, ...patch } : f)),
+      customFeeds: prev.customFeeds.map((f) => {
+        if (f.id !== id) return f
+        const next = { ...f, ...patch }
+        if (patch.weight !== undefined) next.weight = clampFeedWeight(patch.weight)
+        return next
+      }),
     }))
   }, [])
 
@@ -156,10 +212,13 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
     () => ({
       subscriptions,
       setKind,
+      setKindWeight,
+      resetKindWeights,
       setTopics,
       toggleTopic,
       setFeedMuted,
       addCustomSite,
+      updateCustomSite,
       removeCustomSite,
       addCustomFeed,
       updateCustomFeed,
@@ -169,10 +228,13 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
     [
       subscriptions,
       setKind,
+      setKindWeight,
+      resetKindWeights,
       setTopics,
       toggleTopic,
       setFeedMuted,
       addCustomSite,
+      updateCustomSite,
       removeCustomSite,
       addCustomFeed,
       updateCustomFeed,

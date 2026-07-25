@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import {
   exploreQuestion,
@@ -13,6 +13,16 @@ import {
   isOpenAIConfigured,
 } from '../lib/openai'
 import { buildSlimCatalog, exploreInstant } from '../lib/exploreFast'
+import {
+  buildKeptDocs,
+  formatKeptBlock,
+  retrieveKeptDocs,
+  type KeptDoc,
+} from '../lib/keptRag'
+import { mergeIdeas } from '../data/ideas'
+import { useKept } from '../hooks/useKept'
+import { useThoughts } from '../hooks/useThoughts'
+import { useExtraIdeas } from '../hooks/useExtraIdeas'
 import './AskPanel.css'
 
 type Props = {
@@ -110,6 +120,7 @@ export function AskPanel({
   const [question, setQuestion] = useState(initialQuestion)
   const [instant, setInstant] = useState<ExploreResult | null>(null)
   const [ai, setAi] = useState<ExploreResult | null>(null)
+  const [groundedIn, setGroundedIn] = useState<KeptDoc[]>([])
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [refining, setRefining] = useState(false)
@@ -119,6 +130,14 @@ export function AskPanel({
   const [elapsedMs, setElapsedMs] = useState(0)
   const abortRef = useRef<AbortController | null>(null)
   const llmStartedAt = useRef<number | null>(null)
+
+  const { kept } = useKept()
+  const { thoughts } = useThoughts()
+  const { items: extraIdeas } = useExtraIdeas()
+  const keptDocs = useMemo(
+    () => buildKeptDocs({ keptIds: kept, ideaPool: mergeIdeas(extraIdeas), thoughts }),
+    [kept, extraIdeas, thoughts],
+  )
 
   useEffect(() => {
     let cancelled = false
@@ -180,6 +199,8 @@ export function AskPanel({
     const t0 = performance.now()
     const quick = exploreInstant(ctx)
     quick.latencyMs = Math.round(performance.now() - t0)
+    const matchedNotes = retrieveKeptDocs(keptDocs, ctx)
+    setGroundedIn(matchedNotes)
     setInstant(quick)
     setAi(null)
     setError(null)
@@ -192,10 +213,11 @@ export function AskPanel({
     setRefining(true)
     try {
       const catalog = buildSlimCatalog(topicId)
+      const thoughtsBlock = formatKeptBlock(matchedNotes)
       const out =
         provider === 'openai'
-          ? await exploreWithOpenAI(ctx, catalog, { model, signal: ac.signal })
-          : await exploreQuestion(ctx, catalog, { model, signal: ac.signal })
+          ? await exploreWithOpenAI(ctx, catalog, { model, signal: ac.signal, thoughtsBlock })
+          : await exploreQuestion(ctx, catalog, { model, signal: ac.signal, thoughtsBlock })
       if (ac.signal.aborted) return
 
       const waitMs = out.latencyMs ?? Math.round(performance.now() - (llmStartedAt.current ?? 0))
@@ -242,7 +264,8 @@ export function AskPanel({
           <p className="ask-kicker">Go deeper</p>
           <h2>{compact ? 'Ask about this idea' : 'Ask Thinker'}</h2>
           <p className="ask-sub">
-            Instant catalog paths first — AI answer appends below when ready.
+            Answers draw on your kept ideas and thoughts first — instant path now, AI below
+            when ready.
           </p>
         </div>
         {provider !== 'none' && provider != null && (
@@ -280,7 +303,7 @@ export function AskPanel({
         />
         <div className="ask-form-row">
           <button type="submit" className="btn btn-primary" disabled={loading || !question.trim()}>
-            {loading ? 'Thinking…' : 'Explore'}
+            {loading ? 'Thinking…' : 'Ask'}
           </button>
           {showTimer && (
             <p className="ask-wait" aria-live="polite">
@@ -298,6 +321,29 @@ export function AskPanel({
       </form>
 
       {error && <p className="ask-error">{error}</p>}
+
+      {instant && groundedIn.length > 0 && (
+        <div className="ask-grounding">
+          <p className="ask-grounding-label">From your kept items</p>
+          <ul className="ask-grounding-list">
+            {groundedIn.map((d) => (
+              <li key={d.id} className={`ask-grounding-chip ask-grounding-chip--${d.kind}`}>
+                <span className="ask-grounding-kind">
+                  {d.kind === 'idea' ? 'kept idea' : d.kind}
+                </span>
+                {d.title}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {instant && groundedIn.length === 0 && keptDocs.length > 0 && (
+        <p className="ask-grounding-empty">
+          Nothing in your <Link to="/kept">kept items</Link> matched this question — answering
+          from the catalog.
+        </p>
+      )}
 
       {instant && (
         <ResultBlock result={instant} heading="Instant path" onFollowUp={askFollowUp} />

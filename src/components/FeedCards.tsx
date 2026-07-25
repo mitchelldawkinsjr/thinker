@@ -1,16 +1,23 @@
-import type { CSSProperties, PointerEvent as ReactPointerEvent, ReactNode } from 'react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import type { CSSProperties, ReactNode } from 'react'
+import { useState } from 'react'
 import type { LearningResource } from '../data/resources'
 import type { NewsItem } from '../data/newsTypes'
 import type { ScriptureItem } from '../data/scriptureTypes'
+import type { TopicId } from '../data/types'
 import { newsCardCopy } from '../lib/newsChallenge'
-import {
-  getGameHighScore,
-  recordGameScore,
-} from '../lib/gameScores'
 import { bibleAppPassageUrl } from '../lib/scriptureLinks'
-import { ExternalCta, sourceMediaParts } from './CardMedia'
+import { ExternalCta, ImageLightboxTrigger, sourceMediaParts } from './CardMedia'
+import { CardFlip, CardNoteBack } from './CardFlip'
+import { TrashIcon } from './TrashIcon'
 import { resolvePlayableUrl } from '../lib/mediaUrl'
+import { formatAudioTime } from '../lib/formatTime'
+import { useThoughts } from '../hooks/useThoughts'
+import {
+  parentFromBook,
+  parentFromNews,
+  parentFromResource,
+  parentFromScripture,
+} from '../data/thoughts'
 import './IdeaCard.css'
 import './FeedCards.css'
 
@@ -22,21 +29,7 @@ type NavProps = {
   total?: number
 }
 
-function TrashIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M9 3h6m-8 4h10m-9 0v11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V7M10 11v5m4-5v5"
-        stroke="currentColor"
-        strokeWidth="1.75"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function FeedCardShell({
+export function FeedCardShell({
   accent,
   surface,
   kind,
@@ -124,61 +117,151 @@ export function ResourceFeedCard({
 }: {
   resource: LearningResource
 } & NavProps) {
+  const { thoughts, saveMoment } = useThoughts()
+  const [flipped, setFlipped] = useState(false)
   const parts = sourceMediaParts(resource.url, 'Open site')
+  const alreadyKept = thoughts.some(
+    (t) => t.parent.kind === 'resource' && t.parent.id === resource.id,
+  )
+
   return (
-    <FeedCardShell
-      accent="#38bdf8"
-      surface="#15202b"
-      kind={`Free site · ${resource.category}`}
-      title={resource.name}
-      index={index}
-      total={total}
-      onPrev={onPrev}
-      onNext={onNext}
-      onHide={onHide}
-      media={parts.media}
-      cta={parts.cta}
-    >
-      <p className="feed-card-body">{resource.blurb}</p>
-      <p className="feed-card-hint">Open the real site — leave the infinite scroll behind.</p>
-    </FeedCardShell>
+    <CardFlip
+      flipped={flipped}
+      front={
+        <FeedCardShell
+          accent="#38bdf8"
+          surface="#15202b"
+          kind={`Free site · ${resource.category}`}
+          title={resource.name}
+          index={index}
+          total={total}
+          onPrev={onPrev}
+          onNext={onNext}
+          onHide={onHide}
+          media={parts.media}
+          cta={
+            <>
+              {parts.cta}
+              <button
+                type="button"
+                className={`idea-btn keep ${alreadyKept ? 'is-kept' : ''}`}
+                onClick={() => setFlipped(true)}
+                aria-expanded={flipped}
+                aria-pressed={alreadyKept}
+              >
+                {alreadyKept ? 'Kept' : 'Keep'}
+              </button>
+            </>
+          }
+        >
+          <p className="feed-card-body">{resource.blurb}</p>
+          <p className="feed-card-hint">Open the real site — leave the infinite scroll behind.</p>
+        </FeedCardShell>
+      }
+      back={
+        <CardNoteBack
+          accent="#38bdf8"
+          surface="#15202b"
+          kicker="Keep · your note"
+          title={resource.name}
+          detail={resource.category}
+          placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+          active={flipped}
+          onCancel={() => setFlipped(false)}
+          onSave={(note, promote) =>
+            saveMoment({
+              parent: parentFromResource(resource),
+              startSec: 0,
+              note,
+              promote,
+            })
+          }
+        />
+      }
+    />
   )
 }
 
 export function BookFeedCard({
+  id,
   title,
   author,
   why,
   url,
+  topicId,
   onNext,
   onPrev,
   onHide,
   index,
   total,
 }: {
+  id: string
   title: string
   author: string
   why: string
   url: string
+  topicId?: TopicId
 } & NavProps) {
+  const { thoughts, saveMoment } = useThoughts()
+  const [flipped, setFlipped] = useState(false)
   const parts = sourceMediaParts(url, 'Read on Gutenberg')
+  const alreadyKept = thoughts.some((t) => t.parent.kind === 'book' && t.parent.id === id)
+
   return (
-    <FeedCardShell
-      accent="#d4a574"
-      surface="#2a2218"
-      kind="Gutenberg · free ebook"
-      title={title}
-      index={index}
-      total={total}
-      onPrev={onPrev}
-      onNext={onNext}
-      onHide={onHide}
-      media={parts.media}
-      cta={parts.cta}
-    >
-      <p className="feed-card-author">{author}</p>
-      <p className="feed-card-body">{why}</p>
-    </FeedCardShell>
+    <CardFlip
+      flipped={flipped}
+      front={
+        <FeedCardShell
+          accent="#d4a574"
+          surface="#2a2218"
+          kind="Book · free ebook"
+          title={title}
+          index={index}
+          total={total}
+          onPrev={onPrev}
+          onNext={onNext}
+          onHide={onHide}
+          media={parts.media}
+          cta={
+            <>
+              {parts.cta}
+              <button
+                type="button"
+                className={`idea-btn keep ${alreadyKept ? 'is-kept' : ''}`}
+                onClick={() => setFlipped(true)}
+                aria-expanded={flipped}
+                aria-pressed={alreadyKept}
+              >
+                {alreadyKept ? 'Kept' : 'Keep'}
+              </button>
+            </>
+          }
+        >
+          <p className="feed-card-author">{author}</p>
+          <p className="feed-card-body">{why}</p>
+        </FeedCardShell>
+      }
+      back={
+        <CardNoteBack
+          accent="#d4a574"
+          surface="#2a2218"
+          kicker="Keep · your note"
+          title={title}
+          detail={author}
+          placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+          active={flipped}
+          onCancel={() => setFlipped(false)}
+          onSave={(note, promote) =>
+            saveMoment({
+              parent: parentFromBook({ id, title, author, why, url, topicId }),
+              startSec: 0,
+              note,
+              promote,
+            })
+          }
+        />
+      }
+    />
   )
 }
 
@@ -194,10 +277,35 @@ export function NewsFeedCard({
 } & NavProps) {
   const topics = news.topicIds.map((t) => `#${t}`).join(' · ')
   const primary = resolvePlayableUrl(news.sourceUrl, news.angles).url
+  const { saveMoment, thoughts } = useThoughts()
+  const [flipped, setFlipped] = useState(false)
+  const [momentAt, setMomentAt] = useState(0)
+  const [noteMode, setNoteMode] = useState<'moment' | 'keep'>('keep')
+
+  const alreadyKept = thoughts.some((t) => t.parent.kind === 'news' && t.parent.id === news.id)
+  // Every clip stamp saved on this story — markers/chips on the player
+  const savedMoments = thoughts
+    .filter((t) => t.parent.kind === 'news' && t.parent.id === news.id && t.startSec > 0)
+    .map((t) => ({ id: t.id, startSec: t.startSec, note: t.note }))
   const parts = sourceMediaParts(primary, 'Read source', 'idea-btn next', {
     title: news.title || news.hook,
     artist: news.source,
+    moments: savedMoments,
+    onCaptureMoment: (startSec) => {
+      setNoteMode('moment')
+      setMomentAt(startSec)
+      setFlipped(true)
+    },
   })
+
+  const commitMoment = (note: string, promote: boolean) => {
+    saveMoment({
+      parent: parentFromNews(news, primary),
+      startSec: noteMode === 'moment' ? momentAt : 0,
+      note,
+      promote,
+    })
+  }
   const isPolitics = news.topicIds.includes('politics')
   const [copied, setCopied] = useState(false)
 
@@ -231,7 +339,7 @@ export function NewsFeedCard({
   const allSidesHref = 'https://www.allsides.com/bias-checker'
   const { body, challenge } = newsCardCopy(news)
 
-  return (
+  const front = (
     <FeedCardShell
       accent="#c084fc"
       surface="#1e1a28"
@@ -243,23 +351,34 @@ export function NewsFeedCard({
       onNext={onNext}
       onHide={onHide}
       media={parts.media}
-      cta={parts.cta}
+      cta={
+        <>
+          {parts.cta}
+          <button
+            type="button"
+            className={`idea-btn keep ${alreadyKept ? 'is-kept' : ''}`}
+            onClick={() => {
+              setNoteMode('keep')
+              setMomentAt(0)
+              setFlipped(true)
+            }}
+            aria-expanded={flipped}
+            aria-pressed={alreadyKept}
+          >
+            {alreadyKept ? 'Kept' : 'Keep'}
+          </button>
+        </>
+      }
     >
       <p className="feed-card-author">{news.title}</p>
       {news.imageUrl ? (
         <figure className="feed-card-image">
-          <img
-            src={news.imageUrl}
-            alt=""
-            loading="lazy"
-            referrerPolicy="no-referrer"
-            decoding="async"
-          />
+          <ImageLightboxTrigger src={news.imageUrl} className="feed-card-image-btn" />
         </figure>
       ) : null}
       <p className="feed-card-body">{body}</p>
       {challenge ? (
-        <aside className="feed-card-challenge" aria-label="Challenge the headline">
+        <aside className="feed-card-challenge" aria-label="Think about the headline">
           <span className="feed-card-challenge-kicker">Think</span>
           <p className="feed-card-challenge-q">{challenge}</p>
         </aside>
@@ -297,6 +416,30 @@ export function NewsFeedCard({
       </div>
     </FeedCardShell>
   )
+
+  return (
+    <CardFlip
+      flipped={flipped}
+      front={front}
+      back={
+        <CardNoteBack
+          accent="#c084fc"
+          surface="#1e1a28"
+          kicker={noteMode === 'moment' ? 'Listening moment' : 'Keep · your note'}
+          title={news.title || news.hook}
+          detail={
+            noteMode === 'moment'
+              ? `Moment at ${formatAudioTime(momentAt)} · ${news.source}`
+              : news.source
+          }
+          placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+          active={flipped}
+          onCancel={() => setFlipped(false)}
+          onSave={commitMoment}
+        />
+      }
+    />
+  )
 }
 
 export function ScriptureFeedCard({
@@ -311,8 +454,14 @@ export function ScriptureFeedCard({
 } & NavProps) {
   const topics = scripture.topicIds.map((t) => `#${t}`).join(' · ')
   const href = bibleAppPassageUrl(scripture)
+  const { thoughts, saveMoment } = useThoughts()
+  const [flipped, setFlipped] = useState(false)
 
-  return (
+  const alreadyKept = thoughts.some(
+    (t) => t.parent.kind === 'scripture' && t.parent.id === scripture.id,
+  )
+
+  const front = (
     <FeedCardShell
       accent="#e8c47c"
       surface="#241c14"
@@ -323,14 +472,27 @@ export function ScriptureFeedCard({
       onPrev={onPrev}
       onNext={onNext}
       onHide={onHide}
-      cta={<ExternalCta href={href}>Bible App</ExternalCta>}
+      cta={
+        <>
+          <ExternalCta href={href}>Bible App</ExternalCta>
+          <button
+            type="button"
+            className={`idea-btn keep ${alreadyKept ? 'is-kept' : ''}`}
+            onClick={() => setFlipped(true)}
+            aria-expanded={flipped}
+            aria-pressed={alreadyKept}
+          >
+            {alreadyKept ? 'Kept' : 'Keep'}
+          </button>
+        </>
+      }
     >
       <p className="feed-card-author">{scripture.reference}</p>
       <blockquote className="feed-card-verse">“{scripture.text}”</blockquote>
       <p className="feed-card-body">{scripture.lesson}</p>
       <p className="feed-card-hint">
         {scripture.translation}
-        {scripture.sourceUrl?.includes('blueletterbible.org') && (
+        {scripture.sourceUrl?.includes('/devotionals/promises/') && (
           <>
             {' '}
             ·{' '}
@@ -339,1170 +501,54 @@ export function ScriptureFeedCard({
             </a>
           </>
         )}
+        {scripture.sourceUrl?.includes('faiths-checkbook') && (
+          <>
+            {' '}
+            ·{' '}
+            <a href={scripture.sourceUrl} target="_blank" rel="noreferrer">
+              Faith&apos;s Checkbook
+            </a>
+          </>
+        )}
+        {scripture.sourceUrl?.includes('/devotionals/me/') && (
+          <>
+            {' '}
+            ·{' '}
+            <a href={scripture.sourceUrl} target="_blank" rel="noreferrer">
+              Spurgeon Morning
+            </a>
+          </>
+        )}
+        {' '}
+        · Keep copies this; the cohort card stays
       </p>
     </FeedCardShell>
   )
-}
-
-const ROUND_MS = 10_000
-const TARGET_SIZE = 56
-
-type Phase = 'ready' | 'playing' | 'done'
-
-function randomTargetPos(arena: HTMLElement) {
-  const maxX = Math.max(0, arena.clientWidth - TARGET_SIZE)
-  const maxY = Math.max(0, arena.clientHeight - TARGET_SIZE)
-  return {
-    x: Math.floor(Math.random() * (maxX + 1)),
-    y: Math.floor(Math.random() * (maxY + 1)),
-  }
-}
-
-export function ReactionGameFeedCard({
-  title,
-  blurb,
-  onNext,
-  onPrev,
-  onHide,
-  index,
-  total,
-}: {
-  title: string
-  blurb: string
-} & NavProps) {
-  const arenaRef = useRef<HTMLDivElement>(null)
-  const endAtRef = useRef(0)
-  const scoreRef = useRef(0)
-  const [phase, setPhase] = useState<Phase>('ready')
-  const [score, setScore] = useState(0)
-  const [best, setBest] = useState(() => getGameHighScore('reaction'))
-  const [secsLeft, setSecsLeft] = useState(10)
-  const [pos, setPos] = useState({ x: 24, y: 24 })
-  const [isNewBest, setIsNewBest] = useState(false)
-
-  const placeTarget = useCallback(() => {
-    const arena = arenaRef.current
-    if (!arena) return
-    setPos(randomTargetPos(arena))
-  }, [])
-
-  useEffect(() => {
-    if (phase !== 'playing') return
-    let finished = false
-    const tick = () => {
-      const left = Math.max(0, endAtRef.current - Date.now())
-      setSecsLeft(Math.ceil(left / 1000))
-      if (left > 0 || finished) return
-      finished = true
-
-      const finalScore = scoreRef.current
-      const prevBest = getGameHighScore('reaction')
-      const nextBest = recordGameScore('reaction', finalScore)
-      setBest(nextBest)
-      setIsNewBest(finalScore > prevBest)
-      setPhase('done')
-    }
-    tick()
-    const id = window.setInterval(tick, 100)
-    return () => window.clearInterval(id)
-  }, [phase])
-
-  const start = () => {
-    scoreRef.current = 0
-    setScore(0)
-    setIsNewBest(false)
-    setSecsLeft(10)
-    endAtRef.current = Date.now() + ROUND_MS
-    setPhase('playing')
-    requestAnimationFrame(() => placeTarget())
-  }
-
-  const onHit = (e: ReactPointerEvent) => {
-    e.preventDefault()
-    e.stopPropagation()
-    if (phase !== 'playing') return
-    scoreRef.current += 1
-    setScore(scoreRef.current)
-    placeTarget()
-  }
-
-  const challenge =
-    best > 0
-      ? `Beat your high score of ${best}.`
-      : 'Set a high score — it sticks on this device.'
 
   return (
-    <FeedCardShell
-      accent="#34d399"
-      surface="#14241c"
-      kind="Brain game · speed"
-      title={title}
-      index={index}
-      total={total}
-      onPrev={onPrev}
-      onNext={onNext}
-      onHide={onHide}
-      cta={
-        phase === 'playing' ? undefined : (
-          <button type="button" className="idea-btn next" onClick={start}>
-            {phase === 'done' ? 'Play again' : 'Start · 10s'}
-          </button>
-        )
+    <CardFlip
+      flipped={flipped}
+      front={front}
+      back={
+        <CardNoteBack
+          accent="#e8c47c"
+          surface="#241c14"
+          kicker="Keep · your note"
+          title={scripture.hook}
+          detail={`${scripture.reference} · ${scripture.translation}`}
+          placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+          active={flipped}
+          onCancel={() => setFlipped(false)}
+          onSave={(note, promote) =>
+            saveMoment({
+              parent: parentFromScripture(scripture),
+              startSec: 0,
+              note,
+              promote,
+            })
+          }
+        />
       }
-    >
-      <p className="feed-card-body feed-card-body-tight">{blurb}</p>
-      <aside className="feed-card-challenge" aria-label="High score challenge">
-        <span className="feed-card-challenge-kicker">Challenge</span>
-        <p className="feed-card-challenge-q">{challenge}</p>
-      </aside>
-
-      <div className="reaction-hud" aria-live="polite">
-        <span>
-          Score <strong>{score}</strong>
-        </span>
-        <span>
-          Best <strong>{best}</strong>
-        </span>
-        <span>
-          Time{' '}
-          <strong>
-            {phase === 'playing' ? secsLeft : phase === 'ready' ? 10 : 0}s
-          </strong>
-        </span>
-      </div>
-
-      <div
-        ref={arenaRef}
-        className={`reaction-arena ${phase === 'playing' ? 'is-live' : ''}`}
-        aria-label="Reaction game arena"
-      >
-        {phase === 'ready' && (
-          <p className="reaction-arena-msg">Hit Start, then tap the box each time it moves.</p>
-        )}
-        {phase === 'done' && (
-          <p className="reaction-arena-msg">
-            {isNewBest
-              ? `New high score — ${score}!`
-              : `Round over — ${score} click${score === 1 ? '' : 's'}.`}
-          </p>
-        )}
-        {phase === 'playing' && (
-          <button
-            type="button"
-            className="reaction-target"
-            style={{ left: pos.x, top: pos.y, width: TARGET_SIZE, height: TARGET_SIZE }}
-            onPointerDown={onHit}
-            aria-label="Tap target"
-          />
-        )}
-      </div>
-    </FeedCardShell>
-  )
-}
-
-const SPOT_COLS = 4
-const SPOT_ROWS = 4
-const SPOT_CELLS = SPOT_COLS * SPOT_ROWS
-
-type SpotRound = {
-  base: string
-  odd: string
-  oddIndex: number
-}
-
-function makeSpotRound(score: number): SpotRound {
-  const hue = Math.floor(Math.random() * 360)
-  // Gets harder as you score — smaller lightness gap
-  const delta = Math.max(5, 16 - Math.floor(score / 2))
-  const sat = 48 + (score % 5) * 2
-  const baseL = 42
-  const base = `hsl(${hue} ${sat}% ${baseL}%)`
-  const odd = `hsl(${hue} ${sat}% ${baseL + delta}%)`
-  return {
-    base,
-    odd,
-    oddIndex: Math.floor(Math.random() * SPOT_CELLS),
-  }
-}
-
-export function SpotGameFeedCard({
-  title,
-  blurb,
-  onNext,
-  onPrev,
-  onHide,
-  index,
-  total,
-}: {
-  title: string
-  blurb: string
-} & NavProps) {
-  const endAtRef = useRef(0)
-  const scoreRef = useRef(0)
-  const [phase, setPhase] = useState<Phase>('ready')
-  const [score, setScore] = useState(0)
-  const [best, setBest] = useState(() => getGameHighScore('spot'))
-  const [secsLeft, setSecsLeft] = useState(10)
-  const [round, setRound] = useState<SpotRound>(() => makeSpotRound(0))
-  const [missFlash, setMissFlash] = useState(false)
-  const [isNewBest, setIsNewBest] = useState(false)
-
-  useEffect(() => {
-    if (phase !== 'playing') return
-    let finished = false
-    const tick = () => {
-      const left = Math.max(0, endAtRef.current - Date.now())
-      setSecsLeft(Math.ceil(left / 1000))
-      if (left > 0 || finished) return
-      finished = true
-
-      const finalScore = scoreRef.current
-      const prevBest = getGameHighScore('spot')
-      const nextBest = recordGameScore('spot', finalScore)
-      setBest(nextBest)
-      setIsNewBest(finalScore > prevBest)
-      setPhase('done')
-    }
-    tick()
-    const id = window.setInterval(tick, 100)
-    return () => window.clearInterval(id)
-  }, [phase])
-
-  const start = () => {
-    scoreRef.current = 0
-    setScore(0)
-    setIsNewBest(false)
-    setMissFlash(false)
-    setSecsLeft(10)
-    setRound(makeSpotRound(0))
-    endAtRef.current = Date.now() + ROUND_MS
-    setPhase('playing')
-  }
-
-  const onTile = (i: number) => {
-    if (phase !== 'playing') return
-    if (i === round.oddIndex) {
-      scoreRef.current += 1
-      setScore(scoreRef.current)
-      setMissFlash(false)
-      setRound(makeSpotRound(scoreRef.current))
-      return
-    }
-    setMissFlash(true)
-    window.setTimeout(() => setMissFlash(false), 180)
-  }
-
-  const challenge =
-    best > 0
-      ? `Beat your high score of ${best}.`
-      : 'Set a high score — it sticks on this device.'
-
-  return (
-    <FeedCardShell
-      accent="#60a5fa"
-      surface="#152033"
-      kind="Brain game · perception"
-      title={title}
-      index={index}
-      total={total}
-      onPrev={onPrev}
-      onNext={onNext}
-      onHide={onHide}
-      cta={
-        phase === 'playing' ? undefined : (
-          <button type="button" className="idea-btn next" onClick={start}>
-            {phase === 'done' ? 'Play again' : 'Start · 10s'}
-          </button>
-        )
-      }
-    >
-      <p className="feed-card-body feed-card-body-tight">{blurb}</p>
-      <aside className="feed-card-challenge" aria-label="High score challenge">
-        <span className="feed-card-challenge-kicker">Challenge</span>
-        <p className="feed-card-challenge-q">{challenge}</p>
-      </aside>
-
-      <div className="reaction-hud" aria-live="polite">
-        <span>
-          Score <strong>{score}</strong>
-        </span>
-        <span>
-          Best <strong>{best}</strong>
-        </span>
-        <span>
-          Time{' '}
-          <strong>
-            {phase === 'playing' ? secsLeft : phase === 'ready' ? 10 : 0}s
-          </strong>
-        </span>
-      </div>
-
-      <div
-        className={`spot-arena ${phase === 'playing' ? 'is-live' : ''} ${missFlash ? 'is-miss' : ''}`}
-        aria-label="Spot the odd tile"
-      >
-        {phase === 'ready' && (
-          <p className="reaction-arena-msg">Hit Start, then tap the tile that doesn’t match.</p>
-        )}
-        {phase === 'done' && (
-          <p className="reaction-arena-msg">
-            {isNewBest
-              ? `New high score — ${score}!`
-              : `Round over — ${score} find${score === 1 ? '' : 's'}.`}
-          </p>
-        )}
-        {phase === 'playing' && (
-          <div className="spot-grid" style={{ gridTemplateColumns: `repeat(${SPOT_COLS}, 1fr)` }}>
-            {Array.from({ length: SPOT_CELLS }, (_, i) => (
-              <button
-                key={`${score}-${i}-${round.oddIndex}`}
-                type="button"
-                className="spot-tile"
-                style={{ background: i === round.oddIndex ? round.odd : round.base }}
-                onPointerDown={(e) => {
-                  e.preventDefault()
-                  onTile(i)
-                }}
-                aria-label={`Tile ${i + 1}`}
-              />
-            ))}
-          </div>
-        )}
-      </div>
-    </FeedCardShell>
-  )
-}
-
-const MEMORY_PADS = [
-  { id: 0, base: '#db2777', lit: '#f9a8d4' },
-  { id: 1, base: '#0284c7', lit: '#7dd3fc' },
-  { id: 2, base: '#65a30d', lit: '#bef264' },
-  { id: 3, base: '#d97706', lit: '#fcd34d' },
-] as const
-
-type MemoryPhase = 'ready' | 'watch' | 'input' | 'done'
-
-function sleep(ms: number) {
-  return new Promise<void>((resolve) => {
-    window.setTimeout(resolve, ms)
-  })
-}
-
-function randomPad() {
-  return Math.floor(Math.random() * MEMORY_PADS.length)
-}
-
-export function MemoryGameFeedCard({
-  title,
-  blurb,
-  onNext,
-  onPrev,
-  onHide,
-  index,
-  total,
-}: {
-  title: string
-  blurb: string
-} & NavProps) {
-  const runIdRef = useRef(0)
-  const seqRef = useRef<number[]>([])
-  const inputIdxRef = useRef(0)
-  const scoreRef = useRef(0)
-  const phaseRef = useRef<MemoryPhase>('ready')
-  const [phase, setPhase] = useState<MemoryPhase>('ready')
-  const [score, setScore] = useState(0)
-  const [best, setBest] = useState(() => getGameHighScore('memory'))
-  const [lit, setLit] = useState(-1)
-  const [steps, setSteps] = useState(0)
-  const [matched, setMatched] = useState(0)
-  const [isNewBest, setIsNewBest] = useState(false)
-
-  const go = useCallback((next: MemoryPhase) => {
-    phaseRef.current = next
-    setPhase(next)
-  }, [])
-
-  useEffect(() => {
-    return () => {
-      runIdRef.current += 1
-    }
-  }, [])
-
-  const finish = useCallback(
-    (finalScore: number) => {
-      const prevBest = getGameHighScore('memory')
-      const nextBest = recordGameScore('memory', finalScore)
-      setBest(nextBest)
-      setIsNewBest(finalScore > prevBest)
-      setLit(-1)
-      go('done')
-    },
-    [go],
-  )
-
-  const playSequence = useCallback(
-    async (seq: number[], runId: number) => {
-      go('watch')
-      setSteps(seq.length)
-      setMatched(0)
-      setLit(-1)
-      await sleep(400)
-      for (let i = 0; i < seq.length; i++) {
-        if (runIdRef.current !== runId) return
-        setLit(seq[i]!)
-        await sleep(480)
-        if (runIdRef.current !== runId) return
-        setLit(-1)
-        // Gap between flashes; slightly longer after the last so it registers
-        await sleep(i === seq.length - 1 ? 280 : 180)
-      }
-      if (runIdRef.current !== runId) return
-      inputIdxRef.current = 0
-      go('input')
-    },
-    [go],
-  )
-
-  const start = () => {
-    const runId = ++runIdRef.current
-    scoreRef.current = 0
-    setScore(0)
-    setIsNewBest(false)
-    setLit(-1)
-    setMatched(0)
-    const seq = [randomPad()]
-    seqRef.current = seq
-    inputIdxRef.current = 0
-    setSteps(seq.length)
-    void playSequence(seq, runId)
-  }
-
-  const onPad = (pad: number) => {
-    // Ref check — avoids stale React state rejecting the last matching tap
-    if (phaseRef.current !== 'input') return
-
-    const expected = seqRef.current[inputIdxRef.current]
-    if (expected === undefined) return
-
-    setLit(pad)
-    window.setTimeout(() => {
-      if (phaseRef.current === 'input') setLit(-1)
-    }, 140)
-
-    if (pad !== expected) {
-      finish(scoreRef.current)
-      return
-    }
-
-    const nextIdx = inputIdxRef.current + 1
-    inputIdxRef.current = nextIdx
-    setMatched(nextIdx)
-
-    // Still more pads to match in this shown sequence
-    if (nextIdx < seqRef.current.length) return
-
-    // Full sequence matched — lock input before growing/replaying
-    const completed = seqRef.current.length
-    scoreRef.current = completed
-    setScore(completed)
-    go('watch')
-    setLit(-1)
-    setMatched(0)
-
-    const runId = runIdRef.current
-    seqRef.current = [...seqRef.current, randomPad()]
-    void playSequence(seqRef.current, runId)
-  }
-
-  const challenge =
-    best > 0
-      ? `Beat your high score of ${best}.`
-      : 'Set a high score — it sticks on this device.'
-
-  const status =
-    phase === 'watch'
-      ? `Watch ${steps}…`
-      : phase === 'input'
-        ? `Your turn · ${matched}/${steps}`
-        : phase === 'done'
-          ? isNewBest
-            ? `New high score — ${score}!`
-            : `Chain broke at ${score}.`
-          : 'Ready'
-
-  return (
-    <FeedCardShell
-      accent="#c084fc"
-      surface="#1c1528"
-      kind="Brain game · memory"
-      title={title}
-      index={index}
-      total={total}
-      onPrev={onPrev}
-      onNext={onNext}
-      onHide={onHide}
-      cta={
-        phase === 'watch' || phase === 'input' ? undefined : (
-          <button type="button" className="idea-btn next" onClick={start}>
-            {phase === 'done' ? 'Play again' : 'Start'}
-          </button>
-        )
-      }
-    >
-      <p className="feed-card-body feed-card-body-tight">{blurb}</p>
-      <aside className="feed-card-challenge" aria-label="High score challenge">
-        <span className="feed-card-challenge-kicker">Challenge</span>
-        <p className="feed-card-challenge-q">{challenge}</p>
-      </aside>
-
-      <div className="reaction-hud" aria-live="polite">
-        <span>
-          Chain <strong>{score}</strong>
-        </span>
-        <span>
-          Best <strong>{best}</strong>
-        </span>
-        <span>
-          <strong>{status}</strong>
-        </span>
-      </div>
-
-      <div
-        className={`memory-arena ${phase === 'watch' || phase === 'input' ? 'is-live' : ''}`}
-        aria-label="Memory sequence pads"
-      >
-        {phase === 'ready' && (
-          <p className="reaction-arena-msg">Hit Start, watch the sequence, then tap every pad that lit — in order.</p>
-        )}
-        {phase === 'done' && (
-          <p className="reaction-arena-msg">
-            {isNewBest
-              ? `New high score — chain of ${score}!`
-              : `You reached a chain of ${score}.`}
-          </p>
-        )}
-        {(phase === 'watch' || phase === 'input') && (
-          <div className="memory-grid" role="group" aria-label={status}>
-            {MEMORY_PADS.map((pad) => (
-              <button
-                key={pad.id}
-                type="button"
-                className={`memory-pad ${lit === pad.id ? 'is-lit' : ''} ${phase === 'watch' ? 'is-locked' : ''}`}
-                style={
-                  {
-                    '--pad-base': pad.base,
-                    '--pad-lit': pad.lit,
-                  } as CSSProperties
-                }
-                disabled={phase !== 'input'}
-                onClick={() => onPad(pad.id)}
-                aria-label={`Pad ${pad.id + 1}`}
-              />
-            ))}
-          </div>
-        )}
-      </div>
-    </FeedCardShell>
-  )
-}
-
-type MathPrompt = {
-  label: string
-  answer: number
-  choices: number[]
-}
-
-function shuffleNums(arr: number[]) {
-  const a = [...arr]
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[a[i], a[j]] = [a[j], a[i]]
-  }
-  return a
-}
-
-function pickOp(weights: { add: number; sub: number; mul: number; div: number }) {
-  const total = weights.add + weights.sub + weights.mul + weights.div
-  let r = Math.random() * total
-  if ((r -= weights.add) < 0) return '+' as const
-  if ((r -= weights.sub) < 0) return '−' as const
-  if ((r -= weights.mul) < 0) return '×' as const
-  return '÷' as const
-}
-
-function makeMathPrompt(score: number): MathPrompt {
-  const tier = Math.min(2, Math.floor(score / 3))
-  // Quick head math — mix + − × ÷ from the start; harder numbers as score rises
-  const op =
-    tier === 0
-      ? pickOp({ add: 3, sub: 3, mul: 3, div: 2 })
-      : tier === 1
-        ? pickOp({ add: 2, sub: 2, mul: 3, div: 3 })
-        : pickOp({ add: 2, sub: 2, mul: 3, div: 3 })
-
-  let a: number
-  let b: number
-  let answer: number
-
-  if (op === '×') {
-    const max = tier === 0 ? 9 : tier === 1 ? 11 : 12
-    a = 2 + Math.floor(Math.random() * (max - 1))
-    b = 2 + Math.floor(Math.random() * (max - 1))
-    answer = a * b
-  } else if (op === '÷') {
-    // Always clean integer division
-    const max = tier === 0 ? 9 : tier === 1 ? 11 : 12
-    b = 2 + Math.floor(Math.random() * (max - 1))
-    answer = 2 + Math.floor(Math.random() * (max - 1))
-    a = b * answer
-  } else if (op === '+') {
-    const span = tier === 0 ? 12 : tier === 1 ? 20 : 30
-    a = 3 + Math.floor(Math.random() * span)
-    b = 2 + Math.floor(Math.random() * span)
-    answer = a + b
-  } else {
-    const span = tier === 0 ? 12 : tier === 1 ? 20 : 30
-    a = 5 + Math.floor(Math.random() * span)
-    b = 2 + Math.floor(Math.random() * Math.min(a - 1, span))
-    if (b >= a) b = Math.max(1, a - 1)
-    answer = a - b
-  }
-
-  const wrong = new Set<number>()
-  while (wrong.size < 2) {
-    let candidate: number
-    if (op === '×' || op === '÷') {
-      // Plausible nearby factors / quotients, not just ±1
-      const jitter = (1 + Math.floor(Math.random() * 4)) * (Math.random() < 0.5 ? -1 : 1)
-      candidate = answer + jitter
-      if (op === '×' && Math.random() < 0.4) candidate = a * (b + (Math.random() < 0.5 ? -1 : 1))
-      if (op === '÷' && Math.random() < 0.4) candidate = answer + (Math.random() < 0.5 ? -1 : 1) * b
-    } else {
-      const delta = (Math.floor(Math.random() * 6) + 1) * (Math.random() < 0.5 ? -1 : 1)
-      candidate = answer + delta
-    }
-    if (Number.isFinite(candidate) && candidate !== answer && candidate >= 0) {
-      wrong.add(Math.floor(candidate))
-    }
-  }
-
-  return {
-    label: `${a} ${op} ${b}`,
-    answer,
-    choices: shuffleNums([answer, ...wrong]),
-  }
-}
-
-export function MathGameFeedCard({
-  title,
-  blurb,
-  onNext,
-  onPrev,
-  onHide,
-  index,
-  total,
-}: {
-  title: string
-  blurb: string
-} & NavProps) {
-  const endAtRef = useRef(0)
-  const scoreRef = useRef(0)
-  const [phase, setPhase] = useState<Phase>('ready')
-  const [score, setScore] = useState(0)
-  const [best, setBest] = useState(() => getGameHighScore('math'))
-  const [secsLeft, setSecsLeft] = useState(10)
-  const [prompt, setPrompt] = useState<MathPrompt>(() => makeMathPrompt(0))
-  const [missFlash, setMissFlash] = useState(false)
-  const [isNewBest, setIsNewBest] = useState(false)
-
-  useEffect(() => {
-    if (phase !== 'playing') return
-    let finished = false
-    const tick = () => {
-      const left = Math.max(0, endAtRef.current - Date.now())
-      setSecsLeft(Math.ceil(left / 1000))
-      if (left > 0 || finished) return
-      finished = true
-
-      const finalScore = scoreRef.current
-      const prevBest = getGameHighScore('math')
-      const nextBest = recordGameScore('math', finalScore)
-      setBest(nextBest)
-      setIsNewBest(finalScore > prevBest)
-      setPhase('done')
-    }
-    tick()
-    const id = window.setInterval(tick, 100)
-    return () => window.clearInterval(id)
-  }, [phase])
-
-  const start = () => {
-    scoreRef.current = 0
-    setScore(0)
-    setIsNewBest(false)
-    setMissFlash(false)
-    setSecsLeft(10)
-    setPrompt(makeMathPrompt(0))
-    endAtRef.current = Date.now() + ROUND_MS
-    setPhase('playing')
-  }
-
-  const onChoice = (n: number) => {
-    if (phase !== 'playing') return
-    if (n === prompt.answer) {
-      scoreRef.current += 1
-      setScore(scoreRef.current)
-      setMissFlash(false)
-      setPrompt(makeMathPrompt(scoreRef.current))
-      return
-    }
-    setMissFlash(true)
-    window.setTimeout(() => setMissFlash(false), 180)
-  }
-
-  const challenge =
-    best > 0
-      ? `Beat your high score of ${best}.`
-      : 'Set a high score — it sticks on this device.'
-
-  return (
-    <FeedCardShell
-      accent="#f59e0b"
-      surface="#241a0f"
-      kind="Brain game · math"
-      title={title}
-      index={index}
-      total={total}
-      onPrev={onPrev}
-      onNext={onNext}
-      onHide={onHide}
-      cta={
-        phase === 'playing' ? undefined : (
-          <button type="button" className="idea-btn next" onClick={start}>
-            {phase === 'done' ? 'Play again' : 'Start · 10s'}
-          </button>
-        )
-      }
-    >
-      <p className="feed-card-body feed-card-body-tight">{blurb}</p>
-      <aside className="feed-card-challenge" aria-label="High score challenge">
-        <span className="feed-card-challenge-kicker">Challenge</span>
-        <p className="feed-card-challenge-q">{challenge}</p>
-      </aside>
-
-      <div className="reaction-hud" aria-live="polite">
-        <span>
-          Score <strong>{score}</strong>
-        </span>
-        <span>
-          Best <strong>{best}</strong>
-        </span>
-        <span>
-          Time{' '}
-          <strong>
-            {phase === 'playing' ? secsLeft : phase === 'ready' ? 10 : 0}s
-          </strong>
-        </span>
-      </div>
-
-      <div
-        className={`math-arena ${phase === 'playing' ? 'is-live' : ''} ${missFlash ? 'is-miss' : ''}`}
-        aria-label="Quick math arena"
-      >
-        {phase === 'ready' && (
-          <p className="reaction-arena-msg">Hit Start, then tap the correct answer as fast as you can.</p>
-        )}
-        {phase === 'done' && (
-          <p className="reaction-arena-msg">
-            {isNewBest
-              ? `New high score — ${score}!`
-              : `Round over — ${score} correct.`}
-          </p>
-        )}
-        {phase === 'playing' && (
-          <>
-            <p className="math-prompt" aria-live="polite">
-              {prompt.label}
-            </p>
-            <div className="math-choices">
-              {prompt.choices.map((n) => (
-                <button
-                  key={`${prompt.label}-${n}`}
-                  type="button"
-                  className="math-choice"
-                  onPointerDown={(e) => {
-                    e.preventDefault()
-                    onChoice(n)
-                  }}
-                >
-                  {n}
-                </button>
-              ))}
-            </div>
-          </>
-        )}
-      </div>
-    </FeedCardShell>
-  )
-}
-
-/** SpaceBnB-style preference 0–100 → displayed m/s² (0.1–19.6). */
-function gravityMs2(pref: number) {
-  return 0.1 + (19.6 - 0.1) * (pref / 100)
-}
-
-/** Fall acceleration in px/s² — higher preference = harder drop. */
-function gravityAccel(pref: number) {
-  return 220 + (2200 - 220) * (pref / 100)
-}
-
-/** Bounce preview height (px up) — low g = tall slow bounce, like the CodePen. */
-function bounceHeight(pref: number) {
-  return 8 + (72 - 8) * (1 - pref / 100)
-}
-
-/** Bounce cycle seconds — high g = fast bounce timescale. */
-function bouncePeriod(pref: number) {
-  return 1.6 - (1.6 - 0.28) * (pref / 100)
-}
-
-type GravityOrb = {
-  id: number
-  x: number
-  y: number
-  vx: number
-  vy: number
-  r: number
-}
-
-const GRAVITY_ROUND_MS = 15_000
-const CATCHER_W = 64
-const CATCHER_H = 12
-const ORB_R = 11
-
-export function GravityGameFeedCard({
-  title,
-  blurb,
-  onNext,
-  onPrev,
-  onHide,
-  index,
-  total,
-}: {
-  title: string
-  blurb: string
-} & NavProps) {
-  const arenaRef = useRef<HTMLDivElement>(null)
-  const endAtRef = useRef(0)
-  const scoreRef = useRef(0)
-  const prefRef = useRef(50)
-  const catcherXRef = useRef(0.5)
-  const orbsRef = useRef<GravityOrb[]>([])
-  const nextIdRef = useRef(1)
-  const spawnAtRef = useRef(0)
-  const rafRef = useRef(0)
-  const lastTsRef = useRef(0)
-
-  const [phase, setPhase] = useState<Phase>('ready')
-  const [score, setScore] = useState(0)
-  const [best, setBest] = useState(() => getGameHighScore('gravity'))
-  const [secsLeft, setSecsLeft] = useState(15)
-  const [pref, setPref] = useState(50)
-  const [catcherX, setCatcherX] = useState(0.5)
-  const [orbs, setOrbs] = useState<GravityOrb[]>([])
-  const [isNewBest, setIsNewBest] = useState(false)
-
-  const ms2 = gravityMs2(pref)
-  const bounceY = bounceHeight(pref)
-  const bounceT = bouncePeriod(pref)
-
-  useEffect(() => {
-    prefRef.current = pref
-  }, [pref])
-
-  useEffect(() => {
-    catcherXRef.current = catcherX
-  }, [catcherX])
-
-  useEffect(() => {
-    if (phase !== 'playing') return
-    let finished = false
-    const tick = () => {
-      const left = Math.max(0, endAtRef.current - Date.now())
-      setSecsLeft(Math.ceil(left / 1000))
-      if (left > 0 || finished) return
-      finished = true
-
-      const finalScore = scoreRef.current
-      const prevBest = getGameHighScore('gravity')
-      const nextBest = recordGameScore('gravity', finalScore)
-      setBest(nextBest)
-      setIsNewBest(finalScore > prevBest)
-      setPhase('done')
-      orbsRef.current = []
-      setOrbs([])
-    }
-    tick()
-    const id = window.setInterval(tick, 100)
-    return () => window.clearInterval(id)
-  }, [phase])
-
-  useEffect(() => {
-    if (phase !== 'playing') {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current)
-      rafRef.current = 0
-      return
-    }
-
-    lastTsRef.current = 0
-    spawnAtRef.current = performance.now() + 280
-
-    const loop = (ts: number) => {
-      const arena = arenaRef.current
-      if (!arena) {
-        rafRef.current = requestAnimationFrame(loop)
-        return
-      }
-
-      const dt = lastTsRef.current ? Math.min(0.04, (ts - lastTsRef.current) / 1000) : 0
-      lastTsRef.current = ts
-
-      const w = arena.clientWidth
-      const h = arena.clientHeight
-      const floorY = h - CATCHER_H - 6
-      const p = prefRef.current
-      const accel = gravityAccel(p)
-      const points = Math.max(1, Math.round(1 + p / 20))
-
-      if (ts >= spawnAtRef.current) {
-        const margin = ORB_R + 8
-        orbsRef.current.push({
-          id: nextIdRef.current++,
-          x: margin + Math.random() * Math.max(1, w - margin * 2),
-          y: -ORB_R,
-          vx: (Math.random() - 0.5) * 40,
-          vy: 20 + Math.random() * 40,
-          r: ORB_R,
-        })
-        // Higher g → denser spawns (harder, more reward chances)
-        const gap = 900 - (900 - 380) * (p / 100)
-        spawnAtRef.current = ts + gap
-      }
-
-      const cx = catcherXRef.current * w
-      const half = CATCHER_W / 2
-      const next: GravityOrb[] = []
-
-      for (const orb of orbsRef.current) {
-        let { x, y, vx, vy, r, id } = orb
-        vy += accel * dt
-        x += vx * dt
-        y += vy * dt
-
-        if (x < r) {
-          x = r
-          vx = Math.abs(vx) * 0.4
-        } else if (x > w - r) {
-          x = w - r
-          vx = -Math.abs(vx) * 0.4
-        }
-
-        const catchTop = floorY - r
-        const inCatchX = x >= cx - half && x <= cx + half
-        if (y >= catchTop && y <= floorY + r && vy >= 0 && inCatchX) {
-          scoreRef.current += points
-          setScore(scoreRef.current)
-          continue
-        }
-
-        if (y - r > h + 20) continue
-        next.push({ id, x, y, vx, vy, r })
-      }
-
-      orbsRef.current = next
-      setOrbs(next.slice())
-      rafRef.current = requestAnimationFrame(loop)
-    }
-
-    rafRef.current = requestAnimationFrame(loop)
-    return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current)
-      rafRef.current = 0
-    }
-  }, [phase])
-
-  const setCatcherFromClientX = (clientX: number) => {
-    const arena = arenaRef.current
-    if (!arena) return
-    const rect = arena.getBoundingClientRect()
-    const x = (clientX - rect.left) / Math.max(1, rect.width)
-    const clamped = Math.min(0.92, Math.max(0.08, x))
-    catcherXRef.current = clamped
-    setCatcherX(clamped)
-  }
-
-  const onArenaPointer = (e: ReactPointerEvent) => {
-    if (phase !== 'playing') return
-    e.preventDefault()
-    ;(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId)
-    setCatcherFromClientX(e.clientX)
-  }
-
-  const onArenaMove = (e: ReactPointerEvent) => {
-    if (phase !== 'playing') return
-    setCatcherFromClientX(e.clientX)
-  }
-
-  const start = () => {
-    scoreRef.current = 0
-    setScore(0)
-    setIsNewBest(false)
-    setSecsLeft(15)
-    orbsRef.current = []
-    setOrbs([])
-    nextIdRef.current = 1
-    catcherXRef.current = 0.5
-    setCatcherX(0.5)
-    endAtRef.current = Date.now() + GRAVITY_ROUND_MS
-    setPhase('playing')
-  }
-
-  const onPrefChange = (v: number) => {
-    const next = Math.min(100, Math.max(0, v))
-    prefRef.current = next
-    setPref(next)
-  }
-
-  const challenge =
-    best > 0
-      ? `Beat your high score of ${best}.`
-      : 'Set a high score — it sticks on this device.'
-
-  const gLabel = ms2 < 10 ? `0${ms2.toFixed(1)}` : ms2.toFixed(1)
-
-  return (
-    <FeedCardShell
-      accent="#99dff4"
-      surface="#0e1418"
-      kind="Brain game · gravity"
-      title={title}
-      index={index}
-      total={total}
-      onPrev={onPrev}
-      onNext={onNext}
-      onHide={onHide}
-      cta={
-        phase === 'playing' ? undefined : (
-          <button type="button" className="idea-btn next" onClick={start}>
-            {phase === 'done' ? 'Play again' : 'Start · 15s'}
-          </button>
-        )
-      }
-    >
-      <p className="feed-card-body feed-card-body-tight">{blurb}</p>
-      <aside className="feed-card-challenge" aria-label="High score challenge">
-        <span className="feed-card-challenge-kicker">Challenge</span>
-        <p className="feed-card-challenge-q">{challenge}</p>
-      </aside>
-
-      <div className="reaction-hud" aria-live="polite">
-        <span>
-          Score <strong>{score}</strong>
-        </span>
-        <span>
-          Best <strong>{best}</strong>
-        </span>
-        <span>
-          Time{' '}
-          <strong>
-            {phase === 'playing' ? secsLeft : phase === 'ready' ? 15 : 0}s
-          </strong>
-        </span>
-      </div>
-
-      <div
-        className="gravity-console"
-        style={
-          {
-            '--grav-ui':
-              pref < 40 ? '#198d00' : pref < 70 ? '#ffb300' : '#c50000',
-            '--range-gradient': `${pref}%`,
-            '--bounce-y': `${-bounceY}px`,
-            '--bounce-period': `${bounceT}s`,
-          } as CSSProperties
-        }
-      >
-        <div className="gravity-pref">
-          <div className="gravity-readout" aria-live="polite">
-            <span className="gravity-number">{gLabel}</span>
-            <span className="gravity-units">M/S/S</span>
-          </div>
-          <label className="gravity-slider-label" htmlFor="gravity-pref-range">
-            Gravity preference
-          </label>
-          <input
-            id="gravity-pref-range"
-            className="gravity-range"
-            type="range"
-            min={0}
-            max={100}
-            step={1}
-            value={pref}
-            onChange={(e) => onPrefChange(Number(e.target.value))}
-            aria-valuetext={`${gLabel} meters per second squared`}
-          />
-          <div className="gravity-bounce" aria-hidden>
-            <span className="gravity-bounce-label">bounce sim</span>
-            <div className="gravity-bounce-shaft">
-              <span className="gravity-bounce-ball" />
-            </div>
-          </div>
-        </div>
-
-        <div
-          ref={arenaRef}
-          className={`gravity-arena ${phase === 'playing' ? 'is-live' : ''}`}
-          aria-label="Gravity drop arena"
-          onPointerDown={onArenaPointer}
-          onPointerMove={onArenaMove}
-        >
-          {phase === 'ready' && (
-            <p className="reaction-arena-msg">
-              Set gravity, hit Start, then drag to catch orbs. High g pays more.
-            </p>
-          )}
-          {phase === 'done' && (
-            <p className="reaction-arena-msg">
-              {isNewBest
-                ? `New high score — ${score}!`
-                : `Round over — ${score} point${score === 1 ? '' : 's'}.`}
-            </p>
-          )}
-          {phase === 'playing' && (
-            <>
-              {orbs.map((orb) => (
-                <span
-                  key={orb.id}
-                  className="gravity-orb"
-                  style={{
-                    width: orb.r * 2,
-                    height: orb.r * 2,
-                    transform: `translate(${orb.x - orb.r}px, ${orb.y - orb.r}px)`,
-                  }}
-                />
-              ))}
-              <span
-                className="gravity-catcher"
-                style={{
-                  width: CATCHER_W,
-                  height: CATCHER_H,
-                  left: `calc(${catcherX * 100}% - ${CATCHER_W / 2}px)`,
-                }}
-              />
-            </>
-          )}
-        </div>
-      </div>
-    </FeedCardShell>
+    />
   )
 }

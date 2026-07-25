@@ -14,6 +14,10 @@ dist-ssr
 .env
 .env.*.local
 
+# LLM idea drafts (review locally; promote explicitly)
+scripts/drafts/*.json
+!scripts/drafts/.gitkeep
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

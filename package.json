@@ -11,7 +11,9 @@
     "ingest:news": "node scripts/ingest-news.mjs",
     "ingest:scriptures": "node scripts/ingest-scriptures.mjs",
     "ingest:book-ideas": "node scripts/ingest-book-ideas.mjs",
-    "ingest": "npm run ingest:news && npm run ingest:scriptures && npm run ingest:book-ideas"
+    "ingest": "npm run ingest:news && npm run ingest:scriptures && npm run ingest:book-ideas",
+    "draft:ideas": "node scripts/draft-ideas.mjs",
+    "promote:ideas": "node scripts/promote-ideas.mjs"
   },
   "dependencies": {
     "react": "^19.2.7",

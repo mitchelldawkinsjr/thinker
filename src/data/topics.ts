@@ -1,6 +1,7 @@
 import type { Topic } from './types'
 
-export const topics: Topic[] = [
+/** Built-in topic catalog (immutable). User edits live in localStorage via userTopics. */
+export const catalogTopics: Topic[] = [
   {
     id: 'ai-agents',
     name: 'AI Agents & Tooling',
@@ -129,4 +130,25 @@ export const topics: Topic[] = [
   },
 ]
 
-export const getTopic = (id: string) => topics.find((t) => t.id === id)
+/** @deprecated Prefer catalogTopics or useTopics() — kept as alias for static imports. */
+export const topics = catalogTopics
+
+const CATALOG_IDS = new Set(catalogTopics.map((t) => t.id))
+
+export function isCatalogTopicId(id: string): boolean {
+  return CATALOG_IDS.has(id as (typeof catalogTopics)[number]['id'])
+}
+
+/** Runtime topic list (updated by TopicsProvider). Falls back to catalog. */
+let runtimeTopics: Topic[] = catalogTopics
+
+export function setRuntimeTopics(list: Topic[]) {
+  runtimeTopics = list.length ? list : catalogTopics
+}
+
+export function getTopics(): Topic[] {
+  return runtimeTopics
+}
+
+export const getTopic = (id: string) =>
+  runtimeTopics.find((t) => t.id === id) ?? catalogTopics.find((t) => t.id === id)

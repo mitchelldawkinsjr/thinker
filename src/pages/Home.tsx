@@ -1,9 +1,9 @@
 import type { CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
-import { topics } from '../data/topics'
 import { getIdeasByTopic } from '../data/ideas'
 import { TopicChip } from '../components/TopicChip'
-import { useBookIdeas } from '../hooks/useBookIdeas'
+import { useExtraIdeas } from '../hooks/useExtraIdeas'
+import { useTopics } from '../hooks/useTopics'
 import { peekContinue } from '../lib/daySession'
 import './Home.css'
 
@@ -15,8 +15,9 @@ const floatingIdeas = [
 ]
 
 export function Home() {
+  const { topics } = useTopics()
   const featured = topics.slice(0, 6)
-  const { items: bookIdeas } = useBookIdeas()
+  const { items: extraIdeas } = useExtraIdeas()
   const cont = peekContinue()
   const continueTo = cont?.topic ? `/feed?topic=${encodeURIComponent(cont.topic)}` : '/feed'
 
@@ -51,12 +52,12 @@ export function Home() {
           <h1 className="hero-brand">Thinker</h1>
           <p className="hero-line">
             Replace <span className="strike">doomscrolling</span> with{' '}
-            <em>microlearning</em>
+            <em>bite-sized ideas</em>
           </p>
           <p className="hero-sub">
-            Bite-sized ideas on AI, sports, markets, and history — then jump to the
-            real sites: Gutenberg, Quanta, Farnam Street, SEP, and more. Remembers
-            this device for today; tomorrow starts fresh.
+            Short ideas on AI, sports, markets, and history — then jump to the real
+            sites: Gutenberg, Quanta, Farnam Street, SEP, and more. Remembers this
+            device for today; tomorrow starts fresh.
           </p>
           <div className="hero-actions">
             {cont ? (
@@ -69,7 +70,7 @@ export function Home() {
               </Link>
             )}
             <Link to="/resources" className="btn btn-ghost">
-              Browse free resources
+              Browse free sites
             </Link>
           </div>
         </div>
@@ -86,7 +87,7 @@ export function Home() {
               key={t.id}
               topic={t}
               large
-              ideaCount={getIdeasByTopic(t.id, bookIdeas).length}
+              ideaCount={getIdeasByTopic(t.id, extraIdeas).length}
             />
           ))}
         </div>
@@ -101,20 +102,20 @@ export function Home() {
         <div className="section-head">
           <h2>Knowledge, in minutes</h2>
           <p>
-            One idea at a time. Every kept thought can open its source site —
-            not another endless tab.
+            One idea at a time. Every kept idea can open its source site — not
+            another endless tab.
           </p>
         </div>
         <div className="why-grid">
           <article>
-            <h3>Swipe the feed</h3>
+            <h3>One card at a time</h3>
             <p>Mixed ideas from agents, NBA, film, finance, and more — no algorithm rabbit hole.</p>
           </article>
           <article>
             <h3>Open the source</h3>
             <p>
               Cards link out to Gutenberg, Quanta, Investopedia, SEP, and the rest of
-              your resource shelf.
+              your sites.
             </p>
           </article>
           <article>
@@ -127,11 +128,11 @@ export function Home() {
         </div>
         <div className="section-foot" style={{ marginTop: '1.5rem' }}>
           <Link to="/resources" className="text-link">
-            Open resources →
+            Open sites →
           </Link>
           {' · '}
           <Link to="/books" className="text-link">
-            Gutenberg shelf →
+            Books shelf →
           </Link>
         </div>
       </section>

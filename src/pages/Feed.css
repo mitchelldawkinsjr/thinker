@@ -59,6 +59,12 @@
   color: var(--muted);
 }
 
+.feed-mix-review {
+  color: var(--ink) !important;
+  border-color: color-mix(in srgb, var(--accent, #ff5a45) 35%, transparent) !important;
+  background: color-mix(in srgb, var(--accent, #ff5a45) 12%, var(--surface)) !important;
+}
+
 .feed-reshuffle {
   appearance: none;
   cursor: pointer;

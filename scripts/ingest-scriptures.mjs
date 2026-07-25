@@ -1,10 +1,17 @@
 #!/usr/bin/env node
 /**
- * Pull curated scriptures from bolls.life (WEB) + Blue Letter Bible Daily Promises
- * (by day-of-year) → public/content/scriptures.json
+ * Pull curated scriptures from bolls.life (WEB) + Blue Letter Bible devotionals
+ * → public/content/scriptures.json
  *
- * BLB URL: https://www.blueletterbible.org/devotionals/promises/view.cfm?doy={1-365}
- * Verse text prefers WEB from bolls; reflection + link from BLB.
+ * Pools:
+ * - evergreen: curated passages + Faith's Checkbook + Spurgeon Morning
+ *   (feed shows a 5-day rotating cohort)
+ * - daily: BLB Daily Promises (feed shows today's doy only)
+ *
+ * BLB URLs (doy 1–365):
+ * - promises: .../devotionals/promises/view.cfm?doy=
+ * - checkbook: .../devotionals/faiths-checkbook/view.cfm?doy=
+ * - morning: .../devotionals/me/view.cfm?doy=&Time=am
  *
  * Usage: node scripts/ingest-scriptures.mjs
  */
@@ -12,6 +19,7 @@ import dns from 'node:dns'
 import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { proxyFeed } from './lib/feedProxy.mjs'
 import { decodeHtmlEntities } from './lib/htmlEntities.mjs'
 
 dns.setDefaultResultOrder('ipv4first')
@@ -22,11 +30,15 @@ const OUT = join(ROOT, 'public', 'content', 'scriptures.json')
 const TRANSLATION = 'WEB'
 const BASE = 'https://bolls.life'
 const BLB_PROMISE = 'https://www.blueletterbible.org/devotionals/promises/view.cfm'
-const BLB_UA =
-  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+const BLB_CHECKBOOK = 'https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm'
+const BLB_MORNING = 'https://www.blueletterbible.org/devotionals/me/view.cfm'
 /** Rolling window of daily promises in the live pool */
 const BLB_WINDOW_DAYS = 21
+/** Evergreen filler sources — larger window = longer rest between cohort returns */
+const EVERGREEN_SOURCE_WINDOW_DAYS = 60
 const BLB_DELAY_MS = 400
+const EVERGREEN_WINDOW_DAYS = 5
+const EVERGREEN_SET_SIZE = 5
 
 /** @typedef {{ id: string, reference: string, hook: string, lesson: string, topicIds: string[], bookId: number, chapter: number, verseStart: number, verseEnd: number }} Passage */
 
@@ -297,6 +309,138 @@ const PASSAGES = /** @type {Passage[]} */ ([
     verseStart: 21,
     verseEnd: 21,
   },
+  {
+    id: 'prov-16-3',
+    reference: 'Proverbs 16:3',
+    hook: 'Commit the work — then release the outcome.',
+    lesson: 'Planning is yours; results aren’t a control panel.',
+    topicIds: ['building-products', 'mental-models'],
+    bookId: 20,
+    chapter: 16,
+    verseStart: 3,
+    verseEnd: 3,
+  },
+  {
+    id: 'prov-27-23',
+    reference: 'Proverbs 27:23',
+    hook: 'Know the state of your flocks.',
+    lesson: 'Dashboards beat vibes — inspect what you own before it drifts.',
+    topicIds: ['finance', 'building-products'],
+    bookId: 20,
+    chapter: 27,
+    verseStart: 23,
+    verseEnd: 23,
+  },
+  {
+    id: 'ecc-9-10',
+    reference: 'Ecclesiastes 9:10',
+    hook: 'Whatever your hand finds — do it with might.',
+    lesson: 'Half-effort compounds into mediocrity. Finish the pass.',
+    topicIds: ['building-products', 'mental-models'],
+    bookId: 21,
+    chapter: 9,
+    verseStart: 10,
+    verseEnd: 10,
+  },
+  {
+    id: 'isa-40-31',
+    reference: 'Isaiah 40:31',
+    hook: 'Strength renews when you stop forcing the sprint.',
+    lesson: 'Burnout is often a pacing error. Wait, then run.',
+    topicIds: ['mental-models', 'current-events'],
+    bookId: 23,
+    chapter: 40,
+    verseStart: 31,
+    verseEnd: 31,
+  },
+  {
+    id: 'micah-7-8',
+    reference: 'Micah 7:8',
+    hook: 'Falling isn’t the final frame.',
+    lesson: 'Recovery is part of the strategy — expect setbacks, plan the rise.',
+    topicIds: ['mental-models', 'politics'],
+    bookId: 33,
+    chapter: 7,
+    verseStart: 8,
+    verseEnd: 8,
+  },
+  {
+    id: 'matt-5-37',
+    reference: 'Matthew 5:37',
+    hook: 'Let your yes be yes.',
+    lesson: 'Clarity beats clever hedges in product, politics, and promises.',
+    topicIds: ['building-products', 'politics'],
+    bookId: 40,
+    chapter: 5,
+    verseStart: 37,
+    verseEnd: 37,
+  },
+  {
+    id: 'matt-6-34',
+    reference: 'Matthew 6:34',
+    hook: 'Tomorrow’s anxiety is a tax on today.',
+    lesson: 'Worry borrows trouble you can’t spend yet. Act on what’s in range.',
+    topicIds: ['mental-models', 'finance'],
+    bookId: 40,
+    chapter: 6,
+    verseStart: 34,
+    verseEnd: 34,
+  },
+  {
+    id: 'luke-16-10',
+    reference: 'Luke 16:10',
+    hook: 'Faithfulness scales from small stakes.',
+    lesson: 'How you handle pennies predicts how you’ll handle platforms.',
+    topicIds: ['finance', 'building-products'],
+    bookId: 42,
+    chapter: 16,
+    verseStart: 10,
+    verseEnd: 10,
+  },
+  {
+    id: 'gal-6-9',
+    reference: 'Galatians 6:9',
+    hook: 'Don’t quit in the compound-interest zone.',
+    lesson: 'Weariness often arrives right before the harvest. Keep the cadence.',
+    topicIds: ['mental-models', 'building-products'],
+    bookId: 48,
+    chapter: 6,
+    verseStart: 9,
+    verseEnd: 9,
+  },
+  {
+    id: 'col-3-23',
+    reference: 'Colossians 3:23',
+    hook: 'Work as if the audience is bigger than the standup.',
+    lesson: 'Craft for the real standard — not just the nearest manager.',
+    topicIds: ['building-products', 'mental-models'],
+    bookId: 51,
+    chapter: 3,
+    verseStart: 23,
+    verseEnd: 23,
+  },
+  {
+    id: 'heb-12-11',
+    reference: 'Hebrews 12:11',
+    hook: 'Discipline feels like loss until the fruit shows.',
+    lesson: 'Training hurts in the moment; judgment shows later. Stay in the reps.',
+    topicIds: ['mental-models', 'finance'],
+    bookId: 58,
+    chapter: 12,
+    verseStart: 11,
+    verseEnd: 11,
+  },
+  {
+    id: '1pet-5-7',
+    reference: '1 Peter 5:7',
+    hook: 'Cast the anxiety — don’t hoard it.',
+    lesson: 'Carrying every worry is a bad load balancer. Hand off what’s not yours.',
+    topicIds: ['mental-models', 'current-events'],
+    bookId: 60,
+    chapter: 5,
+    verseStart: 7,
+    verseEnd: 7,
+  },
 ])
 
 const chapterCache = new Map()
@@ -494,13 +638,26 @@ function decodeEntities(s) {
   return decodeHtmlEntities(s)
 }
 
-/** Parse "(Galatians 3:29)" or "(1 John 4:7-8)" from BLB blockquote. */
+/** Parse "(Galatians 3:29)" or Spurgeon-style "… — Hebrews 10:17". */
 function parseReference(raw) {
   const s = stripTags(decodeEntities(raw))
-  const m = s.match(
-    /\(([1-3]?\s*[A-Za-z]+(?:\s+(?:of\s+)?[A-Za-z]+)?)\s+(\d+):(\d+)(?:\s*[-–]\s*(\d+))?\)\s*$/,
-  )
-  if (!m) return null
+  const bookPat = `([1-3]?\\s*[A-Za-z]+(?:\\s+(?:of\\s+)?[A-Za-z]+)?)`
+  const versePat = `(\\d+):(\\d+)(?:\\s*[-–]\\s*(\\d+))?`
+
+  let m = s.match(new RegExp(`\\(${bookPat}\\s+${versePat}\\)\\s*$`))
+  let verseText = ''
+  if (m) {
+    verseText = s.replace(m[0], '').replace(/\[[^\]]*\]/g, '').trim()
+  } else {
+    m = s.match(new RegExp(`[—–-]\\s*${bookPat}\\s+${versePat}\\s*$`))
+    if (!m) return null
+    verseText = s
+      .slice(0, m.index)
+      .replace(/^[\s"'“”‘’]+|[\s"'“”‘’]+$/g, '')
+      .replace(/\[[^\]]*\]/g, '')
+      .trim()
+  }
+
   const bookName = m[1].replace(/\s+/g, ' ').trim().toLowerCase()
   const bookId = BOOK_NAME_TO_ID[bookName]
   if (!bookId) return null
@@ -510,7 +667,6 @@ function parseReference(raw) {
   const reference = `${m[1].replace(/\s+/g, ' ').trim()} ${chapter}:${verseStart}${
     verseEnd !== verseStart ? `–${verseEnd}` : ''
   }`
-  const verseText = s.replace(m[0], '').replace(/\[[^\]]*\]/g, '').trim()
   return { bookId, chapter, verseStart, verseEnd, reference, verseText }
 }
 
@@ -542,25 +698,60 @@ async function buildItem(passage) {
     chapter: passage.chapter,
     verseStart: passage.verseStart,
     verseEnd: passage.verseEnd,
+    pool: 'evergreen',
   }
 }
 
 /**
- * @param {number} doy
+ * First substantive paragraph after the verse blockquote.
+ * @param {string} html
  */
-async function fetchBlbPromise(doy) {
-  const url = `${BLB_PROMISE}?doy=${doy}`
-  const res = await fetch(url, {
-    headers: {
-      'User-Agent': BLB_UA,
-      Accept: 'text/html,application/xhtml+xml',
-      'Accept-Language': 'en-US,en;q=0.9',
-    },
-  })
-  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
-  const html = await res.text()
+function lessonAfterBlockquote(html, fallback) {
+  const after = html.split(/<\/blockquote>/i)[1] || ''
+  const paras = [...after.matchAll(/<p>([\s\S]*?)<\/p>/gi)]
+    .map((m) => stripTags(decodeEntities(m[1])))
+    .filter((t) => t.length > 40)
+  if (!paras.length) return fallback
+  const joined = paras.slice(0, 2).join(' ')
+  return joined.length > 420 ? `${joined.slice(0, 417).trim()}…` : joined
+}
 
-  const titleM = html.match(/<h1>\s*Daily Promises\s*<br\s*\/?>\s*\(([^)]+)\)\s*<\/h1>/i)
+/**
+ * @param {number} doy
+ * @param {'promise' | 'checkbook' | 'morning'} kind
+ */
+async function fetchBlbDevotional(doy, kind) {
+  /** @type {{ url: string, idPrefix: string, pool: 'daily' | 'evergreen', h1Re: RegExp, hookPrefix: string }} */
+  const meta =
+    kind === 'promise'
+      ? {
+          url: `${BLB_PROMISE}?doy=${doy}`,
+          idPrefix: 'blb-promise-doy',
+          pool: 'daily',
+          h1Re: /<h1>\s*Daily Promises\s*<br\s*\/?>\s*\(([^)]+)\)\s*<\/h1>/i,
+          hookPrefix: 'Daily promise',
+        }
+      : kind === 'checkbook'
+        ? {
+            url: `${BLB_CHECKBOOK}?doy=${doy}`,
+            idPrefix: 'blb-checkbook-doy',
+            pool: 'evergreen',
+            h1Re: /<h1>\s*C\.\s*H\.\s*Spurgeon's\s*<br\s*\/?>\s*Faith's Checkbook\s*<br\s*\/?>\s*\(([^)]+)\)\s*<\/h1>/i,
+            hookPrefix: "Faith's Checkbook",
+          }
+        : {
+            url: `${BLB_MORNING}?doy=${doy}&Time=am`,
+            idPrefix: 'blb-morning-doy',
+            pool: 'evergreen',
+            h1Re: /<h1>\s*C\.\s*H\.\s*Spurgeon's\s*<br\s*\/?>\s*Morning Reading\s*<br\s*\/?>\s*\(([^)]+)\)\s*<\/h1>/i,
+            hookPrefix: 'Morning reading',
+          }
+
+  const proxied = await proxyFeed(meta.url)
+  if (!proxied.ok) throw new Error(proxied.error || `proxy ${proxied.status}`)
+  const html = proxied.body
+
+  const titleM = html.match(meta.h1Re)
   const dateLabel = titleM ? stripTags(titleM[1]) : `Day ${doy}`
 
   const bqM = html.match(/<blockquote>\s*<p>([\s\S]*?)<\/p>\s*<\/blockquote>/i)
@@ -568,12 +759,19 @@ async function fetchBlbPromise(doy) {
   const parsed = parseReference(bqM[1])
   if (!parsed) throw new Error(`unparsed ref: ${stripTags(bqM[1]).slice(0, 80)}`)
 
-  const reflM = html.match(
-    /<h4>\s*Reflection\s*<\/h4>\s*<p>([\s\S]*?)<\/p>/i,
-  )
-  const reflection = reflM
-    ? stripTags(decodeEntities(reflM[1]))
-    : 'Sit with this promise — then take one faithful next step.'
+  let lesson = ''
+  if (kind === 'promise') {
+    const reflM = html.match(/<h4>\s*Reflection\s*<\/h4>\s*<p>([\s\S]*?)<\/p>/i)
+    lesson = reflM
+      ? stripTags(decodeEntities(reflM[1]))
+      : 'Sit with this promise — then take one faithful next step.'
+    lesson = `${lesson} Open the full Blue Letter Bible reading for ${dateLabel}.`
+  } else {
+    lesson = lessonAfterBlockquote(
+      html,
+      `Sit with ${parsed.reference} — then take one faithful next step.`,
+    )
+  }
 
   let text = ''
   try {
@@ -590,19 +788,47 @@ async function fetchBlbPromise(doy) {
   if (!text) throw new Error('no verse text')
 
   return {
-    id: `blb-promise-doy-${doy}`,
+    id: `${meta.idPrefix}-${doy}`,
     reference: parsed.reference,
     text,
     translation: TRANSLATION,
-    hook: `Daily promise · ${dateLabel}`,
-    lesson: `${reflection} Open the full Blue Letter Bible reading for ${dateLabel}.`,
+    hook: `${meta.hookPrefix} · ${dateLabel}`,
+    lesson,
     topicIds: ['mental-models', 'current-events'],
-    sourceUrl: url,
+    sourceUrl: meta.url,
     bookId: parsed.bookId,
     chapter: parsed.chapter,
     verseStart: parsed.verseStart,
     verseEnd: parsed.verseEnd,
+    pool: meta.pool,
   }
+}
+
+async function ingestBlbWindow(kind, windowDays, label) {
+  const doys = recentDoys(windowDays)
+  console.log(
+    `${label} doy ${doys[0]}…${doys[doys.length - 1]} (${doys.length} days)`,
+  )
+  const items = []
+  let ok = 0
+  for (const doy of doys) {
+    try {
+      const item = await fetchBlbDevotional(doy, kind)
+      items.push(item)
+      ok += 1
+      console.log(`✓ ${label} doy=${doy} · ${item.reference}`)
+    } catch (err) {
+      console.warn(
+        `✗ ${label} doy=${doy}:`,
+        err instanceof Error ? err.message : err,
+      )
+    }
+    await sleep(BLB_DELAY_MS)
+  }
+  if (ok === 0) {
+    console.warn(`Warning: 0/${doys.length} ${label} fetched`)
+  }
+  return items
 }
 
 async function main() {
@@ -618,21 +844,21 @@ async function main() {
     }
   }
 
-  const doys = recentDoys(BLB_WINDOW_DAYS)
-  console.log(`BLB Daily Promises doy ${doys[0]}…${doys[doys.length - 1]} (${doys.length} days)`)
-  for (const doy of doys) {
-    try {
-      const item = await fetchBlbPromise(doy)
-      items.push(item)
-      console.log(`✓ BLB doy=${doy} · ${item.reference}`)
-    } catch (err) {
-      console.warn(
-        `✗ BLB doy=${doy}:`,
-        err instanceof Error ? err.message : err,
-      )
-    }
-    await sleep(BLB_DELAY_MS)
-  }
+  items.push(...(await ingestBlbWindow('promise', BLB_WINDOW_DAYS, 'BLB promise')))
+  items.push(
+    ...(await ingestBlbWindow(
+      'checkbook',
+      EVERGREEN_SOURCE_WINDOW_DAYS,
+      'BLB checkbook',
+    )),
+  )
+  items.push(
+    ...(await ingestBlbWindow(
+      'morning',
+      EVERGREEN_SOURCE_WINDOW_DAYS,
+      'BLB morning',
+    )),
+  )
 
   if (!items.length) {
     console.error('No scriptures fetched')
@@ -642,17 +868,26 @@ async function main() {
   const byId = new Map()
   for (const item of items) byId.set(item.id, item)
 
+  const evergreen = [...byId.values()].filter((i) => i.pool !== 'daily').length
+  const daily = [...byId.values()].filter((i) => i.pool === 'daily').length
+
   const payload = {
     updatedAt: new Date().toISOString(),
     translation: TRANSLATION,
-    source: 'bolls.life + blueletterbible.org/devotionals/promises',
+    source:
+      'bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)',
     blbWindowDays: BLB_WINDOW_DAYS,
+    evergreenSourceWindowDays: EVERGREEN_SOURCE_WINDOW_DAYS,
+    evergreenWindowDays: EVERGREEN_WINDOW_DAYS,
+    evergreenSetSize: EVERGREEN_SET_SIZE,
     items: [...byId.values()],
   }
 
   await mkdir(dirname(OUT), { recursive: true })
   await writeFile(OUT, `${JSON.stringify(payload, null, 2)}\n`, 'utf8')
-  console.log(`Wrote ${byId.size} scriptures → ${OUT}`)
+  console.log(
+    `Wrote ${byId.size} scriptures (${evergreen} evergreen, ${daily} daily) → ${OUT}`,
+  )
 }
 
 main().catch((err) => {

@@ -1,9 +1,13 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useKept } from '../hooks/useKept'
+import { useThoughts } from '../hooks/useThoughts'
 import './Nav.css'
 
 export function Nav() {
-  const { count } = useKept()
+  const { count: keptCount } = useKept()
+  const { thoughts } = useThoughts()
+  const openMoments = thoughts.filter((t) => !t.promotedIdeaId).length
+  const badge = keptCount + openMoments
 
   return (
     <>
@@ -26,11 +30,11 @@ export function Nav() {
             <NavLink to="/feed">Feed</NavLink>
             <NavLink to="/ask">Ask</NavLink>
             <NavLink to="/topics">Topics</NavLink>
-            <NavLink to="/resources">Resources</NavLink>
-            <NavLink to="/books">Gutenberg</NavLink>
+            <NavLink to="/resources">Sites</NavLink>
+            <NavLink to="/books">Books</NavLink>
             <NavLink to="/kept" className="nav-kept">
               Kept
-              {count > 0 && <span className="nav-badge">{count}</span>}
+              {badge > 0 && <span className="nav-badge">{badge}</span>}
             </NavLink>
             <NavLink to="/settings">Settings</NavLink>
           </nav>
@@ -47,7 +51,7 @@ export function Nav() {
         <NavLink to="/resources">Sites</NavLink>
         <NavLink to="/kept">
           Kept
-          {count > 0 && <span className="nav-badge">{count}</span>}
+          {badge > 0 && <span className="nav-badge">{badge}</span>}
         </NavLink>
         <NavLink to="/settings">Settings</NavLink>
       </nav>

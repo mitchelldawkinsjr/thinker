@@ -1,13 +1,23 @@
-import { useState, type CSSProperties } from 'react'
+import { lazy, Suspense, useState, type CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import type { Idea } from '../data/types'
-import { presentIdea } from '../data/ideaDepth'
+import { presentIdea } from '../data/presentIdea'
 import { getTopic } from '../data/topics'
 import { gutenbergUrl } from '../data/gutenberg'
+import { parentFromIdea } from '../data/thoughts'
 import { useKept } from '../hooks/useKept'
-import { AskPanel } from './AskPanel'
+import { useDraftReview } from '../hooks/useDraftReview'
+import { useThoughts } from '../hooks/useThoughts'
 import { ExternalCta, ExternalLinkIcon, sourceMediaParts } from './CardMedia'
+import { CardFlip, CardNoteBack } from './CardFlip'
+import { TrashIcon } from './TrashIcon'
+import { formatAudioTime } from '../lib/formatTime'
+import { shareIdea, shareStatusLabel, type ShareResult } from '../lib/exportThought'
 import './IdeaCard.css'
+
+const AskPanel = lazy(() =>
+  import('./AskPanel').then((m) => ({ default: m.AskPanel })),
+)
 
 type Props = {
   idea: Idea
@@ -17,20 +27,6 @@ type Props = {
   onHide?: () => void
   index?: number
   total?: number
-}
-
-function TrashIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M9 3h6m-8 4h10m-9 0v11a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V7M10 11v5m4-5v5"
-        stroke="currentColor"
-        strokeWidth="1.75"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
 }
 
 function resolveSourceUrl(idea: Idea): string | undefined {
@@ -50,20 +46,88 @@ export function IdeaCard({
 }: Props) {
   const topic = getTopic(idea.topicId)
   const { kept, toggle } = useKept()
+  const { saveMoment, updateNote, promote, demote, thoughts } = useThoughts()
+  const { approve, deny, isPending } = useDraftReview()
+  const reviewing = Boolean(idea.draftReview) && isPending(idea.id)
   const saved = kept.has(idea.id)
   const sourceHref = resolveSourceUrl(idea)
+
+  const [flipped, setFlipped] = useState(false)
+  const [momentAt, setMomentAt] = useState(0)
+  /** Listening stamp vs plain Keep-with-note */
+  const [noteMode, setNoteMode] = useState<'moment' | 'keep'>('keep')
+
+  // Plain Keep note for this card (not a listening stamp) — newest first in thoughts
+  const keepThought = thoughts.find(
+    (t) => t.parent.kind === 'idea' && t.parent.id === idea.id && t.startSec === 0,
+  )
+  /** This card was promoted from a thought — can send it back to edit */
+  const sourceThought = thoughts.find((t) => t.promotedIdeaId === idea.id)
+
+  const captureMoment = (startSec: number) => {
+    setNoteMode('moment')
+    setMomentAt(startSec)
+    setFlipped(true)
+  }
+
+  const openKeepNote = () => {
+    setNoteMode('keep')
+    setMomentAt(0)
+    setFlipped(true)
+  }
+
+  const onKeepClick = () => {
+    // Compact lists (Kept / topic): Kept toggles off; Add note is separate
+    if (compact && saved) {
+      toggle(idea.id)
+      return
+    }
+    openKeepNote()
+  }
+
+  // Every clip stamp saved on this card — shown as markers/chips on the player
+  const savedMoments = thoughts
+    .filter((t) => t.parent.kind === 'idea' && t.parent.id === idea.id && t.startSec > 0)
+    .map((t) => ({ id: t.id, startSec: t.startSec, note: t.note }))
+
   const audioParts = idea.audioUrl
     ? sourceMediaParts(idea.audioUrl, 'Listen', 'idea-btn ghost idea-btn--link', {
         title: idea.title,
         artist: idea.source.replace(/\s*\+\s*audio\s*$/i, '').trim(),
+        startAt: idea.audioStartSec,
+        moments: savedMoments,
+        onCaptureMoment: captureMoment,
       })
     : null
   const sourceParts = sourceHref
     ? sourceMediaParts(sourceHref, 'Source', 'idea-btn ghost idea-btn--link', {
         title: idea.title,
         artist: idea.source,
+        startAt: idea.audioStartSec,
+        moments: idea.audioUrl ? undefined : savedMoments,
+        onCaptureMoment: idea.audioUrl ? undefined : captureMoment,
       })
     : null
+  // Which player the moment came from decides the audio url stored with it.
+  const momentParent = idea.audioUrl
+    ? parentFromIdea(idea)
+    : parentFromIdea({ ...idea, audioUrl: sourceHref })
+
+  const commitNote = (note: string, promoteIt: boolean) => {
+    if (noteMode === 'keep' && keepThought) {
+      updateNote(keepThought.id, note)
+      if (promoteIt && !keepThought.promotedIdeaId) promote(keepThought.id)
+    } else {
+      saveMoment({
+        parent: noteMode === 'moment' ? momentParent : parentFromIdea(idea),
+        startSec: noteMode === 'moment' ? momentAt : 0,
+        note,
+        promote: promoteIt,
+      })
+    }
+    // Always keep the source card — Save as idea adds a second card, it doesn't replace this one
+    if (!saved) toggle(idea.id)
+  }
   // Prefer dedicated audioUrl for the player; keep sourceUrl as the page CTA when present.
   const media = audioParts?.media ?? sourceParts?.media
   const sourceCta = sourceParts?.cta
@@ -71,13 +135,20 @@ export function IdeaCard({
 
   const [expanded, setExpanded] = useState(compact ? true : false)
   const [askOpen, setAskOpen] = useState(false)
+  const [shareResult, setShareResult] = useState<ShareResult | null>(null)
+
+  const onShare = async () => {
+    const result = await shareIdea(idea)
+    if (result === 'cancelled') return
+    setShareResult(result)
+    window.setTimeout(() => setShareResult(null), 1400)
+  }
 
   const showHookAsTitle = hook !== idea.title
 
-  return (
-    <div className="idea-stack">
+  const front = (
       <article
-        className={`idea-card ${compact ? 'idea-card--compact' : ''} ${expanded ? 'is-expanded' : ''}`}
+        className={`idea-card ${compact ? 'idea-card--compact' : ''} ${expanded ? 'is-expanded' : ''} ${reviewing ? 'idea-card--review' : ''}`}
         style={
           {
             '--card-accent': topic?.accent ?? '#ff5a45',
@@ -90,11 +161,14 @@ export function IdeaCard({
           <Link to={`/topics/${idea.topicId}`} className="idea-topic">
             #{topic?.name ?? idea.topicId}
           </Link>
-          {!compact && typeof index === 'number' && typeof total === 'number' && (
-            <span className="idea-progress">
-              {index + 1} / {total}
-            </span>
-          )}
+          <div className="idea-card-top-right">
+            {reviewing && <span className="idea-review-badge">Draft · review</span>}
+            {!compact && typeof index === 'number' && typeof total === 'number' && (
+              <span className="idea-progress">
+                {index + 1} / {total}
+              </span>
+            )}
+          </div>
         </header>
 
         {showHookAsTitle ? (
@@ -134,6 +208,22 @@ export function IdeaCard({
             </button>
           )}
         </div>
+
+        {reviewing && !compact && (
+          <div className="idea-review-bar">
+            <p className="idea-review-copy">
+              First look — approve to keep it in your pool, or deny to drop it.
+            </p>
+            <div className="idea-review-actions">
+              <button type="button" className="idea-btn ghost" onClick={() => deny(idea.id)}>
+                Deny
+              </button>
+              <button type="button" className="idea-btn keep" onClick={() => approve(idea)}>
+                Approve
+              </button>
+            </div>
+          </div>
+        )}
 
         {onHide && (
           <div className="idea-dismiss">
@@ -209,14 +299,42 @@ export function IdeaCard({
                 20 min
               </ExternalCta>
             ) : null}
-            <button
-              type="button"
-              className={`idea-btn keep ${saved ? 'is-kept' : ''}`}
-              onClick={() => toggle(idea.id)}
-              aria-pressed={saved}
-            >
-              {saved ? 'Kept' : 'Keep'}
-            </button>
+            {!reviewing && (
+              <button
+                type="button"
+                className={`idea-btn keep ${saved ? 'is-kept' : ''}`}
+                onClick={onKeepClick}
+                aria-pressed={saved}
+                aria-expanded={!compact && flipped}
+              >
+                {saved ? 'Kept' : 'Keep'}
+              </button>
+            )}
+            {sourceThought && !reviewing && (
+              <button
+                type="button"
+                className="idea-btn ghost"
+                onClick={() => demote(sourceThought.id)}
+                title="Send back to Thoughts to edit, then promote again"
+              >
+                Back to thought
+              </button>
+            )}
+            {compact && saved && !reviewing && !sourceThought && (
+              <button
+                type="button"
+                className="idea-btn ghost"
+                onClick={openKeepNote}
+                aria-expanded={flipped}
+              >
+                {keepThought?.note.trim() ? 'Edit note' : 'Add note'}
+              </button>
+            )}
+            {(compact || saved) && !reviewing && (
+              <button type="button" className="idea-btn ghost" onClick={() => void onShare()}>
+                {shareStatusLabel(shareResult)}
+              </button>
+            )}
             {!compact && (
               <button
                 type="button"
@@ -240,16 +358,46 @@ export function IdeaCard({
           </div>
         </footer>
       </article>
+  )
+
+  return (
+    <div className="idea-stack">
+      <CardFlip
+        flipped={flipped}
+        className={compact ? 'card-flip--fluid' : ''}
+        front={front}
+        back={
+          <CardNoteBack
+            accent={topic?.accent ?? '#ff5a45'}
+            surface={topic?.color ?? '#1a2332'}
+            kicker={noteMode === 'moment' ? 'Listening moment' : 'Keep · your note'}
+            title={idea.title}
+            detail={
+              noteMode === 'moment'
+                ? `Moment at ${formatAudioTime(momentAt)} · ${idea.source}`
+                : idea.source
+            }
+            placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+            active={flipped}
+            initialNote={noteMode === 'keep' ? (keepThought?.note ?? '') : ''}
+            allowPromote={noteMode === 'moment' || !keepThought?.promotedIdeaId}
+            onCancel={() => setFlipped(false)}
+            onSave={commitNote}
+          />
+        }
+      />
 
       {askOpen && !compact && (
-        <AskPanel
-          compact
-          ideaTitle={idea.title}
-          ideaBody={lesson}
-          topicId={idea.topicId}
-          topicName={topic?.name}
-          initialQuestion={`What should I read next to go deeper on “${idea.title}”?`}
-        />
+        <Suspense fallback={null}>
+          <AskPanel
+            compact
+            ideaTitle={idea.title}
+            ideaBody={lesson}
+            topicId={idea.topicId}
+            topicName={topic?.name}
+            initialQuestion={`What should I read next to go deeper on “${idea.title}”?`}
+          />
+        </Suspense>
       )}
     </div>
   )

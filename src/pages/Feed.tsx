@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { buildMixedFeed, feedKindLabel, type FeedItem } from '../data/feed'
 import { resolveTopicFilter } from '../data/subscriptions'
 import { getTopic } from '../data/topics'
-import { useBookIdeas } from '../hooks/useBookIdeas'
+import { useExtraIdeas } from '../hooks/useExtraIdeas'
 import { useNewsItems } from '../hooks/useNews'
 import { useScriptures } from '../hooks/useScriptures'
 import { useSubscriptions } from '../hooks/useSubscriptions'
@@ -15,19 +15,20 @@ import {
   stabilizeFeedOrder,
 } from '../lib/daySession'
 import { hideFromPool, markSeen } from '../lib/feedRotation'
-import { resolvePlayableUrl } from '../lib/mediaUrl'
 import { IdeaCard } from '../components/IdeaCard'
 import {
   BookFeedCard,
+  NewsFeedCard,
+  ResourceFeedCard,
+  ScriptureFeedCard,
+} from '../components/FeedCards'
+import {
   GravityGameFeedCard,
   MathGameFeedCard,
   MemoryGameFeedCard,
-  NewsFeedCard,
   ReactionGameFeedCard,
-  ResourceFeedCard,
-  ScriptureFeedCard,
   SpotGameFeedCard,
-} from '../components/FeedCards'
+} from '../components/FeedGames'
 import './Feed.css'
 
 /** Matches CodePen comment-card fly-off duration */
@@ -54,10 +55,12 @@ function renderFeedCard(item: FeedItem, nav: NavProps): ReactNode {
     case 'book':
       return (
         <BookFeedCard
+          id={item.id}
           title={item.title}
           author={item.author}
           why={item.why}
           url={item.url}
+          topicId={item.topicId}
           {...nav}
         />
       )
@@ -92,27 +95,18 @@ export function Feed() {
   const { items: curatedNews, updatedAt } = useNewsItems()
   const { items: userNews } = useUserNewsItems(subscriptions.customFeeds)
   const { items: scriptures } = useScriptures()
-  const { items: bookIdeas, updatedAt: bookIdeasUpdatedAt } = useBookIdeas()
+  const {
+    items: extraIdeas,
+    bookIdeasUpdatedAt,
+    catalogUpdatedAt,
+    pendingDraftCount,
+  } = useExtraIdeas()
 
   const news = useMemo(() => {
     const byId = new Map<string, (typeof curatedNews)[number]>()
     for (const n of [...curatedNews, ...userNews]) byId.set(n.id, n)
-    // Local test: /feed?demo=youtube&media=video → Play video lightbox
-    if (params.get('demo') === 'youtube') {
-      byId.set('demo-youtube', {
-        id: 'demo-youtube',
-        hook: 'KevOnStage Studios (demo)',
-        title: 'YouTube lightbox test',
-        lesson: 'Tap Play video to open the embed lightbox.',
-        source: 'KevOnStage Studios',
-        sourceUrl: 'https://www.youtube.com/watch?v=cybid3gX8xI',
-        publishedAt: new Date().toISOString(),
-        expiresAt: new Date(Date.now() + 86400000).toISOString(),
-        topicIds: ['current-events'],
-      })
-    }
     return [...byId.values()]
-  }, [curatedNews, userNews, params])
+  }, [curatedNews, userNews])
 
   const resolvedTopic = useMemo(
     () => resolveTopicFilter(topicFilter, subscriptions),
@@ -125,14 +119,14 @@ export function Feed() {
       news,
       scriptures,
       reshuffleKey: reshuffle,
-      extraIdeas: bookIdeas,
+      extraIdeas,
       subscriptions,
     })
     // Freeze today’s order so remounts / async loads / markSeen don’t reshuffle mid-session
     return stabilizeFeedOrder(mixed, topicKey, reshuffle)
     // hideTick re-runs build after permanent dismiss
     // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional refresh keys
-  }, [resolvedTopic, news, scriptures, reshuffle, bookIdeas, subscriptions, hideTick, topicKey])
+  }, [resolvedTopic, news, scriptures, reshuffle, extraIdeas, subscriptions, hideTick, topicKey])
 
   const [index, setIndex] = useState(() => getFeedCursor(topicKey))
   /** Direction for card enter animation: next → fly off left, prev → fly off right */
@@ -170,28 +164,6 @@ export function Feed() {
     const id = items[index]?.id
     setFeedCursor(topicKey, index, id)
   }, [topicKey, index, items])
-
-  // Jump to first direct audio/video news card for local testing (?media=audio|video)
-  const mediaWant = params.get('media')
-  useEffect(() => {
-    if (mediaWant !== 'audio' && mediaWant !== 'video') return
-    if (items.length === 0) return
-    const i = items.findIndex((it) => {
-      if (it.kind !== 'news') return false
-      return resolvePlayableUrl(it.news.sourceUrl, it.news.angles).kind === mediaWant
-    })
-    if (i >= 0) setIndex(i)
-  }, [items, mediaWant])
-
-  // Jump to a brain game for local testing (?game=reaction|spot|memory|math|gravity)
-  const gameWant = params.get('game')
-  useEffect(() => {
-    if (!gameWant || items.length === 0) return
-    const i = items.findIndex(
-      (it) => it.kind === 'game' && it.gameId === gameWant,
-    )
-    if (i >= 0) setIndex(i)
-  }, [items, gameWant])
 
   const item = items[index]
 
@@ -277,21 +249,26 @@ export function Feed() {
         <p>
           {topic
             ? `Mixed ideas, book summaries, news, scripture, and sources for ${topic.name}.`
-            : 'Total mix — ideas, book summaries, politics/news, scripture, free sites, Gutenberg. Unseen cards rise; news expires so it doesn’t go stale.'}{' '}
+            : 'Total mix — ideas, book summaries, news, scripture, free sites, books. Unseen cards rise; news expires so it doesn’t go stale.'}{' '}
           <Link to="/settings">Customize</Link>
         </p>
         <div className="feed-mix">
           <span>{counts.idea} ideas</span>
+          {pendingDraftCount > 0 && (
+            <span className="feed-mix-review">
+              {pendingDraftCount} draft{pendingDraftCount === 1 ? '' : 's'} to review
+            </span>
+          )}
           <span>{counts.news} news</span>
           <span>{counts.scripture} scripture</span>
           <span>{counts.resource} sites</span>
           <span>{counts.book} books</span>
-          {counts.game > 0 && <span>{counts.game} brain games</span>}
+          {counts.game > 0 && <span>{counts.game} quick games</span>}
           <button type="button" className="feed-reshuffle" onClick={reshuffleFeed}>
             Reshuffle
           </button>
         </div>
-        {(updatedAt || bookIdeasUpdatedAt) && (
+        {(updatedAt || bookIdeasUpdatedAt || catalogUpdatedAt) && (
           <p className="feed-updated">
             {updatedAt && (
               <>
@@ -309,6 +286,16 @@ export function Feed() {
               <>
                 Books{' '}
                 {new Date(bookIdeasUpdatedAt).toLocaleString(undefined, {
+                  month: 'short',
+                  day: 'numeric',
+                })}
+              </>
+            )}
+            {(updatedAt || bookIdeasUpdatedAt) && catalogUpdatedAt ? ' · ' : null}
+            {catalogUpdatedAt && (
+              <>
+                Ideas{' '}
+                {new Date(catalogUpdatedAt).toLocaleString(undefined, {
                   month: 'short',
                   day: 'numeric',
                 })}

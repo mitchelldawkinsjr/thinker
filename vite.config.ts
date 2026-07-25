@@ -183,6 +183,18 @@ export default defineConfig(({ mode }) => {
           navigateFallback: '/index.html',
           runtimeCaching: [
             {
+              urlPattern: ({ url }) => url.pathname.startsWith('/content/'),
+              handler: 'NetworkFirst',
+              options: {
+                cacheName: 'thinker-content-cache',
+                networkTimeoutSeconds: 4,
+                expiration: {
+                  maxEntries: 12,
+                  maxAgeSeconds: 60 * 60 * 24,
+                },
+              },
+            },
+            {
               // Never cache LLM calls
               urlPattern: ({ url }) =>
                 url.pathname.startsWith('/api/ollama') ||

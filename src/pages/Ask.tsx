@@ -9,7 +9,7 @@ export function Ask() {
         <h2>How this works</h2>
         <p>
           Instant catalog paths first, then <strong>OpenAI</strong> (or Ollama fallback)
-          appends a short answer with outbound links from Thinker’s resources and Gutenberg —
+          appends a short answer with outbound links from Thinker’s sites and books —
           so you dig deeper on purpose instead of endless scrolling.
         </p>
         <ul>

@@ -1,0 +1,81 @@
+name: Draft ideas
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Draft mode"
+        required: true
+        default: all-thin
+        type: choice
+        options:
+          - all-thin
+          - football-film
+          - nba-analytics
+          - wnba
+          - sports-biz
+          - ai-agents
+      count:
+        description: "Ideas per topic"
+        required: true
+        default: "4"
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Draft idea cards
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4o-mini
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "Missing secret OPENAI_API_KEY"
+            exit 1
+          fi
+          COUNT="${{ inputs.count }}"
+          MODE="${{ inputs.mode }}"
+          if [ "$MODE" = "all-thin" ]; then
+            node scripts/draft-ideas.mjs --all-thin --count "$COUNT"
+          else
+            node scripts/draft-ideas.mjs --topic "$MODE" --count "$COUNT"
+          fi
+      - name: Open PR with drafts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! ls scripts/drafts/ideas-*.json >/dev/null 2>&1; then
+            echo "No draft files produced"
+            exit 1
+          fi
+          BRANCH="draft-ideas-$(date -u +%Y%m%d-%H%M%S)"
+          git config user.name "thinker-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add -f scripts/drafts/ideas-*.json
+          git commit -m "chore: LLM idea drafts for review"
+          git push -u origin HEAD
+          gh pr create \
+            --title "chore: LLM idea drafts for review" \
+            --body "## Summary
+          - Auto-generated Idea card drafts (\`draft-ideas.mjs\`)
+          - Review JSON under \`scripts/drafts/\`, then promote keepers:
+
+          \`\`\`bash
+          npm run promote:ideas -- scripts/drafts/<file>.json --all
+          npm run promote:ideas -- scripts/drafts/<file>.json --ids id1,id2
+          \`\`\`
+
+          - Promote writes \`public/content/ideas.json\` (21-day TTL). Do not merge drafts into \`ideas.ts\` unless promoting to evergreen.
+
+          ## Test plan
+          - [ ] Skim draft titles/bodies for voice and duplicates
+          - [ ] Promote selected ids locally
+          - [ ] Confirm feed shows new idea cards after deploy"

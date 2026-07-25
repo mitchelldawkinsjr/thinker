@@ -56,7 +56,7 @@ export function Resources() {
           placeholder="Filter sites…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          aria-label="Filter resources"
+          aria-label="Filter sites"
         />
         <div className="resources-cats" role="tablist" aria-label="Categories">
           {resourceCategories.map((c) => (

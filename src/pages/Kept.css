@@ -20,6 +20,19 @@
   color: var(--muted);
 }
 
+.kept-tools {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.kept-pending {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .kept-empty {
   display: flex;
   flex-direction: column;
@@ -33,6 +46,174 @@
 
 .kept-empty p {
   margin: 0;
+  color: var(--muted);
+}
+
+.kept-moments,
+.kept-ideas {
+  margin-bottom: 2rem;
+}
+
+.kept-moments h2,
+.kept-ideas h2 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.kept-moments-lead {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.kept-moment-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.kept-moment-item {
+  list-style: none;
+}
+
+.kept-moment-item .card-flip {
+  /* Room for the note face when the row flips over */
+  --flip-min-height: 330px;
+}
+
+.kept-moment-item .card-flip-front {
+  display: block;
+}
+
+.kept-moment {
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+}
+
+.kept-moment-player {
+  margin: 0 0 0.75rem;
+  padding: 0.3rem;
+  border-radius: 1.15rem;
+  background: #171e28;
+}
+
+.kept-stamp-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.kept-stamp {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.kept-stamp:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.kept-stamp-time {
+  flex-shrink: 0;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+  color: var(--accent, #ff5a45);
+}
+
+.kept-stamp-note {
+  flex: 1;
+  min-width: 10rem;
+  line-height: 1.4;
+}
+
+.kept-stamp-note.is-empty {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.kept-stamp-actions {
+  display: flex;
+  gap: 0.35rem;
+  margin-left: auto;
+}
+
+.kept-stamp-btn {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.kept-stamp-btn:hover {
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+}
+
+.kept-moment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+.kept-moment-time {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+  color: var(--accent, #ff5a45);
+}
+
+.kept-moment-parent {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.kept-moment-note {
+  margin: 0 0 0.75rem;
+  line-height: 1.45;
+}
+
+.kept-moment-verse {
+  margin: 0 0 0.65rem;
+  padding: 0;
+  border: 0;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.kept-moment-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.kept-moment-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--muted);
 }
 

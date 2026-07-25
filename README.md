@@ -2,7 +2,7 @@
 
 **Live app:** [https://thinker.360web.cloud](https://thinker.360web.cloud)
 
-Deepstash-style microlearning PWA — bite-sized ideas on AI, sports, history, politics, and finance. Replace doomscrolling with thinking.
+Deepstash-style PWA — bite-sized ideas on AI, sports, history, politics, and finance. Replace doomscrolling with thinking.
 
 ---
 
@@ -67,17 +67,45 @@ Without either, the rest of the app still works — Ask falls back to instant ca
 | `npm run build` | Production build → `dist/` |
 | `npm run preview` | Preview the production build |
 | `npm run lint` | Lint with oxlint |
+| `npm run draft:ideas` | LLM-draft Idea cards → `scripts/drafts/` + feed review queue (`idea-drafts.json`) |
+| `npm run promote:ideas` | Promote approved drafts → `public/content/ideas.json` |
 
 ---
 
 ## What’s inside
 
-- **Feed** — mixed ideas, free sites, Gutenberg books; optional Ask on a card
+- **Feed** — mixed ideas, free sites, books; optional Ask on a card
 - **Ask** — instant catalog paths + optional LLM refine
-- **Topics / Resources / Gutenberg / Kept** — curated learning destinations + thoughts you keep for later
+- **Topics / Sites / Books / Kept** — curated learning destinations + ideas you keep for later
 - **PWA** — installable, offline shell
 
-Content lives in `src/data/`.
+Evergreen ideas live in `src/data/ideas.ts`. Rotating LLM-promoted ideas load from `public/content/ideas.json`.
+
+### Refresh idea cards (LLM drafts)
+
+1. Draft (writes review-only JSON under `scripts/drafts/` — never edits `ideas.ts`):
+
+```bash
+npm run draft:ideas -- --topic football-film --count 4
+# or fill topics under 8 cards:
+npm run draft:ideas -- --all-thin
+# or expand listening moments exported from Kept:
+npm run draft:ideas -- --seeds ~/Downloads/thinker-thought-seeds-YYYY-MM-DD.json
+```
+
+2. Review the draft file, then promote keepers (21-day TTL pool):
+
+```bash
+npm run promote:ideas -- scripts/drafts/ideas-football-film-YYYY-MM-DD.json --all
+# or selected ids:
+npm run promote:ideas -- scripts/drafts/ideas-football-film-YYYY-MM-DD.json --ids draft-foo,draft-bar
+```
+
+3. Commit `public/content/ideas.json` and deploy (or open a PR).
+
+**Listening moments:** While playing book/podcast audio, tap **+** on the player → Save or Save as idea. Moments live under Kept; export seeds to feed `draft:ideas`.
+
+GitHub: Actions → **Draft ideas** (`workflow_dispatch`) opens a PR with draft JSON for review. Requires repo secret `OPENAI_API_KEY`.
 
 ---
 

@@ -79,11 +79,11 @@ export function Books() {
     <div className="books-page">
       <header className="books-head">
         <p className="books-kicker">Free knowledge</p>
-        <h1>Project Gutenberg shelf</h1>
+        <h1>Books shelf</h1>
         <p>
           Pull ideas from public-domain ebooks and open the full text on{' '}
           <a href={GUTENBERG_HOME} target="_blank" rel="noreferrer">
-            gutenberg.org
+            Project Gutenberg
           </a>
           . Shelves below map to Thinker topics — politics, finance, history, and clearer thinking.
         </p>
