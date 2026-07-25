@@ -114,7 +114,20 @@ export type Subscriptions = {
   disabledFeedIds: string[]
   customSites: CustomSite[]
   customFeeds: CustomFeed[]
+  /**
+   * Topics that should NOT show a Think prompt on news cards.
+   * Defaults to sports topics (same as the old hard-coded skip).
+   */
+  thinkPromptOff: TopicId[]
 }
+
+/** Sports topics historically skipped Think prompts — default Off set. */
+export const DEFAULT_THINK_PROMPT_OFF: TopicId[] = [
+  'nba-analytics',
+  'wnba',
+  'football-film',
+  'sports-biz',
+]
 
 export const STORAGE_KEY = 'thinker-subscriptions-v1'
 export const USER_NEWS_CACHE_KEY = 'thinker-user-news-v2'
@@ -138,6 +151,7 @@ export const DEFAULT_SUBSCRIPTIONS: Subscriptions = {
   disabledFeedIds: [],
   customSites: [],
   customFeeds: [],
+  thinkPromptOff: [...DEFAULT_THINK_PROMPT_OFF],
 }
 
 export const KIND_LABELS: { key: ContentKindKey; label: string; hint: string }[] = [
@@ -210,6 +224,9 @@ export function normalizeSubscriptions(raw: unknown): Subscriptions {
     customFeeds: Array.isArray(o.customFeeds)
       ? o.customFeeds.map(normalizeCustomFeed).filter((x): x is CustomFeed => x !== null)
       : [],
+    thinkPromptOff: Array.isArray(o.thinkPromptOff)
+      ? o.thinkPromptOff.filter(isTopicId)
+      : [...DEFAULT_THINK_PROMPT_OFF],
   }
 }
 
@@ -265,4 +282,15 @@ export function isHttpsUrl(url: string): boolean {
 
 export function newId(prefix: string): string {
   return `${prefix}-${crypto.randomUUID().slice(0, 8)}`
+}
+
+/** True when a news card’s topics should show a Think prompt. */
+export function thinkPromptEnabledFor(
+  topicIds: TopicId[] | string[] | undefined,
+  thinkPromptOff: TopicId[] | undefined,
+): boolean {
+  const off = new Set(thinkPromptOff ?? DEFAULT_THINK_PROMPT_OFF)
+  const ids = topicIds ?? []
+  if (ids.length === 0) return !off.has('current-events')
+  return ids.some((id) => !off.has(id as TopicId))
 }

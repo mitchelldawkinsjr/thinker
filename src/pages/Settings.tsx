@@ -42,6 +42,7 @@ export function Settings() {
     setKindWeight,
     resetKindWeights,
     toggleTopic,
+    setThinkPrompt,
     setFeedMuted,
     addCustomSite,
     updateCustomSite,
@@ -355,6 +356,32 @@ export function Settings() {
             )
           })}
         </div>
+
+        <h3 className="settings-subhead">Think prompts on news</h3>
+        <p className="settings-lead">
+          For topics that get a Think question on news cards, turn prompts on or off. Sports topics
+          start off; everything else starts on.
+        </p>
+        <ul className="settings-toggles">
+          {topics.map((t) => {
+            const on = !subscriptions.thinkPromptOff.includes(t.id)
+            return (
+              <li key={`think-${t.id}`}>
+                <label className="settings-toggle">
+                  <input
+                    type="checkbox"
+                    checked={on}
+                    onChange={(e) => setThinkPrompt(t.id, e.target.checked)}
+                  />
+                  <span>
+                    <strong>{t.name}</strong>
+                    <small>{on ? 'Think question on news' : 'No Think question'}</small>
+                  </span>
+                </label>
+              </li>
+            )
+          })}
+        </ul>
 
         <h3 className="settings-subhead">Edit topics</h3>
         <ul className="settings-topic-editor">

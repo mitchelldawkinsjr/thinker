@@ -1,5 +1,9 @@
 import type { NewsItem } from '../data/newsTypes'
 import type { TopicId } from '../data/types'
+import {
+  DEFAULT_THINK_PROMPT_OFF,
+  thinkPromptEnabledFor,
+} from '../data/subscriptions'
 
 export type ChallengeStyle = 'politics' | 'culture' | 'sports'
 
@@ -130,11 +134,14 @@ export function stripLegacyAsk(lesson: string): string {
   return t.replace(LEGACY_ASK, '').trim()
 }
 
-export function newsCardCopy(item: NewsItem): { body: string; challenge: string | null } {
+export function newsCardCopy(
+  item: NewsItem,
+  opts?: { thinkPromptOff?: TopicId[] },
+): { body: string; challenge: string | null } {
   const style = challengeStyleFor(item.topicIds)
   const body = stripLegacyAsk(item.lesson)
-  // Sports headlines stay straight — no Think prompt
-  if (style === 'sports') {
+  const off = opts?.thinkPromptOff ?? DEFAULT_THINK_PROMPT_OFF
+  if (!thinkPromptEnabledFor(item.topicIds, off)) {
     return { body: body || item.title, challenge: null }
   }
   const challenge =

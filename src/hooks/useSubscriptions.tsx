@@ -33,6 +33,8 @@ type SubscriptionsContextValue = {
   resetKindWeights: () => void
   setTopics: (topics: TopicId[]) => void
   toggleTopic: (topicId: TopicId) => void
+  /** Turn Think prompts on/off for a topic (news cards). */
+  setThinkPrompt: (topicId: TopicId, on: boolean) => void
   setFeedMuted: (feedId: string, muted: boolean) => void
   addCustomSite: (site: Omit<CustomSite, 'id'> & { id?: string }) => string | null
   updateCustomSite: (id: string, patch: Partial<CustomSite>) => void
@@ -87,6 +89,15 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
         ...prev,
         topics: has ? prev.topics.filter((t) => t !== topicId) : [...prev.topics, topicId],
       }
+    })
+  }, [])
+
+  const setThinkPrompt = useCallback((topicId: TopicId, on: boolean) => {
+    setSubscriptions((prev) => {
+      const off = new Set(prev.thinkPromptOff)
+      if (on) off.delete(topicId)
+      else off.add(topicId)
+      return { ...prev, thinkPromptOff: [...off] }
     })
   }, [])
 
@@ -216,6 +227,7 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
       resetKindWeights,
       setTopics,
       toggleTopic,
+      setThinkPrompt,
       setFeedMuted,
       addCustomSite,
       updateCustomSite,
@@ -232,6 +244,7 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
       resetKindWeights,
       setTopics,
       toggleTopic,
+      setThinkPrompt,
       setFeedMuted,
       addCustomSite,
       updateCustomSite,

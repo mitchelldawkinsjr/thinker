@@ -5,6 +5,7 @@ import type { NewsItem } from '../data/newsTypes'
 import type { ScriptureItem } from '../data/scriptureTypes'
 import type { TopicId } from '../data/types'
 import { newsCardCopy } from '../lib/newsChallenge'
+import { useSubscriptions } from '../hooks/useSubscriptions'
 import { bibleAppPassageUrl } from '../lib/scriptureLinks'
 import { ExternalCta, ImageLightboxTrigger, sourceMediaParts } from './CardMedia'
 import { CardFlip, CardNoteBack } from './CardFlip'
@@ -291,6 +292,7 @@ export function NewsFeedCard({
 }: {
   news: NewsItem
 } & NavProps) {
+  const { subscriptions } = useSubscriptions()
   const topics = news.topicIds.map((t) => `#${t}`).join(' · ')
   const primary = resolvePlayableUrl(news.sourceUrl, news.angles).url
   const { saveMoment, thoughts } = useThoughts()
@@ -353,7 +355,9 @@ export function NewsFeedCard({
   )
 
   const allSidesHref = 'https://www.allsides.com/bias-checker'
-  const { body, challenge } = newsCardCopy(news)
+  const { body, challenge } = newsCardCopy(news, {
+    thinkPromptOff: subscriptions.thinkPromptOff,
+  })
 
   const front = (
     <FeedCardShell
