@@ -83,31 +83,29 @@ Without either, the rest of the app still works — Ask falls back to instant ca
 
 Evergreen ideas live in `src/data/ideas.ts`. Rotating LLM-promoted ideas load from `public/content/ideas.json`.
 
-### Idea loop (PR-chained)
+### Idea loop (auto-merged PRs)
 
-Human review stays on PRs; merge advances the next Action.
+PRs stay for audit trail; each hop **auto-merges**. Keep in the feed continues the loop.
 
 ```text
-Kept → Send seeds to idea loop  (opens inbox PR)
-  → merge main
-  → Action: Draft ideas  →  opens draft review PR
-  → merge draft PR       →  idea-drafts.json live (Approve/Deny in feed)
-  → Kept → Send approved to idea loop  (opens promote inbox PR)
-  → merge main
-  → Action: Promote ideas → opens promote PR (ideas.json)
-  → merge promote PR     →  deploy ships live pool
+Kept → Send seeds to idea loop  (opens inbox PR → auto-merge)
+  → Action: Draft ideas  →  opens draft review PR → auto-merge + deploy
+  → Feed: “From loop” cards → Keep (attach note + auto-queue promote) or Reject
+  → Promote inbox PR → auto-merge
+  → Action: Promote ideas → live pool PR → auto-merge + deploy
 ```
 
 **From the app (preferred)**
 
 1. One-time VPS setup in `/opt/thinker/.env`:
-   - `GITHUB_TOKEN` — fine-grained PAT with Contents + Pull requests on this repo
+   - `GITHUB_TOKEN` — fine-grained PAT with Contents + Pull requests on this repo (must be allowed to merge)
    - `QUEUE_SECRET` — random shared gate (not the GitHub token)
    - optional `GITHUB_REPO=mitchelldawkinsjr/thinker`
-2. Rebuild/restart the app container so the sidecar picks up env.
-3. In **Settings → Idea loop**, paste the same `QUEUE_SECRET`.
-4. On **Kept**, tap **Send seeds to idea loop** (or **Send approved…**). The app opens a GitHub PR.
-5. Merge that PR → the next Action runs.
+2. Same PAT as repo secret `THINKER_BOT_TOKEN` so Draft/Promote Actions can auto-merge and still trigger Deploy (plain `GITHUB_TOKEN` merges do not chain workflows).
+3. Rebuild/restart the app container so the sidecar picks up env.
+4. In **Settings → Idea loop**, paste the same `QUEUE_SECRET`.
+5. On **Kept**, tap **Send seeds to idea loop**. The app opens a PR that auto-merges; Draft ideas runs next.
+6. In the feed, **Keep** attaches your seed note under the hood and auto-queues promote; **Reject** drops the draft. Use Kept’s **Retry promote queue** only if auto-queue failed.
 
 **CLI fallback** (download JSON from Kept, or offline):
 
@@ -115,15 +113,12 @@ Kept → Send seeds to idea loop  (opens inbox PR)
 npm run queue:seeds -- ~/Downloads/thinker-thought-seeds-YYYY-MM-DD.json
 git add scripts/seeds/inbox && git commit -m "chore: queue thought seeds" && git push -u origin HEAD
 gh pr create --title "chore: queue thought seeds" --body "Feed notes into draft:ideas."
+gh pr merge --squash --delete-branch
 ```
 
-Merge that PR. **Draft ideas** runs, archives the seeds under `scripts/seeds/archive/`, and opens a PR with `scripts/drafts/*.json` + `public/content/idea-drafts.json`.
+**Draft ideas** runs on inbox push, archives seeds under `scripts/seeds/archive/`, opens a PR with `scripts/drafts/*.json` + `public/content/idea-drafts.json`, and auto-merges. Deploy puts drafts in the feed with a **From loop** badge.
 
-**2. Merge the draft PR** after skimming voice/duplicates. Deploy puts drafts in the feed — Approve / Deny there.
-
-**3. Queue approved** the same way (app Send, or `npm run queue:promote`).
-
-Merge the promote-inbox PR. **Promote ideas** opens a PR updating `public/content/ideas.json` (21-day TTL) + pruning the draft queue. Merge to ship.
+**Keep** in the feed continues promote automatically. Fallback: Kept → **Retry promote queue**, or `npm run queue:promote`.
 
 **Manual / local still works:**
 
@@ -135,7 +130,7 @@ npm run draft:ideas -- --seeds-dir scripts/seeds/inbox
 npm run promote:ideas -- scripts/drafts/ideas-football-film-YYYY-MM-DD.json --ids draft-foo,draft-bar
 ```
 
-**Listening moments:** While playing book/podcast audio, tap **+** on the player → Save or Save as idea. Moments live under Kept; send seeds into the loop above.
+**Listening moments:** While playing book/podcast audio, tap **+** on the player → Save or Save as idea. Moments live under Kept; send seeds into the loop above. Drafted cards keep `seedThoughtIds` so Keep can attach the note (lite zettel link).
 
 GitHub: Actions → **Draft ideas** also supports `workflow_dispatch` (`all-thin` or a topic) without seeds. Requires repo secret `OPENAI_API_KEY`.
 

@@ -8,8 +8,10 @@ import {
   type ReactNode,
 } from 'react'
 import type { Idea } from '../data/types'
+import { loadQueueSecret, openIdeaLoopPullRequest } from '../lib/githubQueue'
 import { useKept } from './useKept'
 import { useThoughts } from './useThoughts'
+import { useZettel } from './useZettel'
 
 const DECISIONS_KEY = 'thinker-draft-decisions-v1'
 
@@ -28,6 +30,9 @@ type DraftReviewContextValue = {
   approve: (idea: Idea) => void
   deny: (id: string) => void
   exportApproved: () => { exportedAt: string; items: Idea[] }
+  /** Soft status after Keep auto-queue (null when idle) */
+  queueNotice: string | null
+  clearQueueNotice: () => void
 }
 
 const DraftReviewContext = createContext<DraftReviewContextValue | null>(null)
@@ -62,7 +67,9 @@ export function DraftReviewProvider({
   draftIds: string[]
 }) {
   const [decisions, setDecisions] = useState(loadDecisions)
-  const { addMyIdea, removeMyIdea } = useThoughts()
+  const [queueNotice, setQueueNotice] = useState<string | null>(null)
+  const { addMyIdea, removeMyIdea, attachLoopIdea, thoughts } = useThoughts()
+  const { syncFromThought, upsertFromIdea } = useZettel()
   const { kept, toggle: toggleKept } = useKept()
 
   useEffect(() => {
@@ -82,21 +89,61 @@ export function DraftReviewProvider({
     [denied, decisions.approved, draftIds],
   )
 
+  const clearQueueNotice = useCallback(() => setQueueNotice(null), [])
+
   const approve = useCallback(
     (idea: Idea) => {
       const clean = stripReviewFlag(idea)
       const withMeta: Idea = {
         ...clean,
+        fromIdeaLoop: clean.fromIdeaLoop ?? true,
         ingestedAt: clean.ingestedAt ?? new Date().toISOString(),
       }
       addMyIdea(withMeta)
+      attachLoopIdea(withMeta)
+      for (const tid of withMeta.seedThoughtIds ?? []) {
+        const t = thoughts.find((x) => x.id === tid)
+        if (t) syncFromThought({ ...t, promotedIdeaId: withMeta.id })
+      }
+      upsertFromIdea(withMeta)
       if (!kept.has(idea.id)) toggleKept(idea.id)
       setDecisions((prev) => ({
         approved: { ...prev.approved, [idea.id]: withMeta },
         denied: prev.denied.filter((d) => d !== idea.id),
       }))
+
+      // Auto-continue: queue promote PR (auto-merges server-side when configured)
+      void (async () => {
+        if (!loadQueueSecret()) {
+          setQueueNotice(
+            'Kept locally. Set the idea-loop secret in Settings to auto-queue promote — or Retry from Kept.',
+          )
+          return
+        }
+        try {
+          const stamp = new Date().toISOString().slice(0, 10)
+          const result = await openIdeaLoopPullRequest({
+            kind: 'promote',
+            filename: `thinker-approved-drafts-${stamp}.json`,
+            payload: {
+              exportedAt: new Date().toISOString(),
+              items: [withMeta],
+            },
+          })
+          if (result.mergeError) {
+            setQueueNotice(
+              `Queued (${result.prUrl ?? 'PR open'}) but auto-merge failed — merge the PR or Retry from Kept.`,
+            )
+            return
+          }
+          setQueueNotice('Kept and queued to the live pool — auto-merging.')
+        } catch (err) {
+          const msg = err instanceof Error ? err.message : 'Queue failed'
+          setQueueNotice(`${msg} — Kept locally; Retry from Kept when ready.`)
+        }
+      })()
     },
-    [addMyIdea, kept, toggleKept],
+    [addMyIdea, attachLoopIdea, kept, syncFromThought, thoughts, toggleKept, upsertFromIdea],
   )
 
   const deny = useCallback(
@@ -128,8 +175,20 @@ export function DraftReviewProvider({
       approve,
       deny,
       exportApproved,
+      queueNotice,
+      clearQueueNotice,
     }),
-    [decisions.approved, denied, pendingCount, isPending, approve, deny, exportApproved],
+    [
+      decisions.approved,
+      denied,
+      pendingCount,
+      isPending,
+      approve,
+      deny,
+      exportApproved,
+      queueNotice,
+      clearQueueNotice,
+    ],
   )
 
   return (

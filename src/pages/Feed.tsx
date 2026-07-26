@@ -4,6 +4,7 @@ import { buildMixedFeed, feedKindLabel, type FeedItem } from '../data/feed'
 import { resolveTopicFilter } from '../data/subscriptions'
 import { getTopic } from '../data/topics'
 import { useExtraIdeas } from '../hooks/useExtraIdeas'
+import { useDraftReview } from '../hooks/useDraftReview'
 import { useNewsItems } from '../hooks/useNews'
 import { useScriptures } from '../hooks/useScriptures'
 import { useSubscriptions } from '../hooks/useSubscriptions'
@@ -107,6 +108,7 @@ export function Feed() {
     catalogUpdatedAt,
     pendingDraftCount,
   } = useExtraIdeas()
+  const { queueNotice, clearQueueNotice } = useDraftReview()
 
   const news = useMemo(() => {
     const byId = new Map<string, (typeof curatedNews)[number]>()
@@ -253,7 +255,7 @@ export function Feed() {
           <span>{counts.idea} ideas</span>
           {pendingDraftCount > 0 && (
             <span className="feed-mix-review">
-              {pendingDraftCount} draft{pendingDraftCount === 1 ? '' : 's'} to review
+              {pendingDraftCount} from the loop
             </span>
           )}
           <span>{counts.news} news</span>
@@ -265,6 +267,14 @@ export function Feed() {
             Reshuffle
           </button>
         </div>
+        {queueNotice && (
+          <p className="feed-queue-notice" role="status">
+            {queueNotice}{' '}
+            <button type="button" className="feed-queue-notice-dismiss" onClick={clearQueueNotice}>
+              Dismiss
+            </button>
+          </p>
+        )}
         {(updatedAt || bookIdeasUpdatedAt || catalogUpdatedAt) && (
           <p className="feed-updated">
             {updatedAt && (

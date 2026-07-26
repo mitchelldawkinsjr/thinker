@@ -147,7 +147,7 @@ function parseArgs(argv) {
 
 /**
  * @param {string} path
- * @returns {Promise<{ topicId: string, note: string, title?: string, source?: string, parentTitle?: string, startSec?: number, kind?: string, reference?: string }[]>}
+ * @returns {Promise<{ topicId: string, note: string, title?: string, source?: string, parentTitle?: string, startSec?: number, kind?: string, reference?: string, thoughtId?: string }[]>}
  */
 async function loadSeeds(path) {
   const raw = JSON.parse(await readFile(resolve(path), 'utf8'))
@@ -163,6 +163,7 @@ async function loadSeeds(path) {
       startSec: typeof s.startSec === 'number' ? s.startSec : undefined,
       kind: typeof s.kind === 'string' ? s.kind : undefined,
       reference: typeof s.reference === 'string' ? s.reference.trim() : undefined,
+      thoughtId: typeof s.thoughtId === 'string' ? s.thoughtId.trim() : undefined,
     }))
 }
 
@@ -288,7 +289,7 @@ function slugId(title, topicId) {
  * @param {{ id: string, topicId: string, title: string }[]} existing
  * @param {string} model
  * @param {string} apiKey
- * @param {{ topicId: string, note: string, title?: string, source?: string, parentTitle?: string, startSec?: number }[]} seeds
+ * @param {{ topicId: string, note: string, title?: string, source?: string, parentTitle?: string, startSec?: number, thoughtId?: string }[]} seeds
  */
 async function draftForTopic(topicId, count, existing, model, apiKey, seeds = []) {
   const brief = TOPIC_BRIEFS[topicId] || topicId
@@ -309,6 +310,7 @@ Each idea object fields:
   "hook": optional short tension line
   "takeaway": optional one-liner
   "sourceUrl": optional — ONLY a real well-known URL you are certain of; otherwise omit or ""
+  "seedIndex": optional 1-based index into USER SEEDS when this card expands that seed (omit for filler cards)
 
 Rules:
 - Teach ONE concept. Thinker voice: sharp, concrete, no LinkedIn fluff.
@@ -317,7 +319,7 @@ Rules:
 - Do NOT duplicate or lightly rephrase any title in the avoid list.
 - Exactly ${count} ideas for topicId "${topicId}".
 - Do not include id or topicId in objects (script adds them).
-- If USER SEEDS are provided: prefer expanding those notes into full Idea cards first (keep the core claim), then fill any remaining slots with new concepts.`
+- If USER SEEDS are provided: prefer expanding those notes into full Idea cards first (keep the core claim), then fill any remaining slots with new concepts. When expanding a seed, set seedIndex to that seed's number.`
 
   const seedBlock =
     topicSeeds.length > 0
@@ -378,6 +380,9 @@ Draft ${count} new Idea cards.`
   /** @type {object[]} */
   const accepted = []
   const usedTitles = [...allTitles]
+  /** @type {Set<number>} */
+  const usedSeedIndexes = new Set()
+  let sequentialSeedCursor = 0
 
   for (const item of raw) {
     if (!item || typeof item !== 'object') continue
@@ -414,6 +419,7 @@ Draft ${count} new Idea cards.`
       source,
       sourceType,
       readMinutes,
+      fromIdeaLoop: true,
     }
     if (typeof item.hook === 'string' && item.hook.trim()) idea.hook = item.hook.trim()
     if (typeof item.takeaway === 'string' && item.takeaway.trim()) {
@@ -421,6 +427,33 @@ Draft ${count} new Idea cards.`
     }
     if (typeof item.lesson === 'string' && item.lesson.trim()) idea.lesson = item.lesson.trim()
     if (sourceUrl) idea.sourceUrl = sourceUrl
+
+    // Prefer model seedIndex; else assign sequential unused seeds for early cards
+    let seedIdx =
+      typeof item.seedIndex === 'number' && Number.isFinite(item.seedIndex)
+        ? Math.floor(item.seedIndex) - 1
+        : -1
+    if (seedIdx < 0 || seedIdx >= topicSeeds.length || usedSeedIndexes.has(seedIdx)) {
+      seedIdx = -1
+      while (
+        sequentialSeedCursor < topicSeeds.length &&
+        usedSeedIndexes.has(sequentialSeedCursor)
+      ) {
+        sequentialSeedCursor++
+      }
+      if (
+        sequentialSeedCursor < topicSeeds.length &&
+        accepted.length < topicSeeds.length
+      ) {
+        seedIdx = sequentialSeedCursor
+        sequentialSeedCursor++
+      }
+    }
+    if (seedIdx >= 0 && seedIdx < topicSeeds.length) {
+      usedSeedIndexes.add(seedIdx)
+      const thoughtId = topicSeeds[seedIdx].thoughtId
+      if (thoughtId) idea.seedThoughtIds = [thoughtId]
+    }
 
     accepted.push(idea)
     usedTitles.push(title)

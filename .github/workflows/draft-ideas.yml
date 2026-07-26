@@ -1,7 +1,7 @@
 name: Draft ideas
 
 on:
-  # Seeds PR merged → draft from inbox and open a review PR
+  # Seeds PR merged → draft from inbox and open a review PR (auto-merged)
   push:
     branches: [main]
     paths:
@@ -89,7 +89,8 @@ jobs:
       - name: Open PR with drafts
         if: github.event_name == 'workflow_dispatch' || steps.inbox.outputs.has_seeds == 'true'
         env:
-          GH_TOKEN: ${{ github.token }}
+          # PAT required so merge push triggers Deploy; GITHUB_TOKEN merges do not chain workflows
+          GH_TOKEN: ${{ secrets.THINKER_BOT_TOKEN || github.token }}
         run: |
           if ! ls scripts/drafts/ideas-*.json >/dev/null 2>&1; then
             echo "No draft files produced"
@@ -116,13 +117,13 @@ jobs:
           - Review queue updated: `public/content/idea-drafts.json`
           - Archive JSON under `scripts/drafts/`
 
-          **After merge:** deploy ships the queue → Approve / Deny in the feed.
-          Then export approved from Kept → PR into `scripts/promote/inbox/` → merge promotes to the live pool.
+          **Auto-merges** → deploy ships the queue → Keep / Reject in the feed.
+          Keep attaches the seed note and auto-queues promote to the live pool.
 
           ## Test plan
-          - [ ] Skim draft titles/bodies for voice and duplicates
-          - [ ] Merge this PR to put drafts in the feed review queue
-          - [ ] Approve keepers in the app (or deny noise)
+          - [ ] Skim draft titles/bodies for voice and duplicates (PR history)
+          - [ ] After deploy, cards show “From loop” in the feed
+          - [ ] Keep continue or Reject noise
           EOF
           )"
           if [ "${{ github.event_name }}" = "push" ]; then
@@ -132,16 +133,17 @@ jobs:
           - Review queue updated: `public/content/idea-drafts.json`
           - Archive JSON under `scripts/drafts/`
 
-          **After merge:** deploy ships the queue → Approve / Deny in the feed.
-          Then export approved from Kept → PR into `scripts/promote/inbox/` → merge promotes to the live pool.
+          **Auto-merges** → deploy ships the queue → Keep / Reject in the feed.
+          Keep attaches the seed note and auto-queues promote to the live pool.
 
           ## Test plan
-          - [ ] Skim draft titles/bodies for voice and duplicates
-          - [ ] Merge this PR to put drafts in the feed review queue
-          - [ ] Approve keepers in the app (or deny noise)
+          - [ ] Skim draft titles/bodies for voice and duplicates (PR history)
+          - [ ] After deploy, cards show “From loop” in the feed
+          - [ ] Keep continue or Reject noise
           EOF
           )"
           fi
-          gh pr create \
+          PR_URL="$(gh pr create \
             --title "chore: LLM idea drafts for review" \
-            --body "$BODY"
+            --body "$BODY")"
+          gh pr merge --squash --delete-branch "$PR_URL"

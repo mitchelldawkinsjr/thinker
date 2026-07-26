@@ -64,6 +64,10 @@ export interface Idea {
    * Stripped when approved into the personal pool.
    */
   draftReview?: boolean
+  /** Persisted: card came from the idea-loop draft Action */
+  fromIdeaLoop?: boolean
+  /** Persisted: Kept thought ids this card was expanded from */
+  seedThoughtIds?: string[]
 }
 
 export interface GutenbergBook {

@@ -98,6 +98,8 @@ const server = http.createServer(async (req, res) => {
         prNumber: result.prNumber,
         path: result.path,
         branch: result.branch,
+        merged: result.merged,
+        mergeError: result.mergeError,
       })
     } catch (err) {
       json(res, 400, {

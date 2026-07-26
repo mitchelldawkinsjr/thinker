@@ -230,6 +230,16 @@
   white-space: nowrap;
 }
 
+.ask-grounding-chip--zettel {
+  border-color: color-mix(in srgb, var(--accent) 28%, transparent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+.ask-grounding-chip.is-linked {
+  opacity: 0.88;
+  font-weight: 500;
+}
+
 .ask-grounding-kind {
   flex: none;
   font-size: 0.66rem;

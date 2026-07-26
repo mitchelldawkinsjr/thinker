@@ -1,0 +1,212 @@
+.zettel-stack {
+  --zk-accent: #ff5a45;
+  --zk-surface: #1a2332;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.zettel-stack-empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.zettel-stack-stage {
+  position: relative;
+  min-height: 280px;
+  perspective: 1200px;
+  padding: 0.5rem 0.25rem 1.5rem;
+}
+
+.zettel-stack-card {
+  --zk-depth: 0;
+  --zk-rot: 0deg;
+  --zk-y: 0px;
+  --zk-x: 0px;
+  --zk-card-accent: var(--zk-accent);
+  --zk-card-surface: var(--zk-surface);
+
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: min(100%, 520px);
+  left: 50%;
+  transform-origin: 50% 100%;
+  transform: translateX(calc(-50% + var(--zk-x))) translateY(var(--zk-y)) rotate(var(--zk-rot))
+    scale(calc(1 - var(--zk-depth) * 0.03));
+  z-index: calc(20 - var(--zk-depth));
+  padding: 1.15rem 1.2rem 1.25rem;
+  border-radius: 1.15rem;
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--zk-card-surface) 88%, white 12%),
+      var(--zk-card-surface)
+    );
+  color: #f4f0ea;
+  border: 1px solid color-mix(in srgb, var(--zk-card-accent) 35%, transparent);
+  box-shadow:
+    0 12px 28px color-mix(in srgb, #000 28%, transparent),
+    0 0 0 1px color-mix(in srgb, #fff 6%, transparent) inset;
+  transition:
+    transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.42s ease,
+    filter 0.42s ease,
+    box-shadow 0.42s ease;
+  cursor: default;
+}
+
+.zettel-stack-card.is-back {
+  cursor: pointer;
+  filter: brightness(0.88);
+  opacity: 0.92;
+}
+
+.zettel-stack-card.is-back:hover {
+  filter: brightness(0.95);
+}
+
+.zettel-stack-card.is-front {
+  filter: none;
+  opacity: 1;
+  box-shadow:
+    0 18px 40px color-mix(in srgb, #000 34%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--zk-card-accent) 40%, transparent);
+}
+
+/* Shuffle: current front flies off; next rises via depth transition */
+.zettel-stack.is-shuffling .zettel-stack-card.is-leaving {
+  transform: translateX(calc(-50% + 110%)) translateY(-12%) rotate(12deg) scale(0.94);
+  opacity: 0;
+  filter: blur(1px);
+  pointer-events: none;
+  z-index: 40;
+}
+
+.zettel-stack-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: baseline;
+  margin-bottom: 0.55rem;
+}
+
+.zettel-stack-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--zk-card-accent) 85%, white);
+}
+
+.zettel-stack-topic {
+  font-size: 0.75rem;
+  color: color-mix(in srgb, #f4f0ea 65%, transparent);
+}
+
+.zettel-stack-title {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.zettel-stack-tags {
+  margin: -0.25rem 0 0.55rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.zettel-stack-tags span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--zk-card-accent) 80%, white);
+}
+
+.zettel-stack-body,
+.zettel-stack-preview {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: color-mix(in srgb, #f4f0ea 88%, transparent);
+  white-space: pre-wrap;
+}
+
+.zettel-stack-preview {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.zettel-stack-graph {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.zettel-stack-link-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.zettel-stack-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.zettel-stack-orphan-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.zettel-stack-chip {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.zettel-stack-chip:hover {
+  border-color: color-mix(in srgb, var(--zk-accent) 40%, transparent);
+  background: color-mix(in srgb, var(--zk-accent) 10%, var(--surface));
+}
+
+.zettel-stack-chip--back {
+  color: var(--muted);
+}
+
+.zettel-stack-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 560px) {
+  .zettel-stack-stage {
+    min-height: 300px;
+  }
+
+  .zettel-stack-card {
+    width: 100%;
+  }
+}

@@ -63,12 +63,12 @@ export function buildExploreSystemPrompt(
   catalogBlock: string,
   thoughtsBlock?: string,
 ): string {
-  return `Thinker research guide. The user keeps ideas and writes thoughts (notes on listening moments and scripture) — their THOUGHTS below are your primary evidence.
+  return `Thinker research guide. The user keeps a slip box (atomic notes + links) plus feed thoughts — their THOUGHTS below are your primary evidence.
 Reply ONLY compact JSON:
 {"answer":"max 60 words","digDeeper":["q1","q2"],"links":[{"title":"t","url":"https://...","why":"short"}],"topics":["topic-id"]}
-Rules: ground the answer in THOUGHTS when relevant and name which one it builds on; connect them to the question rather than answering generically; if THOUGHTS are empty or unrelated, answer from general knowledge and the catalog. Links: use ONLY catalog URLs; never invent links; no social-feed URLs; 2 digDeeper max; 3 links max.
+Rules: ground the answer in THOUGHTS when relevant and name which slip/note it builds on; when items are marked slip·linked / slip·related / etc., treat them as connected context and weave them together; connect them to the question rather than answering generically; if THOUGHTS are empty or unrelated, answer from general knowledge and the catalog. Links: use ONLY catalog URLs; never invent links; no social-feed URLs; 2 digDeeper max; 3 links max.
 
-THOUGHTS (user's kept items):
+THOUGHTS (user's slip box + kept items):
 ${thoughtsBlock?.trim() || '(none matched this question)'}
 
 CATALOG:

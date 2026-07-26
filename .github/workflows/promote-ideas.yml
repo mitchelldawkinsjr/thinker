@@ -1,7 +1,7 @@
 name: Promote ideas
 
 on:
-  # Approved-export PR merged → promote into the live rotating pool
+  # Approved-export PR merged → promote into the live rotating pool (auto-merged)
   push:
     branches: [main]
     paths:
@@ -81,7 +81,8 @@ jobs:
       - name: Open PR with promoted pool
         if: steps.inbox.outputs.has_files == 'true'
         env:
-          GH_TOKEN: ${{ github.token }}
+          # PAT required so merge push triggers Deploy; GITHUB_TOKEN merges do not chain workflows
+          GH_TOKEN: ${{ secrets.THINKER_BOT_TOKEN || github.token }}
         run: |
           BRANCH="promote-ideas-$(date -u +%Y%m%d-%H%M%S)"
           git config user.name "thinker-bot"
@@ -95,7 +96,7 @@ jobs:
           fi
           git commit -m "chore: promote approved idea drafts to live pool"
           git push -u origin HEAD
-          gh pr create \
+          PR_URL="$(gh pr create \
             --title "chore: promote approved idea drafts to live pool" \
             --body "$(cat <<'EOF'
           ## Summary
@@ -104,11 +105,12 @@ jobs:
           - Pruned review queue: `public/content/idea-drafts.json`
           - Archived the export under `scripts/promote/archive/`
 
-          **After merge:** deploy ships the new cards into the feed.
+          **Auto-merges** → deploy ships the new cards into the feed.
 
           ## Test plan
-          - [ ] Spot-check promoted titles in `ideas.json`
+          - [ ] Spot-check promoted titles in `ideas.json` (PR history)
           - [ ] Confirm promoted ids left the draft queue
-          - [ ] After merge + deploy, cards appear in the feed
+          - [ ] After deploy, cards appear in the feed
           EOF
-          )"
+          )")"
+          gh pr merge --squash --delete-branch "$PR_URL"

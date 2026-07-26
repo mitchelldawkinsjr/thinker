@@ -16,13 +16,14 @@ import { buildSlimCatalog, exploreInstant } from '../lib/exploreFast'
 import {
   buildKeptDocs,
   formatKeptBlock,
-  retrieveKeptDocs,
+  retrieveZettelContext,
   type KeptDoc,
 } from '../lib/keptRag'
 import { mergeIdeas } from '../data/ideas'
 import { useKept } from '../hooks/useKept'
 import { useThoughts } from '../hooks/useThoughts'
 import { useExtraIdeas } from '../hooks/useExtraIdeas'
+import { useZettel } from '../hooks/useZettel'
 import './AskPanel.css'
 
 type Props = {
@@ -134,9 +135,16 @@ export function AskPanel({
   const { kept } = useKept()
   const { thoughts } = useThoughts()
   const { items: extraIdeas } = useExtraIdeas()
+  const { notes: zettelNotes, links: zettelLinks } = useZettel()
   const keptDocs = useMemo(
-    () => buildKeptDocs({ keptIds: kept, ideaPool: mergeIdeas(extraIdeas), thoughts }),
-    [kept, extraIdeas, thoughts],
+    () =>
+      buildKeptDocs({
+        keptIds: kept,
+        ideaPool: mergeIdeas(extraIdeas),
+        thoughts,
+        zettelNotes,
+      }),
+    [kept, extraIdeas, thoughts, zettelNotes],
   )
 
   useEffect(() => {
@@ -199,7 +207,7 @@ export function AskPanel({
     const t0 = performance.now()
     const quick = exploreInstant(ctx)
     quick.latencyMs = Math.round(performance.now() - t0)
-    const matchedNotes = retrieveKeptDocs(keptDocs, ctx)
+    const matchedNotes = retrieveZettelContext(keptDocs, zettelLinks, ctx)
     setGroundedIn(matchedNotes)
     setInstant(quick)
     setAi(null)
@@ -264,8 +272,8 @@ export function AskPanel({
           <p className="ask-kicker">Go deeper</p>
           <h2>{compact ? 'Ask about this idea' : 'Ask Thinker'}</h2>
           <p className="ask-sub">
-            Answers draw on your kept ideas and thoughts first — instant path now, AI below
-            when ready.
+            Answers draw on your slip box and kept notes first — linked slips ride along for
+            context. Instant path now, AI below when ready.
           </p>
         </div>
         {provider !== 'none' && provider != null && (
@@ -324,12 +332,23 @@ export function AskPanel({
 
       {instant && groundedIn.length > 0 && (
         <div className="ask-grounding">
-          <p className="ask-grounding-label">From your kept items</p>
+          <p className="ask-grounding-label">From your slip box & kept items</p>
           <ul className="ask-grounding-list">
             {groundedIn.map((d) => (
-              <li key={d.id} className={`ask-grounding-chip ask-grounding-chip--${d.kind}`}>
+              <li
+                key={`${d.id}-${d.viaLink ? 'link' : 'hit'}`}
+                className={`ask-grounding-chip ask-grounding-chip--${d.kind}${d.viaLink ? ' is-linked' : ''}`}
+              >
                 <span className="ask-grounding-kind">
-                  {d.kind === 'idea' ? 'kept idea' : d.kind}
+                  {d.kind === 'idea'
+                    ? 'kept idea'
+                    : d.kind === 'zettel'
+                      ? d.viaLink
+                        ? d.linkKind
+                          ? `slip · ${d.linkKind}`
+                          : 'slip · linked'
+                        : 'slip'
+                      : d.kind}
                 </span>
                 {d.title}
               </li>
@@ -340,8 +359,8 @@ export function AskPanel({
 
       {instant && groundedIn.length === 0 && keptDocs.length > 0 && (
         <p className="ask-grounding-empty">
-          Nothing in your <Link to="/kept">kept items</Link> matched this question — answering
-          from the catalog.
+          Nothing in your <Link to="/kept">slip box</Link> matched this question — answering from
+          the catalog.
         </p>
       )}
 

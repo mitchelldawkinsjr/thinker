@@ -1,0 +1,147 @@
+.zettel-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.15rem 1.2rem 1.35rem;
+  border-radius: 1.15rem;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.zettel-editor-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.zettel-editor-head h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.zettel-editor-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.zettel-editor-field > span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.zettel-editor-field input,
+.zettel-editor-field textarea,
+.zettel-editor-field select,
+.zettel-editor-link-row select,
+.zettel-editor-link-row input {
+  font: inherit;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--bg, #0f1218) 35%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  border-radius: 0.7rem;
+  padding: 0.55rem 0.7rem;
+}
+
+.zettel-editor-field textarea {
+  resize: vertical;
+  min-height: 140px;
+  line-height: 1.45;
+}
+
+.zettel-editor-links h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.zettel-editor-link-row {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0.45rem;
+}
+
+.zettel-editor-suggest {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  border-radius: 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  overflow: hidden;
+}
+
+.zettel-editor-suggest li button {
+  width: 100%;
+  text-align: left;
+  appearance: none;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink) 8%, transparent);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 0.55rem 0.7rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.zettel-editor-suggest li:last-child button {
+  border-bottom: 0;
+}
+
+.zettel-editor-suggest li button:hover {
+  background: color-mix(in srgb, var(--accent, #ff5a45) 8%, transparent);
+}
+
+.zettel-editor-suggest li button span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.zettel-editor-suggest-empty {
+  padding: 0.65rem 0.7rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.zettel-editor-edge-list {
+  list-style: none;
+  margin: 0.65rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.zettel-editor-edge-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.zettel-editor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.zettel-editor-hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+@media (max-width: 560px) {
+  .zettel-editor-link-row {
+    grid-template-columns: 1fr;
+  }
+}

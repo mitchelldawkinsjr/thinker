@@ -65,6 +65,29 @@
   background: color-mix(in srgb, var(--accent, #ff5a45) 12%, var(--surface)) !important;
 }
 
+.feed-queue-notice {
+  margin: 0.65rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--ink);
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent, #ff5a45) 10%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent, #ff5a45) 22%, transparent);
+}
+
+.feed-queue-notice-dismiss {
+  appearance: none;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-weight: 700;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
 .feed-reshuffle {
   appearance: none;
   cursor: pointer;

@@ -1,4 +1,4 @@
-import { useEffect, useState, type CSSProperties } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { useKept } from '../hooks/useKept'
 import { useThoughts } from '../hooks/useThoughts'
@@ -18,9 +18,14 @@ import {
   openIdeaLoopPullRequest,
 } from '../lib/githubQueue'
 import { useExtraIdeas } from '../hooks/useExtraIdeas'
+import { useZettel } from '../hooks/useZettel'
+import { partitionKeptIdeas } from '../data/zettel'
 import { IdeaCard } from '../components/IdeaCard'
 import { CardFlip, CardNoteBack } from '../components/CardFlip'
 import { sourceMediaParts } from '../components/CardMedia'
+import { ZettelStack } from '../components/ZettelStack'
+import { ZettelEditor } from '../components/ZettelEditor'
+import { StickyIdeaStack } from '../components/StickyIdeaStack'
 import './Kept.css'
 
 function useShareBusy() {
@@ -260,17 +265,29 @@ export function Kept() {
   const { kept } = useKept()
   const { thoughts, exportSeeds } = useThoughts()
   const { exportApproved, pendingCount, approved } = useDraftReview()
+  const { notes, links, exportBox, importBox, linkedIds, orphans, tags } = useZettel()
   const approvedCount = Object.keys(approved).length
   const { items: extraIdeas } = useExtraIdeas()
   const { runShare, labelFor } = useShareBusy()
   const ideas = [...kept]
     .map((id) => getIdea(id, extraIdeas))
     .filter((i): i is NonNullable<typeof i> => Boolean(i))
+  const ideaById = useMemo(() => new Map(ideas.map((i) => [i.id, i])), [ideas])
+  const { clusters: ideaClusters, singles: ideaSingles } = useMemo(
+    () => partitionKeptIdeas(ideas.map((i) => i.id), notes, links),
+    [ideas, notes, links],
+  )
+  const [toolsOpen, setToolsOpen] = useState(false)
 
   const [queueReady, setQueueReady] = useState(false)
   const [queueBusy, setQueueBusy] = useState<'seeds' | 'promote' | null>(null)
   const [queueMessage, setQueueMessage] = useState<string | null>(null)
   const [queuePrUrl, setQueuePrUrl] = useState<string | null>(null)
+  const [stackRootId, setStackRootId] = useState<string | null>(null)
+  const [editingId, setEditingId] = useState<string | null | 'new'>(null)
+  const [slipFilter, setSlipFilter] = useState<'all' | 'orphans' | string>('all')
+  const [importMessage, setImportMessage] = useState<string | null>(null)
+  const importRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     void fetchGithubQueueStatus().then((s) => setQueueReady(s.configured))
@@ -299,11 +316,19 @@ export function Kept() {
               payload: exportApproved(),
             })
       setQueuePrUrl(result.prUrl)
-      setQueueMessage(
-        result.prUrl
-          ? 'PR opened — merge it to continue the loop.'
-          : `Queued on ${result.branch}. Open GitHub to merge.`,
-      )
+      if (result.mergeError) {
+        setQueueMessage(
+          result.prUrl
+            ? `PR opened but auto-merge failed: ${result.mergeError}`
+            : `Queued on ${result.branch} but auto-merge failed: ${result.mergeError}`,
+        )
+      } else {
+        setQueueMessage(
+          result.prUrl
+            ? 'PR opened and auto-merging — the next Action runs on main.'
+            : `Queued on ${result.branch} and auto-merging.`,
+        )
+      }
     } catch (err) {
       setQueueMessage(err instanceof Error ? err.message : 'Could not open PR')
     } finally {
@@ -313,12 +338,52 @@ export function Kept() {
 
   // Promoted thoughts live only as idea cards until sent back
   const openThoughts = thoughts.filter((t) => !t.promotedIdeaId)
-  const empty = ideas.length === 0 && thoughts.length === 0 && approvedCount === 0
+  const empty =
+    ideas.length === 0 &&
+    thoughts.length === 0 &&
+    approvedCount === 0 &&
+    notes.length === 0
   const scriptureThoughts = openThoughts.filter((t) => t.parent.kind === 'scripture')
   const listeningThoughts = openThoughts.filter((t) => isListeningThought(t))
   const cardNotes = openThoughts.filter(
     (t) => t.parent.kind !== 'scripture' && !isListeningThought(t),
   )
+
+  useEffect(() => {
+    if (stackRootId && notes.some((n) => n.id === stackRootId)) return
+    if (notes.length > 0) setStackRootId(notes[0].id)
+    else setStackRootId(null)
+  }, [notes, stackRootId])
+
+  const filteredNotes = useMemo(() => {
+    if (slipFilter === 'all') return notes
+    if (slipFilter === 'orphans') return orphans
+    return notes.filter((n) => (n.tags ?? []).includes(slipFilter))
+  }, [notes, orphans, slipFilter])
+
+  useEffect(() => {
+    if (filteredNotes.length === 0) return
+    if (stackRootId && filteredNotes.some((n) => n.id === stackRootId)) return
+    setStackRootId(filteredNotes[0].id)
+  }, [filteredNotes, stackRootId])
+
+  async function onImportFile(file: File) {
+    setImportMessage(null)
+    try {
+      const text = await file.text()
+      const raw = JSON.parse(text) as unknown
+      const result = importBox(raw)
+      if (!result.ok) {
+        setImportMessage(result.error)
+        return
+      }
+      setImportMessage(
+        `Imported — ${result.addedNotes} new note${result.addedNotes === 1 ? '' : 's'}, ${result.addedLinks} new link${result.addedLinks === 1 ? '' : 's'} (existing ids updated).`,
+      )
+    } catch {
+      setImportMessage('Could not read that file as JSON.')
+    }
+  }
   const scriptureNotes = scriptureThoughts.length
   const listeningNotes = listeningThoughts.length
   const keepNotes = cardNotes.length
@@ -339,39 +404,91 @@ export function Kept() {
   return (
     <div className="kept">
       <header className="kept-head">
-        <h1>Kept ideas</h1>
+        <h1>Kept</h1>
         <p>
           {empty
-            ? 'Keep anything from the feed with a note — share to Evernote, or send seeds into the idea loop.'
+            ? 'Keep from the feed, jot thoughts, link notes into a stack.'
             : [
-                ideas.length > 0
-                  ? `${ideas.length} idea${ideas.length === 1 ? '' : 's'}`
-                  : null,
                 openThoughts.length > 0
                   ? `${openThoughts.length} thought${openThoughts.length === 1 ? '' : 's'}`
                   : null,
-                approvedCount > 0
-                  ? `${approvedCount} approved draft${approvedCount === 1 ? '' : 's'}`
+                ideas.length > 0
+                  ? `${ideas.length} idea${ideas.length === 1 ? '' : 's'}`
+                  : null,
+                notes.length > 0
+                  ? `${notes.length} slip${notes.length === 1 ? '' : 's'}`
+                  : null,
+                links.length > 0
+                  ? `${links.length} link${links.length === 1 ? '' : 's'}`
                   : null,
               ]
                 .filter(Boolean)
-                .join(' · ') + ' saved on this device.'}
+                .join(' · ') + ' on this device.'}
         </p>
-        {(canShareAll || thoughts.length > 0 || approvedCount > 0) && (
-          <div className="kept-tools">
-            {canShareAll && (
+        <div className="kept-tools">
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => setEditingId('new')}
+          >
+            New note
+          </button>
+          {canShareAll && (
+            <button
+              type="button"
+              className="btn btn-ghost"
+              onClick={() =>
+                void runShare('all', () =>
+                  shareAllKept({ thoughts: openThoughts, ideas }),
+                )
+              }
+            >
+              {labelFor('all', 'Share all')}
+            </button>
+          )}
+          <button
+            type="button"
+            className="btn btn-ghost"
+            aria-expanded={toolsOpen}
+            onClick={() => setToolsOpen((o) => !o)}
+          >
+            {toolsOpen ? 'Hide tools' : 'More tools'}
+          </button>
+        </div>
+        {toolsOpen && (
+          <div className="kept-tools kept-tools--secondary">
+            {notes.length > 0 && (
               <button
                 type="button"
                 className="btn btn-ghost"
                 onClick={() =>
-                  void runShare('all', () =>
-                    shareAllKept({ thoughts: openThoughts, ideas }),
+                  downloadJson(
+                    `thinker-zettelkasten-${new Date().toISOString().slice(0, 10)}.json`,
+                    exportBox(),
                   )
                 }
               >
-                {labelFor('all', 'Share all')}
+                Export slip box
               </button>
             )}
+            <button
+              type="button"
+              className="btn btn-ghost"
+              onClick={() => importRef.current?.click()}
+            >
+              Import slip box
+            </button>
+            <input
+              ref={importRef}
+              type="file"
+              accept="application/json,.json"
+              hidden
+              onChange={(e) => {
+                const file = e.target.files?.[0]
+                e.target.value = ''
+                if (file) void onImportFile(file)
+              }}
+            />
             {thoughts.length > 0 && (
               <>
                 <button
@@ -380,7 +497,7 @@ export function Kept() {
                   disabled={queueBusy !== null || !queueReady}
                   title={
                     queueReady
-                      ? 'Open a GitHub PR that queues these seeds'
+                      ? 'Open a GitHub PR that queues these seeds (auto-merges)'
                       : 'Server idea-loop not configured yet'
                   }
                   onClick={() => void sendToIdeaLoop('seeds')}
@@ -405,16 +522,16 @@ export function Kept() {
               <>
                 <button
                   type="button"
-                  className="btn btn-primary"
+                  className="btn btn-ghost"
                   disabled={queueBusy !== null || !queueReady}
                   title={
                     queueReady
-                      ? 'Open a GitHub PR that queues approved drafts'
+                      ? 'Fallback if Keep in the feed did not auto-queue promote'
                       : 'Server idea-loop not configured yet'
                   }
                   onClick={() => void sendToIdeaLoop('promote')}
                 >
-                  {queueBusy === 'promote' ? 'Opening PR…' : 'Send approved to idea loop'}
+                  {queueBusy === 'promote' ? 'Opening PR…' : 'Retry promote queue'}
                 </button>
                 <button
                   type="button"
@@ -430,21 +547,27 @@ export function Kept() {
                 </button>
               </>
             )}
+            {(thoughts.length > 0 || approvedCount > 0) && (
+              <p className="kept-pending">
+                {queueReady ? (
+                  <>
+                    Send seeds opens a PR that auto-merges into the inbox. Keep in the feed
+                    attaches your note and auto-queues promote — use Retry only if that failed.
+                    Gate secret lives in <Link to="/settings">Settings</Link>.
+                  </>
+                ) : (
+                  <>
+                    Idea-loop server not configured yet — use Download JSON, or set{' '}
+                    <code>GITHUB_TOKEN</code> + <code>QUEUE_SECRET</code> on the VPS (see README).
+                  </>
+                )}
+              </p>
+            )}
           </div>
         )}
-        {(thoughts.length > 0 || approvedCount > 0) && (
-          <p className="kept-pending">
-            {queueReady ? (
-              <>
-                Send opens a PR into the inbox. Merge it to run the next Action. Gate secret lives
-                in <Link to="/settings">Settings</Link>.
-              </>
-            ) : (
-              <>
-                Idea-loop server not configured yet — use Download JSON, or set{' '}
-                <code>GITHUB_TOKEN</code> + <code>QUEUE_SECRET</code> on the VPS (see README).
-              </>
-            )}
+        {importMessage && (
+          <p className="kept-pending" role="status">
+            {importMessage}
           </p>
         )}
         {queueMessage && (
@@ -462,18 +585,36 @@ export function Kept() {
         )}
         {pendingCount > 0 && (
           <p className="kept-pending">
-            {pendingCount} LLM draft{pendingCount === 1 ? '' : 's'} waiting in the{' '}
-            <Link to="/feed">feed</Link> for Approve / Deny.
+            {pendingCount} from the loop waiting in the <Link to="/feed">feed</Link> for Keep /
+            Reject.
           </p>
         )}
       </header>
 
+      {editingId !== null && (
+        <section className="kept-editor">
+          <ZettelEditor
+            noteId={editingId === 'new' ? null : editingId}
+            onClose={() => setEditingId(null)}
+            onSaved={(id) => {
+              setStackRootId(id)
+              if (editingId === 'new') setEditingId(id)
+            }}
+          />
+        </section>
+      )}
+
       {empty ? (
         <div className="kept-empty">
-          <p>Nothing kept yet.</p>
-          <Link to="/feed" className="btn btn-primary">
-            Open feed
-          </Link>
+          <p>Nothing kept yet — open the feed, or write a note.</p>
+          <div className="kept-tools">
+            <Link to="/feed" className="btn btn-primary">
+              Open feed
+            </Link>
+            <button type="button" className="btn btn-ghost" onClick={() => setEditingId('new')}>
+              New note
+            </button>
+          </div>
         </div>
       ) : (
         <>
@@ -481,8 +622,8 @@ export function Kept() {
             <section className="kept-moments">
               <h2>Thoughts</h2>
               <p className="kept-moments-lead">
-                Edit here, then promote to an idea card. To change a promoted one, send it back
-                with “Back to thought” on the card. Only one form at a time.
+                Inbox — edit, then promote to an idea card. Send a card back with “Back to
+                thought” to change it again.
                 {listeningNotes + scriptureNotes + keepNotes > 0 && (
                   <>
                     {' '}
@@ -512,14 +653,113 @@ export function Kept() {
             </section>
           )}
 
-          {ideas.length > 0 && (
-            <section className="kept-ideas">
-              {openThoughts.length > 0 && <h2>Kept cards</h2>}
-              <div className="kept-grid">
-                {ideas.map((idea) => (
-                  <IdeaCard key={idea.id} idea={idea} compact />
-                ))}
-              </div>
+          {(notes.length > 0 || ideas.length > 0 || editingId !== null) && (
+            <section className="kept-stream">
+              <h2>Cards</h2>
+              <p className="kept-moments-lead">
+                Shuffle linked slips in the stack. Idea cards list below — linked ones pin and
+                stack as you scroll.
+              </p>
+
+              {notes.length > 0 && (
+                <div className="kept-slip-filters">
+                  <button
+                    type="button"
+                    className={slipFilter === 'all' ? 'kept-filter is-active' : 'kept-filter'}
+                    onClick={() => setSlipFilter('all')}
+                  >
+                    All ({notes.length})
+                  </button>
+                  <button
+                    type="button"
+                    className={slipFilter === 'orphans' ? 'kept-filter is-active' : 'kept-filter'}
+                    onClick={() => setSlipFilter('orphans')}
+                  >
+                    Orphans ({orphans.length})
+                  </button>
+                  {tags.map((t) => (
+                    <button
+                      key={t.tag}
+                      type="button"
+                      className={slipFilter === t.tag ? 'kept-filter is-active' : 'kept-filter'}
+                      onClick={() => setSlipFilter(t.tag)}
+                    >
+                      #{t.tag} ({t.count})
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {stackRootId && filteredNotes.some((n) => n.id === stackRootId) ? (
+                <ZettelStack rootId={stackRootId} onEdit={(id) => setEditingId(id)} />
+              ) : notes.length > 0 && editingId === null ? (
+                <p className="kept-pending">
+                  {slipFilter === 'orphans'
+                    ? 'No orphans — every note has at least one link.'
+                    : slipFilter !== 'all'
+                      ? `No notes tagged #${slipFilter}.`
+                      : 'No notes yet — tap New note to start.'}
+                </p>
+              ) : null}
+
+              {filteredNotes.length > 1 && (
+                <ul className="kept-zettel-index">
+                  {filteredNotes.map((n) => {
+                    const nLinks = linkedIds(n.id).length
+                    return (
+                      <li key={n.id}>
+                        <button
+                          type="button"
+                          className={
+                            n.id === stackRootId
+                              ? 'kept-zettel-index-btn is-active'
+                              : 'kept-zettel-index-btn'
+                          }
+                          onClick={() => setStackRootId(n.id)}
+                        >
+                          <span>
+                            {n.title}
+                            {(n.tags?.length ?? 0) > 0 && (
+                              <span className="kept-zettel-index-tags">
+                                {' '}
+                                {(n.tags ?? []).map((t) => `#${t}`).join(' ')}
+                              </span>
+                            )}
+                          </span>
+                          {nLinks > 0 ? (
+                            <span className="kept-zettel-index-meta">{nLinks}</span>
+                          ) : (
+                            <span className="kept-zettel-index-meta kept-zettel-index-meta--orphan">
+                              orphan
+                            </span>
+                          )}
+                        </button>
+                      </li>
+                    )
+                  })}
+                </ul>
+              )}
+
+              {ideas.length > 0 && (
+                <div className="kept-idea-stream">
+                  {ideaClusters.map((ids) => {
+                    const clusterIdeas = ids
+                      .map((id) => ideaById.get(id))
+                      .filter((i): i is NonNullable<typeof i> => Boolean(i))
+                    if (clusterIdeas.length < 2) return null
+                    return <StickyIdeaStack key={ids.join('|')} ideas={clusterIdeas} />
+                  })}
+                  {ideaSingles.length > 0 && (
+                    <div className="kept-grid">
+                      {ideaSingles.map((id) => {
+                        const idea = ideaById.get(id)
+                        if (!idea) return null
+                        return <IdeaCard key={idea.id} idea={idea} compact />
+                      })}
+                    </div>
+                  )}
+                </div>
+              )}
             </section>
           )}
         </>

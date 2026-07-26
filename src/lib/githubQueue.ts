@@ -14,6 +14,8 @@ export type QueuePullRequestResult = {
   prNumber: number | null
   path: string
   branch: string
+  merged?: boolean
+  mergeError?: string
 }
 
 export function loadQueueSecret(): string {
@@ -73,6 +75,8 @@ export async function openIdeaLoopPullRequest(opts: {
     prNumber?: number | null
     path?: string
     branch?: string
+    merged?: boolean
+    mergeError?: string
   }
   if (!res.ok) {
     throw new Error(data.error || `Queue failed (${res.status})`)
@@ -82,5 +86,7 @@ export async function openIdeaLoopPullRequest(opts: {
     prNumber: data.prNumber ?? null,
     path: data.path || '',
     branch: data.branch || '',
+    merged: data.merged,
+    mergeError: data.mergeError,
   }
 }

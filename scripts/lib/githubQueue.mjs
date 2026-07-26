@@ -31,6 +31,31 @@ async function gh(token, path, init = {}) {
 }
 
 /**
+ * Squash-merge an idea-loop PR. Leaves the PR open on failure (caller surfaces error).
+ * @param {string} token
+ * @param {string} repo
+ * @param {number} prNumber
+ * @param {string} [commitTitle]
+ */
+export async function mergePullRequest(token, repo, prNumber, commitTitle) {
+  const merge = await gh(token, `/repos/${repo}/pulls/${prNumber}/merge`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      merge_method: 'squash',
+      ...(commitTitle ? { commit_title: commitTitle } : {}),
+    }),
+  })
+  if (!merge.ok) {
+    const msg =
+      /** @type {{ message?: string }} */ (merge.body)?.message ||
+      `Could not merge PR #${prNumber}`
+    return { ok: false, status: merge.status, error: msg }
+  }
+  return { ok: true, status: merge.status }
+}
+
+/**
  * @param {'seeds' | 'promote'} kind
  * @param {string | undefined} suggested
  */
@@ -135,19 +160,19 @@ export async function createQueuePullRequest(opts) {
     kind === 'seeds'
       ? `## Summary
 - Queued Kept seed export into \`${path}\`
-- **Merge this PR** → Draft ideas Action drafts from the inbox and opens a review PR
+- **Auto-merges** → Draft ideas Action drafts from the inbox and opens a review PR (also auto-merged)
 
 ## Test plan
-- [ ] Confirm the JSON looks right
-- [ ] Merge to start drafting
+- [ ] Confirm the JSON looks right after merge
+- [ ] Draft review cards appear in the feed after deploy
 `
       : `## Summary
 - Queued approved draft export into \`${path}\`
-- **Merge this PR** → Promote ideas Action updates the live pool PR
+- **Auto-merges** → Promote ideas Action updates the live pool PR (also auto-merged)
 
 ## Test plan
-- [ ] Confirm approved items look right
-- [ ] Merge to promote
+- [ ] Confirm approved items look right after merge
+- [ ] Live pool cards appear in the feed after deploy
 `
 
   const pr = await gh(token, `/repos/${repo}/pulls`, {
@@ -167,13 +192,33 @@ export async function createQueuePullRequest(opts) {
   }
 
   const prBody = /** @type {{ html_url?: string, number?: number }} */ (pr.body)
+  const prNumber = prBody.number ?? null
+  const prUrl = prBody.html_url || null
+
+  if (prNumber != null) {
+    const merged = await mergePullRequest(token, repo, prNumber, title)
+    if (!merged.ok) {
+      return {
+        ok: true,
+        status: 201,
+        prUrl,
+        prNumber,
+        path,
+        branch,
+        merged: false,
+        mergeError: merged.error,
+      }
+    }
+  }
+
   return {
     ok: true,
     status: 201,
-    prUrl: prBody.html_url || null,
-    prNumber: prBody.number || null,
+    prUrl,
+    prNumber,
     path,
     branch,
+    merged: prNumber != null,
   }
 }
 

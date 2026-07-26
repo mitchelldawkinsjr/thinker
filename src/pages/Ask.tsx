@@ -1,4 +1,5 @@
 import { AskPanel } from '../components/AskPanel'
+import { Link } from 'react-router-dom'
 import './Ask.css'
 
 export function Ask() {
@@ -9,8 +10,8 @@ export function Ask() {
         <h2>How this works</h2>
         <p>
           Instant catalog paths first, then <strong>OpenAI</strong> (or Ollama fallback)
-          appends a short answer with outbound links from Thinker’s sites and books —
-          so you dig deeper on purpose instead of endless scrolling.
+          grounds the answer in your <strong>slip box</strong> — matching notes plus their
+          linked neighbors — with outbound links from Thinker’s sites and books.
         </p>
         <ul>
           <li>
@@ -20,6 +21,9 @@ export function Ask() {
             Fallback: local/VPS Ollama if no <code>OPENAI_API_KEY</code>
           </li>
           <li>Follow-up chips refill the box so you can keep going</li>
+          <li>
+            Build notes on <Link to="/kept">Kept</Link> so Ask has denser ZK context
+          </li>
         </ul>
       </aside>
     </div>

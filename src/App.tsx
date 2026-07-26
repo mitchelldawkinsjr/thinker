@@ -2,6 +2,7 @@ import { lazy, Suspense, useMemo, type ReactNode } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { KeptProvider } from './hooks/useKept'
 import { ThoughtsProvider } from './hooks/useThoughts'
+import { ZettelProvider } from './hooks/useZettel'
 import { DraftReviewProvider } from './hooks/useDraftReview'
 import { useIdeaDrafts } from './hooks/useIdeaDrafts'
 import { SubscriptionsProvider } from './hooks/useSubscriptions'
@@ -41,6 +42,7 @@ export default function App() {
     <BrowserRouter>
       <KeptProvider>
         <ThoughtsProvider>
+          <ZettelProvider>
           <DraftReviewGate>
             <SubscriptionsProvider>
               <TopicsProvider>
@@ -66,6 +68,7 @@ export default function App() {
               </TopicsProvider>
             </SubscriptionsProvider>
           </DraftReviewGate>
+          </ZettelProvider>
         </ThoughtsProvider>
       </KeptProvider>
     </BrowserRouter>

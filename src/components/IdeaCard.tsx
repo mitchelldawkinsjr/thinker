@@ -173,7 +173,7 @@ export function IdeaCard({
             #{topic?.name ?? idea.topicId}
           </Link>
           <div className="idea-card-top-right">
-            {reviewing && <span className="idea-review-badge">Draft · review</span>}
+            {reviewing && <span className="idea-review-badge">From loop</span>}
             {!compact && typeof index === 'number' && typeof total === 'number' && (
               <span className="idea-progress">
                 {index + 1} / {total}
@@ -223,14 +223,14 @@ export function IdeaCard({
         {reviewing && !compact && (
           <div className="idea-review-bar">
             <p className="idea-review-copy">
-              First look — approve to keep it in your pool, or deny to drop it.
+              New from the idea loop — Keep to attach your note and continue, or Reject to drop it.
             </p>
             <div className="idea-review-actions">
               <button type="button" className="idea-btn ghost" onClick={() => deny(idea.id)}>
-                Deny
+                Reject
               </button>
               <button type="button" className="idea-btn keep" onClick={() => approve(idea)}>
-                Approve
+                Keep
               </button>
             </div>
           </div>

@@ -11,6 +11,7 @@ import {
 import type { Idea } from '../data/types'
 import {
   newThoughtId,
+  parentFromIdea,
   thoughtToIdea,
   thoughtsToSeeds,
   type Thought,
@@ -44,6 +45,11 @@ type ThoughtsContextValue = {
   remove: (id: string) => void
   addMyIdea: (idea: Idea) => void
   removeMyIdea: (id: string) => void
+  /**
+   * Lite zettel: link seed thoughts to a kept loop idea (promotedIdeaId),
+   * or create a thin note edge when no seeds exist.
+   */
+  attachLoopIdea: (idea: Idea) => void
   exportSeeds: () => ThoughtSeed[]
   count: number
 }
@@ -249,6 +255,49 @@ export function ThoughtsProvider({ children }: { children: ReactNode }) {
     setMyIdeas((prev) => prev.filter((i) => i.id !== id))
   }, [])
 
+  const attachLoopIdea = useCallback(
+    (idea: Idea) => {
+      const seedIds = Array.isArray(idea.seedThoughtIds)
+        ? idea.seedThoughtIds.filter((id): id is string => typeof id === 'string' && id.length > 0)
+        : []
+      const note =
+        idea.takeaway?.trim() || idea.hook?.trim() || idea.title.trim() || 'Kept from idea loop'
+
+      setThoughts((prev) => {
+        let next = [...prev]
+        let linked = 0
+        if (seedIds.length > 0) {
+          next = next.map((t) => {
+            if (!seedIds.includes(t.id)) return t
+            linked++
+            return { ...t, promotedIdeaId: idea.id }
+          })
+        }
+        if (linked === 0) {
+          const existing = next.find(
+            (t) => t.promotedIdeaId === idea.id || (t.parent.kind === 'idea' && t.parent.id === idea.id),
+          )
+          if (!existing) {
+            next.unshift({
+              id: newThoughtId(),
+              startSec: 0,
+              note,
+              createdAt: new Date().toISOString(),
+              parent: parentFromIdea(idea),
+              promotedIdeaId: idea.id,
+            })
+          } else if (!existing.promotedIdeaId) {
+            next = next.map((t) =>
+              t.id === existing.id ? { ...t, promotedIdeaId: idea.id } : t,
+            )
+          }
+        }
+        return next
+      })
+    },
+    [],
+  )
+
   const exportSeeds = useCallback(() => thoughtsToSeeds(thoughts), [thoughts])
 
   const value = useMemo(
@@ -262,6 +311,7 @@ export function ThoughtsProvider({ children }: { children: ReactNode }) {
       remove,
       addMyIdea,
       removeMyIdea,
+      attachLoopIdea,
       exportSeeds,
       count: thoughts.length,
     }),
@@ -275,6 +325,7 @@ export function ThoughtsProvider({ children }: { children: ReactNode }) {
       remove,
       addMyIdea,
       removeMyIdea,
+      attachLoopIdea,
       exportSeeds,
     ],
   )
