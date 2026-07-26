@@ -644,30 +644,24 @@ export function ImageLightboxTrigger({
   )
 }
 
-function useLightboxChrome(onClose: () => void) {
+function useLightboxChrome() {
   const closeBtnRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const prev = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     closeBtnRef.current?.focus()
-
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-    window.addEventListener('keydown', onKey)
     return () => {
       document.body.style.overflow = prev
-      window.removeEventListener('keydown', onKey)
     }
-  }, [onClose])
+  }, [])
 
   return closeBtnRef
 }
 
 function ImageLightbox({ url, onClose }: { url: string; onClose: () => void }) {
   const titleId = useId()
-  const closeBtnRef = useLightboxChrome(onClose)
+  const closeBtnRef = useLightboxChrome()
 
   return createPortal(
     <div
@@ -707,7 +701,7 @@ function ImageLightbox({ url, onClose }: { url: string; onClose: () => void }) {
 function VideoLightbox({ url, onClose }: { url: string; onClose: () => void }) {
   const titleId = useId()
   const videoRef = useRef<HTMLVideoElement>(null)
-  const closeBtnRef = useLightboxChrome(onClose)
+  const closeBtnRef = useLightboxChrome()
   const embedSrc = youtubeEmbedUrl(url)
 
   useEffect(() => {

@@ -216,15 +216,6 @@ export function Feed() {
     setIndex(index - 1)
   }, [index, items, leaving])
 
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight' || e.key === 'j') next()
-      if (e.key === 'ArrowLeft' || e.key === 'k') prev()
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [next, prev])
-
   const counts = useMemo(() => {
     const c = { idea: 0, resource: 0, book: 0, news: 0, scripture: 0, game: 0 }
     for (const it of items) c[it.kind]++
