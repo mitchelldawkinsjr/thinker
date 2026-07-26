@@ -88,19 +88,28 @@ Evergreen ideas live in `src/data/ideas.ts`. Rotating LLM-promoted ideas load fr
 Human review stays on PRs; merge advances the next Action.
 
 ```text
-Kept export seeds
-  → PR: scripts/seeds/inbox/*.json
+Kept → Send seeds to idea loop  (opens inbox PR)
   → merge main
   → Action: Draft ideas  →  opens draft review PR
   → merge draft PR       →  idea-drafts.json live (Approve/Deny in feed)
-  → Kept export approved
-  → PR: scripts/promote/inbox/*.json
+  → Kept → Send approved to idea loop  (opens promote inbox PR)
   → merge main
   → Action: Promote ideas → opens promote PR (ideas.json)
   → merge promote PR     →  deploy ships live pool
 ```
 
-**1. Queue seeds** (from Kept → Export seeds):
+**From the app (preferred)**
+
+1. One-time VPS setup in `/opt/thinker/.env`:
+   - `GITHUB_TOKEN` — fine-grained PAT with Contents + Pull requests on this repo
+   - `QUEUE_SECRET` — random shared gate (not the GitHub token)
+   - optional `GITHUB_REPO=mitchelldawkinsjr/thinker`
+2. Rebuild/restart the app container so the sidecar picks up env.
+3. In **Settings → Idea loop**, paste the same `QUEUE_SECRET`.
+4. On **Kept**, tap **Send seeds to idea loop** (or **Send approved…**). The app opens a GitHub PR.
+5. Merge that PR → the next Action runs.
+
+**CLI fallback** (download JSON from Kept, or offline):
 
 ```bash
 npm run queue:seeds -- ~/Downloads/thinker-thought-seeds-YYYY-MM-DD.json
@@ -112,15 +121,9 @@ Merge that PR. **Draft ideas** runs, archives the seeds under `scripts/seeds/arc
 
 **2. Merge the draft PR** after skimming voice/duplicates. Deploy puts drafts in the feed — Approve / Deny there.
 
-**3. Queue approved drafts** (from Kept → Export approved):
+**3. Queue approved** the same way (app Send, or `npm run queue:promote`).
 
-```bash
-npm run queue:promote -- ~/Downloads/thinker-approved-drafts-YYYY-MM-DD.json
-git add scripts/promote/inbox && git commit -m "chore: queue approved drafts" && git push -u origin HEAD
-gh pr create --title "chore: queue approved drafts" --body "Promote keepers into the live pool."
-```
-
-Merge that PR. **Promote ideas** runs, archives the export, and opens a PR updating `public/content/ideas.json` (21-day TTL) + pruning the draft queue. Merge to ship.
+Merge the promote-inbox PR. **Promote ideas** opens a PR updating `public/content/ideas.json` (21-day TTL) + pruning the draft queue. Merge to ship.
 
 **Manual / local still works:**
 
@@ -132,7 +135,7 @@ npm run draft:ideas -- --seeds-dir scripts/seeds/inbox
 npm run promote:ideas -- scripts/drafts/ideas-football-film-YYYY-MM-DD.json --ids draft-foo,draft-bar
 ```
 
-**Listening moments:** While playing book/podcast audio, tap **+** on the player → Save or Save as idea. Moments live under Kept; export seeds into the loop above.
+**Listening moments:** While playing book/podcast audio, tap **+** on the player → Save or Save as idea. Moments live under Kept; send seeds into the loop above.
 
 GitHub: Actions → **Draft ideas** also supports `workflow_dispatch` (`all-thin` or a topic) without seeds. Requires repo secret `OPENAI_API_KEY`.
 

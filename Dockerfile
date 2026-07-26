@@ -26,6 +26,7 @@ COPY nginx/default.conf.template /etc/nginx/templates/default.conf.template
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY scripts/feed-proxy-server.mjs /opt/thinker/feed-proxy-server.mjs
 COPY scripts/lib/feedProxy.mjs /opt/thinker/lib/feedProxy.mjs
+COPY scripts/lib/githubQueue.mjs /opt/thinker/lib/githubQueue.mjs
 COPY docker/entrypoint.sh /opt/thinker/entrypoint.sh
 RUN chmod +x /opt/thinker/entrypoint.sh
 
@@ -35,6 +36,9 @@ ENV OPENAI_API_KEY=
 ENV OPENAI_MODEL=gpt-4o-mini
 ENV OPENAI_CONFIGURED=false
 ENV FEED_PROXY_PORT=3091
+ENV GITHUB_TOKEN=
+ENV GITHUB_REPO=mitchelldawkinsjr/thinker
+ENV QUEUE_SECRET=
 
 EXPOSE 80
 

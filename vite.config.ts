@@ -3,9 +3,11 @@ import type { Connect, Plugin } from 'vite'
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
-// Shared with Docker sidecar — plain JS module
+// Shared with Docker sidecar — plain JS modules
 // @ts-expect-error no types for .mjs helper
 import { proxyFeed } from './scripts/lib/feedProxy.mjs'
+// @ts-expect-error no types for .mjs helper
+import { createQueuePullRequest, githubQueueConfigured } from './scripts/lib/githubQueue.mjs'
 
 function readBody(req: IncomingMessage): Promise<Buffer> {
   return new Promise((resolve, reject) => {
@@ -116,9 +118,87 @@ function feedProxyPlugin(): Plugin {
   }
 }
 
+/** Idea-loop queue — opens a GitHub PR into seeds/promote inbox (PAT stays server-side). */
+function githubQueuePlugin(
+  token: string,
+  queueSecret: string,
+  repo: string,
+): Plugin {
+  const mount = (middlewares: Connect.Server) => {
+    middlewares.use(async (req, res, next) => {
+      const path = req.url?.split('?')[0] ?? ''
+      if (!path.startsWith('/api/github')) return next()
+
+      if (path === '/api/github/status' && req.method === 'GET') {
+        json(res, 200, {
+          configured: githubQueueConfigured(token, queueSecret),
+          repo,
+        })
+        return
+      }
+
+      if (path === '/api/github/queue' && req.method === 'POST') {
+        if (!githubQueueConfigured(token, queueSecret)) {
+          json(res, 503, { error: 'GitHub queue not configured (set GITHUB_TOKEN + QUEUE_SECRET)' })
+          return
+        }
+        const header = req.headers['x-queue-secret']
+        const provided = Array.isArray(header) ? header[0] : header
+        if (!provided || provided !== queueSecret) {
+          json(res, 401, { error: 'Invalid or missing X-Queue-Secret' })
+          return
+        }
+        try {
+          const raw = await readBody(req)
+          const parsed = JSON.parse(raw.toString('utf8') || '{}') as {
+            kind?: string
+            payload?: unknown
+            filename?: string
+          }
+          const result = await createQueuePullRequest({
+            token,
+            repo,
+            kind: parsed.kind as 'seeds' | 'promote',
+            payload: parsed.payload,
+            filename: parsed.filename,
+          })
+          if (!result.ok) {
+            json(res, result.status || 502, { error: result.error })
+            return
+          }
+          json(res, 201, {
+            prUrl: result.prUrl,
+            prNumber: result.prNumber,
+            path: result.path,
+            branch: result.branch,
+          })
+        } catch (err) {
+          json(res, 400, {
+            error: err instanceof Error ? err.message : 'Invalid request body',
+          })
+        }
+        return
+      }
+
+      json(res, 404, { error: 'Not found' })
+    })
+  }
+
+  return {
+    name: 'github-queue',
+    configureServer(server) {
+      mount(server.middlewares)
+    },
+    configurePreviewServer(server) {
+      mount(server.middlewares)
+    },
+  }
+}
+
 function json(res: ServerResponse, status: number, payload: unknown) {
   res.statusCode = status
   res.setHeader('Content-Type', 'application/json')
+  res.setHeader('Cache-Control', 'no-store')
   res.end(JSON.stringify(payload))
 }
 
@@ -128,12 +208,16 @@ export default defineConfig(({ mode }) => {
   const ollamaTarget = env.OLLAMA_URL || 'http://127.0.0.1:11434'
   const openaiKey = env.OPENAI_API_KEY?.trim() || ''
   const openaiModel = env.OPENAI_MODEL?.trim() || env.VITE_OPENAI_MODEL?.trim() || 'gpt-4o-mini'
+  const githubToken = env.GITHUB_TOKEN?.trim() || ''
+  const queueSecret = env.QUEUE_SECRET?.trim() || ''
+  const githubRepo = env.GITHUB_REPO?.trim() || 'mitchelldawkinsjr/thinker'
 
   return {
     plugins: [
       react(),
       openaiProxyPlugin(openaiKey, openaiModel),
       feedProxyPlugin(),
+      githubQueuePlugin(githubToken, queueSecret, githubRepo),
       VitePWA({
         registerType: 'prompt',
         includeAssets: [
@@ -199,7 +283,8 @@ export default defineConfig(({ mode }) => {
               urlPattern: ({ url }) =>
                 url.pathname.startsWith('/api/ollama') ||
                 url.pathname.startsWith('/api/openai') ||
-                url.pathname.startsWith('/api/feed-proxy'),
+                url.pathname.startsWith('/api/feed-proxy') ||
+                url.pathname.startsWith('/api/github'),
               handler: 'NetworkOnly',
             },
             {

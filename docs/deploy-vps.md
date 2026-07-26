@@ -39,6 +39,13 @@ OPENAI_API_KEY=sk-...
 OPENAI_MODEL=gpt-4o-mini
 OPENAI_CONFIGURED=true
 PORT=8055
+
+# Idea loop (Kept → open inbox PR). PAT never goes in the browser.
+GITHUB_TOKEN=github_pat_...
+GITHUB_REPO=mitchelldawkinsjr/thinker
+QUEUE_SECRET=pick-a-long-random-string
 ```
 
 `OPENAI_API_KEY` enables Ask refine via nginx → api.openai.com (key stays on the server). Set `OPENAI_CONFIGURED=true` when the key is present. `OLLAMA_URL` is the fallback. Rebuild after changing `VITE_*` build args.
+
+`GITHUB_TOKEN` + `QUEUE_SECRET` enable **Send to idea loop** on Kept (opens a PR). Put the same `QUEUE_SECRET` in Settings → Idea loop on your device. Rebuild/restart after changing these.
