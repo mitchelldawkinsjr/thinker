@@ -1,0 +1,10 @@
+{
+  "exportedAt": "2026-07-26T20:00:00.000Z",
+  "seeds": [
+    {
+      "topicId": "mental-models",
+      "note": "Prod smoke test seed — safe to close if unwanted.",
+      "kind": "kept"
+    }
+  ]
+}
