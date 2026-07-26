@@ -61,6 +61,8 @@ function renderFeedCard(item: FeedItem, nav: NavProps): ReactNode {
           why={item.why}
           url={item.url}
           topicId={item.topicId}
+          ctaLabel={item.ctaLabel}
+          kindLabel={item.kindLabel}
           {...nav}
         />
       )
