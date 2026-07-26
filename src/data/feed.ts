@@ -202,7 +202,7 @@ function bookItems(topicFilter?: TopicFilter): FeedItem[] {
         topicId: shelf.topicIds[0],
         source: 'zoboko',
         ctaLabel: 'Open on Zoboko',
-        kindLabel: 'Book · personal growth',
+        kindLabel: shelf.kindLabel,
       })
     }
   }

@@ -90,8 +90,8 @@ export function Books() {
           <a href={GUTENBERG_HOME} target="_blank" rel="noreferrer">
             Project Gutenberg
           </a>
-          , plus a curated personal-growth shelf for Mental Models. Shelves map
-          to Thinker topics — politics, finance, history, and clearer thinking.
+          , plus curated Zoboko shelves for philosophy, psychology, politics,
+          business, and physics. Diet, romance, and fluff stay off the list.
         </p>
       </header>
 
