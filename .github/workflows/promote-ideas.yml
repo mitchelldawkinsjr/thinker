@@ -1,0 +1,114 @@
+name: Promote ideas
+
+on:
+  # Approved-export PR merged → promote into the live rotating pool
+  push:
+    branches: [main]
+    paths:
+      - "scripts/promote/inbox/**/*.json"
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "Path under scripts/promote/inbox/ (or leave blank to process all)"
+        required: false
+        default: ""
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Find approved exports
+        id: inbox
+        run: |
+          shopt -s nullglob
+          INPUT="${{ inputs.file }}"
+          if [ -n "$INPUT" ]; then
+            if [ ! -f "$INPUT" ]; then
+              echo "Missing file: $INPUT"
+              exit 1
+            fi
+            files=("$INPUT")
+          else
+            files=(scripts/promote/inbox/*.json)
+          fi
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "has_files=false" >> "$GITHUB_OUTPUT"
+            echo "No approved JSON in promote inbox"
+          else
+            echo "has_files=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "files<<EOF"
+              printf '%s\n' "${files[@]}"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+            printf 'Promote files:\n'
+            printf ' - %s\n' "${files[@]}"
+          fi
+
+      - name: Promote into live pool
+        if: steps.inbox.outputs.has_files == 'true'
+        run: |
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            echo "Promoting $f"
+            node scripts/promote-ideas.mjs "$f" --all
+          done <<< "${{ steps.inbox.outputs.files }}"
+
+      - name: Archive processed exports
+        if: steps.inbox.outputs.has_files == 'true'
+        run: |
+          stamp=$(date -u +%Y%m%d-%H%M%S)
+          mkdir -p scripts/promote/archive
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            # Only move files that still live in the inbox
+            case "$f" in
+              scripts/promote/inbox/*)
+                base=$(basename "$f" .json)
+                mv "$f" "scripts/promote/archive/${base}-${stamp}.json"
+                ;;
+            esac
+          done <<< "${{ steps.inbox.outputs.files }}"
+
+      - name: Open PR with promoted pool
+        if: steps.inbox.outputs.has_files == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BRANCH="promote-ideas-$(date -u +%Y%m%d-%H%M%S)"
+          git config user.name "thinker-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add public/content/ideas.json public/content/idea-drafts.json
+          git add scripts/promote/inbox scripts/promote/archive
+          if git diff --staged --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "chore: promote approved idea drafts to live pool"
+          git push -u origin HEAD
+          gh pr create \
+            --title "chore: promote approved idea drafts to live pool" \
+            --body "$(cat <<'EOF'
+          ## Summary
+          - Promoted approved Kept exports from `scripts/promote/inbox/`
+          - Updated live pool: `public/content/ideas.json` (21-day TTL)
+          - Pruned review queue: `public/content/idea-drafts.json`
+          - Archived the export under `scripts/promote/archive/`
+
+          **After merge:** deploy ships the new cards into the feed.
+
+          ## Test plan
+          - [ ] Spot-check promoted titles in `ideas.json`
+          - [ ] Confirm promoted ids left the draft queue
+          - [ ] After merge + deploy, cards appear in the feed
+          EOF
+          )"

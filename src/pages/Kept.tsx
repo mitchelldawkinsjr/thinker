@@ -293,7 +293,7 @@ export function Kept() {
         <h1>Kept ideas</h1>
         <p>
           {empty
-            ? 'Keep anything from the feed with a note — share to Evernote, or export seeds for draft:ideas.'
+            ? 'Keep anything from the feed with a note — share to Evernote, or export seeds into the idea loop.'
             : [
                 ideas.length > 0
                   ? `${ideas.length} idea${ideas.length === 1 ? '' : 's'}`
@@ -334,7 +334,7 @@ export function Kept() {
                   )
                 }
               >
-                Export seeds for draft:ideas
+                Export seeds (→ scripts/seeds/inbox)
               </button>
             )}
             {approvedCount > 0 && (
@@ -348,10 +348,16 @@ export function Kept() {
                   )
                 }
               >
-                Export approved drafts for promote
+                Export approved (→ scripts/promote/inbox)
               </button>
             )}
           </div>
+        )}
+        {(thoughts.length > 0 || approvedCount > 0) && (
+          <p className="kept-pending">
+            Idea loop: export → <code>npm run queue:seeds</code> /{' '}
+            <code>queue:promote</code> → PR → merge runs the next Action (see README).
+          </p>
         )}
         {pendingCount > 0 && (
           <p className="kept-pending">

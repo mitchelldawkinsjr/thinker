@@ -1,6 +1,11 @@
 name: Draft ideas
 
 on:
+  # Seeds PR merged → draft from inbox and open a review PR
+  push:
+    branches: [main]
+    paths:
+      - "scripts/seeds/inbox/**/*.json"
   workflow_dispatch:
     inputs:
       mode:
@@ -31,7 +36,25 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+
+      - name: Check seeds inbox (push trigger)
+        id: inbox
+        if: github.event_name == 'push'
+        run: |
+          shopt -s nullglob
+          files=(scripts/seeds/inbox/*.json)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "has_seeds=false" >> "$GITHUB_OUTPUT"
+            echo "No seed JSON in inbox — nothing to draft"
+          else
+            echo "has_seeds=true" >> "$GITHUB_OUTPUT"
+            printf 'Seed files:\n'
+            printf ' - %s\n' "${files[@]}"
+          fi
+
       - name: Draft idea cards
+        id: draft
+        if: github.event_name == 'workflow_dispatch' || steps.inbox.outputs.has_seeds == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-4o-mini
@@ -40,14 +63,31 @@ jobs:
             echo "Missing secret OPENAI_API_KEY"
             exit 1
           fi
-          COUNT="${{ inputs.count }}"
-          MODE="${{ inputs.mode }}"
-          if [ "$MODE" = "all-thin" ]; then
-            node scripts/draft-ideas.mjs --all-thin --count "$COUNT"
+          COUNT="${{ inputs.count || '4' }}"
+          if [ "${{ github.event_name }}" = "push" ]; then
+            node scripts/draft-ideas.mjs --seeds-dir scripts/seeds/inbox --count "$COUNT"
           else
-            node scripts/draft-ideas.mjs --topic "$MODE" --count "$COUNT"
+            MODE="${{ inputs.mode }}"
+            if [ "$MODE" = "all-thin" ]; then
+              node scripts/draft-ideas.mjs --all-thin --count "$COUNT"
+            else
+              node scripts/draft-ideas.mjs --topic "$MODE" --count "$COUNT"
+            fi
           fi
+
+      - name: Archive processed seeds
+        if: github.event_name == 'push' && steps.inbox.outputs.has_seeds == 'true'
+        run: |
+          shopt -s nullglob
+          stamp=$(date -u +%Y%m%d-%H%M%S)
+          mkdir -p scripts/seeds/archive
+          for f in scripts/seeds/inbox/*.json; do
+            base=$(basename "$f" .json)
+            mv "$f" "scripts/seeds/archive/${base}-${stamp}.json"
+          done
+
       - name: Open PR with drafts
+        if: github.event_name == 'workflow_dispatch' || steps.inbox.outputs.has_seeds == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -60,22 +100,48 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git checkout -b "$BRANCH"
           git add -f scripts/drafts/ideas-*.json
+          git add public/content/idea-drafts.json
+          if [ "${{ github.event_name }}" = "push" ]; then
+            git add scripts/seeds/inbox scripts/seeds/archive
+          fi
+          if git diff --staged --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
           git commit -m "chore: LLM idea drafts for review"
           git push -u origin HEAD
-          gh pr create \
-            --title "chore: LLM idea drafts for review" \
-            --body "## Summary
-          - Auto-generated Idea card drafts (\`draft-ideas.mjs\`)
-          - Review JSON under \`scripts/drafts/\`, then promote keepers:
+          BODY="$(cat <<'EOF'
+          ## Summary
+          - Auto-generated Idea card drafts (`draft-ideas.mjs`)
+          - Review queue updated: `public/content/idea-drafts.json`
+          - Archive JSON under `scripts/drafts/`
 
-          \`\`\`bash
-          npm run promote:ideas -- scripts/drafts/<file>.json --all
-          npm run promote:ideas -- scripts/drafts/<file>.json --ids id1,id2
-          \`\`\`
-
-          - Promote writes \`public/content/ideas.json\` (21-day TTL). Do not merge drafts into \`ideas.ts\` unless promoting to evergreen.
+          **After merge:** deploy ships the queue → Approve / Deny in the feed.
+          Then export approved from Kept → PR into `scripts/promote/inbox/` → merge promotes to the live pool.
 
           ## Test plan
           - [ ] Skim draft titles/bodies for voice and duplicates
-          - [ ] Promote selected ids locally
-          - [ ] Confirm feed shows new idea cards after deploy"
+          - [ ] Merge this PR to put drafts in the feed review queue
+          - [ ] Approve keepers in the app (or deny noise)
+          EOF
+          )"
+          if [ "${{ github.event_name }}" = "push" ]; then
+            BODY="$(cat <<'EOF'
+          ## Summary
+          - Drafted from seeds that landed in `scripts/seeds/inbox/` (now archived)
+          - Review queue updated: `public/content/idea-drafts.json`
+          - Archive JSON under `scripts/drafts/`
+
+          **After merge:** deploy ships the queue → Approve / Deny in the feed.
+          Then export approved from Kept → PR into `scripts/promote/inbox/` → merge promotes to the live pool.
+
+          ## Test plan
+          - [ ] Skim draft titles/bodies for voice and duplicates
+          - [ ] Merge this PR to put drafts in the feed review queue
+          - [ ] Approve keepers in the app (or deny noise)
+          EOF
+          )"
+          fi
+          gh pr create \
+            --title "chore: LLM idea drafts for review" \
+            --body "$BODY"

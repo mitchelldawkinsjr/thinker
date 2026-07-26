@@ -426,7 +426,7 @@ export function IdeaCard({
                 ? `Moment at ${formatAudioTime(momentAt)} · ${idea.source}`
                 : idea.source
             }
-            placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+            placeholder="What stuck? One line is enough — export seeds into the idea loop later."
             active={flipped}
             initialNote={noteMode === 'keep' ? (keepThought?.note ?? '') : ''}
             allowPromote={noteMode === 'moment' || !keepThought?.promotedIdeaId}
