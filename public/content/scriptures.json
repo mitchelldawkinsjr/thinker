@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25T23:15:54.454Z",
+  "updatedAt": "2026-07-26T20:08:58.969Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -656,22 +656,1444 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-186",
-      "reference": "Psalm 121:7",
-      "text": "Yahweh will keep you from all evil. He will keep your soul.",
+      "id": "john-3-16",
+      "reference": "John 3:16",
+      "text": "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.",
       "translation": "WEB",
-      "hook": "Daily promise · July 4th",
-      "lesson": "While tragedy may beset us while we travail in this present age, our assurance is firm: our great God and Father shall prevent our downfall until that glorious day when we shall stand evermore in victory ultimate in the name of Christ Jesus our Lord. Praise Him till He returns and then praise Him throughout eternity! Open the full Blue Letter Bible reading for July 4th.",
+      "hook": "Love that spends itself.",
+      "lesson": "The measure of love is what it gives away — not what it posts.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=186",
-      "bookId": 19,
-      "chapter": 121,
+      "sourceUrl": "https://bolls.life/WEB/43/3/",
+      "bookId": 43,
+      "chapter": 3,
+      "verseStart": 16,
+      "verseEnd": 16,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-28-19-20",
+      "reference": "Matthew 28:19–20",
+      "text": "Go, and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all things that I commanded you. Behold, I am with you always, even to the end of the age.” Amen.",
+      "translation": "WEB",
+      "hook": "Mission includes presence.",
+      "lesson": "Go, teach, baptize — and remember the closer: you are not alone to the end.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/28/",
+      "bookId": 40,
+      "chapter": 28,
+      "verseStart": 19,
+      "verseEnd": 20,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-11-28",
+      "reference": "Matthew 11:28",
+      "text": "“Come to me, all you who labor and are heavily burdened, and I will give you rest.",
+      "translation": "WEB",
+      "hook": "Rest is an invitation, not a prize.",
+      "lesson": "Bring the heavy load — don’t wait until you’ve earned the right to put it down.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/11/",
+      "bookId": 40,
+      "chapter": 11,
+      "verseStart": 28,
+      "verseEnd": 28,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-14-16",
+      "reference": "Matthew 5:14–16",
+      "text": "You are the light of the world. A city located on a hill can’t be hidden. Neither do you light a lamp, and put it under a measuring basket, but on a stand; and it shines to all who are in the house. Even so, let your light shine before men; that they may see your good works, and glorify your Father who is in heaven.",
+      "translation": "WEB",
+      "hook": "Visibility is stewardship.",
+      "lesson": "Light on a stand serves the house. Hide it and everyone stumbles in the dark.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 14,
+      "verseEnd": 16,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-14-6",
+      "reference": "John 14:6",
+      "text": "Jesus said to him, “I am the way, the truth, and the life. No one comes to the Father, except through me.",
+      "translation": "WEB",
+      "hook": "Way, truth, life — not a menu.",
+      "lesson": "Some claims are exclusive on purpose. Decide whether you treat them as optional branding.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/14/",
+      "bookId": 43,
+      "chapter": 14,
+      "verseStart": 6,
+      "verseEnd": 6,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-22-37-39",
+      "reference": "Matthew 22:37–39",
+      "text": "Jesus said to him, “‘You shall love the Lord your God with all your heart, with all your soul, and with all your mind.’ This is the first and great commandment. A second likewise is this, ‘You shall love your neighbor as yourself.’",
+      "translation": "WEB",
+      "hook": "Love God. Love neighbor. That’s the stack.",
+      "lesson": "Two commandments collapse a thousand debates into a priority queue.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/22/",
+      "bookId": 40,
+      "chapter": 22,
+      "verseStart": 37,
+      "verseEnd": 39,
+      "pool": "evergreen"
+    },
+    {
+      "id": "luke-6-31",
+      "reference": "Luke 6:31",
+      "text": "“As you would like people to do to you, do exactly so to them.",
+      "translation": "WEB",
+      "hook": "Symmetry is the ethics shortcut.",
+      "lesson": "Before you ship the policy, ask how it feels from the other chair.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/42/6/",
+      "bookId": 42,
+      "chapter": 6,
+      "verseStart": 31,
+      "verseEnd": 31,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-6-33",
+      "reference": "Matthew 6:33",
+      "text": "But seek first God’s Kingdom, and his righteousness; and all these things will be given to you as well.",
+      "translation": "WEB",
+      "hook": "Seek first — then the rest orders itself.",
+      "lesson": "Priority is a filter. Wrong first things make every second thing feel scarce.",
+      "topicIds": [
+        "finance",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/6/",
+      "bookId": 40,
+      "chapter": 6,
+      "verseStart": 33,
+      "verseEnd": 33,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-7-7",
+      "reference": "Matthew 7:7",
+      "text": "“Ask, and it will be given you. Seek, and you will find. Knock, and it will be opened for you.",
+      "translation": "WEB",
+      "hook": "Ask. Seek. Knock. Persist.",
+      "lesson": "Passive wishing isn’t a strategy. Keep the loop open until the door moves.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/7/",
+      "bookId": 40,
+      "chapter": 7,
       "verseStart": 7,
       "verseEnd": 7,
-      "pool": "daily"
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-43-44",
+      "reference": "Matthew 5:43–44",
+      "text": "“You have heard that it was said, ‘You shall love your neighbor and hate your enemy.’ But I tell you, love your enemies, bless those who curse you, do good to those who hate you, and pray for those who mistreat you and persecute you,",
+      "translation": "WEB",
+      "hook": "Love the ones who don’t love you back.",
+      "lesson": "Enemy-love is the hard mode of neighbor-love — and the clearest tell of the real thing.",
+      "topicIds": [
+        "politics",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 43,
+      "verseEnd": 44,
+      "pool": "evergreen"
+    },
+    {
+      "id": "mark-12-28-31",
+      "reference": "Mark 12:28–31",
+      "text": "One of the scribes came, and heard them questioning together. Knowing that he had answered them well, asked him, “Which commandment is the greatest of all?” Jesus answered, “The greatest is, ‘Hear, Israel, the Lord our God, the Lord is one: you shall love the Lord your God with all your heart, and with all your soul, and with all your mind, and with all your strength.’ This is the first commandment. The second is like this, ‘You shall love your neighbor as yourself.’ There is no other commandment greater than these.”",
+      "translation": "WEB",
+      "hook": "The greatest command is not complicated.",
+      "lesson": "One God, whole heart, neighbor as self — simple enough to memorize, hard enough to live.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/41/12/",
+      "bookId": 41,
+      "chapter": 12,
+      "verseStart": 28,
+      "verseEnd": 31,
+      "pool": "evergreen"
+    },
+    {
+      "id": "luke-6-27",
+      "reference": "Luke 6:27",
+      "text": "“But I tell you who hear: love your enemies, do good to those who hate you,",
+      "translation": "WEB",
+      "hook": "Pray for the people who hunt you.",
+      "lesson": "Spite is easy energy. Prayer redirects it before it owns you.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/42/6/",
+      "bookId": 42,
+      "chapter": 6,
+      "verseStart": 27,
+      "verseEnd": 27,
+      "pool": "evergreen"
+    },
+    {
+      "id": "luke-10-27",
+      "reference": "Luke 10:27",
+      "text": "He answered, “You shall love the Lord your God with all your heart, with all your soul, with all your strength, and with all your mind; and your neighbor as yourself.”",
+      "translation": "WEB",
+      "hook": "Heart, soul, strength, mind — all in.",
+      "lesson": "Partial devotion is a split CPU. Whole-person love is the load.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/42/10/",
+      "bookId": 42,
+      "chapter": 10,
+      "verseStart": 27,
+      "verseEnd": 27,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-13-34-35",
+      "reference": "John 13:34–35",
+      "text": "A new commandment I give to you, that you love one another. Just as I have loved you, you also love one another. By this everyone will know that you are my disciples, if you have love for one another.”",
+      "translation": "WEB",
+      "hook": "Love is the brand mark.",
+      "lesson": "Discipleship gets recognized less by slogans than by how you treat each other.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/13/",
+      "bookId": 43,
+      "chapter": 13,
+      "verseStart": 34,
+      "verseEnd": 35,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-15-13",
+      "reference": "John 15:13",
+      "text": "Greater love has no one than this, that someone lay down his life for his friends.",
+      "translation": "WEB",
+      "hook": "Greater love lays itself down.",
+      "lesson": "Friendship’s ceiling isn’t affinity — it’s costly loyalty when it hurts.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/15/",
+      "bookId": 43,
+      "chapter": 15,
+      "verseStart": 13,
+      "verseEnd": 13,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-14-15",
+      "reference": "John 14:15",
+      "text": "If you love me, keep my commandments.",
+      "translation": "WEB",
+      "hook": "Love shows up as obedience.",
+      "lesson": "Affection without follow-through is theater. Keep the commands you claim to cherish.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/14/",
+      "bookId": 43,
+      "chapter": 14,
+      "verseStart": 15,
+      "verseEnd": 15,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-4-17",
+      "reference": "Matthew 4:17",
+      "text": "From that time, Jesus began to preach, and to say, “Repent! For the Kingdom of Heaven is at hand.”",
+      "translation": "WEB",
+      "hook": "Repent — the kingdom is near.",
+      "lesson": "Change direction before the map updates. Proximity to the good still demands a turn.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/4/",
+      "bookId": 40,
+      "chapter": 4,
+      "verseStart": 17,
+      "verseEnd": 17,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-6-21",
+      "reference": "Matthew 6:21",
+      "text": "for where your treasure is, there your heart will be also.",
+      "translation": "WEB",
+      "hook": "Follow the treasure to find the heart.",
+      "lesson": "Budgets and calendars confess what sermons won’t. Watch where attention settles.",
+      "topicIds": [
+        "finance",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/6/",
+      "bookId": 40,
+      "chapter": 6,
+      "verseStart": 21,
+      "verseEnd": 21,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-6-27",
+      "reference": "Matthew 6:27",
+      "text": "“Which of you, by being anxious, can add one moment to his lifespan?",
+      "translation": "WEB",
+      "hook": "Worry doesn’t buy hours.",
+      "lesson": "Anxiety is expensive and sterile — it spends focus without extending life.",
+      "topicIds": [
+        "mental-models",
+        "finance"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/6/",
+      "bookId": 40,
+      "chapter": 6,
+      "verseStart": 27,
+      "verseEnd": 27,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-7-1",
+      "reference": "Matthew 7:1",
+      "text": "“Don’t judge, so that you won’t be judged.",
+      "translation": "WEB",
+      "hook": "Judgment boomerangs.",
+      "lesson": "The standard you swing at others will return on you. Soften the gavel.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/7/",
+      "bookId": 40,
+      "chapter": 7,
+      "verseStart": 1,
+      "verseEnd": 1,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-9-2",
+      "reference": "Matthew 9:2",
+      "text": "Behold, they brought to him a man who was paralyzed, lying on a bed. Jesus, seeing their faith, said to the paralytic, “Son, cheer up! Your sins are forgiven you.”",
+      "translation": "WEB",
+      "hook": "Take heart — sins forgiven.",
+      "lesson": "Before the body is healed, the deeper wound gets named: you are not stuck in guilt.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/9/",
+      "bookId": 40,
+      "chapter": 9,
+      "verseStart": 2,
+      "verseEnd": 2,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-19-26",
+      "reference": "Matthew 19:26",
+      "text": "Looking at them, Jesus said, “With men this is impossible, but with God all things are possible.”",
+      "translation": "WEB",
+      "hook": "With God, possible expands.",
+      "lesson": "Human ceilings are real. Don’t confuse them with absolute ceilings.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/19/",
+      "bookId": 40,
+      "chapter": 19,
+      "verseStart": 26,
+      "verseEnd": 26,
+      "pool": "evergreen"
+    },
+    {
+      "id": "mark-8-34",
+      "reference": "Mark 8:34",
+      "text": "He called the multitude to himself with his disciples, and said to them, “Whoever wants to come after me, let him deny himself, and take up his cross, and follow me.",
+      "translation": "WEB",
+      "hook": "Take up the cross — then follow.",
+      "lesson": "Discipleship isn’t a vibe. It’s costly alignment with a path you didn’t invent.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/41/8/",
+      "bookId": 41,
+      "chapter": 8,
+      "verseStart": 34,
+      "verseEnd": 34,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-10-30",
+      "reference": "John 10:30",
+      "text": "I and the Father are one.”",
+      "translation": "WEB",
+      "hook": "Unity that is identity.",
+      "lesson": "“I and the Father are one” is not teamwork talk — it’s a claim about who He is.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/10/",
+      "bookId": 43,
+      "chapter": 10,
+      "verseStart": 30,
+      "verseEnd": 30,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-3",
+      "reference": "Matthew 5:3",
+      "text": "“Blessed are the poor in spirit, for theirs is the Kingdom of Heaven.",
+      "translation": "WEB",
+      "hook": "Poverty of spirit is the doorway.",
+      "lesson": "Kingdom entry starts with admitting you don’t have the leverage you pretend to.",
+      "topicIds": [
+        "mental-models",
+        "finance"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 3,
+      "verseEnd": 3,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-4",
+      "reference": "Matthew 5:4",
+      "text": "Blessed are those who mourn, for they shall be comforted.",
+      "translation": "WEB",
+      "hook": "Mourning gets comfort, not scorn.",
+      "lesson": "Grief isn’t failure. It’s honesty about loss — and honesty is where comfort lands.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 4,
+      "verseEnd": 4,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-5",
+      "reference": "Matthew 5:5",
+      "text": "Blessed are the gentle, for they shall inherit the earth.",
+      "translation": "WEB",
+      "hook": "The meek inherit — not the loudest.",
+      "lesson": "Soft power outlasts domination theater. Strength under rein still wins the long game.",
+      "topicIds": [
+        "politics",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 5,
+      "verseEnd": 5,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-6",
+      "reference": "Matthew 5:6",
+      "text": "Blessed are those who hunger and thirst after righteousness, for they shall be filled.",
+      "translation": "WEB",
+      "hook": "Hunger for rightness gets filled.",
+      "lesson": "Appetite for justice is a feature. Starve it with cynicism and you get brittle.",
+      "topicIds": [
+        "politics",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 6,
+      "verseEnd": 6,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-7",
+      "reference": "Matthew 5:7",
+      "text": "Blessed are the merciful, for they shall obtain mercy.",
+      "translation": "WEB",
+      "hook": "Mercy is a reciprocal currency.",
+      "lesson": "What you withhold from others often becomes what you lack when you need it.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 7,
+      "verseEnd": 7,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-8",
+      "reference": "Matthew 5:8",
+      "text": "Blessed are the pure in heart, for they shall see God.",
+      "translation": "WEB",
+      "hook": "Purity of heart clears the view.",
+      "lesson": "Clouded motives make God and people look like mirrors of your agenda.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 8,
+      "verseEnd": 8,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-9",
+      "reference": "Matthew 5:9",
+      "text": "Blessed are the peacemakers, for they shall be called children of God.",
+      "translation": "WEB",
+      "hook": "Peacemakers get named as family.",
+      "lesson": "Peace isn’t passivity — it’s the hard craft of repairing what’s torn.",
+      "topicIds": [
+        "politics",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 9,
+      "verseEnd": 9,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-10",
+      "reference": "Matthew 5:10",
+      "text": "Blessed are those who have been persecuted for righteousness’ sake, for theirs is the Kingdom of Heaven.",
+      "translation": "WEB",
+      "hook": "Persecution for right still counts as blessing.",
+      "lesson": "Pushback isn’t always a signal you’re wrong — sometimes it’s the cost of alignment.",
+      "topicIds": [
+        "politics",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 10,
+      "verseEnd": 10,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-6-20",
+      "reference": "John 6:20",
+      "text": "But he said to them, “It is I. Don’t be afraid.”",
+      "translation": "WEB",
+      "hook": "It is I — do not be afraid.",
+      "lesson": "Presence collapses panic. Name who is in the boat before you name the storm.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/6/",
+      "bookId": 43,
+      "chapter": 6,
+      "verseStart": 20,
+      "verseEnd": 20,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-6-35",
+      "reference": "John 6:35",
+      "text": "Jesus said to them, “I am the bread of life. He who comes to me will not be hungry, and he who believes in me will never be thirsty.",
+      "translation": "WEB",
+      "hook": "Bread that ends the hunger cycle.",
+      "lesson": "Come and believe — the promise is satisfaction that scrolling never delivers.",
+      "topicIds": [
+        "mental-models",
+        "finance"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/6/",
+      "bookId": 43,
+      "chapter": 6,
+      "verseStart": 35,
+      "verseEnd": 35,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-8-12",
+      "reference": "John 8:12",
+      "text": "Again, therefore, Jesus spoke to them, saying, “I am the light of the world. He who follows me will not walk in the darkness, but will have the light of life.”",
+      "translation": "WEB",
+      "hook": "Follow the light or walk in dark.",
+      "lesson": "Navigation needs a source. Pick a lamp brighter than your feed.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/8/",
+      "bookId": 43,
+      "chapter": 8,
+      "verseStart": 12,
+      "verseEnd": 12,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-8-24",
+      "reference": "John 8:24",
+      "text": "I said therefore to you that you will die in your sins; for unless you believe that I am he, you will die in your sins.”",
+      "translation": "WEB",
+      "hook": "Belief is not optional scenery.",
+      "lesson": "Some truths you can defer; this one claims your destination depends on trust.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/8/",
+      "bookId": 43,
+      "chapter": 8,
+      "verseStart": 24,
+      "verseEnd": 24,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-8-28",
+      "reference": "John 8:28",
+      "text": "Jesus therefore said to them, “When you have lifted up the Son of Man, then you will know that I am he, and I do nothing of myself, but as my Father taught me, I say these things.",
+      "translation": "WEB",
+      "hook": "Lifted up, then known.",
+      "lesson": "Revelation arrives after the costly act — not before the risk feels safe.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/8/",
+      "bookId": 43,
+      "chapter": 8,
+      "verseStart": 28,
+      "verseEnd": 28,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-8-58",
+      "reference": "John 8:58",
+      "text": "Jesus said to them, “Most certainly, I tell you, before Abraham came into existence, I AM. ”",
+      "translation": "WEB",
+      "hook": "Before Abraham — I am.",
+      "lesson": "This isn’t biography flex. It’s a claim that reorders history around a present tense.",
+      "topicIds": [
+        "history",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/8/",
+      "bookId": 43,
+      "chapter": 8,
+      "verseStart": 58,
+      "verseEnd": 58,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-10-9",
+      "reference": "John 10:9",
+      "text": "I am the door. If anyone enters in by me, he will be saved, and will go in and go out, and will find pasture.",
+      "translation": "WEB",
+      "hook": "The door that saves and pastures.",
+      "lesson": "Entry and nourishment share one gate. Don’t invent a side entrance that starves you.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/10/",
+      "bookId": 43,
+      "chapter": 10,
+      "verseStart": 9,
+      "verseEnd": 9,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-10-11",
+      "reference": "John 10:11",
+      "text": "I am the good shepherd. The good shepherd lays down his life for the sheep.",
+      "translation": "WEB",
+      "hook": "The good shepherd spends his life.",
+      "lesson": "Leadership that won’t bleed for the flock is hireling management.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/10/",
+      "bookId": 43,
+      "chapter": 10,
+      "verseStart": 11,
+      "verseEnd": 11,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-11-25",
+      "reference": "John 11:25",
+      "text": "Jesus said to her, “I am the resurrection and the life. He who believes in me will still live, even if he dies.",
+      "translation": "WEB",
+      "hook": "Resurrection is a person, not a metaphor.",
+      "lesson": "Belief rewrites death’s last word — even when the tomb still looks sealed.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/11/",
+      "bookId": 43,
+      "chapter": 11,
+      "verseStart": 25,
+      "verseEnd": 25,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-15-5",
+      "reference": "John 15:5",
+      "text": "I am the vine. You are the branches. He who remains in me, and I in him, the same bears much fruit, for apart from me you can do nothing.",
+      "translation": "WEB",
+      "hook": "Apart from me — nothing.",
+      "lesson": "Branches don’t freestyle fruit. Stay connected or watch the yield collapse.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/15/",
+      "bookId": 43,
+      "chapter": 15,
+      "verseStart": 5,
+      "verseEnd": 5,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-18-5",
+      "reference": "John 18:5",
+      "text": "They answered him, “Jesus of Nazareth.” Jesus said to them, “I am he.” Judas also, who betrayed him, was standing with them.",
+      "translation": "WEB",
+      "hook": "I am he — said in the arrest.",
+      "lesson": "Identity doesn’t flinch when the cost arrives. He names himself in the trap.",
+      "topicIds": [
+        "history",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/18/",
+      "bookId": 43,
+      "chapter": 18,
+      "verseStart": 5,
+      "verseEnd": 5,
+      "pool": "evergreen"
+    },
+    {
+      "id": "rev-22-13",
+      "reference": "Revelation 22:13",
+      "text": "I am the Alpha and the Omega, the First and the Last, the Beginning and the End.",
+      "translation": "WEB",
+      "hook": "Alpha and Omega — bookends of reality.",
+      "lesson": "If He is first and last, mid-story panic loses its claim to be ultimate.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/66/22/",
+      "bookId": 66,
+      "chapter": 22,
+      "verseStart": 13,
+      "verseEnd": 13,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-4-4",
+      "reference": "Matthew 4:4",
+      "text": "But he answered, “It is written, ‘Man shall not live by bread alone, but by every word that proceeds out of the mouth of God.’”",
+      "translation": "WEB",
+      "hook": "Bread alone is not a life.",
+      "lesson": "Material supply without word leaves you fed and empty. Eat both.",
+      "topicIds": [
+        "mental-models",
+        "finance"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/4/",
+      "bookId": 40,
+      "chapter": 4,
+      "verseStart": 4,
+      "verseEnd": 4,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-13",
+      "reference": "Matthew 5:13",
+      "text": "“You are the salt of the earth, but if the salt has lost its flavor, with what will it be salted? It is then good for nothing, but to be cast out and trodden under the feet of men.",
+      "translation": "WEB",
+      "hook": "Salt that loses savor is trash.",
+      "lesson": "Distinctiveness is the job. Blend into the pile and you forfeit the point.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 13,
+      "verseEnd": 13,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-16",
+      "reference": "Matthew 5:16",
+      "text": "Even so, let your light shine before men; that they may see your good works, and glorify your Father who is in heaven.",
+      "translation": "WEB",
+      "hook": "Let good works point upward.",
+      "lesson": "Shine so others credit the Source — not so you collect the spotlight.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 16,
+      "verseEnd": 16,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-6-1",
+      "reference": "Matthew 6:1",
+      "text": "“Be careful that you don’t do your charitable giving before men, to be seen by them, or else you have no reward from your Father who is in heaven.",
+      "translation": "WEB",
+      "hook": "Righteousness for applause is empty.",
+      "lesson": "If the feed is your reward, heaven has nothing left to pay.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/6/",
+      "bookId": 40,
+      "chapter": 6,
+      "verseStart": 1,
+      "verseEnd": 1,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-6-6",
+      "reference": "Matthew 6:6",
+      "text": "But you, when you pray, enter into your inner room, and having shut your door, pray to your Father who is in secret, and your Father who sees in secret will reward you openly.",
+      "translation": "WEB",
+      "hook": "Pray behind the closed door.",
+      "lesson": "Secret practice beats performative piety. The audience of One is enough.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/6/",
+      "bookId": 40,
+      "chapter": 6,
+      "verseStart": 6,
+      "verseEnd": 6,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-6-14",
+      "reference": "Matthew 6:14",
+      "text": "“For if you forgive men their trespasses, your heavenly Father will also forgive you.",
+      "translation": "WEB",
+      "hook": "Forgive to be forgiven.",
+      "lesson": "Clenched fists can’t receive. Release the debt you keep rehearsing.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/6/",
+      "bookId": 40,
+      "chapter": 6,
+      "verseStart": 14,
+      "verseEnd": 14,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-6-24",
+      "reference": "Matthew 6:24",
+      "text": "“No one can serve two masters, for either he will hate the one and love the other; or else he will be devoted to one and despise the other. You can’t serve both God and Mammon.",
+      "translation": "WEB",
+      "hook": "Two masters is a lie.",
+      "lesson": "Split loyalty always picks a winner. Name which throne actually runs you.",
+      "topicIds": [
+        "finance",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/6/",
+      "bookId": 40,
+      "chapter": 6,
+      "verseStart": 24,
+      "verseEnd": 24,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-6-25",
+      "reference": "Matthew 6:25",
+      "text": "Therefore I tell you, don’t be anxious for your life: what you will eat, or what you will drink; nor yet for your body, what you will wear. Isn’t life more than food, and the body more than clothing?",
+      "translation": "WEB",
+      "hook": "Life is more than the supply chain.",
+      "lesson": "Food and clothes matter — anxiety about them shouldn’t become the whole plot.",
+      "topicIds": [
+        "finance",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/6/",
+      "bookId": 40,
+      "chapter": 6,
+      "verseStart": 25,
+      "verseEnd": 25,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-17-20",
+      "reference": "Matthew 17:20",
+      "text": "He said to them, “Because of your unbelief. For most certainly I tell you, if you have faith as a grain of mustard seed, you will tell this mountain, ‘Move from here to there,’ and it will move; and nothing will be impossible for you.",
+      "translation": "WEB",
+      "hook": "Mustard-seed faith moves mountains.",
+      "lesson": "Size of faith isn’t the metric — placement is. Tiny trust aimed right still relocates.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/17/",
+      "bookId": 40,
+      "chapter": 17,
+      "verseStart": 20,
+      "verseEnd": 20,
+      "pool": "evergreen"
+    },
+    {
+      "id": "mark-8-35",
+      "reference": "Mark 8:35",
+      "text": "For whoever wants to save his life will lose it; and whoever will lose his life for my sake and the sake of the Good News will save it.",
+      "translation": "WEB",
+      "hook": "Save your life and lose it.",
+      "lesson": "Clutching the self is the fastest way to forfeit it. Release to receive.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/41/8/",
+      "bookId": 41,
+      "chapter": 8,
+      "verseStart": 35,
+      "verseEnd": 35,
+      "pool": "evergreen"
+    },
+    {
+      "id": "mark-8-36",
+      "reference": "Mark 8:36",
+      "text": "For what does it profit a man, to gain the whole world, and forfeit his life?",
+      "translation": "WEB",
+      "hook": "World gained, soul forfeit — bad trade.",
+      "lesson": "Empire without a self left to enjoy it is a spreadsheet win and a human loss.",
+      "topicIds": [
+        "finance",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/41/8/",
+      "bookId": 41,
+      "chapter": 8,
+      "verseStart": 36,
+      "verseEnd": 36,
+      "pool": "evergreen"
+    },
+    {
+      "id": "luke-11-9",
+      "reference": "Luke 11:9",
+      "text": "“I tell you, keep asking, and it will be given you. Keep seeking, and you will find. Keep knocking, and it will be opened to you.",
+      "translation": "WEB",
+      "hook": "Keep asking until it opens.",
+      "lesson": "Persistence isn’t nagging heaven — it’s refusing to treat silence as a final no.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/42/11/",
+      "bookId": 42,
+      "chapter": 11,
+      "verseStart": 9,
+      "verseEnd": 9,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-7-15",
+      "reference": "Matthew 7:15",
+      "text": "“Beware of false prophets, who come to you in sheep’s clothing, but inwardly are ravening wolves.",
+      "translation": "WEB",
+      "hook": "Sheep clothes can hide wolves.",
+      "lesson": "Audit the fruit, not the costume. Soft branding is easy to fake.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/7/",
+      "bookId": 40,
+      "chapter": 7,
+      "verseStart": 15,
+      "verseEnd": 15,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-10-28",
+      "reference": "Matthew 10:28",
+      "text": "Don’t be afraid of those who kill the body, but are not able to kill the soul. Rather, fear him who is able to destroy both soul and body in Gehenna.",
+      "translation": "WEB",
+      "hook": "Fear the right scale of loss.",
+      "lesson": "Body risk is real; soul risk is ultimate. Calibrate courage accordingly.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/10/",
+      "bookId": 40,
+      "chapter": 10,
+      "verseStart": 28,
+      "verseEnd": 28,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-10-34",
+      "reference": "Matthew 10:34",
+      "text": "“Don’t think that I came to send peace on the earth. I didn’t come to send peace, but a sword.",
+      "translation": "WEB",
+      "hook": "Not peace, but a sword.",
+      "lesson": "Truth divides before it heals. Don’t confuse conflict with failure of the message.",
+      "topicIds": [
+        "politics",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/10/",
+      "bookId": 40,
+      "chapter": 10,
+      "verseStart": 34,
+      "verseEnd": 34,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-10-39",
+      "reference": "Matthew 10:39",
+      "text": "He who seeks his life will lose it; and he who loses his life for my sake will find it.",
+      "translation": "WEB",
+      "hook": "Lose life for His sake — find it.",
+      "lesson": "The path to keeping what matters is releasing what only feels like control.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/10/",
+      "bookId": 40,
+      "chapter": 10,
+      "verseStart": 39,
+      "verseEnd": 39,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-11-29-30",
+      "reference": "Matthew 11:29–30",
+      "text": "Take my yoke upon you, and learn from me, for I am gentle and humble in heart; and you will find rest for your souls. For my yoke is easy, and my burden is light.”",
+      "translation": "WEB",
+      "hook": "Yoke easy, burden light.",
+      "lesson": "Learn from the gentle Teacher. His load fits; ego’s load never does.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/11/",
+      "bookId": 40,
+      "chapter": 11,
+      "verseStart": 29,
+      "verseEnd": 30,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-15-11",
+      "reference": "Matthew 15:11",
+      "text": "That which enters into the mouth doesn’t defile the man; but that which proceeds out of the mouth, this defiles the man.”",
+      "translation": "WEB",
+      "hook": "What comes out defiles.",
+      "lesson": "Speech and intent pollute faster than diet rules. Guard the mouth-exit.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/15/",
+      "bookId": 40,
+      "chapter": 15,
+      "verseStart": 11,
+      "verseEnd": 11,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-18-3",
+      "reference": "Matthew 18:3",
+      "text": "and said, “Most certainly I tell you, unless you turn, and become as little children, you will in no way enter into the Kingdom of Heaven.",
+      "translation": "WEB",
+      "hook": "Turn and become like children.",
+      "lesson": "Status theater blocks entry. Humility is the ticket, not sophistication.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/18/",
+      "bookId": 40,
+      "chapter": 18,
+      "verseStart": 3,
+      "verseEnd": 3,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-19-14",
+      "reference": "Matthew 19:14",
+      "text": "But Jesus said, “Allow the little children, and don’t forbid them to come to me; for the Kingdom of Heaven belongs to ones like these.”",
+      "translation": "WEB",
+      "hook": "Let the children come.",
+      "lesson": "Don’t gatekeep wonder. The kingdom already belongs to the unpretentious.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/19/",
+      "bookId": 40,
+      "chapter": 19,
+      "verseStart": 14,
+      "verseEnd": 14,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-19-24",
+      "reference": "Matthew 19:24",
+      "text": "Again I tell you, it is easier for a camel to go through a needle’s eye, than for a rich man to enter into God’s Kingdom.”",
+      "translation": "WEB",
+      "hook": "Camel, needle, rich man.",
+      "lesson": "Wealth can thicken the ego until entry looks impossible. Hold riches loosely.",
+      "topicIds": [
+        "finance",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/19/",
+      "bookId": 40,
+      "chapter": 19,
+      "verseStart": 24,
+      "verseEnd": 24,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-24-4-5",
+      "reference": "Matthew 24:4–5",
+      "text": "Jesus answered them, “Be careful that no one leads you astray. For many will come in my name, saying, ‘I am the Christ,’ and will lead many astray.",
+      "translation": "WEB",
+      "hook": "Watch — many will claim the name.",
+      "lesson": "Deception often wears familiar branding. Test claims before you follow the crowd.",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/24/",
+      "bookId": 40,
+      "chapter": 24,
+      "verseStart": 4,
+      "verseEnd": 5,
+      "pool": "evergreen"
+    },
+    {
+      "id": "mark-1-15",
+      "reference": "Mark 1:15",
+      "text": "and saying, “The time is fulfilled, and God’s Kingdom is at hand! Repent, and believe in the Good News.”",
+      "translation": "WEB",
+      "hook": "Time fulfilled — repent and believe.",
+      "lesson": "The window is open. Delay is a decision dressed as waiting.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/41/1/",
+      "bookId": 41,
+      "chapter": 1,
+      "verseStart": 15,
+      "verseEnd": 15,
+      "pool": "evergreen"
+    },
+    {
+      "id": "mark-2-17",
+      "reference": "Mark 2:17",
+      "text": "When Jesus heard it, he said to them, “Those who are healthy have no need for a physician, but those who are sick. I came not to call the righteous, but sinners to repentance.”",
+      "translation": "WEB",
+      "hook": "Doctors are for the sick.",
+      "lesson": "He came for sinners, not the self-satisfied. Admit the need or miss the cure.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/41/2/",
+      "bookId": 41,
+      "chapter": 2,
+      "verseStart": 17,
+      "verseEnd": 17,
+      "pool": "evergreen"
+    },
+    {
+      "id": "mark-10-14",
+      "reference": "Mark 10:14",
+      "text": "But when Jesus saw it, he was moved with indignation, and said to them, “Allow the little children to come to me! Don’t forbid them, for God’s Kingdom belongs to such as these.",
+      "translation": "WEB",
+      "hook": "Kingdom belongs to such as these.",
+      "lesson": "Childlike receive-mode beats adult gatekeeping. Drop the barrier you built.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/41/10/",
+      "bookId": 41,
+      "chapter": 10,
+      "verseStart": 14,
+      "verseEnd": 14,
+      "pool": "evergreen"
+    },
+    {
+      "id": "mark-13-13",
+      "reference": "Mark 13:13",
+      "text": "You will be hated by all men for my name’s sake, but he who endures to the end, the same will be saved.",
+      "translation": "WEB",
+      "hook": "Stand firm to the end.",
+      "lesson": "Hate for His sake is predicted. Endurance — not applause — is the finish line.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/41/13/",
+      "bookId": 41,
+      "chapter": 13,
+      "verseStart": 13,
+      "verseEnd": 13,
+      "pool": "evergreen"
+    },
+    {
+      "id": "mark-14-36",
+      "reference": "Mark 14:36",
+      "text": "He said, “Abba, Father, all things are possible to you. Please remove this cup from me. However, not what I desire, but what you desire.”",
+      "translation": "WEB",
+      "hook": "Not what I will — what You will.",
+      "lesson": "Gethsemane honesty: want the cup gone, still choose the Father’s path.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/41/14/",
+      "bookId": 41,
+      "chapter": 14,
+      "verseStart": 36,
+      "verseEnd": 36,
+      "pool": "evergreen"
+    },
+    {
+      "id": "luke-6-30",
+      "reference": "Luke 6:30",
+      "text": "Give to everyone who asks you, and don’t ask him who takes away your goods to give them back again.",
+      "translation": "WEB",
+      "hook": "Give without the claw-back.",
+      "lesson": "Open hands beat ledgered generosity. Don’t gift what you plan to reclaim in spite.",
+      "topicIds": [
+        "finance",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/42/6/",
+      "bookId": 42,
+      "chapter": 6,
+      "verseStart": 30,
+      "verseEnd": 30,
+      "pool": "evergreen"
+    },
+    {
+      "id": "luke-12-49",
+      "reference": "Luke 12:49",
+      "text": "“I came to throw fire on the earth. I wish it were already kindled.",
+      "translation": "WEB",
+      "hook": "Fire on the earth — already wishing it lit.",
+      "lesson": "His mission isn’t mild maintenance. Expect disruption that purifies.",
+      "topicIds": [
+        "politics",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/42/12/",
+      "bookId": 42,
+      "chapter": 12,
+      "verseStart": 49,
+      "verseEnd": 49,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-10-10",
+      "reference": "John 10:10",
+      "text": "The thief only comes to steal, kill, and destroy. I came that they may have life, and may have it abundantly.",
+      "translation": "WEB",
+      "hook": "Life — and life abundantly.",
+      "lesson": "He came to enlarge life, not shrink it. Scarcity spirituality is a counterfeit.",
+      "topicIds": [
+        "mental-models",
+        "finance"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/10/",
+      "bookId": 43,
+      "chapter": 10,
+      "verseStart": 10,
+      "verseEnd": 10,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-5-11-12",
+      "reference": "Matthew 5:11–12",
+      "text": "“Blessed are you when people reproach you, persecute you, and say all kinds of evil against you falsely, for my sake. Rejoice, and be exceedingly glad, for great is your reward in heaven. For that is how they persecuted the prophets who were before you.",
+      "translation": "WEB",
+      "hook": "Rejoice when you’re lied about for Him.",
+      "lesson": "Insult for righteousness is odd fuel — treat it as confirmation, not catastrophe.",
+      "topicIds": [
+        "politics",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/5/",
+      "bookId": 40,
+      "chapter": 5,
+      "verseStart": 11,
+      "verseEnd": 12,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-16-24",
+      "reference": "Matthew 16:24",
+      "text": "Then Jesus said to his disciples, “If anyone desires to come after me, let him deny himself, and take up his cross, and follow me.",
+      "translation": "WEB",
+      "hook": "Deny yourself, take the cross, follow.",
+      "lesson": "Three verbs of discipleship: refuse ego, accept cost, keep moving after Him.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/16/",
+      "bookId": 40,
+      "chapter": 16,
+      "verseStart": 24,
+      "verseEnd": 24,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-14-1",
+      "reference": "John 14:1",
+      "text": "“Don’t let your heart be troubled. Believe in God. Believe also in me.",
+      "translation": "WEB",
+      "hook": "Don’t let your heart be troubled.",
+      "lesson": "Trust is the anti-panic protocol. Believe God when the room starts shaking.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/14/",
+      "bookId": 43,
+      "chapter": 14,
+      "verseStart": 1,
+      "verseEnd": 1,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-14-27",
+      "reference": "John 14:27",
+      "text": "Peace I leave with you. My peace I give to you; not as the world gives, give I to you. Don’t let your heart be troubled, neither let it be fearful.",
+      "translation": "WEB",
+      "hook": "Peace I leave — not as the world gives.",
+      "lesson": "World-peace is a ceasefire. His peace holds when the ceasefire fails.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/14/",
+      "bookId": 43,
+      "chapter": 14,
+      "verseStart": 27,
+      "verseEnd": 27,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-26-39",
+      "reference": "Matthew 26:39",
+      "text": "He went forward a little, fell on his face, and prayed, saying, “My Father, if it is possible, let this cup pass away from me; nevertheless, not what I desire, but what you desire.”",
+      "translation": "WEB",
+      "hook": "Not as I will, but as You will.",
+      "lesson": "The hardest prayer surrenders the preferred outcome without pretending you don’t have one.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/26/",
+      "bookId": 40,
+      "chapter": 26,
+      "verseStart": 39,
+      "verseEnd": 39,
+      "pool": "evergreen"
+    },
+    {
+      "id": "luke-23-34",
+      "reference": "Luke 23:34",
+      "text": "Jesus said, “Father, forgive them, for they don’t know what they are doing.” Dividing his garments among them, they cast lots.",
+      "translation": "WEB",
+      "hook": "Father, forgive them.",
+      "lesson": "Forgiveness from the cross redefines power — mercy while being wronged.",
+      "topicIds": [
+        "politics",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/42/23/",
+      "bookId": 42,
+      "chapter": 23,
+      "verseStart": 34,
+      "verseEnd": 34,
+      "pool": "evergreen"
     },
     {
       "id": "blb-promise-doy-187",
@@ -1034,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-147",
-      "reference": "Exodus 23:25",
-      "text": "You shall serve Yahweh your God, and he will bless your bread and your water, and I will take sickness away from among you.",
+      "id": "blb-promise-doy-207",
+      "reference": "Isaiah 41:17",
+      "text": "The poor and needy seek water, and there is none. Their tongue fails for thirst. I, Yahweh, will answer them. I, the God of Israel, will not forsake them.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · May 26th",
-      "lesson": "What a promise is this! To serve God is in itself a high delight. But what an added privilege to have the blessing of the Lord resting upon us in all things! Our commonest things become blessed when we ourselves are consecrated to the Lord. Our Lord Jesus took bread and blessed it; behold, we also eat of blessed bread. Jesus blessed water and made it wine: the water which we drink is far better to us than any of t…",
+      "hook": "Daily promise · July 25th",
+      "lesson": "Ever is the Lord gracious and ever does He shower mercy unfettered upon the objects of His affection. Because we know that God loves us, we may take pleasure in the great knowledge that He will surely stand by us in our hour of need. Ever is the Lord the provider of our necessities and ever will He quench our thirst with the welcome vials of living water-even the life of Christ. Open the full Blue Letter Bible reading for July 25th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=147",
-      "bookId": 2,
-      "chapter": 23,
-      "verseStart": 25,
-      "verseEnd": 25,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=207",
+      "bookId": 23,
+      "chapter": 41,
+      "verseStart": 17,
+      "verseEnd": 17,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-148",
@@ -2096,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-147",
-      "reference": "Psalm 55:22",
-      "text": "Cast your burden on Yahweh, and he will sustain you. He will never allow the righteous to be moved.",
+      "id": "blb-checkbook-doy-207",
+      "reference": "Daniel 12:13",
+      "text": "But go you your way until the end; for you shall rest, and shall stand in your lot, at the end of the days.",
       "translation": "WEB",
-      "hook": "Morning reading · May 26th",
-      "lesson": "Care, even though exercised upon legitimate objects, if carried to excess, has in it the nature of sin. The precept to avoid anxious care is earnestly inculcated by our Saviour, again and again; it is reiterated by the apostles; and it is one which cannot be neglected without involving transgression: for the very essence of anxious care is the imagining that we are wiser than God, and the thrusting ourselves into…",
+      "hook": "Faith's Checkbook · July 25th",
+      "lesson": "We cannot understand all the prophecies, but yet we regard them with pleasure, and not with dismay. There can be nothing in the Father's decree which should justly alarm His child. Though the abomination of desolation be set up, yet the true believer shall not be defiled; rather shall he be purified, and made white, and tried. Though the earth be burned up, no smell of fire shall come upon the chosen. Amid the cra…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=147&Time=am",
-      "bookId": 19,
-      "chapter": 55,
-      "verseStart": 22,
-      "verseEnd": 22,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=207",
+      "bookId": 27,
+      "chapter": 12,
+      "verseStart": 13,
+      "verseEnd": 13,
       "pool": "evergreen"
     },
     {
@@ -3137,6 +4559,24 @@
       "chapter": 14,
       "verseStart": 13,
       "verseEnd": 13,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-207",
+      "reference": "Genesis 39:12",
+      "text": "She caught him by his garment, saying, “Lie with me!” He left his garment in her hand, and ran outside.",
+      "translation": "WEB",
+      "hook": "Morning reading · July 25th",
+      "lesson": "In contending with certain sins there remains no mode of victory but by flight. The ancient naturalists wrote much of basilisks, whose eyes fascinated their victims and rendered them easy victims; so the mere gaze of wickedness puts us in solemn danger. He who would be safe from acts of evil must haste away from occasions of it. A covenant must be made with our eyes not even to look upon the cause of temptation, f…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=207&Time=am",
+      "bookId": 1,
+      "chapter": 39,
+      "verseStart": 12,
+      "verseEnd": 12,
       "pool": "evergreen"
     }
   ]
