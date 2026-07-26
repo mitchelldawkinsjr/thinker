@@ -7,6 +7,7 @@ export type ContentKindKey =
   | 'scripture'
   | 'resources'
   | 'books'
+  | 'zobokoBooks'
   | 'games'
 
 /** Kinds that participate in weightedInterleave (bookIdeas share the ideas queue). */
@@ -16,6 +17,7 @@ export type KindWeightKey =
   | 'scripture'
   | 'resources'
   | 'books'
+  | 'zobokoBooks'
   | 'games'
 
 export type KindWeights = Record<KindWeightKey, number>
@@ -40,6 +42,7 @@ export const DEFAULT_KIND_WEIGHTS: KindWeights = {
   scripture: 1,
   resources: 1,
   books: 1,
+  zobokoBooks: 1,
   games: 1,
 }
 
@@ -52,7 +55,8 @@ export const KIND_WEIGHT_LABELS: {
   { key: 'news', label: 'News', hint: 'Curated outlets and your RSS feeds' },
   { key: 'scripture', label: 'Scripture', hint: 'Daily promise + evergreen rotation' },
   { key: 'resources', label: 'Free sites', hint: 'Curated learning sites' },
-  { key: 'books', label: 'Books', hint: 'Project Gutenberg picks' },
+  { key: 'books', label: 'Gutenberg', hint: 'Public-domain Project Gutenberg picks' },
+  { key: 'zobokoBooks', label: 'Zoboko', hint: 'Curated personal-growth / theory deep links' },
   { key: 'games', label: 'Quick games', hint: 'Reaction, memory, math, gravity' },
 ]
 export type CustomFeed = {
@@ -141,6 +145,7 @@ export const DEFAULT_KINDS: SubscriptionKinds = {
   scripture: true,
   resources: true,
   books: true,
+  zobokoBooks: true,
   games: true,
 }
 
@@ -160,7 +165,12 @@ export const KIND_LABELS: { key: ContentKindKey; label: string; hint: string }[]
   { key: 'news', label: 'News', hint: 'Curated RSS lessons and your custom feeds' },
   { key: 'scripture', label: 'Scripture', hint: 'Daily promise + a 5-day rotating evergreen set' },
   { key: 'resources', label: 'Free sites', hint: 'Curated learning sites and your additions' },
-  { key: 'books', label: 'Books', hint: 'Public-domain books (Project Gutenberg) in the mix' },
+  { key: 'books', label: 'Gutenberg books', hint: 'Public-domain Project Gutenberg in the mix' },
+  {
+    key: 'zobokoBooks',
+    label: 'Zoboko books',
+    hint: 'Curated philosophy / psych / politics / business / physics deep links',
+  },
   { key: 'games', label: 'Quick games', hint: 'Reaction, memory, math, and gravity games' },
 ]
 

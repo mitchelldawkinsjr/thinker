@@ -3,12 +3,22 @@ import type { TopicId } from './types'
 export const ZOBOKO_HOME = 'https://zoboko.com'
 export const zobokoUrl = (slug: string) => `${ZOBOKO_HOME}/book/${slug}`
 
+/** Fresh-shelf cards expire like book-summary ideas — curated only, never homepage scrape. */
+export const ZOBOKO_FRESH_TTL_DAYS = 21
+
+/** Personal feed: keep English-only (non-EN curated entries are skipped). */
+export const ZOBOKO_EN_ONLY = true
+
 export type ZobokoBook = {
   id: string
   slug: string
   title: string
   author: string
   why: string
+  pages?: number
+  language: 'en' | 'es' | 'fr' | 'pt' | 'de' | string
+  /** ISO date — when set, book can appear on the Fresh shelf until TTL elapses */
+  featuredAt?: string
 }
 
 /**
@@ -23,6 +33,9 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Atomic Habits',
     author: 'James Clear',
     why: 'Identity-based habits — you fall to the level of your systems.',
+    pages: 380,
+    language: 'en',
+    featuredAt: '2026-07-26T00:00:00.000Z',
   },
   {
     id: 'subtle-art',
@@ -30,6 +43,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'The Subtle Art of Not Giving a F*ck',
     author: 'Mark Manson',
     why: 'Choose your struggles and values — attention is a finite budget.',
+    pages: 225,
+    language: 'en',
   },
   {
     id: 'how-to-win-friends',
@@ -37,6 +52,9 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'How to Win Friends and Influence People',
     author: 'Dale Carnegie',
     why: 'Social levers that still work — interest, appreciation, face-saving.',
+    pages: 322,
+    language: 'en',
+    featuredAt: '2026-07-26T00:00:00.000Z',
   },
   {
     id: 'changing-for-good',
@@ -44,6 +62,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Changing for Good',
     author: 'Prochaska, Norcross & DiClemente',
     why: 'Stages of change — match the tactic to where you actually are.',
+    pages: 388,
+    language: 'en',
   },
   {
     id: 'science-of-self-discipline',
@@ -51,6 +71,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'The Science of Self-Discipline',
     author: 'Peter Hollins',
     why: 'Willpower as a trainable system — environment beats motivation.',
+    pages: 196,
+    language: 'en',
   },
   {
     id: 'first-things-first',
@@ -58,6 +80,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'First Things First',
     author: 'Stephen R. Covey et al.',
     why: 'Clock vs compass — prioritize importance over urgency.',
+    pages: 418,
+    language: 'en',
   },
 
   // Philosophy → mental-models
@@ -67,6 +91,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Meditations',
     author: 'Marcus Aurelius',
     why: 'Daily stoic practice for judgment under pressure.',
+    pages: 273,
+    language: 'en',
   },
   {
     id: 'courage-is-calling',
@@ -74,6 +100,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Courage Is Calling',
     author: 'Ryan Holiday',
     why: 'Stoic courage as a trainable virtue — act before fear sets the agenda.',
+    pages: 304,
+    language: 'en',
   },
   {
     id: 'right-thing-right-now',
@@ -81,6 +109,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Right Thing, Right Now',
     author: 'Ryan Holiday',
     why: 'Justice as a practice — integrity when shortcuts look cheaper.',
+    pages: 368,
+    language: 'en',
   },
   {
     id: 'meaning-of-life-klein',
@@ -88,6 +118,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Every Time I Find the Meaning of Life, They Change It',
     author: 'Daniel Klein',
     why: 'Pocket tour of philosophers on how to live — think, don’t conclude.',
+    pages: 224,
+    language: 'en',
   },
 
   // Psychology → mental-models
@@ -97,6 +129,9 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'The Art of Thinking Clearly',
     author: 'Rolf Dobelli',
     why: 'A field guide to cognitive biases — name the trap before you step in it.',
+    pages: 400,
+    language: 'en',
+    featuredAt: '2026-07-26T00:00:00.000Z',
   },
   {
     id: 'expectation-effect',
@@ -104,6 +139,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'The Expectation Effect',
     author: 'David Robson',
     why: 'Beliefs shape outcomes — placebo, nocebo, and self-fulfilling frames.',
+    pages: 460,
+    language: 'en',
   },
   {
     id: 'rapport',
@@ -111,6 +148,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Rapport',
     author: 'Emily & Laurence Alison',
     why: 'Interrogation-grade listening models for hard conversations.',
+    pages: 439,
+    language: 'en',
   },
 
   // Political ideologies → politics
@@ -120,6 +159,9 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: '50 Politics Classics',
     author: 'Tom Butler-Bowdon',
     why: 'Map of freedom, equality, and power — from Plato to modern theorists.',
+    pages: 544,
+    language: 'en',
+    featuredAt: '2026-07-20T00:00:00.000Z',
   },
   {
     id: 'political-science-classics',
@@ -127,6 +169,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Political Science Classics Collection',
     author: 'Sun Tzu, Plato, Machiavelli, et al.',
     why: 'Primary texts on power, republics, and strategy in one shelf.',
+    pages: 1200,
+    language: 'en',
   },
   {
     id: 'blackshirts-and-reds',
@@ -134,6 +178,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Blackshirts and Reds',
     author: 'Michael Parenti',
     why: 'Class analysis of fascism, capitalism, and counter-revolution.',
+    pages: 192,
+    language: 'en',
   },
 
   // Small business → building-products / finance
@@ -143,6 +189,9 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'The Psychology of Money',
     author: 'Morgan Housel',
     why: 'Money is behavior — luck, risk, and enough beat spreadsheet IQ.',
+    pages: 247,
+    language: 'en',
+    featuredAt: '2026-07-26T00:00:00.000Z',
   },
   {
     id: 'what-you-do-is-who-you-are',
@@ -150,6 +199,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'What You Do Is Who You Are',
     author: 'Ben Horowitz',
     why: 'Culture is decisions under pressure — design it on purpose.',
+    pages: 288,
+    language: 'en',
   },
   {
     id: 'tools-of-titans',
@@ -157,6 +208,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Tools of Titans',
     author: 'Tim Ferriss',
     why: 'Actionable routines from high performers — skim for one lever.',
+    pages: 704,
+    language: 'en',
   },
   {
     id: 'lean-project-management',
@@ -164,6 +217,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Lean Project Management',
     author: 'Philip Small',
     why: 'Lean + agile loops for shipping without drowning in process.',
+    pages: 420,
+    language: 'en',
   },
   {
     id: 'low-risk-high-reward',
@@ -171,6 +226,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Low Risk, High Reward',
     author: 'Bob Reiss',
     why: 'Entrepreneurship as risk reduction — anticipate, offset, then bet.',
+    pages: 451,
+    language: 'en',
   },
 
   // Physics → AI / hard-science adjacent
@@ -180,6 +237,9 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Quantum Supremacy',
     author: 'Michio Kaku',
     why: 'Quantum computing as the next compute curve — encryption, AI, materials.',
+    pages: 504,
+    language: 'en',
+    featuredAt: '2026-07-22T00:00:00.000Z',
   },
   {
     id: 'emperors-new-mind',
@@ -187,6 +247,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: "The Emperor's New Mind",
     author: 'Roger Penrose',
     why: 'Mind vs machine — physics limits on what computers can emulate.',
+    pages: 480,
+    language: 'en',
   },
   {
     id: '30-second-theories',
@@ -194,6 +256,8 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: '30-Second Theories',
     author: 'Paul Parsons et al.',
     why: 'Fast map of big science ideas — quantum to selection to cosmology.',
+    pages: 160,
+    language: 'en',
   },
   {
     id: 'quantum-legacies',
@@ -201,10 +265,31 @@ export const curatedZobokoBooks: ZobokoBook[] = [
     title: 'Quantum Legacies',
     author: 'David Kaiser',
     why: 'How physicists actually discovered (and argued) quantum reality.',
+    pages: 360,
+    language: 'en',
   },
 ]
 
-export const zobokoShelves: {
+export function isZobokoLanguageAllowed(book: ZobokoBook): boolean {
+  if (!ZOBOKO_EN_ONLY) return true
+  return book.language.toLowerCase().startsWith('en')
+}
+
+export function isZobokoFresh(book: ZobokoBook, now = Date.now()): boolean {
+  if (!book.featuredAt) return false
+  const t = Date.parse(book.featuredAt)
+  if (Number.isNaN(t)) return false
+  return now - t < ZOBOKO_FRESH_TTL_DAYS * 86_400_000
+}
+
+export function activeFreshZobokoIds(now = Date.now()): string[] {
+  return curatedZobokoBooks
+    .filter((b) => isZobokoLanguageAllowed(b) && isZobokoFresh(b, now))
+    .map((b) => b.id)
+}
+
+/** Category shelves (excludes the rotating Fresh shelf). */
+export const zobokoCategoryShelves: {
   id: string
   title: string
   blurb: string
@@ -289,12 +374,48 @@ export const zobokoShelves: {
   },
 ]
 
-export const curatedZobokoMeta: Record<
-  string,
-  { title: string; author: string; why: string; slug: string }
-> = Object.fromEntries(
-  curatedZobokoBooks.map((b) => [
-    b.id,
-    { title: b.title, author: b.author, why: b.why, slug: b.slug },
-  ]),
+/** Home category topics for a book (drives feed topic filter + Keep metadata). */
+export function zobokoTopicIdsForBook(bookId: string): TopicId[] {
+  for (const shelf of zobokoCategoryShelves) {
+    if (shelf.bookIds.includes(bookId)) return shelf.topicIds
+  }
+  return ['mental-models']
+}
+
+export function zobokoCategoryLabel(bookId: string): string {
+  for (const shelf of zobokoCategoryShelves) {
+    if (shelf.bookIds.includes(bookId)) return shelf.title
+  }
+  return 'Zoboko'
+}
+
+/** Fresh first (so TTL cards win the label), then category shelves. */
+export function zobokoShelvesForFeed(now = Date.now()) {
+  const freshIds = activeFreshZobokoIds(now)
+  const fresh =
+    freshIds.length > 0
+      ? [
+          {
+            id: 'fresh',
+            title: 'Fresh picks',
+            blurb: `Hand-rotated modern classics (${ZOBOKO_FRESH_TTL_DAYS}-day TTL) — not a homepage scrape.`,
+            topicIds: [] as TopicId[],
+            kindLabel: 'Book · fresh',
+            bookIds: freshIds,
+          },
+        ]
+      : []
+  return [...fresh, ...zobokoCategoryShelves]
+}
+
+/** All shelves for the Books page (fresh when any are active). */
+export function zobokoShelvesForBrowse(now = Date.now()) {
+  return zobokoShelvesForFeed(now)
+}
+
+/** @deprecated Prefer zobokoShelvesForBrowse / zobokoShelvesForFeed */
+export const zobokoShelves = zobokoCategoryShelves
+
+export const curatedZobokoMeta: Record<string, ZobokoBook> = Object.fromEntries(
+  curatedZobokoBooks.map((b) => [b.id, b]),
 )

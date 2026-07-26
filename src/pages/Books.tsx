@@ -11,7 +11,8 @@ import {
 import {
   ZOBOKO_HOME,
   curatedZobokoMeta,
-  zobokoShelves,
+  isZobokoLanguageAllowed,
+  zobokoShelvesForBrowse,
   zobokoUrl,
 } from '../data/zoboko'
 import type { GutenbergBook } from '../data/types'
@@ -25,6 +26,7 @@ function BookCard({
   coverUrl,
   fallbackLabel,
   linkLabel,
+  pages,
 }: {
   title: string
   author: string
@@ -33,6 +35,7 @@ function BookCard({
   coverUrl?: string
   fallbackLabel: string
   linkLabel: string
+  pages?: number
 }) {
   return (
     <a className="book-card" href={href} target="_blank" rel="noreferrer">
@@ -49,6 +52,7 @@ function BookCard({
         <h3>{title}</h3>
         <p className="book-author">{author}</p>
         {why && <p className="book-why">{why}</p>}
+        {pages != null && <p className="book-why">{pages} pages</p>}
         <span className="book-link">
           {linkLabel} <ExternalLinkIcon />
         </span>
@@ -90,8 +94,9 @@ export function Books() {
           <a href={GUTENBERG_HOME} target="_blank" rel="noreferrer">
             Project Gutenberg
           </a>
-          , plus curated Zoboko shelves for philosophy, psychology, politics,
-          business, and physics. Diet, romance, and fluff stay off the list.
+          , plus curated Zoboko shelves (EN-only) for philosophy, psychology,
+          politics, business, and physics — with a rotating Fresh shelf. Diet,
+          romance, and fluff stay off the list.
         </p>
       </header>
 
@@ -137,7 +142,7 @@ export function Books() {
         </section>
       )}
 
-      {zobokoShelves.map((shelf) => (
+      {zobokoShelvesForBrowse().map((shelf) => (
         <section key={shelf.id} className="books-section">
           <div className="books-section-head">
             <h2>{shelf.title}</h2>
@@ -151,7 +156,7 @@ export function Books() {
           <div className="books-grid">
             {shelf.bookIds.map((id) => {
               const meta = curatedZobokoMeta[id]
-              if (!meta) return null
+              if (!meta || !isZobokoLanguageAllowed(meta)) return null
               return (
                 <BookCard
                   key={id}
@@ -161,6 +166,7 @@ export function Books() {
                   href={zobokoUrl(meta.slug)}
                   fallbackLabel="ZB"
                   linkLabel="Open on Zoboko"
+                  pages={meta.pages}
                 />
               )
             })}
