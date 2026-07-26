@@ -5,6 +5,11 @@ import {
   gutenbergShelves,
   gutenbergUrl,
 } from './gutenberg'
+import {
+  curatedZobokoMeta,
+  zobokoShelves,
+  zobokoUrl,
+} from './zoboko'
 import type { Idea, TopicId } from './types'
 import type { NewsItem } from './newsTypes'
 import type { ScriptureItem } from './scriptureTypes'
@@ -34,12 +39,16 @@ export type FeedItem =
   | {
       kind: 'book'
       id: string
-      bookId: number
+      /** Gutenberg numeric id when source is gutenberg */
+      bookId?: number
       title: string
       author: string
       why: string
       url: string
       topicId?: TopicId
+      source?: 'gutenberg' | 'zoboko'
+      ctaLabel?: string
+      kindLabel?: string
     }
   | {
       kind: 'news'
@@ -148,28 +157,56 @@ function weightedInterleave<T extends { id: string; kind?: string }>(
 }
 
 function bookItems(topicFilter?: TopicFilter): FeedItem[] {
-  const seen = new Set<number>()
+  const seen = new Set<string>()
   const items: FeedItem[] = []
 
   for (const shelf of gutenbergShelves) {
     if (!matchesTopicFilter(shelf.topicIds, topicFilter)) continue
     for (const bookId of shelf.bookIds) {
-      if (seen.has(bookId)) continue
-      seen.add(bookId)
+      const id = `book-${bookId}`
+      if (seen.has(id)) continue
+      seen.add(id)
       const meta = curatedGutenbergMeta[bookId]
       if (!meta) continue
       items.push({
         kind: 'book',
-        id: `book-${bookId}`,
+        id,
         bookId,
         title: meta.title,
         author: meta.author,
         why: meta.why,
         url: gutenbergUrl(bookId),
         topicId: shelf.topicIds[0],
+        source: 'gutenberg',
+        ctaLabel: 'Read on Gutenberg',
+        kindLabel: 'Book · free ebook',
       })
     }
   }
+
+  for (const shelf of zobokoShelves) {
+    if (!matchesTopicFilter(shelf.topicIds, topicFilter)) continue
+    for (const bookId of shelf.bookIds) {
+      const id = `zoboko-${bookId}`
+      if (seen.has(id)) continue
+      seen.add(id)
+      const meta = curatedZobokoMeta[bookId]
+      if (!meta) continue
+      items.push({
+        kind: 'book',
+        id,
+        title: meta.title,
+        author: meta.author,
+        why: meta.why,
+        url: zobokoUrl(meta.slug),
+        topicId: shelf.topicIds[0],
+        source: 'zoboko',
+        ctaLabel: 'Open on Zoboko',
+        kindLabel: shelf.kindLabel,
+      })
+    }
+  }
+
   return items
 }
 
@@ -393,8 +430,9 @@ export type BuildMixedFeedOptions = {
 }
 
 /**
- * Total mix: ideas (+ book summaries) + news + scripture + sites + Gutenberg,
- * freshness-weighted so cards don't go stale. Each card id appears at most once.
+ * Total mix: ideas (+ book summaries) + news + scripture + sites + books
+ * (Gutenberg + curated Zoboko), freshness-weighted so cards don't go stale.
+ * Each card id appears at most once.
  */
 export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
   const opts = options

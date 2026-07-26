@@ -8,35 +8,40 @@ import {
   gutenbergUrl,
   searchGutenberg,
 } from '../data/gutenberg'
+import {
+  ZOBOKO_HOME,
+  curatedZobokoMeta,
+  zobokoShelves,
+  zobokoUrl,
+} from '../data/zoboko'
 import type { GutenbergBook } from '../data/types'
 import './Books.css'
 
 function BookCard({
-  id,
   title,
   author,
   why,
+  href,
   coverUrl,
+  fallbackLabel,
+  linkLabel,
 }: {
-  id: number
   title: string
   author: string
   why?: string
+  href: string
   coverUrl?: string
+  fallbackLabel: string
+  linkLabel: string
 }) {
   return (
-    <a
-      className="book-card"
-      href={gutenbergUrl(id)}
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a className="book-card" href={href} target="_blank" rel="noreferrer">
       <div className="book-cover-wrap">
         {coverUrl ? (
           <img src={coverUrl} alt="" className="book-cover" loading="lazy" />
         ) : (
           <div className="book-cover book-cover--fallback" aria-hidden>
-            PG
+            {fallbackLabel}
           </div>
         )}
       </div>
@@ -45,7 +50,7 @@ function BookCard({
         <p className="book-author">{author}</p>
         {why && <p className="book-why">{why}</p>}
         <span className="book-link">
-          Read free on Gutenberg <ExternalLinkIcon />
+          {linkLabel} <ExternalLinkIcon />
         </span>
       </div>
     </a>
@@ -81,11 +86,12 @@ export function Books() {
         <p className="books-kicker">Free knowledge</p>
         <h1>Books shelf</h1>
         <p>
-          Pull ideas from public-domain ebooks and open the full text on{' '}
+          Pull ideas from public-domain ebooks on{' '}
           <a href={GUTENBERG_HOME} target="_blank" rel="noreferrer">
             Project Gutenberg
           </a>
-          . Shelves below map to Thinker topics — politics, finance, history, and clearer thinking.
+          , plus curated Zoboko shelves for philosophy, psychology, politics,
+          business, and physics. Diet, romance, and fluff stay off the list.
         </p>
       </header>
 
@@ -117,17 +123,50 @@ export function Books() {
               {results.map((book) => (
                 <BookCard
                   key={book.id}
-                  id={book.id}
                   title={book.title}
                   author={book.authors[0] ?? curatedGutenbergMeta[book.id]?.author ?? 'Unknown'}
                   why={curatedGutenbergMeta[book.id]?.why}
+                  href={gutenbergUrl(book.id)}
                   coverUrl={book.coverUrl}
+                  fallbackLabel="PG"
+                  linkLabel="Read free on Gutenberg"
                 />
               ))}
             </div>
           )}
         </section>
       )}
+
+      {zobokoShelves.map((shelf) => (
+        <section key={shelf.id} className="books-section">
+          <div className="books-section-head">
+            <h2>{shelf.title}</h2>
+            <p>
+              {shelf.blurb}{' '}
+              <a href={ZOBOKO_HOME} target="_blank" rel="noreferrer">
+                Zoboko
+              </a>
+            </p>
+          </div>
+          <div className="books-grid">
+            {shelf.bookIds.map((id) => {
+              const meta = curatedZobokoMeta[id]
+              if (!meta) return null
+              return (
+                <BookCard
+                  key={id}
+                  title={meta.title}
+                  author={meta.author}
+                  why={meta.why}
+                  href={zobokoUrl(meta.slug)}
+                  fallbackLabel="ZB"
+                  linkLabel="Open on Zoboko"
+                />
+              )
+            })}
+          </div>
+        </section>
+      ))}
 
       {gutenbergShelves.map((shelf) => (
         <section key={shelf.id} className="books-section">
@@ -142,11 +181,13 @@ export function Books() {
               return (
                 <BookCard
                   key={id}
-                  id={id}
                   title={meta.title}
                   author={meta.author}
                   why={meta.why}
+                  href={gutenbergUrl(id)}
                   coverUrl={gutenbergCoverUrl(id)}
+                  fallbackLabel="PG"
+                  linkLabel="Read free on Gutenberg"
                 />
               )
             })}

@@ -203,6 +203,8 @@ export function BookFeedCard({
   why,
   url,
   topicId,
+  ctaLabel = 'Read on Gutenberg',
+  kindLabel = 'Book · free ebook',
   onNext,
   onPrev,
   onHide,
@@ -215,10 +217,12 @@ export function BookFeedCard({
   why: string
   url: string
   topicId?: TopicId
+  ctaLabel?: string
+  kindLabel?: string
 } & NavProps) {
   const { thoughts, saveMoment } = useThoughts()
   const [flipped, setFlipped] = useState(false)
-  const parts = sourceMediaParts(url, 'Read on Gutenberg')
+  const parts = sourceMediaParts(url, ctaLabel)
   const alreadyKept = thoughts.some((t) => t.parent.kind === 'book' && t.parent.id === id)
 
   return (
@@ -228,7 +232,7 @@ export function BookFeedCard({
         <FeedCardShell
           accent="#d4a574"
           surface="#2a2218"
-          kind="Book · free ebook"
+          kind={kindLabel}
           title={title}
           index={index}
           total={total}
