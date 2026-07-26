@@ -244,11 +244,8 @@
   margin-bottom: 1.25rem;
 }
 
-.kept-idea-stream {
+.kept-grid {
   margin-top: 1.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .kept-zettel-index {

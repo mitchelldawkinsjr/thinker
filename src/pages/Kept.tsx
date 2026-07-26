@@ -19,13 +19,11 @@ import {
 } from '../lib/githubQueue'
 import { useExtraIdeas } from '../hooks/useExtraIdeas'
 import { useZettel } from '../hooks/useZettel'
-import { partitionKeptIdeas } from '../data/zettel'
 import { IdeaCard } from '../components/IdeaCard'
 import { CardFlip, CardNoteBack } from '../components/CardFlip'
 import { sourceMediaParts } from '../components/CardMedia'
 import { ZettelStack } from '../components/ZettelStack'
 import { ZettelEditor } from '../components/ZettelEditor'
-import { StickyIdeaStack } from '../components/StickyIdeaStack'
 import './Kept.css'
 
 function useShareBusy() {
@@ -272,11 +270,6 @@ export function Kept() {
   const ideas = [...kept]
     .map((id) => getIdea(id, extraIdeas))
     .filter((i): i is NonNullable<typeof i> => Boolean(i))
-  const ideaById = useMemo(() => new Map(ideas.map((i) => [i.id, i])), [ideas])
-  const { clusters: ideaClusters, singles: ideaSingles } = useMemo(
-    () => partitionKeptIdeas(ideas.map((i) => i.id), notes, links),
-    [ideas, notes, links],
-  )
   const [toolsOpen, setToolsOpen] = useState(false)
 
   const [queueReady, setQueueReady] = useState(false)
@@ -657,8 +650,7 @@ export function Kept() {
             <section className="kept-stream">
               <h2>Cards</h2>
               <p className="kept-moments-lead">
-                Shuffle linked slips in the stack. Idea cards list below — linked ones pin and
-                stack as you scroll.
+                Shuffle linked slips in the stack. Kept idea cards list below.
               </p>
 
               {notes.length > 0 && (
@@ -741,23 +733,10 @@ export function Kept() {
               )}
 
               {ideas.length > 0 && (
-                <div className="kept-idea-stream">
-                  {ideaClusters.map((ids) => {
-                    const clusterIdeas = ids
-                      .map((id) => ideaById.get(id))
-                      .filter((i): i is NonNullable<typeof i> => Boolean(i))
-                    if (clusterIdeas.length < 2) return null
-                    return <StickyIdeaStack key={ids.join('|')} ideas={clusterIdeas} />
-                  })}
-                  {ideaSingles.length > 0 && (
-                    <div className="kept-grid">
-                      {ideaSingles.map((id) => {
-                        const idea = ideaById.get(id)
-                        if (!idea) return null
-                        return <IdeaCard key={idea.id} idea={idea} compact />
-                      })}
-                    </div>
-                  )}
+                <div className="kept-grid">
+                  {ideas.map((idea) => (
+                    <IdeaCard key={idea.id} idea={idea} compact />
+                  ))}
                 </div>
               )}
             </section>
