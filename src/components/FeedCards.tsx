@@ -205,6 +205,10 @@ export function BookFeedCard({
   topicId,
   ctaLabel = 'Read on Gutenberg',
   kindLabel = 'Book · free ebook',
+  pages,
+  category,
+  accent = '#d4a574',
+  surface = '#2a2218',
   onNext,
   onPrev,
   onHide,
@@ -219,19 +223,27 @@ export function BookFeedCard({
   topicId?: TopicId
   ctaLabel?: string
   kindLabel?: string
+  pages?: number
+  category?: string
+  accent?: string
+  surface?: string
 } & NavProps) {
   const { thoughts, saveMoment } = useThoughts()
   const [flipped, setFlipped] = useState(false)
   const parts = sourceMediaParts(url, ctaLabel)
   const alreadyKept = thoughts.some((t) => t.parent.kind === 'book' && t.parent.id === id)
+  const metaBits = [
+    pages != null ? `${pages} pages` : null,
+    category || null,
+  ].filter(Boolean)
 
   return (
     <CardFlip
       flipped={flipped}
       front={
         <FeedCardShell
-          accent="#d4a574"
-          surface="#2a2218"
+          accent={accent}
+          surface={surface}
           kind={kindLabel}
           title={title}
           index={index}
@@ -260,12 +272,17 @@ export function BookFeedCard({
         >
           <p className="feed-card-author">{author}</p>
           <p className="feed-card-body">{why}</p>
+          {metaBits.length > 0 && (
+            <p className="feed-card-author" style={{ opacity: 0.75 }}>
+              {metaBits.join(' · ')}
+            </p>
+          )}
         </FeedCardShell>
       }
       back={
         <CardNoteBack
-          accent="#d4a574"
-          surface="#2a2218"
+          accent={accent}
+          surface={surface}
           kicker="Keep · your note"
           title={title}
           detail={author}

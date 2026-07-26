@@ -7,7 +7,10 @@ import {
 } from './gutenberg'
 import {
   curatedZobokoMeta,
-  zobokoShelves,
+  isZobokoLanguageAllowed,
+  zobokoCategoryLabel,
+  zobokoShelvesForFeed,
+  zobokoTopicIdsForBook,
   zobokoUrl,
 } from './zoboko'
 import type { Idea, TopicId } from './types'
@@ -49,6 +52,11 @@ export type FeedItem =
       source?: 'gutenberg' | 'zoboko'
       ctaLabel?: string
       kindLabel?: string
+      pages?: number
+      language?: string
+      category?: string
+      accent?: string
+      surface?: string
     }
   | {
       kind: 'news'
@@ -156,7 +164,7 @@ function weightedInterleave<T extends { id: string; kind?: string }>(
   return out
 }
 
-function bookItems(topicFilter?: TopicFilter): FeedItem[] {
+function gutenbergBookItems(topicFilter?: TopicFilter): FeedItem[] {
   const seen = new Set<string>()
   const items: FeedItem[] = []
 
@@ -180,18 +188,30 @@ function bookItems(topicFilter?: TopicFilter): FeedItem[] {
         source: 'gutenberg',
         ctaLabel: 'Read on Gutenberg',
         kindLabel: 'Book · free ebook',
+        accent: '#d4a574',
+        surface: '#2a2218',
       })
     }
   }
+  return items
+}
 
-  for (const shelf of zobokoShelves) {
-    if (!matchesTopicFilter(shelf.topicIds, topicFilter)) continue
+function zobokoBookItems(topicFilter?: TopicFilter): FeedItem[] {
+  const seen = new Set<string>()
+  const items: FeedItem[] = []
+
+  for (const shelf of zobokoShelvesForFeed()) {
     for (const bookId of shelf.bookIds) {
       const id = `zoboko-${bookId}`
       if (seen.has(id)) continue
-      seen.add(id)
       const meta = curatedZobokoMeta[bookId]
-      if (!meta) continue
+      if (!meta || !isZobokoLanguageAllowed(meta)) continue
+
+      const topicIds =
+        shelf.id === 'fresh' ? zobokoTopicIdsForBook(bookId) : shelf.topicIds
+      if (!matchesTopicFilter(topicIds, topicFilter)) continue
+
+      seen.add(id)
       items.push({
         kind: 'book',
         id,
@@ -199,10 +219,15 @@ function bookItems(topicFilter?: TopicFilter): FeedItem[] {
         author: meta.author,
         why: meta.why,
         url: zobokoUrl(meta.slug),
-        topicId: shelf.topicIds[0],
+        topicId: topicIds[0],
         source: 'zoboko',
         ctaLabel: 'Open on Zoboko',
         kindLabel: shelf.kindLabel,
+        pages: meta.pages,
+        language: meta.language,
+        category: zobokoCategoryLabel(bookId),
+        accent: '#5b8a9a',
+        surface: '#1a2428',
       })
     }
   }
@@ -417,6 +442,7 @@ export const DEFAULT_FEED_WEIGHTS = {
   scripture: 1,
   resources: 1,
   books: 1,
+  zobokoBooks: 1,
   games: 1,
 } as const
 
@@ -430,8 +456,8 @@ export type BuildMixedFeedOptions = {
 }
 
 /**
- * Total mix: ideas (+ book summaries) + news + scripture + sites + books
- * (Gutenberg + curated Zoboko), freshness-weighted so cards don't go stale.
+ * Total mix: ideas (+ book summaries) + news + scripture + sites + Gutenberg +
+ * curated Zoboko, freshness-weighted so cards don't go stale.
  * Each card id appears at most once.
  */
 export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
@@ -471,7 +497,11 @@ export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
       : []
   const booksQ =
     !kinds || kinds.books
-      ? sortByFreshness(seededShuffle(bookItems(topic), seed ^ 3))
+      ? sortByFreshness(seededShuffle(gutenbergBookItems(topic), seed ^ 3))
+      : []
+  const zobokoQ =
+    !kinds || kinds.zobokoBooks
+      ? sortByFreshness(seededShuffle(zobokoBookItems(topic), seed ^ 11))
       : []
   const gamesQ =
     !kinds || kinds.games
@@ -485,6 +515,7 @@ export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
       { items: scriptureQ, weight: weights.scripture },
       { items: resourcesQ, weight: weights.resources },
       { items: booksQ, weight: weights.books },
+      { items: zobokoQ, weight: weights.zobokoBooks },
       { items: gamesQ, weight: weights.games },
     ]),
   )

@@ -63,6 +63,10 @@ function renderFeedCard(item: FeedItem, nav: NavProps): ReactNode {
           topicId={item.topicId}
           ctaLabel={item.ctaLabel}
           kindLabel={item.kindLabel}
+          pages={item.pages}
+          category={item.category}
+          accent={item.accent}
+          surface={item.surface}
           {...nav}
         />
       )
