@@ -234,6 +234,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 1.75rem;
 }
 
 .kept-editor {
@@ -242,10 +243,6 @@
 
 .kept-stream .zettel-stack {
   margin-bottom: 1.25rem;
-}
-
-.kept-grid {
-  margin-top: 1.75rem;
 }
 
 .kept-zettel-index {
