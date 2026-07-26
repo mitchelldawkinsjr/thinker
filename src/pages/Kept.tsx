@@ -1,4 +1,4 @@
-import { useState, type CSSProperties } from 'react'
+import { useEffect, useState, type CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { useKept } from '../hooks/useKept'
 import { useThoughts } from '../hooks/useThoughts'
@@ -12,6 +12,11 @@ import {
   shareThought,
   type ShareResult,
 } from '../lib/exportThought'
+import {
+  fetchGithubQueueStatus,
+  loadQueueSecret,
+  openIdeaLoopPullRequest,
+} from '../lib/githubQueue'
 import { useExtraIdeas } from '../hooks/useExtraIdeas'
 import { IdeaCard } from '../components/IdeaCard'
 import { CardFlip, CardNoteBack } from '../components/CardFlip'
@@ -262,6 +267,50 @@ export function Kept() {
     .map((id) => getIdea(id, extraIdeas))
     .filter((i): i is NonNullable<typeof i> => Boolean(i))
 
+  const [queueReady, setQueueReady] = useState(false)
+  const [queueBusy, setQueueBusy] = useState<'seeds' | 'promote' | null>(null)
+  const [queueMessage, setQueueMessage] = useState<string | null>(null)
+  const [queuePrUrl, setQueuePrUrl] = useState<string | null>(null)
+
+  useEffect(() => {
+    void fetchGithubQueueStatus().then((s) => setQueueReady(s.configured))
+  }, [])
+
+  async function sendToIdeaLoop(kind: 'seeds' | 'promote') {
+    setQueueBusy(kind)
+    setQueueMessage(null)
+    setQueuePrUrl(null)
+    try {
+      if (!loadQueueSecret()) {
+        setQueueMessage('Add the idea-loop gate secret in Settings first.')
+        return
+      }
+      const stamp = new Date().toISOString().slice(0, 10)
+      const result =
+        kind === 'seeds'
+          ? await openIdeaLoopPullRequest({
+              kind: 'seeds',
+              filename: `thinker-thought-seeds-${stamp}.json`,
+              payload: { exportedAt: new Date().toISOString(), seeds: exportSeeds() },
+            })
+          : await openIdeaLoopPullRequest({
+              kind: 'promote',
+              filename: `thinker-approved-drafts-${stamp}.json`,
+              payload: exportApproved(),
+            })
+      setQueuePrUrl(result.prUrl)
+      setQueueMessage(
+        result.prUrl
+          ? 'PR opened — merge it to continue the loop.'
+          : `Queued on ${result.branch}. Open GitHub to merge.`,
+      )
+    } catch (err) {
+      setQueueMessage(err instanceof Error ? err.message : 'Could not open PR')
+    } finally {
+      setQueueBusy(null)
+    }
+  }
+
   // Promoted thoughts live only as idea cards until sent back
   const openThoughts = thoughts.filter((t) => !t.promotedIdeaId)
   const empty = ideas.length === 0 && thoughts.length === 0 && approvedCount === 0
@@ -293,7 +342,7 @@ export function Kept() {
         <h1>Kept ideas</h1>
         <p>
           {empty
-            ? 'Keep anything from the feed with a note — share to Evernote, or export seeds into the idea loop.'
+            ? 'Keep anything from the feed with a note — share to Evernote, or send seeds into the idea loop.'
             : [
                 ideas.length > 0
                   ? `${ideas.length} idea${ideas.length === 1 ? '' : 's'}`
@@ -324,39 +373,91 @@ export function Kept() {
               </button>
             )}
             {thoughts.length > 0 && (
-              <button
-                type="button"
-                className="btn btn-ghost"
-                onClick={() =>
-                  downloadJson(
-                    `thinker-thought-seeds-${new Date().toISOString().slice(0, 10)}.json`,
-                    { exportedAt: new Date().toISOString(), seeds: exportSeeds() },
-                  )
-                }
-              >
-                Export seeds (→ scripts/seeds/inbox)
-              </button>
+              <>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  disabled={queueBusy !== null || !queueReady}
+                  title={
+                    queueReady
+                      ? 'Open a GitHub PR that queues these seeds'
+                      : 'Server idea-loop not configured yet'
+                  }
+                  onClick={() => void sendToIdeaLoop('seeds')}
+                >
+                  {queueBusy === 'seeds' ? 'Opening PR…' : 'Send seeds to idea loop'}
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-ghost"
+                  onClick={() =>
+                    downloadJson(
+                      `thinker-thought-seeds-${new Date().toISOString().slice(0, 10)}.json`,
+                      { exportedAt: new Date().toISOString(), seeds: exportSeeds() },
+                    )
+                  }
+                >
+                  Download seeds JSON
+                </button>
+              </>
             )}
             {approvedCount > 0 && (
-              <button
-                type="button"
-                className="btn btn-ghost"
-                onClick={() =>
-                  downloadJson(
-                    `thinker-approved-drafts-${new Date().toISOString().slice(0, 10)}.json`,
-                    exportApproved(),
-                  )
-                }
-              >
-                Export approved (→ scripts/promote/inbox)
-              </button>
+              <>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  disabled={queueBusy !== null || !queueReady}
+                  title={
+                    queueReady
+                      ? 'Open a GitHub PR that queues approved drafts'
+                      : 'Server idea-loop not configured yet'
+                  }
+                  onClick={() => void sendToIdeaLoop('promote')}
+                >
+                  {queueBusy === 'promote' ? 'Opening PR…' : 'Send approved to idea loop'}
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-ghost"
+                  onClick={() =>
+                    downloadJson(
+                      `thinker-approved-drafts-${new Date().toISOString().slice(0, 10)}.json`,
+                      exportApproved(),
+                    )
+                  }
+                >
+                  Download approved JSON
+                </button>
+              </>
             )}
           </div>
         )}
         {(thoughts.length > 0 || approvedCount > 0) && (
           <p className="kept-pending">
-            Idea loop: export → <code>npm run queue:seeds</code> /{' '}
-            <code>queue:promote</code> → PR → merge runs the next Action (see README).
+            {queueReady ? (
+              <>
+                Send opens a PR into the inbox. Merge it to run the next Action. Gate secret lives
+                in <Link to="/settings">Settings</Link>.
+              </>
+            ) : (
+              <>
+                Idea-loop server not configured yet — use Download JSON, or set{' '}
+                <code>GITHUB_TOKEN</code> + <code>QUEUE_SECRET</code> on the VPS (see README).
+              </>
+            )}
+          </p>
+        )}
+        {queueMessage && (
+          <p className="kept-pending" role="status">
+            {queueMessage}
+            {queuePrUrl ? (
+              <>
+                {' '}
+                <a href={queuePrUrl} target="_blank" rel="noreferrer">
+                  Open PR
+                </a>
+              </>
+            ) : null}
           </p>
         )}
         {pendingCount > 0 && (

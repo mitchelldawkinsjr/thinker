@@ -1,4 +1,4 @@
-import { useMemo, useState, type FormEvent } from 'react'
+import { useEffect, useMemo, useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import { curatedNewsFeeds } from '../data/newsFeeds'
 import {
@@ -22,6 +22,11 @@ import type { Topic, TopicId } from '../data/types'
 import { useSubscriptions } from '../hooks/useSubscriptions'
 import { useTopics } from '../hooks/useTopics'
 import { clearUserNewsForFeed, previewCustomFeed } from '../hooks/useUserNews'
+import {
+  fetchGithubQueueStatus,
+  loadQueueSecret,
+  saveQueueSecret,
+} from '../lib/githubQueue'
 import './Settings.css'
 
 /** News-friendly defaults shown first when tagging an RSS feed */
@@ -83,6 +88,17 @@ export function Settings() {
   const [topicDescription, setTopicDescription] = useState('')
   const [topicError, setTopicError] = useState<string | null>(null)
   const [editingTopicId, setEditingTopicId] = useState<string | null>(null)
+
+  const [queueSecret, setQueueSecret] = useState(() => loadQueueSecret())
+  const [queueConfigured, setQueueConfigured] = useState(false)
+  const [queueRepo, setQueueRepo] = useState<string | undefined>()
+
+  useEffect(() => {
+    void fetchGithubQueueStatus().then((s) => {
+      setQueueConfigured(s.configured)
+      setQueueRepo(s.repo)
+    })
+  }, [])
 
   const muted = useMemo(
     () => new Set(subscriptions.disabledFeedIds),
@@ -706,6 +722,38 @@ export function Settings() {
             ))}
           </ul>
         )}
+      </section>
+
+      <section className="settings-section" aria-labelledby="idea-loop-heading">
+        <h2 id="idea-loop-heading">Idea loop</h2>
+        <p className="settings-lead">
+          Kept can open a GitHub PR that queues seeds or approved drafts. The server holds the
+          GitHub token; this device only stores the matching gate secret (same value as{' '}
+          <code>QUEUE_SECRET</code> on the VPS).
+          {queueConfigured
+            ? ` Server ready${queueRepo ? ` for ${queueRepo}` : ''}.`
+            : ' Server not configured yet — set GITHUB_TOKEN + QUEUE_SECRET on the VPS.'}
+        </p>
+        <div className="settings-form">
+          <label>
+            Gate secret
+            <input
+              type="password"
+              autoComplete="off"
+              value={queueSecret}
+              placeholder="Matches QUEUE_SECRET on the server"
+              onChange={(e) => {
+                const v = e.target.value
+                setQueueSecret(v)
+                saveQueueSecret(v)
+              }}
+            />
+          </label>
+        </div>
+        <p className="settings-lead">
+          Then use <strong>Send to idea loop</strong> on Kept. Merge the PR to advance drafting /
+          promote.
+        </p>
       </section>
 
       <section className="settings-section settings-danger-zone">
