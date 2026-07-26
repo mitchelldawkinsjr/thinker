@@ -179,7 +179,7 @@ export function ResourceFeedCard({
           kicker="Keep · your note"
           title={resource.name}
           detail={resource.category}
-          placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+          placeholder="What stuck? One line is enough — export seeds into the idea loop later."
           active={flipped}
           onCancel={() => setFlipped(false)}
           onSave={(note, promote) =>
@@ -265,7 +265,7 @@ export function BookFeedCard({
           kicker="Keep · your note"
           title={title}
           detail={author}
-          placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+          placeholder="What stuck? One line is enough — export seeds into the idea loop later."
           active={flipped}
           onCancel={() => setFlipped(false)}
           onSave={(note, promote) =>
@@ -455,7 +455,7 @@ export function NewsFeedCard({
               ? `Moment at ${formatAudioTime(momentAt)} · ${news.source}`
               : news.source
           }
-          placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+          placeholder="What stuck? One line is enough — export seeds into the idea loop later."
           active={flipped}
           onCancel={() => setFlipped(false)}
           onSave={commitMoment}
@@ -564,7 +564,7 @@ export function ScriptureFeedCard({
           kicker="Keep · your note"
           title={scripture.hook}
           detail={`${scripture.reference} · ${scripture.translation}`}
-          placeholder="What stuck? One line is enough — it can feed draft:ideas later."
+          placeholder="What stuck? One line is enough — export seeds into the idea loop later."
           active={flipped}
           onCancel={() => setFlipped(false)}
           onSave={(note, promote) =>

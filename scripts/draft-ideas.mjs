@@ -11,11 +11,12 @@
  *   node scripts/draft-ideas.mjs --all-thin
  *   node scripts/draft-ideas.mjs --topic nba-analytics --topic wnba --count 3
  *   node scripts/draft-ideas.mjs --seeds path/to/thinker-thought-seeds.json --topic mental-models
+ *   node scripts/draft-ideas.mjs --seeds-dir scripts/seeds/inbox
  *
  * Requires OPENAI_API_KEY (env or .env).
  */
 import { createHash } from 'node:crypto'
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -113,6 +114,8 @@ function parseArgs(argv) {
   let floor = THIN_FLOOR
   /** @type {string | null} */
   let seedsPath = null
+  /** @type {string | null} */
+  let seedsDir = null
 
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i]
@@ -126,22 +129,25 @@ function parseArgs(argv) {
       floor = Math.max(1, Number(argv[++i]) || THIN_FLOOR)
     } else if (a === '--seeds' && argv[i + 1]) {
       seedsPath = argv[++i]
+    } else if (a === '--seeds-dir' && argv[i + 1]) {
+      seedsDir = argv[++i]
     } else if (a === '--help' || a === '-h') {
       console.log(`Usage:
   node scripts/draft-ideas.mjs --topic football-film --count 4
   node scripts/draft-ideas.mjs --all-thin [--floor 8] [--count 4]
   node scripts/draft-ideas.mjs --topic nba-analytics --topic wnba
-  node scripts/draft-ideas.mjs --seeds thinker-thought-seeds.json --topic mental-models`)
+  node scripts/draft-ideas.mjs --seeds thinker-thought-seeds.json --topic mental-models
+  node scripts/draft-ideas.mjs --seeds-dir scripts/seeds/inbox`)
       process.exit(0)
     }
   }
 
-  return { topics, count, allThin, floor, seedsPath }
+  return { topics, count, allThin, floor, seedsPath, seedsDir }
 }
 
 /**
  * @param {string} path
- * @returns {Promise<{ topicId: string, note: string, title?: string, source?: string, parentTitle?: string, startSec?: number }[]>}
+ * @returns {Promise<{ topicId: string, note: string, title?: string, source?: string, parentTitle?: string, startSec?: number, kind?: string, reference?: string }[]>}
  */
 async function loadSeeds(path) {
   const raw = JSON.parse(await readFile(resolve(path), 'utf8'))
@@ -155,7 +161,33 @@ async function loadSeeds(path) {
       source: typeof s.source === 'string' ? s.source.trim() : undefined,
       parentTitle: typeof s.parentTitle === 'string' ? s.parentTitle.trim() : undefined,
       startSec: typeof s.startSec === 'number' ? s.startSec : undefined,
+      kind: typeof s.kind === 'string' ? s.kind : undefined,
+      reference: typeof s.reference === 'string' ? s.reference.trim() : undefined,
     }))
+}
+
+/**
+ * Load every *.json export under a directory (CI seeds inbox).
+ * @param {string} dir
+ */
+async function loadSeedsDir(dir) {
+  const abs = resolve(dir)
+  let names = []
+  try {
+    names = (await readdir(abs)).filter((n) => n.endsWith('.json')).sort()
+  } catch {
+    return { seeds: [], files: [] }
+  }
+  /** @type {Awaited<ReturnType<typeof loadSeeds>>} */
+  const seeds = []
+  const files = []
+  for (const name of names) {
+    const path = join(abs, name)
+    const batch = await loadSeeds(path)
+    seeds.push(...batch)
+    files.push(path)
+  }
+  return { seeds, files }
 }
 
 /**
@@ -417,7 +449,9 @@ function thinTopics(existing, floor) {
 
 async function main() {
   await loadDotEnv()
-  const { topics: topicArgs, count, allThin, floor, seedsPath } = parseArgs(process.argv.slice(2))
+  const { topics: topicArgs, count, allThin, floor, seedsPath, seedsDir } = parseArgs(
+    process.argv.slice(2),
+  )
   const apiKey = process.env.OPENAI_API_KEY?.trim()
   if (!apiKey) {
     console.error('Missing OPENAI_API_KEY (set env or .env)')
@@ -426,10 +460,20 @@ async function main() {
   const model = process.env.OPENAI_MODEL?.trim() || DEFAULT_MODEL
 
   const existing = await loadExistingIdeas()
-  /** @type {{ topicId: string, note: string, title?: string, source?: string, parentTitle?: string, startSec?: number }[]} */
+  /** @type {{ topicId: string, note: string, title?: string, source?: string, parentTitle?: string, startSec?: number, kind?: string, reference?: string }[]} */
   let seeds = []
-  if (seedsPath) {
+  /** @type {string[]} */
+  let seedFiles = []
+  if (seedsDir) {
+    const loaded = await loadSeedsDir(seedsDir)
+    seeds = loaded.seeds
+    seedFiles = loaded.files
+    console.log(
+      `Loaded ${seeds.length} seed(s) from ${seedFiles.length} file(s) in ${seedsDir}`,
+    )
+  } else if (seedsPath) {
     seeds = await loadSeeds(seedsPath)
+    seedFiles = [resolve(seedsPath)]
     console.log(`Loaded ${seeds.length} listening seed(s) from ${seedsPath}`)
   }
 
@@ -471,7 +515,7 @@ async function main() {
     }
     console.log(`Drafting from seeds by topic: ${jobs.map((j) => j.id).join(', ')}`)
   } else {
-    console.error('Pass --topic <id>, --all-thin, or --seeds <file>. See --help.')
+    console.error('Pass --topic <id>, --all-thin, --seeds <file>, or --seeds-dir <dir>. See --help.')
     process.exit(1)
   }
 
@@ -496,7 +540,8 @@ async function main() {
       draftedAt: new Date().toISOString(),
       model,
       topicId: job.id,
-      seededFrom: seedsPath || undefined,
+      seededFrom: seedsDir || seedsPath || undefined,
+      seedFiles: seedFiles.length > 0 ? seedFiles.map((p) => p.replace(`${ROOT}/`, '')) : undefined,
       items: ideas,
     }
     await writeFile(outPath, `${JSON.stringify(payload, null, 2)}\n`, 'utf8')
