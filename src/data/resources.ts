@@ -260,6 +260,24 @@ export const learningResources: LearningResource[] = [
     blurb: 'Accessible magazine-style philosophy connected to current life.',
     category: 'philosophy',
   },
+  {
+    id: 'philosophers-api',
+    name: 'Philosophers API',
+    url: 'https://philosophersapi.com/',
+    blurb:
+      'Profiles of famous philosophers — school, interests, quotes, key ideas — then open their Wikipedia page for the full story.',
+    category: 'philosophy',
+    topicHints: ['mental-models'],
+  },
+  {
+    id: 'zenquotes',
+    name: 'ZenQuotes',
+    url: 'https://zenquotes.io/',
+    blurb:
+      'Free inspirational quotes from inventors, leaders, and thinkers — then open the author’s Wikipedia page for the fuller life.',
+    category: 'thinking',
+    topicHints: ['mental-models'],
+  },
 
   // Finance
   {

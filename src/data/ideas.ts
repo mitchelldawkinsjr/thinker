@@ -864,6 +864,36 @@ export const ideas: Idea[] = [
     sourceUrl: 'https://theconversation.com/',
     readMinutes: 2,
   },
+  {
+    id: 'philosophers-wiki',
+    topicId: 'mental-models',
+    title: 'Meet a thinker, then open Wikipedia',
+    body: 'Plato (c.427–c.347 BCE) founded Platonism and wrote on justice, virtue, and education — including The Republic. Philosophers API gives the snapshot (school, interests, quotes); Wikipedia is where you follow the rabbit hole on purpose.',
+    hook: 'A name is not a worldview.',
+    lesson:
+      'Plato (c.427–c.347 BCE) founded Platonism and wrote on justice, virtue, and education — including The Republic. Use Philosophers API for the snapshot, then open Wikipedia for the fuller arc.',
+    takeaway: 'Snapshot the thinker, then read the wiki.',
+    example: 'See “Forms vs. particulars,” then open Plato’s Wikipedia entry before the next hot take on “truth.”',
+    source: 'Philosophers API',
+    sourceType: 'site',
+    sourceUrl: 'https://en.wikipedia.org/wiki/Plato',
+    readMinutes: 2,
+  },
+  {
+    id: 'zenquotes-wiki',
+    topicId: 'mental-models',
+    title: 'Keep the quote, know the person',
+    body: 'Theodore Roosevelt (1858–1919) — Rough Rider, trust-buster, and conservationist — pushed a “strenuous life”: better to wear out than rust out. ZenQuotes gives the line; Wikipedia is where you meet the person behind it.',
+    hook: 'A quote without a life is just wallpaper.',
+    lesson:
+      'Theodore Roosevelt (1858–1919) lived the strenuous life he preached — soldier, reformer, naturalist. ZenQuotes surfaces the line; open Wikipedia when you want the person, not just the poster.',
+    takeaway: 'Attribution is the start of curiosity.',
+    example: 'Save “wear out than rust out,” then skim Roosevelt’s wiki before you treat it as a productivity tip.',
+    source: 'ZenQuotes',
+    sourceType: 'site',
+    sourceUrl: 'https://en.wikipedia.org/wiki/Theodore_Roosevelt',
+    readMinutes: 2,
+  },
 ]
 
 export const getIdea = (id: string, extra: Idea[] = []) =>
