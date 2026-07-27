@@ -1,0 +1,156 @@
+{
+  "exportedAt": "2026-07-27T05:51:45.958Z",
+  "seeds": [
+    {
+      "topicId": "nba-analytics",
+      "note": "Good point to feed to an agent when looking at wnba stats",
+      "title": "Good point to feed to an agent when looking at wnba stats",
+      "source": "Tracking Data Notes",
+      "parentTitle": "Shot quality vs shot making",
+      "thoughtId": "th-f68e82dc-9",
+      "kind": "kept"
+    },
+    {
+      "topicId": "mental-models",
+      "note": "Guide for prompt creation format",
+      "title": "Guide for prompt creation format",
+      "source": "Cool guides via Reddit",
+      "parentTitle": "A cool guide about ChatGPT prompt frameworks I wish I knew earlier",
+      "thoughtId": "th-eec53053-2",
+      "kind": "kept"
+    },
+    {
+      "topicId": "mental-models",
+      "note": "This speaks to what I’m trying to build with thinker. The idea being to think about what you’re thinking about. Seems like a meta idea that might be over doing but let’s see how it works for my mind.",
+      "title": "This speaks to what I’m trying to build with thinker. The idea being to think about what you’re thinking about. Seems like a meta idea that might be over doing but let’s see how it works for my mind.",
+      "source": "Philippians 4:8",
+      "parentTitle": "Attention is a diet.",
+      "thoughtId": "th-e8f8b77f-6",
+      "kind": "scripture",
+      "reference": "Philippians 4:8"
+    },
+    {
+      "topicId": "rag-context",
+      "note": "This is specially for askymcontent",
+      "title": "This is specially for askymcontent",
+      "source": "Search for RAG",
+      "parentTitle": "Worth saving for this project and future vector search apps",
+      "thoughtId": "th-bba9c9c3-c",
+      "kind": "kept"
+    },
+    {
+      "topicId": "finance",
+      "note": "How does this relate to the current stage of life that I am in. I think the lesson that I need to learn is better management, even when I had more I didn’t manage it. Well, it was just easier to pay my bills because my bills were less and I had more now that my bills are more and I have less better management is the only thing that will remove the deeper levels of stress and strain that I feel. Maybe the lesson that Yahweh is teaching me in this season is manage well cause I haven’t managed any of the things in my hand too well whether that be money work passion projects Chapel see I haven’t managed to well that’s the lesson of the season.",
+      "title": "How does this relate to the current stage of life that I am in. I think the lesson that I need to learn is better management, even when I had more I didn’t manage it. Well, it was just easier to pay my bills because my bills were less and I had more now that my bills are more and I have less better management is the only thing that will remove the deeper levels of stress and strain that I feel. Maybe the lesson that Yahweh is teaching me in this season is manage well cause I haven’t managed any of the things in my hand too well whether that be money work passion projects Chapel see I haven’t managed to well that’s the lesson of the season.",
+      "source": "Luke 16:10",
+      "parentTitle": "Faithfulness scales from small stakes.",
+      "thoughtId": "th-570274f4-7",
+      "kind": "scripture",
+      "reference": "Luke 16:10"
+    },
+    {
+      "topicId": "ai-frontend",
+      "note": "Show what the agent is doing",
+      "source": "Agent UX Notes",
+      "parentTitle": "Show what the agent is doing",
+      "thoughtId": "th-f01ea2a2-3",
+      "kind": "kept"
+    },
+    {
+      "topicId": "rag-context",
+      "note": "Worth saving for this project and future vector search apps",
+      "title": "Worth saving for this project and future vector search apps",
+      "source": "Search for RAG",
+      "parentTitle": "Hybrid search beats pure vectors alone",
+      "thoughtId": "th-169495c0-c",
+      "kind": "kept"
+    },
+    {
+      "topicId": "mental-models",
+      "note": "Know the edge of your circle of competence",
+      "source": "Investment Wisdom",
+      "parentTitle": "Know the edge of your circle of competence",
+      "thoughtId": "th-42f8185c-4",
+      "kind": "kept"
+    },
+    {
+      "topicId": "mental-models",
+      "note": "Judge what you control; release the rest",
+      "source": "Meditations — Marcus Aurelius",
+      "parentTitle": "Judge what you control; release the rest",
+      "thoughtId": "th-5be926db-6",
+      "kind": "kept"
+    },
+    {
+      "topicId": "mental-models",
+      "note": "Flagged for future sharing",
+      "title": "Flagged for future sharing",
+      "source": "Cool guides via Reddit",
+      "parentTitle": "A cool guide to possible AI-induced mental disorders, compulsions and behaviours",
+      "thoughtId": "th-53281d1b-4",
+      "kind": "kept"
+    },
+    {
+      "topicId": "football-film",
+      "note": "Tempo is what we can call going fast but not full rodeo. Tempo could be the signal crossing your arms in a T.",
+      "title": "Tempo is what we can call going fast but not full rodeo. Tempo could be the signal crossing your arms in a T.",
+      "source": "Offensive Coordination",
+      "parentTitle": "Tempo is a play call without a card",
+      "thoughtId": "th-fc5b3c51-7",
+      "kind": "kept"
+    },
+    {
+      "topicId": "mental-models",
+      "note": "How can this idea be used in software ? Can we build stores of data or information for context that ally can then work from with its context being your notes over the years to synthesize ideas and help see a starter to create.",
+      "title": "How can this idea be used in software ? Can we build stores of data or information for context that ally can then work from with its context being your notes over the years to synthesize ideas and help see a starter to create.",
+      "source": "5 Minute Book Summary · Sönke Ahrens + audio",
+      "parentTitle": "When you don’t spend the time to dig digger on a thought your are surre…",
+      "startSec": 1239.485388094296,
+      "thoughtId": "th-9a4f8dcb-3",
+      "kind": "listening"
+    },
+    {
+      "topicId": "mental-models",
+      "note": "When you don’t spend the time to dig digger on a thought your are surrendering the opportunity to genuinely learn",
+      "title": "When you don’t spend the time to dig digger on a thought your are surrendering the opportunity to genuinely learn",
+      "source": "5 Minute Book Summary · Sönke Ahrens + audio",
+      "parentTitle": "How to Take Smart Notes",
+      "startSec": 1126.7052544763046,
+      "thoughtId": "th-86e13483-f",
+      "kind": "listening"
+    },
+    {
+      "topicId": "mental-models",
+      "note": "For future consumption",
+      "title": "For future consumption",
+      "source": "Cool guides via Reddit",
+      "parentTitle": "A cool guide to watch Star wars, Ht ultimate timeline",
+      "thoughtId": "th-6c95aab9-9",
+      "kind": "kept"
+    },
+    {
+      "topicId": "current-events",
+      "note": "To resolve diarrhea causing lettuce",
+      "source": "therewasanattempt Via reddit",
+      "parentTitle": "To resolve diarrhea causing lettuce",
+      "thoughtId": "th-5e3b0159-c",
+      "kind": "kept"
+    },
+    {
+      "topicId": "building-products",
+      "note": "Bounce",
+      "source": "20 Minute Books · Matthew Syed",
+      "parentTitle": "Bounce",
+      "thoughtId": "th-3b9b4eba-8",
+      "kind": "kept"
+    },
+    {
+      "topicId": "mental-models",
+      "note": "Truth Over Feelings: Inside Opendoor’s Turnaround",
+      "source": "The knowledge project podcast",
+      "parentTitle": "Truth Over Feelings: Inside Opendoor’s Turnaround",
+      "thoughtId": "th-a5bcb337-6",
+      "kind": "kept"
+    }
+  ]
+}
