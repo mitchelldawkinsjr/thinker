@@ -55,15 +55,30 @@ export type AudioTrackMeta = {
   artist?: string
 }
 
+/** Same-origin icons so iOS Now Playing stays tied to Thinker (not another PWA). */
+function thinkerMediaArtwork(): MediaImage[] {
+  if (typeof window === 'undefined') return []
+  const origin = window.location.origin
+  return [
+    { src: `${origin}/favicon-48x48.png`, sizes: '48x48', type: 'image/png' },
+    { src: `${origin}/apple-touch-icon.png`, sizes: '180x180', type: 'image/png' },
+    { src: `${origin}/pwa-192x192.png`, sizes: '192x192', type: 'image/png' },
+    { src: `${origin}/pwa-512x512.png`, sizes: '512x512', type: 'image/png' },
+  ]
+}
+
 function applyMediaSession(meta: AudioTrackMeta | undefined) {
   if (typeof navigator === 'undefined' || !('mediaSession' in navigator)) return
   const title = meta?.title?.trim() || 'Audio'
   const artist = meta?.artist?.trim() || 'Thinker'
   try {
+    // Without artwork, iOS can drop the owning PWA and open another installed
+    // home-screen app (e.g. Scriptura) when the lock-screen player is tapped.
     navigator.mediaSession.metadata = new MediaMetadata({
       title,
       artist,
       album: 'Thinker',
+      artwork: thinkerMediaArtwork(),
     })
   } catch {
     // Older WebViews may reject MediaMetadata
@@ -186,8 +201,20 @@ function InlineAudioPlayer({
       }
       setPlaying(true)
       applyMediaSession(trackMetaRef.current)
+      try {
+        navigator.mediaSession.playbackState = 'playing'
+      } catch {
+        /* ignore */
+      }
     }
-    const onPause = () => setPlaying(false)
+    const onPause = () => {
+      setPlaying(false)
+      try {
+        navigator.mediaSession.playbackState = 'paused'
+      } catch {
+        /* ignore */
+      }
+    }
     const onEnded = () => {
       setPlaying(false)
       setCurrent(0)

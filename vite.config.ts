@@ -228,6 +228,7 @@ export default defineConfig(({ mode }) => {
           'apple-touch-icon.png',
         ],
         manifest: {
+          id: '/?source=pwa',
           name: 'Thinker',
           short_name: 'Thinker',
           description:
