@@ -4,11 +4,12 @@ import { useBookIdeas } from './useBookIdeas'
 import { useCatalogIdeas } from './useCatalogIdeas'
 import { useDraftReview } from './useDraftReview'
 import { useIdeaDrafts } from './useIdeaDrafts'
+import { usePhilosophers } from './usePhilosophers'
 import { useThoughts } from './useThoughts'
 
 /**
- * Book-summary ingest + promoted catalog drafts + personal ideas +
- * pending LLM drafts (tagged draftReview for in-feed approve/deny).
+ * Book-summary ingest + Philosophers API + promoted catalog drafts +
+ * personal ideas + pending LLM drafts (tagged draftReview for in-feed approve/deny).
  */
 export function useExtraIdeas(): {
   items: Idea[]
@@ -18,6 +19,7 @@ export function useExtraIdeas(): {
   pendingDraftCount: number
 } {
   const { items: bookIdeas, updatedAt: bookIdeasUpdatedAt } = useBookIdeas()
+  const { items: philosophers } = usePhilosophers()
   const { items: catalogIdeas, updatedAt: catalogUpdatedAt } = useCatalogIdeas()
   const { items: rawDrafts, updatedAt: draftsUpdatedAt } = useIdeaDrafts()
   const { myIdeas } = useThoughts()
@@ -26,7 +28,7 @@ export function useExtraIdeas(): {
   const items = useMemo(() => {
     const byId = new Map<string, Idea>()
 
-    for (const idea of [...bookIdeas, ...catalogIdeas, ...myIdeas]) {
+    for (const idea of [...bookIdeas, ...philosophers, ...catalogIdeas, ...myIdeas]) {
       byId.set(idea.id, { ...idea, draftReview: false })
     }
 
@@ -42,7 +44,7 @@ export function useExtraIdeas(): {
     }
 
     return [...byId.values()]
-  }, [bookIdeas, catalogIdeas, myIdeas, rawDrafts, denied, approved])
+  }, [bookIdeas, philosophers, catalogIdeas, myIdeas, rawDrafts, denied, approved])
 
   return {
     items,

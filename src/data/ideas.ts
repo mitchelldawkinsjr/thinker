@@ -865,21 +865,6 @@ export const ideas: Idea[] = [
     readMinutes: 2,
   },
   {
-    id: 'philosophers-wiki',
-    topicId: 'mental-models',
-    title: 'Meet a thinker, then open Wikipedia',
-    body: 'Plato (c.427–c.347 BCE) founded Platonism and wrote on justice, virtue, and education — including The Republic. Philosophers API gives the snapshot (school, interests, quotes); Wikipedia is where you follow the rabbit hole on purpose.',
-    hook: 'A name is not a worldview.',
-    lesson:
-      'Plato (c.427–c.347 BCE) founded Platonism and wrote on justice, virtue, and education — including The Republic. Use Philosophers API for the snapshot, then open Wikipedia for the fuller arc.',
-    takeaway: 'Snapshot the thinker, then read the wiki.',
-    example: 'See “Forms vs. particulars,” then open Plato’s Wikipedia entry before the next hot take on “truth.”',
-    source: 'Philosophers API',
-    sourceType: 'site',
-    sourceUrl: 'https://en.wikipedia.org/wiki/Plato',
-    readMinutes: 2,
-  },
-  {
     id: 'zenquotes-wiki',
     topicId: 'mental-models',
     title: 'Keep the quote, know the person',
