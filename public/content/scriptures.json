@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T20:08:58.969Z",
+  "updatedAt": "2026-07-27T14:26:07.509Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-187",
-      "reference": "2 Timothy 1:7",
-      "text": "For God didn’t give us a spirit of fear, but of power, love, and self-control.",
-      "translation": "WEB",
-      "hook": "Daily promise · July 5th",
-      "lesson": "As opposed to a spirit of fear, we are given a spirit of adoption that we may be called sons of God (Romans 8:15)! The very Spirit of God has bestowed all power, love and grace upon us. By this, we have become heirs of the Most High for we are a new creation in His character. We have been delivered and glorified by Christ through the power and love of the Holy Spirit. Open the full Blue Letter Bible reading for July 5th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=187",
-      "bookId": 55,
-      "chapter": 1,
-      "verseStart": 7,
-      "verseEnd": 7,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-188",
       "reference": "Isaiah 53:5",
       "text": "But he was pierced for our transgressions. He was crushed for our iniquities. The punishment that brought our peace was on him; and by his wounds we are healed.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-148",
-      "reference": "2 Peter 1:8",
-      "text": "For if these things are yours and abound, they make you to be not idle nor unfruitful to the knowledge of our Lord Jesus Christ.",
+      "id": "blb-promise-doy-208",
+      "reference": "Psalm 149:4",
+      "text": "For Yahweh takes pleasure in his people. He crowns the humble with salvation.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · May 27th",
-      "lesson": "If we desire to glorify our Lord by fruitfulness we must have certain things within us; for nothing can come out of us which is not first of all within us. We must begin with faith, which is the groundwork of all the virtues; and then diligently add to it virtue, knowledge, temperance, and patience. With these we must have godliness and brotherly love. All these put together will most assuredly cause us to produce…",
+      "hook": "Daily promise · July 26th",
+      "lesson": "My Prayer: Thank You, O God that You delight in us, Your people. Thank You for Your reign of love. Thank You for taking pleasure in Your people, for giving us hearts to serve, for prospering us by Your Spirit, for communing with us by Your means of grace, and for communicating to us Your favour and good pleasure. Thank You for preparing us for Your future glory! Open the full Blue Letter Bible reading for July 26th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=148",
-      "bookId": 61,
-      "chapter": 1,
-      "verseStart": 8,
-      "verseEnd": 8,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=208",
+      "bookId": 19,
+      "chapter": 149,
+      "verseStart": 4,
+      "verseEnd": 4,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-149",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-148",
-      "reference": "2 Samuel 9:13",
-      "text": "So Mephibosheth lived in Jerusalem; for he ate continually at the king’s table. He was lame in both his feet.",
+      "id": "blb-checkbook-doy-208",
+      "reference": "Hosea 2:16–17",
+      "text": "It will be in that day,” says Yahweh, “that you will call me ‘my husband,’ and no longer call me ‘my master.’ For I will take away the names of the Baals out of her mouth, and they will no longer be mentioned by name.",
       "translation": "WEB",
-      "hook": "Morning reading · May 27th",
-      "lesson": "Mephibosheth was no great ornament to a royal table, yet he had a continual place at David's board, because the king could see in his face the features of the beloved Jonathan. Like Mephibosheth, we may cry unto the King of Glory, \"What is Thy servant, that Thou shouldst look upon such a dead dog as I am?\" but still the Lord indulges us with most familiar intercourse with Himself, because He sees in our countenanc…",
+      "hook": "Faith's Checkbook · July 26th",
+      "lesson": "That day has come. We view our God no more as Baal, our tyrant lord and mighty master, for we are not under law, but under grace. We now think of Jehovah, our God, as our Ishi, our beloved husband, our lord in love, our next-of-kin in bonds of sacred relationship. We do not reverence Him less, but we love Him more. We do not serve Him less obediently, but we serve Him for a higher and more endearing reason. We no…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=148&Time=am",
-      "bookId": 10,
-      "chapter": 9,
-      "verseStart": 13,
-      "verseEnd": 13,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=208",
+      "bookId": 28,
+      "chapter": 2,
+      "verseStart": 16,
+      "verseEnd": 17,
       "pool": "evergreen"
     },
     {
