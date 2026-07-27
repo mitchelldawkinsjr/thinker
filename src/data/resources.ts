@@ -261,15 +261,6 @@ export const learningResources: LearningResource[] = [
     category: 'philosophy',
   },
   {
-    id: 'philosophers-api',
-    name: 'Philosophers API',
-    url: 'https://philosophersapi.com/',
-    blurb:
-      'Profiles of famous philosophers — school, interests, quotes, key ideas — then open their Wikipedia page for the full story.',
-    category: 'philosophy',
-    topicHints: ['mental-models'],
-  },
-  {
     id: 'zenquotes',
     name: 'ZenQuotes',
     url: 'https://zenquotes.io/',
