@@ -104,6 +104,104 @@ export function linkedNoteIds(noteId: string, links: ZettelLink[]): string[] {
   return [...ids]
 }
 
+/** Split link search into #tag filters and plain terms (AND). */
+export function parseNoteSearchQuery(query: string): { tags: string[]; terms: string[] } {
+  const tags: string[] = []
+  const terms: string[] = []
+  for (const raw of query.trim().toLowerCase().split(/\s+/)) {
+    if (!raw) continue
+    if (raw.startsWith('#')) {
+      const tag = raw.replace(/^#+/, '').trim()
+      if (tag) tags.push(tag)
+    } else {
+      terms.push(raw)
+    }
+  }
+  return { tags, terms }
+}
+
+/**
+ * Ranked note search for linking. Lean: AND tokens, #tag filters,
+ * title > tag > body scoring, recency tie-break. Skips excluded / already-linked.
+ */
+export function searchNotesForLink(
+  notes: ZettelNote[],
+  query: string,
+  opts: {
+    excludeId?: string
+    alreadyLinkedIds?: Iterable<string>
+    limit?: number
+  } = {},
+): ZettelNote[] {
+  const q = query.trim()
+  if (!q) return []
+
+  const { tags, terms } = parseNoteSearchQuery(q)
+  if (tags.length === 0 && terms.length === 0) return []
+
+  const skip = new Set<string>(opts.alreadyLinkedIds ?? [])
+  if (opts.excludeId) skip.add(opts.excludeId)
+  const limit = opts.limit ?? 8
+
+  const scored: { note: ZettelNote; score: number }[] = []
+  for (const n of notes) {
+    if (skip.has(n.id)) continue
+    const score = scoreNoteForSearch(n, terms, tags)
+    if (score === null) continue
+    scored.push({ note: n, score })
+  }
+
+  scored.sort(
+    (a, b) =>
+      b.score - a.score || b.note.updatedAt.localeCompare(a.note.updatedAt),
+  )
+  return scored.slice(0, limit).map((s) => s.note)
+}
+
+function scoreNoteForSearch(
+  note: ZettelNote,
+  terms: string[],
+  tagFilters: string[],
+): number | null {
+  const title = note.title.toLowerCase()
+  const body = note.body.toLowerCase()
+  const noteTags = note.tags ?? []
+
+  for (const tag of tagFilters) {
+    if (!noteTags.some((t) => t === tag || t.includes(tag))) return null
+  }
+
+  let score = tagFilters.length * 20
+
+  for (const term of terms) {
+    let hit = false
+    if (title === term) {
+      score += 100
+      hit = true
+    } else if (title.startsWith(term)) {
+      score += 60
+      hit = true
+    } else if (title.includes(term)) {
+      score += 40
+      hit = true
+    }
+    if (noteTags.some((t) => t === term || t.includes(term))) {
+      score += 30
+      hit = true
+    }
+    if (body.includes(term)) {
+      score += 10
+      hit = true
+    }
+    if (!hit) return null
+  }
+
+  // Soft demote empty untitled stubs
+  if (title === 'untitled note' && !body.trim()) score -= 15
+
+  return score
+}
+
 /** Normalize tag input: lowercase, strip #, dedupe. */
 export function normalizeTags(raw: string[] | string | undefined): string[] {
   const list = Array.isArray(raw)

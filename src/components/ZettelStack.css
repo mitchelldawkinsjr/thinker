@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  /* Keep card z-index from painting over the index / ideas below */
+  isolation: isolate;
 }
 
 .zettel-stack-empty {
@@ -11,11 +13,18 @@
   color: var(--muted);
 }
 
+/*
+  Grid stack: every card shares one cell so stage height = tallest card.
+  Transforms only shift the paint — they no longer pull cards out of flow
+  (absolute backs were overlapping the index / idea cards below).
+*/
 .zettel-stack-stage {
-  position: relative;
-  min-height: 280px;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  padding: 0.5rem 0.25rem 1.75rem;
   perspective: 1200px;
-  padding: 0.5rem 0.25rem 1.5rem;
+  isolation: isolate;
 }
 
 .zettel-stack-card {
@@ -26,14 +35,9 @@
   --zk-card-accent: var(--zk-accent);
   --zk-card-surface: var(--zk-surface);
 
-  position: absolute;
-  inset: 0 auto auto 0;
+  grid-area: 1 / 1;
   width: min(100%, 520px);
-  left: 50%;
   transform-origin: 50% 100%;
-  transform: translateX(calc(-50% + var(--zk-x))) translateY(var(--zk-y)) rotate(var(--zk-rot))
-    scale(calc(1 - var(--zk-depth) * 0.03));
-  z-index: calc(20 - var(--zk-depth));
   padding: 1.15rem 1.2rem 1.25rem;
   border-radius: 1.15rem;
   background:
@@ -56,6 +60,9 @@
 }
 
 .zettel-stack-card.is-back {
+  transform: translate(var(--zk-x), var(--zk-y)) rotate(var(--zk-rot))
+    scale(calc(1 - var(--zk-depth) * 0.03));
+  z-index: calc(20 - var(--zk-depth));
   cursor: pointer;
   filter: brightness(0.88);
   opacity: 0.92;
@@ -66,6 +73,8 @@
 }
 
 .zettel-stack-card.is-front {
+  position: relative;
+  z-index: 20;
   filter: none;
   opacity: 1;
   box-shadow:
@@ -73,9 +82,9 @@
     0 0 0 1px color-mix(in srgb, var(--zk-card-accent) 40%, transparent);
 }
 
-/* Shuffle: current front flies off; next rises via depth transition */
+/* Shuffle: front flies off; stay in-grid so height doesn't collapse mid-anim */
 .zettel-stack.is-shuffling .zettel-stack-card.is-leaving {
-  transform: translateX(calc(-50% + 110%)) translateY(-12%) rotate(12deg) scale(0.94);
+  transform: translateX(110%) translateY(-12%) rotate(12deg) scale(0.94);
   opacity: 0;
   filter: blur(1px);
   pointer-events: none;
@@ -132,6 +141,11 @@
   line-height: 1.45;
   color: color-mix(in srgb, #f4f0ea 88%, transparent);
   white-space: pre-wrap;
+}
+
+.zettel-stack-body {
+  max-height: 14rem;
+  overflow: auto;
 }
 
 .zettel-stack-preview {
@@ -202,10 +216,6 @@
 }
 
 @media (max-width: 560px) {
-  .zettel-stack-stage {
-    min-height: 300px;
-  }
-
   .zettel-stack-card {
     width: 100%;
   }

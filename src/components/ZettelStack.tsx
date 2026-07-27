@@ -98,6 +98,16 @@ export function ZettelStack({
           const isFront = item.note.id === activeId
           const isLeaving = outgoingId === item.note.id
           const depth = isFront ? 0 : Math.min(i, 4)
+          const bodyText = item.note.body.trim()
+          const titleText = item.note.title.trim()
+          const bodyDuplicatesTitle = Boolean(bodyText) && bodyText === titleText
+          const frontBody = !bodyText
+            ? 'Empty note — edit to add your claim.'
+            : bodyDuplicatesTitle
+              ? null
+              : bodyText
+          const backPreview =
+            !bodyText || bodyDuplicatesTitle ? null : bodyText.slice(0, 120)
           return (
             <article
               key={item.note.id}
@@ -160,15 +170,13 @@ export function ZettelStack({
                   ))}
                 </p>
               )}
-              {isFront && (
-                <p className="zettel-stack-body">
-                  {item.note.body.trim() || 'Empty note — edit to add your claim.'}
-                </p>
+              {isFront && frontBody !== null && (
+                <p className="zettel-stack-body">{frontBody}</p>
               )}
-              {!isFront && (
+              {!isFront && backPreview !== null && (
                 <p className="zettel-stack-preview">
-                  {item.note.body.trim().slice(0, 120) || '…'}
-                  {item.note.body.trim().length > 120 ? '…' : ''}
+                  {backPreview}
+                  {bodyText.length > 120 ? '…' : ''}
                 </p>
               )}
             </article>
