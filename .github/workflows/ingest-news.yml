@@ -16,20 +16,21 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Ingest RSS + scriptures + book ideas + philosophers
+      - name: Ingest RSS + scriptures + book ideas + philosophers + zenquotes
         run: |
           node scripts/ingest-news.mjs
           node scripts/ingest-scriptures.mjs
           node scripts/ingest-book-ideas.mjs
           node scripts/ingest-philosophers.mjs
+          node scripts/ingest-zenquotes.mjs
       - name: Commit if changed
         run: |
           git config user.name "thinker-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add public/content/news.json public/content/scriptures.json public/content/book-ideas.json public/content/philosophers.json
+          git add public/content/news.json public/content/scriptures.json public/content/book-ideas.json public/content/philosophers.json public/content/zenquotes.json
           if git diff --staged --quiet; then
             echo "No content changes"
             exit 0
           fi
-          git commit -m "chore: refresh news, scriptures, book ideas, and philosophers"
+          git commit -m "chore: refresh news, scriptures, book ideas, philosophers, and zenquotes"
           git push
