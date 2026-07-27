@@ -864,21 +864,6 @@ export const ideas: Idea[] = [
     sourceUrl: 'https://theconversation.com/',
     readMinutes: 2,
   },
-  {
-    id: 'zenquotes-wiki',
-    topicId: 'mental-models',
-    title: 'Keep the quote, know the person',
-    body: 'Theodore Roosevelt (1858–1919) — Rough Rider, trust-buster, and conservationist — pushed a “strenuous life”: better to wear out than rust out. ZenQuotes gives the line; Wikipedia is where you meet the person behind it.',
-    hook: 'A quote without a life is just wallpaper.',
-    lesson:
-      'Theodore Roosevelt (1858–1919) lived the strenuous life he preached — soldier, reformer, naturalist. ZenQuotes surfaces the line; open Wikipedia when you want the person, not just the poster.',
-    takeaway: 'Attribution is the start of curiosity.',
-    example: 'Save “wear out than rust out,” then skim Roosevelt’s wiki before you treat it as a productivity tip.',
-    source: 'ZenQuotes',
-    sourceType: 'site',
-    sourceUrl: 'https://en.wikipedia.org/wiki/Theodore_Roosevelt',
-    readMinutes: 2,
-  },
 ]
 
 export const getIdea = (id: string, extra: Idea[] = []) =>

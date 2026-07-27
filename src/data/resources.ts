@@ -260,15 +260,6 @@ export const learningResources: LearningResource[] = [
     blurb: 'Accessible magazine-style philosophy connected to current life.',
     category: 'philosophy',
   },
-  {
-    id: 'zenquotes',
-    name: 'ZenQuotes',
-    url: 'https://zenquotes.io/',
-    blurb:
-      'Free inspirational quotes from inventors, leaders, and thinkers — then open the author’s Wikipedia page for the fuller life.',
-    category: 'thinking',
-    topicHints: ['mental-models'],
-  },
 
   // Finance
   {
