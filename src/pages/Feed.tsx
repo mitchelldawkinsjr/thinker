@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect, useCallback, type ReactNode } from 'react'
+import { useMemo, useState, useEffect, useCallback, useRef, type ReactNode } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { buildMixedFeed, feedKindLabel, type FeedItem } from '../data/feed'
 import { resolveTopicFilter } from '../data/subscriptions'
@@ -12,6 +12,7 @@ import { useUserNewsItems } from '../hooks/useUserNews'
 import {
   getFeedCursor,
   getFeedCursorItemId,
+  getFeedReshuffle,
   setFeedCursor,
   stabilizeFeedOrder,
 } from '../lib/daySession'
@@ -95,7 +96,7 @@ export function Feed() {
   const topicFilter = params.get('topic')
   const topicKey = topicFilter
   const topic = topicFilter ? getTopic(topicFilter) : undefined
-  const [reshuffle, setReshuffle] = useState(0)
+  const [reshuffle, setReshuffle] = useState(() => getFeedReshuffle(topicKey))
   /** Bumps when a card is permanently removed so the mix rebuilds */
   const [hideTick, setHideTick] = useState(0)
   const { subscriptions } = useSubscriptions()
@@ -145,11 +146,19 @@ export function Feed() {
     dir: 'next' | 'prev'
     fromIndex: number
   } | null>(null)
+  const indexRef = useRef(index)
+  indexRef.current = index
+  /**
+   * When restore jumps index to the saved card, the persist effect in the same
+   * paint still sees the stale index — write the saved id/position instead.
+   */
+  const restorePersistRef = useRef<{ index: number; itemId: string } | null>(null)
 
-  // Topic change: restore today’s cursor for that topic
+  // Topic change: restore today’s cursor + reshuffle for that topic
   useEffect(() => {
     setSlideDir(null)
     setLeaving(null)
+    setReshuffle(getFeedReshuffle(topicKey))
     setIndex(getFeedCursor(topicKey))
   }, [topicKey])
 
@@ -160,17 +169,33 @@ export function Feed() {
     if (savedId) {
       const at = items.findIndex((it) => it.id === savedId)
       if (at >= 0) {
-        setIndex(at)
+        if (at !== indexRef.current) {
+          restorePersistRef.current = { index: at, itemId: savedId }
+          setIndex(at)
+        }
         return
       }
+      // Saved card not in this (possibly seed-sized) mix yet — keep index, don’t clamp
+      // onto a different card. Persist effect will wait until the id reappears.
+      return
     }
     setIndex((i) => Math.min(i, items.length - 1))
   }, [items, topicKey, hideTick])
 
-  // Persist card position + id for today only (device localStorage)
+  // Persist card position + id for today only (device localStorage).
+  // Skip while the saved card is missing from a compressed seed feed so we
+  // don’t overwrite itemId with whatever sits at the same numeric index.
   useEffect(() => {
-    const id = items[index]?.id
-    setFeedCursor(topicKey, index, id)
+    if (items.length === 0) return
+    const pending = restorePersistRef.current
+    if (pending) {
+      restorePersistRef.current = null
+      setFeedCursor(topicKey, pending.index, pending.itemId)
+      return
+    }
+    const savedId = getFeedCursorItemId(topicKey)
+    if (savedId && !items.some((it) => it.id === savedId)) return
+    setFeedCursor(topicKey, index, items[index]?.id)
   }, [topicKey, index, items])
 
   const item = items[index]
@@ -190,8 +215,10 @@ export function Feed() {
     setSlideDir(null)
     setLeaving(null)
     hideFromPool(item.id)
+    // Drop saved id so resume doesn’t wait forever for a permanently removed card
+    setFeedCursor(topicKey, index, null)
     setHideTick((t) => t + 1)
-  }, [item?.id])
+  }, [item?.id, topicKey, index])
 
   const reshuffleFeed = useCallback(() => {
     setSlideDir(null)
