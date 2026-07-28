@@ -146,20 +146,50 @@ export function getFeedCursorItemId(topic: string | null): string | null {
   return cursor.itemId ?? null
 }
 
+/**
+ * Save today’s cursor.
+ * - `itemId` string → store that card id
+ * - `itemId` null → clear card id (Reshuffle)
+ * - `itemId` omitted → keep the previous id for this topic/day
+ */
 export function setFeedCursor(topic: string | null, index: number, itemId?: string | null) {
   const { day } = ensureFreshDay()
+  const prev = loadCursor()
   const cursor: DayCursor = {
     day,
     topic,
     index: Math.max(0, Math.floor(index)),
   }
-  if (itemId) cursor.itemId = itemId
+  if (typeof itemId === 'string' && itemId.length > 0) {
+    cursor.itemId = itemId
+  } else if (itemId === null) {
+    // explicit clear
+  } else if (
+    prev &&
+    sameDay(prev.day, day) &&
+    prev.topic === topic &&
+    typeof prev.itemId === 'string'
+  ) {
+    cursor.itemId = prev.itemId
+  }
   saveCursor(cursor)
+}
+
+/** Today’s reshuffle key for this topic (0 if new day / different topic). */
+export function getFeedReshuffle(topic: string | null): number {
+  const { day } = ensureFreshDay()
+  const saved = loadOrder()
+  if (!saved || !sameDay(saved.day, day)) return 0
+  if (saved.topic !== topicKey(topic)) return 0
+  return saved.reshuffle
 }
 
 /**
  * Keep today’s feed order stable across remounts / async loads / freshness updates.
  * New cards append; Reshuffle (new reshuffle key) starts a fresh order.
+ *
+ * Missing ids (not yet loaded from live JSON) stay in the saved order so a
+ * compressed seed feed cannot permanently drop deep cards or rewrite positions.
  */
 export function stabilizeFeedOrder<T extends { id: string }>(
   items: T[],
@@ -179,23 +209,26 @@ export function stabilizeFeedOrder<T extends { id: string }>(
     saved.ids.length > 0
   ) {
     const ordered: T[] = []
+    const preservedIds: string[] = []
     const seen = new Set<string>()
     for (const id of saved.ids) {
-      const item = byId.get(id)
-      if (!item || seen.has(id)) continue
-      ordered.push(item)
+      if (seen.has(id)) continue
       seen.add(id)
+      preservedIds.push(id)
+      const item = byId.get(id)
+      if (item) ordered.push(item)
     }
     for (const item of items) {
       if (seen.has(item.id)) continue
-      ordered.push(item)
       seen.add(item.id)
+      preservedIds.push(item.id)
+      ordered.push(item)
     }
     saveOrder({
       day,
       topic: topicVal,
       reshuffle,
-      ids: ordered.map((item) => item.id),
+      ids: preservedIds,
     })
     return ordered
   }
