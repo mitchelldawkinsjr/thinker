@@ -128,7 +128,10 @@ function toIdea(listRow, detail, ingestedAt) {
       ? `“${clip(quote, 280)}”`
       : clip(body, 280)
 
-  const example = quote && keyIdea ? `“${clip(quote, 200)}”` : undefined
+  // Full quote in Example when we also have a key idea for the lesson body.
+  const example = quote && keyIdea
+    ? `“${String(quote).replace(/\s+/g, ' ').trim()}”`
+    : undefined
 
   return {
     id: slugId(name, listRow.id),
