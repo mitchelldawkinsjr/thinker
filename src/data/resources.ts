@@ -175,6 +175,14 @@ export const learningResources: LearningResource[] = [
 
   // History
   {
+    id: 'black-history-two-min',
+    name: 'Black History in Two Minutes',
+    url: 'https://www.youtube.com/@BlackHistoryinTwoMinutes/featured',
+    blurb: 'Short, sourced episodes on people and moments in Black history — about two minutes each.',
+    category: 'history',
+    topicHints: ['history'],
+  },
+  {
     id: 'smithsonian',
     name: 'Smithsonian Magazine',
     url: 'https://www.smithsonianmag.com/',
@@ -487,6 +495,24 @@ export const learningResources: LearningResource[] = [
   },
 
   // News / current events (anti-doomscroll alternatives)
+  {
+    id: 'cspan',
+    name: 'C-SPAN',
+    url: 'https://www.c-span.org/',
+    blurb:
+      'Unfiltered Congress and Washington — Washington Today + Q&A podcasts in the news mix, plus C-SPAN YouTube Shorts.',
+    category: 'news',
+    topicHints: ['politics', 'current-events', 'history'],
+  },
+  {
+    id: 'parnas-news',
+    name: 'PARNAS News',
+    url: 'https://www.parnasnews.com/',
+    blurb:
+      'Gen Z politics and breaking updates from Aaron Parnas — site cards plus Substack RSS (aaronparnas.substack.com).',
+    category: 'news',
+    topicHints: ['politics', 'current-events'],
+  },
   {
     id: 'the-conversation',
     name: 'The Conversation',

@@ -53,7 +53,11 @@ export const KIND_WEIGHT_LABELS: {
   label: string
   hint: string
 }[] = [
-  { key: 'ideas', label: 'Ideas', hint: 'Catalog + philosophers / quotes + your approved drafts' },
+  {
+    key: 'ideas',
+    label: 'Ideas',
+    hint: 'Catalog + philosophers / quotes / Black History + your approved drafts',
+  },
   { key: 'bookIdeas', label: 'Book summaries', hint: '5- and 20-minute book summary cards' },
   { key: 'news', label: 'News', hint: 'Curated outlets and your RSS feeds' },
   { key: 'scripture', label: 'Scripture', hint: 'Daily promise + evergreen rotation' },

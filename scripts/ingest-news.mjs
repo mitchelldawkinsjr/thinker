@@ -21,11 +21,14 @@ dns.setDefaultResultOrder('ipv4first')
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const OUT = join(ROOT, 'public', 'content', 'news.json')
+const YT_ARCHIVE_DIR = join(ROOT, 'public', 'content', 'yt-archives')
 /** Hard-news / politics — short window; stories change daily */
 const TTL_DAYS_POLITICS = 3
 /** Culture, sports, faith, general current-events */
 const TTL_DAYS_DEFAULT = 10
 const DAY_MS = 24 * 60 * 60 * 1000
+const YT_UA =
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 
 /** @typedef {{ id: string, hook: string, title: string, lesson: string, source: string, sourceUrl: string, publishedAt: string, expiresAt: string, topicIds: string[], angles?: { label: string, url: string }[], feedId?: string }} NewsItem */
 
@@ -183,6 +186,42 @@ const FEEDS = [
     url: 'https://aaronparnas.substack.com/feed',
     topicIds: ['politics', 'current-events'],
     limit: 8,
+    ttlDays: 3,
+    // Substack also attaches mp3 enclosures — keep the article page as CTA
+    preferPageLink: true,
+  },
+  {
+    // Site mirrors Substack but has no public RSS — scrape homepage article cards.
+    id: 'parnas-news',
+    name: 'PARNAS News',
+    url: 'https://www.parnasnews.com/',
+    topicIds: ['politics', 'current-events'],
+    limit: 8,
+    kind: 'site-articles',
+    articlePathPrefix: '/articles/',
+    siteUrl: 'https://www.parnasnews.com/',
+    ttlDays: 3,
+  },
+  // C-SPAN.org HTML/RSS is WAF-challenged; Megaphone podcasts + YouTube carry the news.
+  {
+    id: 'cspan-washington-today',
+    name: 'C-SPAN · Washington Today',
+    url: 'https://feeds.megaphone.fm/cspanwashingtontoday',
+    topicIds: ['politics', 'current-events'],
+    limit: 6,
+    kind: 'podcast',
+    siteUrl: 'https://www.c-span.org/',
+    ttlDays: 3,
+  },
+  {
+    id: 'cspan-qa',
+    name: 'C-SPAN · Q&A',
+    url: 'https://feeds.megaphone.fm/cspanqa',
+    topicIds: ['politics', 'history', 'current-events'],
+    limit: 4,
+    kind: 'podcast',
+    siteUrl: 'https://www.c-span.org/',
+    ttlDays: 7,
   },
   // Black pop culture / music — verified XML only
   {
@@ -598,6 +637,141 @@ const FEEDS = [
       topicIds: ['llms-prompting', 'ai-agents'],
       shorts: true,
     },
+    {
+      id: 'yt-black-history-two-min',
+      name: 'Black History in Two Minutes',
+      channelId: 'UCYYNgeK89XFPu-7qUm8edqg',
+      handle: 'BlackHistoryinTwoMinutes',
+      topicIds: ['history'],
+      shorts: true,
+      limit: 8,
+      // Channel is quiet — rotate through the full uploads playlist so older
+      // episodes keep showing up alongside whatever is still “recent”.
+      archive: {
+        playlistId: 'PLsB1WO8xAXzyMz4BihC_6a07RZummkGza',
+        batchSize: 8,
+        /** Prefer mixing head-of-playlist (newer) with deeper cuts */
+        mixRecent: 4,
+      },
+      ttlDays: 12,
+    },
+    {
+      id: 'yt-the-pivot',
+      name: 'The Pivot Podcast',
+      channelId: 'UCUnxiP7q4RDDyeioZFZLnXA',
+      handle: 'thepivotpodcast',
+      topicIds: ['sports-biz', 'nba-analytics', 'football-film'],
+      shorts: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-ruslan-kd',
+      name: 'Ruslan KD',
+      channelId: 'UCj2yZE96gWsFyeVYnY9zXeg',
+      handle: 'RuslanKD',
+      topicIds: ['current-events', 'mental-models'],
+      shorts: true,
+      limit: 5,
+    },
+    {
+      id: 'yt-raven-rock-homestead',
+      name: 'Raven Rock Homestead',
+      channelId: 'UCcEAgEkAxcrz1Piezwe9ZJw',
+      handle: 'RavenRockHomestead',
+      topicIds: ['mental-models', 'building-products'],
+      shorts: false,
+      limit: 6,
+    },
+    {
+      id: 'yt-raw-room',
+      name: 'Raw Room',
+      channelId: 'UCS7xvlPBPNGHjUvFRKItUBQ',
+      handle: 'raw__room',
+      topicIds: ['sports-biz', 'football-film', 'current-events'],
+      shortsOnly: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-89show',
+      name: '89 — Steve Smith Sr.',
+      channelId: 'UCwpDj5ZRfVYefwmA2FnlwKw',
+      handle: '89show',
+      topicIds: ['football-film', 'sports-biz'],
+      shortsOnly: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-mind-the-game',
+      name: 'Mind the Game',
+      channelId: 'UC6L_LBqoKZXFa4WxHox5iCw',
+      handle: 'MindTheGamePodcast',
+      topicIds: ['nba-analytics', 'sports-biz'],
+      shortsOnly: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-mojo-brookzz',
+      name: 'Mojo Brookzz',
+      channelId: 'UCvWHvXyTOZu9fzS9JzODkCQ',
+      handle: 'mojobrookzz',
+      topicIds: ['current-events'],
+      shortsOnly: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-cspan',
+      name: 'C-SPAN',
+      channelId: 'UCb--64Gl51jIEVE-GLDAVTg',
+      handle: 'CSPAN',
+      topicIds: ['politics', 'current-events'],
+      shortsOnly: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-npr-podcasts',
+      name: 'NPR Podcasts',
+      channelId: 'UCuVaB0t5qJRxP55gEl6TuKQ',
+      handle: 'nprpodcasts',
+      topicIds: ['current-events', 'politics'],
+      shortsOnly: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-npr',
+      name: 'NPR',
+      channelId: 'UCJnS2EsPfv46u1JR8cnD0NA',
+      handle: 'NPR',
+      topicIds: ['current-events', 'politics'],
+      shortsOnly: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-npr-music',
+      name: 'NPR Music',
+      channelId: 'UC4eYXhJI4-7wSWc8UNRwD4A',
+      handle: 'nprmusic',
+      topicIds: ['current-events'],
+      shortsOnly: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-espn',
+      name: 'ESPN',
+      channelId: 'UCiWLfSweyRNmLpgEHekhoAg',
+      handle: 'espn',
+      topicIds: ['sports-biz', 'nba-analytics', 'football-film', 'wnba'],
+      shortsOnly: true,
+      limit: 6,
+    },
+    {
+      id: 'yt-joel-tudman',
+      name: 'Joel Tudman Official',
+      channelId: 'UCH7Wym9XlXFNEvqLqibX0tg',
+      handle: 'JoelTudmanOfficial',
+      topicIds: ['mental-models', 'current-events'],
+      shorts: true,
+      limit: 5,
+    },
   ].flatMap((ch) => {
     const siteUrl = `https://www.youtube.com/@${ch.handle}`
     const limit = ch.limit ?? 5
@@ -610,21 +784,23 @@ const FEEDS = [
       limit,
       kind: 'youtube',
       siteUrl,
+      ...(ch.ttlDays ? { ttlDays: ch.ttlDays } : {}),
+      ...(ch.archive ? { archive: ch.archive } : {}),
     }
+    const shortsFeed = {
+      id: `${ch.id}-shorts`,
+      name: `${shortsBase} · Shorts`,
+      url: `https://www.youtube.com/feeds/videos.xml?playlist_id=UUSH${ch.channelId.slice(2)}`,
+      topicIds: ch.topicIds,
+      limit: ch.shortsOnly ? limit : 4,
+      kind: 'youtube-shorts',
+      siteUrl,
+      optional: true,
+      ...(ch.ttlDays ? { ttlDays: ch.ttlDays } : {}),
+    }
+    if (ch.shortsOnly) return [shortsFeed]
     if (!ch.shorts) return [channelFeed]
-    return [
-      channelFeed,
-      {
-        id: `${ch.id}-shorts`,
-        name: `${shortsBase} · Shorts`,
-        url: `https://www.youtube.com/feeds/videos.xml?playlist_id=UUSH${ch.channelId.slice(2)}`,
-        topicIds: ch.topicIds,
-        limit: 4,
-        kind: 'youtube-shorts',
-        siteUrl,
-        optional: true,
-      },
-    ]
+    return [channelFeed, shortsFeed]
   }),
 ]
 
@@ -861,7 +1037,7 @@ function entryImageUrl(block) {
   return ''
 }
 
-function parseEntries(xml) {
+function parseEntries(xml, opts = {}) {
   const chunks = []
   const itemRe = /<item[\s>][\s\S]*?<\/item>/gi
   const entryRe = /<entry[\s>][\s\S]*?<\/entry>/gi
@@ -882,7 +1058,8 @@ function parseEntries(xml) {
     link = decodeEntities(link)
     // Podcast / media feeds: enclosure is the playable file; <link> is often a show page
     const media = mediaEnclosureUrl(block)
-    if (media) link = media
+    if (media && !opts.preferPageLink) link = media
+    else if (!link && media) link = media
     else if (!link) link = ''
     const summary =
       tag(block, 'description') ||
@@ -929,12 +1106,12 @@ function parseJsonFeed(text) {
   })
 }
 
-function parseFeedBody(text, feedUrl) {
+function parseFeedBody(text, feedUrl, opts = {}) {
   const trimmed = text.trimStart()
   if (feedUrl.includes('.json') || trimmed.startsWith('{')) {
     return parseJsonFeed(text)
   }
-  return parseEntries(text)
+  return parseEntries(text, opts)
 }
 
 function hookFromTitle(title) {
@@ -981,7 +1158,314 @@ function toIso(published) {
   return new Date().toISOString()
 }
 
+/**
+ * Weekly index for rotating archive slices.
+ * @param {number} [now]
+ */
+function weekIndex(now = Date.now()) {
+  return Math.floor(now / (7 * DAY_MS))
+}
+
+/**
+ * Take `n` items from `arr`, wrapping from a week-derived start.
+ * @template T
+ * @param {T[]} arr
+ * @param {number} n
+ * @param {number} week
+ * @param {number} [salt]
+ * @returns {T[]}
+ */
+function weekSlice(arr, n, week, salt = 0) {
+  if (!arr.length || n <= 0) return []
+  const size = Math.min(n, arr.length)
+  const start = ((week + salt) * size) % arr.length
+  /** @type {T[]} */
+  const out = []
+  for (let i = 0; i < size; i++) out.push(arr[(start + i) % arr.length])
+  return out
+}
+
+/**
+ * Mix newer (playlist head) + deeper archive cuts so quiet channels stay fresh.
+ * @template {{ videoId: string }} T
+ * @param {T[]} catalog newest-first
+ * @param {{ batchSize: number, mixRecent?: number }} archive
+ * @param {number} week
+ */
+function rotateArchiveMix(catalog, archive, week) {
+  const batchSize = Math.max(1, archive.batchSize || 8)
+  if (catalog.length <= batchSize) return catalog
+
+  const mixRecent = Math.min(
+    batchSize,
+    Math.max(1, archive.mixRecent ?? Math.ceil(batchSize / 2)),
+  )
+  const mixOlder = batchSize - mixRecent
+  const recentPool = Math.max(
+    mixRecent,
+    Math.min(catalog.length, Math.ceil(catalog.length * 0.3)),
+  )
+  const recent = catalog.slice(0, recentPool)
+  const older = catalog.slice(recentPool)
+
+  /** @type {Map<string, T>} */
+  const byId = new Map()
+  for (const item of weekSlice(recent, mixRecent, week, 0)) byId.set(item.videoId, item)
+  for (const item of weekSlice(older, mixOlder, week, 19)) byId.set(item.videoId, item)
+
+  // Top up from full catalog if older pool was thin
+  if (byId.size < batchSize) {
+    for (const item of weekSlice(catalog, batchSize, week, 7)) {
+      byId.set(item.videoId, item)
+      if (byId.size >= batchSize) break
+    }
+  }
+  return [...byId.values()].slice(0, batchSize)
+}
+
+/**
+ * @param {string} html
+ * @returns {{ videoId: string, title: string, imageUrl?: string }[]}
+ */
+function parseYoutubePlaylistLockups(html) {
+  const m = html.match(/ytInitialData\s*=\s*(\{.*?\});<\/script>/s)
+  if (!m) return []
+  let data
+  try {
+    data = JSON.parse(m[1])
+  } catch {
+    return []
+  }
+
+  /** @type {{ videoId: string, title: string, imageUrl?: string }[]} */
+  const found = []
+  /** @type {Set<string>} */
+  const seen = new Set()
+
+  /**
+   * @param {unknown} node
+   */
+  function walk(node) {
+    if (!node || typeof node !== 'object') return
+    if (Array.isArray(node)) {
+      for (const child of node) walk(child)
+      return
+    }
+    const o = /** @type {Record<string, unknown>} */ (node)
+    if (o.lockupViewModel && typeof o.lockupViewModel === 'object') {
+      const lv = /** @type {Record<string, unknown>} */ (o.lockupViewModel)
+      const videoId = typeof lv.contentId === 'string' ? lv.contentId : ''
+      const meta = /** @type {Record<string, unknown>} */ (lv.metadata || {})
+      const lockupMeta = /** @type {Record<string, unknown>} */ (
+        meta.lockupMetadataViewModel || {}
+      )
+      const titleObj = /** @type {Record<string, unknown>} */ (lockupMeta.title || {})
+      const title =
+        typeof titleObj.content === 'string'
+          ? titleObj.content.trim()
+          : typeof (
+                /** @type {Record<string, unknown>} */ (lv.rendererContext || {})
+                  .accessibilityContext
+              )?.label === 'string'
+            ? String(
+                /** @type {Record<string, any>} */ (lv.rendererContext).accessibilityContext
+                  .label,
+              )
+                .replace(/\s+\d+\s+minutes?.*$/i, '')
+                .trim()
+            : ''
+      let imageUrl
+      try {
+        const sources =
+          /** @type {any} */ (lv.contentImage)?.thumbnailViewModel?.image?.sources
+        if (Array.isArray(sources) && sources.length) {
+          imageUrl = sources[sources.length - 1]?.url || sources[0]?.url
+        }
+      } catch {
+        // ignore
+      }
+      if (videoId && title && !seen.has(videoId)) {
+        seen.add(videoId)
+        found.push({ videoId, title, imageUrl })
+      }
+    }
+    for (const v of Object.values(o)) walk(v)
+  }
+
+  walk(data)
+  return found
+}
+
+/**
+ * Load + refresh a YouTube playlist archive, then emit a rotating mix.
+ * @param {any} feed
+ * @returns {Promise<NewsItem[]>}
+ */
+async function fetchYoutubeArchiveFeed(feed) {
+  const archive = feed.archive
+  const playlistId = archive?.playlistId
+  if (!playlistId) throw new Error('archive.playlistId required')
+
+  const archivePath = join(YT_ARCHIVE_DIR, `${feed.id}.json`)
+  /** @type {{ videoId: string, title: string, imageUrl?: string }[]} */
+  let previous = []
+  try {
+    const raw = JSON.parse(await readFile(archivePath, 'utf8'))
+    if (Array.isArray(raw?.items)) previous = raw.items
+  } catch {
+    // first run
+  }
+
+  const playlistUrl = `https://www.youtube.com/playlist?list=${playlistId}`
+  const res = await fetch(playlistUrl, {
+    headers: {
+      'User-Agent': YT_UA,
+      Accept: 'text/html,application/xhtml+xml',
+      'Accept-Language': 'en-US,en;q=0.9',
+    },
+  })
+  if (!res.ok) throw new Error(`playlist ${res.status}`)
+  const html = await res.text()
+  const scraped = parseYoutubePlaylistLockups(html)
+
+  /** @type {Map<string, { videoId: string, title: string, imageUrl?: string }>} */
+  const byId = new Map()
+  // Prefer scrape order (newest-first); keep prior titles if scrape misses some
+  for (const item of scraped) byId.set(item.videoId, item)
+  for (const item of previous) {
+    if (!byId.has(item.videoId)) byId.set(item.videoId, item)
+  }
+
+  // Prefer scraped order for the head of the catalog
+  const catalog = [
+    ...scraped,
+    ...[...byId.values()].filter((i) => !scraped.some((s) => s.videoId === i.videoId)),
+  ]
+  if (catalog.length === 0) throw new Error('empty YouTube archive catalog')
+
+  await mkdir(YT_ARCHIVE_DIR, { recursive: true })
+  await writeFile(
+    archivePath,
+    `${JSON.stringify(
+      {
+        updatedAt: new Date().toISOString(),
+        feedId: feed.id,
+        playlistId,
+        source: playlistUrl,
+        items: catalog,
+      },
+      null,
+      2,
+    )}\n`,
+    'utf8',
+  )
+
+  const week = weekIndex()
+  const batch = rotateArchiveMix(catalog, archive, week)
+  const ttlDays = ttlDaysFor(feed)
+  const ingestedAt = Date.now()
+  const siteUrl = feed.siteUrl || playlistUrl
+
+  return batch.map((v, i) => {
+    const link = `https://www.youtube.com/watch?v=${v.videoId}`
+    const title = v.title
+    /** @type {NewsItem} */
+    const item = {
+      id: idFor(link, title),
+      hook: hookFromTitle(title),
+      title,
+      lesson: `${title} — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.`,
+      source: feed.name,
+      sourceUrl: link,
+      // Stable-ish ordering within the week batch (not true publish dates)
+      publishedAt: new Date(ingestedAt - i * 60_000).toISOString(),
+      expiresAt: expiresFrom(ttlDays, ingestedAt),
+      topicIds: feed.topicIds,
+      feedId: feed.id,
+      imageUrl: v.imageUrl,
+      angles: [
+        { label: 'Watch', url: link },
+        { label: 'Channel', url: siteUrl },
+      ],
+    }
+    return item
+  })
+}
+
+/**
+ * Sites without RSS (e.g. PARNAS News) — pull article cards from the homepage.
+ * Expects links like `/articles/slug` with nearby `img alt="Title"`.
+ * @param {any} feed
+ * @returns {Promise<NewsItem[]>}
+ */
+async function fetchSiteArticlesFeed(feed) {
+  const prefix = feed.articlePathPrefix || '/articles/'
+  const origin = new URL(feed.url).origin
+  const res = await fetch(feed.url, {
+    headers: {
+      'User-Agent': YT_UA,
+      Accept: 'text/html,application/xhtml+xml',
+      'Accept-Language': 'en-US,en;q=0.9',
+    },
+  })
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
+  const html = await res.text()
+
+  /** @type {{ path: string, title: string }[]} */
+  const found = []
+  /** @type {Set<string>} */
+  const seen = new Set()
+  const re = new RegExp(
+    `href="(${prefix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^"]+)"[\\s\\S]{0,1200}?alt="([^"]{8,240})"`,
+    'gi',
+  )
+  let m
+  while ((m = re.exec(html)) !== null) {
+    const path = m[1].split('#')[0].split('?')[0]
+    const title = decodeHtmlEntities(m[2]).replace(/\s+/g, ' ').trim()
+    if (!path || !title || seen.has(path)) continue
+    seen.add(path)
+    found.push({ path, title })
+  }
+
+  if (found.length === 0) throw new Error('no site articles found on homepage')
+
+  const limit = feed.limit ?? 8
+  const ttlDays = ttlDaysFor(feed)
+  const ingestedAt = Date.now()
+  const siteUrl = feed.siteUrl || origin
+
+  return found.slice(0, limit).map((row, i) => {
+    const link = new URL(row.path, origin).href
+    /** @type {NewsItem} */
+    const item = {
+      id: idFor(link, row.title),
+      hook: hookFromTitle(row.title),
+      title: row.title,
+      lesson: lessonFrom('', row.title),
+      source: feed.name,
+      sourceUrl: link,
+      publishedAt: new Date(ingestedAt - i * 60_000).toISOString(),
+      expiresAt: expiresFrom(ttlDays, ingestedAt),
+      topicIds: feed.topicIds,
+      feedId: feed.id,
+      angles: [
+        { label: 'Full story', url: link },
+        { label: 'Site', url: siteUrl },
+      ],
+    }
+    return item
+  })
+}
+
 async function fetchFeed(feed) {
+  if (feed.archive?.playlistId && feed.kind === 'youtube') {
+    return fetchYoutubeArchiveFeed(feed)
+  }
+  if (feed.kind === 'site-articles') {
+    return fetchSiteArticlesFeed(feed)
+  }
+
   const ctrl = new AbortController()
   const timer = setTimeout(() => ctrl.abort(), 20000)
   try {
@@ -994,7 +1478,9 @@ async function fetchFeed(feed) {
     })
     if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
     const body = await res.text()
-    const entries = parseFeedBody(body, feed.url).slice(0, feed.limit)
+    const entries = parseFeedBody(body, feed.url, {
+      preferPageLink: Boolean(feed.preferPageLink),
+    }).slice(0, feed.limit)
     const ttlDays = ttlDaysFor(feed)
     const ingestedAt = Date.now()
     return entries
@@ -1086,7 +1572,8 @@ async function main() {
   for (const feed of FEEDS) {
     try {
       const items = await fetchFeed(feed)
-      console.log(`✓ ${feed.name}: ${items.length}`)
+      const extra = feed.archive ? ' (archive rotate)' : ''
+      console.log(`✓ ${feed.name}: ${items.length}${extra}`)
       scraped.push(...items)
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err)
@@ -1099,9 +1586,24 @@ async function main() {
   }
 
   const byId = new Map()
+  // Archive-rotated YouTube feeds replace prior cards from the same feedId
+  // so quiet channels don't stack old RSS batches on top of the new mix.
+  const archiveFeedIds = new Set(
+    FEEDS.filter((f) => f.archive?.playlistId).map((f) => f.id),
+  )
+  const freshArchiveIds = new Set(
+    scraped.filter((i) => archiveFeedIds.has(i.feedId)).map((i) => i.id),
+  )
   for (const item of [...existing, ...scraped, ...SEED]) {
     const next = sanitizeAngles(clampPoliticsExpiry(item))
     if (!isActive(next)) continue
+    if (
+      next.feedId &&
+      archiveFeedIds.has(next.feedId) &&
+      !freshArchiveIds.has(next.id)
+    ) {
+      continue
+    }
     byId.set(next.id, next)
   }
 

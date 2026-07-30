@@ -66,6 +66,21 @@ export const curatedNewsFeeds: CuratedNewsFeed[] = [
     name: 'The Parnas Perspective',
     topicIds: ['politics', 'current-events'],
   },
+  {
+    id: 'parnas-news',
+    name: 'PARNAS News',
+    topicIds: ['politics', 'current-events'],
+  },
+  {
+    id: 'cspan-washington-today',
+    name: 'C-SPAN · Washington Today',
+    topicIds: ['politics', 'current-events'],
+  },
+  {
+    id: 'cspan-qa',
+    name: 'C-SPAN · Q&A',
+    topicIds: ['politics', 'history', 'current-events'],
+  },
   { id: 'philip-lewis', name: 'Philip Lewis', topicIds: ['current-events'] },
   { id: 'black-pop-culture', name: 'Black Pop Culture', topicIds: ['current-events'] },
   { id: 'essence', name: 'Essence', topicIds: ['current-events'] },
@@ -389,5 +404,95 @@ export const curatedNewsFeeds: CuratedNewsFeed[] = [
     id: 'yt-ai-coffee-break-shorts',
     name: 'AI Coffee Break · Shorts',
     topicIds: ['llms-prompting', 'ai-agents'],
+  },
+  {
+    id: 'yt-black-history-two-min',
+    name: 'Black History in Two Minutes · YouTube',
+    topicIds: ['history'],
+  },
+  {
+    id: 'yt-black-history-two-min-shorts',
+    name: 'Black History in Two Minutes · Shorts',
+    topicIds: ['history'],
+  },
+  {
+    id: 'yt-the-pivot',
+    name: 'The Pivot Podcast · YouTube',
+    topicIds: ['sports-biz', 'nba-analytics', 'football-film'],
+  },
+  {
+    id: 'yt-the-pivot-shorts',
+    name: 'The Pivot Podcast · Shorts',
+    topicIds: ['sports-biz', 'nba-analytics', 'football-film'],
+  },
+  {
+    id: 'yt-ruslan-kd',
+    name: 'Ruslan KD · YouTube',
+    topicIds: ['current-events', 'mental-models'],
+  },
+  {
+    id: 'yt-ruslan-kd-shorts',
+    name: 'Ruslan KD · Shorts',
+    topicIds: ['current-events', 'mental-models'],
+  },
+  {
+    id: 'yt-raven-rock-homestead',
+    name: 'Raven Rock Homestead',
+    topicIds: ['mental-models', 'building-products'],
+  },
+  {
+    id: 'yt-raw-room-shorts',
+    name: 'Raw Room · Shorts',
+    topicIds: ['sports-biz', 'football-film', 'current-events'],
+  },
+  {
+    id: 'yt-89show-shorts',
+    name: '89 — Steve Smith Sr. · Shorts',
+    topicIds: ['football-film', 'sports-biz'],
+  },
+  {
+    id: 'yt-mind-the-game-shorts',
+    name: 'Mind the Game · Shorts',
+    topicIds: ['nba-analytics', 'sports-biz'],
+  },
+  {
+    id: 'yt-mojo-brookzz-shorts',
+    name: 'Mojo Brookzz · Shorts',
+    topicIds: ['current-events'],
+  },
+  {
+    id: 'yt-cspan-shorts',
+    name: 'C-SPAN · Shorts',
+    topicIds: ['politics', 'current-events'],
+  },
+  {
+    id: 'yt-npr-podcasts-shorts',
+    name: 'NPR Podcasts · Shorts',
+    topicIds: ['current-events', 'politics'],
+  },
+  {
+    id: 'yt-npr-shorts',
+    name: 'NPR · Shorts',
+    topicIds: ['current-events', 'politics'],
+  },
+  {
+    id: 'yt-npr-music-shorts',
+    name: 'NPR Music · Shorts',
+    topicIds: ['current-events'],
+  },
+  {
+    id: 'yt-espn-shorts',
+    name: 'ESPN · Shorts',
+    topicIds: ['sports-biz', 'nba-analytics', 'football-film', 'wnba'],
+  },
+  {
+    id: 'yt-joel-tudman',
+    name: 'Joel Tudman Official',
+    topicIds: ['mental-models', 'current-events'],
+  },
+  {
+    id: 'yt-joel-tudman-shorts',
+    name: 'Joel Tudman Official · Shorts',
+    topicIds: ['mental-models', 'current-events'],
   },
 ]

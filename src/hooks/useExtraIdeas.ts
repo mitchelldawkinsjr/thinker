@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import type { Idea } from '../data/types'
+import { useBlackHistory } from './useBlackHistory'
 import { useBookIdeas } from './useBookIdeas'
 import { useCatalogIdeas } from './useCatalogIdeas'
 import { useDraftReview } from './useDraftReview'
@@ -9,8 +10,8 @@ import { useThoughts } from './useThoughts'
 import { useZenQuotes } from './useZenQuotes'
 
 /**
- * Book-summary + Philosophers + ZenQuotes ingest + promoted catalog drafts +
- * personal ideas + pending LLM drafts (tagged draftReview for in-feed approve/deny).
+ * Book-summary + Philosophers + ZenQuotes + Black History ingest + promoted
+ * catalog drafts + personal ideas + pending LLM drafts (tagged draftReview).
  */
 export function useExtraIdeas(): {
   items: Idea[]
@@ -22,6 +23,7 @@ export function useExtraIdeas(): {
   const { items: bookIdeas, updatedAt: bookIdeasUpdatedAt } = useBookIdeas()
   const { items: philosophers } = usePhilosophers()
   const { items: zenquotes } = useZenQuotes()
+  const { items: blackHistory } = useBlackHistory()
   const { items: catalogIdeas, updatedAt: catalogUpdatedAt } = useCatalogIdeas()
   const { items: rawDrafts, updatedAt: draftsUpdatedAt } = useIdeaDrafts()
   const { myIdeas } = useThoughts()
@@ -34,6 +36,7 @@ export function useExtraIdeas(): {
       ...bookIdeas,
       ...philosophers,
       ...zenquotes,
+      ...blackHistory,
       ...catalogIdeas,
       ...myIdeas,
     ]) {
@@ -56,6 +59,7 @@ export function useExtraIdeas(): {
     bookIdeas,
     philosophers,
     zenquotes,
+    blackHistory,
     catalogIdeas,
     myIdeas,
     rawDrafts,
