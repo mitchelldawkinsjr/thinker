@@ -32,8 +32,15 @@ export type Thought = {
   note: string
   createdAt: string
   parent: ThoughtParent
-  /** Idea id in the personal pool after promote */
+  /** Idea id in the personal pool after promote / Keep from loop */
   promotedIdeaId?: string
+  /** Queued into the idea loop (inbox → in flight); cleared on Reject */
+  sentAt?: string
+}
+
+/** Open inbox seed — not yet attached to an idea and not queued. */
+export function isSeedableThought(thought: Thought): boolean {
+  return !thought.promotedIdeaId && !thought.sentAt
 }
 
 /** Seed shape for `npm run draft:ideas -- --seeds …` */

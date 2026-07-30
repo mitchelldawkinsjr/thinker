@@ -27,6 +27,12 @@ export const bookIdeasSeed: BookIdeasFile = {
   retired: [],
 }
 
+/** Ingested 5-minute / 20-minute book summaries (not catalog ideas with sourceType book). */
+export function isBookSummaryIdea(idea: Pick<Idea, 'id'>): boolean {
+  const id = idea.id
+  return id.startsWith('booksum-') || id.startsWith('20min-')
+}
+
 export function isBookIdeaActive(item: Idea, now = Date.now()): boolean {
   if (!item.expiresAt) return true
   const exp = Date.parse(item.expiresAt)

@@ -99,4 +99,295 @@ export const curatedNewsFeeds: CuratedNewsFeed[] = [
     topicIds: ['finance', 'current-events'],
   },
   { id: 'cnbc-finance', name: 'CNBC · Finance', topicIds: ['finance', 'current-events'] },
+
+  // AI news / research
+  {
+    id: 'ai-weekly',
+    name: 'AI Weekly',
+    topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+  },
+  {
+    id: 'techcrunch-ai',
+    name: 'TechCrunch · AI',
+    topicIds: ['ai-agents', 'current-events', 'building-products'],
+  },
+  {
+    id: 'mit-tr-ai',
+    name: 'MIT Technology Review · AI',
+    topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+  },
+  { id: 'openai-news', name: 'OpenAI News', topicIds: ['ai-agents', 'llms-prompting'] },
+  {
+    id: 'huggingface-blog',
+    name: 'Hugging Face Blog',
+    topicIds: ['llms-prompting', 'rag-context', 'ai-agents'],
+  },
+  {
+    id: 'deepmind-blog',
+    name: 'Google DeepMind',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'nvidia-dev-blog',
+    name: 'NVIDIA Technical Blog',
+    topicIds: ['ai-agents', 'rag-context'],
+  },
+  { id: 'the-gradient', name: 'The Gradient', topicIds: ['llms-prompting', 'ai-agents'] },
+  {
+    id: 'import-ai',
+    name: 'Import AI',
+    topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+  },
+  {
+    id: 'last-week-in-ai',
+    name: 'Last Week in AI',
+    topicIds: ['ai-agents', 'current-events'],
+  },
+  {
+    id: 'simon-willison',
+    name: 'Simon Willison',
+    topicIds: ['ai-agents', 'llms-prompting', 'rag-context'],
+  },
+  {
+    id: 'latent-space',
+    name: 'Latent Space',
+    topicIds: ['ai-agents', 'llms-prompting', 'building-products'],
+  },
+  {
+    id: 'langchain-blog',
+    name: 'LangChain Blog',
+    topicIds: ['ai-agents', 'rag-context', 'llms-prompting'],
+  },
+  {
+    id: 'one-useful-thing',
+    name: 'One Useful Thing',
+    topicIds: ['llms-prompting', 'ai-agents', 'building-products'],
+  },
+  {
+    id: 'interconnects',
+    name: 'Interconnects',
+    topicIds: ['llms-prompting', 'ai-agents'],
+  },
+  {
+    id: 'bens-bites',
+    name: "Ben's Bites",
+    topicIds: ['ai-agents', 'current-events', 'building-products'],
+  },
+  {
+    id: 'ars-technica-ai',
+    name: 'Ars Technica · AI',
+    topicIds: ['ai-agents', 'current-events'],
+  },
+  {
+    id: 'google-ai-blog',
+    name: 'Google AI Blog',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+
+  // YouTube + Shorts
+  {
+    id: 'yt-two-minute-papers',
+    name: 'Two Minute Papers',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-two-minute-papers-shorts',
+    name: 'Two Minute Papers · Shorts',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-karpathy',
+    name: 'Andrej Karpathy',
+    topicIds: ['llms-prompting', 'ai-agents'],
+  },
+  {
+    id: 'yt-3blue1brown',
+    name: '3Blue1Brown',
+    topicIds: ['llms-prompting', 'mental-models'],
+  },
+  {
+    id: 'yt-3blue1brown-shorts',
+    name: '3Blue1Brown · Shorts',
+    topicIds: ['llms-prompting', 'mental-models'],
+  },
+  {
+    id: 'yt-deeplearning-ai',
+    name: 'DeepLearning.AI',
+    topicIds: ['llms-prompting', 'ai-agents', 'rag-context'],
+  },
+  {
+    id: 'yt-deeplearning-ai-shorts',
+    name: 'DeepLearning.AI · Shorts',
+    topicIds: ['llms-prompting', 'ai-agents', 'rag-context'],
+  },
+  {
+    id: 'yt-yannic-kilcher',
+    name: 'Yannic Kilcher',
+    topicIds: ['llms-prompting', 'ai-agents'],
+  },
+  {
+    id: 'yt-yannic-kilcher-shorts',
+    name: 'Yannic Kilcher · Shorts',
+    topicIds: ['llms-prompting', 'ai-agents'],
+  },
+  {
+    id: 'yt-lex-fridman',
+    name: 'Lex Fridman',
+    topicIds: ['ai-agents', 'mental-models'],
+  },
+  {
+    id: 'yt-lex-fridman-shorts',
+    name: 'Lex Fridman · Shorts',
+    topicIds: ['ai-agents', 'mental-models'],
+  },
+  {
+    id: 'yt-sentdex',
+    name: 'Sentdex',
+    topicIds: ['llms-prompting', 'ai-agents'],
+  },
+  {
+    id: 'yt-sentdex-shorts',
+    name: 'Sentdex · Shorts',
+    topicIds: ['llms-prompting', 'ai-agents'],
+  },
+  {
+    id: 'yt-statquest',
+    name: 'StatQuest',
+    topicIds: ['llms-prompting', 'mental-models'],
+  },
+  {
+    id: 'yt-statquest-shorts',
+    name: 'StatQuest · Shorts',
+    topicIds: ['llms-prompting', 'mental-models'],
+  },
+  {
+    id: 'yt-dwarkesh',
+    name: 'Dwarkesh Patel',
+    topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+  },
+  {
+    id: 'yt-dwarkesh-shorts',
+    name: 'Dwarkesh Patel · Shorts',
+    topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+  },
+  {
+    id: 'yt-openai',
+    name: 'OpenAI · YouTube',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-openai-shorts',
+    name: 'OpenAI · Shorts',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-anthropic',
+    name: 'Anthropic · YouTube',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-anthropic-shorts',
+    name: 'Anthropic · Shorts',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-huggingface',
+    name: 'Hugging Face · YouTube',
+    topicIds: ['llms-prompting', 'rag-context', 'ai-agents'],
+  },
+  {
+    id: 'yt-huggingface-shorts',
+    name: 'Hugging Face · Shorts',
+    topicIds: ['llms-prompting', 'rag-context', 'ai-agents'],
+  },
+  {
+    id: 'yt-deepmind',
+    name: 'Google DeepMind · YouTube',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-deepmind-shorts',
+    name: 'Google DeepMind · Shorts',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-nvidia-dev',
+    name: 'NVIDIA Developer · YouTube',
+    topicIds: ['ai-agents', 'rag-context'],
+  },
+  {
+    id: 'yt-nvidia-dev-shorts',
+    name: 'NVIDIA Developer · Shorts',
+    topicIds: ['ai-agents', 'rag-context'],
+  },
+  {
+    id: 'yt-techcrunch',
+    name: 'TechCrunch · YouTube',
+    topicIds: ['ai-agents', 'current-events', 'building-products'],
+  },
+  {
+    id: 'yt-techcrunch-shorts',
+    name: 'TechCrunch · Shorts',
+    topicIds: ['ai-agents', 'current-events', 'building-products'],
+  },
+  {
+    id: 'yt-mit-tr',
+    name: 'MIT Technology Review · YouTube',
+    topicIds: ['ai-agents', 'current-events'],
+  },
+  {
+    id: 'yt-mit-tr-shorts',
+    name: 'MIT Technology Review · Shorts',
+    topicIds: ['ai-agents', 'current-events'],
+  },
+  {
+    id: 'yt-langchain',
+    name: 'LangChain · YouTube',
+    topicIds: ['ai-agents', 'rag-context', 'llms-prompting'],
+  },
+  {
+    id: 'yt-langchain-shorts',
+    name: 'LangChain · Shorts',
+    topicIds: ['ai-agents', 'rag-context', 'llms-prompting'],
+  },
+  {
+    id: 'yt-latent-space',
+    name: 'Latent Space · YouTube',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-latent-space-shorts',
+    name: 'Latent Space · Shorts',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-ai-explained',
+    name: 'AI Explained',
+    topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+  },
+  {
+    id: 'yt-matthew-berman',
+    name: 'Matthew Berman',
+    topicIds: ['ai-agents', 'llms-prompting'],
+  },
+  {
+    id: 'yt-wes-roth',
+    name: 'Wes Roth',
+    topicIds: ['ai-agents', 'current-events'],
+  },
+  {
+    id: 'yt-wes-roth-shorts',
+    name: 'Wes Roth · Shorts',
+    topicIds: ['ai-agents', 'current-events'],
+  },
+  {
+    id: 'yt-ai-coffee-break',
+    name: 'AI Coffee Break',
+    topicIds: ['llms-prompting', 'ai-agents'],
+  },
+  {
+    id: 'yt-ai-coffee-break-shorts',
+    name: 'AI Coffee Break · Shorts',
+    topicIds: ['llms-prompting', 'ai-agents'],
+  },
 ]

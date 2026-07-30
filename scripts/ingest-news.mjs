@@ -289,6 +289,343 @@ const FEEDS = [
     limit: 10,
     ttlDays: 3,
   },
+
+  // ── AI news / research (blogs + newsletters) ───────────────────────────
+  {
+    id: 'ai-weekly',
+    name: 'AI Weekly',
+    url: 'https://aiweekly.co/feed',
+    topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+    limit: 8,
+  },
+  {
+    id: 'techcrunch-ai',
+    name: 'TechCrunch · AI',
+    url: 'https://techcrunch.com/category/artificial-intelligence/feed/',
+    topicIds: ['ai-agents', 'current-events', 'building-products'],
+    limit: 8,
+  },
+  {
+    id: 'mit-tr-ai',
+    name: 'MIT Technology Review · AI',
+    url: 'https://www.technologyreview.com/topic/artificial-intelligence/feed/',
+    topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+    limit: 6,
+  },
+  {
+    id: 'openai-news',
+    name: 'OpenAI News',
+    url: 'https://openai.com/blog/rss.xml',
+    topicIds: ['ai-agents', 'llms-prompting'],
+    limit: 6,
+  },
+  {
+    id: 'huggingface-blog',
+    name: 'Hugging Face Blog',
+    url: 'https://huggingface.co/blog/feed.xml',
+    topicIds: ['llms-prompting', 'rag-context', 'ai-agents'],
+    limit: 6,
+  },
+  {
+    id: 'deepmind-blog',
+    name: 'Google DeepMind',
+    url: 'https://deepmind.google/blog/rss.xml',
+    topicIds: ['ai-agents', 'llms-prompting'],
+    limit: 6,
+  },
+  {
+    id: 'nvidia-dev-blog',
+    name: 'NVIDIA Technical Blog',
+    url: 'https://developer.nvidia.com/blog/feed/',
+    topicIds: ['ai-agents', 'rag-context'],
+    limit: 6,
+  },
+  {
+    id: 'the-gradient',
+    name: 'The Gradient',
+    url: 'https://thegradient.pub/rss/',
+    topicIds: ['llms-prompting', 'ai-agents'],
+    limit: 4,
+  },
+  {
+    id: 'import-ai',
+    name: 'Import AI',
+    url: 'https://importai.substack.com/feed',
+    topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+    limit: 6,
+  },
+  {
+    id: 'last-week-in-ai',
+    name: 'Last Week in AI',
+    url: 'https://lastweekin.ai/feed',
+    topicIds: ['ai-agents', 'current-events'],
+    limit: 6,
+  },
+  {
+    id: 'simon-willison',
+    name: 'Simon Willison',
+    url: 'https://simonwillison.net/atom/everything/',
+    topicIds: ['ai-agents', 'llms-prompting', 'rag-context'],
+    limit: 8,
+  },
+  {
+    id: 'latent-space',
+    name: 'Latent Space',
+    url: 'https://www.latent.space/feed',
+    topicIds: ['ai-agents', 'llms-prompting', 'building-products'],
+    limit: 6,
+  },
+  {
+    id: 'langchain-blog',
+    name: 'LangChain Blog',
+    url: 'https://blog.langchain.com/rss.xml',
+    topicIds: ['ai-agents', 'rag-context', 'llms-prompting'],
+    limit: 6,
+  },
+  {
+    id: 'one-useful-thing',
+    name: 'One Useful Thing',
+    url: 'https://www.oneusefulthing.org/feed',
+    topicIds: ['llms-prompting', 'ai-agents', 'building-products'],
+    limit: 5,
+  },
+  {
+    id: 'interconnects',
+    name: 'Interconnects',
+    url: 'https://www.interconnects.ai/feed',
+    topicIds: ['llms-prompting', 'ai-agents'],
+    limit: 5,
+  },
+  {
+    id: 'bens-bites',
+    name: "Ben's Bites",
+    url: 'https://www.bensbites.com/feed',
+    topicIds: ['ai-agents', 'current-events', 'building-products'],
+    limit: 6,
+  },
+  {
+    id: 'ars-technica-ai',
+    name: 'Ars Technica · AI',
+    url: 'https://arstechnica.com/ai/feed/',
+    topicIds: ['ai-agents', 'current-events'],
+    limit: 6,
+  },
+  {
+    id: 'google-ai-blog',
+    name: 'Google AI Blog',
+    url: 'https://blog.google/technology/ai/rss/',
+    topicIds: ['ai-agents', 'llms-prompting'],
+    limit: 6,
+  },
+
+  // ── YouTube channels (Atom) + Shorts (UUSH playlist RSS) ───────────────
+  // Shorts: playlist_id = "UUSH" + channelId.slice(2)  (undocumented, works)
+  ...[
+    {
+      id: 'yt-two-minute-papers',
+      name: 'Two Minute Papers',
+      channelId: 'UCbfYPyITQ-7l4upoX8nvctg',
+      handle: 'TwoMinutePapers',
+      topicIds: ['ai-agents', 'llms-prompting'],
+      shorts: true,
+    },
+    {
+      id: 'yt-karpathy',
+      name: 'Andrej Karpathy',
+      channelId: 'UCXUPKJO5MZQN11PqgIvyuvQ',
+      handle: 'AndrejKarpathy',
+      topicIds: ['llms-prompting', 'ai-agents'],
+      shorts: false,
+    },
+    {
+      id: 'yt-3blue1brown',
+      name: '3Blue1Brown',
+      channelId: 'UCYO_jab_esuFRV4b17AJtAw',
+      handle: '3blue1brown',
+      topicIds: ['llms-prompting', 'mental-models'],
+      shorts: true,
+    },
+    {
+      id: 'yt-deeplearning-ai',
+      name: 'DeepLearning.AI',
+      channelId: 'UCcIXc5mJsHVYTZR1maL5l9w',
+      handle: 'DeepLearningAI',
+      topicIds: ['llms-prompting', 'ai-agents', 'rag-context'],
+      shorts: true,
+    },
+    {
+      id: 'yt-yannic-kilcher',
+      name: 'Yannic Kilcher',
+      channelId: 'UCZHmQk67mSJgfCCTn7xBfew',
+      handle: 'YannicKilcher',
+      topicIds: ['llms-prompting', 'ai-agents'],
+      shorts: true,
+    },
+    {
+      id: 'yt-lex-fridman',
+      name: 'Lex Fridman',
+      channelId: 'UCSHZKyawb77ixDdsGog4iWA',
+      handle: 'lexfridman',
+      topicIds: ['ai-agents', 'mental-models'],
+      shorts: true,
+      limit: 4,
+    },
+    {
+      id: 'yt-sentdex',
+      name: 'Sentdex',
+      channelId: 'UCfzlCWGWYyIQ0aLC5w48gBQ',
+      handle: 'sentdex',
+      topicIds: ['llms-prompting', 'ai-agents'],
+      shorts: true,
+    },
+    {
+      id: 'yt-statquest',
+      name: 'StatQuest',
+      channelId: 'UCtYLUTtgS3k1Fg4y5tAhLbw',
+      handle: 'statquest',
+      topicIds: ['llms-prompting', 'mental-models'],
+      shorts: true,
+    },
+    {
+      id: 'yt-dwarkesh',
+      name: 'Dwarkesh Patel',
+      channelId: 'UCXl4i9dYBrFOabk0xGmbkRA',
+      handle: 'DwarkeshPatel',
+      topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+      shorts: true,
+    },
+    {
+      id: 'yt-openai',
+      name: 'OpenAI · YouTube',
+      channelId: 'UCXZCJLdBC09xxGZ6gcdrc6A',
+      handle: 'OpenAI',
+      topicIds: ['ai-agents', 'llms-prompting'],
+      shorts: true,
+    },
+    {
+      id: 'yt-anthropic',
+      name: 'Anthropic · YouTube',
+      channelId: 'UCrDwWp7EBBv4NwvScIpBDOA',
+      handle: 'Anthropic-AI',
+      topicIds: ['ai-agents', 'llms-prompting'],
+      shorts: true,
+    },
+    {
+      id: 'yt-huggingface',
+      name: 'Hugging Face · YouTube',
+      channelId: 'UCHlNU7kIZhRgSbhHvFoy72w',
+      handle: 'HuggingFace',
+      topicIds: ['llms-prompting', 'rag-context', 'ai-agents'],
+      shorts: true,
+    },
+    {
+      id: 'yt-deepmind',
+      name: 'Google DeepMind · YouTube',
+      channelId: 'UCP7jMXSY2xbc3KCAE0MHQ-A',
+      handle: 'GoogleDeepMind',
+      topicIds: ['ai-agents', 'llms-prompting'],
+      shorts: true,
+    },
+    {
+      id: 'yt-nvidia-dev',
+      name: 'NVIDIA Developer · YouTube',
+      channelId: 'UCBHcMCGaiJhv-ESTcWGJPcw',
+      handle: 'NVIDIADeveloper',
+      topicIds: ['ai-agents', 'rag-context'],
+      shorts: true,
+    },
+    {
+      id: 'yt-techcrunch',
+      name: 'TechCrunch · YouTube',
+      channelId: 'UCCjyq_K1Xwfg8Lndy7lKMpA',
+      handle: 'techcrunch',
+      topicIds: ['ai-agents', 'current-events', 'building-products'],
+      shorts: true,
+    },
+    {
+      id: 'yt-mit-tr',
+      name: 'MIT Technology Review · YouTube',
+      channelId: 'UCgy4Mf_tlZGqesYNqPNxjPw',
+      handle: 'technologyreview',
+      topicIds: ['ai-agents', 'current-events'],
+      shorts: true,
+    },
+    {
+      id: 'yt-langchain',
+      name: 'LangChain · YouTube',
+      channelId: 'UCC-lyoTfSrcJzA1ab3APAgw',
+      handle: 'LangChain',
+      topicIds: ['ai-agents', 'rag-context', 'llms-prompting'],
+      shorts: true,
+    },
+    {
+      id: 'yt-latent-space',
+      name: 'Latent Space · YouTube',
+      channelId: 'UCxBcwypKK-W3GHd_RZ9FZrQ',
+      handle: 'LatentSpacePod',
+      topicIds: ['ai-agents', 'llms-prompting'],
+      shorts: true,
+    },
+    {
+      id: 'yt-ai-explained',
+      name: 'AI Explained',
+      channelId: 'UCNJ1Ymd5yFuUPtn21xtRbbw',
+      handle: 'aiexplained-official',
+      topicIds: ['ai-agents', 'llms-prompting', 'current-events'],
+      shorts: false,
+    },
+    {
+      id: 'yt-matthew-berman',
+      name: 'Matthew Berman',
+      channelId: 'UCzi5kcwU8aT4aLR7LcYhfWQ',
+      handle: 'MatthewBerman',
+      topicIds: ['ai-agents', 'llms-prompting'],
+      shorts: false,
+    },
+    {
+      id: 'yt-wes-roth',
+      name: 'Wes Roth',
+      channelId: 'UCqcbQf6yw5KzRoDDcZ_wBSw',
+      handle: 'WesRoth',
+      topicIds: ['ai-agents', 'current-events'],
+      shorts: true,
+    },
+    {
+      id: 'yt-ai-coffee-break',
+      name: 'AI Coffee Break',
+      channelId: 'UCobqgqE4i5Kf7wrxRxhToQA',
+      handle: 'AICoffeeBreak',
+      topicIds: ['llms-prompting', 'ai-agents'],
+      shorts: true,
+    },
+  ].flatMap((ch) => {
+    const siteUrl = `https://www.youtube.com/@${ch.handle}`
+    const limit = ch.limit ?? 5
+    const shortsBase = ch.name.replace(/\s·\sYouTube$/, '')
+    const channelFeed = {
+      id: ch.id,
+      name: ch.name,
+      url: `https://www.youtube.com/feeds/videos.xml?channel_id=${ch.channelId}`,
+      topicIds: ch.topicIds,
+      limit,
+      kind: 'youtube',
+      siteUrl,
+    }
+    if (!ch.shorts) return [channelFeed]
+    return [
+      channelFeed,
+      {
+        id: `${ch.id}-shorts`,
+        name: `${shortsBase} · Shorts`,
+        url: `https://www.youtube.com/feeds/videos.xml?playlist_id=UUSH${ch.channelId.slice(2)}`,
+        topicIds: ch.topicIds,
+        limit: 4,
+        kind: 'youtube-shorts',
+        siteUrl,
+        optional: true,
+      },
+    ]
+  }),
 ]
 
 const SEED = /** @type {NewsItem[]} */ ([
@@ -665,6 +1002,8 @@ async function fetchFeed(feed) {
       .map((e) => {
         const publishedAt = toIso(e.published)
         const isPodcast = feed.kind === 'podcast'
+        const isYoutube =
+          feed.kind === 'youtube' || feed.kind === 'youtube-shorts'
         /** @type {NewsItem} */
         const item = {
           id: idFor(e.link, e.title),
@@ -686,7 +1025,16 @@ async function fetchFeed(feed) {
                   url: feed.siteUrl || e.link,
                 },
               ]
-            : [{ label: 'Full story', url: e.link }],
+            : isYoutube
+              ? [
+                  {
+                    label:
+                      feed.kind === 'youtube-shorts' ? 'Watch Short' : 'Watch',
+                    url: e.link,
+                  },
+                  { label: 'Channel', url: feed.siteUrl || e.link },
+                ]
+              : [{ label: 'Full story', url: e.link }],
         }
         return item
       })

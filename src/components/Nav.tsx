@@ -1,12 +1,13 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useKept } from '../hooks/useKept'
 import { useThoughts } from '../hooks/useThoughts'
+import { isSeedableThought } from '../data/thoughts'
 import './Nav.css'
 
 export function Nav() {
   const { count: keptCount } = useKept()
   const { thoughts } = useThoughts()
-  const openMoments = thoughts.filter((t) => !t.promotedIdeaId).length
+  const openMoments = thoughts.filter(isSeedableThought).length
   const badge = keptCount + openMoments
 
   return (

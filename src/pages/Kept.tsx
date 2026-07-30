@@ -5,7 +5,7 @@ import { useThoughts } from '../hooks/useThoughts'
 import { useDraftReview } from '../hooks/useDraftReview'
 import { getIdea } from '../data/ideas'
 import { getTopic } from '../data/topics'
-import { formatAudioTime, isListeningThought, type Thought } from '../data/thoughts'
+import { formatAudioTime, isListeningThought, isSeedableThought, type Thought } from '../data/thoughts'
 import {
   shareAllKept,
   shareStatusLabel,
@@ -261,7 +261,7 @@ function downloadJson(filename: string, payload: unknown) {
 
 export function Kept() {
   const { kept } = useKept()
-  const { thoughts, exportSeeds } = useThoughts()
+  const { thoughts, exportSeeds, markSeedsSent, reopenSeeds } = useThoughts()
   const { exportApproved, pendingCount, approved } = useDraftReview()
   const { notes, links, exportBox, importBox, linkedIds, orphans, tags } = useZettel()
   const approvedCount = Object.keys(approved).length
@@ -296,18 +296,44 @@ export function Kept() {
         return
       }
       const stamp = new Date().toISOString().slice(0, 10)
-      const result =
-        kind === 'seeds'
-          ? await openIdeaLoopPullRequest({
-              kind: 'seeds',
-              filename: `thinker-thought-seeds-${stamp}.json`,
-              payload: { exportedAt: new Date().toISOString(), seeds: exportSeeds() },
-            })
-          : await openIdeaLoopPullRequest({
-              kind: 'promote',
-              filename: `thinker-approved-drafts-${stamp}.json`,
-              payload: exportApproved(),
-            })
+      if (kind === 'seeds') {
+        const seeds = exportSeeds()
+        if (seeds.length === 0) {
+          setQueueMessage('No open seeds to send — inbox is empty or already queued.')
+          return
+        }
+        const result = await openIdeaLoopPullRequest({
+          kind: 'seeds',
+          filename: `thinker-thought-seeds-${stamp}.json`,
+          payload: { exportedAt: new Date().toISOString(), seeds },
+        })
+        setQueuePrUrl(result.prUrl)
+        markSeedsSent(
+          seeds
+            .map((s) => s.thoughtId)
+            .filter((id): id is string => typeof id === 'string' && id.length > 0),
+        )
+        if (result.mergeError) {
+          setQueueMessage(
+            result.prUrl
+              ? `PR opened but auto-merge failed: ${result.mergeError}`
+              : `Queued on ${result.branch} but auto-merge failed: ${result.mergeError}`,
+          )
+        } else {
+          setQueueMessage(
+            result.prUrl
+              ? `Sent ${seeds.length} seed${seeds.length === 1 ? '' : 's'} — PR auto-merging; they’ll return when you Keep a From-loop card.`
+              : `Sent ${seeds.length} seed${seeds.length === 1 ? '' : 's'} on ${result.branch} — auto-merging.`,
+          )
+        }
+        return
+      }
+
+      const result = await openIdeaLoopPullRequest({
+        kind: 'promote',
+        filename: `thinker-approved-drafts-${stamp}.json`,
+        payload: exportApproved(),
+      })
       setQueuePrUrl(result.prUrl)
       if (result.mergeError) {
         setQueueMessage(
@@ -329,8 +355,10 @@ export function Kept() {
     }
   }
 
-  // Promoted thoughts live only as idea cards until sent back
-  const openThoughts = thoughts.filter((t) => !t.promotedIdeaId)
+  // Inbox = not attached and not queued; in-flight waits for Keep / Reject
+  const openThoughts = thoughts.filter(isSeedableThought)
+  const inFlightThoughts = thoughts.filter((t) => !t.promotedIdeaId && Boolean(t.sentAt))
+  const seedableCount = openThoughts.length
   const empty =
     ideas.length === 0 &&
     thoughts.length === 0 &&
@@ -482,7 +510,7 @@ export function Kept() {
                 if (file) void onImportFile(file)
               }}
             />
-            {thoughts.length > 0 && (
+            {seedableCount > 0 && (
               <>
                 <button
                   type="button"
@@ -540,12 +568,12 @@ export function Kept() {
                 </button>
               </>
             )}
-            {(thoughts.length > 0 || approvedCount > 0) && (
+            {(seedableCount > 0 || approvedCount > 0 || inFlightThoughts.length > 0) && (
               <p className="kept-pending">
                 {queueReady ? (
                   <>
-                    Send seeds opens a PR that auto-merges into the inbox. Keep in the feed
-                    attaches your note and auto-queues promote — use Retry only if that failed.
+                    Send seeds queues the inbox only (Kept bookmarks stay). After Keep on a
+                    From-loop card, seeds attach under that idea; Reject returns them here.
                     Gate secret lives in <Link to="/settings">Settings</Link>.
                   </>
                 ) : (
@@ -574,6 +602,21 @@ export function Kept() {
                 </a>
               </>
             ) : null}
+          </p>
+        )}
+        {inFlightThoughts.length > 0 && (
+          <p className="kept-pending" role="status">
+            {inFlightThoughts.length} seed{inFlightThoughts.length === 1 ? '' : 's'} in the idea
+            loop — Keep a From-loop card to attach, or{' '}
+            <button
+              type="button"
+              className="btn btn-ghost"
+              style={{ display: 'inline', padding: '0 0.25em', minHeight: 0 }}
+              onClick={() => reopenSeeds(inFlightThoughts.map((t) => t.id))}
+            >
+              return to inbox
+            </button>{' '}
+            to edit and resend.
           </p>
         )}
         {pendingCount > 0 && (

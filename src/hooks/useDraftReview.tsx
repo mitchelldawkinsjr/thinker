@@ -28,7 +28,7 @@ type DraftReviewContextValue = {
   pendingCount: number
   isPending: (id: string) => boolean
   approve: (idea: Idea) => void
-  deny: (id: string) => void
+  deny: (idea: Idea) => void
   exportApproved: () => { exportedAt: string; items: Idea[] }
   /** Soft status after Keep auto-queue (null when idle) */
   queueNotice: string | null
@@ -68,7 +68,7 @@ export function DraftReviewProvider({
 }) {
   const [decisions, setDecisions] = useState(loadDecisions)
   const [queueNotice, setQueueNotice] = useState<string | null>(null)
-  const { addMyIdea, removeMyIdea, attachLoopIdea, thoughts } = useThoughts()
+  const { addMyIdea, removeMyIdea, attachLoopIdea, reopenSeeds, thoughts } = useThoughts()
   const { syncFromThought, upsertFromIdea } = useZettel()
   const { kept, toggle: toggleKept } = useKept()
 
@@ -147,8 +147,13 @@ export function DraftReviewProvider({
   )
 
   const deny = useCallback(
-    (id: string) => {
+    (idea: Idea) => {
+      const id = idea.id
       removeMyIdea(id)
+      const seedIds = Array.isArray(idea.seedThoughtIds)
+        ? idea.seedThoughtIds.filter((x): x is string => typeof x === 'string' && x.length > 0)
+        : []
+      reopenSeeds(seedIds)
       setDecisions((prev) => {
         const approved = { ...prev.approved }
         delete approved[id]
@@ -156,7 +161,7 @@ export function DraftReviewProvider({
         return { approved, denied: deniedNext }
       })
     },
-    [removeMyIdea],
+    [removeMyIdea, reopenSeeds],
   )
 
   const exportApproved = useCallback(() => {

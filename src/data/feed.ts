@@ -1,3 +1,4 @@
+import { isBookSummaryIdea } from './bookIdeasSeed'
 import { mergeIdeas } from './ideas'
 import { browseableResources, type LearningResource } from './resources'
 import {
@@ -261,14 +262,19 @@ function resourceItems(
     }))
 }
 
+function ideaFeedItems(topicFilter: TopicFilter | undefined, pool: Idea[]): FeedItem[] {
+  return pool
+    .filter((i) => matchesTopicFilter([i.topicId], topicFilter))
+    .map((idea) => ({
+      kind: 'idea' as const,
+      id: `idea-${idea.id}`,
+      idea,
+    }))
+}
+
+/** Static catalog + non–book-summary extras. */
 function ideaItems(topicFilter?: TopicFilter, extraIdeas: Idea[] = []): FeedItem[] {
-  const catalog = mergeIdeas(extraIdeas)
-  const list = catalog.filter((i) => matchesTopicFilter([i.topicId], topicFilter))
-  return list.map((idea) => ({
-    kind: 'idea' as const,
-    id: `idea-${idea.id}`,
-    idea,
-  }))
+  return ideaFeedItems(topicFilter, mergeIdeas(extraIdeas))
 }
 
 function resolveNewsFeedId(n: NewsItem): string | undefined {
@@ -438,6 +444,7 @@ function gameItems(): FeedItem[] {
 /** Kind cadence weights — higher = denser early in the feed, still one card each. */
 export const DEFAULT_FEED_WEIGHTS = {
   ideas: 2,
+  bookIdeas: 1,
   news: 2,
   scripture: 1,
   resources: 1,
@@ -456,7 +463,7 @@ export type BuildMixedFeedOptions = {
 }
 
 /**
- * Total mix: ideas (+ book summaries) + news + scripture + sites + Gutenberg +
+ * Total mix: ideas + book summaries + news + scripture + sites + Gutenberg +
  * curated Zoboko, freshness-weighted so cards don't go stale.
  * Each card id appears at most once.
  */
@@ -468,10 +475,17 @@ export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
   const topic = opts.topicFilter
   const seed = daySeed(`r${opts.reshuffleKey ?? 0}:${JSON.stringify(topic ?? 'all')}`)
 
-  const ideasExtra = kinds && !kinds.bookIdeas ? [] : (opts.extraIdeas ?? [])
+  const allExtra = opts.extraIdeas ?? []
+  const bookExtra = allExtra.filter(isBookSummaryIdea)
+  const otherExtra = allExtra.filter((i) => !isBookSummaryIdea(i))
+
   const ideasQ =
     !kinds || kinds.ideas
-      ? sortByFreshness(seededShuffle(ideaItems(topic, ideasExtra), seed))
+      ? sortByFreshness(seededShuffle(ideaItems(topic, otherExtra), seed))
+      : []
+  const bookIdeasQ =
+    !kinds || kinds.bookIdeas
+      ? sortByFreshness(seededShuffle(ideaFeedItems(topic, bookExtra), seed ^ 13))
       : []
   const newsQ =
     !kinds || kinds.news
@@ -511,6 +525,7 @@ export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
   return filterHidden(
     weightedInterleave([
       { items: ideasQ, weight: weights.ideas },
+      { items: bookIdeasQ, weight: weights.bookIdeas },
       { items: newsQ, weight: weights.news },
       { items: scriptureQ, weight: weights.scripture },
       { items: resourcesQ, weight: weights.resources },

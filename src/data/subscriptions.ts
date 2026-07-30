@@ -10,9 +10,10 @@ export type ContentKindKey =
   | 'zobokoBooks'
   | 'games'
 
-/** Kinds that participate in weightedInterleave (bookIdeas share the ideas queue). */
+/** Kinds that participate in weightedInterleave. */
 export type KindWeightKey =
   | 'ideas'
+  | 'bookIdeas'
   | 'news'
   | 'scripture'
   | 'resources'
@@ -38,6 +39,7 @@ export const CUSTOM_FEED_WEIGHT_DEFAULT = 3
 /** Default mix cadence for content kinds */
 export const DEFAULT_KIND_WEIGHTS: KindWeights = {
   ideas: 2,
+  bookIdeas: 1,
   news: 2,
   scripture: 1,
   resources: 1,
@@ -51,7 +53,8 @@ export const KIND_WEIGHT_LABELS: {
   label: string
   hint: string
 }[] = [
-  { key: 'ideas', label: 'Ideas', hint: 'Catalog + book summaries + your approved drafts' },
+  { key: 'ideas', label: 'Ideas', hint: 'Catalog + philosophers / quotes + your approved drafts' },
+  { key: 'bookIdeas', label: 'Book summaries', hint: '5- and 20-minute book summary cards' },
   { key: 'news', label: 'News', hint: 'Curated outlets and your RSS feeds' },
   { key: 'scripture', label: 'Scripture', hint: 'Daily promise + evergreen rotation' },
   { key: 'resources', label: 'Free sites', hint: 'Curated learning sites' },

@@ -13,6 +13,7 @@ import {
   newThoughtId,
   parentFromIdea,
   thoughtToIdea,
+  isSeedableThought,
   thoughtsToSeeds,
   type Thought,
   type ThoughtParent,
@@ -50,7 +51,12 @@ type ThoughtsContextValue = {
    * or create a thin note edge when no seeds exist.
    */
   attachLoopIdea: (idea: Idea) => void
+  /** Open (unsent, unattached) thoughts as draft seeds — never clears Kept. */
   exportSeeds: () => ThoughtSeed[]
+  /** Mark seed ids as queued after a successful idea-loop send. */
+  markSeedsSent: (ids: string[]) => void
+  /** Return seeds to the inbox (e.g. Reject on a From-loop draft). */
+  reopenSeeds: (ids: string[]) => void
   count: number
 }
 
@@ -270,7 +276,8 @@ export function ThoughtsProvider({ children }: { children: ReactNode }) {
           next = next.map((t) => {
             if (!seedIds.includes(t.id)) return t
             linked++
-            return { ...t, promotedIdeaId: idea.id }
+            const { sentAt: _cleared, ...rest } = t
+            return { ...rest, promotedIdeaId: idea.id }
           })
         }
         if (linked === 0) {
@@ -298,7 +305,31 @@ export function ThoughtsProvider({ children }: { children: ReactNode }) {
     [],
   )
 
-  const exportSeeds = useCallback(() => thoughtsToSeeds(thoughts), [thoughts])
+  const exportSeeds = useCallback(
+    () => thoughtsToSeeds(thoughts.filter(isSeedableThought)),
+    [thoughts],
+  )
+
+  const markSeedsSent = useCallback((ids: string[]) => {
+    if (ids.length === 0) return
+    const idSet = new Set(ids)
+    const at = new Date().toISOString()
+    setThoughts((prev) =>
+      prev.map((t) => (idSet.has(t.id) && isSeedableThought(t) ? { ...t, sentAt: at } : t)),
+    )
+  }, [])
+
+  const reopenSeeds = useCallback((ids: string[]) => {
+    if (ids.length === 0) return
+    const idSet = new Set(ids)
+    setThoughts((prev) =>
+      prev.map((t) => {
+        if (!idSet.has(t.id) || !t.sentAt) return t
+        const { sentAt: _gone, ...rest } = t
+        return rest
+      }),
+    )
+  }, [])
 
   const value = useMemo(
     () => ({
@@ -313,6 +344,8 @@ export function ThoughtsProvider({ children }: { children: ReactNode }) {
       removeMyIdea,
       attachLoopIdea,
       exportSeeds,
+      markSeedsSent,
+      reopenSeeds,
       count: thoughts.length,
     }),
     [
@@ -327,6 +360,8 @@ export function ThoughtsProvider({ children }: { children: ReactNode }) {
       removeMyIdea,
       attachLoopIdea,
       exportSeeds,
+      markSeedsSent,
+      reopenSeeds,
     ],
   )
 

@@ -226,7 +226,7 @@ export function IdeaCard({
               New from the idea loop — Keep to attach your note and continue, or Reject to drop it.
             </p>
             <div className="idea-review-actions">
-              <button type="button" className="idea-btn ghost" onClick={() => deny(idea.id)}>
+              <button type="button" className="idea-btn ghost" onClick={() => deny(idea)}>
                 Reject
               </button>
               <button type="button" className="idea-btn keep" onClick={() => approve(idea)}>
