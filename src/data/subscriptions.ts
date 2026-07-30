@@ -123,6 +123,11 @@ export type Subscriptions = {
   /** Empty = all topics */
   topics: TopicId[]
   disabledFeedIds: string[]
+  /**
+   * Per curated feed id → topic overrides (Settings).
+   * Missing key = use catalog defaults from newsFeeds.
+   */
+  feedTopicOverrides: Record<string, TopicId[]>
   customSites: CustomSite[]
   customFeeds: CustomFeed[]
   /**
@@ -161,9 +166,22 @@ export const DEFAULT_SUBSCRIPTIONS: Subscriptions = {
   kindWeights: { ...DEFAULT_KIND_WEIGHTS },
   topics: [],
   disabledFeedIds: [],
+  feedTopicOverrides: {},
   customSites: [],
   customFeeds: [],
   thinkPromptOff: [...DEFAULT_THINK_PROMPT_OFF],
+}
+
+function normalizeFeedTopicOverrides(raw: unknown): Record<string, TopicId[]> {
+  if (!raw || typeof raw !== 'object') return {}
+  const out: Record<string, TopicId[]> = {}
+  for (const [feedId, topics] of Object.entries(raw as Record<string, unknown>)) {
+    if (typeof feedId !== 'string' || !feedId.trim()) continue
+    if (!Array.isArray(topics)) continue
+    const ids = topics.filter(isTopicId)
+    if (ids.length > 0) out[feedId] = ids
+  }
+  return out
 }
 
 export const KIND_LABELS: { key: ContentKindKey; label: string; hint: string }[] = [
@@ -235,6 +253,7 @@ export function normalizeSubscriptions(raw: unknown): Subscriptions {
     disabledFeedIds: Array.isArray(o.disabledFeedIds)
       ? o.disabledFeedIds.filter((x): x is string => typeof x === 'string')
       : [],
+    feedTopicOverrides: normalizeFeedTopicOverrides(o.feedTopicOverrides),
     customSites: Array.isArray(o.customSites)
       ? o.customSites.map(normalizeCustomSite).filter((x): x is CustomSite => x !== null)
       : [],

@@ -31,7 +31,7 @@ import {
   type CustomSite,
   type Subscriptions,
 } from './subscriptions'
-import { curatedNewsFeeds } from './newsFeeds'
+import { curatedNewsFeeds, effectiveCuratedFeedTopics } from './newsFeeds'
 
 export type FeedItem =
   | { kind: 'idea'; id: string; idea: Idea }
@@ -282,6 +282,19 @@ function resolveNewsFeedId(n: NewsItem): string | undefined {
   return curatedNewsFeeds.find((f) => f.name === n.source)?.id
 }
 
+/** Apply Settings topic overrides onto curated news items (custom RSS keeps its own topics). */
+function withFeedTopicOverrides(
+  n: NewsItem,
+  overrides: Record<string, TopicId[]>,
+): NewsItem {
+  if (Object.keys(overrides).length === 0) return n
+  const feedId = resolveNewsFeedId(n)
+  if (!feedId || feedId.startsWith('user-')) return n
+  const topics = effectiveCuratedFeedTopics(feedId, overrides)
+  if (!topics) return n
+  return { ...n, topicIds: topics }
+}
+
 /** Default weight for curated outlets when mixing against custom RSS. */
 const CURATED_NEWS_WEIGHT = CUSTOM_FEED_WEIGHT_DEFAULT
 
@@ -291,6 +304,7 @@ function newsItems(
   disabledFeedIds: string[] = [],
   customFeeds: CustomFeed[] = [],
   seed = 0,
+  feedTopicOverrides: Record<string, TopicId[]> = {},
 ): FeedItem[] {
   const muted = new Set(disabledFeedIds)
   const weightByFeedId = new Map<string, number>()
@@ -302,11 +316,13 @@ function newsItems(
     capByFeedId.set(fid, itemCapForFeedWeight(f.limit, f.weight))
   }
 
-  const filtered = news.filter((n) => {
-    const feedId = resolveNewsFeedId(n)
-    if (feedId && muted.has(feedId)) return false
-    return matchesTopicFilter(n.topicIds, topicFilter)
-  })
+  const filtered = news
+    .map((n) => withFeedTopicOverrides(n, feedTopicOverrides))
+    .filter((n) => {
+      const feedId = resolveNewsFeedId(n)
+      if (feedId && muted.has(feedId)) return false
+      return matchesTopicFilter(n.topicIds, topicFilter)
+    })
 
   const byFeed = new Map<string, FeedItem[]>()
   const taken = new Map<string, number>()
@@ -495,6 +511,7 @@ export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
           subs?.disabledFeedIds ?? [],
           subs?.customFeeds ?? [],
           seed ^ 1,
+          subs?.feedTopicOverrides ?? {},
         )
       : []
   const scriptureQ =

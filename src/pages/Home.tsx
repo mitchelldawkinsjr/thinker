@@ -56,8 +56,8 @@ export function Home() {
           </p>
           <p className="hero-sub">
             Short ideas on AI, sports, markets, and history — then jump to the real
-            sites: Gutenberg, Quanta, Farnam Street, SEP, and more. Remembers this
-            device for today; tomorrow starts fresh.
+            sites: Gutenberg, Quanta, Farnam Street, SEP, and more. Remembers what
+            you’ve seen so familiar cards stay buried.
           </p>
           <div className="hero-actions">
             {cont ? (

@@ -275,7 +275,7 @@ export function Feed() {
         <p>
           {topic
             ? `Mixed ideas, book summaries, news, scripture, and sources for ${topic.name}.`
-            : 'Total mix — ideas, book summaries, news, scripture, free sites, books. Unseen cards rise; news expires so it doesn’t go stale.'}{' '}
+            : 'Total mix — ideas, book summaries, news, scripture, free sites, books. Unseen cards rise; recently seen stay buried across days. News expires so it doesn’t go stale.'}{' '}
           <Link to="/settings">Customize</Link>
         </p>
         <div className="feed-mix">

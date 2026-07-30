@@ -6,6 +6,24 @@ export type CuratedNewsFeed = {
   topicIds: TopicId[]
 }
 
+/** Catalog defaults for a curated outlet (undefined if id isn’t curated). */
+export function defaultCuratedFeedTopics(feedId: string): TopicId[] | undefined {
+  return curatedNewsFeeds.find((f) => f.id === feedId)?.topicIds
+}
+
+/**
+ * Effective topics for a curated outlet: local override wins, else catalog default.
+ * Empty / missing override → catalog topics.
+ */
+export function effectiveCuratedFeedTopics(
+  feedId: string,
+  overrides?: Record<string, TopicId[]>,
+): TopicId[] | undefined {
+  const over = overrides?.[feedId]
+  if (over && over.length > 0) return over
+  return defaultCuratedFeedTopics(feedId)
+}
+
 /**
  * Mirrors FEEDS in scripts/ingest-news.mjs — ids must stay in sync with ingest `feedId`.
  */

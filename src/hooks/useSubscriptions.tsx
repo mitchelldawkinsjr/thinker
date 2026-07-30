@@ -36,6 +36,8 @@ type SubscriptionsContextValue = {
   /** Turn Think prompts on/off for a topic (news cards). */
   setThinkPrompt: (topicId: TopicId, on: boolean) => void
   setFeedMuted: (feedId: string, muted: boolean) => void
+  /** Override topics for a curated news outlet (empty clears override → catalog default). */
+  setCuratedFeedTopics: (feedId: string, topicIds: TopicId[]) => void
   addCustomSite: (site: Omit<CustomSite, 'id'> & { id?: string }) => string | null
   updateCustomSite: (id: string, patch: Partial<CustomSite>) => void
   removeCustomSite: (id: string) => void
@@ -107,6 +109,16 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
       if (muted) set.add(feedId)
       else set.delete(feedId)
       return { ...prev, disabledFeedIds: [...set] }
+    })
+  }, [])
+
+  const setCuratedFeedTopics = useCallback((feedId: string, topicIds: TopicId[]) => {
+    setSubscriptions((prev) => {
+      const next = { ...prev.feedTopicOverrides }
+      const cleaned = topicIds.filter((t) => typeof t === 'string' && t.trim().length > 0)
+      if (cleaned.length === 0) delete next[feedId]
+      else next[feedId] = cleaned
+      return { ...prev, feedTopicOverrides: next }
     })
   }, [])
 
@@ -229,6 +241,7 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
       toggleTopic,
       setThinkPrompt,
       setFeedMuted,
+      setCuratedFeedTopics,
       addCustomSite,
       updateCustomSite,
       removeCustomSite,
@@ -246,6 +259,7 @@ export function SubscriptionsProvider({ children }: { children: ReactNode }) {
       toggleTopic,
       setThinkPrompt,
       setFeedMuted,
+      setCuratedFeedTopics,
       addCustomSite,
       updateCustomSite,
       removeCustomSite,

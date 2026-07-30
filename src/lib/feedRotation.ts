@@ -1,12 +1,19 @@
 const STORAGE_KEY = 'thinker-feed-seen-v1'
 const HIDDEN_KEY = 'thinker-feed-hidden-v1'
 const HIDDEN_CAP = 2000
+const SEEN_CAP = 800
 
-/** Cards seen within this window get a hard penalty so they don't reappear immediately */
-const RECENT_HOURS = 18
-const RECENT_PENALTY = 80
-const COUNT_WEIGHT = 28
-const DAY_DECAY = 3
+/**
+ * Seen history persists across days (day roll only resets cursor/order).
+ * Higher score = later in the mix; unseen stays at 0.
+ *
+ * Rough recovery: one view ~ COUNT_WEIGHT / DAY_DECAY days to near-unseen
+ * (~25 days), plus a hard recent window so cards don’t bounce back overnight.
+ */
+const RECENT_HOURS = 72
+const RECENT_PENALTY = 120
+const COUNT_WEIGHT = 50
+const DAY_DECAY = 2
 
 type SeenMap = Record<string, { count: number; lastSeen: number }>
 
@@ -25,15 +32,6 @@ function save(map: SeenMap) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(map))
   } catch {
     // ignore quota
-  }
-}
-
-/** Wipe same-day seen map (called when the local calendar day rolls). */
-export function clearSeen() {
-  try {
-    localStorage.removeItem(STORAGE_KEY)
-  } catch {
-    // ignore
   }
 }
 
@@ -103,12 +101,11 @@ export function markSeen(id: string) {
     count: (prev?.count ?? 0) + 1,
     lastSeen: Date.now(),
   }
-  // Cap map size
   const ids = Object.keys(map)
-  if (ids.length > 400) {
+  if (ids.length > SEEN_CAP) {
     ids
       .sort((a, b) => (map[a].lastSeen ?? 0) - (map[b].lastSeen ?? 0))
-      .slice(0, ids.length - 400)
+      .slice(0, ids.length - SEEN_CAP)
       .forEach((k) => delete map[k])
   }
   save(map)

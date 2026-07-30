@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
-import { curatedNewsFeeds } from '../data/newsFeeds'
+import { curatedNewsFeeds, effectiveCuratedFeedTopics } from '../data/newsFeeds'
 import {
   clampFeedWeight,
   clampKindWeight,
@@ -49,6 +49,7 @@ export function Settings() {
     toggleTopic,
     setThinkPrompt,
     setFeedMuted,
+    setCuratedFeedTopics,
     addCustomSite,
     updateCustomSite,
     removeCustomSite,
@@ -155,6 +156,18 @@ export function Settings() {
     updateCustomFeed(feedId, {
       topicIds: next.length ? next : (['current-events'] as TopicId[]),
     })
+  }
+
+  function toggleCuratedFeedTopic(feedId: string, topicId: TopicId) {
+    const current =
+      effectiveCuratedFeedTopics(feedId, subscriptions.feedTopicOverrides) ??
+      (['current-events'] as TopicId[])
+    const has = current.includes(topicId)
+    const next = has ? current.filter((t) => t !== topicId) : [...current, topicId]
+    setCuratedFeedTopics(
+      feedId,
+      next.length ? next : (['current-events'] as TopicId[]),
+    )
   }
 
   function toggleExistingSiteTopic(siteId: string, topicId: TopicId) {
@@ -523,24 +536,37 @@ export function Settings() {
       <section className="settings-section" aria-labelledby="news-heading">
         <h2 id="news-heading">News sources</h2>
         <p className="settings-lead">
-          Mute curated outlets without turning all news off. Needs the News content type enabled.
+          Mute curated outlets without turning all news off. Change topics to control which
+          topic filters they appear under. Needs the News content type enabled.
         </p>
-        <ul className="settings-toggles settings-toggles-dense">
+        <ul className="settings-list settings-list-feeds">
           {curatedNewsFeeds.map((f) => {
             const on = !muted.has(f.id)
+            const selected =
+              effectiveCuratedFeedTopics(f.id, subscriptions.feedTopicOverrides) ??
+              f.topicIds
             return (
-              <li key={f.id}>
-                <label className="settings-toggle">
-                  <input
-                    type="checkbox"
-                    checked={on}
-                    onChange={(e) => setFeedMuted(f.id, !e.target.checked)}
-                  />
-                  <span>
-                    <strong>{f.name}</strong>
-                    <small>{f.topicIds.join(' · ')}</small>
-                  </span>
-                </label>
+              <li key={f.id} className="settings-list-item-stack">
+                <div className="settings-list-item-head">
+                  <label className="settings-toggle settings-toggle-inline">
+                    <input
+                      type="checkbox"
+                      checked={on}
+                      onChange={(e) => setFeedMuted(f.id, !e.target.checked)}
+                    />
+                    <span>
+                      <strong>{f.name}</strong>
+                    </span>
+                  </label>
+                </div>
+                <TopicPicker
+                  topics={topics}
+                  groups={feedTopicGroups}
+                  selected={selected}
+                  onToggle={(id) => toggleCuratedFeedTopic(f.id, id)}
+                  label="Topics"
+                  hint="Overrides the catalog default for this outlet on this device."
+                />
               </li>
             )
           })}

@@ -1,5 +1,3 @@
-import { clearSeen } from './feedRotation'
-
 const DAY_KEY = 'thinker-day-v1'
 const CURSOR_KEY = 'thinker-day-cursor-v1'
 const ORDER_KEY = 'thinker-day-feed-order-v1'
@@ -43,7 +41,8 @@ function topicKey(topic: string | null | undefined): string | null {
 }
 
 /**
- * If the calendar day changed since last open, wipe same-day memory (seen + cursor + order).
+ * If the calendar day changed since last open, reset session cursor + order.
+ * Seen history persists so cards you already read stay buried across days.
  * Kept / hidden stay — bookmarks and permanent dismissals survive overnight.
  */
 export function ensureFreshDay(): { day: string; rolled: boolean } {
@@ -56,7 +55,6 @@ export function ensureFreshDay(): { day: string; rolled: boolean } {
       return { day: today, rolled: false }
     }
     localStorage.setItem(DAY_KEY, today)
-    clearSeen()
     localStorage.removeItem(CURSOR_KEY)
     localStorage.removeItem(ORDER_KEY)
     return { day: today, rolled: true }
