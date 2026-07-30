@@ -569,64 +569,71 @@ export function Settings() {
       <section className="settings-section" aria-labelledby="news-heading">
         <h2 id="news-heading">News sources</h2>
         <p className="settings-lead">
-          Find a source, then open it to set topics. Mute without turning all news off. Needs the
-          News content type enabled.
+          Search or scroll to pick a source, then open it to set topics. Mute without turning all
+          news off. Needs the News content type enabled.
         </p>
-        <label className="settings-source-search">
-          <span className="settings-field-label">Find a source</span>
-          <input
-            type="search"
-            value={sourceQuery}
-            onChange={(e) => setSourceQuery(e.target.value)}
-            placeholder="Name or topic…"
-            autoComplete="off"
-          />
-        </label>
-        {!sourceQuery.trim() ? (
-          <p className="settings-pending">
-            {curatedNewsFeeds.length} outlets — type to find one, then tap it to change topics.
+        <div className="settings-source-picker">
+          <label className="settings-source-search">
+            <span className="settings-field-label">Find a source</span>
+            <input
+              type="search"
+              value={sourceQuery}
+              onChange={(e) => setSourceQuery(e.target.value)}
+              placeholder="Filter by name or topic…"
+              autoComplete="off"
+              aria-controls="news-source-list"
+            />
+          </label>
+          <div className="settings-source-scroll" id="news-source-list" role="listbox" aria-label="News sources">
+            {curatedFeedMatches.length === 0 ? (
+              <p className="settings-pending">No sources match “{sourceQuery.trim()}”.</p>
+            ) : (
+              <ul className="settings-list settings-list-feeds settings-list-compact">
+                {curatedFeedMatches.map((f) => {
+                  const on = !muted.has(f.id)
+                  const selected =
+                    effectiveCuratedFeedTopics(f.id, subscriptions.feedTopicOverrides) ??
+                    f.topicIds
+                  return (
+                    <li key={f.id} role="option">
+                      <div className="settings-source-row">
+                        <label
+                          className="settings-toggle settings-toggle-inline"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={on}
+                            onChange={(e) => setFeedMuted(f.id, !e.target.checked)}
+                          />
+                          <span className="settings-sr-only">Enabled</span>
+                        </label>
+                        <button
+                          type="button"
+                          className="settings-source-open"
+                          onClick={() =>
+                            setTopicEdit({ kind: 'curated', id: f.id, name: f.name })
+                          }
+                        >
+                          <span className="settings-source-name">{f.name}</span>
+                          <span className="settings-source-topics">
+                            {formatTopicSummary(selected, topics)}
+                          </span>
+                        </button>
+                      </div>
+                    </li>
+                  )
+                })}
+              </ul>
+            )}
+          </div>
+          <p className="settings-source-count">
+            {sourceQuery.trim()
+              ? `${curatedFeedMatches.length} match${curatedFeedMatches.length === 1 ? '' : 'es'}`
+              : `${curatedNewsFeeds.length} outlets`}
+            {' — tap a source to change topics.'}
           </p>
-        ) : curatedFeedMatches.length === 0 ? (
-          <p className="settings-pending">No sources match “{sourceQuery.trim()}”.</p>
-        ) : (
-          <ul className="settings-list settings-list-feeds settings-list-compact">
-            {curatedFeedMatches.map((f) => {
-              const on = !muted.has(f.id)
-              const selected =
-                effectiveCuratedFeedTopics(f.id, subscriptions.feedTopicOverrides) ??
-                f.topicIds
-              return (
-                <li key={f.id}>
-                  <div className="settings-source-row">
-                    <label
-                      className="settings-toggle settings-toggle-inline"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <input
-                        type="checkbox"
-                        checked={on}
-                        onChange={(e) => setFeedMuted(f.id, !e.target.checked)}
-                      />
-                      <span className="settings-sr-only">Enabled</span>
-                    </label>
-                    <button
-                      type="button"
-                      className="settings-source-open"
-                      onClick={() =>
-                        setTopicEdit({ kind: 'curated', id: f.id, name: f.name })
-                      }
-                    >
-                      <span className="settings-source-name">{f.name}</span>
-                      <span className="settings-source-topics">
-                        {formatTopicSummary(selected, topics)}
-                      </span>
-                    </button>
-                  </div>
-                </li>
-              )
-            })}
-          </ul>
-        )}
+        </div>
       </section>
 
       <section className="settings-section" aria-labelledby="sites-heading">
