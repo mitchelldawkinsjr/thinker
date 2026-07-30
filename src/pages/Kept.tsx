@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { useKept } from '../hooks/useKept'
 import { useThoughts } from '../hooks/useThoughts'
 import { useDraftReview } from '../hooks/useDraftReview'
+import { useKeepStack } from '../hooks/useKeepStack'
 import { getIdea } from '../data/ideas'
 import { getTopic } from '../data/topics'
 import { formatAudioTime, isListeningThought, isSeedableThought, type Thought } from '../data/thoughts'
@@ -47,8 +48,15 @@ function useShareBusy() {
 }
 
 /** Non-listening keep note (scripture, site, book, idea Keep, news Keep) */
-function KeptNoteRow({ thought }: { thought: Thought }) {
+function KeptNoteRow({
+  thought,
+  onOpenStack,
+}: {
+  thought: Thought
+  onOpenStack: (thought: Thought) => void
+}) {
   const { promote, remove, updateNote } = useThoughts()
+  const { keepToStack } = useKeepStack()
   const { runShare, labelFor } = useShareBusy()
   const [flipped, setFlipped] = useState(false)
   const isScripture = thought.parent.kind === 'scripture'
@@ -83,7 +91,7 @@ function KeptNoteRow({ thought }: { thought: Thought }) {
                 {isScripture ? (thought.parent.reference ?? 'Scripture') : kindLabel}
               </span>
               <span className="kept-moment-parent">
-                {thought.parent.title}
+                on {thought.parent.title}
                 {isScripture && thought.parent.translation
                   ? ` · ${thought.parent.translation}`
                   : null}
@@ -94,10 +102,30 @@ function KeptNoteRow({ thought }: { thought: Thought }) {
             ) : null}
             <p className="kept-moment-note">
               {thought.note.trim() ||
-                'No note yet — promote to turn this into an idea card, or export for draft:ideas.'}
+                'No note yet — open the stack to connect it, or promote to an idea card.'}
             </p>
             <div className="kept-moment-actions">
-              <button type="button" className="btn btn-primary" onClick={() => promote(thought.id)}>
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={() => onOpenStack(thought)}
+              >
+                Open stack
+              </button>
+              <button
+                type="button"
+                className="btn btn-ghost"
+                onClick={() => {
+                  const idea = promote(thought.id)
+                  if (idea) {
+                    keepToStack(
+                      { ...thought, promotedIdeaId: idea.id },
+                      { land: false },
+                    )
+                    onOpenStack({ ...thought, promotedIdeaId: idea.id })
+                  }
+                }}
+              >
                 Promote to idea
               </button>
               <button type="button" className="btn btn-ghost" onClick={() => setFlipped(true)}>
@@ -128,8 +156,20 @@ function KeptNoteRow({ thought }: { thought: Thought }) {
             allowPromote
             onCancel={() => setFlipped(false)}
             onSave={(note, promoteIt) => {
-              if (promoteIt) promote(thought.id, note)
-              else updateNote(thought.id, note)
+              const trimmed = note.trim()
+              if (promoteIt) {
+                const idea = promote(thought.id, note)
+                const next = {
+                  ...thought,
+                  note: trimmed,
+                  promotedIdeaId: idea?.id ?? `thought-${thought.id}`,
+                }
+                keepToStack(next, { land: false })
+                onOpenStack(next)
+              } else {
+                updateNote(thought.id, note)
+                keepToStack({ ...thought, note: trimmed }, { land: false })
+              }
             }}
           />
         }
@@ -139,8 +179,15 @@ function KeptNoteRow({ thought }: { thought: Thought }) {
 }
 
 /** All open clip stamps for one audio card: one player, many stamps */
-function KeptMomentGroup({ thoughts }: { thoughts: Thought[] }) {
+function KeptMomentGroup({
+  thoughts,
+  onOpenStack,
+}: {
+  thoughts: Thought[]
+  onOpenStack: (thought: Thought) => void
+}) {
   const { promote, remove, updateNote } = useThoughts()
+  const { keepToStack } = useKeepStack()
   const { runShare, labelFor } = useShareBusy()
   const [editing, setEditing] = useState<Thought | null>(null)
   const parent = thoughts[0].parent
@@ -189,7 +236,21 @@ function KeptMomentGroup({ thoughts }: { thoughts: Thought[] }) {
                     <button
                       type="button"
                       className="kept-stamp-btn"
-                      onClick={() => promote(t.id)}
+                      onClick={() => onOpenStack(t)}
+                    >
+                      Stack
+                    </button>
+                    <button
+                      type="button"
+                      className="kept-stamp-btn"
+                      onClick={() => {
+                        const idea = promote(t.id)
+                        if (idea) {
+                          const next = { ...t, promotedIdeaId: idea.id }
+                          keepToStack(next, { land: false })
+                          onOpenStack(next)
+                        }
+                      }}
                     >
                       Promote
                     </button>
@@ -237,8 +298,20 @@ function KeptMomentGroup({ thoughts }: { thoughts: Thought[] }) {
             onCancel={() => setEditing(null)}
             onSave={(note, promoteIt) => {
               if (!editing) return
-              if (promoteIt) promote(editing.id, note)
-              else updateNote(editing.id, note)
+              const trimmed = note.trim()
+              if (promoteIt) {
+                const idea = promote(editing.id, note)
+                const next = {
+                  ...editing,
+                  note: trimmed,
+                  promotedIdeaId: idea?.id ?? `thought-${editing.id}`,
+                }
+                keepToStack(next, { land: false })
+                onOpenStack(next)
+              } else {
+                updateNote(editing.id, note)
+                keepToStack({ ...editing, note: trimmed }, { land: false })
+              }
             }}
           />
         }
@@ -264,6 +337,8 @@ export function Kept() {
   const { thoughts, exportSeeds, markSeedsSent, reopenSeeds } = useThoughts()
   const { exportApproved, pendingCount, approved } = useDraftReview()
   const { notes, links, exportBox, importBox, linkedIds, orphans, tags } = useZettel()
+  const { keepToStack } = useKeepStack()
+  const [searchParams, setSearchParams] = useSearchParams()
   const approvedCount = Object.keys(approved).length
   const { items: extraIdeas } = useExtraIdeas()
   const { runShare, labelFor } = useShareBusy()
@@ -277,10 +352,12 @@ export function Kept() {
   const [queueMessage, setQueueMessage] = useState<string | null>(null)
   const [queuePrUrl, setQueuePrUrl] = useState<string | null>(null)
   const [stackRootId, setStackRootId] = useState<string | null>(null)
+  const [startConnecting, setStartConnecting] = useState(false)
   const [editingId, setEditingId] = useState<string | null | 'new'>(null)
   const [slipFilter, setSlipFilter] = useState<'all' | 'orphans' | string>('all')
   const [importMessage, setImportMessage] = useState<string | null>(null)
   const importRef = useRef<HTMLInputElement>(null)
+  const landedFromUrl = useRef(false)
 
   useEffect(() => {
     void fetchGithubQueueStatus().then((s) => setQueueReady(s.configured))
@@ -370,7 +447,26 @@ export function Kept() {
     (t) => t.parent.kind !== 'scripture' && !isListeningThought(t),
   )
 
+  // Land from Keep: /kept?stack=…&connect=1
   useEffect(() => {
+    const stackParam = searchParams.get('stack')
+    if (!stackParam) return
+    setStackRootId(stackParam)
+    setStartConnecting(searchParams.get('connect') === '1')
+    landedFromUrl.current = true
+    // Clear query so refresh doesn't keep forcing connect mode
+    setSearchParams({}, { replace: true })
+  }, [searchParams, setSearchParams])
+
+  // startConnecting is a one-shot cue for ZettelStack
+  useEffect(() => {
+    if (!startConnecting) return
+    const t = window.setTimeout(() => setStartConnecting(false), 800)
+    return () => window.clearTimeout(t)
+  }, [startConnecting, stackRootId])
+
+  useEffect(() => {
+    if (landedFromUrl.current && stackRootId) return
     if (stackRootId && notes.some((n) => n.id === stackRootId)) return
     if (notes.length > 0) setStackRootId(notes[0].id)
     else setStackRootId(null)
@@ -383,10 +479,19 @@ export function Kept() {
   }, [notes, orphans, slipFilter])
 
   useEffect(() => {
+    if (landedFromUrl.current && stackRootId) return
     if (filteredNotes.length === 0) return
     if (stackRootId && filteredNotes.some((n) => n.id === stackRootId)) return
     setStackRootId(filteredNotes[0].id)
   }, [filteredNotes, stackRootId])
+
+  const openStackForThought = (thought: Thought) => {
+    const z = keepToStack(thought, { land: false })
+    setStackRootId(z.id)
+    setStartConnecting(false)
+    landedFromUrl.current = true
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   async function onImportFile(file: File) {
     setImportMessage(null)
@@ -428,19 +533,19 @@ export function Kept() {
         <h1>Kept</h1>
         <p>
           {empty
-            ? 'Keep from the feed, jot thoughts, link notes into a stack.'
+            ? 'Keep from the feed — your note stacks on the source. Connect more from here.'
             : [
-                openThoughts.length > 0
-                  ? `${openThoughts.length} thought${openThoughts.length === 1 ? '' : 's'}`
-                  : null,
-                ideas.length > 0
-                  ? `${ideas.length} idea${ideas.length === 1 ? '' : 's'}`
-                  : null,
                 notes.length > 0
-                  ? `${notes.length} slip${notes.length === 1 ? '' : 's'}`
+                  ? `${notes.length} in stack${notes.length === 1 ? '' : 's'}`
                   : null,
                 links.length > 0
                   ? `${links.length} link${links.length === 1 ? '' : 's'}`
+                  : null,
+                openThoughts.length > 0
+                  ? `${openThoughts.length} inbox`
+                  : null,
+                ideas.length > 0
+                  ? `${ideas.length} idea card${ideas.length === 1 ? '' : 's'}`
                   : null,
               ]
                 .filter(Boolean)
@@ -654,46 +759,11 @@ export function Kept() {
         </div>
       ) : (
         <>
-          {openThoughts.length > 0 && (
-            <section className="kept-moments">
-              <h2>Thoughts</h2>
-              <p className="kept-moments-lead">
-                Inbox — edit, then promote to an idea card. Send a card back with “Back to
-                thought” to change it again.
-                {listeningNotes + scriptureNotes + keepNotes > 0 && (
-                  <>
-                    {' '}
-                    (
-                    {[
-                      keepNotes > 0 ? `${keepNotes} kept` : null,
-                      listeningNotes > 0 ? `${listeningNotes} listening` : null,
-                      scriptureNotes > 0 ? `${scriptureNotes} scripture` : null,
-                    ]
-                      .filter(Boolean)
-                      .join(' · ')}
-                    )
-                  </>
-                )}
-              </p>
-              <ul className="kept-moment-list">
-                {cardNotes.map((t) => (
-                  <KeptNoteRow key={t.id} thought={t} />
-                ))}
-                {listeningGroups.map((group) => (
-                  <KeptMomentGroup key={group[0].parent.id} thoughts={group} />
-                ))}
-                {scriptureThoughts.map((t) => (
-                  <KeptNoteRow key={t.id} thought={t} />
-                ))}
-              </ul>
-            </section>
-          )}
-
-          {(notes.length > 0 || ideas.length > 0 || editingId !== null) && (
+          {(notes.length > 0 || editingId !== null) && (
             <section className="kept-stream">
-              <h2>Cards</h2>
+              <h2>Stack</h2>
               <p className="kept-moments-lead">
-                Shuffle linked slips in the stack. Kept idea cards list below.
+                Your note on front, source behind. Connect other thoughts or Build on this one.
               </p>
 
               {notes.length > 0 && (
@@ -725,8 +795,16 @@ export function Kept() {
                 </div>
               )}
 
-              {stackRootId && filteredNotes.some((n) => n.id === stackRootId) ? (
-                <ZettelStack rootId={stackRootId} onEdit={(id) => setEditingId(id)} />
+              {stackRootId && notes.some((n) => n.id === stackRootId) ? (
+                <ZettelStack
+                  rootId={stackRootId}
+                  startConnecting={startConnecting}
+                  onEdit={(id) => setEditingId(id)}
+                  onBuilt={(id) => {
+                    setStackRootId(id)
+                    setStartConnecting(false)
+                  }}
+                />
               ) : notes.length > 0 && editingId === null ? (
                 <p className="kept-pending">
                   {slipFilter === 'orphans'
@@ -750,7 +828,10 @@ export function Kept() {
                               ? 'kept-zettel-index-btn is-active'
                               : 'kept-zettel-index-btn'
                           }
-                          onClick={() => setStackRootId(n.id)}
+                          onClick={() => {
+                            setStackRootId(n.id)
+                            setStartConnecting(false)
+                          }}
                         >
                           <span>
                             {n.title}
@@ -774,14 +855,59 @@ export function Kept() {
                   })}
                 </ul>
               )}
+            </section>
+          )}
 
-              {ideas.length > 0 && (
-                <div className="kept-grid">
-                  {ideas.map((idea) => (
-                    <IdeaCard key={idea.id} idea={idea} compact />
-                  ))}
-                </div>
-              )}
+          {openThoughts.length > 0 && (
+            <section className="kept-moments">
+              <h2>Inbox</h2>
+              <p className="kept-moments-lead">
+                Open thoughts waiting to grow — open a stack to connect, or promote to an idea
+                card.
+                {listeningNotes + scriptureNotes + keepNotes > 0 && (
+                  <>
+                    {' '}
+                    (
+                    {[
+                      keepNotes > 0 ? `${keepNotes} kept` : null,
+                      listeningNotes > 0 ? `${listeningNotes} listening` : null,
+                      scriptureNotes > 0 ? `${scriptureNotes} scripture` : null,
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')}
+                    )
+                  </>
+                )}
+              </p>
+              <ul className="kept-moment-list">
+                {cardNotes.map((t) => (
+                  <KeptNoteRow key={t.id} thought={t} onOpenStack={openStackForThought} />
+                ))}
+                {listeningGroups.map((group) => (
+                  <KeptMomentGroup
+                    key={group[0].parent.id}
+                    thoughts={group}
+                    onOpenStack={openStackForThought}
+                  />
+                ))}
+                {scriptureThoughts.map((t) => (
+                  <KeptNoteRow key={t.id} thought={t} onOpenStack={openStackForThought} />
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {ideas.length > 0 && (
+            <section className="kept-stream">
+              <h2>Idea cards</h2>
+              <p className="kept-moments-lead">
+                Promoted and bookmarked cards — use Back to thought when you want to edit again.
+              </p>
+              <div className="kept-grid">
+                {ideas.map((idea) => (
+                  <IdeaCard key={idea.id} idea={idea} compact />
+                ))}
+              </div>
             </section>
           )}
         </>

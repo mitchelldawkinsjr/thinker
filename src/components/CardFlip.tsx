@@ -159,8 +159,8 @@ export function CardNoteBack({
         </div>
         {allowPromote && !saved && (
           <p className="card-note-back-hint">
-            Save thought keeps it on Kept. Save as idea moves it to an idea card — use “Back to
-            thought” on the card when you want to edit again.
+            Save thought stacks your take on the source. Save as idea also makes a card you can
+            reopen — connect more notes from the stack on Kept.
           </p>
         )}
       </footer>

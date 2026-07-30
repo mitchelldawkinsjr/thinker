@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { getTopic } from '../data/topics'
-import type { ZettelLink, ZettelNote } from '../data/zettel'
+import type { ZettelLink, ZettelLinkKind, ZettelNote } from '../data/zettel'
+import { searchNotesForLink } from '../data/zettel'
 import { useZettel } from '../hooks/useZettel'
 import './ZettelStack.css'
 
@@ -11,6 +12,14 @@ type StackItem = {
   kind?: ZettelLink['kind']
 }
 
+const LINK_KINDS: { id: ZettelLinkKind; label: string }[] = [
+  { id: 'related', label: 'Related' },
+  { id: 'extends', label: 'Extends' },
+  { id: 'supports', label: 'Supports' },
+  { id: 'source', label: 'Source' },
+  { id: 'derived', label: 'Derived' },
+]
+
 /**
  * CSS card stack for a slip-box note and its links.
  * Clicking a linked chip / stacked face shuffles that card to the front.
@@ -18,19 +27,32 @@ type StackItem = {
 export function ZettelStack({
   rootId,
   onEdit,
+  onBuilt,
+  startConnecting = false,
 }: {
   rootId: string
   onEdit?: (id: string) => void
+  /** Called after Build on creates a new linked note */
+  onBuilt?: (id: string) => void
+  /** Open the connect panel on mount / when stack lands from Keep */
+  startConnecting?: boolean
 }) {
-  const { getNote, neighbors, linkedIds } = useZettel()
+  const { getNote, neighbors, linkedIds, notes, addLink, createNote } = useZettel()
   const [activeId, setActiveId] = useState(rootId)
   const [shuffling, setShuffling] = useState(false)
   const [outgoingId, setOutgoingId] = useState<string | null>(null)
+  const [connecting, setConnecting] = useState(startConnecting)
+  const [linkQuery, setLinkQuery] = useState('')
+  const [linkKind, setLinkKind] = useState<ZettelLinkKind>('related')
   const shuffleTimer = useRef<number | null>(null)
 
   useEffect(() => {
     setActiveId(rootId)
   }, [rootId])
+
+  useEffect(() => {
+    if (startConnecting) setConnecting(true)
+  }, [startConnecting, rootId])
 
   useEffect(() => {
     return () => {
@@ -41,12 +63,33 @@ export function ZettelStack({
   const active = getNote(activeId)
   const { outbound, inbound } = neighbors(activeId)
 
+  const alreadyLinkedIds = useMemo(() => {
+    const ids = new Set<string>()
+    for (const l of outbound) ids.add(l.to)
+    for (const l of inbound) ids.add(l.from)
+    return ids
+  }, [outbound, inbound])
+
+  const suggestions = useMemo(() => {
+    if (!connecting || !linkQuery.trim()) return []
+    return searchNotesForLink(notes, linkQuery, {
+      excludeId: activeId,
+      alreadyLinkedIds,
+      limit: 8,
+    })
+  }, [connecting, notes, linkQuery, activeId, alreadyLinkedIds])
+
   const stack: StackItem[] = useMemo(() => {
     if (!active) return []
     const items: StackItem[] = [{ note: active, relation: 'self' }]
     const seen = new Set([active.id])
 
-    for (const l of outbound) {
+    // Source cards sit directly under your note — the keep metaphor
+    const orderedOut = [
+      ...outbound.filter((l) => l.kind === 'source'),
+      ...outbound.filter((l) => l.kind !== 'source'),
+    ]
+    for (const l of orderedOut) {
       const n = getNote(l.to)
       if (!n || seen.has(n.id)) continue
       seen.add(n.id)
@@ -76,12 +119,32 @@ export function ZettelStack({
     }, 420)
   }
 
+  const handleConnect = (toId: string) => {
+    addLink(activeId, toId, linkKind)
+    setLinkQuery('')
+    setConnecting(false)
+  }
+
+  const handleBuildOn = () => {
+    if (!active) return
+    const created = createNote({
+      title: 'Building on…',
+      body: '',
+      topicId: active.topicId,
+    })
+    addLink(created.id, active.id, 'extends')
+    setActiveId(created.id)
+    onBuilt?.(created.id)
+    onEdit?.(created.id)
+  }
+
   if (!active) {
     return <p className="zettel-stack-empty">Note not found.</p>
   }
 
   const topic = active.topicId ? getTopic(active.topicId) : undefined
   const linkCount = linkedIds(activeId).length
+  const hasSourceBehind = stack.some((item) => item.kind === 'source' || item.relation === 'out')
 
   return (
     <div
@@ -153,13 +216,17 @@ export function ZettelStack({
                   {item.relation === 'self'
                     ? linkCount > 0
                       ? `${linkCount} linked`
-                      : 'Note'
+                      : 'Your note'
                     : item.relation === 'in'
                       ? `← ${item.kind ?? 'backlink'}`
-                      : `→ ${item.kind ?? 'link'}`}
+                      : item.kind === 'source'
+                        ? '→ source'
+                        : `→ ${item.kind ?? 'link'}`}
                 </span>
                 {item.note.topicId && (
-                  <span className="zettel-stack-topic">#{getTopic(item.note.topicId)?.name ?? item.note.topicId}</span>
+                  <span className="zettel-stack-topic">
+                    #{getTopic(item.note.topicId)?.name ?? item.note.topicId}
+                  </span>
                 )}
               </header>
               <h3 className="zettel-stack-title">{item.note.title}</h3>
@@ -233,17 +300,70 @@ export function ZettelStack({
 
       {outbound.length === 0 && inbound.length === 0 && (
         <p className="zettel-stack-orphan-hint">
-          Orphan note — edit and link it so Ask can pull neighbors in.
+          Lonely note — Connect it to another thought so Ask can pull neighbors in.
         </p>
       )}
 
-      {onEdit && (
-        <div className="zettel-stack-actions">
+      {hasSourceBehind && linkCount === 1 && (
+        <p className="zettel-stack-orphan-hint">
+          Stacked on its source. Connect another thought or Build on this to grow the pile.
+        </p>
+      )}
+
+      {connecting && (
+        <div className="zettel-stack-connect">
+          <div className="zettel-stack-connect-row">
+            <select
+              value={linkKind}
+              onChange={(e) => setLinkKind(e.target.value as ZettelLinkKind)}
+              aria-label="Link kind"
+            >
+              {LINK_KINDS.map((k) => (
+                <option key={k.id} value={k.id}>
+                  {k.label}
+                </option>
+              ))}
+            </select>
+            <input
+              value={linkQuery}
+              onChange={(e) => setLinkQuery(e.target.value)}
+              placeholder="Search notes to connect…"
+              autoFocus
+            />
+            <button type="button" className="btn btn-ghost" onClick={() => setConnecting(false)}>
+              Cancel
+            </button>
+          </div>
+          {suggestions.length > 0 && (
+            <ul className="zettel-stack-suggest">
+              {suggestions.map((n) => (
+                <li key={n.id}>
+                  <button type="button" onClick={() => handleConnect(n.id)}>
+                    {n.title}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+          {linkQuery.trim() && suggestions.length === 0 && (
+            <p className="zettel-stack-orphan-hint">No matching notes — try another word or tag.</p>
+          )}
+        </div>
+      )}
+
+      <div className="zettel-stack-actions">
+        <button type="button" className="btn btn-primary" onClick={() => setConnecting(true)}>
+          Connect
+        </button>
+        <button type="button" className="btn btn-ghost" onClick={handleBuildOn}>
+          Build on
+        </button>
+        {onEdit && (
           <button type="button" className="btn btn-ghost" onClick={() => onEdit(activeId)}>
             Edit note
           </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }

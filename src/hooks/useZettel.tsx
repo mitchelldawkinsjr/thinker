@@ -4,11 +4,14 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from 'react'
 import type { Thought } from '../data/thoughts'
+import { thoughtToIdea } from '../data/thoughts'
 import {
+  applyThoughtToStack,
   linkedNoteIds,
   mergeZettelExport,
   neighborsOf,
@@ -19,7 +22,6 @@ import {
   parseZettelExport,
   shortTitle,
   tagIndex,
-  thoughtToZettel,
   type ZettelExport,
   type ZettelLink,
   type ZettelLinkKind,
@@ -30,6 +32,7 @@ import { useThoughts } from './useThoughts'
 const NOTES_KEY = 'thinker-zettel-notes-v1'
 const LINKS_KEY = 'thinker-zettel-links-v1'
 const MIGRATED_KEY = 'thinker-zettel-migrated-v1'
+const SOURCE_BACKFILL_KEY = 'thinker-zettel-source-backfill-v1'
 
 type ZettelContextValue = {
   notes: ZettelNote[]
@@ -123,47 +126,14 @@ function migrateFromThoughts(thoughts: Thought[]): {
   notes: ZettelNote[]
   links: ZettelLink[]
 } {
-  const notes: ZettelNote[] = []
-  const links: ZettelLink[] = []
-  const byThought = new Map<string, ZettelNote>()
-
+  let notes: ZettelNote[] = []
+  let links: ZettelLink[] = []
   for (const t of thoughts) {
-    const z = thoughtToZettel(t)
-    notes.push(z)
-    byThought.set(t.id, z)
+    const promoted = t.promotedIdeaId ? thoughtToIdea(t) : undefined
+    const next = applyThoughtToStack(notes, links, t, promoted)
+    notes = next.notes
+    links = next.links
   }
-
-  for (const t of thoughts) {
-    const from = byThought.get(t.id)
-    if (!from) continue
-    if (t.promotedIdeaId) {
-      // Link note → any other note that was derived into the same idea id
-      for (const other of notes) {
-        if (other.id === from.id) continue
-        if (other.sourceIdeaId === t.promotedIdeaId) {
-          links.push({
-            id: newLinkId(),
-            from: from.id,
-            to: other.id,
-            kind: 'derived',
-          })
-        }
-      }
-    }
-    // Parent idea: soft source edge if another zettel shares that idea id
-    if (t.parent.kind === 'idea') {
-      const parentZ = notes.find((n) => n.sourceIdeaId === t.parent.id && n.id !== from.id)
-      if (parentZ) {
-        links.push({
-          id: newLinkId(),
-          from: from.id,
-          to: parentZ.id,
-          kind: 'source',
-        })
-      }
-    }
-  }
-
   return { notes, links }
 }
 
@@ -172,6 +142,10 @@ export function ZettelProvider({ children }: { children: ReactNode }) {
   const [notes, setNotes] = useState(loadNotes)
   const [links, setLinks] = useState(loadLinks)
   const [ready, setReady] = useState(false)
+  const notesRef = useRef(notes)
+  const linksRef = useRef(links)
+  notesRef.current = notes
+  linksRef.current = links
 
   // One-time migration from thoughts → slip box
   useEffect(() => {
@@ -192,6 +166,28 @@ export function ZettelProvider({ children }: { children: ReactNode }) {
     }
     setReady(true)
   }, [thoughts, notes.length])
+
+  // Backfill source slips + links for keeps that predate stack wiring
+  useEffect(() => {
+    if (!ready) return
+    try {
+      if (localStorage.getItem(SOURCE_BACKFILL_KEY)) return
+      localStorage.setItem(SOURCE_BACKFILL_KEY, '1')
+      if (thoughts.length === 0) return
+      let nextNotes = notesRef.current
+      let nextLinks = linksRef.current
+      for (const t of thoughts) {
+        const promoted = t.promotedIdeaId ? thoughtToIdea(t) : undefined
+        const applied = applyThoughtToStack(nextNotes, nextLinks, t, promoted)
+        nextNotes = applied.notes
+        nextLinks = applied.links
+      }
+      setNotes(nextNotes)
+      setLinks(nextLinks)
+    } catch {
+      // private mode
+    }
+  }, [ready, thoughts])
 
   useEffect(() => {
     if (!ready) return
@@ -328,28 +324,13 @@ export function ZettelProvider({ children }: { children: ReactNode }) {
   )
 
   const syncFromThought = useCallback((thought: Thought) => {
-    const z = thoughtToZettel(thought)
-    setNotes((prev) => {
-      const existing = prev.find(
-        (n) => n.sourceThoughtId === thought.id || n.id === z.id,
-      )
-      if (existing) {
-        return prev.map((n) =>
-          n.id === existing.id
-            ? {
-                ...n,
-                title: z.title,
-                body: z.body || n.body,
-                updatedAt: new Date().toISOString(),
-                sourceIdeaId: z.sourceIdeaId ?? n.sourceIdeaId,
-                topicId: z.topicId ?? n.topicId,
-              }
-            : n,
-        )
-      }
-      return [z, ...prev]
-    })
-    return z
+    const promoted = thought.promotedIdeaId ? thoughtToIdea(thought) : undefined
+    const applied = applyThoughtToStack(notesRef.current, linksRef.current, thought, promoted)
+    notesRef.current = applied.notes
+    linksRef.current = applied.links
+    setNotes(applied.notes)
+    setLinks(applied.links)
+    return applied.thoughtNote
   }, [])
 
   const upsertFromIdea = useCallback(
@@ -377,9 +358,12 @@ export function ZettelProvider({ children }: { children: ReactNode }) {
       }
 
       setNotes((prev) => {
-        const existing = prev.find((n) => n.sourceIdeaId === idea.id)
+        // Prefer a dedicated idea slip — never overwrite a thought note
+        const existing =
+          prev.find((n) => n.sourceIdeaId === idea.id && !n.sourceThoughtId) ??
+          prev.find((n) => n.sourceIdeaId === idea.id)
         let nextNotes: ZettelNote[]
-        if (existing) {
+        if (existing && !existing.sourceThoughtId) {
           result = {
             ...existing,
             title: shortTitle(idea.title),

@@ -1,5 +1,5 @@
 import type { TopicId } from './types'
-import type { Thought } from './thoughts'
+import type { Thought, ThoughtParent } from './thoughts'
 import { isListeningThought } from './thoughts'
 
 /** Atomic slip-box note (zettel). */
@@ -49,6 +49,39 @@ export function shortTitle(text: string, max = 72): string {
   return `${t.slice(0, max - 1).trimEnd()}…`
 }
 
+/** Stable slip id for the original card behind a keep. */
+export function parentSourceZettelId(parent: ThoughtParent): string {
+  return `zk-src-${parent.kind}-${parent.id}`
+}
+
+/** Slip representing the source card a thought was kept from. */
+export function parentToSourceZettel(parent: ThoughtParent): ZettelNote {
+  const now = new Date().toISOString()
+  const bodyParts = [
+    parent.body?.trim() || null,
+    parent.kind === 'scripture' && parent.verseText
+      ? `“${parent.verseText}” — ${parent.reference ?? parent.source}`
+      : null,
+    parent.source ? `Source · ${parent.source}` : null,
+  ].filter(Boolean)
+
+  return {
+    id: parentSourceZettelId(parent),
+    title: shortTitle(parent.title),
+    body: bodyParts.join('\n\n') || parent.title,
+    createdAt: now,
+    updatedAt: now,
+    topicId: parent.topicId,
+    sourceIdeaId: parent.kind === 'idea' ? parent.id : undefined,
+    tags: ['source'],
+  }
+}
+
+/** Deterministic slip id for a thought. */
+export function thoughtZettelId(thoughtId: string): string {
+  return `zk-th-${thoughtId}`
+}
+
 /** Build a zettel from an existing Thought (migration / sync). */
 export function thoughtToZettel(thought: Thought): ZettelNote {
   const note = thought.note.trim()
@@ -72,17 +105,140 @@ export function thoughtToZettel(thought: Thought): ZettelNote {
   ].filter(Boolean)
 
   return {
-    id: `zk-th-${thought.id}`,
+    id: thoughtZettelId(thought.id),
     title,
     body: bodyParts.join('\n\n') || thought.parent.title,
     createdAt: now,
     updatedAt: now,
     topicId: thought.parent.topicId,
     sourceThoughtId: thought.id,
-    sourceIdeaId:
-      thought.promotedIdeaId ||
-      (thought.parent.kind === 'idea' ? thought.parent.id : undefined),
+    // Promoted card id when present; parent idea is linked via a source slip instead
+    sourceIdeaId: thought.promotedIdeaId,
   }
+}
+
+function ensureLink(
+  links: ZettelLink[],
+  from: string,
+  to: string,
+  kind: ZettelLinkKind,
+): ZettelLink[] {
+  if (from === to) return links
+  if (links.some((l) => l.from === from && l.to === to && l.kind === kind)) return links
+  return [...links, { id: newLinkId(), from, to, kind }]
+}
+
+/**
+ * Upsert a thought slip, its parent source slip, and optional promoted-idea slip.
+ * Wires `source` (thought → parent) and `derived` (thought → promoted) links.
+ */
+export function applyThoughtToStack(
+  notes: ZettelNote[],
+  links: ZettelLink[],
+  thought: Thought,
+  promotedIdea?: {
+    id: string
+    title: string
+    body: string
+    topicId?: TopicId
+    takeaway?: string
+    hook?: string
+  },
+): { notes: ZettelNote[]; links: ZettelLink[]; thoughtNote: ZettelNote } {
+  const z = thoughtToZettel(thought)
+  const parentTemplate = parentToSourceZettel(thought.parent)
+  const now = new Date().toISOString()
+  let nextNotes = [...notes]
+  let nextLinks = [...links]
+
+  const existingThought = nextNotes.find(
+    (n) => n.sourceThoughtId === thought.id || n.id === z.id,
+  )
+  let thoughtNote: ZettelNote
+  if (existingThought) {
+    thoughtNote = {
+      ...existingThought,
+      title: z.title,
+      body: z.body || existingThought.body,
+      updatedAt: now,
+      sourceIdeaId: z.sourceIdeaId ?? existingThought.sourceIdeaId,
+      topicId: z.topicId ?? existingThought.topicId,
+    }
+    nextNotes = nextNotes.map((n) => (n.id === existingThought.id ? thoughtNote : n))
+  } else {
+    thoughtNote = z
+    nextNotes = [z, ...nextNotes]
+  }
+
+  const existingParent =
+    nextNotes.find((n) => n.id === parentTemplate.id) ||
+    (thought.parent.kind === 'idea'
+      ? nextNotes.find(
+          (n) =>
+            n.sourceIdeaId === thought.parent.id &&
+            !n.sourceThoughtId &&
+            n.id !== thoughtNote.id,
+        )
+      : undefined)
+
+  let parentId: string
+  if (existingParent) {
+    parentId = existingParent.id
+    if (!existingParent.body?.trim() && parentTemplate.body) {
+      nextNotes = nextNotes.map((n) =>
+        n.id === existingParent.id
+          ? { ...n, body: parentTemplate.body, updatedAt: now }
+          : n,
+      )
+    }
+  } else {
+    parentId = parentTemplate.id
+    nextNotes = [parentTemplate, ...nextNotes]
+  }
+
+  nextLinks = ensureLink(nextLinks, thoughtNote.id, parentId, 'source')
+
+  if (promotedIdea && promotedIdea.id !== thought.parent.id) {
+    const body = [promotedIdea.takeaway, promotedIdea.body, promotedIdea.hook]
+      .filter(Boolean)
+      .join('\n\n')
+    const existingIdea = nextNotes.find(
+      (n) =>
+        n.sourceIdeaId === promotedIdea.id &&
+        !n.sourceThoughtId &&
+        n.id !== thoughtNote.id,
+    )
+    let ideaNoteId: string
+    if (existingIdea) {
+      ideaNoteId = existingIdea.id
+      nextNotes = nextNotes.map((n) =>
+        n.id === existingIdea.id
+          ? {
+              ...n,
+              title: shortTitle(promotedIdea.title),
+              body: body || n.body,
+              topicId: (promotedIdea.topicId as ZettelNote['topicId']) ?? n.topicId,
+              updatedAt: now,
+            }
+          : n,
+      )
+    } else {
+      const ideaNote: ZettelNote = {
+        id: newZettelId(),
+        title: shortTitle(promotedIdea.title),
+        body: body || promotedIdea.title,
+        createdAt: now,
+        updatedAt: now,
+        topicId: promotedIdea.topicId as ZettelNote['topicId'],
+        sourceIdeaId: promotedIdea.id,
+      }
+      nextNotes = [ideaNote, ...nextNotes]
+      ideaNoteId = ideaNote.id
+    }
+    nextLinks = ensureLink(nextLinks, thoughtNote.id, ideaNoteId, 'derived')
+  }
+
+  return { notes: nextNotes, links: nextLinks, thoughtNote }
 }
 
 export function neighborsOf(

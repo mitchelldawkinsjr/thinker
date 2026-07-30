@@ -212,7 +212,70 @@
 
 .zettel-stack-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.zettel-stack-connect {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  border-radius: 1rem;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+}
+
+.zettel-stack-connect-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.zettel-stack-connect-row select,
+.zettel-stack-connect-row input {
+  font: inherit;
+  font-size: 0.92rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  background: color-mix(in srgb, var(--surface) 70%, white 30%);
+  color: var(--ink);
+}
+
+.zettel-stack-connect-row input {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.zettel-stack-suggest {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.zettel-stack-suggest button {
+  appearance: none;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.65rem;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.zettel-stack-suggest button:hover {
+  background: color-mix(in srgb, var(--zk-accent) 12%, var(--surface));
+  border-color: color-mix(in srgb, var(--zk-accent) 30%, transparent);
 }
 
 @media (max-width: 560px) {

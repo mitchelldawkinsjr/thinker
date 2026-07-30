@@ -4,9 +4,10 @@ import type { Idea } from '../data/types'
 import { presentIdea } from '../data/presentIdea'
 import { getTopic } from '../data/topics'
 import { gutenbergUrl } from '../data/gutenberg'
-import { parentFromIdea } from '../data/thoughts'
+import { parentFromIdea, type Thought } from '../data/thoughts'
 import { useKept } from '../hooks/useKept'
 import { useDraftReview } from '../hooks/useDraftReview'
+import { useKeepStack } from '../hooks/useKeepStack'
 import { useThoughts } from '../hooks/useThoughts'
 import { ExternalCta, ExternalLinkIcon, sourceMediaParts } from './CardMedia'
 import { CardFlip, CardNoteBack } from './CardFlip'
@@ -58,6 +59,7 @@ export function IdeaCard({
   const topic = getTopic(idea.topicId)
   const { kept, toggle } = useKept()
   const { saveMoment, updateNote, promote, demote, thoughts } = useThoughts()
+  const { keepToStack } = useKeepStack()
   const { approve, deny, isPending } = useDraftReview()
   const reviewing = Boolean(idea.draftReview) && isPending(idea.id)
   const saved = kept.has(idea.id)
@@ -125,11 +127,22 @@ export function IdeaCard({
     : parentFromIdea({ ...idea, audioUrl: sourceHref })
 
   const commitNote = (note: string, promoteIt: boolean) => {
+    const trimmed = note.trim()
+    let thought: Thought
     if (noteMode === 'keep' && keepThought) {
       updateNote(keepThought.id, note)
-      if (promoteIt && !keepThought.promotedIdeaId) promote(keepThought.id)
+      if (promoteIt && !keepThought.promotedIdeaId) {
+        const ideaCard = promote(keepThought.id, trimmed)
+        thought = {
+          ...keepThought,
+          note: trimmed,
+          promotedIdeaId: ideaCard?.id ?? `thought-${keepThought.id}`,
+        }
+      } else {
+        thought = { ...keepThought, note: trimmed }
+      }
     } else {
-      saveMoment({
+      thought = saveMoment({
         parent: noteMode === 'moment' ? momentParent : parentFromIdea(idea),
         startSec: noteMode === 'moment' ? momentAt : 0,
         note,
@@ -138,6 +151,8 @@ export function IdeaCard({
     }
     // Always keep the source card — Save as idea adds a second card, it doesn't replace this one
     if (!saved) toggle(idea.id)
+    // Compact Kept edits stay put; feed Keep lands on the new stack
+    keepToStack(thought, { land: !compact })
   }
   // Prefer dedicated audioUrl for the player; keep sourceUrl as the page CTA when present.
   const media = audioParts?.media ?? sourceParts?.media

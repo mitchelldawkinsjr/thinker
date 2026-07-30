@@ -14,6 +14,7 @@ import { BookIcon, KeepIcon, NextIcon, PrevIcon } from './ActionIcons'
 import { resolvePlayableUrl } from '../lib/mediaUrl'
 import { formatAudioTime } from '../lib/formatTime'
 import { useThoughts } from '../hooks/useThoughts'
+import { useKeepStack } from '../hooks/useKeepStack'
 import {
   parentFromBook,
   parentFromNews,
@@ -129,6 +130,7 @@ export function ResourceFeedCard({
   resource: LearningResource
 } & NavProps) {
   const { thoughts, saveMoment } = useThoughts()
+  const { keepToStack } = useKeepStack()
   const [flipped, setFlipped] = useState(false)
   const parts = sourceMediaParts(resource.url, 'Open site')
   const alreadyKept = thoughts.some(
@@ -182,14 +184,15 @@ export function ResourceFeedCard({
           placeholder="What stuck? One line is enough — export seeds into the idea loop later."
           active={flipped}
           onCancel={() => setFlipped(false)}
-          onSave={(note, promote) =>
-            saveMoment({
+          onSave={(note, promote) => {
+            const thought = saveMoment({
               parent: parentFromResource(resource),
               startSec: 0,
               note,
               promote,
             })
-          }
+            keepToStack(thought, { land: true })
+          }}
         />
       }
     />
@@ -229,6 +232,7 @@ export function BookFeedCard({
   surface?: string
 } & NavProps) {
   const { thoughts, saveMoment } = useThoughts()
+  const { keepToStack } = useKeepStack()
   const [flipped, setFlipped] = useState(false)
   const parts = sourceMediaParts(url, ctaLabel)
   const alreadyKept = thoughts.some((t) => t.parent.kind === 'book' && t.parent.id === id)
@@ -289,14 +293,15 @@ export function BookFeedCard({
           placeholder="What stuck? One line is enough — export seeds into the idea loop later."
           active={flipped}
           onCancel={() => setFlipped(false)}
-          onSave={(note, promote) =>
-            saveMoment({
+          onSave={(note, promote) => {
+            const thought = saveMoment({
               parent: parentFromBook({ id, title, author, why, url, topicId }),
               startSec: 0,
               note,
               promote,
             })
-          }
+            keepToStack(thought, { land: true })
+          }}
         />
       }
     />
@@ -317,6 +322,7 @@ export function NewsFeedCard({
   const topics = news.topicIds.map((t) => `#${t}`).join(' · ')
   const primary = resolvePlayableUrl(news.sourceUrl, news.angles).url
   const { saveMoment, thoughts } = useThoughts()
+  const { keepToStack } = useKeepStack()
   const [flipped, setFlipped] = useState(false)
   const [momentAt, setMomentAt] = useState(0)
   const [noteMode, setNoteMode] = useState<'moment' | 'keep'>('keep')
@@ -338,12 +344,13 @@ export function NewsFeedCard({
   })
 
   const commitMoment = (note: string, promote: boolean) => {
-    saveMoment({
+    const thought = saveMoment({
       parent: parentFromNews(news, primary),
       startSec: noteMode === 'moment' ? momentAt : 0,
       note,
       promote,
     })
+    keepToStack(thought, { land: true })
   }
   const isPolitics = news.topicIds.includes('politics')
   const [copied, setCopied] = useState(false)
@@ -499,6 +506,7 @@ export function ScriptureFeedCard({
   const topics = scripture.topicIds.map((t) => `#${t}`).join(' · ')
   const href = bibleAppPassageUrl(scripture)
   const { thoughts, saveMoment } = useThoughts()
+  const { keepToStack } = useKeepStack()
   const [flipped, setFlipped] = useState(false)
 
   const alreadyKept = thoughts.some(
@@ -588,14 +596,15 @@ export function ScriptureFeedCard({
           placeholder="What stuck? One line is enough — export seeds into the idea loop later."
           active={flipped}
           onCancel={() => setFlipped(false)}
-          onSave={(note, promote) =>
-            saveMoment({
+          onSave={(note, promote) => {
+            const thought = saveMoment({
               parent: parentFromScripture(scripture),
               startSec: 0,
               note,
               promote,
             })
-          }
+            keepToStack(thought, { land: true })
+          }}
         />
       }
     />
