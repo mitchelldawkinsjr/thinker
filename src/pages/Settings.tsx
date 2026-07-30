@@ -16,7 +16,10 @@ import {
   type ContentKindKey,
   type KindWeightKey,
 } from '../data/subscriptions'
-import { TopicPicker } from '../components/TopicPicker'
+import {
+  formatTopicSummary,
+  TopicAssignLightbox,
+} from '../components/TopicAssignLightbox'
 import { MAX_CUSTOM_TOPICS } from '../data/userTopics'
 import type { Topic, TopicId } from '../data/types'
 import { useSubscriptions } from '../hooks/useSubscriptions'
@@ -94,6 +97,16 @@ export function Settings() {
   const [queueConfigured, setQueueConfigured] = useState(false)
   const [queueRepo, setQueueRepo] = useState<string | undefined>()
 
+  type TopicEditTarget =
+    | { kind: 'curated'; id: string; name: string }
+    | { kind: 'customFeed'; id: string; name: string; url: string }
+    | { kind: 'customSite'; id: string; name: string; url: string }
+    | { kind: 'draftFeed' }
+    | { kind: 'draftSite' }
+
+  const [topicEdit, setTopicEdit] = useState<TopicEditTarget | null>(null)
+  const [sourceQuery, setSourceQuery] = useState('')
+
   useEffect(() => {
     void fetchGithubQueueStatus().then((s) => {
       setQueueConfigured(s.configured)
@@ -106,6 +119,17 @@ export function Settings() {
     [subscriptions.disabledFeedIds],
   )
   const followed = useMemo(() => new Set(subscriptions.topics), [subscriptions.topics])
+
+  const curatedFeedMatches = useMemo(() => {
+    const q = sourceQuery.trim().toLowerCase()
+    if (!q) return curatedNewsFeeds
+    return curatedNewsFeeds.filter(
+      (f) =>
+        f.name.toLowerCase().includes(q) ||
+        f.id.toLowerCase().includes(q) ||
+        f.topicIds.some((id) => id.toLowerCase().includes(q)),
+    )
+  }, [sourceQuery])
 
   const siteTopicGroups = useMemo(() => {
     const catalog: Topic[] = []
@@ -259,6 +283,15 @@ export function Settings() {
     removeCustomFeed(id)
     clearUserNewsForFeed(id)
   }
+
+  const editingCustomFeed =
+    topicEdit?.kind === 'customFeed'
+      ? subscriptions.customFeeds.find((f) => f.id === topicEdit.id)
+      : undefined
+  const editingCustomSite =
+    topicEdit?.kind === 'customSite'
+      ? subscriptions.customSites.find((s) => s.id === topicEdit.id)
+      : undefined
 
   function onAddTopic(e: FormEvent) {
     e.preventDefault()
@@ -536,41 +569,64 @@ export function Settings() {
       <section className="settings-section" aria-labelledby="news-heading">
         <h2 id="news-heading">News sources</h2>
         <p className="settings-lead">
-          Mute curated outlets without turning all news off. Change topics to control which
-          topic filters they appear under. Needs the News content type enabled.
+          Find a source, then open it to set topics. Mute without turning all news off. Needs the
+          News content type enabled.
         </p>
-        <ul className="settings-list settings-list-feeds">
-          {curatedNewsFeeds.map((f) => {
-            const on = !muted.has(f.id)
-            const selected =
-              effectiveCuratedFeedTopics(f.id, subscriptions.feedTopicOverrides) ??
-              f.topicIds
-            return (
-              <li key={f.id} className="settings-list-item-stack">
-                <div className="settings-list-item-head">
-                  <label className="settings-toggle settings-toggle-inline">
-                    <input
-                      type="checkbox"
-                      checked={on}
-                      onChange={(e) => setFeedMuted(f.id, !e.target.checked)}
-                    />
-                    <span>
-                      <strong>{f.name}</strong>
-                    </span>
-                  </label>
-                </div>
-                <TopicPicker
-                  topics={topics}
-                  groups={feedTopicGroups}
-                  selected={selected}
-                  onToggle={(id) => toggleCuratedFeedTopic(f.id, id)}
-                  label="Topics"
-                  hint="Overrides the catalog default for this outlet on this device."
-                />
-              </li>
-            )
-          })}
-        </ul>
+        <label className="settings-source-search">
+          <span className="settings-field-label">Find a source</span>
+          <input
+            type="search"
+            value={sourceQuery}
+            onChange={(e) => setSourceQuery(e.target.value)}
+            placeholder="Name or topic…"
+            autoComplete="off"
+          />
+        </label>
+        {!sourceQuery.trim() ? (
+          <p className="settings-pending">
+            {curatedNewsFeeds.length} outlets — type to find one, then tap it to change topics.
+          </p>
+        ) : curatedFeedMatches.length === 0 ? (
+          <p className="settings-pending">No sources match “{sourceQuery.trim()}”.</p>
+        ) : (
+          <ul className="settings-list settings-list-feeds settings-list-compact">
+            {curatedFeedMatches.map((f) => {
+              const on = !muted.has(f.id)
+              const selected =
+                effectiveCuratedFeedTopics(f.id, subscriptions.feedTopicOverrides) ??
+                f.topicIds
+              return (
+                <li key={f.id}>
+                  <div className="settings-source-row">
+                    <label
+                      className="settings-toggle settings-toggle-inline"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={on}
+                        onChange={(e) => setFeedMuted(f.id, !e.target.checked)}
+                      />
+                      <span className="settings-sr-only">Enabled</span>
+                    </label>
+                    <button
+                      type="button"
+                      className="settings-source-open"
+                      onClick={() =>
+                        setTopicEdit({ kind: 'curated', id: f.id, name: f.name })
+                      }
+                    >
+                      <span className="settings-source-name">{f.name}</span>
+                      <span className="settings-source-topics">
+                        {formatTopicSummary(selected, topics)}
+                      </span>
+                    </button>
+                  </div>
+                </li>
+              )
+            })}
+          </ul>
+        )}
       </section>
 
       <section className="settings-section" aria-labelledby="sites-heading">
@@ -607,30 +663,45 @@ export function Settings() {
               placeholder="Why this belongs in your mix"
             />
           </label>
-          <TopicPicker
-            topics={topics}
-            groups={siteTopicGroups}
-            selected={siteTopics}
-            onToggle={toggleSiteTopic}
-            optional
-            hint="Tag with catalog or your custom topics so the site shows in the right mix."
-          />
+          <button
+            type="button"
+            className="settings-source-topics-btn"
+            onClick={() => setTopicEdit({ kind: 'draftSite' })}
+          >
+            <span className="settings-field-label">
+              Topics <span className="settings-optional">(optional)</span>
+            </span>
+            <span className="settings-source-topics">
+              {formatTopicSummary(siteTopics, topics)}
+            </span>
+          </button>
           {siteError && <p className="settings-error">{siteError}</p>}
           <button type="submit" className="settings-primary">
             Add site
           </button>
         </form>
         {subscriptions.customSites.length > 0 && (
-          <ul className="settings-list">
+          <ul className="settings-list settings-list-compact">
             {subscriptions.customSites.map((s) => (
-              <li key={s.id} className="settings-list-item-stack">
-                <div className="settings-list-item-head">
-                  <div>
-                    <a href={s.url} target="_blank" rel="noreferrer">
-                      {s.name}
-                    </a>
-                    <small>{s.url}</small>
-                  </div>
+              <li key={s.id}>
+                <div className="settings-source-row">
+                  <button
+                    type="button"
+                    className="settings-source-open"
+                    onClick={() =>
+                      setTopicEdit({
+                        kind: 'customSite',
+                        id: s.id,
+                        name: s.name,
+                        url: s.url,
+                      })
+                    }
+                  >
+                    <span className="settings-source-name">{s.name}</span>
+                    <span className="settings-source-topics">
+                      {formatTopicSummary(s.topicHints ?? [], topics)}
+                    </span>
+                  </button>
                   <button
                     type="button"
                     className="settings-danger"
@@ -639,14 +710,6 @@ export function Settings() {
                     Remove
                   </button>
                 </div>
-                <TopicPicker
-                  topics={topics}
-                  groups={siteTopicGroups}
-                  selected={s.topicHints ?? []}
-                  onToggle={(id) => toggleExistingSiteTopic(s.id, id)}
-                  label="Topics"
-                  optional
-                />
               </li>
             ))}
           </ul>
@@ -678,13 +741,16 @@ export function Settings() {
               required
             />
           </label>
-          <TopicPicker
-            topics={topics}
-            groups={feedTopicGroups}
-            selected={feedTopics}
-            onToggle={toggleFeedTopic}
-            hint="Suggested news topics first — your custom topics appear under Yours."
-          />
+          <button
+            type="button"
+            className="settings-source-topics-btn"
+            onClick={() => setTopicEdit({ kind: 'draftFeed' })}
+          >
+            <span className="settings-field-label">Topics</span>
+            <span className="settings-source-topics">
+              {formatTopicSummary(feedTopics, topics)}
+            </span>
+          </button>
           {feedError && <p className="settings-error">{feedError}</p>}
           {feedOk && <p className="settings-ok">{feedOk}</p>}
           <button type="submit" className="settings-primary" disabled={feedBusy}>
@@ -692,43 +758,40 @@ export function Settings() {
           </button>
         </form>
         {subscriptions.customFeeds.length > 0 && (
-          <ul className="settings-list settings-list-feeds">
+          <ul className="settings-list settings-list-feeds settings-list-compact">
             {subscriptions.customFeeds.map((f) => (
-              <li key={f.id} className="settings-list-item-stack">
-                <div className="settings-list-item-head">
-                  <div className="settings-feed-row">
-                    <label className="settings-toggle settings-toggle-inline">
-                      <input
-                        type="checkbox"
-                        checked={f.enabled}
-                        onChange={(e) => updateCustomFeed(f.id, { enabled: e.target.checked })}
-                      />
-                      <span>
-                        <strong>{f.name}</strong>
-                        <small>{f.url}</small>
-                      </span>
-                    </label>
-                    <label className="settings-weight">
-                      <span className="settings-weight-label">
-                        Weight <em>{clampFeedWeight(f.weight)}</em>
-                        <span className="settings-optional">
-                          {weightHint(clampFeedWeight(f.weight))}
-                        </span>
-                      </span>
-                      <input
-                        type="range"
-                        min={CUSTOM_FEED_WEIGHT_MIN}
-                        max={CUSTOM_FEED_WEIGHT_MAX}
-                        step={1}
-                        value={clampFeedWeight(f.weight)}
-                        disabled={!f.enabled}
-                        aria-label={`Weight for ${f.name}`}
-                        onChange={(e) =>
-                          updateCustomFeed(f.id, { weight: Number(e.target.value) })
-                        }
-                      />
-                    </label>
-                  </div>
+              <li key={f.id}>
+                <div className="settings-source-row">
+                  <label
+                    className="settings-toggle settings-toggle-inline"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={f.enabled}
+                      onChange={(e) => updateCustomFeed(f.id, { enabled: e.target.checked })}
+                    />
+                    <span className="settings-sr-only">Enabled</span>
+                  </label>
+                  <button
+                    type="button"
+                    className="settings-source-open"
+                    onClick={() =>
+                      setTopicEdit({
+                        kind: 'customFeed',
+                        id: f.id,
+                        name: f.name,
+                        url: f.url,
+                      })
+                    }
+                  >
+                    <span className="settings-source-name">{f.name}</span>
+                    <span className="settings-source-topics">
+                      {formatTopicSummary(f.topicIds, topics)}
+                      {' · '}
+                      w{clampFeedWeight(f.weight)}
+                    </span>
+                  </button>
                   <button
                     type="button"
                     className="settings-danger"
@@ -737,13 +800,6 @@ export function Settings() {
                     Remove
                   </button>
                 </div>
-                <TopicPicker
-                  topics={topics}
-                  groups={feedTopicGroups}
-                  selected={f.topicIds}
-                  onToggle={(id) => toggleExistingFeedTopic(f.id, id)}
-                  label="Topics"
-                />
               </li>
             ))}
           </ul>
@@ -787,6 +843,95 @@ export function Settings() {
           Reset all preferences
         </button>
       </section>
+
+      {topicEdit?.kind === 'curated' && (
+        <TopicAssignLightbox
+          title={topicEdit.name}
+          detail="Choose which topic filters this outlet appears under."
+          topics={topics}
+          groups={feedTopicGroups}
+          selected={
+            effectiveCuratedFeedTopics(topicEdit.id, subscriptions.feedTopicOverrides) ??
+            curatedNewsFeeds.find((f) => f.id === topicEdit.id)?.topicIds ??
+            []
+          }
+          onToggle={(id) => toggleCuratedFeedTopic(topicEdit.id, id)}
+          hint="Overrides the catalog default for this outlet on this device."
+          onClose={() => setTopicEdit(null)}
+        />
+      )}
+
+      {topicEdit?.kind === 'customFeed' && editingCustomFeed && (
+        <TopicAssignLightbox
+          title={editingCustomFeed.name}
+          detail={editingCustomFeed.url}
+          topics={topics}
+          groups={feedTopicGroups}
+          selected={editingCustomFeed.topicIds}
+          onToggle={(id) => toggleExistingFeedTopic(editingCustomFeed.id, id)}
+          onClose={() => setTopicEdit(null)}
+          footer={
+            <label className="settings-weight settings-weight--lightbox">
+              <span className="settings-weight-label">
+                Weight <em>{clampFeedWeight(editingCustomFeed.weight)}</em>
+                <span className="settings-optional">
+                  {weightHint(clampFeedWeight(editingCustomFeed.weight))}
+                </span>
+              </span>
+              <input
+                type="range"
+                min={CUSTOM_FEED_WEIGHT_MIN}
+                max={CUSTOM_FEED_WEIGHT_MAX}
+                step={1}
+                value={clampFeedWeight(editingCustomFeed.weight)}
+                disabled={!editingCustomFeed.enabled}
+                aria-label={`Weight for ${editingCustomFeed.name}`}
+                onChange={(e) =>
+                  updateCustomFeed(editingCustomFeed.id, { weight: Number(e.target.value) })
+                }
+              />
+            </label>
+          }
+        />
+      )}
+
+      {topicEdit?.kind === 'customSite' && editingCustomSite && (
+        <TopicAssignLightbox
+          title={editingCustomSite.name}
+          detail={editingCustomSite.url}
+          topics={topics}
+          groups={siteTopicGroups}
+          selected={editingCustomSite.topicHints ?? []}
+          onToggle={(id) => toggleExistingSiteTopic(editingCustomSite.id, id)}
+          optional
+          onClose={() => setTopicEdit(null)}
+        />
+      )}
+
+      {topicEdit?.kind === 'draftFeed' && (
+        <TopicAssignLightbox
+          title="Feed topics"
+          detail="Suggested news topics first — your custom topics appear under Yours."
+          topics={topics}
+          groups={feedTopicGroups}
+          selected={feedTopics}
+          onToggle={toggleFeedTopic}
+          onClose={() => setTopicEdit(null)}
+        />
+      )}
+
+      {topicEdit?.kind === 'draftSite' && (
+        <TopicAssignLightbox
+          title="Site topics"
+          detail="Tag so the site shows in the right mix."
+          topics={topics}
+          groups={siteTopicGroups}
+          selected={siteTopics}
+          onToggle={toggleSiteTopic}
+          optional
+          onClose={() => setTopicEdit(null)}
+        />
+      )}
     </div>
   )
 }

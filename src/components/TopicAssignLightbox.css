@@ -1,0 +1,95 @@
+.topic-assign-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: color-mix(in srgb, #0a0c10 72%, transparent);
+  backdrop-filter: blur(8px);
+  animation: topic-assign-in 0.2s ease-out;
+}
+
+.topic-assign-panel {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 420px);
+  max-height: min(88vh, 640px);
+  border-radius: 1.15rem;
+  background: var(--surface, #f4f0ea);
+  color: var(--ink, #1a1a1a);
+  border: 1px solid color-mix(in srgb, var(--ink, #1a1a1a) 10%, transparent);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.topic-assign-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1rem 0.75rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink, #1a1a1a) 8%, transparent);
+}
+
+.topic-assign-heading {
+  min-width: 0;
+}
+
+.topic-assign-heading h2 {
+  margin: 0;
+  font-family: var(--font-display, inherit);
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.topic-assign-detail {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted, #6b6560);
+  word-break: break-all;
+}
+
+.topic-assign-close {
+  appearance: none;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink, #1a1a1a) 8%, transparent);
+  color: var(--ink, #1a1a1a);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.topic-assign-close:hover {
+  background: color-mix(in srgb, var(--ink, #1a1a1a) 14%, transparent);
+}
+
+.topic-assign-body {
+  flex: 1 1 auto;
+  overflow: auto;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.topic-assign-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--ink, #1a1a1a) 8%, transparent);
+}
+
+@keyframes topic-assign-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
