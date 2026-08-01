@@ -772,6 +772,15 @@ const FEEDS = [
       shorts: true,
       limit: 5,
     },
+    {
+      id: 'yt-legal-af-mtn',
+      name: 'Legal AF',
+      channelId: 'UCJgZJZZbnLFPr5GJdCuIwpA',
+      handle: 'LegalAFMTN',
+      topicIds: ['politics', 'current-events'],
+      shortsOnly: true,
+      limit: 6,
+    },
   ].flatMap((ch) => {
     const siteUrl = `https://www.youtube.com/@${ch.handle}`
     const limit = ch.limit ?? 5

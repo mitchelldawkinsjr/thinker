@@ -484,6 +484,11 @@ export const curatedNewsFeeds: CuratedNewsFeed[] = [
     topicIds: ['politics', 'current-events'],
   },
   {
+    id: 'yt-legal-af-mtn-shorts',
+    name: 'Legal AF · Shorts',
+    topicIds: ['politics', 'current-events'],
+  },
+  {
     id: 'yt-npr-podcasts-shorts',
     name: 'NPR Podcasts · Shorts',
     topicIds: ['current-events', 'politics'],
