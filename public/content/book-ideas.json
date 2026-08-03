@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T14:29:24.566Z",
+  "updatedAt": "2026-08-03T14:35:46.522Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -1120,6 +1120,20 @@
       "audioPageUrl": "https://www.20minutebooks.com/rich-dads-cashflow-quadrant"
     },
     {
+      "id": "20min-e39f1745bf86",
+      "topicId": "mental-models",
+      "title": "Should I Stay Or Should I Go",
+      "hook": "A ~27-minute listen on “Should I Stay Or Should I Go”",
+      "body": "Surviving A Relationship with a Narcissist",
+      "lesson": "Surviving A Relationship with a Narcissist. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Ramani Durvasula",
+      "source": "20 Minute Books · Ramani Durvasula",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/should-i-stay-or-should-i-go",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Should%20I%20Stay%20Or%20Should%20I%20Go.mp3",
+      "readMinutes": 27
+    },
+    {
       "id": "booksum-6741610ffab5",
       "topicId": "mental-models",
       "title": "Singletasking",
@@ -1362,20 +1376,6 @@
       "sourceType": "book",
       "sourceUrl": "https://www.20minutebooks.com/the-book-of-humans",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Book%20of%20Humans.mp3",
-      "readMinutes": 24
-    },
-    {
-      "id": "20min-cba5955e00b3",
-      "topicId": "mental-models",
-      "title": "The Brain",
-      "hook": "A ~24-minute listen on “The Brain”",
-      "body": "The Story of You",
-      "lesson": "The Story of You. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · David Eagleman",
-      "source": "20 Minute Books · David Eagleman",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/the-brain",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Brain.mp3",
       "readMinutes": 24
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T16:06:40.224Z",
+  "updatedAt": "2026-08-03T14:35:46.945Z",
   "source": "https://philosophersapi.com/api/philosophers",
   "batchSize": 36,
   "catalogSize": 114,
@@ -17,7 +17,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Edward_Said",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-elizabeth-anscombe-215cfefe",
@@ -32,7 +32,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/G._E._M._Anscombe",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-emma-goldman-80ec6998",
@@ -47,7 +47,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Emma_Goldman",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-epicurus-590e6793",
@@ -62,7 +62,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Epicurus",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-francis-bacon-4e6e7356",
@@ -77,7 +77,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Francis_Bacon",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-francis-fukuyama-18e45730",
@@ -92,7 +92,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Francis_Fukuyama",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-frantz-fanon-98c768d9",
@@ -107,7 +107,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Frantz_Fanon",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-friedrich-hayek-d719c6d9",
@@ -122,7 +122,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Friedrich_Hayek",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-friedrich-nietzsche-eede0b1a",
@@ -137,7 +137,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-georg-wilhelm-friedrich-hegel-1180aee2",
@@ -152,7 +152,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-george-berkeley-47279bda",
@@ -167,7 +167,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/George_Berkeley",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-georges-bataille-55ada2c7",
@@ -182,7 +182,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Georges_Bataille",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-giambattista-vico-c3cc174e",
@@ -197,7 +197,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Giambattista_Vico",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-gilles-deleuze-645f4a3b",
@@ -212,7 +212,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Gilles_Deleuze",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-gottfried-wilhelm-leibniz-c752b815",
@@ -227,7 +227,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-guy-debord-67d1a0d2",
@@ -242,7 +242,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Guy_Debord",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-hannah-arendt-e1d85de9",
@@ -257,7 +257,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Hannah_Arendt",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-henri-bergson-33164b45",
@@ -272,7 +272,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Henri_Bergson",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-henry-david-thoreau-9f6757b1",
@@ -287,7 +287,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Henry_David_Thoreau",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-heraclitus-410d7b25",
@@ -302,7 +302,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Heraclitus",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-herbert-marcuse-1b5a089d",
@@ -317,7 +317,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Herbert_Marcuse",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-herbert-spencer-5a8fe409",
@@ -332,7 +332,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Herbert_Spencer",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-immanuel-kant-8d0d5b08",
@@ -347,7 +347,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Immanuel_Kant",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-jacques-derrida-4c870661",
@@ -362,7 +362,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Jacques_Derrida",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-jacques-lacan-9361456c",
@@ -377,7 +377,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Jacques_Lacan",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-jane-addams-590670fa",
@@ -392,7 +392,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Jane_Addams",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-jean-baudrillard-78438be8",
@@ -407,7 +407,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Jean_Baudrillard",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-jean-fran-ois-lyotard-805013e1",
@@ -422,7 +422,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Lyotard",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-jean-jacques-rousseau-bb4f146d",
@@ -437,7 +437,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-jean-paul-sartre-5c4140c8",
@@ -452,7 +452,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Jean-Paul_Sartre",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-jeremy-bentham-0775d2f7",
@@ -467,7 +467,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Jeremy_Bentham",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-johann-gottlieb-fichte-2ee09bad",
@@ -482,7 +482,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Johann_Gottlieb_Fichte",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-john-dewey-35859990",
@@ -497,7 +497,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/John_Dewey",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-john-locke-fbb201d1",
@@ -512,7 +512,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/John_Locke",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-john-rawls-9f487385",
@@ -527,7 +527,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/John_Rawls",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     },
     {
       "id": "phil-john-stuart-mill-7051875d",
@@ -542,7 +542,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/John_Stuart_Mill",
       "readMinutes": 2,
-      "ingestedAt": "2026-07-30T16:06:40.224Z"
+      "ingestedAt": "2026-08-03T14:35:46.945Z"
     }
   ]
 }
