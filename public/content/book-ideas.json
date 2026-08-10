@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T14:35:46.522Z",
+  "updatedAt": "2026-08-10T13:03:58.157Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -15,6 +15,20 @@
       "sourceUrl": "https://www.20minutebooks.com/100-things-every-designer-needs-to-know-about-people",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/100%20Things%20Every%20Designer%20Needs%20to%20Know%20About%20People.mp3",
       "readMinutes": 27
+    },
+    {
+      "id": "20min-d3b935c5998d",
+      "topicId": "mental-models",
+      "title": "18 Minutes",
+      "hook": "A ~18-minute listen on “18 Minutes”",
+      "body": "Find Your Focus, Master Distraction, and Get the Right Things Done",
+      "lesson": "Find Your Focus, Master Distraction, and Get the Right Things Done. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Peter Bregman",
+      "source": "20 Minute Books · Peter Bregman",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/18-minutes",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/18%20Minutes.mp3",
+      "readMinutes": 18
     },
     {
       "id": "booksum-f79bd4015652",
@@ -1974,20 +1988,6 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/tubes-summary/",
       "readMinutes": 5
-    },
-    {
-      "id": "20min-084611de4def",
-      "topicId": "mental-models",
-      "title": "Welcome to the Universe",
-      "hook": "A ~32-minute listen on “Welcome to the Universe”",
-      "body": "An Astrophysical Tour",
-      "lesson": "An Astrophysical Tour. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Neil deGrasse Tyson, Michael A. Strauss & J. Richard Gott",
-      "source": "20 Minute Books · Neil deGrasse Tyson, Michael A. Strauss & J. Richard Gott",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/welcome-to-the-universe",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Welcome%20to%20the%20Universe.mp3",
-      "readMinutes": 32
     },
     {
       "id": "booksum-e50c82cc1be2",
