@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T13:03:58.157Z",
+  "updatedAt": "2026-08-17T12:36:58.807Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -1601,6 +1601,20 @@
       "readMinutes": 30
     },
     {
+      "id": "20min-e09ca8e800d5",
+      "topicId": "mental-models",
+      "title": "The Leader's Guide to Unconscious Bias",
+      "hook": "A ~28-minute listen on “The Leader's Guide to Unconscious Bias”",
+      "body": "How To Reframe Bias, Cultivate Connection, and Create High-Performing Teams",
+      "lesson": "How To Reframe Bias, Cultivate Connection, and Create High-Performing Teams. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Pamela Fuller & Mark Murphy with Anne Chow",
+      "source": "20 Minute Books · Pamela Fuller & Mark Murphy with Anne Chow",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-leaders-guide-to-unconscious-bias",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Leader%27s%20Guide%20to%20Unconscious%20Bias.mp3",
+      "readMinutes": 28
+    },
+    {
       "id": "booksum-5e0755fb06ea",
       "topicId": "building-products",
       "title": "The Leadership Challenge",
@@ -1806,20 +1820,6 @@
       "sourceUrl": "https://www.20minutebooks.com/the-school-of-life",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20School%20of%20Life.mp3",
       "readMinutes": 29
-    },
-    {
-      "id": "20min-0b7f8d4d7ce1",
-      "topicId": "building-products",
-      "title": "The Search",
-      "hook": "A ~18-minute listen on “The Search”",
-      "body": "Finding Meaningful Work in a Post-Career World",
-      "lesson": "Finding Meaningful Work in a Post-Career World. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Bruce Feiler",
-      "source": "20 Minute Books · Bruce Feiler",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/the-search",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Search.mp3",
-      "readMinutes": 18
     },
     {
       "id": "20min-81eae0646d33",
