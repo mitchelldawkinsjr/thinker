@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T12:36:58.807Z",
+  "updatedAt": "2026-08-24T12:42:53.971Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -249,6 +249,20 @@
       "sourceUrl": "https://www.20minutebooks.com/brain-wash",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Brain%20Wash.mp3",
       "readMinutes": 34
+    },
+    {
+      "id": "20min-1d495dd0c7ac",
+      "topicId": "finance",
+      "title": "Broke Millennial",
+      "hook": "A ~33-minute listen on “Broke Millennial”",
+      "body": "Stop Scraping By and Get Your Financial Life Together",
+      "lesson": "Stop Scraping By and Get Your Financial Life Together. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Erin Lowry",
+      "source": "20 Minute Books · Erin Lowry",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/broke-millennial",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Broke%20Millennial.mp3",
+      "readMinutes": 33
     },
     {
       "id": "20min-3043861dd2c5",
@@ -836,20 +850,6 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/my-beloved-world-summary/",
       "readMinutes": 5
-    },
-    {
-      "id": "20min-8900a7e5e9db",
-      "topicId": "finance",
-      "title": "Narrative Economics",
-      "hook": "A ~35-minute listen on “Narrative Economics”",
-      "body": "How Stories Go Viral and Drive Major Economic Events",
-      "lesson": "How Stories Go Viral and Drive Major Economic Events. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Robert J. Shiller",
-      "source": "20 Minute Books · Robert J. Shiller",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/narrative-economics",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Narrative%20Economics.mp3",
-      "readMinutes": 35
     },
     {
       "id": "20min-0d3e77bfc8d2",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T12:36:58.023Z",
+  "updatedAt": "2026-08-24T12:42:52.986Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,132 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-209",
-      "reference": "Colossians 3:4",
-      "text": "When Christ, our life, is revealed, then you will also be revealed with him in glory.",
-      "translation": "WEB",
-      "hook": "Daily promise · July 27th",
-      "lesson": "Our Lord, Jesus Christ, who is the Lamb of God and our Bridegroom shall return! Our true life is hidden in Him and when He appears in clouds of glory, then shall our own true lives be made apparent in Him. His life of obedience is ours (cf. Romans 5:19 and Hebrews 5:8). His death and suffering is ours. So too is His resurrection to new life. And even so, His revelation in robes of splendour at the final day shall be shared with every one of His saints. So put to death the earthly things until His coming and you shall be crowned in His glory. Open the full Blue Letter Bible reading for July 27th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=209",
-      "bookId": 51,
-      "chapter": 3,
-      "verseStart": 4,
-      "verseEnd": 4,
-      "pool": "daily"
-    },
-    {
-      "id": "blb-promise-doy-210",
-      "reference": "Psalm 31:23",
-      "text": "Oh love Yahweh, all you his saints! Yahweh preserves the faithful, and fully recompenses him who behaves arrogantly.",
-      "translation": "WEB",
-      "hook": "Daily promise · July 28th",
-      "lesson": "His strength is beyond imagining and with it He promises to preserve His children ever in their faith! None may snatch you from His hand, O child of the Lamb, for He is adamant: you are His and His alone! Love Him, therefore, and follow Him all your days! Open the full Blue Letter Bible reading for July 28th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=210",
-      "bookId": 19,
-      "chapter": 31,
-      "verseStart": 23,
-      "verseEnd": 23,
-      "pool": "daily"
-    },
-    {
-      "id": "blb-promise-doy-211",
-      "reference": "1 John 1:5",
-      "text": "This is the message which we have heard from him and announce to you, that God is light, and in him is no darkness at all.",
-      "translation": "WEB",
-      "hook": "Daily promise · July 29th",
-      "lesson": "Here lies the believer's assurance that the light of God will permeate even this dark world. Even more, God is that very light! The believer ought hold this truth tightly: despite the most tumultuous circumstance, not all is dark, lost, or evil! Open the full Blue Letter Bible reading for July 29th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=211",
-      "bookId": 62,
-      "chapter": 1,
-      "verseStart": 5,
-      "verseEnd": 5,
-      "pool": "daily"
-    },
-    {
-      "id": "blb-promise-doy-212",
-      "reference": "2 Corinthians 1:7",
-      "text": "Our hope for you is steadfast, knowing that, since you are partakers of the sufferings, so also are you of the comfort.",
-      "translation": "WEB",
-      "hook": "Daily promise · July 30th",
-      "lesson": "Christ reigns even now on His heavenly throne, yet the earth is filled with evil men. The adopted brothers and sisters of Christ reign even now by His side, yet their lives are of suffering. How can this be? It is the mystery of the cross of Christ Jesus! Through our weakness, we are strong. Through death, we have life. Through suffering, we are become the victors. And through persecution, we are blessed. Therefore, Christ tells us, rejoice in such troubles till the heavenly consummation, for great will be our apparent reward in that day. So do not fret, O believer, but trust that your suffering will produce hope. Hope in Christ. Hope in Heaven. Open the full Blue Letter Bible reading for July 30th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=212",
-      "bookId": 47,
-      "chapter": 1,
-      "verseStart": 7,
-      "verseEnd": 7,
-      "pool": "daily"
-    },
-    {
-      "id": "blb-promise-doy-213",
-      "reference": "Romans 1:16",
-      "text": "For I am not ashamed of the Good News of Christ, for it is the power of God for salvation for everyone who believes; for the Jew first, and also for the Greek.",
-      "translation": "WEB",
-      "hook": "Daily promise · July 31st",
-      "lesson": "As believers in Christ, we should not be ashamed of the Gospel because it is this very Gospel that has snatched us from the pit of hell. This wonderful news is open to anyone who will believe upon Jesus as Christ and Lord. Rejoice in this good news! Take heart in the wonderful mercies of the Lord! Be not ashamed for the sake of your life-giving faith! Proclaim the lovingkindness of the Lord unto all the nations with boldness that we who believe might fruitfully multiply the kingdom of heaven! Persevere in His strength, making disciples of all the world that others might share in the Gospel-joy that we, ourselves, have been granted to embrace! Open the full Blue Letter Bible reading for July 31st.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=213",
-      "bookId": 45,
-      "chapter": 1,
-      "verseStart": 16,
-      "verseEnd": 16,
-      "pool": "daily"
-    },
-    {
-      "id": "blb-promise-doy-214",
-      "reference": "Isaiah 43:1",
-      "text": "But now Yahweh who created you, Jacob, and he who formed you, Israel says: “Don’t be afraid, for I have redeemed you. I have called you by your name. You are mine.",
-      "translation": "WEB",
-      "hook": "Daily promise · August 1st",
-      "lesson": "We are so precious to the Lord that He calls us His children. It is amazing to know that the Lord calls each one of us by name! Open the full Blue Letter Bible reading for August 1st.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=214",
-      "bookId": 23,
-      "chapter": 43,
-      "verseStart": 1,
-      "verseEnd": 1,
-      "pool": "daily"
-    },
-    {
-      "id": "blb-promise-doy-215",
-      "reference": "Psalm 16:8",
-      "text": "I have set Yahweh always before me. Because he is at my right hand, I shall not be moved.",
-      "translation": "WEB",
-      "hook": "Daily promise · August 2nd",
-      "lesson": "Strong is our Lord and powerful the force of His mighty arm! You shall never need fear any power of earth or heaven for naught can shake you from His unbreakable grasp. His hands of power and might are hands of safety and protection for His own-and hands of wrath and destruction for His enemies. Rejoice, O believer, that you are His child! Open the full Blue Letter Bible reading for August 2nd.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=215",
-      "bookId": 19,
-      "chapter": 16,
-      "verseStart": 8,
-      "verseEnd": 8,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-216",
       "reference": "Deuteronomy 30:9–10",
       "text": "Yahweh your God will make you plenteous in all the work of your hand, in the fruit of your body, in the fruit of your livestock, and in the fruit of your ground, for good; for Yahweh will again rejoice over you for good, as he rejoiced over your fathers; if you will obey Yahweh your God’s voice, to keep his commandments and his statutes which are written in this book of the law; if you turn to Yahweh your God with all your heart, and with all your soul.",
@@ -2474,112 +2348,130 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-170",
-      "reference": "Isaiah 33:10",
-      "text": "“Now I will arise,” says Yahweh; “Now I will lift myself up. Now I will be exalted.",
+      "id": "blb-promise-doy-230",
+      "reference": "Isaiah 57:17–18",
+      "text": "I was angry because of the iniquity of his covetousness, and struck him; I hid myself and was angry; and he went on backsliding in the way of his heart. I have seen his ways, and will heal him: I will lead him also, and restore comforts to him and to his mourners.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · June 18th",
-      "lesson": "When the spoilers had made the land as waste as if devoured by locusts, and the warriors who had defended the country sat down and wept like women, then the Lord came to the rescue. When travelers ceased from the roads to Zion, and Bashan and Carmel were as vineyards from which the fruit has failed, then the Lord arose. God is exalted in the midst of an afflicted people, for they seek His face and trust Him. He is…",
+      "hook": "Daily promise · August 17th",
+      "lesson": "Though the whole of mankind stands corrupted and damnable before the majesty of the Lord God Almighty, even so He promises to choose out for Himself a special people. Ever will He heal His dear children! In spite of their hearts of malice and stone, the Lord will be faithful to renew them and cause them to become the bearers of life eternal. Praise God that we who believe have received such mercy as this! Open the full Blue Letter Bible reading for August 17th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=170",
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=230",
       "bookId": 23,
-      "chapter": 33,
-      "verseStart": 10,
-      "verseEnd": 10,
-      "pool": "evergreen"
+      "chapter": 57,
+      "verseStart": 17,
+      "verseEnd": 18,
+      "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-171",
-      "reference": "Psalm 119:80",
-      "text": "Let my heart be blameless toward your decrees, that I may not be disappointed. KAF",
+      "id": "blb-promise-doy-231",
+      "reference": "Revelation 3:19",
+      "text": "As many as I love, I reprove and chasten. Be zealous therefore, and repent.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · June 19th",
-      "lesson": "We may regard this inspired prayer as containing within itself the assurance that those who keep close to the Word of God shall never have cause to be ashamed of doing so. See, the prayer is for soundness of heart. A sound creed is good, a sound judgment concerning it is better, but a sound heart toward the truth is best of all. We must love the truth, feel the truth, and obey the truth, otherwise we are not truly…",
+      "hook": "Daily promise · August 18th",
+      "lesson": "Praise be to our ever-loving Father that He will always be faithful to chasten His children to correction. His discipline is of a caring love toward us-it is for our benefit, gracious and merciful. The Lord wants what is best for us and kindly prompts us to return to Him. Praise the Lord for His involvement. Open the full Blue Letter Bible reading for August 18th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=171",
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=231",
+      "bookId": 66,
+      "chapter": 3,
+      "verseStart": 19,
+      "verseEnd": 19,
+      "pool": "daily"
+    },
+    {
+      "id": "blb-promise-doy-232",
+      "reference": "Ephesians 2:14",
+      "text": "For he is our peace, who made both one, and broke down the middle wall of partition,",
+      "translation": "WEB",
+      "hook": "Daily promise · August 19th",
+      "lesson": "The unity in Christ is far beyond that which men might craft. It is promised that all Abraham's seed, both Jew and Gentiles alike, are truly of one body-a body of faith! Love your brothers in Christ. Leap to aid each other even as Christ Himself leapt to save you-at His own peril. This is the Gospel. Open the full Blue Letter Bible reading for August 19th.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=232",
+      "bookId": 49,
+      "chapter": 2,
+      "verseStart": 14,
+      "verseEnd": 14,
+      "pool": "daily"
+    },
+    {
+      "id": "blb-promise-doy-233",
+      "reference": "Psalm 55:22",
+      "text": "Cast your burden on Yahweh, and he will sustain you. He will never allow the righteous to be moved.",
+      "translation": "WEB",
+      "hook": "Daily promise · August 20th",
+      "lesson": "Trust in the Lord, O son of righteousness, for He is worthy of your esteem. He is infinitely capable of caring for your needs and will always work even the most difficult of situations for benefit. Cast all your cares upon Him for He will be faithful to deliver you. Stand ever in your righteous hope in Christ and you shall not be moved. Open the full Blue Letter Bible reading for August 20th.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=233",
       "bookId": 19,
-      "chapter": 119,
-      "verseStart": 80,
-      "verseEnd": 80,
-      "pool": "evergreen"
+      "chapter": 55,
+      "verseStart": 22,
+      "verseEnd": 22,
+      "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-172",
-      "reference": "Psalm 23:4",
-      "text": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. Your rod and your staff, they comfort me.",
+      "id": "blb-promise-doy-234",
+      "reference": "1 Peter 2:5",
+      "text": "You also, as living stones, are built up as a spiritual house, to be a holy priesthood, to offer up spiritual sacrifices, acceptable to God through Jesus Christ.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · June 20th",
-      "lesson": "Sweet are these words in describing a deathbed assurance. How many have repeated them in their last hours with intense delight! But the verse is equally applicable to agonies of spirit in the midst of life. Some of us, like Paul, die daily through a tendency to gloom of soul. Bunyan puts the Valley of the Shadow of Death far earlier in the pilgrimage than the river which rolls at the foot of the celestial hills. W…",
+      "hook": "Daily promise · August 21st",
+      "lesson": "O believers, take joy in the great honour bestowed upon you by the Lord Himself! Not only has He made you His son, pure and undefiled, but He has counted you worthy to be built together with your fellow saints and Christ Himself to be the very temple to house His Spirit. What a blessing it is to be the object of such a gift! Praise be to the Lord Almighty who has made us into living stones to take special and essential part in His sovereign plan! Open the full Blue Letter Bible reading for August 21st.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=172",
-      "bookId": 19,
-      "chapter": 23,
-      "verseStart": 4,
-      "verseEnd": 4,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=234",
+      "bookId": 60,
+      "chapter": 2,
+      "verseStart": 5,
+      "verseEnd": 5,
+      "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-173",
-      "reference": "Judges 4:9",
-      "text": "She said, “I will surely go with you. Nevertheless, the journey that you take won’t be for your honor; for Yahweh will sell Sisera into a woman’s hand.” Deborah arose, and went with Barak to Kedesh.",
+      "id": "blb-promise-doy-235",
+      "reference": "Matthew 28:20",
+      "text": "teaching them to observe all things that I commanded you. Behold, I am with you always, even to the end of the age.” Amen.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · June 21st",
-      "lesson": "Rather an unusual text, but there may be souls in the world that may have faith enough to grasp it. Barak, the man, though called to the war, had little stomach for the fight unless Deborah would go with him, and so the Lord determined to make it a woman's war. By this means He rebuked the slackness of the man, and gained for Himself the more renown, and cast the more shame upon the enemies of His people. The Lord…",
+      "hook": "Daily promise · August 22nd",
+      "lesson": "Jesus promised that He will always be with us, even to the end of the age. We as Christians have Christ as our authority and comfort. He is the Emmanuel (the God who came to earth to live with us) and though He has ascended to the Father, even so, He remains to live with us. Open the full Blue Letter Bible reading for August 22nd.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=173",
-      "bookId": 7,
-      "chapter": 4,
-      "verseStart": 9,
-      "verseEnd": 9,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=235",
+      "bookId": 40,
+      "chapter": 28,
+      "verseStart": 20,
+      "verseEnd": 20,
+      "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-175",
-      "reference": "2 Kings 19:32",
-      "text": "“Therefore Yahweh says concerning the king of Assyria, ‘He will not come to this city, nor shoot an arrow there. He will not come before it with shield, nor cast up a mound against it.",
+      "id": "blb-promise-doy-236",
+      "reference": "John 14:2–3",
+      "text": "In my Father’s house are many homes. If it weren’t so, I would have told you. I am going to prepare a place for you. If I go and prepare a place for you, I will come again, and will receive you to myself; that where I am, you may be there also.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · June 23rd",
-      "lesson": "Neither did Sennacherib molest the city. He had boasted loudly, but he could not carry out his threats. The Lord is able to stop the enemies of His people in the very act. When the lion has the lamb between his jaws, the great Shepherd of the sheep can rob him of his prey. Our extremity only provides an opportunity for a grander display of divine power and wisdom. In the case before us, the terrible foe did not pu…",
+      "hook": "Daily promise · August 23rd",
+      "lesson": "Right now, Jesus is preparing a place for us in heaven! And someday He will come to take us to that place. How glorious will that day be when we behold with open face the beautiful majesty of our Lord! Open the full Blue Letter Bible reading for August 23rd.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=175",
-      "bookId": 12,
-      "chapter": 19,
-      "verseStart": 32,
-      "verseEnd": 32,
-      "pool": "evergreen"
-    },
-    {
-      "id": "blb-checkbook-doy-176",
-      "reference": "2 Chronicles 25:9",
-      "text": "Amaziah said to the man of God, “But what shall we do for the hundred talents which I have given to the army of Israel?” The man of God answered, “Yahweh is able to give you much more than this.”",
-      "translation": "WEB",
-      "hook": "Faith's Checkbook · June 24th",
-      "lesson": "If you have made a mistake, bear the loss of it; but do not act contrary to the will of the Lord. The Lord can give you much more than you are likely to lose; and if He does not, will you begin bargaining and chaffering with God? The king of Judah has hired an army from idolatrous Israel, and he was commanded to send home the fighting men because the Lord was not with them. He was willing to send away the host, on…",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=176",
-      "bookId": 14,
-      "chapter": 25,
-      "verseStart": 9,
-      "verseEnd": 9,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=236",
+      "bookId": 43,
+      "chapter": 14,
+      "verseStart": 2,
+      "verseEnd": 3,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-177",
@@ -3518,111 +3410,111 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-170",
-      "reference": "Isaiah 54:5",
-      "text": "For your Maker is your husband; Yahweh of Armies is his name. The Holy One of Israel is your Redeemer. He will be called the God of the whole earth.",
+      "id": "blb-checkbook-doy-230",
+      "reference": "2 Kings 6:16",
+      "text": "He answered, “Don’t be afraid; for those who are with us are more than those who are with them.”",
       "translation": "WEB",
-      "hook": "Morning reading · June 18th",
-      "lesson": "Jesus, the Redeemer, is altogether ours and ours for ever. All the offices of Christ are held on our behalf. He is king for us, priest for us, and prophet for us. Whenever we read a new title of the Redeemer, let us appropriate Him as ours under that name as much as under any other. The shepherd's staff, the father's rod, the captain's sword, the priest's mitre, the prince's sceptre, the prophet's mantle, all are…",
+      "hook": "Faith's Checkbook · August 17th",
+      "lesson": "Horses and chariots, and a great host, shut up the prophet in Dothan. His young servant was alarmed. How could they escape from such a body of armed men? But the prophet had eyes which his servant had not, and he could see a greater host with far superior weapons guarding him from all harm. Horses of fire are mightier than horses of flesh, and chariots of fire are far preferable to chariots of iron. Even so is it…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=170&Time=am",
-      "bookId": 23,
-      "chapter": 54,
-      "verseStart": 5,
-      "verseEnd": 5,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=230",
+      "bookId": 12,
+      "chapter": 6,
+      "verseStart": 16,
+      "verseEnd": 16,
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-171",
-      "reference": "Acts 2:4",
-      "text": "They were all filled with the Holy Spirit, and began to speak with other languages, as the Spirit gave them the ability to speak.",
+      "id": "blb-checkbook-doy-231",
+      "reference": "1 Chronicles 28:9",
+      "text": "You, Solomon my son, know the God of your father, and serve him with a perfect heart and with a willing mind; for Yahweh searches all hearts, and understands all the imaginations of the thoughts. If you seek him, he will be found by you; but if you forsake him, he will cast you off forever.",
       "translation": "WEB",
-      "hook": "Morning reading · June 19th",
-      "lesson": "Rich were the blessings of this day if all of us were filled with the Holy Ghost. The consequences of this sacred filling of the soul it would be impossible to overestimate. Life, comfort, light, purity, power, peace; and many other precious blessings are inseparable from the Spirit's benign presence. As sacred oil, He anoints the head of the believer, sets him apart to the priesthood of saints, and gives him grac…",
+      "hook": "Faith's Checkbook · August 18th",
+      "lesson": "We need our God; He is to be had for the seeking; and He will not deny Himself to any one of us if we personally seek His face. It is not, if thou deserve Him, or purchase His favor, but merely if thou \"seek\" Him. Those who already know the Lord must go on seeking His face by prayer, by diligent service, and by holy gratitude: to such He will not refuse His favor and fellowship. Those who, as yet, have not known H…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=171&Time=am",
-      "bookId": 44,
-      "chapter": 2,
-      "verseStart": 4,
-      "verseEnd": 4,
-      "pool": "evergreen"
-    },
-    {
-      "id": "blb-morning-doy-172",
-      "reference": "Amos 9:9",
-      "text": "“For, behold, I will command, and I will sift the house of Israel among all the nations, as grain is sifted in a sieve, yet not the least kernel will fall on the earth.",
-      "translation": "WEB",
-      "hook": "Morning reading · June 20th",
-      "lesson": "Every sifting comes by divine command and permission. Satan must ask leave before he can lay a finger upon Job. Nay, more, in some sense our siftings are directly the work of heaven, for the text says, \"I will sift the house of Israel.\" Satan, like a drudge, may hold the sieve, hoping to destroy the corn; but the overruling hand of the Master is accomplishing the purity of the grain by the very process which the e…",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=172&Time=am",
-      "bookId": 30,
-      "chapter": 9,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=231",
+      "bookId": 13,
+      "chapter": 28,
       "verseStart": 9,
       "verseEnd": 9,
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-173",
-      "reference": "Psalm 45:2",
-      "text": "You are the most excellent of the sons of men. Grace has anointed your lips, therefore God has blessed you forever.",
+      "id": "blb-checkbook-doy-232",
+      "reference": "Psalm 58:11",
+      "text": "so that men shall say, “Most certainly there is a reward for the righteous. Most certainly there is a God who judges the earth.”",
       "translation": "WEB",
-      "hook": "Morning reading · June 21st",
-      "lesson": "The entire person of Jesus is but as one gem, and His life is all along but one impression of the seal. He is altogether complete; not only in His several parts, but as a gracious all-glorious whole. His character is not a mass of fair colours mixed confusedly, nor a heap of precious stones laid carelessly one upon another; He is a picture of beauty and a breastplate of glory. In Him, all the \"things of good reput…",
+      "hook": "Faith's Checkbook · August 19th",
+      "lesson": "God's judgments in this life are not always clearly to be seen, for in many cases one event happeneth alike to all. This is the state of probation, not of punishment or reward. Yet at times God works terrible things in righteousness, and even the careless are compelled to own His hand. Even in this life righteousness has that kind of reward which it prefers above all others, namely, the smile of God, which creates…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=173&Time=am",
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=232",
       "bookId": 19,
-      "chapter": 45,
-      "verseStart": 2,
-      "verseEnd": 2,
+      "chapter": 58,
+      "verseStart": 11,
+      "verseEnd": 11,
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-174",
-      "reference": "Zechariah 6:13",
-      "text": "even he shall build Yahweh’s temple; and he shall bear the glory, and shall sit and rule on his throne; and he shall be a priest on his throne; and the counsel of peace shall be between them both.",
+      "id": "blb-checkbook-doy-233",
+      "reference": "Job 5:19",
+      "text": "He will deliver you in six troubles; yes, in seven no evil shall touch you.",
       "translation": "WEB",
-      "hook": "Morning reading · June 22nd",
-      "lesson": "Christ Himself is the builder of His spiritual temple, and He has built it on the mountains of His unchangeable affection, His omnipotent grace, and His infallible truthfulness. But as it was in Solomon's temple, so in this; the materials need making ready. There are the \"Cedars of Lebanon,\" but they are not framed for the building; they are not cut down, and shaped, and made into those planks of cedar, whose odor…",
+      "hook": "Faith's Checkbook · August 20th",
+      "lesson": "Eliphaz in this spoke the truth of God. We may have as many troubles as the workdays of the week, but the God who worked on those six days will work for us till our deliverance is complete. We shall rest with Him, and in Him on our Sabbath. The rapid succession of trials is one of the sorest tests of faith. Before we have recovered from one blow, it is followed by another and another till we are staggered. Still,…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=174&Time=am",
-      "bookId": 38,
-      "chapter": 6,
-      "verseStart": 13,
-      "verseEnd": 13,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=233",
+      "bookId": 18,
+      "chapter": 5,
+      "verseStart": 19,
+      "verseEnd": 19,
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-175",
-      "reference": "Hosea 7:8",
-      "text": "Ephraim, he mixes himself among the nations. Ephraim is a pancake not turned over.",
+      "id": "blb-checkbook-doy-234",
+      "reference": "Psalm 30:5",
+      "text": "For his anger is but for a moment. His favor is for a lifetime. Weeping may stay for the night, but joy comes in the morning.",
       "translation": "WEB",
-      "hook": "Morning reading · June 23rd",
-      "lesson": "A cake not turned is uncooked on one side; and so Ephraim was, in many respects, untouched by divine grace: though there was some partial obedience, there was very much rebellion left. My soul, I charge thee, see whether this be thy case. Art thou thorough in the things of God? Has grace gone through the very centre of thy being so as to be felt in its divine operations in all thy powers, thy actions, thy words, a…",
+      "hook": "Faith's Checkbook · August 21st",
+      "lesson": "A moment under our Father's anger seems very long, and yet it is but a moment after all. If we grieve His Spirit we cannot look for His smile; but He is a God ready to pardon, and He soon puts aside all remembrance of our faults. When we faint and are ready to die because of His frown, His favor puts new life into us. This verse has another note of the semi-quaver kind. Our weeping night soon turns into joyous day…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=175&Time=am",
-      "bookId": 28,
-      "chapter": 7,
-      "verseStart": 8,
-      "verseEnd": 8,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=234",
+      "bookId": 19,
+      "chapter": 30,
+      "verseStart": 5,
+      "verseEnd": 5,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-checkbook-doy-235",
+      "reference": "Psalm 76:10",
+      "text": "Surely the wrath of man praises you. The survivors of your wrath are restrained.",
+      "translation": "WEB",
+      "hook": "Faith's Checkbook · August 22nd",
+      "lesson": "Wicked men will be wrathful. Their anger we must endure as the badge of our calling, the token of our separation from them: if we were of the world, the world would love its own. Our comfort is that the wrath of man shall be made to redound to the glory of God. When in their wrath the wicked crucified the Son of God they were unwittingly fulfilling the divine purpose, and in a thousand cases the willfulness of the…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=235",
+      "bookId": 19,
+      "chapter": 76,
+      "verseStart": 10,
+      "verseEnd": 10,
       "pool": "evergreen"
     },
     {
@@ -4541,6 +4433,132 @@
       "chapter": 29,
       "verseStart": 2,
       "verseEnd": 2,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-230",
+      "reference": "Psalm 52:8",
+      "text": "But as for me, I am like a green olive tree in God’s house. I trust in God’s loving kindness forever and ever.",
+      "translation": "WEB",
+      "hook": "Morning reading · August 17th",
+      "lesson": "Meditate a little on this mercy of the Lord. It is tender mercy. With gentle, loving touch, He healeth the broken in heart, and bindeth up their wounds. He is as gracious in the manner of His mercy as in the matter of it. It is great mercy. There is nothing little in God; His mercy is like Himself-it is infinite. You cannot measure it. His mercy is so great that it forgives great sins to great sinners, after great…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=230&Time=am",
+      "bookId": 19,
+      "chapter": 52,
+      "verseStart": 8,
+      "verseEnd": 8,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-231",
+      "reference": "Jeremiah 51:51",
+      "text": "“We are confounded, because we have heard reproach. Confusion has covered our faces, for strangers have come into the sanctuaries of Yahweh’s house.”",
+      "translation": "WEB",
+      "hook": "Morning reading · August 18th",
+      "lesson": "In this account the faces of the Lord's people were covered with shame, for it was a terrible thing that men should intrude into the Holy Place reserved for the priests alone. Everywhere about us we see like cause for sorrow. How many ungodly men are now educating with the view of entering into the ministry! What a crying sin is that solemn lie by which our whole population is nominally comprehended in a National…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=231&Time=am",
+      "bookId": 24,
+      "chapter": 51,
+      "verseStart": 51,
+      "verseEnd": 51,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-232",
+      "reference": "Micah 5:4",
+      "text": "He shall stand, and shall shepherd in the strength of Yahweh, in the majesty of the name of Yahweh his God: and they will live, for then he will be great to the ends of the earth.",
+      "translation": "WEB",
+      "hook": "Morning reading · August 19th",
+      "lesson": "Christ's reign in His Church is that of a shepherd-king. He has supremacy, but it is the superiority of a wise and tender shepherd over his needy and loving flock; He commands and receives obedience, but it is the willing obedience of the well-cared-for sheep, rendered joyfully to their beloved Shepherd, whose voice they know so well. He rules by the force of love and the energy of goodness. His reign is practical…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=232&Time=am",
+      "bookId": 33,
+      "chapter": 5,
+      "verseStart": 4,
+      "verseEnd": 4,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-233",
+      "reference": "2 Samuel 23:1",
+      "text": "Now these are the last words of David. David the son of Jesse says, the man who was raised on high says, the anointed of the God of Jacob, the sweet psalmist of Israel:",
+      "translation": "WEB",
+      "hook": "Morning reading · August 20th",
+      "lesson": "Among all the saints whose lives are recorded in Holy Writ, David possesses an experience of the most striking, varied, and instructive character. In his history we meet with trials and temptations not to be discovered, as a whole, in other saints of ancient times, and hence he is all the more suggestive a type of our Lord. David knew the trials of all ranks and conditions of men. Kings have their troubles, and Da…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=233&Time=am",
+      "bookId": 10,
+      "chapter": 23,
+      "verseStart": 1,
+      "verseEnd": 1,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-234",
+      "reference": "Proverbs 11:25",
+      "text": "The liberal soul shall be made fat. He who waters shall be watered also himself.",
+      "translation": "WEB",
+      "hook": "Morning reading · August 21st",
+      "lesson": "We are here taught the great lesson, that to get, we must give; that to accumulate, we must scatter; that to make ourselves happy, we must make others happy; and that in order to become spiritually vigorous, we must seek the spiritual good of others. In watering others, we are ourselves watered. How? Our efforts to be useful, bring out our powers for usefulness. We have latent talents and dormant faculties, which…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=234&Time=am",
+      "bookId": 20,
+      "chapter": 11,
+      "verseStart": 25,
+      "verseEnd": 25,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-235",
+      "reference": "Song of Songs 5:8",
+      "text": "I adjure you, daughters of Jerusalem, If you find my beloved, that you tell him that I am faint with love.",
+      "translation": "WEB",
+      "hook": "Morning reading · August 22nd",
+      "lesson": "Such is the language of the believer panting after present fellowship with Jesus, he is sick for his Lord. Gracious souls are never perfectly at ease except they are in a state of nearness to Christ; for when they are away from Him they lose their peace. The nearer to Him, the nearer to the perfect calm of heaven; the nearer to Him, the fuller the heart is, not only of peace, but of life, and vigour, and joy, for…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=235&Time=am",
+      "bookId": 22,
+      "chapter": 5,
+      "verseStart": 8,
+      "verseEnd": 8,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-236",
+      "reference": "Isaiah 65:19",
+      "text": "I will rejoice in Jerusalem, and delight in my people; and the voice of weeping and the voice of crying will be heard in her no more.",
+      "translation": "WEB",
+      "hook": "Morning reading · August 23rd",
+      "lesson": "The glorified weep no more, for all outward causes of grief are gone. There are no broken friendships, nor blighted prospects in heaven. Poverty, famine, peril, persecution, and slander, are unknown there. No pain distresses, no thought of death or bereavement saddens. They weep no more, for they are perfectly sanctified. No \"evil heart of unbelief\" prompts them to depart from the living God; they are without faul…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=236&Time=am",
+      "bookId": 23,
+      "chapter": 65,
+      "verseStart": 19,
+      "verseEnd": 19,
       "pool": "evergreen"
     }
   ]
