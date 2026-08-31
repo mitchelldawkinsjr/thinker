@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:42:53.971Z",
+  "updatedAt": "2026-08-31T18:43:22.231Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -194,20 +194,6 @@
       "sourceUrl": "https://www.20minutebooks.com/big-data",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Big%20Data.mp3",
       "readMinutes": 36
-    },
-    {
-      "id": "20min-5654d59d9fe8",
-      "topicId": "mental-models",
-      "title": "Blink",
-      "hook": "A ~30-minute listen on “Blink”",
-      "body": "The Power of Thinking Without Thinking",
-      "lesson": "The Power of Thinking Without Thinking. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Malcolm Gladwell",
-      "source": "20 Minute Books · Malcolm Gladwell",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/blink",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Blink.mp3",
-      "readMinutes": 30
     },
     {
       "id": "booksum-ded9c72bea46",
@@ -1877,6 +1863,20 @@
       "readMinutes": 35,
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Tale%20of%20the%20Dueling%20Neurosurgeons.mp3",
       "audioPageUrl": "https://www.20minutebooks.com/the-tale-of-the-dueling-neurosurgeons"
+    },
+    {
+      "id": "20min-85b0b519cc6b",
+      "topicId": "building-products",
+      "title": "The Third Door",
+      "hook": "A ~37-minute listen on “The Third Door”",
+      "body": "The Wild Quest to Uncover How the World’s Most Successful People Launched Their Careers",
+      "lesson": "The Wild Quest to Uncover How the World’s Most Successful People Launched Their Careers. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Alex Banayan",
+      "source": "20 Minute Books · Alex Banayan",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-third-door",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Third%20Door.mp3",
+      "readMinutes": 37
     },
     {
       "id": "booksum-cef1f48f5e5c",
