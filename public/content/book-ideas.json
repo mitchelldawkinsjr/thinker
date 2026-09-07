@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T18:43:22.231Z",
+  "updatedAt": "2026-09-07T17:10:35.278Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -478,20 +478,6 @@
       "readMinutes": 5
     },
     {
-      "id": "20min-7933383e9356",
-      "topicId": "mental-models",
-      "title": "Evolve Your Brain",
-      "hook": "A ~23-minute listen on “Evolve Your Brain”",
-      "body": "The Science of Changing Your Mind",
-      "lesson": "The Science of Changing Your Mind. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Joe Dispenza",
-      "source": "20 Minute Books · Joe Dispenza",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/evolve-your-brain",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Evolve%20Your%20Brain.mp3",
-      "readMinutes": 23
-    },
-    {
       "id": "booksum-02c7af1e5d80",
       "topicId": "mental-models",
       "title": "Experiments With People",
@@ -810,6 +796,20 @@
       "readMinutes": 24,
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Mastering%20the%20Market%20Cycle.mp3",
       "audioPageUrl": "https://www.20minutebooks.com/mastering-the-market-cycle"
+    },
+    {
+      "id": "20min-e1190fcb44ca",
+      "topicId": "building-products",
+      "title": "Mixed Signals",
+      "hook": "A ~17-minute listen on “Mixed Signals”",
+      "body": "How Incentives Really Work",
+      "lesson": "How Incentives Really Work. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Uri Gneezy",
+      "source": "20 Minute Books · Uri Gneezy",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/mixed-signals",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Mixed%20Signals.mp3",
+      "readMinutes": 17
     },
     {
       "id": "booksum-dafc6d49bac5",
