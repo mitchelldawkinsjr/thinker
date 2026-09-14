@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T17:10:35.278Z",
+  "updatedAt": "2026-09-14T18:22:39.317Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -836,20 +836,6 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/my-beloved-world-summary/",
       "readMinutes": 5
-    },
-    {
-      "id": "20min-0d3e77bfc8d2",
-      "topicId": "mental-models",
-      "title": "Never Finished",
-      "hook": "A ~23-minute listen on “Never Finished”",
-      "body": "Unshackle Your Mind and Win the War Within",
-      "lesson": "Unshackle Your Mind and Win the War Within. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · David Goggins",
-      "source": "20 Minute Books · David Goggins",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/never-finished",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Never%20Finished.mp3",
-      "readMinutes": 23
     },
     {
       "id": "booksum-585e31e1ec1a",
@@ -1892,6 +1878,20 @@
       "readMinutes": 28,
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Total%20Money%20Makeover.mp3",
       "audioPageUrl": "https://www.20minutebooks.com/the-total-money-makeover"
+    },
+    {
+      "id": "20min-27ff1f8ef465",
+      "topicId": "building-products",
+      "title": "The Truth About Employee Engagement",
+      "hook": "A ~27-minute listen on “The Truth About Employee Engagement”",
+      "body": "A Fable About Addressing the Three Root Causes of Job Misery",
+      "lesson": "A Fable About Addressing the Three Root Causes of Job Misery. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Patrick Lencioni",
+      "source": "20 Minute Books · Patrick Lencioni",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/the-truth-about-employee-engagement",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Truth%20About%20Employee%20Engagement.mp3",
+      "readMinutes": 27
     },
     {
       "id": "booksum-a29845588c47",
