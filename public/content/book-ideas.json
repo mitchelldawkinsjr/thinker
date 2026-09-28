@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T18:22:39.317Z",
+  "updatedAt": "2026-09-28T19:12:39.646Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -223,20 +223,6 @@
       "readMinutes": 27
     },
     {
-      "id": "20min-b4e08fe2fc18",
-      "topicId": "mental-models",
-      "title": "Brain Wash",
-      "hook": "A ~34-minute listen on “Brain Wash”",
-      "body": "Detox Your Mind for Clearer Thinking, Deeper Relationships, and Lasting Happiness",
-      "lesson": "Detox Your Mind for Clearer Thinking, Deeper Relationships, and Lasting Happiness. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · David Perlmutter, Austin Perlmutter and Kristin Loberg",
-      "source": "20 Minute Books · David Perlmutter, Austin Perlmutter and Kristin Loberg",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/brain-wash",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Brain%20Wash.mp3",
-      "readMinutes": 34
-    },
-    {
       "id": "20min-1d495dd0c7ac",
       "topicId": "finance",
       "title": "Broke Millennial",
@@ -263,6 +249,34 @@
       "sourceUrl": "https://www.20minutebooks.com/cant-even",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Can%27t%20Even.mp3",
       "readMinutes": 23
+    },
+    {
+      "id": "20min-95bafd6362ce",
+      "topicId": "mental-models",
+      "title": "Care of the Soul",
+      "hook": "A ~17-minute listen on “Care of the Soul”",
+      "body": "A Guide for Cultivating Depth and Sacredness in Everyday Life",
+      "lesson": "A Guide for Cultivating Depth and Sacredness in Everyday Life. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Thomas Moore",
+      "source": "20 Minute Books · Thomas Moore",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/care-of-the-soul",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Care%20of%20the%20Soul.mp3",
+      "readMinutes": 17
+    },
+    {
+      "id": "20min-70b623823117",
+      "topicId": "finance",
+      "title": "Civilization",
+      "hook": "A ~36-minute listen on “Civilization”",
+      "body": "The Six Killer Apps of Western Power",
+      "lesson": "The Six Killer Apps of Western Power. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Niall Ferguson",
+      "source": "20 Minute Books · Niall Ferguson",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/civilization",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Civilization.mp3",
+      "readMinutes": 36
     },
     {
       "id": "booksum-b437f1e937c6",
@@ -1392,20 +1406,6 @@
       "readMinutes": 24,
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Confidence%20Game.mp3",
       "audioPageUrl": "https://www.20minutebooks.com/the-confidence-game"
-    },
-    {
-      "id": "20min-f4fc7483cb93",
-      "topicId": "building-products",
-      "title": "The Daily Stoic",
-      "hook": "A ~37-minute listen on “The Daily Stoic”",
-      "body": "366 Meditations on Wisdom, Perseverance and the Art of Living",
-      "lesson": "366 Meditations on Wisdom, Perseverance and the Art of Living. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Ryan Holiday & Stephen Hanselman",
-      "source": "20 Minute Books · Ryan Holiday & Stephen Hanselman",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/the-daily-stoic",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Daily%20Stoic.mp3",
-      "readMinutes": 37
     },
     {
       "id": "booksum-11e822ccc7db",
