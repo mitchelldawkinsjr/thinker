@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T19:12:39.646Z",
+  "updatedAt": "2026-10-12T20:52:27.027Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -412,6 +412,20 @@
       "readMinutes": 5
     },
     {
+      "id": "20min-0143b70321cd",
+      "topicId": "mental-models",
+      "title": "Difference Makers",
+      "hook": "A ~24-minute listen on “Difference Makers”",
+      "body": "A Leader’s Guide to Championing Diversity on Boards",
+      "lesson": "A Leader’s Guide to Championing Diversity on Boards. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Nicky Howe and Alicia Curtis",
+      "source": "20 Minute Books · Nicky Howe and Alicia Curtis",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/difference-makers",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Difference%20Makers.mp3",
+      "readMinutes": 24
+    },
+    {
       "id": "booksum-26bd058b1273",
       "topicId": "building-products",
       "title": "Disrupt You!",
@@ -477,6 +491,20 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/epic-measures-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-db14a309f206",
+      "topicId": "mental-models",
+      "title": "Everyday Ubuntu",
+      "hook": "A ~30-minute listen on “Everyday Ubuntu”",
+      "body": "Living Better Together, the African Way",
+      "lesson": "Living Better Together, the African Way. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Mungi Ngomane",
+      "source": "20 Minute Books · Mungi Ngomane",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/everyday-ubuntu",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Everyday%20Ubuntu.mp3",
+      "readMinutes": 30
     },
     {
       "id": "booksum-a5b838b41750",
@@ -1091,20 +1119,6 @@
       "readMinutes": 21
     },
     {
-      "id": "20min-7487a15e51e6",
-      "topicId": "finance",
-      "title": "Rich Dad, Poor Dad",
-      "hook": "A ~32-minute listen on “Rich Dad, Poor Dad”",
-      "body": "What the Rich Teach Their Kids about Money – That the Poor and the Middle Class Do Not!",
-      "lesson": "What the Rich Teach Their Kids about Money – That the Poor and the Middle Class Do Not! Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Robert T. Kiyosaki",
-      "source": "20 Minute Books · Robert T. Kiyosaki",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/rich-dad-poor-dad",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Rich%20Dad%2C%20Poor%20Dad.mp3",
-      "readMinutes": 32
-    },
-    {
       "id": "booksum-f639048d0428",
       "topicId": "finance",
       "title": "Rich Dad’s Cashflow Quadrant",
@@ -1266,20 +1280,6 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/talking-to-goats-summary/",
       "readMinutes": 5
-    },
-    {
-      "id": "20min-b6692d11c51d",
-      "topicId": "mental-models",
-      "title": "Talking to Strangers",
-      "hook": "A ~31-minute listen on “Talking to Strangers”",
-      "body": "What We Should Know about the People We Don’t Know",
-      "lesson": "What We Should Know about the People We Don’t Know. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Malcolm Gladwell",
-      "source": "20 Minute Books · Malcolm Gladwell",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/talking-to-strangers",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Talking%20to%20Strangers.mp3",
-      "readMinutes": 31
     },
     {
       "id": "booksum-b3fa62caa97a",
