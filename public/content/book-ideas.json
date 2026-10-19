@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T20:52:27.027Z",
+  "updatedAt": "2026-10-19T18:18:09.251Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -638,6 +638,20 @@
       "sourceUrl": "https://www.20minutebooks.com/how-music-works",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/How%20Music%20Works.mp3",
       "readMinutes": 27
+    },
+    {
+      "id": "20min-28d3f68ba0a2",
+      "topicId": "building-products",
+      "title": "How to Find Fulfilling Work",
+      "hook": "A ~36-minute listen on “How to Find Fulfilling Work”",
+      "body": "The School of Life",
+      "lesson": "The School of Life. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Roman Krznaric",
+      "source": "20 Minute Books · Roman Krznaric",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/how-to-find-fulfilling-work",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/How%20to%20Find%20Fulfilling%20Work.mp3",
+      "readMinutes": 36
     },
     {
       "id": "booksum-8944c3cecb72",
@@ -1503,20 +1517,6 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/the-free-time-formula-summary/",
       "readMinutes": 5
-    },
-    {
-      "id": "20min-12ee1e23876e",
-      "topicId": "mental-models",
-      "title": "The God Delusion",
-      "hook": "A ~34-minute listen on “The God Delusion”",
-      "body": "The Science behind Atheism",
-      "lesson": "The Science behind Atheism. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Richard Dawkins",
-      "source": "20 Minute Books · Richard Dawkins",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/the-god-delusion",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20God%20Delusion.mp3",
-      "readMinutes": 34
     },
     {
       "id": "booksum-5731d10d368f",
