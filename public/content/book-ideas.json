@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T18:18:09.251Z",
+  "updatedAt": "2026-10-26T18:11:37.910Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -343,6 +343,20 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/create-space-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-36abebc49b76",
+      "topicId": "building-products",
+      "title": "Creative Acts for Curious People",
+      "hook": "A ~28-minute listen on “Creative Acts for Curious People”",
+      "body": "How to Think, Create, and Lead in Unconventional Ways",
+      "lesson": "How to Think, Create, and Lead in Unconventional Ways. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Sarah Stein Greenberg",
+      "source": "20 Minute Books · Sarah Stein Greenberg",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/creative-acts-for-curious-people",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Creative%20Acts%20for%20Curious%20People.mp3",
+      "readMinutes": 28
     },
     {
       "id": "booksum-c98e014d33df",
@@ -1778,20 +1792,6 @@
       "sourceUrl": "https://www.20minutebooks.com/the-rules-of-contagion",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Rules%20of%20Contagion.mp3",
       "readMinutes": 31
-    },
-    {
-      "id": "20min-e20a0ca5ff12",
-      "topicId": "mental-models",
-      "title": "The School of Life",
-      "hook": "A ~29-minute listen on “The School of Life”",
-      "body": "An Emotional Education",
-      "lesson": "An Emotional Education. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Alain de Botton and The School of Life",
-      "source": "20 Minute Books · Alain de Botton and The School of Life",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/the-school-of-life",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20School%20of%20Life.mp3",
-      "readMinutes": 29
     },
     {
       "id": "20min-81eae0646d33",
