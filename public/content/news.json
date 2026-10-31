@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T17:30:53.566Z",
+  "updatedAt": "2026-10-31T17:58:40.728Z",
   "items": [
     {
       "id": "rss-85d06ade99f6",
@@ -8,7 +8,7 @@
       "lesson": "The Birth of the Black Panthers — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=6UBOl5Yq-ms",
-      "publishedAt": "2026-10-31T17:30:47.667Z",
+      "publishedAt": "2026-10-31T17:58:33.091Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -33,7 +33,7 @@
       "lesson": "Jesse Jackson's Run for the Presidency (1984) — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=KLVaqE3J5Uk",
-      "publishedAt": "2026-10-31T17:29:47.667Z",
+      "publishedAt": "2026-10-31T17:57:33.091Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -58,7 +58,7 @@
       "lesson": "The Double V Campaign of World War II — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=OAPLbfnbKE4",
-      "publishedAt": "2026-10-31T17:28:47.667Z",
+      "publishedAt": "2026-10-31T17:56:33.091Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -73,6 +73,248 @@
         {
           "label": "Channel",
           "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
+        }
+      ]
+    },
+    {
+      "id": "rss-07a2545f6641",
+      "hook": "Affirmative Action",
+      "title": "Affirmative Action",
+      "lesson": "Affirmative Action — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
+      "source": "Black History in Two Minutes",
+      "sourceUrl": "https://www.youtube.com/watch?v=9Pcm00E-DEM",
+      "publishedAt": "2026-10-31T17:55:33.091Z",
+      "expiresAt": "2026-11-12T17:30:47.667Z",
+      "topicIds": [
+        "history"
+      ],
+      "feedId": "yt-black-history-two-min",
+      "imageUrl": "https://i.ytimg.com/vi/9Pcm00E-DEM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDnvrTzPnT547V7PSdSuqs6S-pTww",
+      "angles": [
+        {
+          "label": "Watch",
+          "url": "https://www.youtube.com/watch?v=9Pcm00E-DEM"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
+        }
+      ]
+    },
+    {
+      "id": "rss-c64255d29eac",
+      "hook": "Oscar Micheaux: The First Black Indie Filmmaker",
+      "title": "Oscar Micheaux: The First Black Indie Filmmaker",
+      "lesson": "Oscar Micheaux: The First Black Indie Filmmaker — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
+      "source": "Black History in Two Minutes",
+      "sourceUrl": "https://www.youtube.com/watch?v=LHRBK3Q23Ek",
+      "publishedAt": "2026-10-31T17:54:33.091Z",
+      "expiresAt": "2026-11-12T17:30:47.667Z",
+      "topicIds": [
+        "history"
+      ],
+      "feedId": "yt-black-history-two-min",
+      "imageUrl": "https://i.ytimg.com/vi/LHRBK3Q23Ek/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAMFb4lOB8xfjVD1nrf3dwVu0ERlg",
+      "angles": [
+        {
+          "label": "Watch",
+          "url": "https://www.youtube.com/watch?v=LHRBK3Q23Ek"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
+        }
+      ]
+    },
+    {
+      "id": "rss-f6083e20dcb9",
+      "hook": "The Tuskegee Study",
+      "title": "The Tuskegee Study",
+      "lesson": "The Tuskegee Study — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
+      "source": "Black History in Two Minutes",
+      "sourceUrl": "https://www.youtube.com/watch?v=afwK2CVpc9E",
+      "publishedAt": "2026-10-31T17:53:33.091Z",
+      "expiresAt": "2026-11-12T17:30:47.667Z",
+      "topicIds": [
+        "history"
+      ],
+      "feedId": "yt-black-history-two-min",
+      "imageUrl": "https://i.ytimg.com/vi/afwK2CVpc9E/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCUZawG-NsAIeJSCqPlvT7r2hKOLA",
+      "angles": [
+        {
+          "label": "Watch",
+          "url": "https://www.youtube.com/watch?v=afwK2CVpc9E"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
+        }
+      ]
+    },
+    {
+      "id": "rss-5e5a536d76a8",
+      "hook": "Black History in Two Minutes (or so) Nominated Best Podcast Documentary",
+      "title": "Black History in Two Minutes (or so) Nominated Best Podcast Documentary",
+      "lesson": "Black History in Two Minutes (or so) Nominated Best Podcast Documentary — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
+      "source": "Black History in Two Minutes",
+      "sourceUrl": "https://www.youtube.com/watch?v=V3Z6yILMuZo",
+      "publishedAt": "2026-10-31T17:52:33.091Z",
+      "expiresAt": "2026-11-12T17:30:47.667Z",
+      "topicIds": [
+        "history"
+      ],
+      "feedId": "yt-black-history-two-min",
+      "imageUrl": "https://i.ytimg.com/vi/V3Z6yILMuZo/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB3gOAAuADigIMCAAQARhyID8oNjAP&rs=AOn4CLDz67-KrMxtipI0GmJ6V3YoDkuwQQ",
+      "angles": [
+        {
+          "label": "Watch",
+          "url": "https://www.youtube.com/watch?v=V3Z6yILMuZo"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
+        }
+      ]
+    },
+    {
+      "id": "rss-a22b042d058a",
+      "hook": "Black History in Two Minutes (or so) Nominated Best Social Series /…",
+      "title": "Black History in Two Minutes (or so) Nominated Best Social Series / Education & Discovery",
+      "lesson": "Black History in Two Minutes (or so) Nominated Best Social Series / Education & Discovery — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
+      "source": "Black History in Two Minutes",
+      "sourceUrl": "https://www.youtube.com/watch?v=M-fFgaUp06A",
+      "publishedAt": "2026-10-31T17:51:33.091Z",
+      "expiresAt": "2026-11-12T17:30:47.667Z",
+      "topicIds": [
+        "history"
+      ],
+      "feedId": "yt-black-history-two-min",
+      "imageUrl": "https://i.ytimg.com/vi/M-fFgaUp06A/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB3gOAAuADigIMCAAQARhyID8oPDAP&rs=AOn4CLCFd72oUoR_wNZYprB_HvlCREDYSQ",
+      "angles": [
+        {
+          "label": "Watch",
+          "url": "https://www.youtube.com/watch?v=M-fFgaUp06A"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
+        }
+      ]
+    },
+    {
+      "id": "rss-6a98af082e87",
+      "hook": "Smooth even on pavement 👏🔥 (via @knnymills/X)",
+      "title": "Smooth even on pavement 👏🔥 (via @knnymills/X)",
+      "lesson": "#ESPN #halloween #michaeljackson",
+      "source": "ESPN · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/zNKwHxPrgTk",
+      "publishedAt": "2026-10-31T17:45:06.000Z",
+      "expiresAt": "2026-11-14T17:58:39.918Z",
+      "topicIds": [
+        "sports-biz",
+        "nba-analytics",
+        "football-film",
+        "wnba"
+      ],
+      "feedId": "yt-espn-shorts",
+      "imageUrl": "https://i3.ytimg.com/vi/zNKwHxPrgTk/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/zNKwHxPrgTk"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@espn"
+        }
+      ]
+    },
+    {
+      "id": "rss-eae8659b6aba",
+      "hook": "Michigan Muslims helped elect Trump. Now their faith is under fire",
+      "title": "Michigan Muslims helped elect Trump. Now their faith is under fire",
+      "lesson": "Michigan Muslims helped elect Trump. Now their faith is under fire",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/10/31/michigan-muslims-helped-elect-trump-now-their-faith-is-under-fire?traffic_source=rss",
+      "publishedAt": "2026-10-31T17:38:18.000Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/michigan-muslims-helped-elect-trump-now-their-faith-is-under-fire?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-abb02d7eb51f",
+      "hook": "Michigan Muslims helped elect Trump. Now their faith is under fire",
+      "title": "Michigan Muslims helped elect Trump. Now their faith is under fire",
+      "lesson": "Michigan's Muslim voters helped Donald Trump win in 2024. Now, Abdul El-Sayed is running to become the US’ first Muslim senator, his faith and loyalty are under attack. Al Jazeera's Mikail Malik spoke to Muslim Americans in Dearborn. Subscribe to our channel: http://bit.ly/AJSubscribe Follow us on X :",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/73f92d60-6272-4e64-8d4e-b4f4012295fc/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-10-31T17:38:12.000Z",
+      "expiresAt": "2026-11-03T17:58:12.986Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "imageUrl": "https://www.omnycontent.com/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/73f92d60-6272-4e64-8d4e-b4f4012295fc/image.jpg?t=1793468282&size=Large",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/73f92d60-6272-4e64-8d4e-b4f4012295fc/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-030401cab01d",
+      "hook": "Brighton shock Man City, closing gap on Premier League leader to two…",
+      "title": "Brighton shock Man City, closing gap on Premier League leader to two points",
+      "lesson": "Yasin Ayari goal hands third-placed Brighton 1-0 win at Manchester City, with two points separating top three in EPL.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/sports/2026/10/31/brighton-shock-man-city-closing-gap-on-premier-league-leader-to-two-points?traffic_source=rss",
+      "publishedAt": "2026-10-31T17:32:42.000Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/sports/2026/10/31/brighton-shock-man-city-closing-gap-on-premier-league-leader-to-two-points?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-e10a7a5a9485",
+      "hook": "Jerusalem Daily: Who will form Israel’s next government?",
+      "title": "Jerusalem Daily: Who will form Israel’s next government?",
+      "lesson": "Netanyahu and Eisenkot are locked in a struggle to form a governing coalition in the Knesset.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/10/31/jerusalem-daily-who-will-form-israels-next-government?traffic_source=rss",
+      "publishedAt": "2026-10-31T17:29:00.000Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/jerusalem-daily-who-will-form-israels-next-government?traffic_source=rss"
         }
       ]
     },
@@ -105,31 +347,6 @@
       ]
     },
     {
-      "id": "rss-07a2545f6641",
-      "hook": "Affirmative Action",
-      "title": "Affirmative Action",
-      "lesson": "Affirmative Action — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
-      "source": "Black History in Two Minutes",
-      "sourceUrl": "https://www.youtube.com/watch?v=9Pcm00E-DEM",
-      "publishedAt": "2026-10-31T17:27:47.667Z",
-      "expiresAt": "2026-11-12T17:30:47.667Z",
-      "topicIds": [
-        "history"
-      ],
-      "feedId": "yt-black-history-two-min",
-      "imageUrl": "https://i.ytimg.com/vi/9Pcm00E-DEM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDnvrTzPnT547V7PSdSuqs6S-pTww",
-      "angles": [
-        {
-          "label": "Watch",
-          "url": "https://www.youtube.com/watch?v=9Pcm00E-DEM"
-        },
-        {
-          "label": "Channel",
-          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
-        }
-      ]
-    },
-    {
       "id": "rss-471f8ef365b8",
       "hook": "Speed is Miles Morales for Halloween 👀🔥 (via @IShowSpeed/TT)",
       "title": "Speed is Miles Morales for Halloween 👀🔥 (via @IShowSpeed/TT)",
@@ -158,56 +375,6 @@
       ]
     },
     {
-      "id": "rss-c64255d29eac",
-      "hook": "Oscar Micheaux: The First Black Indie Filmmaker",
-      "title": "Oscar Micheaux: The First Black Indie Filmmaker",
-      "lesson": "Oscar Micheaux: The First Black Indie Filmmaker — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
-      "source": "Black History in Two Minutes",
-      "sourceUrl": "https://www.youtube.com/watch?v=LHRBK3Q23Ek",
-      "publishedAt": "2026-10-31T17:26:47.667Z",
-      "expiresAt": "2026-11-12T17:30:47.667Z",
-      "topicIds": [
-        "history"
-      ],
-      "feedId": "yt-black-history-two-min",
-      "imageUrl": "https://i.ytimg.com/vi/LHRBK3Q23Ek/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAMFb4lOB8xfjVD1nrf3dwVu0ERlg",
-      "angles": [
-        {
-          "label": "Watch",
-          "url": "https://www.youtube.com/watch?v=LHRBK3Q23Ek"
-        },
-        {
-          "label": "Channel",
-          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
-        }
-      ]
-    },
-    {
-      "id": "rss-f6083e20dcb9",
-      "hook": "The Tuskegee Study",
-      "title": "The Tuskegee Study",
-      "lesson": "The Tuskegee Study — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
-      "source": "Black History in Two Minutes",
-      "sourceUrl": "https://www.youtube.com/watch?v=afwK2CVpc9E",
-      "publishedAt": "2026-10-31T17:25:47.667Z",
-      "expiresAt": "2026-11-12T17:30:47.667Z",
-      "topicIds": [
-        "history"
-      ],
-      "feedId": "yt-black-history-two-min",
-      "imageUrl": "https://i.ytimg.com/vi/afwK2CVpc9E/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCUZawG-NsAIeJSCqPlvT7r2hKOLA",
-      "angles": [
-        {
-          "label": "Watch",
-          "url": "https://www.youtube.com/watch?v=afwK2CVpc9E"
-        },
-        {
-          "label": "Channel",
-          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
-        }
-      ]
-    },
-    {
       "id": "rss-f1c9bfa0125a",
       "hook": "Jerusalem Daily: Who will form Israel’s next government?",
       "title": "Jerusalem Daily: Who will form Israel’s next government?",
@@ -215,7 +382,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/d556ae5a-8aae-4b39-acd1-b4f4011f28f2/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-10-31T17:25:46.000Z",
-      "expiresAt": "2026-11-08T17:30:30.498Z",
+      "expiresAt": "2026-11-03T17:58:12.986Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -255,31 +422,6 @@
       ]
     },
     {
-      "id": "rss-5e5a536d76a8",
-      "hook": "Black History in Two Minutes (or so) Nominated Best Podcast Documentary",
-      "title": "Black History in Two Minutes (or so) Nominated Best Podcast Documentary",
-      "lesson": "Black History in Two Minutes (or so) Nominated Best Podcast Documentary — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
-      "source": "Black History in Two Minutes",
-      "sourceUrl": "https://www.youtube.com/watch?v=V3Z6yILMuZo",
-      "publishedAt": "2026-10-31T17:24:47.667Z",
-      "expiresAt": "2026-11-12T17:30:47.667Z",
-      "topicIds": [
-        "history"
-      ],
-      "feedId": "yt-black-history-two-min",
-      "imageUrl": "https://i.ytimg.com/vi/V3Z6yILMuZo/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB3gOAAuADigIMCAAQARhyID8oNjAP&rs=AOn4CLDz67-KrMxtipI0GmJ6V3YoDkuwQQ",
-      "angles": [
-        {
-          "label": "Watch",
-          "url": "https://www.youtube.com/watch?v=V3Z6yILMuZo"
-        },
-        {
-          "label": "Channel",
-          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
-        }
-      ]
-    },
-    {
       "id": "rss-254b05dfcc6b",
       "hook": "Nick Saban got to fire the cannon on his birthday 🎂😂",
       "title": "Nick Saban got to fire the cannon on his birthday 🎂😂",
@@ -304,31 +446,6 @@
         {
           "label": "Channel",
           "url": "https://www.youtube.com/@espn"
-        }
-      ]
-    },
-    {
-      "id": "rss-a22b042d058a",
-      "hook": "Black History in Two Minutes (or so) Nominated Best Social Series /…",
-      "title": "Black History in Two Minutes (or so) Nominated Best Social Series / Education & Discovery",
-      "lesson": "Black History in Two Minutes (or so) Nominated Best Social Series / Education & Discovery — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
-      "source": "Black History in Two Minutes",
-      "sourceUrl": "https://www.youtube.com/watch?v=M-fFgaUp06A",
-      "publishedAt": "2026-10-31T17:23:47.667Z",
-      "expiresAt": "2026-11-12T17:30:47.667Z",
-      "topicIds": [
-        "history"
-      ],
-      "feedId": "yt-black-history-two-min",
-      "imageUrl": "https://i.ytimg.com/vi/M-fFgaUp06A/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB3gOAAuADigIMCAAQARhyID8oPDAP&rs=AOn4CLCFd72oUoR_wNZYprB_HvlCREDYSQ",
-      "angles": [
-        {
-          "label": "Watch",
-          "url": "https://www.youtube.com/watch?v=M-fFgaUp06A"
-        },
-        {
-          "label": "Channel",
-          "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
         }
       ]
     },
@@ -361,6 +478,69 @@
       ]
     },
     {
+      "id": "rss-75e5a12e7a58",
+      "hook": "Pakistan beat Sri Lanka as Zaman’s century turns thrilling…",
+      "title": "Pakistan beat Sri Lanka as Zaman’s century turns thrilling tri-series final",
+      "lesson": "Fakhar Zaman's century outdoes Kamindu Mendis and propels Pakistan to three-wicket win against Sri Lanka in cricket final.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/sports/2026/10/31/pakistan-beat-sri-lanka-as-zaman-century-turns-thrilling-tri-series-final?traffic_source=rss",
+      "publishedAt": "2026-10-31T17:21:05.000Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/sports/2026/10/31/pakistan-beat-sri-lanka-as-zaman-century-turns-thrilling-tri-series-final?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-89623349dec9",
+      "hook": "A cure for Trump? Why Democratic doctors are running in the 2026…",
+      "title": "A cure for Trump? Why Democratic doctors are running in the 2026 midterms",
+      "lesson": "Democratic doctors aim to convert the backlash against the Trump administration’s health policies into midterm votes.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/longform/2026/10/31/a-cure-for-trump-why-democratic-doctors-are-running-in-the-2026-midterms?traffic_source=rss",
+      "publishedAt": "2026-10-31T17:19:44.000Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/longform/2026/10/31/a-cure-for-trump-why-democratic-doctors-are-running-in-the-2026-midterms?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-ff1c5d8a4a9c",
+      "hook": "Dakar Youth Olympics: Who gets to hold the flame?",
+      "title": "Dakar Youth Olympics: Who gets to hold the flame?",
+      "lesson": "Senegal makes history by becoming the first African country to host an Olympic event.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/sports/2026/10/31/dakar-youth-olympics-who-gets-to-hold-the-flame?traffic_source=rss",
+      "publishedAt": "2026-10-31T17:17:21.000Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/sports/2026/10/31/dakar-youth-olympics-who-gets-to-hold-the-flame?traffic_source=rss"
+        }
+      ]
+    },
+    {
       "id": "rss-5eb5734fb1ce",
       "hook": "How hard is it to recover the $6.3 billion hackers stole from Binance?",
       "title": "How hard is it to recover the $6.3 billion hackers stole from Binance?",
@@ -368,7 +548,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-31-0700/banking-and-finance-how-hard-it-recover-63-billion-hackers-stole-binance",
       "publishedAt": "2026-10-31T17:14:29.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -389,7 +569,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-31-0700/banking-and-finance-expert-warns-ai-hacking-bloodbath-following-massive-binance-cryptocurrency-theft",
       "publishedAt": "2026-10-31T17:13:11.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -410,7 +590,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/10/31/flavio-bolsonaro-says-he-may-run-again-for-brazilian-presidency?traffic_source=rss",
       "publishedAt": "2026-10-31T17:12:11.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -476,7 +656,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/3297777d-2b87-42cb-9238-b4f4011a0ab7/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-10-31T17:07:01.000Z",
-      "expiresAt": "2026-11-08T17:30:30.498Z",
+      "expiresAt": "2026-11-03T17:58:12.986Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -502,7 +682,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-31-0700/banking-and-finance-worlds-biggest-crypto-exchange-hit-record-63-billion-hack",
       "publishedAt": "2026-10-31T17:04:56.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -524,7 +704,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/4070f570-07af-442d-a76d-b4f40118b8df/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-10-31T17:02:15.000Z",
-      "expiresAt": "2026-11-08T17:30:30.498Z",
+      "expiresAt": "2026-11-03T17:58:12.986Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -550,7 +730,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/4087ad58-26e2-4575-8df3-b4f40112a25c/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-10-31T16:40:15.000Z",
-      "expiresAt": "2026-11-08T17:30:30.498Z",
+      "expiresAt": "2026-11-03T17:58:12.986Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -576,7 +756,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/10/31/thousands-rally-in-berlin-as-gen-z-plans-protests-in-30-german-cities?traffic_source=rss",
       "publishedAt": "2026-10-31T16:28:04.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -625,7 +805,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=e019e3c9-1fe1-474c-8454-0b0604e94a0b&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-31T16:17:54.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -743,7 +923,7 @@
       "source": "NPR · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/glH2utFuL70",
       "publishedAt": "2026-10-31T16:00:24.000Z",
-      "expiresAt": "2026-11-08T17:30:50.087Z",
+      "expiresAt": "2026-11-03T17:58:37.032Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -795,7 +975,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/sports/2026/10/31/south-africa-hammer-australia-as-harmer-takes-career-best-bowling-of-6-16?traffic_source=rss",
       "publishedAt": "2026-10-31T15:43:46.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -837,7 +1017,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/sports/2026/10/31/chelsea-beat-man-united-as-martinez-sees-red-for-crazy-moment-in-thriller?traffic_source=rss",
       "publishedAt": "2026-10-31T15:09:59.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:12.691Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -942,7 +1122,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=438b7b1e-b3bf-4a02-a889-72b26eae0bcb&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-31T14:52:35.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -963,7 +1143,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=778ecbde-1828-4200-8f14-40480463eae8&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-31T14:48:09.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -984,7 +1164,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/10/31/iran-fm-says-us-outreach-a-positive-step-as-delegation-in-qatar-for-talks?traffic_source=rss",
       "publishedAt": "2026-10-31T14:31:37.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:40.726Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1005,7 +1185,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/10/31/syria-considering-entry-into-mecca-defence-pact-says-foreign-minister?traffic_source=rss",
       "publishedAt": "2026-10-31T14:20:23.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:40.726Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1026,7 +1206,7 @@
       "source": "Up First",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/a1f4f816-a10e-4363-80d9-ce4b76626fa1/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=a1f4f816-a10e-4363-80d9-ce4b76626fa1&feed=HMwRVgVt&t=podcast&e=nx-s1-6022401&p=510318&d=926&size=14821713",
       "publishedAt": "2026-10-31T14:18:18.000Z",
-      "expiresAt": "2026-11-08T17:30:31.160Z",
+      "expiresAt": "2026-11-03T17:58:13.690Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1051,7 +1231,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=863c546f-25c6-42a6-8910-a9bd2064b873&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-31T14:13:30.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -1072,7 +1252,7 @@
       "source": "The Parnas Perspective",
       "sourceUrl": "https://aaronparnas.substack.com/p/news-trump-admits-hes-tired-wants",
       "publishedAt": "2026-10-31T14:00:31.000Z",
-      "expiresAt": "2026-11-08T17:30:33.177Z",
+      "expiresAt": "2026-11-03T17:58:15.878Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1121,7 +1301,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/10/31/nx-s1-6024423/criminal-probe-alaska-senate-candidate",
       "publishedAt": "2026-10-31T13:50:58.000Z",
-      "expiresAt": "2026-11-08T17:30:30.679Z",
+      "expiresAt": "2026-11-03T17:58:13.159Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1143,7 +1323,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=f81c2fcc-f599-4598-bb20-06e0f8d7d1df&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-31T13:38:27.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -1164,7 +1344,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/10/31/israel-voted-for-israel-why-gaza-wasnt-on-the-ballot?traffic_source=rss",
       "publishedAt": "2026-10-31T13:35:51.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:40.726Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1185,7 +1365,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/c5398239je88o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-10-31T13:28:40.000Z",
-      "expiresAt": "2026-11-08T17:30:31.988Z",
+      "expiresAt": "2026-11-03T17:58:14.587Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1207,7 +1387,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/news/2026/10/31/burnham-opens-door-to-formal-apology-for-britains-slave-trade?traffic_source=rss",
       "publishedAt": "2026-10-31T13:19:23.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:40.726Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1228,7 +1408,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/features/longform/2026/10/31/on-the-norway-russia-border-the-sami-people-face-a-growing-divide?traffic_source=rss",
       "publishedAt": "2026-10-31T12:58:28.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:40.726Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1249,7 +1429,7 @@
       "source": "Al Jazeera",
       "sourceUrl": "https://www.aljazeera.com/sports/2026/10/31/west-indies-bangladesh-first-test-eight-wickets-mirpur-series-lead?traffic_source=rss",
       "publishedAt": "2026-10-31T12:55:00.000Z",
-      "expiresAt": "2026-11-08T17:30:30.198Z",
+      "expiresAt": "2026-11-03T17:58:40.726Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1270,7 +1450,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/0f07d98b-8079-44ae-9409-b4f400d1f0d1/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-10-31T12:44:34.000Z",
-      "expiresAt": "2026-11-08T17:30:30.498Z",
+      "expiresAt": "2026-11-03T17:58:12.986Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1296,7 +1476,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/f6a80d23-15a0-479e-84ec-b4f400cbc9b4/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-10-31T12:22:07.000Z",
-      "expiresAt": "2026-11-08T17:30:30.498Z",
+      "expiresAt": "2026-11-03T17:58:12.986Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1322,7 +1502,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/2864fe22-48a0-45a6-bacc-b4f400cbac03/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-10-31T12:21:42.000Z",
-      "expiresAt": "2026-11-08T17:30:30.498Z",
+      "expiresAt": "2026-11-03T17:58:12.986Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1348,7 +1528,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/10/31/nx-s1-5995422/the-healthcare-election-florida",
       "publishedAt": "2026-10-31T11:46:45.000Z",
-      "expiresAt": "2026-11-08T17:30:30.679Z",
+      "expiresAt": "2026-11-03T17:58:13.159Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1370,7 +1550,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/10/31/nx-s1-6020974/politics-norms-and-the-dojs-unprecedented-pre-election-headlines",
       "publishedAt": "2026-10-31T11:42:56.000Z",
-      "expiresAt": "2026-11-08T17:30:30.679Z",
+      "expiresAt": "2026-11-03T17:58:13.159Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1392,7 +1572,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/10/31/nx-s1-6019280/week-in-politics-trumps-midwest-pivot-sharper-democratic-messaging",
       "publishedAt": "2026-10-31T11:42:51.000Z",
-      "expiresAt": "2026-11-08T17:30:30.679Z",
+      "expiresAt": "2026-11-03T17:58:13.159Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1414,7 +1594,7 @@
       "source": "Al Jazeera News Feed",
       "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/0a383442-525c-4d41-a462-b4f400b699b2/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
       "publishedAt": "2026-10-31T11:05:01.000Z",
-      "expiresAt": "2026-11-08T17:30:30.498Z",
+      "expiresAt": "2026-11-03T17:58:40.726Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -1462,7 +1642,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/10/31/g-s1-149981/listener-questions-npr-midterms-2026-election",
       "publishedAt": "2026-10-31T09:00:00.000Z",
-      "expiresAt": "2026-11-08T17:30:30.679Z",
+      "expiresAt": "2026-11-03T17:58:13.159Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1484,7 +1664,7 @@
       "source": "C-SPAN · Washington Today",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN9041921351.mp3",
       "publishedAt": "2026-10-31T08:00:00.000Z",
-      "expiresAt": "2026-11-08T17:30:35.455Z",
+      "expiresAt": "2026-11-03T17:58:18.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1509,7 +1689,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cm62yxxd992eo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-10-31T05:16:01.000Z",
-      "expiresAt": "2026-11-08T17:30:31.988Z",
+      "expiresAt": "2026-11-03T17:58:14.587Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1601,7 +1781,7 @@
       "source": "C-SPAN · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/vawsWFoRkpc",
       "publishedAt": "2026-10-31T02:48:50.000Z",
-      "expiresAt": "2026-11-08T17:30:49.702Z",
+      "expiresAt": "2026-11-03T17:58:36.212Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1744,7 +1924,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cm5yn7d0qx1do?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-10-31T00:00:15.000Z",
-      "expiresAt": "2026-11-08T17:30:31.988Z",
+      "expiresAt": "2026-11-03T17:58:14.587Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1786,7 +1966,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-30-0700/world-polish-president-turns-plane-around-after-coup-nations-top-court",
       "publishedAt": "2026-10-30T23:53:36.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1807,7 +1987,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-30-0700/healthcare-obamacare-see-double-digit-premium-hike-2027-likely-eroding-enrollment",
       "publishedAt": "2026-10-30T23:51:57.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1828,7 +2008,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-30-0700/2026-midterm-elections-texas-early-voting-tops-6m-tight-talarico-paxton-senate-race",
       "publishedAt": "2026-10-30T23:50:07.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1849,7 +2029,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-30-0700/general-news-time-set-back-clocks-much-trumps-chagrin",
       "publishedAt": "2026-10-30T23:48:50.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1870,7 +2050,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-30-0700/criminal-justice-tennessee-prison-escapee-crossed-state-lines-prison-officials-alerted-external-law-enforcement-district-attorney-says",
       "publishedAt": "2026-10-30T23:47:20.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1891,7 +2071,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-30-0700/voting-rights-and-voter-fraud-judge-orders-doj-hand-over-list-purported-noncitizen-voters",
       "publishedAt": "2026-10-30T23:45:24.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1912,7 +2092,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-30-0700/public-health-dea-begins-granting-federal-approval-more-900-medical-marijuana-dispensaries",
       "publishedAt": "2026-10-30T23:39:20.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1933,7 +2113,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-30-0700/public-health-dea-officially-grants-federal-registration-and-protections-more-900-medical-marijuana-dispensaries",
       "publishedAt": "2026-10-30T23:37:38.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1955,7 +2135,7 @@
       "source": "AllSides",
       "sourceUrl": "https://www.allsides.com/news/2026-10-30-0700/public-health-dea-approvals-could-bring-big-tax-benefits-medical-marijuana-businesses",
       "publishedAt": "2026-10-30T23:35:29.000Z",
-      "expiresAt": "2026-11-08T17:30:29.883Z",
+      "expiresAt": "2026-11-03T17:58:12.489Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -1976,7 +2156,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=adc0ce79-54ee-477a-96ce-0dc283e77fa8&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-30T23:15:50.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -2086,7 +2266,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=1274034d-9cd5-45bd-99a6-a56dc0444e6d&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-30T22:45:29.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -2107,7 +2287,7 @@
       "source": "C-SPAN · Washington Today",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN3283504999.mp3",
       "publishedAt": "2026-10-30T22:45:00.000Z",
-      "expiresAt": "2026-11-08T17:30:35.455Z",
+      "expiresAt": "2026-11-03T17:58:18.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2132,7 +2312,7 @@
       "source": "NPR · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/e6_onWXaI6U",
       "publishedAt": "2026-10-30T22:24:53.000Z",
-      "expiresAt": "2026-11-08T17:30:50.087Z",
+      "expiresAt": "2026-11-03T17:58:37.032Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -2158,7 +2338,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=fd948422-178e-468f-b6cf-905a78de96f0&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-30T22:24:48.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -2222,7 +2402,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6023328/east-potomac-reyes-misconduct-inquiry-doj",
       "publishedAt": "2026-10-30T21:56:52.000Z",
-      "expiresAt": "2026-11-08T17:30:30.679Z",
+      "expiresAt": "2026-11-03T17:58:13.159Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2288,7 +2468,7 @@
       "source": "C-SPAN · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/z9VaYmwImt8",
       "publishedAt": "2026-10-30T21:48:11.000Z",
-      "expiresAt": "2026-11-08T17:30:49.702Z",
+      "expiresAt": "2026-11-03T17:58:36.212Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2334,7 +2514,7 @@
       "source": "The Parnas Perspective",
       "sourceUrl": "https://aaronparnas.substack.com/p/news-writing-on-the-wall-trump-privately",
       "publishedAt": "2026-10-30T21:47:33.000Z",
-      "expiresAt": "2026-11-08T17:30:33.177Z",
+      "expiresAt": "2026-11-03T17:58:15.878Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2400,7 +2580,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=2b785bbc-3682-49dd-b32e-72721c2e01a1&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-30T21:34:12.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -2649,7 +2829,7 @@
       "source": "MarketWatch · Bulletins",
       "sourceUrl": "https://www.marketwatch.com/bulletins/redirect/go?g=63c147f1-e8ae-4faa-86d7-36694824f104&mod=mw_rss_bulletins",
       "publishedAt": "2026-10-30T20:42:04.000Z",
-      "expiresAt": "2026-11-08T17:30:36.835Z",
+      "expiresAt": "2026-11-03T17:58:19.961Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -2761,7 +2941,7 @@
       "source": "NPR Politics Podcast",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/7a638da2-c3a2-4f2b-9196-00f68540747e/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=7a638da2-c3a2-4f2b-9196-00f68540747e&feed=iDPaKWvZ&t=podcast&e=nx-s1-6023163&p=510310&d=1795&size=28723035",
       "publishedAt": "2026-10-30T19:59:17.000Z",
-      "expiresAt": "2026-11-08T17:30:31.060Z",
+      "expiresAt": "2026-11-03T17:58:13.573Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -2830,7 +3010,7 @@
       "source": "Legal AF · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/-YvwxN-Yytk",
       "publishedAt": "2026-10-30T19:00:36.000Z",
-      "expiresAt": "2026-11-08T17:30:53.563Z",
+      "expiresAt": "2026-11-03T17:58:40.725Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3113,7 +3293,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/from-18th-century-false-ballots-to-the-second-jfk-and-double-dan-sullivans-a-brief-history-of-spoiler-candidates-and-the-unsuccessful-legal-challenges-to-them-295504",
       "publishedAt": "2026-10-30T17:14:04.000Z",
-      "expiresAt": "2026-11-08T17:30:31.498Z",
+      "expiresAt": "2026-11-03T17:58:14.037Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3135,7 +3315,7 @@
       "source": "C-SPAN · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/g7ZscMABkK4",
       "publishedAt": "2026-10-30T17:04:36.000Z",
-      "expiresAt": "2026-11-08T17:30:49.702Z",
+      "expiresAt": "2026-11-03T17:58:36.212Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3161,7 +3341,7 @@
       "source": "NPR · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/vvOkWGIN0IA",
       "publishedAt": "2026-10-30T17:00:33.000Z",
-      "expiresAt": "2026-11-08T17:30:50.087Z",
+      "expiresAt": "2026-11-03T17:58:37.032Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3187,7 +3367,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cqr7yp8dngn8o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-10-30T16:56:33.000Z",
-      "expiresAt": "2026-11-08T17:30:31.988Z",
+      "expiresAt": "2026-11-03T17:58:14.587Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3254,7 +3434,7 @@
       "source": "C-SPAN · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/4IFylNOQYQY",
       "publishedAt": "2026-10-30T16:19:18.000Z",
-      "expiresAt": "2026-11-08T17:30:49.702Z",
+      "expiresAt": "2026-11-03T17:58:36.212Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3280,7 +3460,7 @@
       "source": "Legal AF · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/EOUl0oHiYt4",
       "publishedAt": "2026-10-30T16:00:36.000Z",
-      "expiresAt": "2026-11-08T17:30:53.563Z",
+      "expiresAt": "2026-11-03T17:58:40.725Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3375,7 +3555,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cqm24pdylmm2o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-10-30T15:57:43.000Z",
-      "expiresAt": "2026-11-08T17:30:31.988Z",
+      "expiresAt": "2026-11-03T17:58:14.587Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3496,7 +3676,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/midterm-election-propublica-reporting-findings",
       "publishedAt": "2026-10-30T15:10:00.000Z",
-      "expiresAt": "2026-11-08T17:30:31.680Z",
+      "expiresAt": "2026-11-03T17:58:14.207Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3561,7 +3741,7 @@
       "source": "NPR · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/fBfC949HJ3I",
       "publishedAt": "2026-10-30T15:00:30.000Z",
-      "expiresAt": "2026-11-08T17:30:50.087Z",
+      "expiresAt": "2026-11-03T17:58:37.032Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3587,7 +3767,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6008113/npr-special-swing-voter-focus-groups",
       "publishedAt": "2026-10-30T15:00:00.000Z",
-      "expiresAt": "2026-11-08T17:30:30.679Z",
+      "expiresAt": "2026-11-03T17:58:13.159Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3630,7 +3810,7 @@
       "source": "The Parnas Perspective",
       "sourceUrl": "https://aaronparnas.substack.com/p/news-trump-panics-and-revives-canceled",
       "publishedAt": "2026-10-30T14:13:32.000Z",
-      "expiresAt": "2026-11-08T17:30:33.177Z",
+      "expiresAt": "2026-11-03T17:58:15.878Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3679,7 +3859,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/are-american-voters-actually-gloomy-about-the-economy-or-is-something-else-going-on-295476",
       "publishedAt": "2026-10-30T12:13:27.000Z",
-      "expiresAt": "2026-11-08T17:30:31.498Z",
+      "expiresAt": "2026-11-03T17:58:14.037Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3701,7 +3881,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/fascism-mixed-into-cringey-online-content-is-easy-to-mock-but-no-less-dangerous-292643",
       "publishedAt": "2026-10-30T12:12:08.000Z",
-      "expiresAt": "2026-11-08T17:30:31.498Z",
+      "expiresAt": "2026-11-03T17:58:14.037Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3723,7 +3903,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/presidents-of-both-parties-defended-libraries-as-allies-of-democracy-for-a-century-until-trump-293685",
       "publishedAt": "2026-10-30T12:09:16.000Z",
-      "expiresAt": "2026-11-08T17:30:31.498Z",
+      "expiresAt": "2026-11-03T17:58:14.037Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3745,7 +3925,7 @@
       "source": "NPR Politics",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6023106/cheesecake-factory-culture-war-affordability-trump-obama",
       "publishedAt": "2026-10-30T12:00:31.000Z",
-      "expiresAt": "2026-11-08T17:30:30.679Z",
+      "expiresAt": "2026-11-03T17:58:13.159Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3767,7 +3947,7 @@
       "source": "Legal AF · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/TE5kLWJ-37k",
       "publishedAt": "2026-10-30T12:00:13.000Z",
-      "expiresAt": "2026-11-08T17:30:53.563Z",
+      "expiresAt": "2026-11-03T17:58:40.725Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3793,7 +3973,7 @@
       "source": "BBC Politics",
       "sourceUrl": "https://www.bbc.co.uk/news/articles/cw62yrzxjnk4o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-10-30T11:23:38.000Z",
-      "expiresAt": "2026-11-08T17:30:31.988Z",
+      "expiresAt": "2026-11-03T17:58:14.587Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -3894,7 +4074,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6022529/candidates-make-final-appeals-to-voters-ahead-of-election-day",
       "publishedAt": "2026-10-30T11:00:12.000Z",
-      "expiresAt": "2026-11-08T17:30:31.313Z",
+      "expiresAt": "2026-11-03T17:58:13.877Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3916,7 +4096,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6022116/how-campaigns-are-spending-the-last-weekend-before-election-day",
       "publishedAt": "2026-10-30T11:00:07.000Z",
-      "expiresAt": "2026-11-08T17:30:31.313Z",
+      "expiresAt": "2026-11-03T17:58:13.877Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -3938,7 +4118,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6019536/former-fbi-director-james-comey-to-appear-in-court",
       "publishedAt": "2026-10-30T11:00:03.000Z",
-      "expiresAt": "2026-11-08T17:30:31.313Z",
+      "expiresAt": "2026-11-03T17:58:13.877Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -4026,7 +4206,7 @@
       "source": "Up First",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/5e95cdcd-0fd3-48da-8276-fb6a4799f399/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=5e95cdcd-0fd3-48da-8276-fb6a4799f399&feed=HMwRVgVt&t=podcast&e=nx-s1-6023035&p=510318&d=770&size=12326496",
       "publishedAt": "2026-10-30T10:01:13.000Z",
-      "expiresAt": "2026-11-08T17:30:31.160Z",
+      "expiresAt": "2026-11-03T17:58:13.690Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -4051,7 +4231,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/carbon-capture-storage-fossil-fuel-sally-benson",
       "publishedAt": "2026-10-30T10:00:00.000Z",
-      "expiresAt": "2026-11-08T17:30:31.680Z",
+      "expiresAt": "2026-11-03T17:58:14.207Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4157,7 +4337,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/sports-betting-impact-louisiana-ohio-congress",
       "publishedAt": "2026-10-30T09:00:00.000Z",
-      "expiresAt": "2026-11-08T17:30:31.680Z",
+      "expiresAt": "2026-11-03T17:58:14.207Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4200,7 +4380,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6009834/morning-news-brief",
       "publishedAt": "2026-10-30T08:47:53.000Z",
-      "expiresAt": "2026-11-08T17:30:31.313Z",
+      "expiresAt": "2026-11-03T17:58:13.877Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -4222,7 +4402,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6009485/carrie-and-other-horror-classics-get-tv-treatment-this-spooky-season",
       "publishedAt": "2026-10-30T08:47:46.000Z",
-      "expiresAt": "2026-11-08T17:30:31.313Z",
+      "expiresAt": "2026-11-03T17:58:13.877Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -4244,7 +4424,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6022500/patrick-stewart-star-trek-and-x-men-star-dies-at-86",
       "publishedAt": "2026-10-30T08:47:40.000Z",
-      "expiresAt": "2026-11-08T17:30:31.313Z",
+      "expiresAt": "2026-11-03T17:58:13.877Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -4266,7 +4446,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-5993986/vermont-is-home-to-two-of-ices-surveillance-facilities-locals-are-pushing-back",
       "publishedAt": "2026-10-30T08:47:35.000Z",
-      "expiresAt": "2026-11-08T17:30:31.313Z",
+      "expiresAt": "2026-11-03T17:58:13.877Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -4288,7 +4468,7 @@
       "source": "Morning Edition",
       "sourceUrl": "https://www.npr.org/2026/10/30/nx-s1-6020514/florida-sees-spike-in-dengue-fever-cases",
       "publishedAt": "2026-10-30T08:47:21.000Z",
-      "expiresAt": "2026-11-08T17:30:31.313Z",
+      "expiresAt": "2026-11-03T17:58:13.877Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -4500,7 +4680,7 @@
       "source": "C-SPAN · Washington Today",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN5887211795.mp3",
       "publishedAt": "2026-10-29T23:03:00.000Z",
-      "expiresAt": "2026-11-08T17:30:35.455Z",
+      "expiresAt": "2026-11-03T17:58:18.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4573,7 +4753,7 @@
       "source": "C-SPAN · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/NSPhe3R_kQs",
       "publishedAt": "2026-10-29T22:10:07.000Z",
-      "expiresAt": "2026-11-08T17:30:49.702Z",
+      "expiresAt": "2026-11-03T17:58:36.212Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4599,7 +4779,7 @@
       "source": "The Parnas Perspective",
       "sourceUrl": "https://aaronparnas.substack.com/p/news-fox-ratings-tank-trump-cancels",
       "publishedAt": "2026-10-29T22:07:38.000Z",
-      "expiresAt": "2026-11-08T17:30:33.177Z",
+      "expiresAt": "2026-11-03T17:58:15.878Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4648,7 +4828,7 @@
       "source": "NPR · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/3u1s6YQ5zhs",
       "publishedAt": "2026-10-29T21:00:09.000Z",
-      "expiresAt": "2026-11-08T17:30:50.087Z",
+      "expiresAt": "2026-11-03T17:58:37.032Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -4674,7 +4854,7 @@
       "source": "C-SPAN · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/3Gmi8bVvr6c",
       "publishedAt": "2026-10-29T20:57:27.000Z",
-      "expiresAt": "2026-11-08T17:30:49.702Z",
+      "expiresAt": "2026-11-03T17:58:36.212Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4700,7 +4880,7 @@
       "source": "NPR Politics Podcast",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/40314256-c7c3-47ea-a1b6-dcf7b2333767/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=40314256-c7c3-47ea-a1b6-dcf7b2333767&feed=iDPaKWvZ&t=podcast&e=nx-s1-6022063&p=510310&d=1068&size=17100009",
       "publishedAt": "2026-10-29T20:30:03.000Z",
-      "expiresAt": "2026-11-08T17:30:31.060Z",
+      "expiresAt": "2026-11-03T17:58:13.573Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4726,7 +4906,7 @@
       "source": "Legal AF · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/UJTwGT_zO9M",
       "publishedAt": "2026-10-29T20:00:23.000Z",
-      "expiresAt": "2026-11-08T17:30:53.563Z",
+      "expiresAt": "2026-11-03T17:58:40.725Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4799,7 +4979,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://projects.propublica.org/american-citizens-detained-dhs-civil-rights/list",
       "publishedAt": "2026-10-29T17:50:00.000Z",
-      "expiresAt": "2026-11-08T17:30:31.680Z",
+      "expiresAt": "2026-11-03T17:58:14.207Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -4848,7 +5028,7 @@
       "source": "NPR · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/jZ-8OXutJCg",
       "publishedAt": "2026-10-29T17:00:45.000Z",
-      "expiresAt": "2026-11-08T17:30:50.087Z",
+      "expiresAt": "2026-11-03T17:58:37.032Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -4994,7 +5174,7 @@
       "source": "Legal AF · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/jQ4_hTI20DA",
       "publishedAt": "2026-10-29T16:00:07.000Z",
-      "expiresAt": "2026-11-08T17:30:53.563Z",
+      "expiresAt": "2026-11-03T17:58:40.725Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5137,7 +5317,7 @@
       "source": "The Parnas Perspective",
       "sourceUrl": "https://aaronparnas.substack.com/p/news-trump-falls-for-obamas-trap",
       "publishedAt": "2026-10-29T14:00:52.000Z",
-      "expiresAt": "2026-11-08T17:30:33.177Z",
+      "expiresAt": "2026-11-03T17:58:15.878Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5186,7 +5366,7 @@
       "source": "NPR Podcasts · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/-yReT4gTw5I",
       "publishedAt": "2026-10-29T14:00:07.000Z",
-      "expiresAt": "2026-11-08T17:30:49.862Z",
+      "expiresAt": "2026-11-03T17:58:36.440Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -5324,7 +5504,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/political-information-increasingly-comes-from-pop-culture-outside-of-partisan-silos-but-where-male-creators-and-sometimes-misogyny-dominate-294202",
       "publishedAt": "2026-10-29T12:25:33.000Z",
-      "expiresAt": "2026-11-08T17:30:31.498Z",
+      "expiresAt": "2026-11-03T17:58:14.037Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5346,7 +5526,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/democrats-are-the-unwitting-beneficiaries-of-trumps-immigration-policies-295235",
       "publishedAt": "2026-10-29T12:25:18.000Z",
-      "expiresAt": "2026-11-08T17:30:31.498Z",
+      "expiresAt": "2026-11-03T17:58:14.037Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5368,7 +5548,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/federal-policy-helped-widen-rural-americas-fresh-food-gap-but-a-90-year-old-law-could-help-close-it-290124",
       "publishedAt": "2026-10-29T12:23:06.000Z",
-      "expiresAt": "2026-11-08T17:30:31.498Z",
+      "expiresAt": "2026-11-03T17:58:14.037Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5390,7 +5570,7 @@
       "source": "Legal AF · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/lyWBEus2ISg",
       "publishedAt": "2026-10-29T12:00:06.000Z",
-      "expiresAt": "2026-11-08T17:30:53.563Z",
+      "expiresAt": "2026-11-03T17:58:40.725Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5524,7 +5704,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/kronos-moroun-cadillac-heights-detroit-concrete-impact",
       "publishedAt": "2026-10-29T10:00:00.000Z",
-      "expiresAt": "2026-11-08T17:30:31.680Z",
+      "expiresAt": "2026-11-03T17:58:14.207Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5588,7 +5768,7 @@
       "source": "Up First",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/403f08a6-9425-44b7-922a-519df253da08/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=403f08a6-9425-44b7-922a-519df253da08&feed=HMwRVgVt&t=podcast&e=nx-s1-6021969&p=510318&d=772&size=12365366",
       "publishedAt": "2026-10-29T09:56:01.000Z",
-      "expiresAt": "2026-11-08T17:30:31.160Z",
+      "expiresAt": "2026-11-03T17:58:13.690Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -5613,7 +5793,7 @@
       "source": "ProPublica",
       "sourceUrl": "https://www.propublica.org/article/hhs-alicia-jackson-menopause-treatment-policy",
       "publishedAt": "2026-10-29T09:30:00.000Z",
-      "expiresAt": "2026-11-08T17:30:31.680Z",
+      "expiresAt": "2026-11-03T17:58:14.207Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5805,7 +5985,7 @@
       "source": "The Conversation · Politics",
       "sourceUrl": "https://theconversation.com/israel-has-voted-but-what-comes-next-dissecting-a-messy-ballot-and-coalition-building-process-295404",
       "publishedAt": "2026-10-29T01:39:44.000Z",
-      "expiresAt": "2026-11-08T17:30:31.498Z",
+      "expiresAt": "2026-11-03T17:58:14.037Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -5972,7 +6152,7 @@
       "source": "The Parnas Perspective",
       "sourceUrl": "https://aaronparnas.substack.com/p/news-trump-mobilizes-election-army",
       "publishedAt": "2026-10-28T23:25:27.000Z",
-      "expiresAt": "2026-11-08T17:30:33.177Z",
+      "expiresAt": "2026-11-03T17:58:15.878Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -6016,7 +6196,7 @@
       "source": "C-SPAN · Washington Today",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN5668933705.mp3",
       "publishedAt": "2026-10-28T23:19:00.000Z",
-      "expiresAt": "2026-11-08T17:30:35.455Z",
+      "expiresAt": "2026-11-03T17:58:18.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -6141,7 +6321,7 @@
       "source": "NPR Politics Podcast",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/567f4643-e463-4499-9180-529769c4eb99/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=567f4643-e463-4499-9180-529769c4eb99&feed=iDPaKWvZ&t=podcast&e=nx-s1-6020407&p=510310&d=922&size=14754421",
       "publishedAt": "2026-10-28T19:41:29.000Z",
-      "expiresAt": "2026-11-08T17:30:31.060Z",
+      "expiresAt": "2026-11-03T17:58:13.573Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -6393,7 +6573,7 @@
       "source": "The Parnas Perspective",
       "sourceUrl": "https://aaronparnas.substack.com/p/news-walls-close-in-on-vance-and",
       "publishedAt": "2026-10-28T14:07:16.000Z",
-      "expiresAt": "2026-11-08T17:30:33.177Z",
+      "expiresAt": "2026-11-03T17:58:15.878Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -6438,7 +6618,7 @@
       "source": "NPR Podcasts · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/5CjS_0zHxzU",
       "publishedAt": "2026-10-28T13:00:35.000Z",
-      "expiresAt": "2026-11-08T17:30:49.862Z",
+      "expiresAt": "2026-11-03T17:58:36.440Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -6609,7 +6789,7 @@
       "source": "Up First",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/550765f1-a761-4d80-b829-adb84cf37e08/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=550765f1-a761-4d80-b829-adb84cf37e08&feed=HMwRVgVt&t=podcast&e=nx-s1-6020166&p=510318&d=775&size=12403400",
       "publishedAt": "2026-10-28T09:56:00.000Z",
-      "expiresAt": "2026-11-08T17:30:31.160Z",
+      "expiresAt": "2026-11-03T17:58:13.690Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -6687,7 +6867,7 @@
       "source": "C-SPAN · Washington Today",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN4100530959.mp3",
       "publishedAt": "2026-10-27T22:47:00.000Z",
-      "expiresAt": "2026-11-08T17:30:35.455Z",
+      "expiresAt": "2026-11-03T17:58:18.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -6712,7 +6892,7 @@
       "source": "The Parnas Perspective",
       "sourceUrl": "https://aaronparnas.substack.com/p/news-end-of-the-trump-era-trump-glitches",
       "publishedAt": "2026-10-27T22:00:39.000Z",
-      "expiresAt": "2026-11-08T17:30:33.177Z",
+      "expiresAt": "2026-11-03T17:58:15.878Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -6783,7 +6963,7 @@
       "source": "NPR Politics Podcast",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/5bcb0fc6-c78f-44a4-8ce6-b31dc87173ea/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=5bcb0fc6-c78f-44a4-8ce6-b31dc87173ea&feed=iDPaKWvZ&t=podcast&e=nx-s1-6019227&p=510310&d=1049&size=16794062",
       "publishedAt": "2026-10-27T19:46:19.000Z",
-      "expiresAt": "2026-11-08T17:30:31.060Z",
+      "expiresAt": "2026-11-03T17:58:13.573Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -7109,7 +7289,7 @@
       "source": "Up First",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/1331dd71-7f89-44b4-b744-b58082cf5303/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=1331dd71-7f89-44b4-b744-b58082cf5303&feed=HMwRVgVt&t=podcast&e=nx-s1-6019096&p=510318&d=788&size=12615306",
       "publishedAt": "2026-10-27T10:01:32.000Z",
-      "expiresAt": "2026-11-08T17:30:31.160Z",
+      "expiresAt": "2026-11-03T17:58:13.690Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -7239,7 +7419,7 @@
       "source": "C-SPAN · Washington Today",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN6109582050.mp3",
       "publishedAt": "2026-10-26T21:57:00.000Z",
-      "expiresAt": "2026-11-08T17:30:35.455Z",
+      "expiresAt": "2026-11-03T17:58:18.040Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -7264,7 +7444,7 @@
       "source": "NPR Politics Podcast",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/4479edea-3871-4d4a-b42b-94306e0caa26/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=4479edea-3871-4d4a-b42b-94306e0caa26&feed=iDPaKWvZ&t=podcast&e=nx-s1-6017184&p=510310&d=1211&size=19383319",
       "publishedAt": "2026-10-26T20:38:04.000Z",
-      "expiresAt": "2026-11-08T17:30:31.060Z",
+      "expiresAt": "2026-11-03T17:58:13.573Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -8416,7 +8596,7 @@
       "source": "Up First",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/bdfdcc4d-c29f-4d2f-9216-c9b40222a2d3/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=bdfdcc4d-c29f-4d2f-9216-c9b40222a2d3&feed=HMwRVgVt&t=podcast&e=nx-s1-6016798&p=510318&d=803&size=12859394",
       "publishedAt": "2026-10-26T10:10:42.000Z",
-      "expiresAt": "2026-11-08T17:30:31.160Z",
+      "expiresAt": "2026-11-03T17:58:13.690Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -8547,7 +8727,7 @@
       "source": "C-SPAN · Q&A",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN3319718393.mp3",
       "publishedAt": "2026-10-26T00:00:00.000Z",
-      "expiresAt": "2026-11-07T17:30:35.521Z",
+      "expiresAt": "2026-11-03T17:58:18.148Z",
       "topicIds": [
         "politics",
         "history",
@@ -9531,7 +9711,7 @@
       "source": "NPR Politics Podcast",
       "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510310/npr.simplecastaudio.com/81c2d960-75d6-4dba-9f07-0bfade0db7ce/episodes/79988b81-2943-4d12-a1cb-1e6425d397ef/audio/128/default.mp3?awCollectionId=81c2d960-75d6-4dba-9f07-0bfade0db7ce&awEpisodeId=79988b81-2943-4d12-a1cb-1e6425d397ef&feed=iDPaKWvZ&t=podcast&e=nx-s1-6013412&p=510310&d=1136&size=18178342",
       "publishedAt": "2026-10-23T20:01:42.000Z",
-      "expiresAt": "2026-11-08T17:30:31.060Z",
+      "expiresAt": "2026-11-03T17:58:13.573Z",
       "topicIds": [
         "politics",
         "current-events"
@@ -11434,7 +11614,7 @@
       "source": "NPR Podcasts · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/hnN061-cbXo",
       "publishedAt": "2026-10-21T22:00:04.000Z",
-      "expiresAt": "2026-11-08T17:30:49.862Z",
+      "expiresAt": "2026-11-03T17:58:36.440Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -11601,7 +11781,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/21/goldman-sachs-jpmorgan-morgan-stanley-ai-trading.html",
       "publishedAt": "2026-10-21T15:30:50.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -11671,7 +11851,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/21/stocks-making-the-biggest-moves-premarket-spcx-smci-nflx-more.html",
       "publishedAt": "2026-10-21T11:49:11.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -11792,7 +11972,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/20/stocks-making-the-biggest-moves-after-hours-isrg-nflx-spcx.html",
       "publishedAt": "2026-10-20T22:55:27.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -11813,7 +11993,7 @@
       "source": "NPR Podcasts · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/ZBKnmMKWLe4",
       "publishedAt": "2026-10-20T20:00:30.000Z",
-      "expiresAt": "2026-11-08T17:30:49.862Z",
+      "expiresAt": "2026-11-03T17:58:36.440Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -11861,7 +12041,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/20/stocks-making-the-biggest-moves-midday-has-noc-efx-gm.html",
       "publishedAt": "2026-10-20T16:45:06.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -11882,7 +12062,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/20/stocks-making-the-biggest-moves-premarket-rtx-gm-noc-stld.html",
       "publishedAt": "2026-10-20T16:35:41.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -12028,7 +12208,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/20/data-center-financing-ai-debt-hsbc.html",
       "publishedAt": "2026-10-20T10:39:17.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -12074,7 +12254,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/20/imf-debt-yields-russia-china-takeaway-.html",
       "publishedAt": "2026-10-20T05:27:53.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -12199,7 +12379,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html",
       "publishedAt": "2026-10-19T16:42:14.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -12300,7 +12480,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/19/jpmorgan-security-defense-investments.html",
       "publishedAt": "2026-10-19T12:34:01.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -12344,7 +12524,7 @@
       "source": "CNBC · Finance",
       "sourceUrl": "https://www.cnbc.com/2026/10/19/stocks-making-the-biggest-moves-premarket-clf-intc-ddog-amzn.html",
       "publishedAt": "2026-10-19T12:00:34.000Z",
-      "expiresAt": "2026-11-08T17:30:37.227Z",
+      "expiresAt": "2026-11-03T17:58:20.162Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -12466,7 +12646,7 @@
       "source": "C-SPAN · Q&A",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN9472972241.mp3",
       "publishedAt": "2026-10-19T00:00:00.000Z",
-      "expiresAt": "2026-11-07T17:30:35.521Z",
+      "expiresAt": "2026-11-03T17:58:18.148Z",
       "topicIds": [
         "politics",
         "history",
@@ -12994,7 +13174,7 @@
       "source": "NPR Podcasts · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/wWwPziNgNq4",
       "publishedAt": "2026-10-14T20:50:37.000Z",
-      "expiresAt": "2026-11-08T17:30:49.862Z",
+      "expiresAt": "2026-11-03T17:58:36.440Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -13020,7 +13200,7 @@
       "source": "NPR Podcasts · Shorts",
       "sourceUrl": "https://www.youtube.com/shorts/tFogcape4iM",
       "publishedAt": "2026-10-14T19:30:41.000Z",
-      "expiresAt": "2026-11-08T17:30:49.862Z",
+      "expiresAt": "2026-11-03T17:58:36.440Z",
       "topicIds": [
         "current-events",
         "politics"
@@ -13690,7 +13870,7 @@
       "source": "C-SPAN · Q&A",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN7086549278.mp3",
       "publishedAt": "2026-10-12T00:00:00.000Z",
-      "expiresAt": "2026-11-07T17:30:35.521Z",
+      "expiresAt": "2026-11-03T17:58:18.148Z",
       "topicIds": [
         "politics",
         "history",
@@ -14226,7 +14406,7 @@
       "source": "C-SPAN · Q&A",
       "sourceUrl": "https://traffic.megaphone.fm/CSPAN1133294639.mp3",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "expiresAt": "2026-11-07T17:30:35.521Z",
+      "expiresAt": "2026-11-03T17:58:18.148Z",
       "topicIds": [
         "politics",
         "history",
@@ -16971,7 +17151,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
       "publishedAt": "2025-07-03T12:36:00.000Z",
-      "expiresAt": "2026-11-08T17:30:36.810Z",
+      "expiresAt": "2026-11-03T17:58:19.938Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -17040,7 +17220,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-13T13:33:00.000Z",
-      "expiresAt": "2026-11-08T17:30:36.810Z",
+      "expiresAt": "2026-11-03T17:58:19.938Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -17087,7 +17267,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-07T20:26:00.000Z",
-      "expiresAt": "2026-11-08T17:30:36.810Z",
+      "expiresAt": "2026-11-03T17:58:19.938Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -17108,7 +17288,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-06T13:34:00.000Z",
-      "expiresAt": "2026-11-08T17:30:36.810Z",
+      "expiresAt": "2026-11-03T17:58:19.938Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -17155,7 +17335,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
       "publishedAt": "2025-02-03T13:46:00.000Z",
-      "expiresAt": "2026-11-08T17:30:36.810Z",
+      "expiresAt": "2026-11-03T17:58:19.938Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -17176,7 +17356,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
       "publishedAt": "2024-12-28T00:32:00.000Z",
-      "expiresAt": "2026-11-08T17:30:36.810Z",
+      "expiresAt": "2026-11-03T17:58:19.938Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -17197,7 +17377,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
       "publishedAt": "2024-12-03T14:05:00.000Z",
-      "expiresAt": "2026-11-08T17:30:36.810Z",
+      "expiresAt": "2026-11-03T17:58:19.938Z",
       "topicIds": [
         "finance",
         "current-events"
@@ -17218,7 +17398,7 @@
       "source": "MarketWatch · MarketPulse",
       "sourceUrl": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
       "publishedAt": "2024-11-19T08:55:00.000Z",
-      "expiresAt": "2026-11-08T17:30:36.810Z",
+      "expiresAt": "2026-11-03T17:58:19.938Z",
       "topicIds": [
         "finance",
         "current-events"

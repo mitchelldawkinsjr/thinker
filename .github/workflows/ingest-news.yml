@@ -2,7 +2,7 @@ name: Ingest news
 
 on:
   schedule:
-    # Daily 12:00 UTC — news + scriptures refresh (politics TTL is 8 days)
+    # Daily 12:00 UTC — news + scriptures refresh (politics and finance TTL is 3 days)
     - cron: "0 12 * * *"
   workflow_dispatch:
 

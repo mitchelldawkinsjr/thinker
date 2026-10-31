@@ -34,6 +34,23 @@ function saveCache(cache: UserNewsCache) {
   }
 }
 
+/** A repeat fetch keeps the first expiry instead of restarting the clock. */
+function keepFirstExpiry(next: NewsItem[], prev: NewsItem[] | undefined): NewsItem[] {
+  if (!prev?.length) return next
+  const prior = new Map(prev.map((item) => [item.id, item.expiresAt]))
+  return next.map((item) => {
+    const expiresAt = prior.get(item.id)
+    if (!expiresAt || expiresAt.startsWith('2099') || item.expiresAt.startsWith('2099')) {
+      return item
+    }
+    const prevMs = Date.parse(expiresAt)
+    const nextMs = Date.parse(item.expiresAt)
+    if (Number.isNaN(prevMs)) return item
+    if (Number.isNaN(nextMs) || prevMs <= nextMs) return { ...item, expiresAt }
+    return item
+  })
+}
+
 export function clearUserNewsForFeed(feedId: string) {
   const cache = loadCache()
   delete cache.byFeedId[feedId]
@@ -107,7 +124,7 @@ export function useUserNewsItems(feeds: CustomFeed[]) {
             const next = await fetchOneFeed(feed)
             cache.byFeedId[feed.id] = {
               fetchedAt: new Date().toISOString(),
-              items: next,
+              items: keepFirstExpiry(next, existing?.items),
             }
           } catch (err) {
             setError(err instanceof Error ? err.message : 'Failed to refresh a feed')

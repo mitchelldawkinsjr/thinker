@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /**
  * Fetch politics / current-events / finance RSS → public/content/news.json
- * Thinker-shaped cards with tiered TTL from ingest time:
- *   politics → 8 days (daily ingest; survives a missed run)
- *   everything else → 14 days
+ * Thinker-shaped cards with tiered TTL from the first ingest of each story.
+ * A later fetch does not extend that clock.
+ *   politics / finance → 3 days
+ *   culture, history, YouTube, and other feeds → 14 days
  * Override per feed with `ttlDays`. Seed lessons are always merged in.
  *
  * Usage: node scripts/ingest-news.mjs
@@ -22,8 +23,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const OUT = join(ROOT, 'public', 'content', 'news.json')
 const YT_ARCHIVE_DIR = join(ROOT, 'public', 'content', 'yt-archives')
-/** Hard-news / politics — daily ingest, still on the deck if a run is missed */
-const TTL_DAYS_POLITICS = 8
+/** Politics and finance — short window so the deck stays current */
+const TTL_DAYS_POLITICS = 3
 /** Culture, sports, faith, general current-events */
 const TTL_DAYS_DEFAULT = 14
 const DAY_MS = 24 * 60 * 60 * 1000
@@ -186,7 +187,7 @@ const FEEDS = [
     url: 'https://aaronparnas.substack.com/feed',
     topicIds: ['politics', 'current-events'],
     limit: 8,
-    ttlDays: 8,
+    ttlDays: 3,
     // Substack also attaches mp3 enclosures — keep the article page as CTA
     preferPageLink: true,
   },
@@ -200,7 +201,7 @@ const FEEDS = [
     kind: 'site-articles',
     articlePathPrefix: '/articles/',
     siteUrl: 'https://www.parnasnews.com/',
-    ttlDays: 8,
+    ttlDays: 3,
   },
   // C-SPAN.org HTML/RSS is WAF-challenged; Megaphone podcasts + YouTube carry the news.
   {
@@ -211,7 +212,7 @@ const FEEDS = [
     limit: 6,
     kind: 'podcast',
     siteUrl: 'https://www.c-span.org/',
-    ttlDays: 8,
+    ttlDays: 3,
   },
   {
     id: 'cspan-qa',
@@ -221,7 +222,7 @@ const FEEDS = [
     limit: 4,
     kind: 'podcast',
     siteUrl: 'https://www.c-span.org/',
-    ttlDays: 7,
+    ttlDays: 3,
   },
   // Black pop culture / music — verified XML only
   {
@@ -310,7 +311,7 @@ const FEEDS = [
     url: 'https://feeds.content.dowjones.io/public/rss/mw_marketpulse',
     topicIds: ['finance', 'current-events'],
     limit: 8,
-    ttlDays: 8,
+    ttlDays: 3,
   },
   {
     id: 'marketwatch-bulletins',
@@ -318,7 +319,7 @@ const FEEDS = [
     url: 'https://feeds.content.dowjones.io/public/rss/mw_bulletins',
     topicIds: ['finance', 'current-events'],
     limit: 10,
-    ttlDays: 8,
+    ttlDays: 3,
   },
   {
     id: 'cnbc-finance',
@@ -326,7 +327,7 @@ const FEEDS = [
     url: 'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664',
     topicIds: ['finance', 'current-events'],
     limit: 10,
-    ttlDays: 8,
+    ttlDays: 3,
   },
 
   // ── AI news / research (blogs + newsletters) ───────────────────────────
@@ -1149,11 +1150,16 @@ function idFor(url, title) {
 }
 
 /** Pool lifetime from ingest — not publish date — so stale feeds still get a full window. */
+function isHardNewsTopics(topicIds) {
+  return (
+    Array.isArray(topicIds) &&
+    (topicIds.includes('politics') || topicIds.includes('finance'))
+  )
+}
+
 function ttlDaysFor(feed) {
   if (typeof feed.ttlDays === 'number' && feed.ttlDays > 0) return feed.ttlDays
-  if (Array.isArray(feed.topicIds) && feed.topicIds.includes('politics')) {
-    return TTL_DAYS_POLITICS
-  }
+  if (isHardNewsTopics(feed.topicIds)) return TTL_DAYS_POLITICS
   return TTL_DAYS_DEFAULT
 }
 
@@ -1554,9 +1560,23 @@ function isActive(item, now = Date.now()) {
   return exp > now
 }
 
-/** Migrate legacy long-TTL politics cards down to the politics window. */
-function clampPoliticsExpiry(item, now = Date.now()) {
-  if (!Array.isArray(item.topicIds) || !item.topicIds.includes('politics')) return item
+/** Keep the earlier expiry so a repeat fetch does not restart the clock. */
+function keepFirstExpiry(item, prior) {
+  if (!prior) return item
+  if (String(item.expiresAt || '').startsWith('2099')) return item
+  if (String(prior.expiresAt || '').startsWith('2099')) return item
+  const prevExp = Date.parse(prior.expiresAt)
+  const nextExp = Date.parse(item.expiresAt)
+  if (Number.isNaN(prevExp)) return item
+  if (Number.isNaN(nextExp) || prevExp <= nextExp) {
+    return { ...item, expiresAt: prior.expiresAt }
+  }
+  return item
+}
+
+/** Cap politics and finance cards at the hard-news window, including legacy rows. */
+function clampHardNewsExpiry(item, now = Date.now()) {
+  if (!isHardNewsTopics(item.topicIds)) return item
   if (String(item.expiresAt || '').startsWith('2099')) return item // evergreen seeds
   const maxExp = now + TTL_DAYS_POLITICS * DAY_MS
   const exp = Date.parse(item.expiresAt)
@@ -1604,7 +1624,8 @@ async function main() {
     scraped.filter((i) => archiveFeedIds.has(i.feedId)).map((i) => i.id),
   )
   for (const item of [...existing, ...scraped, ...SEED]) {
-    const next = sanitizeAngles(clampPoliticsExpiry(item))
+    const prior = byId.get(item.id)
+    const next = sanitizeAngles(clampHardNewsExpiry(keepFirstExpiry(item, prior)))
     if (!isActive(next)) continue
     if (
       next.feedId &&

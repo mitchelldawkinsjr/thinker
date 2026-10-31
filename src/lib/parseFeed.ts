@@ -258,7 +258,9 @@ function toIso(published: string): string {
 
 function ttlDaysFor(meta: FeedMeta): number {
   if (typeof meta.ttlDays === 'number' && meta.ttlDays > 0) return meta.ttlDays
-  if (meta.topicIds.includes('politics')) return NEWS_TTL_DAYS_POLITICS
+  if (meta.topicIds.includes('politics') || meta.topicIds.includes('finance')) {
+    return NEWS_TTL_DAYS_POLITICS
+  }
   return NEWS_TTL_DAYS_DEFAULT
 }
 

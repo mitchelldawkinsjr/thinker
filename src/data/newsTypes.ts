@@ -32,9 +32,9 @@ export type NewsFile = {
 
 /**
  * Days a news card stays in the live feed (matches ingest).
- * Ingest runs daily; these windows survive a missed run.
+ * Politics and finance use the short window. The clock starts at first ingest.
  */
-export const NEWS_TTL_DAYS_POLITICS = 8
+export const NEWS_TTL_DAYS_POLITICS = 3
 export const NEWS_TTL_DAYS_DEFAULT = 14
 
 /**
