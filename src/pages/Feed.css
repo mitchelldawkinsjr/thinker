@@ -388,12 +388,26 @@
     height: auto;
     flex: 0 1 auto;
     max-height: calc(100cqh - 1.25rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
+  /* The corner glow hangs outside the card and would add empty scroll space. */
+  .feed-deck .idea-card-glow,
+  .feed-deck .feed-card-glow {
+    inset: auto 0 0 auto;
+    width: 70%;
+    height: 50%;
+  }
+
+  /* Keep the copy at its real height so the card can scroll instead of clipping it. */
   .feed-deck .idea-body-wrap,
   .feed-deck .feed-card-body {
-    min-height: 0;
-    overflow: hidden;
+    flex: none;
+    min-height: auto;
+    overflow: visible;
   }
 
   .feed-deck .ask-panel--compact {
