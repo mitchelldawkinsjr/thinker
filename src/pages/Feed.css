@@ -280,3 +280,233 @@
   color: var(--ink);
   font-weight: 700;
 }
+
+/* Small screens: one viewport, smaller card, no page scroll. */
+@media (max-width: 960px), (max-height: 700px) {
+  .feed {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0.4rem 0.75rem 0.55rem;
+  }
+
+  .feed-head {
+    flex-shrink: 0;
+    margin-bottom: 0.35rem;
+  }
+
+  .feed-head h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .feed-head > p {
+    font-size: 0.78rem;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .feed-mix {
+    gap: 0.28rem;
+    margin-top: 0.4rem;
+  }
+
+  .feed-mix span,
+  .feed-reshuffle {
+    font-size: 0.65rem;
+    padding: 0.16rem 0.42rem;
+  }
+
+  .feed-queue-notice {
+    margin-top: 0.35rem;
+    font-size: 0.72rem;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .feed-updated {
+    margin-top: 0.25rem;
+    font-size: 0.68rem;
+  }
+
+  .feed-now {
+    display: none;
+  }
+
+  .feed-stage {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    padding: 0.15rem 0 0;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .feed-deck {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .feed-deck-sheet.is-current {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feed-deck .idea-stack {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: 100%;
+    width: min(100%, 520px);
+    gap: 0.45rem;
+  }
+
+  .feed-deck .card-flip,
+  .feed-deck .card-flip-inner,
+  .feed-deck .card-flip-front {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: 100%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feed-deck .card-flip-front > .idea-card,
+  .feed-deck .card-flip-front > .feed-card,
+  .feed-deck-sheet.is-current > .feed-card {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: 100%;
+    min-height: 0;
+  }
+
+  .feed-deck .idea-card,
+  .feed-deck .feed-card {
+    gap: 0.5rem;
+    padding: 0.85rem 0.9rem 0.7rem;
+    border-radius: 1.15rem;
+  }
+
+  .feed-deck .idea-title,
+  .feed-deck .idea-hook,
+  .feed-deck .feed-card-title {
+    font-size: 1.12rem;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .feed-deck .idea-title--sub {
+    font-size: 0.84rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .feed-deck .idea-body-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    gap: 0.4rem;
+    overflow: hidden;
+  }
+
+  .feed-deck .idea-card.is-expanded .idea-body-wrap {
+    overflow-y: auto;
+  }
+
+  .feed-deck .idea-body,
+  .feed-deck .feed-card-body {
+    font-size: 0.88rem;
+    line-height: 1.4;
+  }
+
+  .feed-deck .idea-foot,
+  .feed-deck .feed-card-foot {
+    flex-shrink: 0;
+    gap: 0.45rem;
+    margin-top: 0;
+    padding-top: 0.5rem;
+  }
+
+  .feed-deck .idea-meta {
+    font-size: 0.72rem;
+  }
+
+  .feed-deck .feed-card-image {
+    aspect-ratio: 2.35 / 1;
+    max-height: 22%;
+    min-height: 0;
+    flex-shrink: 1;
+    margin: 0;
+  }
+
+  .feed-deck .reaction-arena,
+  .feed-deck .gravity-arena {
+    height: auto;
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: 132px;
+    margin: 0;
+  }
+
+  .feed-deck .spot-arena,
+  .feed-deck .memory-arena,
+  .feed-deck .math-arena {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: 148px;
+    margin: 0;
+  }
+
+  .feed-deck .spot-grid,
+  .feed-deck .memory-grid {
+    height: 100%;
+    max-height: 128px;
+  }
+
+  .feed-deck .ask-panel--compact {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    max-height: 48%;
+    margin-top: 0;
+    overflow: auto;
+  }
+
+  .feed-deck .idea-stack {
+    position: relative;
+  }
+}
+
+@media (max-width: 720px) {
+  .feed {
+    padding-bottom: calc(4.65rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (max-height: 700px) {
+  .feed-head > p,
+  .feed-updated {
+    display: none;
+  }
+
+  .feed-deck .reaction-arena,
+  .feed-deck .gravity-arena {
+    max-height: 108px;
+  }
+}
