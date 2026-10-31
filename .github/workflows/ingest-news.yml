@@ -2,8 +2,8 @@ name: Ingest news
 
 on:
   schedule:
-    # Weekly Monday 12:00 UTC — news + scriptures refresh
-    - cron: "0 12 * * 1"
+    # Daily 12:00 UTC — news + scriptures refresh (politics TTL is 8 days)
+    - cron: "0 12 * * *"
   workflow_dispatch:
 
 jobs:

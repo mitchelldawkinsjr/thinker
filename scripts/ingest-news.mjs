@@ -2,8 +2,8 @@
 /**
  * Fetch politics / current-events / finance RSS → public/content/news.json
  * Thinker-shaped cards with tiered TTL from ingest time:
- *   politics → 3 days (headlines go stale fast)
- *   everything else → 10 days
+ *   politics → 8 days (daily ingest; survives a missed run)
+ *   everything else → 14 days
  * Override per feed with `ttlDays`. Seed lessons are always merged in.
  *
  * Usage: node scripts/ingest-news.mjs
@@ -22,10 +22,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const OUT = join(ROOT, 'public', 'content', 'news.json')
 const YT_ARCHIVE_DIR = join(ROOT, 'public', 'content', 'yt-archives')
-/** Hard-news / politics — short window; stories change daily */
-const TTL_DAYS_POLITICS = 3
+/** Hard-news / politics — daily ingest, still on the deck if a run is missed */
+const TTL_DAYS_POLITICS = 8
 /** Culture, sports, faith, general current-events */
-const TTL_DAYS_DEFAULT = 10
+const TTL_DAYS_DEFAULT = 14
 const DAY_MS = 24 * 60 * 60 * 1000
 const YT_UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -186,7 +186,7 @@ const FEEDS = [
     url: 'https://aaronparnas.substack.com/feed',
     topicIds: ['politics', 'current-events'],
     limit: 8,
-    ttlDays: 3,
+    ttlDays: 8,
     // Substack also attaches mp3 enclosures — keep the article page as CTA
     preferPageLink: true,
   },
@@ -200,7 +200,7 @@ const FEEDS = [
     kind: 'site-articles',
     articlePathPrefix: '/articles/',
     siteUrl: 'https://www.parnasnews.com/',
-    ttlDays: 3,
+    ttlDays: 8,
   },
   // C-SPAN.org HTML/RSS is WAF-challenged; Megaphone podcasts + YouTube carry the news.
   {
@@ -211,7 +211,7 @@ const FEEDS = [
     limit: 6,
     kind: 'podcast',
     siteUrl: 'https://www.c-span.org/',
-    ttlDays: 3,
+    ttlDays: 8,
   },
   {
     id: 'cspan-qa',
@@ -310,7 +310,7 @@ const FEEDS = [
     url: 'https://feeds.content.dowjones.io/public/rss/mw_marketpulse',
     topicIds: ['finance', 'current-events'],
     limit: 8,
-    ttlDays: 3,
+    ttlDays: 8,
   },
   {
     id: 'marketwatch-bulletins',
@@ -318,7 +318,7 @@ const FEEDS = [
     url: 'https://feeds.content.dowjones.io/public/rss/mw_bulletins',
     topicIds: ['finance', 'current-events'],
     limit: 10,
-    ttlDays: 3,
+    ttlDays: 8,
   },
   {
     id: 'cnbc-finance',
@@ -326,7 +326,7 @@ const FEEDS = [
     url: 'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664',
     topicIds: ['finance', 'current-events'],
     limit: 10,
-    ttlDays: 3,
+    ttlDays: 8,
   },
 
   // ── AI news / research (blogs + newsletters) ───────────────────────────

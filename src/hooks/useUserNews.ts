@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { NewsItem } from '../data/newsTypes'
-import { activeNews } from '../data/newsTypes'
+import { newsForFeed } from '../data/newsTypes'
 import { USER_NEWS_CACHE_KEY, itemCapForFeedWeight, type CustomFeed } from '../data/subscriptions'
 import { fetchFeedViaProxy, parseFeedToNewsItems } from '../lib/parseFeed'
 
@@ -67,7 +67,7 @@ export function useUserNewsItems(feeds: CustomFeed[]) {
     const all: NewsItem[] = []
     for (const [id, entry] of Object.entries(cache.byFeedId)) {
       if (!enabled.has(id)) continue
-      all.push(...activeNews(entry.items))
+      all.push(...newsForFeed(entry.items))
     }
     return all
   })
@@ -124,7 +124,7 @@ export function useUserNewsItems(feeds: CustomFeed[]) {
         const all: NewsItem[] = []
         for (const feed of enabled) {
           const entry = cache.byFeedId[feed.id]
-          if (entry) all.push(...activeNews(entry.items))
+          if (entry) all.push(...newsForFeed(entry.items))
         }
         setItems(all)
       } finally {

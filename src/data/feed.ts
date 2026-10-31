@@ -282,6 +282,10 @@ function resolveNewsFeedId(n: NewsItem): string | undefined {
   return curatedNewsFeeds.find((f) => f.name === n.source)?.id
 }
 
+function isUserNews(n: NewsItem): boolean {
+  return (n.feedId ?? '').startsWith('user-')
+}
+
 /** Apply Settings topic overrides onto curated news items (custom RSS keeps its own topics). */
 function withFeedTopicOverrides(
   n: NewsItem,
@@ -503,14 +507,29 @@ export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
     !kinds || kinds.bookIdeas
       ? sortByFreshness(seededShuffle(ideaFeedItems(topic, bookExtra), seed ^ 13))
       : []
+  const allNews = opts.news ?? []
+  const curatedNews = allNews.filter((n) => !isUserNews(n))
+  const personalNews = allNews.filter(isUserNews)
   const newsQ =
     !kinds || kinds.news
       ? newsItems(
-          opts.news ?? [],
+          curatedNews,
           topic,
           subs?.disabledFeedIds ?? [],
           subs?.customFeeds ?? [],
           seed ^ 1,
+          subs?.feedTopicOverrides ?? {},
+        )
+      : []
+  // Own RSS is its own lane so it is not 1 of ~100 curated outlets inside news.
+  const yourRssQ =
+    !kinds || kinds.news
+      ? newsItems(
+          personalNews,
+          topic,
+          subs?.disabledFeedIds ?? [],
+          subs?.customFeeds ?? [],
+          seed ^ 17,
           subs?.feedTopicOverrides ?? {},
         )
       : []
@@ -544,6 +563,7 @@ export function buildMixedFeed(options: BuildMixedFeedOptions): FeedItem[] {
       { items: ideasQ, weight: weights.ideas },
       { items: bookIdeasQ, weight: weights.bookIdeas },
       { items: newsQ, weight: weights.news },
+      { items: yourRssQ, weight: Math.max(weights.news, 2) },
       { items: scriptureQ, weight: weights.scripture },
       { items: resourcesQ, weight: weights.resources },
       { items: booksQ, weight: weights.books },

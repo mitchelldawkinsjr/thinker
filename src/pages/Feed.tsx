@@ -101,7 +101,11 @@ export function Feed() {
   const [hideTick, setHideTick] = useState(0)
   const { subscriptions } = useSubscriptions()
   const { items: curatedNews, updatedAt } = useNewsItems()
-  const { items: userNews } = useUserNewsItems(subscriptions.customFeeds)
+  const {
+    items: userNews,
+    error: userNewsError,
+    refreshing: userNewsRefreshing,
+  } = useUserNewsItems(subscriptions.customFeeds)
   const { items: scriptures } = useScriptures()
   const {
     items: extraIdeas,
@@ -132,7 +136,7 @@ export function Feed() {
       subscriptions,
     })
     // Freeze today’s order so remounts / async loads / markSeen don’t reshuffle mid-session
-    return stabilizeFeedOrder(mixed, topicKey, reshuffle)
+    return stabilizeFeedOrder(mixed, topicKey, reshuffle, getFeedCursor(topicKey))
     // hideTick re-runs build after permanent dismiss
     // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional refresh keys
   }, [resolvedTopic, news, scriptures, reshuffle, extraIdeas, subscriptions, hideTick, topicKey])
@@ -251,6 +255,14 @@ export function Feed() {
     return c
   }, [items])
 
+  const yourRssCount = useMemo(
+    () =>
+      items.filter((it) => it.kind === 'news' && it.news.feedId?.startsWith('user-'))
+        .length,
+    [items],
+  )
+  const rssEnabled = subscriptions.customFeeds.some((f) => f.enabled)
+
   const nav: NavProps = {
     index,
     total: items.length,
@@ -286,6 +298,7 @@ export function Feed() {
             </span>
           )}
           <span>{counts.news} news</span>
+          {rssEnabled && <span>{yourRssCount} your RSS</span>}
           <span>{counts.scripture} scripture</span>
           <span>{counts.resource} sites</span>
           <span>{counts.book} books</span>
@@ -294,6 +307,18 @@ export function Feed() {
             Reshuffle
           </button>
         </div>
+        {userNewsError && (
+          <p className="feed-queue-notice" role="status">
+            Your RSS didn’t load{userNewsRefreshing ? ' — retrying' : ''}: {userNewsError}
+          </p>
+        )}
+        {rssEnabled && !userNewsError && !userNewsRefreshing && yourRssCount === 0 && (
+          <p className="feed-queue-notice" role="status">
+            {userNews.length === 0
+              ? 'Your RSS feeds have no items in this deck yet.'
+              : 'Your RSS loaded, but those items don’t match the topics on this feed.'}
+          </p>
+        )}
         {queueNotice && (
           <p className="feed-queue-notice" role="status">
             {queueNotice}{' '}

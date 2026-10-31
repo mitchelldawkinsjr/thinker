@@ -1,5 +1,5 @@
 import type { NewsItem } from '../data/newsTypes'
-import { activeNews } from '../data/newsTypes'
+import { newsForFeed } from '../data/newsTypes'
 import { getSeedActiveNews, newsSeed } from '../data/newsSeed'
 import { useContentJson } from './useContentJson'
 
@@ -14,7 +14,7 @@ export function useNewsItems() {
     seedUpdatedAt: newsSeed.updatedAt,
     merge: (seed, live) => {
       const byId = new Map<string, NewsItem>()
-      for (const n of [...seed, ...activeNews(live)]) byId.set(n.id, n)
+      for (const n of [...seed, ...newsForFeed(live)]) byId.set(n.id, n)
       return [...byId.values()].sort(
         (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt),
       )

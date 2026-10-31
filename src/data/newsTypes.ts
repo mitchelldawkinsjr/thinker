@@ -30,9 +30,19 @@ export type NewsFile = {
   items: NewsItem[]
 }
 
-/** Days a news card stays in the live feed (matches ingest) */
-export const NEWS_TTL_DAYS_POLITICS = 3
-export const NEWS_TTL_DAYS_DEFAULT = 10
+/**
+ * Days a news card stays in the live feed (matches ingest).
+ * Ingest runs daily; these windows survive a missed run.
+ */
+export const NEWS_TTL_DAYS_POLITICS = 8
+export const NEWS_TTL_DAYS_DEFAULT = 14
+
+/**
+ * When every item from a feed is past expiresAt (stale snapshot, missed ingest),
+ * still show the newest few so the deck is not only evergreen ideas.
+ */
+export const NEWS_STALE_FALLBACK_DAYS = 120
+export const NEWS_STALE_FALLBACK_CAP = 4
 
 /** Decode leftover HTML entities from RSS into readable text. */
 export function decodeNewsItem(item: NewsItem): NewsItem {
@@ -54,4 +64,41 @@ export function isNewsActive(item: NewsItem, now = Date.now()): boolean {
 
 export function activeNews(items: NewsItem[], now = Date.now()): NewsItem[] {
   return items.filter((i) => isNewsActive(i, now)).map(decodeNewsItem)
+}
+
+function newsFeedKey(item: NewsItem): string {
+  return item.feedId || item.source || item.id
+}
+
+/**
+ * Unexpired cards, plus a short fallback of the newest items per feed when that
+ * feed would otherwise contribute nothing.
+ */
+export function newsForFeed(items: NewsItem[], now = Date.now()): NewsItem[] {
+  const staleMs = NEWS_STALE_FALLBACK_DAYS * 24 * 60 * 60 * 1000
+  const byFeed = new Map<string, NewsItem[]>()
+  for (const item of items) {
+    const key = newsFeedKey(item)
+    const list = byFeed.get(key) ?? []
+    list.push(item)
+    byFeed.set(key, list)
+  }
+
+  const out: NewsItem[] = []
+  for (const list of byFeed.values()) {
+    const active = list.filter((item) => isNewsActive(item, now))
+    if (active.length > 0) {
+      out.push(...active)
+      continue
+    }
+    const stale = list
+      .filter((item) => {
+        const published = Date.parse(item.publishedAt)
+        return !Number.isNaN(published) && now - published <= staleMs
+      })
+      .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt))
+      .slice(0, NEWS_STALE_FALLBACK_CAP)
+    out.push(...stale)
+  }
+  return out.map(decodeNewsItem)
 }

@@ -183,16 +183,56 @@ export function getFeedReshuffle(topic: string | null): number {
 }
 
 /**
+ * Insert ids that arrived after today’s order was frozen (live RSS, your feeds)
+ * into the upcoming deck. The card at `insertAfter` stays put.
+ * Every `stride` already-loaded cards, one new card.
+ */
+function weaveFreshIds(
+  ids: string[],
+  freshIds: string[],
+  insertAfter: number,
+  present: Set<string>,
+  stride = 2,
+): string[] {
+  if (freshIds.length === 0) return ids
+  let seenPresent = 0
+  let cut = 0
+  for (let i = 0; i < ids.length; i++) {
+    cut = i + 1
+    if (!present.has(ids[i])) continue
+    seenPresent++
+    if (seenPresent > insertAfter) break
+  }
+  const head = ids.slice(0, cut)
+  const tail = ids.slice(cut)
+  const out = [...head]
+  let fi = 0
+  let since = 0
+  for (const id of tail) {
+    out.push(id)
+    if (!present.has(id)) continue
+    since++
+    if (since % stride === 0 && fi < freshIds.length) out.push(freshIds[fi++])
+  }
+  while (fi < freshIds.length) out.push(freshIds[fi++])
+  return out
+}
+
+/**
  * Keep today’s feed order stable across remounts / async loads / freshness updates.
- * New cards append; Reshuffle (new reshuffle key) starts a fresh order.
+ * Cards that arrive later (RSS, your feeds) are woven into the upcoming deck.
+ * Reshuffle (new reshuffle key) starts a fresh order.
  *
  * Missing ids (not yet loaded from live JSON) stay in the saved order so a
  * compressed seed feed cannot permanently drop deep cards or rewrite positions.
+ *
+ * `insertAfter` is today’s cursor index — new cards are placed after that card.
  */
 export function stabilizeFeedOrder<T extends { id: string }>(
   items: T[],
   topic: string | null | undefined,
   reshuffle: number,
+  insertAfter = 0,
 ): T[] {
   const { day } = ensureFreshDay()
   const topicVal = topicKey(topic)
@@ -206,27 +246,36 @@ export function stabilizeFeedOrder<T extends { id: string }>(
     saved.reshuffle === reshuffle &&
     saved.ids.length > 0
   ) {
-    const ordered: T[] = []
-    const preservedIds: string[] = []
     const seen = new Set<string>()
+    const preservedIds: string[] = []
     for (const id of saved.ids) {
       if (seen.has(id)) continue
       seen.add(id)
       preservedIds.push(id)
-      const item = byId.get(id)
-      if (item) ordered.push(item)
     }
+    const freshIds: string[] = []
     for (const item of items) {
       if (seen.has(item.id)) continue
       seen.add(item.id)
-      preservedIds.push(item.id)
-      ordered.push(item)
+      freshIds.push(item.id)
+    }
+    const present = new Set(items.map((item) => item.id))
+    const wovenIds = weaveFreshIds(
+      preservedIds,
+      freshIds,
+      Math.max(0, Math.floor(insertAfter)),
+      present,
+    )
+    const ordered: T[] = []
+    for (const id of wovenIds) {
+      const item = byId.get(id)
+      if (item) ordered.push(item)
     }
     saveOrder({
       day,
       topic: topicVal,
       reshuffle,
-      ids: preservedIds,
+      ids: wovenIds,
     })
     return ordered
   }
