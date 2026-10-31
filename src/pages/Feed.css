@@ -338,143 +338,62 @@
     display: none;
   }
 
+  /* Card keeps its own shape and sits in the middle. It only shrinks if it would overflow. */
   .feed-stage {
     flex: 1 1 auto;
     min-height: 0;
-    width: 100%;
-    padding: 0.15rem 0 0;
+    width: min(100%, 560px);
+    margin-inline: auto;
+    padding: 0.35rem 0;
     overflow: hidden;
-    align-items: stretch;
-    justify-content: flex-start;
-  }
-
-  .feed-deck {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    container-type: size;
+    container-name: feed-stage;
   }
 
   .feed-deck-sheet.is-current {
-    flex: 1 1 auto;
-    min-height: 0;
     height: 100%;
+    width: 100%;
+    min-height: 0;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .feed-deck .idea-stack {
-    flex: 1 1 auto;
+    position: relative;
+    height: auto;
+    max-height: 100%;
     min-height: 0;
-    height: 100%;
     width: min(100%, 520px);
-    gap: 0.45rem;
+    justify-content: center;
   }
 
   .feed-deck .card-flip,
   .feed-deck .card-flip-inner,
-  .feed-deck .card-flip-front {
-    flex: 1 1 auto;
-    min-height: 0;
-    height: 100%;
-    max-width: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .feed-deck .card-flip-front > .idea-card,
-  .feed-deck .card-flip-front > .feed-card,
-  .feed-deck-sheet.is-current > .feed-card {
-    flex: 1 1 auto;
-    width: 100%;
-    max-width: none;
-    height: 100%;
+  .feed-deck .card-flip-front,
+  .feed-deck .idea-card,
+  .feed-deck .feed-card {
     max-height: 100%;
     min-height: 0;
   }
 
+  .feed-deck .card-flip-front {
+    align-items: center;
+  }
+
   .feed-deck .idea-card,
   .feed-deck .feed-card {
-    gap: 0.5rem;
-    padding: 0.85rem 0.9rem 0.7rem;
-    border-radius: 1.15rem;
-  }
-
-  .feed-deck .idea-title,
-  .feed-deck .idea-hook,
-  .feed-deck .feed-card-title {
-    font-size: 1.12rem;
-    line-height: 1.2;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .feed-deck .idea-title--sub {
-    font-size: 0.84rem;
-    -webkit-line-clamp: 2;
-  }
-
-  .feed-deck .idea-body-wrap {
-    flex: 1 1 auto;
-    min-height: 0;
-    gap: 0.4rem;
-    overflow: hidden;
-  }
-
-  .feed-deck .idea-card.is-expanded .idea-body-wrap {
-    overflow-y: auto;
-  }
-
-  .feed-deck .idea-body,
-  .feed-deck .feed-card-body {
-    font-size: 0.88rem;
-    line-height: 1.4;
-  }
-
-  .feed-deck .idea-foot,
-  .feed-deck .feed-card-foot {
-    flex-shrink: 0;
-    gap: 0.45rem;
-    margin-top: 0;
-    padding-top: 0.5rem;
-  }
-
-  .feed-deck .idea-meta {
-    font-size: 0.72rem;
-  }
-
-  .feed-deck .feed-card-image {
-    aspect-ratio: 2.35 / 1;
-    max-height: 22%;
-    min-height: 0;
-    flex-shrink: 1;
-    margin: 0;
-  }
-
-  .feed-deck .reaction-arena,
-  .feed-deck .gravity-arena {
     height: auto;
-    flex: 1 1 auto;
-    min-height: 0;
-    max-height: 132px;
-    margin: 0;
+    flex: 0 1 auto;
+    max-height: calc(100cqh - 1.25rem);
   }
 
-  .feed-deck .spot-arena,
-  .feed-deck .memory-arena,
-  .feed-deck .math-arena {
-    flex: 1 1 auto;
+  .feed-deck .idea-body-wrap,
+  .feed-deck .feed-card-body {
     min-height: 0;
-    max-height: 148px;
-    margin: 0;
-  }
-
-  .feed-deck .spot-grid,
-  .feed-deck .memory-grid {
-    height: 100%;
-    max-height: 128px;
+    overflow: hidden;
   }
 
   .feed-deck .ask-panel--compact {
@@ -486,10 +405,6 @@
     max-height: 48%;
     margin-top: 0;
     overflow: auto;
-  }
-
-  .feed-deck .idea-stack {
-    position: relative;
   }
 }
 
@@ -503,10 +418,5 @@
   .feed-head > p,
   .feed-updated {
     display: none;
-  }
-
-  .feed-deck .reaction-arena,
-  .feed-deck .gravity-arena {
-    max-height: 108px;
   }
 }
