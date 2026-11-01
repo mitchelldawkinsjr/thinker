@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T18:11:37.910Z",
+  "updatedAt": "2026-11-01T18:36:40.151Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -545,6 +545,20 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/experiments-with-people-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-e91b8872e655",
+      "topicId": "mental-models",
+      "title": "Find Your Unicorn Space",
+      "hook": "A ~24-minute listen on “Find Your Unicorn Space”",
+      "body": "Reclaim Your Creative Life in a Too-Busy World",
+      "lesson": "Reclaim Your Creative Life in a Too-Busy World. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Eve Rodsky",
+      "source": "20 Minute Books · Eve Rodsky",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/find-your-unicorn-space",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Find%20Your%20Unicorn%20Space.mp3",
+      "readMinutes": 24
     },
     {
       "id": "booksum-7b7f64ef4cb5",
@@ -1202,20 +1216,6 @@
       "readMinutes": 23,
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Skin%20in%20the%20Game.mp3",
       "audioPageUrl": "https://www.20minutebooks.com/skin-in-the-game"
-    },
-    {
-      "id": "20min-3dcb8296b1bb",
-      "topicId": "mental-models",
-      "title": "Smarter Not Harder",
-      "hook": "A ~24-minute listen on “Smarter Not Harder”",
-      "body": "The Biohacker's Guide to Getting the Body and Mind You Want",
-      "lesson": "The Biohacker's Guide to Getting the Body and Mind You Want. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Dave Asprey",
-      "source": "20 Minute Books · Dave Asprey",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/smarter-not-harder",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Smarter%20Not%20Harder.mp3",
-      "readMinutes": 24
     },
     {
       "id": "booksum-87af14c2605d",

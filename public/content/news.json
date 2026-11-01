@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T17:58:40.728Z",
+  "updatedAt": "2026-11-01T17:48:29.421Z",
   "items": [
     {
       "id": "rss-85d06ade99f6",
@@ -8,7 +8,7 @@
       "lesson": "The Birth of the Black Panthers — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=6UBOl5Yq-ms",
-      "publishedAt": "2026-10-31T17:58:33.091Z",
+      "publishedAt": "2026-11-01T17:48:25.050Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -33,7 +33,7 @@
       "lesson": "Jesse Jackson's Run for the Presidency (1984) — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=KLVaqE3J5Uk",
-      "publishedAt": "2026-10-31T17:57:33.091Z",
+      "publishedAt": "2026-11-01T17:47:25.050Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -58,7 +58,7 @@
       "lesson": "The Double V Campaign of World War II — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=OAPLbfnbKE4",
-      "publishedAt": "2026-10-31T17:56:33.091Z",
+      "publishedAt": "2026-11-01T17:46:25.050Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -83,7 +83,7 @@
       "lesson": "Affirmative Action — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=9Pcm00E-DEM",
-      "publishedAt": "2026-10-31T17:55:33.091Z",
+      "publishedAt": "2026-11-01T17:45:25.050Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -108,7 +108,7 @@
       "lesson": "Oscar Micheaux: The First Black Indie Filmmaker — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=LHRBK3Q23Ek",
-      "publishedAt": "2026-10-31T17:54:33.091Z",
+      "publishedAt": "2026-11-01T17:44:25.050Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -133,7 +133,7 @@
       "lesson": "The Tuskegee Study — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=afwK2CVpc9E",
-      "publishedAt": "2026-10-31T17:53:33.091Z",
+      "publishedAt": "2026-11-01T17:43:25.050Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -158,7 +158,7 @@
       "lesson": "Black History in Two Minutes (or so) Nominated Best Podcast Documentary — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=V3Z6yILMuZo",
-      "publishedAt": "2026-10-31T17:52:33.091Z",
+      "publishedAt": "2026-11-01T17:42:25.050Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -183,7 +183,7 @@
       "lesson": "Black History in Two Minutes (or so) Nominated Best Social Series / Education & Discovery — a short episode from Black History in Two Minutes. Watch, then keep one detail that complicates the usual textbook version.",
       "source": "Black History in Two Minutes",
       "sourceUrl": "https://www.youtube.com/watch?v=M-fFgaUp06A",
-      "publishedAt": "2026-10-31T17:51:33.091Z",
+      "publishedAt": "2026-11-01T17:41:25.050Z",
       "expiresAt": "2026-11-12T17:30:47.667Z",
       "topicIds": [
         "history"
@@ -198,6 +198,1673 @@
         {
           "label": "Channel",
           "url": "https://www.youtube.com/@BlackHistoryinTwoMinutes"
+        }
+      ]
+    },
+    {
+      "id": "rss-294766b66d41",
+      "hook": "Hebron siege continues for 10th day as Israel threatens wider offensive",
+      "title": "Hebron siege continues for 10th day as Israel threatens wider offensive",
+      "lesson": "Hebron's economic losses surpass $3.8m as Israeli forces demolish West Bank homes and close hundreds of businesses.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/11/1/hebron-siege-continues-for-10th-day-as-israel-threatens-wider-offensive?traffic_source=rss",
+      "publishedAt": "2026-11-01T17:30:45.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/11/1/hebron-siege-continues-for-10th-day-as-israel-threatens-wider-offensive?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-b88b56dd629c",
+      "hook": "Believers City | 10:30 AM Sunday Service",
+      "title": "Believers City | 10:30 AM Sunday Service",
+      "lesson": "Join Believers City for our Sunday Experience! Plug into community and hear a powerful word from God in our message: ABOUT US We exist to bring people into a city of belonging and becoming in the Kingdom of God through Jesus Christ. This is the mission of Believers City, led by Founding Pastor Latasha Tudman and our",
+      "source": "Joel Tudman Official",
+      "sourceUrl": "https://www.youtube.com/watch?v=sOCeKFAHLyc",
+      "publishedAt": "2026-11-01T17:30:42.000Z",
+      "expiresAt": "2026-11-15T17:48:28.902Z",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "feedId": "yt-joel-tudman",
+      "imageUrl": "https://i4.ytimg.com/vi/sOCeKFAHLyc/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch",
+          "url": "https://www.youtube.com/watch?v=sOCeKFAHLyc"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@JoelTudmanOfficial"
+        }
+      ]
+    },
+    {
+      "id": "rss-627db3543ecc",
+      "hook": "Speed with the acting skills 🕷️ (via @IShowSpeed/TT)",
+      "title": "Speed with the acting skills 🕷️ (via @IShowSpeed/TT)",
+      "lesson": "✔️ Subscribe to ESPN Unlimited: https://plus.espn.com/ #ESPN",
+      "source": "ESPN · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/_-GfuKLM7cI",
+      "publishedAt": "2026-11-01T17:30:13.000Z",
+      "expiresAt": "2026-11-15T17:48:28.809Z",
+      "topicIds": [
+        "sports-biz",
+        "nba-analytics",
+        "football-film",
+        "wnba"
+      ],
+      "feedId": "yt-espn-shorts",
+      "imageUrl": "https://i4.ytimg.com/vi/_-GfuKLM7cI/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/_-GfuKLM7cI"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@espn"
+        }
+      ]
+    },
+    {
+      "id": "rss-070909239d7c",
+      "hook": "November 1, 2026",
+      "title": "November 1, 2026",
+      "lesson": "November 1, 2026",
+      "source": "Mojo Brookzz · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/iNVjUusZhRo",
+      "publishedAt": "2026-11-01T17:12:30.000Z",
+      "expiresAt": "2026-11-15T17:48:27.358Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "yt-mojo-brookzz-shorts",
+      "imageUrl": "https://i2.ytimg.com/vi/iNVjUusZhRo/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/iNVjUusZhRo"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@mojobrookzz"
+        }
+      ]
+    },
+    {
+      "id": "rss-fc655c4fb836",
+      "hook": "12pm ET, November 01 | The latest headlines from NPR",
+      "title": "12pm ET, November 01 | The latest headlines from NPR",
+      "lesson": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include",
+      "source": "NPR News Now",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/46e3b2ab-a9c4-4fb3-aebf-8806fe4f7319/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=46e3b2ab-a9c4-4fb3-aebf-8806fe4f7319&feed=O9WlY7a5&t=podcast&e=nx-s1-20261101-1200-long&p=500005&d=280&size=4586729",
+      "publishedAt": "2026-11-01T17:10:04.000Z",
+      "expiresAt": "2026-11-15T17:48:12.320Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-news-now",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/46e3b2ab-a9c4-4fb3-aebf-8806fe4f7319/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=46e3b2ab-a9c4-4fb3-aebf-8806fe4f7319&feed=O9WlY7a5&t=podcast&e=nx-s1-20261101-1200-long&p=500005&d=280&size=4586729"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/500005/npr-news-now"
+        }
+      ]
+    },
+    {
+      "id": "rss-d8e89679108d",
+      "hook": "Al Jazeera marks 30 years of transforming news in Middle East and beyond",
+      "title": "Al Jazeera marks 30 years of transforming news in Middle East and beyond",
+      "lesson": "The anniversary coincides with a significant restructuring of Al Jazeera Media Network’s Arabic-language news services.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/11/1/al-jazeera-celebrates-30-years-of-transforming-news-in-region-and-beyond?traffic_source=rss",
+      "publishedAt": "2026-11-01T16:59:41.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/11/1/al-jazeera-celebrates-30-years-of-transforming-news-in-region-and-beyond?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-31975462bb26",
+      "hook": "Wait for it 😂 (via Courtneymitin/IG, trav_boyson/IG)",
+      "title": "Wait for it 😂 (via Courtneymitin/IG, trav_boyson/IG)",
+      "lesson": "✔️ Subscribe to ESPN Unlimited: https://plus.espn.com/ #ESPN",
+      "source": "ESPN · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/1DZ6HtdJOso",
+      "publishedAt": "2026-11-01T16:57:36.000Z",
+      "expiresAt": "2026-11-15T17:48:28.809Z",
+      "topicIds": [
+        "sports-biz",
+        "nba-analytics",
+        "football-film",
+        "wnba"
+      ],
+      "feedId": "yt-espn-shorts",
+      "imageUrl": "https://i2.ytimg.com/vi/1DZ6HtdJOso/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/1DZ6HtdJOso"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@espn"
+        }
+      ]
+    },
+    {
+      "id": "rss-396a8a3edc37",
+      "hook": "Bangladesh workers clash with police in protests over low pay",
+      "title": "Bangladesh workers clash with police in protests over low pay",
+      "lesson": "Dozens of garment workers in Bangladesh clashed with police in the capital Dhaka.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/1/bangladesh-workers-clash-with-police-in-protests-over-low-pay?traffic_source=rss",
+      "publishedAt": "2026-11-01T16:52:42.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/bangladesh-workers-clash-with-police-in-protests-over-low-pay?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-051de37c9b6e",
+      "hook": "Bangladesh workers clash with police in protests over low pay",
+      "title": "Bangladesh workers clash with police in protests over low pay",
+      "lesson": "Dozens of garment workers in Bangladesh clashed with police in the capital Dhaka as they protested against low pay and the rising cost of living. The textile industry is the backbone of the country’s economy. Subscribe to our channel: http://bit.ly/AJSubscribe Follow us on X : https://twitter.com/AJEnglish Find us on",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/806cd8e0-b7c5-4d21-a5fd-b4f50115e080/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-11-01T16:51:54.000Z",
+      "expiresAt": "2026-11-04T17:48:12.074Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "imageUrl": "https://www.omnycontent.com/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/806cd8e0-b7c5-4d21-a5fd-b4f50115e080/image.jpg?t=1793551904&size=Large",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/806cd8e0-b7c5-4d21-a5fd-b4f50115e080/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c40011f3c5ad",
+      "hook": "Quoting Kyle Kingsbury",
+      "title": "Quoting Kyle Kingsbury",
+      "lesson": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+      "publishedAt": "2026-11-01T16:49:04.000Z",
+      "expiresAt": "2026-11-15T17:48:18.199Z",
+      "topicIds": [
+        "ai-agents",
+        "llms-prompting",
+        "rag-context"
+      ],
+      "feedId": "simon-willison",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/"
+        }
+      ]
+    },
+    {
+      "id": "rss-7496134cf31c",
+      "hook": "India protesters march with 1km banner of deleted voters’ names",
+      "title": "India protesters march with 1km banner of deleted voters’ names",
+      "lesson": "Protesters in New Delhi carried a one-kilometre banner bearing the names of people removed from India’s voter rolls.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/1/india-protesters-march-with-1km-banner-of-deleted-voters-names?traffic_source=rss",
+      "publishedAt": "2026-11-01T16:42:18.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/india-protesters-march-with-1km-banner-of-deleted-voters-names?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-ccc9c311828a",
+      "hook": "India protesters march with 1km banner of deleted voters’ names",
+      "title": "India protesters march with 1km banner of deleted voters’ names",
+      "lesson": "Protesters in New Delhi carried a one-kilometre banner bearing the names of people removed from India’s voter rolls, as opposition parties rallied again against the deletion of nearly 130 million names and demanded the resignation of the country’s election chief. Subscribe to our channel: http://bit.ly/AJSubscribe",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a462c067-c97d-4c18-9d28-b4f50112e17e/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-11-01T16:40:59.000Z",
+      "expiresAt": "2026-11-04T17:48:12.074Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "imageUrl": "https://www.omnycontent.com/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a462c067-c97d-4c18-9d28-b4f50112e17e/image.jpg?t=1793551250&size=Large",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a462c067-c97d-4c18-9d28-b4f50112e17e/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-074d264c8d2b",
+      "hook": "Baker Mayfield kept it real 😅",
+      "title": "Baker Mayfield kept it real 😅",
+      "lesson": "✔️ Subscribe to ESPN Unlimited: https://plus.espn.com/ #ESPN",
+      "source": "ESPN · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/Nf7EOPTzdAQ",
+      "publishedAt": "2026-11-01T16:35:03.000Z",
+      "expiresAt": "2026-11-15T17:48:28.809Z",
+      "topicIds": [
+        "sports-biz",
+        "nba-analytics",
+        "football-film",
+        "wnba"
+      ],
+      "feedId": "yt-espn-shorts",
+      "imageUrl": "https://i3.ytimg.com/vi/Nf7EOPTzdAQ/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/Nf7EOPTzdAQ"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@espn"
+        }
+      ]
+    },
+    {
+      "id": "rss-d2abe8d3ce7d",
+      "hook": "Behind the scenes as Al Jazeera turns 30",
+      "title": "Behind the scenes as Al Jazeera turns 30",
+      "lesson": "Take a look at what our colleagues are saying as Al Jazeera marks its 30th anniversary of bringing news to the world. Subscribe to our channel: http://bit.ly/AJSubscribe Follow us on X : https://twitter.com/AJEnglish Find us on Facebook: https://www.facebook.com/aljazeera Check our website: http://www.aljazeera.com/",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/e654ffa2-2822-402b-be68-b4f5010f1e8b/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-11-01T16:27:18.000Z",
+      "expiresAt": "2026-11-04T17:48:12.074Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "imageUrl": "https://www.omnycontent.com/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/e654ffa2-2822-402b-be68-b4f5010f1e8b/image.jpg?t=1793550429&size=Large",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/e654ffa2-2822-402b-be68-b4f5010f1e8b/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-e45e9c44a03a",
+      "hook": "Russia detains minor over alleged Moscow attack plot after US warning",
+      "title": "Russia detains minor over alleged Moscow attack plot after US warning",
+      "lesson": "Russian authorities say a US tip-off helped them identify teenager suspected of planning attack at a Moscow park.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning?traffic_source=rss",
+      "publishedAt": "2026-11-01T16:24:16.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-398fa02b8b65",
+      "hook": "Trump rallies in Iowa, Kansas to maintain Republican control of US…",
+      "title": "Trump rallies in Iowa, Kansas to maintain Republican control of US Senate",
+      "lesson": "US President Trump returns to the campaign trail after taking a break at his ⁠⁠Mar-a-Lago club in Florida on Saturday.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/11/1/trump-rallies-in-iowa-kansas-to-maintain-republican-control-of-us-senate?traffic_source=rss",
+      "publishedAt": "2026-11-01T16:19:57.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/11/1/trump-rallies-in-iowa-kansas-to-maintain-republican-control-of-us-senate?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-87f0890faf9d",
+      "hook": "Al Jazeera Balkans relaunches in new digital-first format",
+      "title": "Al Jazeera Balkans relaunches in new digital-first format",
+      "lesson": "AJB's return is a 'reaffirmation' of the network’s mission to go where the story matters, says its digital director.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/11/1/al-jazeera-balkans-relaunches-in-new-digital-first-format?traffic_source=rss",
+      "publishedAt": "2026-11-01T16:17:37.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/11/1/al-jazeera-balkans-relaunches-in-new-digital-first-format?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-1d9163b895d5",
+      "hook": "11am ET, November 01 | The latest headlines from NPR",
+      "title": "11am ET, November 01 | The latest headlines from NPR",
+      "lesson": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include",
+      "source": "NPR News Now",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/c14454ca-0749-430b-abef-36b5b0d6765e/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=c14454ca-0749-430b-abef-36b5b0d6765e&feed=O9WlY7a5&t=podcast&e=nx-s1-20261101-1100-long&p=500005&d=280&size=4586728",
+      "publishedAt": "2026-11-01T16:09:53.000Z",
+      "expiresAt": "2026-11-15T17:48:12.320Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-news-now",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/c14454ca-0749-430b-abef-36b5b0d6765e/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=c14454ca-0749-430b-abef-36b5b0d6765e&feed=O9WlY7a5&t=podcast&e=nx-s1-20261101-1100-long&p=500005&d=280&size=4586728"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/500005/npr-news-now"
+        }
+      ]
+    },
+    {
+      "id": "rss-d8e54c55952c",
+      "hook": "Dondre Whitfield: Black Women w/out Fathers Are A DANGER To Community!",
+      "title": "Dondre Whitfield: Black Women w/out Fathers Are A DANGER To Community!",
+      "lesson": "MEDIA TAKE OUT EXCLUSIVE: DONDRE WHITFIELD FACES MASSIVE BACKLASH OVER CONTROVERSIAL COMMENTS!! Actor Claims Fatherless Women Are “Dangerous” & Cause “Chaos” In The Community… Social Media Erupts In Fury!! (DETAILS) Hold on to your seats, because actor and author Dondré Whitfield is facing a complete tsunami of",
+      "source": "MediaTakeOut",
+      "sourceUrl": "https://mediatakeout.com/dondre-whitfield-black-women-w-out-fathers-are-a-danger-to-community/",
+      "publishedAt": "2026-11-01T16:06:06.000Z",
+      "expiresAt": "2026-11-15T17:48:16.769Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "mediatakeout",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://mediatakeout.com/dondre-whitfield-black-women-w-out-fathers-are-a-danger-to-community/"
+        }
+      ]
+    },
+    {
+      "id": "rss-11c5c497545f",
+      "hook": "Green Party at 'crossroads', says former co-leader",
+      "title": "Green Party at 'crossroads', says former co-leader",
+      "lesson": "Adrian Ramsay suggested the party needs to focus on its \"core values\", including environmental issues.",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c6x2wkp7e0q9o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-01T15:52:51.000Z",
+      "expiresAt": "2026-11-04T17:48:13.492Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "bbc-politics",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/802c/live/e0b8cef0-c403-11f1-a64c-550be9e3c66b.png",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/c6x2wkp7e0q9o?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-275a2b563015",
+      "hook": "Coach didn’t realize Gabby Williams had 30 points until after the…",
+      "title": "Coach didn’t realize Gabby Williams had 30 points until after the game 😂",
+      "lesson": "✔️ Subscribe to ESPN Unlimited: https://plus.espn.com/ #ESPN",
+      "source": "ESPN · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/xIpCbjPD2PU",
+      "publishedAt": "2026-11-01T15:51:30.000Z",
+      "expiresAt": "2026-11-15T17:48:28.809Z",
+      "topicIds": [
+        "sports-biz",
+        "nba-analytics",
+        "football-film",
+        "wnba"
+      ],
+      "feedId": "yt-espn-shorts",
+      "imageUrl": "https://i1.ytimg.com/vi/xIpCbjPD2PU/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/xIpCbjPD2PU"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@espn"
+        }
+      ]
+    },
+    {
+      "id": "rss-2958a38fb52e",
+      "hook": "Trump slams ex-lawyer’s $50m deal with pardoned banker’s family",
+      "title": "Trump slams ex-lawyer’s $50m deal with pardoned banker’s family",
+      "lesson": "Alina Habba Mildon signed lucrative contract while working at the Justice Department, before Trump pardoned the banker.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/11/1/trump-slams-ex-lawyers-50m-deal-with-pardoned-bankers-family?traffic_source=rss",
+      "publishedAt": "2026-11-01T15:50:19.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/news/2026/11/1/trump-slams-ex-lawyers-50m-deal-with-pardoned-bankers-family?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-9b1e893f6471",
+      "hook": "Dramatic helicopter rescue saves climbers stranded on Italian cliff",
+      "title": "Dramatic helicopter rescue saves climbers stranded on Italian cliff",
+      "lesson": "Dramatic helicopter rescue saves climbers stranded on Italian cliff",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/1/dramatic-helicopter-rescue-saves-climbers-stranded-on-italian-cliff?traffic_source=rss",
+      "publishedAt": "2026-11-01T15:40:58.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/dramatic-helicopter-rescue-saves-climbers-stranded-on-italian-cliff?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-326aff748e06",
+      "hook": "Real Housewives Of OC Tamra Judge BARES IT ALL!!",
+      "title": "Real Housewives Of OC Tamra Judge BARES IT ALL!!",
+      "lesson": "The post Real Housewives Of OC Tamra Judge BARES IT ALL!! appeared first on Media Take Out .",
+      "source": "MediaTakeOut",
+      "sourceUrl": "https://mediatakeout.com/real-housewives-of-oc-tamra-judge-bares-it-all/",
+      "publishedAt": "2026-11-01T15:39:23.000Z",
+      "expiresAt": "2026-11-15T17:48:16.769Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "mediatakeout",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://mediatakeout.com/real-housewives-of-oc-tamra-judge-bares-it-all/"
+        }
+      ]
+    },
+    {
+      "id": "rss-9f3b18f43751",
+      "hook": "Corey Campbell Is Now OFFICIALLY Part Of Jay Z’s Entourage!",
+      "title": "Corey Campbell Is Now OFFICIALLY Part Of Jay Z’s Entourage!",
+      "lesson": "The post Corey Campbell Is Now OFFICIALLY Part Of Jay Z’s Entourage! appeared first on Media Take Out .",
+      "source": "MediaTakeOut",
+      "sourceUrl": "https://mediatakeout.com/corey-campbell-is-now-officially-part-of-jay-zs-entourage/",
+      "publishedAt": "2026-11-01T15:38:32.000Z",
+      "expiresAt": "2026-11-15T17:48:16.769Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "mediatakeout",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://mediatakeout.com/corey-campbell-is-now-officially-part-of-jay-zs-entourage/"
+        }
+      ]
+    },
+    {
+      "id": "rss-062ad6197d78",
+      "hook": "JERUSALEM DAILY: Israel continues siege and arrests in Hebron",
+      "title": "JERUSALEM DAILY: Israel continues siege and arrests in Hebron",
+      "lesson": "Israel’s siege on Hebron is on its 10th day and its attacks on Gaza continue.",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/11/1/jerusalem-daily-israel-continues-siege-and-arrests-in-hebron?traffic_source=rss",
+      "publishedAt": "2026-11-01T15:38:12.000Z",
+      "expiresAt": "2026-11-04T17:48:11.725Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/jerusalem-daily-israel-continues-siege-and-arrests-in-hebron?traffic_source=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-f92bb11a2010",
+      "hook": "Dramatic helicopter rescue saves climbers stranded on Italian cliff",
+      "title": "Dramatic helicopter rescue saves climbers stranded on Italian cliff",
+      "lesson": "Firefighters carried out a helicopter rescue operation to save climbers stranded on a steep rock face in Italy. Video shows dramatic scenes of the helicopter hovering dangerously close to a towering limestone cliff as rescuers work to reach the climbers. Subscribe to our channel: http://bit.ly/AJSubscribe Follow us on",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8506a364-4906-49e0-907a-b4f501019f33/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-11-01T15:38:06.000Z",
+      "expiresAt": "2026-11-04T17:48:12.074Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "imageUrl": "https://www.omnycontent.com/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8506a364-4906-49e0-907a-b4f501019f33/image.jpg?t=1793547480&size=Large",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8506a364-4906-49e0-907a-b4f501019f33/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-2a85106f2e25",
+      "hook": "JERUSALEM DAILY: Israel continues siege and arrests in Hebron",
+      "title": "JERUSALEM DAILY: Israel continues siege and arrests in Hebron",
+      "lesson": "Israel’s siege on Hebron is on its 10th day and its attacks on Gaza continue. Meanwhile, Israeli protesters in Tel Aviv and West Jerusalem are pushing to unseat Netanyahu. Al Jazeera’s Hala Al Shami has the latest. Subscribe to our channel: http://bit.ly/AJSubscribe Follow us on X : https://twitter.com/AJEnglish Find",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/7b1558f0-ee23-4613-94d5-b4f5010090a5/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-11-01T15:34:19.000Z",
+      "expiresAt": "2026-11-04T17:48:12.074Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "imageUrl": "https://www.omnycontent.com/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/7b1558f0-ee23-4613-94d5-b4f5010090a5/image.jpg?t=1793547251&size=Large",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/7b1558f0-ee23-4613-94d5-b4f5010090a5/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-aea2f9eaf77f",
+      "hook": "Michael Blackson, A Boogie Wit Da Hoodie & More React To Tragic…",
+      "title": "Michael Blackson, A Boogie Wit Da Hoodie & More React To Tragic Death Of 15-Year-old Javits Frimpong (PHOTOS + VIDEOS)",
+      "lesson": "Javits Frimpong’s tragic passing has sparked an outpouring of reactions. Now, both Michael Blackson and A Boogie Wit Da Hoodie are speaking out following the heartbreaking news. And, New York City Mayor Zohran Mamdani and Leandra Feliz, mother of slain teen Lesandro “Junior” Guzman-Feliz, have also joined the growing",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/javits-frimpong-michael-blackson-a-boogie-wit-da-hoodie-react-teen-tragic-bronx-death/",
+      "publishedAt": "2026-11-01T15:29:16.000Z",
+      "expiresAt": "2026-11-15T17:48:16.668Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "imageUrl": "https://theshaderoom.com/wp-content/uploads/2026/10/Desjahs-Split-FIs-21.png?w=60&h=60&crop=1",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/javits-frimpong-michael-blackson-a-boogie-wit-da-hoodie-react-teen-tragic-bronx-death/"
+        }
+      ]
+    },
+    {
+      "id": "rss-bc0f60861ea7",
+      "hook": "10am ET, November 01 | The latest headlines from NPR",
+      "title": "10am ET, November 01 | The latest headlines from NPR",
+      "lesson": "The latest headlines from NPR at the top of this hour. The stories you hear are written, reported and fact-checked by NPR journalists. Learn more about the standards of our journalism at npr.org/ethics . Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include",
+      "source": "NPR News Now",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/29d67b91-ac60-476f-88bb-9e6c74b29059/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=29d67b91-ac60-476f-88bb-9e6c74b29059&feed=O9WlY7a5&t=podcast&e=nx-s1-20261101-1000-long&p=500005&d=280&size=4585475",
+      "publishedAt": "2026-11-01T15:10:01.000Z",
+      "expiresAt": "2026-11-15T17:48:12.320Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "npr-news-now",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-500005/npr.simplecastaudio.com/368f8510-314e-46f1-8d26-5b87ed6ab6eb/episodes/29d67b91-ac60-476f-88bb-9e6c74b29059/audio/128/default.mp3?awCollectionId=368f8510-314e-46f1-8d26-5b87ed6ab6eb&awEpisodeId=29d67b91-ac60-476f-88bb-9e6c74b29059&feed=O9WlY7a5&t=podcast&e=nx-s1-20261101-1000-long&p=500005&d=280&size=4585475"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/500005/npr-news-now"
+        }
+      ]
+    },
+    {
+      "id": "rss-139330a0eed6",
+      "hook": "Israeli attacks on Gaza kill at least nine people",
+      "title": "Israeli attacks on Gaza kill at least nine people",
+      "lesson": "Israeli attacks on Gaza City and Khan Younis killed at least nine people on Sunday. Subscribe to our channel: http://bit.ly/AJSubscribe Follow us on X : https://twitter.com/AJEnglish Find us on Facebook: https://www.facebook.com/aljazeera Check our website: http://www.aljazeera.com/ Check out our Instagram page:",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/f5eb8d57-c288-4fc1-a942-b4f500e854e8/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-11-01T14:05:59.000Z",
+      "expiresAt": "2026-11-04T17:48:12.074Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "imageUrl": "https://www.omnycontent.com/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/f5eb8d57-c288-4fc1-a942-b4f500e854e8/image.jpg?t=1793541955&size=Large",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/f5eb8d57-c288-4fc1-a942-b4f500e854e8/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-9edbd578512d",
+      "hook": "Popok Joins The Mulvaney Roundtable for some Midterm Madness...",
+      "title": "Popok Joins The Mulvaney Roundtable for some Midterm Madness...",
+      "lesson": "Checkout episode: https://youtu.be/UiyzvIxK51w Link to Abe : Subscribe:http://www.youtube.com/@abenewsnetwork?sub_confirmation=1 Subscribe: https://www.youtube.com/@LegalAFMTN?sub_confirmation=1 Become a member of Legal AF YouTube community: https://www.youtube.com/channel/UCJgZJZZbnLFPr5GJdCuIwpA/join Become a member",
+      "source": "Legal AF · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/jrOjzH1ZsDo",
+      "publishedAt": "2026-11-01T14:00:36.000Z",
+      "expiresAt": "2026-11-04T17:48:29.417Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "yt-legal-af-mtn-shorts",
+      "imageUrl": "https://i3.ytimg.com/vi/jrOjzH1ZsDo/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/jrOjzH1ZsDo"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@LegalAFMTN"
+        }
+      ]
+    },
+    {
+      "id": "rss-bac84623f02a",
+      "hook": "Are Trump Voters Refusing to Take Polls? And Other Polling Risks.",
+      "title": "Are Trump Voters Refusing to Take Polls? And Other Polling Risks.",
+      "lesson": "If my inbox is any indication, we've reached the point when everyone just wants to know whether the polls will be right. Fair enough, so in this newsletter, I'll respond to a few of your questions about the specific risks facing pollsters today. But first I wanted to report one rare opportunity to put our New York",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-11-01-0800/2026-midterm-elections-are-trump-voters-refusing-take-polls-and-other-polling-risks",
+      "publishedAt": "2026-11-01T14:00:05.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-11-01-0800/2026-midterm-elections-are-trump-voters-refusing-take-polls-and-other-polling-risks"
+        }
+      ]
+    },
+    {
+      "id": "rss-307f312643c7",
+      "hook": "The 2026 Midterms Will Be Uniquely Difficult for Polls",
+      "title": "The 2026 Midterms Will Be Uniquely Difficult for Polls",
+      "lesson": "Polls are again under scrutiny, with some rushing in to proclaim their demise. But it isn't that polls have gotten worse. Rather, a mix of factors is creating unprecedented challenges for polling and for the public trying to understand it. Why? First, there are the perennial challenges that are consistently",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-11-01-0800/2026-midterm-elections-2026-midterms-will-be-uniquely-difficult-polls",
+      "publishedAt": "2026-11-01T14:00:05.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "imageUrl": "https://img.allsides.com/sites/default/files/sr_26.10.29_polling_featured.webp",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-11-01-0800/2026-midterm-elections-2026-midterms-will-be-uniquely-difficult-polls"
+        }
+      ]
+    },
+    {
+      "id": "rss-d17f4170e4b0",
+      "hook": "Even WaPo forced to admit there's a BIG problem with election polling",
+      "title": "Even WaPo forced to admit there's a BIG problem with election polling",
+      "lesson": "The Washington Post has admitted that polling for the midterm elections may suffer from the same inaccuracy issues that plagued that of previous elections. The outlet said in an article Friday that pollsters made more than 85,000 phone calls for their survey and sent out nearly 50,000 text messages to try to determine",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-11-01-0800/2026-midterm-elections-even-wapo-forced-admit-theres-big-problem-election-polling",
+      "publishedAt": "2026-11-01T14:00:05.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-11-01-0800/2026-midterm-elections-even-wapo-forced-admit-theres-big-problem-election-polling"
+        }
+      ]
+    },
+    {
+      "id": "rss-d84c078b2ce8",
+      "hook": "Ultra-Orthodox Jews clash with Israeli police over army draft",
+      "title": "Ultra-Orthodox Jews clash with Israeli police over army draft",
+      "lesson": "In Israel, a group of ultra-Orthodox Jews, known as Haredi, have been disrupting traffic near a military conscription office, east of Tel Aviv. They tried to stop new recruits from arriving at a base. Police intervened and forcefully removed them. In mid-2024, Israel's Supreme Court overturned a longstanding-policy of",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a082f026-2a52-46aa-871b-b4f500e49de2/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-11-01T13:52:34.000Z",
+      "expiresAt": "2026-11-04T17:48:12.074Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "imageUrl": "https://www.omnycontent.com/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a082f026-2a52-46aa-871b-b4f500e49de2/image.jpg?t=1793541143&size=Large",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/a082f026-2a52-46aa-871b-b4f500e49de2/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-ad1daa09f1dd",
+      "hook": "Macklemore concludes ‘Free Palestine’ tour with solidarity message",
+      "title": "Macklemore concludes ‘Free Palestine’ tour with solidarity message",
+      "lesson": "Macklemore’s ‘Free Palestine’ tour ended with a sold-out show in London. It brought together artists and activists calling for an end to suffering in Gaza, after Macklemore was dropped from Ed Sheeran’s US tour following pro-Palestinian remarks. Subscribe to our channel: http://bit.ly/AJSubscribe Follow us on X :",
+      "source": "Al Jazeera News Feed",
+      "sourceUrl": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8411f62c-702d-4844-9f61-b4f500e247b1/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f",
+      "publishedAt": "2026-11-01T13:44:02.000Z",
+      "expiresAt": "2026-11-04T17:48:12.074Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "al-jazeera-news-feed",
+      "imageUrl": "https://www.omnycontent.com/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8411f62c-702d-4844-9f61-b4f500e247b1/image.jpg?t=1793540633&size=Large",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://traffic.omny.fm/d/clips/9c074afa-3313-47e8-b802-a9f900789975/b10cdeda-cd0d-41ea-a737-ad8a01050808/8411f62c-702d-4844-9f61-b4f500e247b1/audio.mp3?utm_source=Podcast&in_playlist=cee1148d-ea1d-4149-9475-ad8a0105363f"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.aljazeera.com/podcasts/news-updates/"
+        }
+      ]
+    },
+    {
+      "id": "rss-9bc9a974bdf5",
+      "hook": "Politics chat: Data centers are on everyone's minds going into…",
+      "title": "Politics chat: Data centers are on everyone's minds going into Election Day",
+      "lesson": "With days until Election Day, polls show momentum for Democratic candidates and bipartisan distaste for data centers.",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/11/01/nx-s1-6023270/politics-chat-data-centers-are-on-everyones-minds-going-into-election-day",
+      "publishedAt": "2026-11-01T13:05:18.000Z",
+      "expiresAt": "2026-11-04T17:48:12.283Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "imageUrl": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-6023270",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-6023270/politics-chat-data-centers-are-on-everyones-minds-going-into-election-day"
+        }
+      ]
+    },
+    {
+      "id": "rss-4e43baadef25",
+      "hook": "What NPR's senior political correspondent is watching for on…",
+      "title": "What NPR's senior political correspondent is watching for on Election Night",
+      "lesson": "An NPR senior political editor/correspondent tells us what he will be looking out for as results roll in on Election Day.",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/11/01/nx-s1-6019709/what-nprs-senior-political-correspondent-is-watching-for-on-election-night",
+      "publishedAt": "2026-11-01T13:05:14.000Z",
+      "expiresAt": "2026-11-04T17:48:12.283Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "imageUrl": "https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-6019709",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-6019709/what-nprs-senior-political-correspondent-is-watching-for-on-election-night"
+        }
+      ]
+    },
+    {
+      "id": "rss-24f1623b44ca",
+      "hook": "Can Catholic schools receive government funds refuse children of gay…",
+      "title": "Can Catholic schools receive government funds refuse children of gay or trans parents?",
+      "lesson": "An upcoming Supreme Court case looks at whether Catholic schools that are receiving funds from the government can refuse children admission if their parents or other family members are gay or trans. ------------------------------------------------------ Follow NPR elsewhere, too: • Instagram:",
+      "source": "NPR · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/sST7maDw1F0",
+      "publishedAt": "2026-11-01T13:00:32.000Z",
+      "expiresAt": "2026-11-04T17:48:28.414Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "yt-npr-shorts",
+      "imageUrl": "https://i4.ytimg.com/vi/sST7maDw1F0/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/sST7maDw1F0"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@NPR"
+        }
+      ]
+    },
+    {
+      "id": "rss-803e447346c4",
+      "hook": "Living with high prices in Virginia's 1st Congressional District",
+      "title": "Living with high prices in Virginia's 1st Congressional District",
+      "lesson": "High prices are straining budgets for both a small business owner and a single mom in a rural part of Va.'s 1st Congressional district. They explain how they're handling the economic stress of these",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/11/01/nx-s1-5945628/living-with-high-prices-in-virginias-1st-congressional-district",
+      "publishedAt": "2026-11-01T13:00:00.000Z",
+      "expiresAt": "2026-11-04T17:48:12.283Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4476x4260+0+0/resize/4476x4260!/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fef%2Fbe%2F4aed9c1844abb72736c4bf6517e6%2Fimg-0646.jpeg",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-5945628/living-with-high-prices-in-virginias-1st-congressional-district"
+        }
+      ]
+    },
+    {
+      "id": "rss-c0410deb3506",
+      "hook": "Eisenkot vows to swiftly utilize Knesset majority 'against Oct. 7…",
+      "title": "Eisenkot vows to swiftly utilize Knesset majority 'against Oct. 7 government'",
+      "lesson": "Yashar leader Gadi Eisenkot vowed Saturday to swiftly exercise the new Knesset's parliamentary majority, declaring that Israelis voted decisively against Prime Minister Benjamin Netanyahu's government in last week's election. Anti-Netanyahu parties won 67 of the 120 Knesset seats, but Zionist anti-Netanyahu parties",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-11-01-0800/middle-east-eisenkot-vows-swiftly-utilize-knesset-majority-against-oct-7-government",
+      "publishedAt": "2026-11-01T12:13:24.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-11-01-0800/middle-east-eisenkot-vows-swiftly-utilize-knesset-majority-against-oct-7-government"
+        }
+      ]
+    },
+    {
+      "id": "rss-01ccd7347ce1",
+      "hook": "Trump calls $50 million contract for ex-lawyer Habba Mildon 'not…",
+      "title": "Trump calls $50 million contract for ex-lawyer Habba Mildon 'not acceptable'",
+      "lesson": "President Donald Trump said on Saturday it was \"unacceptable\" for one of his former lawyers, Alina Habba ​Mildon, to secure a $50 million contract for herself while working ‌at the US Department of Justice. \"I thought it was totally obnoxious and outrageous, and it's not acceptable,\" Trump told reporters at his",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-11-01-0800/donald-trump-trump-calls-50-million-contract-ex-lawyer-habba-mildon-not-acceptable",
+      "publishedAt": "2026-11-01T12:13:24.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-11-01-0800/donald-trump-trump-calls-50-million-contract-ex-lawyer-habba-mildon-not-acceptable"
+        }
+      ]
+    },
+    {
+      "id": "rss-1d5aaaddf7a9",
+      "hook": "Inside the Times's Decisions on the Alaska Senate Race Story",
+      "title": "Inside the Times's Decisions on the Alaska Senate Race Story",
+      "lesson": "How did a potential Republican spoiler end up on the Alaska ballot for one of the most important Senate races in the country? The New York Times reporter Kellen Browning nailed down the facts to answer that question this week. Through interviews, documents and text messages, Kellen confirmed that political operatives",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-11-01-0800/media-industry-inside-timess-decisions-alaska-senate-race-story",
+      "publishedAt": "2026-11-01T12:13:24.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-11-01-0800/media-industry-inside-timess-decisions-alaska-senate-race-story"
+        }
+      ]
+    },
+    {
+      "id": "rss-938959c51bc3",
+      "hook": "Infighting Likely to Grip CCP as Xi Jinping's Health Fails, Experts Say",
+      "title": "Infighting Likely to Grip CCP as Xi Jinping's Health Fails, Experts Say",
+      "lesson": "Amid speculation about his health, experts say that if Chinese leader Xi Jinping were to become incapacitated or worse, the Chinese Communist Party (CCP) would likely plunge into a power struggle that could paralyze the regime or even lead to its collapse. Rumors about health problems have plagued Xi since 2019 and",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-11-01-0800/china-infighting-likely-grip-ccp-xi-jinpings-health-fails-experts-say",
+      "publishedAt": "2026-11-01T12:13:24.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-11-01-0800/china-infighting-likely-grip-ccp-xi-jinpings-health-fails-experts-say"
+        }
+      ]
+    },
+    {
+      "id": "rss-8e0ae260a81e",
+      "hook": "Protests spread to Germany as hundreds of thousands march again in…",
+      "title": "Protests spread to Germany as hundreds of thousands march again in France",
+      "lesson": "Cost-of-living protests that began in France have spread to Germany where demonstrations to coincide with Halloween took place on Saturday, with tens of thousands of people turning out across the",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-11-01-0800/world-protests-spread-germany-hundreds-thousands-march-again-france",
+      "publishedAt": "2026-11-01T12:13:24.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-11-01-0800/world-protests-spread-germany-hundreds-thousands-march-again-france"
+        }
+      ]
+    },
+    {
+      "id": "rss-d588f694995a",
+      "hook": "Trump 'hasn't made a decision' on whether to resume Iran strikes,…",
+      "title": "Trump 'hasn't made a decision' on whether to resume Iran strikes, Rubio says",
+      "lesson": "Secretary of State Marco Rubio said Saturday, ahead of the midterm elections, that President Donald Trump \"hasn't made a decision\" whether or not to resume strikes on",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/news/2026-11-01-0800/middle-east-trump-hasnt-made-decision-whether-resume-iran-strikes-rubio-says",
+      "publishedAt": "2026-11-01T12:13:24.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/news/2026-11-01-0800/middle-east-trump-hasnt-made-decision-whether-resume-iran-strikes-rubio-says"
+        }
+      ]
+    },
+    {
+      "id": "rss-d95f652ba10a",
+      "hook": "It's ACA open enrollment time. Here are the changes for health…",
+      "title": "It's ACA open enrollment time. Here are the changes for health insurance shoppers",
+      "lesson": "The ACA health insurance marketplaces — find yours at HealthCare.gov — open Nov. 1 for 2027 coverage. Getting an early start may be especially important this",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/11/01/nx-s1-6023423/aca-open-enrollment-health-insurance",
+      "publishedAt": "2026-11-01T12:00:00.000Z",
+      "expiresAt": "2026-11-04T17:48:12.283Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2688+0+0/resize/4032x2688!/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa6%2F84%2Fcb5510334ff68e4dd5948bf3f79b%2Fap25286814762473.jpg",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-6023423/aca-open-enrollment-health-insurance"
+        }
+      ]
+    },
+    {
+      "id": "rss-d7bf20cccf49",
+      "hook": "Laura Kuenssberg: Healey risks breaking minimum wage promise for…",
+      "title": "Laura Kuenssberg: Healey risks breaking minimum wage promise for younger workers",
+      "lesson": "The Chancellor has suggested that younger workers might not receive the same minimum wage as others before the next election.",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cv369266644lo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-01T11:05:40.000Z",
+      "expiresAt": "2026-11-04T17:48:13.492Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "bbc-politics",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ca26/live/ddbc05b0-d546-11f1-b69a-cfba30d5f3d4.jpg",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/cv369266644lo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-26314d58ca1c",
+      "hook": "How Gen Z Republicans running for Congress are thinking about the…",
+      "title": "How Gen Z Republicans running for Congress are thinking about the future of the party",
+      "lesson": "On the eve of what may prove to be a tough election for the GOP, young conservatives vying to be part of the first class of Gen Z Republicans in Congress want a role shaping the party's next",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/11/01/nx-s1-5946869/midterm-elections-gen-z-republicans",
+      "publishedAt": "2026-11-01T11:00:00.000Z",
+      "expiresAt": "2026-11-04T17:48:12.283Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8192x5464+0+0/resize/8192x5464!/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F09%2F40%2F6b3934f54fa0a3dc159d1743638a%2Fgettyimages-2290519905.jpg",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-5946869/midterm-elections-gen-z-republicans"
+        }
+      ]
+    },
+    {
+      "id": "rss-4c8cf85d4b7a",
+      "hook": "Reeves says UK's future should be inside the EU",
+      "title": "Reeves says UK's future should be inside the EU",
+      "lesson": "In her first major intervention since leaving the Treasury, Rachel Reeves says Brexit has made the UK \"poorer, weaker and less",
+      "source": "BBC Politics",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c62l4yz0eexpo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-01T10:47:03.000Z",
+      "expiresAt": "2026-11-04T17:48:13.492Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "bbc-politics",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bf5e/live/f417cd40-d595-11f1-a701-fddedf244c16.jpg",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.bbc.co.uk/news/articles/c62l4yz0eexpo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
+    {
+      "id": "rss-6b9d91f0030b",
+      "hook": "Here's how to watch election night as the polls close, hour-by-hour",
+      "title": "Here's how to watch election night as the polls close, hour-by-hour",
+      "lesson": "As polls close on election night, here's a look at what to expect each hour and which midterm races are key to deciding control of",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/11/01/g-s1-149978/midterms-election-night",
+      "publishedAt": "2026-11-01T09:00:00.000Z",
+      "expiresAt": "2026-11-04T17:48:12.283Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5704x3803+0+0/resize/5704x3803!/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F6c%2F9a%2Fb1ce58ca42bfa9fd05a0b57bfa27%2Fap26297551315518.jpg",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/11/01/g-s1-149978/midterms-election-night"
+        }
+      ]
+    },
+    {
+      "id": "rss-dbcd7dde60f8",
+      "hook": "What's it like to run for Congress when the odds are stacked heavily…",
+      "title": "What's it like to run for Congress when the odds are stacked heavily against you?",
+      "lesson": "The majority of congressional races this cycle are rated either solid Democrat or solid Republican. They're the opposite of tossups, where candidates from the minority party face near impossible",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/11/01/nx-s1-5995461/midterm-elections-noncompetitive-districts",
+      "publishedAt": "2026-11-01T09:00:00.000Z",
+      "expiresAt": "2026-11-04T17:48:12.283Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4500x3001+0+0/resize/4500x3001!/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F9f%2Fdb%2F6001bf054f61a20d042f67df24fd%2F20261119-npr-lisa-kinney-050a2175.JPG",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-5995461/midterm-elections-noncompetitive-districts"
+        }
+      ]
+    },
+    {
+      "id": "rss-d0f6e9224628",
+      "hook": "Trump thanks supporters for the memories in final campaign stops for…",
+      "title": "Trump thanks supporters for the memories in final campaign stops for 2026 midterms",
+      "lesson": "President Trump has maintained a near-daily rally schedule as Election Day draws closer, playing his greatest hits for loyal crowds in red states in what is a sort-of goodbye to",
+      "source": "NPR Politics",
+      "sourceUrl": "https://www.npr.org/2026/11/01/nx-s1-6022128/trump-rally-2026-midterms-republicans",
+      "publishedAt": "2026-11-01T09:00:00.000Z",
+      "expiresAt": "2026-11-04T17:48:12.283Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "npr-politics",
+      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7690x5127+0+0/resize/7690x5127!/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F23%2Fd0%2F3ab546124d3c9ff5b12888acf754%2Fgettyimages-2302578997.jpg",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-6022128/trump-rally-2026-midterms-republicans"
+        }
+      ]
+    },
+    {
+      "id": "rss-abbf024c36c9",
+      "hook": "Who decides the future of America?",
+      "title": "Who decides the future of America?",
+      "lesson": "Millions of Americans have already cast their votes early ahead of Tuesday’s midterms. On this episode of The Sunday Story , NPR’s senior political correspondent Tamara Keith discusses the turbulent and unpredictable political landscape of this years’ midterm election. Rising costs and unpopular foreign policy",
+      "source": "Up First",
+      "sourceUrl": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/635fc896-b86c-4cec-80c7-0485094558e5/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=635fc896-b86c-4cec-80c7-0485094558e5&feed=HMwRVgVt&t=podcast&e=nx-s1-6023242&p=510318&d=1601&size=25624746",
+      "publishedAt": "2026-11-01T09:00:00.000Z",
+      "expiresAt": "2026-11-04T17:48:12.704Z",
+      "topicIds": [
+        "current-events",
+        "politics"
+      ],
+      "feedId": "npr-up-first",
+      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5259x2958+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2Fa2%2Fd8ba90f8446a9f4d0518ab9fbb2e%2Fd49676ad-eeef-4a9d-a717-770446586030.png",
+      "angles": [
+        {
+          "label": "Listen",
+          "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/635fc896-b86c-4cec-80c7-0485094558e5/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=635fc896-b86c-4cec-80c7-0485094558e5&feed=HMwRVgVt&t=podcast&e=nx-s1-6023242&p=510318&d=1601&size=25624746"
+        },
+        {
+          "label": "Show page",
+          "url": "https://www.npr.org/podcasts/510318/up-first"
+        }
+      ]
+    },
+    {
+      "id": "rss-305bae7fdfa2",
+      "hook": "the BIGGEST HACK of all time just started...",
+      "title": "the BIGGEST HACK of all time just started...",
+      "lesson": "We almost made it through Black October. Then $6.36 billion was stolen from Binance, with most of the theft unfolding in about 20 minutes. From this wave of cyberattacks to AI swarms, secret communication channels, and “cloaked daemons,” we explore a disturbing question: what happens when protecting the internet",
+      "source": "Wes Roth",
+      "sourceUrl": "https://www.youtube.com/watch?v=WhA2iNfzytY",
+      "publishedAt": "2026-11-01T07:54:54.000Z",
+      "expiresAt": "2026-11-15T17:48:24.022Z",
+      "topicIds": [
+        "ai-agents",
+        "current-events"
+      ],
+      "feedId": "yt-wes-roth",
+      "imageUrl": "https://i4.ytimg.com/vi/WhA2iNfzytY/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch",
+          "url": "https://www.youtube.com/watch?v=WhA2iNfzytY"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@WesRoth"
+        }
+      ]
+    },
+    {
+      "id": "rss-84d710b7b320",
+      "hook": "Why AllSides Uses the Term ‘Assisted Dying’ and Not ‘Assisted Suicide’",
+      "title": "Why AllSides Uses the Term ‘Assisted Dying’ and Not ‘Assisted Suicide’",
+      "lesson": "After internal discussion among team members, AllSides has set an editorial standard with the term \"assisted dying.\"",
+      "source": "AllSides",
+      "sourceUrl": "https://www.allsides.com/blog/why-allsides-uses-term-assisted-dying-and-not-assisted-suicide",
+      "publishedAt": "2026-11-01T06:45:45.000Z",
+      "expiresAt": "2026-11-04T17:48:11.623Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "allsides",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.allsides.com/blog/why-allsides-uses-term-assisted-dying-and-not-assisted-suicide"
+        }
+      ]
+    },
+    {
+      "id": "rss-b5baa42f35c0",
+      "hook": "Tell 'em Coach 😂",
+      "title": "Tell 'em Coach 😂",
+      "lesson": "✔️ Subscribe to ESPN Unlimited: https://plus.espn.com/ #ESPN",
+      "source": "ESPN · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/ZM1UI8KzEsk",
+      "publishedAt": "2026-11-01T02:54:38.000Z",
+      "expiresAt": "2026-11-15T17:48:28.809Z",
+      "topicIds": [
+        "sports-biz",
+        "nba-analytics",
+        "football-film",
+        "wnba"
+      ],
+      "feedId": "yt-espn-shorts",
+      "imageUrl": "https://i3.ytimg.com/vi/ZM1UI8KzEsk/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/ZM1UI8KzEsk"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@espn"
+        }
+      ]
+    },
+    {
+      "id": "rss-870902d2178f",
+      "hook": "🗣️🗣️🗣️",
+      "title": "🗣️🗣️🗣️",
+      "lesson": "✔️ Subscribe to ESPN Unlimited: https://plus.espn.com/ #ESPN",
+      "source": "ESPN · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/dyII6IIxs98",
+      "publishedAt": "2026-11-01T02:53:56.000Z",
+      "expiresAt": "2026-11-15T17:48:28.809Z",
+      "topicIds": [
+        "sports-biz",
+        "nba-analytics",
+        "football-film",
+        "wnba"
+      ],
+      "feedId": "yt-espn-shorts",
+      "imageUrl": "https://i1.ytimg.com/vi/dyII6IIxs98/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/dyII6IIxs98"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@espn"
+        }
+      ]
+    },
+    {
+      "id": "rss-c0b285bd59a0",
+      "hook": "studies show Ai is against the Bible 🤯 @logosbibleapp",
+      "title": "studies show Ai is against the Bible 🤯 @logosbibleapp",
+      "lesson": "studies show Ai is against the Bible 🤯 @logosbibleapp",
+      "source": "Ruslan KD · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/Zni2PqQTrgo",
+      "publishedAt": "2026-11-01T00:00:02.000Z",
+      "expiresAt": "2026-11-15T17:48:25.880Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "feedId": "yt-ruslan-kd-shorts",
+      "imageUrl": "https://i3.ytimg.com/vi/Zni2PqQTrgo/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/Zni2PqQTrgo"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@RuslanKD"
+        }
+      ]
+    },
+    {
+      "id": "rss-95b0aa3db841",
+      "hook": "How We Took Over ChatGPT Accounts",
+      "title": "How We Took Over ChatGPT Accounts",
+      "lesson": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe. It's",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+      "publishedAt": "2026-10-31T23:15:22.000Z",
+      "expiresAt": "2026-11-15T17:48:18.199Z",
+      "topicIds": [
+        "ai-agents",
+        "llms-prompting",
+        "rag-context"
+      ],
+      "feedId": "simon-willison",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/"
+        }
+      ]
+    },
+    {
+      "id": "rss-1fed1ddf0c57",
+      "hook": "datasette-llm 0.1a9",
+      "title": "datasette-llm 0.1a9",
+      "lesson": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly",
+      "source": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+      "publishedAt": "2026-10-31T22:10:01.000Z",
+      "expiresAt": "2026-11-15T17:48:18.199Z",
+      "topicIds": [
+        "ai-agents",
+        "llms-prompting",
+        "rag-context"
+      ],
+      "feedId": "simon-willison",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/"
+        }
+      ]
+    },
+    {
+      "id": "rss-f5eb0b4e2ff5",
+      "hook": "pastor Philip reveals what he means by digital disciple",
+      "title": "pastor Philip reveals what he means by digital disciple",
+      "lesson": "pastor Philip reveals what he means by digital disciple",
+      "source": "Ruslan KD · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/crTaQa3EW4U",
+      "publishedAt": "2026-10-31T22:03:29.000Z",
+      "expiresAt": "2026-11-15T17:48:25.880Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "feedId": "yt-ruslan-kd-shorts",
+      "imageUrl": "https://i4.ytimg.com/vi/crTaQa3EW4U/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/crTaQa3EW4U"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@RuslanKD"
+        }
+      ]
+    },
+    {
+      "id": "rss-e6da4520af17",
+      "hook": "Former Turkey Leg Hut Co-Owner Lyndell Price Sentenced To Nearly 9…",
+      "title": "Former Turkey Leg Hut Co-Owner Lyndell Price Sentenced To Nearly 9 Years In Prison In Federal Arson Case (UPDATE)",
+      "lesson": "Chile! A Houston businessman’s legal troubles have reached another major development, and the case has ties to a well-known establishment. Former Turkey Leg Hut co-owner Lyndell Leroy Price is facing serious consequences after federal authorities revisited a 2020 incident involving a Houston nightclub and allegations",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/lyndell-price-turkey-leg-hut-co-owner-prison-sentence-federal-arson-case/",
+      "publishedAt": "2026-10-31T21:55:03.000Z",
+      "expiresAt": "2026-11-15T17:48:16.668Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "imageUrl": "https://theshaderoom.com/wp-content/uploads/2026/10/UPDATE-Former-Turkey-Leg-Hut-Co-Owner-Lyndell-Price-Sentenced-To-8-Years-In-Prison-PHOTO.jpg?w=60&h=60&crop=1",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/lyndell-price-turkey-leg-hut-co-owner-prison-sentence-federal-arson-case/"
+        }
+      ]
+    },
+    {
+      "id": "rss-a504a4c34eba",
+      "hook": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+      "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+      "lesson": "Apple's new CEO defended the company's current position in the AI landscape.",
+      "source": "TechCrunch · AI",
+      "sourceUrl": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "publishedAt": "2026-10-31T21:41:00.000Z",
+      "expiresAt": "2026-11-15T17:48:17.068Z",
+      "topicIds": [
+        "ai-agents",
+        "current-events",
+        "building-products"
+      ],
+      "feedId": "techcrunch-ai",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/"
+        }
+      ]
+    },
+    {
+      "id": "rss-2209cb6eb8df",
+      "hook": "4 days left: How TechCrunch Founder Summit helps you make more…",
+      "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
+      "lesson": "On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup. Register before all prices go up at the",
+      "source": "TechCrunch · AI",
+      "sourceUrl": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+      "publishedAt": "2026-10-31T21:36:07.000Z",
+      "expiresAt": "2026-11-15T17:48:17.068Z",
+      "topicIds": [
+        "ai-agents",
+        "current-events",
+        "building-products"
+      ],
+      "feedId": "techcrunch-ai",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/"
+        }
+      ]
+    },
+    {
+      "id": "rss-f16e41803f16",
+      "hook": "Judge allows NAACP lawsuit over xAI data center pollution to move…",
+      "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+      "lesson": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
+      "source": "TechCrunch · AI",
+      "sourceUrl": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "publishedAt": "2026-10-31T21:17:03.000Z",
+      "expiresAt": "2026-11-15T17:48:17.068Z",
+      "topicIds": [
+        "ai-agents",
+        "current-events",
+        "building-products"
+      ],
+      "feedId": "techcrunch-ai",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
+        }
+      ]
+    },
+    {
+      "id": "rss-c96487a1259d",
+      "hook": "Whew! Blueface & Chrisean Rock Get Cozy During Link-Up After Nevaeh…",
+      "title": "Whew! Blueface & Chrisean Rock Get Cozy During Link-Up After Nevaeh Akira Allegedly Gives Him Money (VIDEOS)",
+      "lesson": "Chrisean Rock and Blueface have the internet talking after the two were spotted getting cozy again, just days after seemingly going their separate ways.Related: The ‘Net Weighs In After Chrisean Rock Shares What’s Next For Her And Blueface After Being Spotted Together Following Their Split (VIDEO)Chrisean Rock &",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/blueface-chrisean-rock-pop-out-nevaeh-akira-money-gift-social-media-reacts/",
+      "publishedAt": "2026-10-31T21:02:48.000Z",
+      "expiresAt": "2026-11-15T17:48:16.668Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "imageUrl": "https://theshaderoom.com/wp-content/uploads/2026/10/GettyImages-1405104746_046271-e1793478567939.jpg?w=60&h=60&crop=1",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/blueface-chrisean-rock-pop-out-nevaeh-akira-money-gift-social-media-reacts/"
+        }
+      ]
+    },
+    {
+      "id": "rss-1d177184276f",
+      "hook": "Sophie Cunningham invites Theo von to church then takes a turn… @TheoVon",
+      "title": "Sophie Cunningham invites Theo von to church then takes a turn… @TheoVon",
+      "lesson": "Sophie Cunningham invites Theo von to church then takes a turn… @TheoVon",
+      "source": "Ruslan KD · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/vrLZ7xuhE2s",
+      "publishedAt": "2026-10-31T20:45:08.000Z",
+      "expiresAt": "2026-11-15T17:48:25.880Z",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "feedId": "yt-ruslan-kd-shorts",
+      "imageUrl": "https://i3.ytimg.com/vi/vrLZ7xuhE2s/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/vrLZ7xuhE2s"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@RuslanKD"
+        }
+      ]
+    },
+    {
+      "id": "rss-65fa7181a2bb",
+      "hook": "Jeffries: \"Run Pete Hegseth out of town\"",
+      "title": "Jeffries: \"Run Pete Hegseth out of town\"",
+      "lesson": "Rep. Hakeem Jeffries (D-NY) said Democrats will oust Secretary of Defense Pete Hegseth if Democrats win control of Congress during a campaign event with U.S. House candidate Elaine Luria (D-VA) in Virginia Beach on Saturday. \"In the majority, one of the first things we're gonna do is run Pete Hegseth out of town,\" he",
+      "source": "C-SPAN · Shorts",
+      "sourceUrl": "https://www.youtube.com/shorts/nyv2jVJZGEo",
+      "publishedAt": "2026-10-31T20:05:29.000Z",
+      "expiresAt": "2026-11-04T17:48:27.648Z",
+      "topicIds": [
+        "politics",
+        "current-events"
+      ],
+      "feedId": "yt-cspan-shorts",
+      "imageUrl": "https://i3.ytimg.com/vi/nyv2jVJZGEo/hqdefault.jpg",
+      "angles": [
+        {
+          "label": "Watch Short",
+          "url": "https://www.youtube.com/shorts/nyv2jVJZGEo"
+        },
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@CSPAN"
+        }
+      ]
+    },
+    {
+      "id": "rss-99c3ebce287a",
+      "hook": "Fallin’ For Him! Tia Mowry Has The Girlies Sounding OFF After…",
+      "title": "Fallin’ For Him! Tia Mowry Has The Girlies Sounding OFF After Sharing Her Thoughts On Dating Younger Men (VIDEO)",
+      "lesson": "Okay! Tia Mowry is giving the internet something to talk about after seemingly leaning into the chatter surrounding her love life. The actress recently shared a playful moment on social media that has fans raising their eyebrows, especially as conversations surrounding her boo Javoné Williams continue.RELATED: Go",
+      "source": "The Shade Room",
+      "sourceUrl": "https://theshaderoom.com/tia-mowry-weighs-in-dating-a-younger-men-fans-share-their-thoughts/",
+      "publishedAt": "2026-10-31T19:37:05.000Z",
+      "expiresAt": "2026-11-15T17:48:16.668Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "the-shade-room",
+      "imageUrl": "https://theshaderoom.com/wp-content/uploads/2026/10/My-Lil-Baby-Tia-Mowry-Weighs-In-On-Dating-A-Younger-Man-As-Fans-Share-Their-Thoughts.jpg?w=60&h=60&crop=1",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://theshaderoom.com/tia-mowry-weighs-in-dating-a-younger-men-fans-share-their-thoughts/"
+        }
+      ]
+    },
+    {
+      "id": "rss-11fe51349c7f",
+      "hook": "Donald Trump Weighs In on Nicki Minaj as Potential White House Press…",
+      "title": "Donald Trump Weighs In on Nicki Minaj as Potential White House Press Secretary",
+      "lesson": "The president was asked whether the rapper could take on the role in his administration.",
+      "source": "Billboard R&B/Hip-Hop",
+      "sourceUrl": "https://www.billboard.com/music/rb-hip-hop/donald-trump-nicki-minaj-white-house-press-secretary-1236371646/",
+      "publishedAt": "2026-10-31T18:51:21.000Z",
+      "expiresAt": "2026-11-15T17:48:16.193Z",
+      "topicIds": [
+        "current-events"
+      ],
+      "feedId": "billboard-rb-hip-hop",
+      "imageUrl": "https://www.billboard.com/wp-content/uploads/2026/10/2301983103-e1793048569350.jpg?w=237&h=147&crop=1",
+      "angles": [
+        {
+          "label": "Full story",
+          "url": "https://www.billboard.com/music/rb-hip-hop/donald-trump-nicki-minaj-white-house-press-secretary-1236371646/"
         }
       ]
     },
