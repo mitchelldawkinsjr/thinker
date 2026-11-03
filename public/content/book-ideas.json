@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T22:24:19.871Z",
+  "updatedAt": "2026-11-03T20:08:01.992Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -561,6 +561,20 @@
       "readMinutes": 24
     },
     {
+      "id": "20min-5310096c32a1",
+      "topicId": "mental-models",
+      "title": "Food and Nutrition",
+      "hook": "A ~30-minute listen on “Food and Nutrition”",
+      "body": "What Everyone Needs to Know",
+      "lesson": "What Everyone Needs to Know. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · P.K. Newby",
+      "source": "20 Minute Books · P.K. Newby",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/food-and-nutrition",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Food%20and%20Nutrition.mp3",
+      "readMinutes": 30
+    },
+    {
       "id": "booksum-7b7f64ef4cb5",
       "topicId": "finance",
       "title": "Free Trade Under Fire",
@@ -836,20 +850,6 @@
       "readMinutes": 24,
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Life%203%200.mp3",
       "audioPageUrl": "https://www.20minutebooks.com/life-3-dot-0"
-    },
-    {
-      "id": "20min-a28b5264ec9c",
-      "topicId": "history",
-      "title": "Maid",
-      "hook": "A ~30-minute listen on “Maid”",
-      "body": "Hard Work, Low Pay, and a Mother's Will to Survive",
-      "lesson": "Hard Work, Low Pay, and a Mother's Will to Survive. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Stephanie Land",
-      "source": "20 Minute Books · Stephanie Land",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/maid",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Maid.mp3",
-      "readMinutes": 30
     },
     {
       "id": "booksum-a193b47470ca",
