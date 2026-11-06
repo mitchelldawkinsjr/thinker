@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T19:46:21.956Z",
+  "updatedAt": "2026-11-06T19:10:50.138Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -7,6 +7,24 @@
   "evergreenWindowDays": 5,
   "evergreenSetSize": 5,
   "items": [
+    {
+      "id": "prov-3-5-6",
+      "reference": "Proverbs 3:5–6",
+      "text": "Trust in Yahweh with all your heart, and don’t lean on your own understanding. In all your ways acknowledge him, and he will make your paths straight.",
+      "translation": "WEB",
+      "hook": "Don’t outsource wisdom to your gut alone.",
+      "lesson": "First-principles thinking still needs humility. Lean on understanding — but don’t make it the only pillar.",
+      "topicIds": [
+        "mental-models",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/20/3/",
+      "bookId": 20,
+      "chapter": 3,
+      "verseStart": 5,
+      "verseEnd": 6,
+      "pool": "evergreen"
+    },
     {
       "id": "prov-27-17",
       "reference": "Proverbs 27:17",
@@ -113,6 +131,24 @@
       "chapter": 4,
       "verseStart": 7,
       "verseEnd": 7,
+      "pool": "evergreen"
+    },
+    {
+      "id": "prov-22-3",
+      "reference": "Proverbs 22:3",
+      "text": "A prudent man sees danger, and hides himself; but the simple pass on, and suffer for it.",
+      "translation": "WEB",
+      "hook": "Prudence is early risk detection.",
+      "lesson": "Seeing danger and stepping aside isn’t fear — it’s compounding survival.",
+      "topicIds": [
+        "finance",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/20/22/",
+      "bookId": 20,
+      "chapter": 22,
+      "verseStart": 3,
+      "verseEnd": 3,
       "pool": "evergreen"
     },
     {
@@ -242,6 +278,24 @@
       "pool": "evergreen"
     },
     {
+      "id": "matt-7-12",
+      "reference": "Matthew 7:12",
+      "text": "Therefore whatever you desire for men to do to you, you shall also do to them; for this is the law and the prophets.",
+      "translation": "WEB",
+      "hook": "The golden rule is a product principle.",
+      "lesson": "Treat the other side as you’d want to be treated under the same constraints.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/7/",
+      "bookId": 40,
+      "chapter": 7,
+      "verseStart": 12,
+      "verseEnd": 12,
+      "pool": "evergreen"
+    },
+    {
       "id": "matt-7-3-5",
       "reference": "Matthew 7:3–5",
       "text": "Why do you see the speck that is in your brother’s eye, but don’t consider the beam that is in your own eye? Or how will you tell your brother, ‘Let me remove the speck from your eye;’ and behold, the beam is in your own eye? You hypocrite! First remove the beam out of your own eye, and then you can see clearly to remove the speck out of your brother’s eye.",
@@ -257,6 +311,24 @@
       "chapter": 7,
       "verseStart": 3,
       "verseEnd": 5,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-8-32",
+      "reference": "John 8:32",
+      "text": "You will know the truth, and the truth will make you free.”",
+      "translation": "WEB",
+      "hook": "Truth is a liberation technology.",
+      "lesson": "Prefer costly truth over cheap narrative — in news, markets, and self-talk.",
+      "topicIds": [
+        "current-events",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/8/",
+      "bookId": 43,
+      "chapter": 8,
+      "verseStart": 32,
+      "verseEnd": 32,
       "pool": "evergreen"
     },
     {
@@ -293,6 +365,24 @@
       "chapter": 4,
       "verseStart": 8,
       "verseEnd": 8,
+      "pool": "evergreen"
+    },
+    {
+      "id": "james-1-19",
+      "reference": "James 1:19",
+      "text": "So, then, my beloved brothers, let every man be swift to hear, slow to speak, and slow to anger;",
+      "translation": "WEB",
+      "hook": "Listen first. Speak second. Anger last.",
+      "lesson": "A three-step latency budget for hard conversations and headlines.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/59/1/",
+      "bookId": 59,
+      "chapter": 1,
+      "verseStart": 19,
+      "verseEnd": 19,
       "pool": "evergreen"
     },
     {
@@ -566,6 +656,24 @@
       "pool": "evergreen"
     },
     {
+      "id": "john-3-16",
+      "reference": "John 3:16",
+      "text": "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.",
+      "translation": "WEB",
+      "hook": "Love that spends itself.",
+      "lesson": "The measure of love is what it gives away — not what it posts.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/3/",
+      "bookId": 43,
+      "chapter": 3,
+      "verseStart": 16,
+      "verseEnd": 16,
+      "pool": "evergreen"
+    },
+    {
       "id": "matt-28-19-20",
       "reference": "Matthew 28:19–20",
       "text": "Go, and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all things that I commanded you. Behold, I am with you always, even to the end of the age.” Amen.",
@@ -617,6 +725,24 @@
       "chapter": 5,
       "verseStart": 14,
       "verseEnd": 16,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-14-6",
+      "reference": "John 14:6",
+      "text": "Jesus said to him, “I am the way, the truth, and the life. No one comes to the Father, except through me.",
+      "translation": "WEB",
+      "hook": "Way, truth, life — not a menu.",
+      "lesson": "Some claims are exclusive on purpose. Decide whether you treat them as optional branding.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/14/",
+      "bookId": 43,
+      "chapter": 14,
+      "verseStart": 6,
+      "verseEnd": 6,
       "pool": "evergreen"
     },
     {
@@ -887,6 +1013,24 @@
       "chapter": 7,
       "verseStart": 1,
       "verseEnd": 1,
+      "pool": "evergreen"
+    },
+    {
+      "id": "matt-9-2",
+      "reference": "Matthew 9:2",
+      "text": "Behold, they brought to him a man who was paralyzed, lying on a bed. Jesus, seeing their faith, said to the paralytic, “Son, cheer up! Your sins are forgiven you.”",
+      "translation": "WEB",
+      "hook": "Take heart — sins forgiven.",
+      "lesson": "Before the body is healed, the deeper wound gets named: you are not stuck in guilt.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/40/9/",
+      "bookId": 40,
+      "chapter": 9,
+      "verseStart": 2,
+      "verseEnd": 2,
       "pool": "evergreen"
     },
     {
@@ -1229,6 +1373,24 @@
       "chapter": 10,
       "verseStart": 11,
       "verseEnd": 11,
+      "pool": "evergreen"
+    },
+    {
+      "id": "john-11-25",
+      "reference": "John 11:25",
+      "text": "Jesus said to her, “I am the resurrection and the life. He who believes in me will still live, even if he dies.",
+      "translation": "WEB",
+      "hook": "Resurrection is a person, not a metaphor.",
+      "lesson": "Belief rewrites death’s last word — even when the tomb still looks sealed.",
+      "topicIds": [
+        "mental-models",
+        "history"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/43/11/",
+      "bookId": 43,
+      "chapter": 11,
+      "verseStart": 25,
+      "verseEnd": 25,
       "pool": "evergreen"
     },
     {
@@ -1934,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-289",
-      "reference": "Hosea 2:23",
-      "text": "I will sow her to me in the earth; and I will have mercy on her who had not obtained mercy; and I will tell those who were not my people, ‘You are my people;’ and they will say, ‘My God!’”",
-      "translation": "WEB",
-      "hook": "Daily promise · October 15th",
-      "lesson": "When once dead to all the things of life and love and godliness, the Lord, in His unfathomable mercy, wrested us from our bed of dust and ash and breathed His spirit of new life into us! We were not His people. We were not His children. We were, in spite of His holy righteousness, the very enemies of His hand. How gracious is He to have awakened His foemen to risen life as His own servants! We are His people! We are His children! Rejoice, O believer! Rejoice in your Lord of mercy and kindness. Open the full Blue Letter Bible reading for October 15th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=289",
-      "bookId": 28,
-      "chapter": 2,
-      "verseStart": 23,
-      "verseEnd": 23,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-290",
       "reference": "John 6:39–40",
       "text": "This is the will of my Father who sent me, that of all he has given to me I should lose nothing, but should raise him up at the last day. This is the will of the one who sent me, that everyone who sees the Son, and believes in him, should have eternal life; and I will raise him up at the last day.”",
@@ -2312,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-250",
-      "reference": "Psalm 27:14",
-      "text": "Wait for Yahweh. Be strong, and let your heart take courage. Yes, wait for Yahweh.",
+      "id": "blb-promise-doy-310",
+      "reference": "John 14:2–3",
+      "text": "In my Father’s house are many homes. If it weren’t so, I would have told you. I am going to prepare a place for you. If I go and prepare a place for you, I will come again, and will receive you to myself; that where I am, you may be there also.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 6th",
-      "lesson": "Wait! Wait! Let your waiting be on the Lord! He is worth waiting for. He never disappoints the waiting soul. While waiting keep up your spirits. Expect a great deliverance, and be ready to praise God for it.",
+      "hook": "Daily promise · November 5th",
+      "lesson": "What an awesome promise! Right now, Christ is preparing a heavenly place for us! How gracious is God for not only allowing us into heaven, but also giving us our own place, one that Jesus Himself has created! And when our time on earth is done, He will come to take us home. Open the full Blue Letter Bible reading for November 5th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=250",
-      "bookId": 19,
-      "chapter": 27,
-      "verseStart": 14,
-      "verseEnd": 14,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=310",
+      "bookId": 43,
+      "chapter": 14,
+      "verseStart": 2,
+      "verseEnd": 3,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-251",
@@ -3356,21 +3500,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-250",
-      "reference": "Philippians 2:15",
-      "text": "that you may become blameless and harmless, children of God without defect in the middle of a crooked and perverse generation, among whom you are seen as lights in the world,",
+      "id": "blb-checkbook-doy-310",
+      "reference": "Isaiah 57:16",
+      "text": "For I will not contend forever, neither will I be always angry; for the spirit would faint before me, and the souls whom I have made.",
       "translation": "WEB",
-      "hook": "Morning reading · September 6th",
-      "lesson": "We use lights to make manifest. A Christian man should so shine in his life, that a person could not live with him a week without knowing the gospel. His conversation should be such that all who are about him should clearly perceive whose he is, and whom he serves; and should see the image of Jesus reflected in his daily actions. Lights are intended for guidance. We are to help those around us who are in the dark.…",
+      "hook": "Faith's Checkbook · November 5th",
+      "lesson": "Our heavenly Father seeks our instruction, not our destruction. His contention with us has a kind intention toward us. He will not be always in arms against us. We think the Lord is long in His chastisements, but that is because we are short in our patience. His compassion endureth for ever, but not His contention. The night may drag its weary length along, but it must in the end give place to cheerful day. As con…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=250&Time=am",
-      "bookId": 50,
-      "chapter": 2,
-      "verseStart": 15,
-      "verseEnd": 15,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=310",
+      "bookId": 23,
+      "chapter": 57,
+      "verseStart": 16,
+      "verseEnd": 16,
       "pool": "evergreen"
     },
     {
@@ -4433,6 +4577,24 @@
       "chapter": 12,
       "verseStart": 9,
       "verseEnd": 9,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-310",
+      "reference": "Isaiah 54:17",
+      "text": "No weapon that is formed against you will prevail; and you will condemn every tongue that rises against you in judgment. This is the heritage of Yahweh’s servants, and their righteousness is of me,” says Yahweh.",
+      "translation": "WEB",
+      "hook": "Morning reading · November 5th",
+      "lesson": "This day is notable in English history for two great deliverances wrought by God for us. On this day the plot of the Papists to destroy our Houses of Parliament was discovered, 1605. And secondlytoday is the anniversary of the landing of King William III, at Torbay, by which the hope of Popish ascendancy was quashed, and religious liberty was secured, 1688.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=310&Time=am",
+      "bookId": 23,
+      "chapter": 54,
+      "verseStart": 17,
+      "verseEnd": 17,
       "pool": "evergreen"
     }
   ]
