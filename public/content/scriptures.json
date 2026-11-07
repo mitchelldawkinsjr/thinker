@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T19:10:50.138Z",
+  "updatedAt": "2026-11-07T17:41:09.730Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-290",
-      "reference": "John 6:39–40",
-      "text": "This is the will of my Father who sent me, that of all he has given to me I should lose nothing, but should raise him up at the last day. This is the will of the one who sent me, that everyone who sees the Son, and believes in him, should have eternal life; and I will raise him up at the last day.”",
-      "translation": "WEB",
-      "hook": "Daily promise · October 16th",
-      "lesson": "God has promised us that Jesus will not forsake anyone that God has given Him. God has given us to Jesus, we are His prized possession and Satan will not be able to snatch any of us from His grasp. We have been granted eternal life in heaven with God! Praise the Lord! Exalt His name for He is full of grace and mercy! Open the full Blue Letter Bible reading for October 16th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=290",
-      "bookId": 43,
-      "chapter": 6,
-      "verseStart": 39,
-      "verseEnd": 40,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-291",
       "reference": "Hebrews 5:9",
       "text": "Having been made perfect, he became to all of those who obey him the author of eternal salvation,",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-251",
-      "reference": "Hosea 1:10",
-      "text": "Yet the number of the children of Israel will be as the sand of the sea, which can’t be measured or counted; and it will come to pass that, in the place where it was said to them, ‘You are not my people,’ they will be called ‘sons of the living God.’",
+      "id": "blb-promise-doy-311",
+      "reference": "Psalm 139:10",
+      "text": "Even there your hand will lead me, and your right hand will hold me.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 7th",
-      "lesson": "Sovereign grace can make strangers into sons, and the Lord here declares His purpose to deal thus with rebels, and make them know what He has done. Beloved reader, the Lord has done this in my case; has He done the like for you? Then let us join hands and hearts in praising His adorable name. Some of us were so decidedly ungodly that the Lord's Word most truly said to our conscience and heart, \"Ye are not my peopl…",
+      "hook": "Daily promise · November 6th",
+      "lesson": "Never are God's children so far removed upon the earth that they might fall outside the protective grasp of their Lord. He is to everlasting, filling all the heavens with His majesty! Fear no bitter darkness nor lasting night for ever shall the Lord of heaven redeem you who believe unto the everlasting morning and bathe you in light imperishable! Open the full Blue Letter Bible reading for November 6th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=251",
-      "bookId": 28,
-      "chapter": 1,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=311",
+      "bookId": 19,
+      "chapter": 139,
       "verseStart": 10,
       "verseEnd": 10,
-      "pool": "evergreen"
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-252",
@@ -3518,19 +3500,19 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-251",
-      "reference": "Mark 2:4",
-      "text": "When they could not come near to him for the crowd, they removed the roof where he was. When they had broken it up, they let down the mat that the paralytic was lying on.",
+      "id": "blb-checkbook-doy-311",
+      "reference": "Psalm 37:4",
+      "text": "Also delight yourself in Yahweh, and he will give you the desires of your heart.",
       "translation": "WEB",
-      "hook": "Morning reading · September 7th",
-      "lesson": "Faith is full of inventions. The house was full, a crowd blocked up the door, but faith found a way of getting at the Lord and placing the palsied man before Him. If we cannot get sinners where Jesus is by ordinary methods we must use extraordinary ones. It seems, according to Luke 5:19, that a tiling had to be removed, which would make dust and cause a measure of danger to those below, but where the case is very…",
+      "hook": "Faith's Checkbook · November 6th",
+      "lesson": "Delight in God has a transforming power, and lifts a man above the gross desires of our fallen nature. Delight in Jehovah is not only sweet in itself, but it sweetens the whole soul, till the longings of the heart become such that the Lord can safely promise to fulfill them. Is not that a grand delight which moulds our desires till they are like the desires of God? Our foolish way is to desire, and then set to wor…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=251&Time=am",
-      "bookId": 41,
-      "chapter": 2,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=311",
+      "bookId": 19,
+      "chapter": 37,
       "verseStart": 4,
       "verseEnd": 4,
       "pool": "evergreen"
@@ -4595,6 +4577,24 @@
       "chapter": 54,
       "verseStart": 17,
       "verseEnd": 17,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-311",
+      "reference": "Isaiah 44:3",
+      "text": "For I will pour water on him who is thirsty, and streams on the dry ground. I will pour my Spirit on your descendants, and my blessing on your offspring:",
+      "translation": "WEB",
+      "hook": "Morning reading · November 6th",
+      "lesson": "When a believer has fallen into a low, sad state of feeling, he often tries to lift himself out of it by chastening himself with dark and doleful fears. Such is not the way to rise from the dust, but to continue in it. As well chain the eagle's wing to make it mount, as doubt in order to increase our grace. It is not the law, but the gospel which saves the seeking soul at first; and it is not a legal bondage, but…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=311&Time=am",
+      "bookId": 23,
+      "chapter": 44,
+      "verseStart": 3,
+      "verseEnd": 3,
       "pool": "evergreen"
     }
   ]
