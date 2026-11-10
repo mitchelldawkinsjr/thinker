@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T22:57:25.676Z",
+  "updatedAt": "2026-11-10T19:32:29.889Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -680,6 +680,20 @@
       "sourceUrl": "https://www.20minutebooks.com/how-music-works",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/How%20Music%20Works.mp3",
       "readMinutes": 27
+    },
+    {
+      "id": "20min-21b92366b951",
+      "topicId": "building-products",
+      "title": "How to Be a Positive Leader",
+      "hook": "A ~28-minute listen on “How to Be a Positive Leader”",
+      "body": "Small Actions, Big Impact",
+      "lesson": "Small Actions, Big Impact. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Jane E. Dutton & Gretchen M. Spreitzer",
+      "source": "20 Minute Books · Jane E. Dutton & Gretchen M. Spreitzer",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/how-to-be-a-positive-leader",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/How%20to%20Be%20a%20Positive%20Leader.mp3",
+      "readMinutes": 28
     },
     {
       "id": "20min-28d3f68ba0a2",
@@ -1806,20 +1820,6 @@
       "sourceUrl": "https://www.20minutebooks.com/the-singularity-is-near",
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Singularity%20Is%20Near.mp3",
       "readMinutes": 28
-    },
-    {
-      "id": "20min-c4d73091f956",
-      "topicId": "history",
-      "title": "The Souls of Black Folk",
-      "hook": "A ~23-minute listen on “The Souls of Black Folk”",
-      "body": "An account of the conditions of African Americans after the end of slavery",
-      "lesson": "An account of the conditions of African Americans after the end of slavery. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · W.E.B. Du Bois",
-      "source": "20 Minute Books · W.E.B. Du Bois",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/the-souls-of-black-folk",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/The%20Souls%20of%20Black%20Folk.mp3",
-      "readMinutes": 23
     },
     {
       "id": "20min-8095f104b06e",
