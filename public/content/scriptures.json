@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T19:32:28.747Z",
+  "updatedAt": "2026-11-11T19:28:17.678Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -167,6 +167,24 @@
       "chapter": 1,
       "verseStart": 9,
       "verseEnd": 9,
+      "pool": "evergreen"
+    },
+    {
+      "id": "ecc-3-1",
+      "reference": "Ecclesiastes 3:1",
+      "text": "For everything there is a season, and a time for every purpose under heaven:",
+      "translation": "WEB",
+      "hook": "Timing is a strategy, not just luck.",
+      "lesson": "Ask if this is a plant season or a prune season.",
+      "topicIds": [
+        "mental-models",
+        "finance"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/21/3/",
+      "bookId": 21,
+      "chapter": 3,
+      "verseStart": 1,
+      "verseEnd": 1,
       "pool": "evergreen"
     },
     {
@@ -350,6 +368,42 @@
       "pool": "evergreen"
     },
     {
+      "id": "james-1-19",
+      "reference": "James 1:19",
+      "text": "So, then, my beloved brothers, let every man be swift to hear, slow to speak, and slow to anger;",
+      "translation": "WEB",
+      "hook": "Listen first. Speak second. Anger last.",
+      "lesson": "A three-step latency budget for hard conversations and headlines.",
+      "topicIds": [
+        "mental-models",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/59/1/",
+      "bookId": 59,
+      "chapter": 1,
+      "verseStart": 19,
+      "verseEnd": 19,
+      "pool": "evergreen"
+    },
+    {
+      "id": "james-1-22",
+      "reference": "James 1:22",
+      "text": "But be doers of the word, and not only hearers, deluding your own selves.",
+      "translation": "WEB",
+      "hook": "Consumption isn’t transformation.",
+      "lesson": "Close the loop: one action from what you just learned.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/59/1/",
+      "bookId": 59,
+      "chapter": 1,
+      "verseStart": 22,
+      "verseEnd": 22,
+      "pool": "evergreen"
+    },
+    {
       "id": "gen-1-3",
       "reference": "Genesis 1:3",
       "text": "God said, “Let there be light,” and there was light.",
@@ -365,6 +419,24 @@
       "chapter": 1,
       "verseStart": 3,
       "verseEnd": 3,
+      "pool": "evergreen"
+    },
+    {
+      "id": "exod-18-21",
+      "reference": "Exodus 18:21",
+      "text": "Moreover you shall provide out of all the people able men which fear God: men of truth, hating unjust gain; and place such over them, to be rulers of thousands, rulers of hundreds, rulers of fifties, and rulers of tens.",
+      "translation": "WEB",
+      "hook": "Scale requires delegated integrity.",
+      "lesson": "Hire for character, then cascade authority.",
+      "topicIds": [
+        "building-products",
+        "politics"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/2/18/",
+      "bookId": 2,
+      "chapter": 18,
+      "verseStart": 21,
+      "verseEnd": 21,
       "pool": "evergreen"
     },
     {
@@ -401,6 +473,42 @@
       "chapter": 27,
       "verseStart": 23,
       "verseEnd": 23,
+      "pool": "evergreen"
+    },
+    {
+      "id": "ecc-9-10",
+      "reference": "Ecclesiastes 9:10",
+      "text": "Whatever your hand finds to do, do it with your might; for there is no work, nor device, nor knowledge, nor wisdom, in Sheol, where you are going.",
+      "translation": "WEB",
+      "hook": "Whatever your hand finds — do it with might.",
+      "lesson": "Half-effort compounds into mediocrity. Finish the pass.",
+      "topicIds": [
+        "building-products",
+        "mental-models"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/21/9/",
+      "bookId": 21,
+      "chapter": 9,
+      "verseStart": 10,
+      "verseEnd": 10,
+      "pool": "evergreen"
+    },
+    {
+      "id": "isa-40-31",
+      "reference": "Isaiah 40:31",
+      "text": "But those who wait for Yahweh will renew their strength. They will mount up with wings like eagles. They will run, and not be weary. They will walk, and not faint.",
+      "translation": "WEB",
+      "hook": "Strength renews when you stop forcing the sprint.",
+      "lesson": "Burnout is often a pacing error. Wait, then run.",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/23/40/",
+      "bookId": 23,
+      "chapter": 40,
+      "verseStart": 31,
+      "verseEnd": 31,
       "pool": "evergreen"
     },
     {
@@ -458,6 +566,24 @@
       "pool": "evergreen"
     },
     {
+      "id": "luke-16-10",
+      "reference": "Luke 16:10",
+      "text": "He who is faithful in a very little is faithful also in much. He who is dishonest in a very little is also dishonest in much.",
+      "translation": "WEB",
+      "hook": "Faithfulness scales from small stakes.",
+      "lesson": "How you handle pennies predicts how you’ll handle platforms.",
+      "topicIds": [
+        "finance",
+        "building-products"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/42/16/",
+      "bookId": 42,
+      "chapter": 16,
+      "verseStart": 10,
+      "verseEnd": 10,
+      "pool": "evergreen"
+    },
+    {
       "id": "gal-6-9",
       "reference": "Galatians 6:9",
       "text": "Let us not be weary in doing good, for we will reap in due season, if we don’t give up.",
@@ -491,6 +617,24 @@
       "chapter": 3,
       "verseStart": 23,
       "verseEnd": 23,
+      "pool": "evergreen"
+    },
+    {
+      "id": "heb-12-11",
+      "reference": "Hebrews 12:11",
+      "text": "All chastening seems for the present to be not joyous but grievous; yet afterward it yields the peaceful fruit of righteousness to those who have been exercised thereby.",
+      "translation": "WEB",
+      "hook": "Discipline feels like loss until the fruit shows.",
+      "lesson": "Training hurts in the moment; judgment shows later. Stay in the reps.",
+      "topicIds": [
+        "mental-models",
+        "finance"
+      ],
+      "sourceUrl": "https://bolls.life/WEB/58/12/",
+      "bookId": 58,
+      "chapter": 12,
+      "verseStart": 11,
+      "verseEnd": 11,
       "pool": "evergreen"
     },
     {
@@ -1952,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-294",
-      "reference": "Proverbs 1:23",
-      "text": "Turn at my reproof. Behold, I will pour out my spirit on you. I will make known my words to you.",
-      "translation": "WEB",
-      "hook": "Daily promise · October 20th",
-      "lesson": "Trust in God. Turn to Him. Be of repentant heart. Put your faith in God and He will be your God and you will be His child. No more shall you stand at odds with Him as a hater of righteousness, but He will bring you to new life, calling you His son and clothing you in holy purity. How wonderful! Open the full Blue Letter Bible reading for October 20th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=294",
-      "bookId": 20,
-      "chapter": 1,
-      "verseStart": 23,
-      "verseEnd": 23,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-295",
       "reference": "Revelation 1:7",
       "text": "Behold, he is coming with the clouds, and every eye will see him, including those who pierced him. All the tribes of the earth will mourn over him. Even so, Amen.",
@@ -2330,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-255",
-      "reference": "Lamentations 3:27",
-      "text": "It is good for a man that he bear the yoke in his youth.",
+      "id": "blb-promise-doy-315",
+      "reference": "Romans 8:26",
+      "text": "In the same way, the Spirit also helps our weaknesses, for we don’t know how to pray as we ought. But the Spirit himself makes intercession for us with groanings which can’t be uttered.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 11th",
-      "lesson": "This is as good as a promise. It has been good, it is good, and it will be good for me to bear the yoke. Early in life I had to feel the weight of conviction, and ever since it has proved a soul-enriching burden. Should I have loved the gospel so well had I not learned by deep experience the need of salvation by grace? Jabez was more honorable than his brethren because his mother bare him with sorrow, and those wh…",
+      "hook": "Daily promise · November 10th",
+      "lesson": "The gift of God's Spirit is truly miraculous and sure sign of His evident mercy. Though uncomprehending His work or power, ever will He aid us in our multiplied weakness. He is working in us daily causing us to be conformed to the image of Christ Himself. Praise the Lord for this Helper all you people of God! Open the full Blue Letter Bible reading for November 10th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=255",
-      "bookId": 25,
-      "chapter": 3,
-      "verseStart": 27,
-      "verseEnd": 27,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=315",
+      "bookId": 45,
+      "chapter": 8,
+      "verseStart": 26,
+      "verseEnd": 26,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-256",
@@ -2566,7 +2692,7 @@
     {
       "id": "blb-checkbook-doy-268",
       "reference": "Ezekiel 47:9",
-      "text": "And it shall come to pass, that every thing that liveth, which moveth, whithersoever the rivers shall come, shall live",
+      "text": "It shall happen, that every living creature which swarms, in every place where the rivers come, shall live; and there shall be a very great multitude of fish; for these waters have come there, and the waters of the sea shall be healed, and everything shall live wherever the river comes.",
       "translation": "WEB",
       "hook": "Faith's Checkbook · September 24th",
       "lesson": "The living waters, in the prophet's vision, flowed into the Dead Sea, and carried life with them, even into that stagnant lake. Where grace goes, spiritual life is the immediate and the everlasting consequence. Grace proceeds sovereignly according to the will of God, even as a river in all its windings follows its own sweet will; and wherever it comes it does not wait for life to come to it, but it creates life by…",
@@ -2746,7 +2872,7 @@
     {
       "id": "blb-checkbook-doy-278",
       "reference": "John 12:32",
-      "text": "And I, if I am lifted up from the earth, will draw all people to myself.”",
+      "text": "And I, if I be lifted up from the earth, will draw all men unto me",
       "translation": "WEB",
       "hook": "Faith's Checkbook · October 4th",
       "lesson": "Come, ye workers, be encouraged. You fear that you cannot draw a congregation. Try the preaching of a crucified, risen, and ascended Saviour; for this is the greatest \"draw\" that was ever yet manifested among men. What drew you to Christ but Christ? What draws you to Him now but His own blessed self? If you have been drawn to religion by anything else, you will soon be drawn away from it; but Jesus has held you, a…",
@@ -2854,7 +2980,7 @@
     {
       "id": "blb-checkbook-doy-284",
       "reference": "Revelation 3:8",
-      "text": "I have set before thee an open door, and no man can shut it",
+      "text": "“I know your works (behold, I have set before you an open door, which no one can shut), that you have a little power, and kept my word, and didn’t deny my name.",
       "translation": "WEB",
       "hook": "Faith's Checkbook · October 10th",
       "lesson": "Saints who remain faithful to the truth of God have an open door before them. My soul, thou hast resolved to live and die by that which the Lord has revealed in His Word, and therefore before thee stands this open door. I will enter in by the open door of communion with God. Who shall say me nay? Jesus has removed my sin, and given me His righteousness, therefore I may freely enter. Lord, I do so by thy grace.",
@@ -3392,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-255",
-      "reference": "2 Corinthians 6:17",
-      "text": "Therefore “‘Come out from among them, and be separate,’ says the Lord. ‘Touch no unclean thing. I will receive you.",
+      "id": "blb-checkbook-doy-315",
+      "reference": "Psalm 121:3",
+      "text": "He will not allow your foot to be moved. He who keeps you will not slumber.",
       "translation": "WEB",
-      "hook": "Morning reading · September 11th",
-      "lesson": "The Christian, while in the world, is not to be of the world. He should be distinguished from it in the great object of his life. To him, \"to live,\" should be \"Christ.\" Whether he eats, or drinks, or whatever he does, he should do all to God's glory. You may lay up treasure; but lay it up in heaven, where neither moth nor rust doth corrupt, where thieves break not through nor steal. You may strive to be rich; but…",
+      "hook": "Faith's Checkbook · November 10th",
+      "lesson": "If the Lord will not suffer it, neither men nor devils can do it. How greatly would they rejoice if they could give us a disgraceful fall, drive us from our position, and bury us out of memory! They could do this to their heart's content were it not for one hindrance, and only one: the Lord will not suffer it; and if He does not suffer it, we shall not suffer it. The way of life is like traveling among the Alps. A…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=255&Time=am",
-      "bookId": 47,
-      "chapter": 6,
-      "verseStart": 17,
-      "verseEnd": 17,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=315",
+      "bookId": 19,
+      "chapter": 121,
+      "verseStart": 3,
+      "verseEnd": 3,
       "pool": "evergreen"
     },
     {
@@ -4469,6 +4595,24 @@
       "chapter": 2,
       "verseStart": 6,
       "verseEnd": 6,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-315",
+      "reference": "Deuteronomy 33:27",
+      "text": "The eternal God is your dwelling place. Underneath are the everlasting arms. He thrust out the enemy from before you, and said, ‘Destroy!’",
+      "translation": "WEB",
+      "hook": "Morning reading · November 10th",
+      "lesson": "The word refuge may be translated \"mansion,\" or \"abiding-place,\" which gives the thought that God is our abode, our home. There is a fulness and sweetness in the metaphor, for dear to our hearts is our home, although it be the humblest cottage, or the scantiest garret; and dearer far is our blessed God, in whom we live, and move, and have our being. It is at home that we feel safe: we shut the world out and dwell…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=315&Time=am",
+      "bookId": 5,
+      "chapter": 33,
+      "verseStart": 27,
+      "verseEnd": 27,
       "pool": "evergreen"
     }
   ]
