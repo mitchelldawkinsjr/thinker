@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T19:28:17.678Z",
+  "updatedAt": "2026-11-12T19:45:36.563Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-295",
-      "reference": "Revelation 1:7",
-      "text": "Behold, he is coming with the clouds, and every eye will see him, including those who pierced him. All the tribes of the earth will mourn over him. Even so, Amen.",
-      "translation": "WEB",
-      "hook": "Daily promise · October 21st",
-      "lesson": "Soon will be the coming of the Lord from clouds and on high! At long last, all creation will bow before Him in full recognition of His majesty and glory. Praise the Lord all you people! Lift His name on high! Bask in the redemptive power of His blood! Believe on Him and be saved in the final day! Open the full Blue Letter Bible reading for October 21st.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=295",
-      "bookId": 66,
-      "chapter": 1,
-      "verseStart": 7,
-      "verseEnd": 7,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-296",
       "reference": "2 Peter 1:5–8",
       "text": "Yes, and for this very cause adding on your part all diligence, in your faith supply moral excellence; and in moral excellence, knowledge; and in knowledge, self-control; and in self-control perseverance; and in perseverance godliness; and in godliness brotherly affection; and in brotherly affection, love. For if these things are yours and abound, they make you to be not idle nor unfruitful to the knowledge of our Lord Jesus Christ.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-256",
-      "reference": "Acts 16:31",
-      "text": "They said, “Believe in the Lord Jesus Christ, and you will be saved, you and your household.”",
+      "id": "blb-promise-doy-316",
+      "reference": "Psalm 57:10",
+      "text": "For your great loving kindness reaches to the heavens, and your truth to the skies.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 12th",
-      "lesson": "This gospel for a man with a sword at his throat is the gospel for me. This would suit me if I were dying, and it is all that I need while I am living. I look away from self, and sin, and all idea of personal merit, and I trust the Lord Jesus as the Saviour whom God has given. I believe in Him, I rest on Him, I accept Him to be my all in all. Lord, I am saved, and I shall be saved to all eternity, for I believe in…",
+      "hook": "Daily promise · November 11th",
+      "lesson": "Merciful is our Lord and unbounded is His kindness toward His people. Take joy in your God O you people of the Lord! He is mercy! He is love! He is kindness! Rejoice in Him and in the life He has bought you! Open the full Blue Letter Bible reading for November 11th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=256",
-      "bookId": 44,
-      "chapter": 16,
-      "verseStart": 31,
-      "verseEnd": 31,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=316",
+      "bookId": 19,
+      "chapter": 57,
+      "verseStart": 10,
+      "verseEnd": 10,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-257",
@@ -2872,7 +2854,7 @@
     {
       "id": "blb-checkbook-doy-278",
       "reference": "John 12:32",
-      "text": "And I, if I be lifted up from the earth, will draw all men unto me",
+      "text": "And I, if I am lifted up from the earth, will draw all people to myself.”",
       "translation": "WEB",
       "hook": "Faith's Checkbook · October 4th",
       "lesson": "Come, ye workers, be encouraged. You fear that you cannot draw a congregation. Try the preaching of a crucified, risen, and ascended Saviour; for this is the greatest \"draw\" that was ever yet manifested among men. What drew you to Christ but Christ? What draws you to Him now but His own blessed self? If you have been drawn to religion by anything else, you will soon be drawn away from it; but Jesus has held you, a…",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-256",
-      "reference": "Nahum 1:2",
-      "text": "Yahweh is a jealous God and avenges. Yahweh avenges and is full of wrath. Yahweh takes vengeance on his adversaries, and he maintains wrath against his enemies.",
+      "id": "blb-checkbook-doy-316",
+      "reference": "Romans 6:14",
+      "text": "For sin will not have dominion over you. For you are not under law, but under grace.",
       "translation": "WEB",
-      "hook": "Morning reading · September 12th",
-      "lesson": "Your Lord is very jealous of your love, O believer. Did He choose you? He cannot bear that you should choose another. Did He buy you with His own blood? He cannot endure that you should think that you are your own, or that you belong to this world. He loved you with such a love that He would not stop in heaven without you; He would sooner die than you should perish, and He cannot endure that anything should stand…",
+      "hook": "Faith's Checkbook · November 11th",
+      "lesson": "Sin will reign if it can: it cannot be satisfied with any place below the throne of the heart. We sometimes fear that it will conquer us, and then we cry unto the Lord, \"Let not any iniquity have dominion over me.\" This is His comforting answer, \"Sin shall not have dominion over you. It may assail you, and even wound you; but it shall never establish sovereignty over you.\" If we were under the law, our sin would g…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=256&Time=am",
-      "bookId": 34,
-      "chapter": 1,
-      "verseStart": 2,
-      "verseEnd": 2,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=316",
+      "bookId": 45,
+      "chapter": 6,
+      "verseStart": 14,
+      "verseEnd": 14,
       "pool": "evergreen"
     },
     {
@@ -4609,6 +4591,24 @@
         "current-events"
       ],
       "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=315&Time=am",
+      "bookId": 5,
+      "chapter": 33,
+      "verseStart": 27,
+      "verseEnd": 27,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-316",
+      "reference": "Deuteronomy 33:27",
+      "text": "The eternal God is your dwelling place. Underneath are the everlasting arms. He thrust out the enemy from before you, and said, ‘Destroy!’",
+      "translation": "WEB",
+      "hook": "Morning reading · November 11th",
+      "lesson": "God-the eternal God-is Himself our support at all times, and especially when we are sinking in deep trouble. There are seasons when the Christian sinks very low in humiliation. Under a deep sense of his great sinfulness, he is humbled before God till he scarcely knows how to pray, because he appears, in his own sight, so worthless. Well, child of God, remember that when thou art at thy worst and lowest, yet \"under…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=316&Time=am",
       "bookId": 5,
       "chapter": 33,
       "verseStart": 27,
