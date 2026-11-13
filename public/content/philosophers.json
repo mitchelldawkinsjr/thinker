@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T19:45:37.754Z",
+  "updatedAt": "2026-11-13T19:27:35.634Z",
   "source": "https://philosophersapi.com/api/philosophers",
   "batchSize": 36,
   "catalogSize": 114,
@@ -17,7 +17,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Adam_Smith",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-albert-camus-68e5964c",
@@ -32,7 +32,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Albert_Camus",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-anaximander-f8320389",
@@ -47,7 +47,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Anaximander",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-angela-davis-e54f0371",
@@ -62,7 +62,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Angela_Davis",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-anna-julia-cooper-d070cf3d",
@@ -77,7 +77,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Anna_J._Cooper",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-anne-conway-01cbc5d4",
@@ -92,7 +92,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Anne_Conway_(philosopher)",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-aristotle-29cab993",
@@ -107,7 +107,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Aristotle",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-arthur-schopenhauer-51165051",
@@ -122,7 +122,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Arthur_Schopenhauer",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-auguste-comte-389472ab",
@@ -137,7 +137,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Auguste_Comte",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-augustine-of-hippo-6b723679",
@@ -152,7 +152,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-ayn-rand-3ed20891",
@@ -167,7 +167,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ayn_Rand",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-baruch-spinoza-93d94133",
@@ -182,7 +182,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Baruch_Spinoza",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-bell-hooks-0862b666",
@@ -197,7 +197,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/bell_hooks",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-bertrand-russell-fa2e9b06",
@@ -212,7 +212,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Bertrand_Russell",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-betty-friedan-70d74337",
@@ -227,7 +227,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Betty_Friedan",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-carl-jung-ff162966",
@@ -242,7 +242,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Carl_Jung",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-cicero-5068db3c",
@@ -257,7 +257,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Cicero",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-damaris-cudworth-masham-8d733901",
@@ -272,7 +272,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Damaris_Cudworth_Masham",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-dante-alighieri-9ab7b738",
@@ -287,7 +287,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Dante_Alighieri",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-david-hume-0506f72d",
@@ -302,7 +302,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/David_Hume",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-denis-diderot-75d800d1",
@@ -317,7 +317,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Denis_Diderot",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-diogenes-28fc9356",
@@ -332,7 +332,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Diogenes",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-edmund-burke-2361b39d",
@@ -347,7 +347,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Edmund_Burke",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-edmund-husserl-b03d878d",
@@ -362,7 +362,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Edmund_Husserl",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-edward-said-fd34bb43",
@@ -377,7 +377,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Edward_Said",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-elizabeth-anscombe-215cfefe",
@@ -392,7 +392,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/G._E._M._Anscombe",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-emma-goldman-80ec6998",
@@ -407,7 +407,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Emma_Goldman",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-epicurus-590e6793",
@@ -422,7 +422,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Epicurus",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-francis-bacon-4e6e7356",
@@ -437,7 +437,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Francis_Bacon",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-francis-fukuyama-18e45730",
@@ -452,7 +452,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Francis_Fukuyama",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-walter-benjamin-21ea4f15",
@@ -467,7 +467,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Walter_Benjamin",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-wilhelm-von-humboldt-00f678ea",
@@ -482,7 +482,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Wilhelm_von_Humboldt",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-william-james-779aaba4",
@@ -497,7 +497,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/William_James",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-william-of-ockham-3172e773",
@@ -512,7 +512,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/William_of_Ockham",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-xenophanes-1a1d6463",
@@ -527,7 +527,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Xenophanes",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     },
     {
       "id": "phil-zeno-f6b6f3c0",
@@ -542,7 +542,7 @@
       "sourceType": "site",
       "sourceUrl": "https://en.wikipedia.org/wiki/Zeno_of_Elea",
       "readMinutes": 2,
-      "ingestedAt": "2026-11-12T19:45:37.754Z"
+      "ingestedAt": "2026-11-13T19:27:35.634Z"
     }
   ]
 }

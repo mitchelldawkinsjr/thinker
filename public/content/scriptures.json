@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T19:45:36.563Z",
+  "updatedAt": "2026-11-13T19:27:34.614Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-296",
-      "reference": "2 Peter 1:5–8",
-      "text": "Yes, and for this very cause adding on your part all diligence, in your faith supply moral excellence; and in moral excellence, knowledge; and in knowledge, self-control; and in self-control perseverance; and in perseverance godliness; and in godliness brotherly affection; and in brotherly affection, love. For if these things are yours and abound, they make you to be not idle nor unfruitful to the knowledge of our Lord Jesus Christ.",
-      "translation": "WEB",
-      "hook": "Daily promise · October 22nd",
-      "lesson": "My Prayer: Gracious Lord, instill these moral principles in my heart. May these qualities be seen in me that others may know of Your wonderful character. Make me fruitful and useful for Your kingdom! For the only blessing that I seek, is to see You using me daily. Open the full Blue Letter Bible reading for October 22nd.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=296",
-      "bookId": 61,
-      "chapter": 1,
-      "verseStart": 5,
-      "verseEnd": 8,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-297",
       "reference": "Proverbs 29:25",
       "text": "The fear of man proves to be a snare, but whoever puts his trust in Yahweh is kept safe.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-257",
-      "reference": "Deuteronomy 33:28",
-      "text": "Israel dwells in safety; the fountain of Jacob alone, In a land of grain and new wine. Yes, his heavens drop down dew.",
+      "id": "blb-promise-doy-317",
+      "reference": "Hebrews 13:5",
+      "text": "Be free from the love of money, content with such things as you have, for he has said, “I will in no way leave you, neither will I in any way forsake you.”",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 13th",
-      "lesson": "What the dew in the East is to the world of nature, that is the influence of the Spirit in the realm of grace. How greatly do I need it! Without the Spirit of God I am a dry and withered thing. I droop, I fade, I die. How sweetly does this dew refresh me! When once favored with it I feel happy, lively, vigorous, elevated. I want nothing more. The Holy Spirit brings me life, and all that life requires. All else wit…",
+      "hook": "Daily promise · November 12th",
+      "lesson": "Content yourself in the riches of God's mercy. Unceasing are His gifts and constant is His loving presence. This world is but a passing frameit is not your home, for you, as a believer, are a child to the great kingdom victorious! Heavenly are the rewards you seek! Eternal are the treasures you gain! Therefore, trust in the kingly majesty of the Lord and ever shall you be pleased! Open the full Blue Letter Bible reading for November 12th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=257",
-      "bookId": 5,
-      "chapter": 33,
-      "verseStart": 28,
-      "verseEnd": 28,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=317",
+      "bookId": 58,
+      "chapter": 13,
+      "verseStart": 5,
+      "verseEnd": 5,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-258",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-257",
-      "reference": "Psalm 84:6",
-      "text": "Passing through the valley of Weeping, they make it a place of springs. Yes, the autumn rain covers it with blessings.",
+      "id": "blb-checkbook-doy-317",
+      "reference": "Jeremiah 31:14",
+      "text": "I will satiate the soul of the priests with fatness, and my people shall be satisfied with my goodness,” says Yahweh.",
       "translation": "WEB",
-      "hook": "Morning reading · September 13th",
-      "lesson": "This teaches us that the comfort obtained by a one may often prove serviceable to another; just as wells would be used by the company who came after. We read some book full of consolation, which is like Jonathan's rod, dropping with honey. Ah! we think our brother has been here before us, and digged this well for us as well as for himself. Many a \"Night of Weeping,\" \"Midnight Harmonies,\" an \"Eternal Day,\" \"A Crook…",
+      "hook": "Faith's Checkbook · November 12th",
+      "lesson": "Note the \"my\" which comes twice: \"My people shall be satisfied with my goodness.\" The kind of people who are satisfied with God are marked out as God's own. He is pleased with them, for they are pleased with Him. They call Him their God, and He calls them His people; He is satisfied to take them for a portion, and they are satisfied with Him for their portion. There is a mutual communion of delight between God's I…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=257&Time=am",
-      "bookId": 19,
-      "chapter": 84,
-      "verseStart": 6,
-      "verseEnd": 6,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=317",
+      "bookId": 24,
+      "chapter": 31,
+      "verseStart": 14,
+      "verseEnd": 14,
       "pool": "evergreen"
     },
     {
@@ -4613,6 +4595,24 @@
       "chapter": 33,
       "verseStart": 27,
       "verseEnd": 27,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-317",
+      "reference": "1 Peter 1:7",
+      "text": "that the proof of your faith, which is more precious than gold that perishes even though it is tested by fire, may be found to result in praise, glory, and honor at the revelation of Jesus Christ —",
+      "translation": "WEB",
+      "hook": "Morning reading · November 12th",
+      "lesson": "Faith untried may be true faith, but it is sure to be little faith, and it is likely to remain dwarfish so long as it is without trials. Faith never prospers so well as when all things are against her: tempests are her trainers, and lightnings are her illuminators. When a calm reigns on the sea, spread the sails as you will, the ship moves not to its harbour; for on a slumbering ocean the keel sleeps too. Let the…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=317&Time=am",
+      "bookId": 60,
+      "chapter": 1,
+      "verseStart": 7,
+      "verseEnd": 7,
       "pool": "evergreen"
     }
   ]
