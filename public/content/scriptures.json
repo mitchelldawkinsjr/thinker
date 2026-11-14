@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T19:27:34.614Z",
+  "updatedAt": "2026-11-14T17:51:52.658Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-297",
-      "reference": "Proverbs 29:25",
-      "text": "The fear of man proves to be a snare, but whoever puts his trust in Yahweh is kept safe.",
-      "translation": "WEB",
-      "hook": "Daily promise · October 23rd",
-      "lesson": "Man strives and toils and still his plans come to ruin. Not so with the Lord. Do not be overcome with anxiety for the concerns of the world for Christ has overcome it! There is safety in the hand of God for He reigns even now from heaven! Therefore rejoice! Open the full Blue Letter Bible reading for October 23rd.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=297",
-      "bookId": 20,
-      "chapter": 29,
-      "verseStart": 25,
-      "verseEnd": 25,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-298",
       "reference": "Psalm 16:5",
       "text": "Yahweh assigned my portion and my cup. You made my lot secure.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-258",
-      "reference": "James 1:12",
-      "text": "Blessed is the man who endures temptation, for when he has been approved, he will receive the crown of life, which the Lord promised to those who love him.",
+      "id": "blb-promise-doy-318",
+      "reference": "John 15:8",
+      "text": "“In this is my Father glorified, that you bear much fruit; and so you will be my disciples.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 14th",
-      "lesson": "Yes, he is blessed while he is enduring the trial. No eye can see this till it has been anointed with heavenly eye-salve. But he must endure it, and neither rebel against God, nor turn aside from his integrity. He is blessed who has gone through the fire, and has not been consumed as a counterfeit. When the test is over, then comes the hallmark of divine approval - \"the crown of life.\" As if the Lord said, \"Let hi…",
+      "hook": "Daily promise · November 13th",
+      "lesson": "My Prayer: Father, may you be glorified in me! Change my heart and mind that I would bear the fruits of the Spirit in all I do and say. Thank you for taking me as Your own and renewing my spirit through Your encouraging word. Praise and honour to Your name forever and ever! Amen. Open the full Blue Letter Bible reading for November 13th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=258",
-      "bookId": 59,
-      "chapter": 1,
-      "verseStart": 12,
-      "verseEnd": 12,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=318",
+      "bookId": 43,
+      "chapter": 15,
+      "verseStart": 8,
+      "verseEnd": 8,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-259",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-258",
-      "reference": "Mark 4:36",
-      "text": "Leaving the multitude, they took him with them, even as he was, in the boat. Other small boats were also with him.",
+      "id": "blb-checkbook-doy-318",
+      "reference": "Psalm 121:4",
+      "text": "Behold, he who keeps Israel will neither slumber nor sleep.",
       "translation": "WEB",
-      "hook": "Morning reading · September 14th",
-      "lesson": "Jesus was the Lord High Admiral of the sea that night, and His presence preserved the whole convoy. It is well to sail with Jesus, even though it be in a little ship. When we sail in Christ's company, we may not make sure of fair weather, for great storms may toss the vessel which carries the Lord Himself, and we must not expect to find the sea less boisterous around our little boat. If we go with Jesus we must be…",
+      "hook": "Faith's Checkbook · November 13th",
+      "lesson": "Jehovah is \"the Keeper of Israel.\" No form of unconsciousness ever steals over Him, neither the deeper slumber nor the slighter sleep. He never fails to watch the house and the heart of His people. This is a sufficient reason for our resting in perfect peace. Alexander said that he slept because his friend Parmenio watched; much more may we sleep because our God is our guard. \"Behold\" is here set up to call our at…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=258&Time=am",
-      "bookId": 41,
-      "chapter": 4,
-      "verseStart": 36,
-      "verseEnd": 36,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=318",
+      "bookId": 19,
+      "chapter": 121,
+      "verseStart": 4,
+      "verseEnd": 4,
       "pool": "evergreen"
     },
     {
@@ -4613,6 +4595,24 @@
       "chapter": 1,
       "verseStart": 7,
       "verseEnd": 7,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-318",
+      "reference": "John 15:4",
+      "text": "Remain in me, and I in you. As the branch can’t bear fruit by itself, unless it remains in the vine, so neither can you, unless you remain in me.",
+      "translation": "WEB",
+      "hook": "Morning reading · November 13th",
+      "lesson": "How did you begin to bear fruit? It was when you came to Jesus and cast yourselves on His great atonement, and rested on His finished righteousness. Ah! what fruit you had then! Do you remember those early days? Then indeed the vine flourished, the tender grape appeared, the pomegranates budded forth, and the beds of spices gave forth their smell. Have you declined since then? If you have, we charge you to remembe…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=318&Time=am",
+      "bookId": 43,
+      "chapter": 15,
+      "verseStart": 4,
+      "verseEnd": 4,
       "pool": "evergreen"
     }
   ]
