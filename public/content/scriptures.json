@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T21:51:40.784Z",
+  "updatedAt": "2026-11-17T20:42:48.969Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-300",
-      "reference": "Revelation 2:11",
-      "text": "He who has an ear, let him hear what the Spirit says to the assemblies. He who overcomes won’t be harmed by the second death.",
-      "translation": "WEB",
-      "hook": "Daily promise · October 26th",
-      "lesson": "Follow Christ even unto your death and your reward shall be great! Life—and that eternal! Nevermore shall the sting of death be felt. Nevermore shall the wasting of the body be remembered. Life! Life! Life! To worship the Son forever, casting down glory upon glory at His feet—so is the beautiful destiny of all those who believe! So take heart in your faith and taste the true and everlasting life! Open the full Blue Letter Bible reading for October 26th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=300",
-      "bookId": 66,
-      "chapter": 2,
-      "verseStart": 11,
-      "verseEnd": 11,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-301",
       "reference": "Psalm 34:15",
       "text": "Yahweh’s eyes are toward the righteous. His ears listen to their cry.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-261",
-      "reference": "Psalm 92:12",
-      "text": "The righteous shall flourish like the palm tree. He will grow like a cedar in Lebanon.",
+      "id": "blb-promise-doy-321",
+      "reference": "Psalm 42:11",
+      "text": "Why are you in despair, my soul? Why are you disturbed within me? Hope in God! For I shall still praise him, the saving help of my countenance, and my God.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 17th",
-      "lesson": "These trees are not trained and pruned by man: palms and cedars are \"trees of the Lord,\" and it is by His care that they flourish; even so it is with the saints of the Lord, they are His own care. These trees are evergreen and are beautiful objects at all seasons of the year. Believers are not sometimes holy and sometimes ungodly: they stand in the beauty of the Lord under all weathers. Everywhere these trees are…",
+      "hook": "Daily promise · November 16th",
+      "lesson": "My Prayer: Gracious Father, thank You for being my ever-present help in my time of need. You lift my countenance and fill my heart with everlasting delight and tranquility. Your greatness is unsearchable! Your love so unfathomable! May Your Name be lifted on high and praised forevermore! Open the full Blue Letter Bible reading for November 16th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=261",
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=321",
       "bookId": 19,
-      "chapter": 92,
-      "verseStart": 12,
-      "verseEnd": 12,
-      "pool": "evergreen"
+      "chapter": 42,
+      "verseStart": 11,
+      "verseEnd": 11,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-262",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-261",
-      "reference": "Mark 9:19",
-      "text": "He answered him, “Unbelieving generation, how long shall I be with you? How long shall I bear with you? Bring him to me.”",
+      "id": "blb-checkbook-doy-321",
+      "reference": "Isaiah 54:17",
+      "text": "No weapon that is formed against you will prevail; and you will condemn every tongue that rises against you in judgment. This is the heritage of Yahweh’s servants, and their righteousness is of me,” says Yahweh.",
       "translation": "WEB",
-      "hook": "Morning reading · September 17th",
-      "lesson": "Despairingly the poor disappointed father turned away from the disciples to their Master. His son was in the worst possible condition, and all means had failed, but the miserable child was soon delivered from the evil one when the parent in faith obeyed the Lord Jesus' word, \"Bring him unto me.\" Children are a precious gift from God, but much anxiety comes with them. They may be a great joy or a great bitterness t…",
+      "hook": "Faith's Checkbook · November 16th",
+      "lesson": "There is great clatter in the forges and smithies of the enemy. They are making weapons wherewith to smite the saints. They could not even do as much as this if the Lord of saints did not allow them; for He has created the smith that bloweth the coals in the fire. But see how busily they labor! How many swords and spears they fashion! It matters nothing, for on the blade of every weapon you may read this inscripti…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=261&Time=am",
-      "bookId": 41,
-      "chapter": 9,
-      "verseStart": 19,
-      "verseEnd": 19,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=321",
+      "bookId": 23,
+      "chapter": 54,
+      "verseStart": 17,
+      "verseEnd": 17,
       "pool": "evergreen"
     },
     {
@@ -4613,6 +4595,24 @@
       "chapter": 32,
       "verseStart": 9,
       "verseEnd": 9,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-321",
+      "reference": "Lamentations 3:24",
+      "text": "“Yahweh is my portion,” says my soul. “Therefore I will hope in him.”",
+      "translation": "WEB",
+      "hook": "Morning reading · November 16th",
+      "lesson": "It is not \"The Lord is partly my portion,\" nor \"The Lord is in my portion\"; but He Himself makes up the sum total of my soul's inheritance. Within the circumference of that circle lies all that we possess or desire. The Lord is my portion. Not His grace merely, nor His love, nor His covenant, but Jehovah Himself. He has chosen us for His portion, and we have chosen Him for ours. It is true that the Lord must first…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=321&Time=am",
+      "bookId": 25,
+      "chapter": 3,
+      "verseStart": 24,
+      "verseEnd": 24,
       "pool": "evergreen"
     }
   ]
