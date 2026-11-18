@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T20:42:50.188Z",
+  "updatedAt": "2026-11-18T20:16:49.504Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -779,6 +779,20 @@
       "readMinutes": 31
     },
     {
+      "id": "20min-1f96d3aab35a",
+      "topicId": "building-products",
+      "title": "Insight",
+      "hook": "A ~33-minute listen on “Insight”",
+      "body": "Why We’re Not as Self-Aware as We Think, and How Seeing Ourselves Clearly Helps Us Succeed at Work and in Life",
+      "lesson": "Why We’re Not as Self-Aware as We Think, and How Seeing Ourselves Clearly Helps Us Succeed at Work and in Life. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Tasha Eurich",
+      "source": "20 Minute Books · Tasha Eurich",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/insight",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Insight.mp3",
+      "readMinutes": 33
+    },
+    {
       "id": "booksum-191f1e4361a9",
       "topicId": "history",
       "title": "Isaac’s Storm",
@@ -805,20 +819,6 @@
       "readMinutes": 22,
       "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Just%20Keep%20Buying.mp3",
       "audioPageUrl": "https://www.20minutebooks.com/just-keep-buying"
-    },
-    {
-      "id": "20min-5c4fc5d641c4",
-      "topicId": "building-products",
-      "title": "Keep Going",
-      "hook": "A ~29-minute listen on “Keep Going”",
-      "body": "10 Ways to Stay Creative in Good Times and Bad",
-      "lesson": "10 Ways to Stay Creative in Good Times and Bad. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · Austin Kleon",
-      "source": "20 Minute Books · Austin Kleon",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/keep-going",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/Keep%20Going.mp3",
-      "readMinutes": 29
     },
     {
       "id": "booksum-1daf5c5af5a1",
