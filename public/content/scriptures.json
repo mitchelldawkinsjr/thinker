@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T20:20:39.250Z",
+  "updatedAt": "2026-11-20T19:51:50.183Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-303",
-      "reference": "Psalm 91:14",
-      "text": "“Because he has set his love on me, therefore I will deliver him. I will set him on high, because he has known my name.",
-      "translation": "WEB",
-      "hook": "Daily promise · October 29th",
-      "lesson": "God will protect His own. Love is the avenue in which we can minister to God and we can recognize who He is by acknowledging His name. At the same time it is God who rescues us and lifts us up higher than the dangers at hand. Open the full Blue Letter Bible reading for October 29th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=303",
-      "bookId": 19,
-      "chapter": 91,
-      "verseStart": 14,
-      "verseEnd": 14,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-304",
       "reference": "Psalm 138:7",
       "text": "Though I walk in the middle of trouble, you will revive me. You will stretch out your hand against the wrath of my enemies. Your right hand will save me.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-264",
-      "reference": "Psalm 110:3",
-      "text": "Your people offer themselves willingly in the day of your power, in holy array. Out of the womb of the morning, you have the dew of your youth.",
+      "id": "blb-promise-doy-324",
+      "reference": "Psalm 126:6",
+      "text": "He who goes out weeping, carrying seed for sowing, will certainly come again with joy, carrying his sheaves.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 20th",
-      "lesson": "Blessed be the God of grace that it is so! He has a people whom He has chosen from of old to be His peculiar portion. These by nature have wills as stubborn as the rest of the froward sons of Adam; but when the day of His power comes, and grace displays its omnipotence, they become willing to repent, and to believe in Jesus. None are saved unwillingly, but the will is made sweetly to yield itself. What a wondrous…",
+      "hook": "Daily promise · November 19th",
+      "lesson": "Our Father is so faithful to lift us up from our grievous trials and temptations! He stretches His hands before us and makes all things new and beautiful in His light. Though weeping may last for a night, there is always a shout of joy in the morning for those who trust in the Lord. Open the full Blue Letter Bible reading for November 19th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=264",
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=324",
       "bookId": 19,
-      "chapter": 110,
-      "verseStart": 3,
-      "verseEnd": 3,
-      "pool": "evergreen"
+      "chapter": 126,
+      "verseStart": 6,
+      "verseEnd": 6,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-265",
@@ -2998,7 +2980,7 @@
     {
       "id": "blb-checkbook-doy-294",
       "reference": "Matthew 1:21",
-      "text": "She shall give birth to a son. You shall call his name Jesus, for it is he who shall save his people from their sins.”",
+      "text": "He shall save his people from their sins",
       "translation": "WEB",
       "hook": "Faith's Checkbook · October 20th",
       "lesson": "Lord, save me from my sins. By thy name of Jesus I am encouraged thus to pray. Save me from my past sins, that the habit of them may not hold me captive. Save me from my constitutional sins, that I may not be the slave of my own weaknesses. Save me from the sins which are continually under my eye that I may not lose my horror of them. Save me from secret sins; sins unperceived by me from my want of light. Save me…",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-264",
-      "reference": "Judges 7:20",
-      "text": "The three companies blew the trumpets, broke the pitchers, and held the torches in their left hands, and the trumpets in their right hands with which to blow; and they shouted, “The sword of Yahweh and of Gideon!”",
+      "id": "blb-checkbook-doy-324",
+      "reference": "Haggai 2:19",
+      "text": "Is the seed yet in the barn? Yes, the vine, the fig tree, the pomegranate, and the olive tree haven’t produced. From today I will bless you.’”",
       "translation": "WEB",
-      "hook": "Morning reading · September 20th",
-      "lesson": "Gideon ordered his men to do two things: covering up a torch in an earthen pitcher, he bade them, at an appointed signal, break the pitcher and let the light shine, and then sound with the trumpet, crying, \"The sword of the Lord, and of Gideon! the sword of the Lord, and of Gideon!\" This is precisely what all Christians must do. First, you must shine; break the pitcher which conceals your light; throw aside the bu…",
+      "hook": "Faith's Checkbook · November 19th",
+      "lesson": "Future things are hidden from us. Yet here is a glass in which we may see the unborn years. The Lord says, \"From this day will I bless you.\" It is worth while to note the day which is referred to in this promise. There had been failure of crops, blasting, and mildew, and all because of the people's sin. Now, the Lord saw these chastened ones commencing to obey His word, and build His temple, and therefore He says,…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=264&Time=am",
-      "bookId": 7,
-      "chapter": 7,
-      "verseStart": 20,
-      "verseEnd": 20,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=324",
+      "bookId": 37,
+      "chapter": 2,
+      "verseStart": 19,
+      "verseEnd": 19,
       "pool": "evergreen"
     },
     {
@@ -4613,6 +4595,24 @@
       "chapter": 4,
       "verseStart": 12,
       "verseEnd": 12,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-324",
+      "reference": "Titus 3:9",
+      "text": "but shun foolish questionings, genealogies, strife, and disputes about the law; for they are unprofitable and vain.",
+      "translation": "WEB",
+      "hook": "Morning reading · November 19th",
+      "lesson": "Our days are few, and are far better spent in doing good, than in disputing over matters which are, at best, of minor importance. The old schoolmen did a world of mischief by their incessant discussion of subjects of no practical importance; and our Churches suffer much from petty wars over abstruse points and unimportant questions. After everything has been said that can be said, neither party is any the wiser, a…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=324&Time=am",
+      "bookId": 56,
+      "chapter": 3,
+      "verseStart": 9,
+      "verseEnd": 9,
       "pool": "evergreen"
     }
   ]
