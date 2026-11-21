@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T19:51:50.183Z",
+  "updatedAt": "2026-11-21T18:57:54.160Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-304",
-      "reference": "Psalm 138:7",
-      "text": "Though I walk in the middle of trouble, you will revive me. You will stretch out your hand against the wrath of my enemies. Your right hand will save me.",
-      "translation": "WEB",
-      "hook": "Daily promise · October 30th",
-      "lesson": "Fear not the troubled paths of your life. Give no concern to the sundry evils that press in upon you. Give your entire focus to the pursuit of the interests of the heavenly kingdom. Ever will the Shepherd protect His sheep. Ever will the King of all watch over the ways of His subjects. O believer, be not dismayed for neither shall you faint in weariness nor fall to the missiles of the enemy. Trust in Almighty God and proclaim the peace of His hand! Open the full Blue Letter Bible reading for October 30th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=304",
-      "bookId": 19,
-      "chapter": 138,
-      "verseStart": 7,
-      "verseEnd": 7,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-305",
       "reference": "Psalm 48:14",
       "text": "For this God is our God forever and ever. He will be our guide even to death.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-265",
-      "reference": "Romans 5:3",
-      "text": "Not only this, but we also rejoice in our sufferings, knowing that suffering produces perseverance;",
+      "id": "blb-promise-doy-325",
+      "reference": "Psalm 138:8",
+      "text": "Yahweh will fulfill that which concerns me; your loving kindness, Yahweh, endures forever. Don’t forsake the works of your own hands.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 21st",
-      "lesson": "This is a promise in essence if not in form. We have need of patience, and here we see the way of getting it. It is only by enduring that we learn to endure, even as by swimming men learn to swim. You could not learn that art on dry land, nor learn patience without trouble. Is it not worth while to suffer tribulation for the sake of gaining that beautiful equanimity of mind which quietly acquiesces in all the will…",
+      "hook": "Daily promise · November 20th",
+      "lesson": "Absolutely everything that concerns His children is under His control! What an amazing comfort! For He is faithful to accomplish every good work within His people. He will never forsake us, but He will hold us in His right hand forever! Open the full Blue Letter Bible reading for November 20th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=265",
-      "bookId": 45,
-      "chapter": 5,
-      "verseStart": 3,
-      "verseEnd": 3,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=325",
+      "bookId": 19,
+      "chapter": 138,
+      "verseStart": 8,
+      "verseEnd": 8,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-266",
@@ -2980,7 +2962,7 @@
     {
       "id": "blb-checkbook-doy-294",
       "reference": "Matthew 1:21",
-      "text": "He shall save his people from their sins",
+      "text": "She shall give birth to a son. You shall call his name Jesus, for it is he who shall save his people from their sins.”",
       "translation": "WEB",
       "hook": "Faith's Checkbook · October 20th",
       "lesson": "Lord, save me from my sins. By thy name of Jesus I am encouraged thus to pray. Save me from my past sins, that the habit of them may not hold me captive. Save me from my constitutional sins, that I may not be the slave of my own weaknesses. Save me from the sins which are continually under my eye that I may not lose my horror of them. Save me from secret sins; sins unperceived by me from my want of light. Save me…",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-265",
-      "reference": "Jeremiah 32:41",
-      "text": "Yes, I will rejoice over them to do them good, and I will plant them in this land assuredly with my whole heart and with my whole soul.”",
+      "id": "blb-checkbook-doy-325",
+      "reference": "Psalm 107:9",
+      "text": "For he satisfies the longing soul. He fills the hungry soul with good.",
       "translation": "WEB",
-      "hook": "Morning reading · September 21st",
-      "lesson": "How heart-cheering to the believer is the delight which God has in His saints! We cannot see any reason in ourselves why the Lord should take pleasure in us; we cannot take delight in ourselves, for we often have to groan, being burdened; conscious of our sinfulness, and deploring our unfaithfulness; and we fear that God's people cannot take much delight in us, for they must perceive so much of our imperfections a…",
+      "hook": "Faith's Checkbook · November 20th",
+      "lesson": "It is well to have longings, and the more intense they are the better. The Lord will satisfy soul-longings, however great and all-absorbing they may be. Let us greatly long, for God will greatly give. We are never in a right state of mind when we are contented with ourselves, and are free from longings. Desires for more grace, and groanings which cannot be uttered, are growing pains, and we should wish to feel the…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=265&Time=am",
-      "bookId": 24,
-      "chapter": 32,
-      "verseStart": 41,
-      "verseEnd": 41,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=325",
+      "bookId": 19,
+      "chapter": 107,
+      "verseStart": 9,
+      "verseEnd": 9,
       "pool": "evergreen"
     },
     {
@@ -4613,6 +4595,24 @@
       "chapter": 3,
       "verseStart": 9,
       "verseEnd": 9,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-325",
+      "reference": "Lamentations 3:58",
+      "text": "Lord, you have pleaded the causes of my soul; you have redeemed my life.",
+      "translation": "WEB",
+      "hook": "Morning reading · November 20th",
+      "lesson": "Observe how positively the prophet speaks. He doth not say, \"I hope, I trust, I sometimes think, that God hath pleaded the causes of my soul\"; but he speaks of it as a matter of fact not to be disputed. \"Thou hast pleaded the causes of my soul.\" Let us, by the aid of the gracious Comforter, shake off those doubts and fears which so much mar our peace and comfort. Be this our prayer, that we may have done with the…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=325&Time=am",
+      "bookId": 25,
+      "chapter": 3,
+      "verseStart": 58,
+      "verseEnd": 58,
       "pool": "evergreen"
     }
   ]
