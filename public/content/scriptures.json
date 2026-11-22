@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T18:57:54.160Z",
+  "updatedAt": "2026-11-22T19:18:29.913Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-305",
-      "reference": "Psalm 48:14",
-      "text": "For this God is our God forever and ever. He will be our guide even to death.",
-      "translation": "WEB",
-      "hook": "Daily promise · October 31st",
-      "lesson": "Indeed, all the earth knows of His righteousness and is filled with His amazing glory! All His splendor and might exceeds all imagination. Such is our God. And He will guide us into His everlasting glory! Open the full Blue Letter Bible reading for October 31st.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=305",
-      "bookId": 19,
-      "chapter": 48,
-      "verseStart": 14,
-      "verseEnd": 14,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-306",
       "reference": "Psalm 107:14",
       "text": "He brought them out of darkness and the shadow of death, and broke away their chains.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-266",
-      "reference": "Isaiah 33:21",
-      "text": "But there Yahweh will be with us in majesty, a place of wide rivers and streams, in which no galley with oars will go, neither will any gallant ship pass by there.",
+      "id": "blb-promise-doy-326",
+      "reference": "Job 11:6",
+      "text": "that he would show you the secrets of wisdom! For true wisdom has two sides. Know therefore that God exacts of you less than your iniquity deserves.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 22nd",
-      "lesson": "The Lord will be to us the greatest good without any of the drawbacks which seem necessarily to attend the best earthly things. If a city is favored with broad rivers, it is liable to be attacked by galleys with oars, and other ships of war. But when the Lord represents the abundance of His bounty under this figure, He takes care expressly to shut out the fear which the metaphor might suggest. Blessed be His perfe…",
+      "hook": "Daily promise · November 21st",
+      "lesson": "How fortunate are we who have embraced the cross by faith! The mercy of the Lord is ever on our side. Through flood and fire, the mercy of the Maker of Heaven will make our road safeneither righteous wrath nor villainous treachery shall stay our path, for the Lord has made it sure against such opposition. Rejoice that your way to heaven is guarded, O believer! Open the full Blue Letter Bible reading for November 21st.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=266",
-      "bookId": 23,
-      "chapter": 33,
-      "verseStart": 21,
-      "verseEnd": 21,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=326",
+      "bookId": 18,
+      "chapter": 11,
+      "verseStart": 6,
+      "verseEnd": 6,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-267",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-266",
-      "reference": "Psalm 149:2",
-      "text": "Let Israel rejoice in him who made them. Let the children of Zion be joyful in their King.",
+      "id": "blb-checkbook-doy-326",
+      "reference": "Isaiah 45:22",
+      "text": "“Look to me, and be saved, all the ends of the earth; for I am God, and there is no other.",
       "translation": "WEB",
-      "hook": "Morning reading · September 22nd",
-      "lesson": "Be glad of heart, O believer, but take care that thy gladness has its spring in the Lord. Thou hast much cause for gladness in thy God, for thou canst sing with David, \"God, my exceeding joy.\" Be glad that the Lord reigneth, that Jehovah is King! Rejoice that He sits upon the throne, and ruleth all things! Every attribute of God should become a fresh ray in the sunlight of our gladness. That He is wise should make…",
+      "hook": "Faith's Checkbook · November 21st",
+      "lesson": "This is a promise of promises. It lies at the foundation of our spiritual life. Salvation comes through a look at Him who is \"a just God and a Saviour.\" How simple is the direction! \"Look unto me. How reasonable is the requirement! Surely the creature should look to the Creator. We have looked elsewhere long enough, it is time that we look alone to Him who invites our expectation, and promises to give us His salva…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=266&Time=am",
-      "bookId": 19,
-      "chapter": 149,
-      "verseStart": 2,
-      "verseEnd": 2,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=326",
+      "bookId": 23,
+      "chapter": 45,
+      "verseStart": 22,
+      "verseEnd": 22,
       "pool": "evergreen"
     },
     {
@@ -4613,6 +4595,24 @@
       "chapter": 3,
       "verseStart": 58,
       "verseEnd": 58,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-326",
+      "reference": "Ephesians 4:30",
+      "text": "Don’t grieve the Holy Spirit of God, in whom you were sealed for the day of redemption.",
+      "translation": "WEB",
+      "hook": "Morning reading · November 21st",
+      "lesson": "All that the believer has must come from Christ, but it comes solely through the channel of the Spirit of grace. Moreover, as all blessings thus flow to you through the Holy Spirit, so also no good thing can come out of you in holy thought, devout worship, or gracious act, apart from the sanctifying operation of the same Spirit. Even if the good seed be sown in you, yet it lies dormant except He worketh in you to…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=326&Time=am",
+      "bookId": 49,
+      "chapter": 4,
+      "verseStart": 30,
+      "verseEnd": 30,
       "pool": "evergreen"
     }
   ]
