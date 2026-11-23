@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T19:18:29.913Z",
+  "updatedAt": "2026-11-23T23:41:04.814Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-306",
-      "reference": "Psalm 107:14",
-      "text": "He brought them out of darkness and the shadow of death, and broke away their chains.",
-      "translation": "WEB",
-      "hook": "Daily promise · November 1st",
-      "lesson": "In the same way that God delivered His people in times of the Old Testament and broke their chains, He also delivers His people in the age of the church. For those whom God has saved, they have been eternally liberated from their enslavement to sin. Open the full Blue Letter Bible reading for November 1st.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=306",
-      "bookId": 19,
-      "chapter": 107,
-      "verseStart": 14,
-      "verseEnd": 14,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-307",
       "reference": "Psalm 91:4–6",
       "text": "He will cover you with his feathers. Under his wings you will take refuge. His faithfulness is your shield and rampart. You shall not be afraid of the terror by night, nor of the arrow that flies by day; nor of the pestilence that walks in darkness, nor of the destruction that wastes at noonday.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-267",
-      "reference": "Amos 9:9",
-      "text": "“For, behold, I will command, and I will sift the house of Israel among all the nations, as grain is sifted in a sieve, yet not the least kernel will fall on the earth.",
+      "id": "blb-promise-doy-327",
+      "reference": "Psalm 9:10",
+      "text": "Those who know your name will put their trust in you, for you, Yahweh, have not forsaken those who seek you.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 23rd",
-      "lesson": "The sifting process is going on still. Wherever we go, we are still being winnowed and sifted. In all countries God's people are being tried \"like as corn is sifted in a sieve.\" Sometimes the devil holds the sieve, and tosses us up and down at a great rate, with the earnest desire to get rid of us for ever. Unbelief is not slow to agitate our heart and mind with its restless fears. The world lends a willing hand a…",
+      "hook": "Daily promise · November 22nd",
+      "lesson": "Because of His amazing faithfulness to His children, we continue to trust in Him. As we place our faith in Christ, we come to know of His abounding goodness and mercy. Truly, His lovingkindness is visable in the life of the believer. For we serve such a wonderful and faithful God! Open the full Blue Letter Bible reading for November 22nd.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=267",
-      "bookId": 30,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=327",
+      "bookId": 19,
       "chapter": 9,
-      "verseStart": 9,
-      "verseEnd": 9,
-      "pool": "evergreen"
+      "verseStart": 10,
+      "verseEnd": 10,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-268",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-267",
-      "reference": "Ephesians 1:6",
-      "text": "to the praise of the glory of his grace, by which he freely gave us favor in the Beloved,",
+      "id": "blb-checkbook-doy-327",
+      "reference": "Jeremiah 50:20",
+      "text": "In those days, and in that time,” says Yahweh, “the iniquity of Israel shall be sought for, and there will be none; also the sins of Judah, and they won’t be found; for I will pardon them whom I leave as a remnant.",
       "translation": "WEB",
-      "hook": "Morning reading · September 23rd",
-      "lesson": "What a state of privilege! It includes our justification before God, but the term acceptance\" in the Greek means more than that. It signifies that we are the objects of divine complacence, nay, even of divine delight. How marvellous that we, worms, mortals, sinners, should be the objects of divine love! But it is only \"in the beloved.\" Some Christians seem to be accepted in their own experience, at least, that is…",
+      "hook": "Faith's Checkbook · November 22nd",
+      "lesson": "A glorious word indeed! What a perfect pardon is here promised to the sinful nations of Israel and Judah! Sin is to be so removed that it shall not be found, so blotted out that there shall be none. Glory be unto the God of pardons! Satan seeks out sins wherewith to accuse us, our enemies seek them that they may lay them to our charge, and our own conscience seeks them even with a morbid eagerness. But when the Lo…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=267&Time=am",
-      "bookId": 49,
-      "chapter": 1,
-      "verseStart": 6,
-      "verseEnd": 6,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=327",
+      "bookId": 24,
+      "chapter": 50,
+      "verseStart": 20,
+      "verseEnd": 20,
       "pool": "evergreen"
     },
     {
@@ -4613,6 +4595,24 @@
       "chapter": 4,
       "verseStart": 30,
       "verseEnd": 30,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-327",
+      "reference": "Hosea 12:12",
+      "text": "Jacob fled into the country of Aram, and Israel served to get a wife, and for a wife he tended flocks and herds.",
+      "translation": "WEB",
+      "hook": "Morning reading · November 22nd",
+      "lesson": "Jacob, while expostulating with Laban, thus describes his own toil, \"This twenty years have I been with thee. That which was torn of beasts I brought not unto thee: I bare the loss of it; of my hand didst thou require it, whether stolen by day, or stolen by night. Thus I was; in the day the drought consumed me, and the frost by night; and my sleep departed from mine eyes.\" Even more toilsome than this was the life…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=327&Time=am",
+      "bookId": 28,
+      "chapter": 12,
+      "verseStart": 12,
+      "verseEnd": 12,
       "pool": "evergreen"
     }
   ]
