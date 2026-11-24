@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T23:41:04.814Z",
+  "updatedAt": "2026-11-24T22:12:37.756Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-307",
-      "reference": "Psalm 91:4–6",
-      "text": "He will cover you with his feathers. Under his wings you will take refuge. His faithfulness is your shield and rampart. You shall not be afraid of the terror by night, nor of the arrow that flies by day; nor of the pestilence that walks in darkness, nor of the destruction that wastes at noonday.",
-      "translation": "WEB",
-      "hook": "Daily promise · November 2nd",
-      "lesson": "Take refuge in the Lord, O believer! Take courage in His mighty strength! Take comfort in His sure defense! Rejoice in the power of His hand to accomplish good for His people! He is strong and He is lovingso trust in Him and proclaim His truth boldly among the nations! Open the full Blue Letter Bible reading for November 2nd.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=307",
-      "bookId": 19,
-      "chapter": 91,
-      "verseStart": 4,
-      "verseEnd": 6,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-308",
       "reference": "Revelation 2:17",
       "text": "He who has an ear, let him hear what the Spirit says to the assemblies. To him who overcomes, to him I will give of the hidden manna, and I will give him a white stone, and on the stone a new name written, which no one knows but he who receives it.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-268",
-      "reference": "Ezekiel 47:9",
-      "text": "It shall happen, that every living creature which swarms, in every place where the rivers come, shall live; and there shall be a very great multitude of fish; for these waters have come there, and the waters of the sea shall be healed, and everything shall live wherever the river comes.",
+      "id": "blb-promise-doy-328",
+      "reference": "Philippians 4:13",
+      "text": "I can do all things through Christ, who strengthens me.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 24th",
-      "lesson": "The living waters, in the prophet's vision, flowed into the Dead Sea, and carried life with them, even into that stagnant lake. Where grace goes, spiritual life is the immediate and the everlasting consequence. Grace proceeds sovereignly according to the will of God, even as a river in all its windings follows its own sweet will; and wherever it comes it does not wait for life to come to it, but it creates life by…",
+      "hook": "Daily promise · November 23rd",
+      "lesson": "When Paul wrote that he could do all things through Christ, we have to understand it in light of his circumstances. Paul declares that he could find contentment (and even joy) in every situation. Though we may not be in the most desirable place, we should find contentment and joy, knowing that Christ will give us the strength to get through anything. Open the full Blue Letter Bible reading for November 23rd.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=268",
-      "bookId": 26,
-      "chapter": 47,
-      "verseStart": 9,
-      "verseEnd": 9,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=328",
+      "bookId": 50,
+      "chapter": 4,
+      "verseStart": 13,
+      "verseEnd": 13,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-269",
@@ -3536,19 +3518,19 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-268",
-      "reference": "Ezra 8:22",
-      "text": "For I was ashamed to ask of the king a band of soldiers and horsemen to help us against the enemy on the way, because we had spoken to the king, saying, “The hand of our God is on all those who seek him, for good; but his power and his wrath is against all those who forsake him.”",
+      "id": "blb-checkbook-doy-328",
+      "reference": "Deuteronomy 7:22",
+      "text": "Yahweh your God will cast out those nations before you little by little. You may not consume them at once, lest the animals of the field increase on you.",
       "translation": "WEB",
-      "hook": "Morning reading · September 24th",
-      "lesson": "A convoy on many accounts would have been desirable for the pilgrim band, but a holy shame-facedness would not allow Ezra to seek one. He feared lest the heathen king should think his professions of faith in God to be mere hypocrisy, or imagine that the God of Israel was not able to preserve His own worshippers. He could not bring his mind to lean on an arm of flesh in a matter so evidently of the Lord, and theref…",
+      "hook": "Faith's Checkbook · November 23rd",
+      "lesson": "We are not to expect to win victories for the Lord Jesus by a single blow. Evil principles and practices die hard. In some places it takes years of labor to drive out even one of the many vices which defile the inhabitants. We must carry on the war with all our might, even when favored with little manifest success. Our business in this world is to conquer it for Jesus. We are not to make compromises, but to exterm…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=268&Time=am",
-      "bookId": 15,
-      "chapter": 8,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=328",
+      "bookId": 5,
+      "chapter": 7,
       "verseStart": 22,
       "verseEnd": 22,
       "pool": "evergreen"
@@ -3952,7 +3934,7 @@
     {
       "id": "blb-morning-doy-291",
       "reference": "1 Samuel 27:1",
-      "text": "David said in his heart, “I will now perish one day by the hand of Saul. There is nothing better for me than that I should escape into the land of the Philistines; and Saul will despair of me, to seek me any more in all the borders of Israel. So shall I escape out of his hand.”",
+      "text": "And David said in his heart, I shall now perish one day by the hand of Saul.",
       "translation": "WEB",
       "hook": "Morning reading · October 17th",
       "lesson": "The thought of David's heart at this time was a false thought, because he certainly had no ground for thinking that God's anointing him by Samuel was intended to be left as an empty unmeaning act. On no one occasion had the Lord deserted His servant; he had been placed in perilous positions very often, but not one instance had occurred in which divine interposition had not delivered him. The trials to which he had…",
@@ -4474,7 +4456,7 @@
     {
       "id": "blb-morning-doy-320",
       "reference": "Deuteronomy 32:9",
-      "text": "For Yahweh’s portion is his people. Jacob is the lot of his inheritance.",
+      "text": "The Lord's portion is His people.",
       "translation": "WEB",
       "hook": "Morning reading · November 15th",
       "lesson": "How are they His? By His own sovereign choice. He chose them, and set His love upon them. This He did altogether apart from any goodness in them at the time, or any goodness which He foresaw in them. He had mercy on whom He would have mercy, and ordained a chosen company unto eternal life; thus, therefore, are they His by His unconstrained election. They are not only His by choice, but by purchase. He has bought a…",
@@ -4613,6 +4595,24 @@
       "chapter": 12,
       "verseStart": 12,
       "verseEnd": 12,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-328",
+      "reference": "1 John 1:6",
+      "text": "If we say that we have fellowship with him and walk in the darkness, we lie, and don’t tell the truth.",
+      "translation": "WEB",
+      "hook": "Morning reading · November 23rd",
+      "lesson": "When we were united by faith to Christ, we were brought into such complete fellowship with Him, that we were made one with Him, and His interests and ours became mutual and identical. We have fellowship with Christ in His love. What He loves we love. He loves the saints-so do we. He loves sinners-so do we. He loves the poor perishing race of man, and pants to see earth's deserts transformed into the garden of the…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=328&Time=am",
+      "bookId": 62,
+      "chapter": 1,
+      "verseStart": 6,
+      "verseEnd": 6,
       "pool": "evergreen"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T23:41:05.735Z",
+  "updatedAt": "2026-11-24T22:12:38.980Z",
   "source": "https://5minutebooksummary.com + https://www.20minutebooks.com/rss/",
   "items": [
     {
@@ -57,6 +57,20 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/a-first-rate-madness-summary/",
       "readMinutes": 5
+    },
+    {
+      "id": "20min-f6c47b8cceb9",
+      "topicId": "mental-models",
+      "title": "A Year of Positive Thinking",
+      "hook": "A ~28-minute listen on “A Year of Positive Thinking”",
+      "body": "Daily Inspiration, Wisdom, and Courage",
+      "lesson": "Daily Inspiration, Wisdom, and Courage. Hit play, note one idea you’d try this week, then come back.",
+      "takeaway": "Listen · Cyndie Spiegel",
+      "source": "20 Minute Books · Cyndie Spiegel",
+      "sourceType": "book",
+      "sourceUrl": "https://www.20minutebooks.com/a-year-of-positive-thinking",
+      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/A%20Year%20of%20Positive%20Thinking.mp3",
+      "readMinutes": 28
     },
     {
       "id": "booksum-1a0b3cbede94",
@@ -666,20 +680,6 @@
       "sourceType": "book",
       "sourceUrl": "https://5minutebooksummary.com/hidden-valley-road-summary/",
       "readMinutes": 5
-    },
-    {
-      "id": "20min-aed67e00cc2c",
-      "topicId": "mental-models",
-      "title": "How Music Works",
-      "hook": "A ~27-minute listen on “How Music Works”",
-      "body": "How circumstance and creativity collide in tune",
-      "lesson": "How circumstance and creativity collide in tune. Hit play, note one idea you’d try this week, then come back.",
-      "takeaway": "Listen · David Byrne",
-      "source": "20 Minute Books · David Byrne",
-      "sourceType": "book",
-      "sourceUrl": "https://www.20minutebooks.com/how-music-works",
-      "audioUrl": "https://dts.podtrac.com/redirect.mp3/www.20minutebooks.com/mp3/How%20Music%20Works.mp3",
-      "readMinutes": 27
     },
     {
       "id": "20min-21b92366b951",
