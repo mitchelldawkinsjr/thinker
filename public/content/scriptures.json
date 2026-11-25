@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T22:12:37.756Z",
+  "updatedAt": "2026-11-25T21:28:19.079Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-308",
-      "reference": "Revelation 2:17",
-      "text": "He who has an ear, let him hear what the Spirit says to the assemblies. To him who overcomes, to him I will give of the hidden manna, and I will give him a white stone, and on the stone a new name written, which no one knows but he who receives it.",
-      "translation": "WEB",
-      "hook": "Daily promise · November 3rd",
-      "lesson": "Love the Lord your God with all your heart, your mind, and your soul! (Deu 6:5, Luke 10:27) For He is ever the rewarder of those who seek Him! (Hebrews 11:6) Believe upon His name and taste the true manna from heaven, the true bread of life, the very Son of God! Ever will He sustain you and ever will your life be caught up with His, from life to death to glory everlasting. Praise His name and rejoice in the bounty of His hand! Open the full Blue Letter Bible reading for November 3rd.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=308",
-      "bookId": 66,
-      "chapter": 2,
-      "verseStart": 17,
-      "verseEnd": 17,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-309",
       "reference": "Psalm 9:9",
       "text": "Yahweh will also be a high tower for the oppressed; a high tower in times of trouble.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-269",
-      "reference": "Judges 13:23",
-      "text": "But his wife said to him, “If Yahweh were pleased to kill us, he wouldn’t have received a burnt offering and a meal offering at our hand, and he wouldn’t he have shown us all these things, nor would he have told us such things as these at this time.”",
+      "id": "blb-promise-doy-329",
+      "reference": "John 4:14",
+      "text": "but whoever drinks of the water that I will give him will never thirst again; but the water that I will give him will become in him a well of water springing up to eternal life.”",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 25th",
-      "lesson": "This is a sort of promise deduced by logic. It is an inference fairly drawn from ascertained facts. It was not likely that the Lord had revealed to Manoah and his wife that a son would be born to them, and yet had it in His heart to destroy them. The wife reasoned well, and we shall do well if we follow her line of argument. The Father has accepted the great sacrifice of Calvary, and has declared Himself well plea…",
+      "hook": "Daily promise · November 24th",
+      "lesson": "Never to be thirsty forever! How glorious this revelation! Ever more shall our soul's desires be quenched. God's spirit shall fill us to overflowing and our rest will be made full. Praise God for His mercy and lovingkindness! Open the full Blue Letter Bible reading for November 24th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=269",
-      "bookId": 7,
-      "chapter": 13,
-      "verseStart": 23,
-      "verseEnd": 23,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=329",
+      "bookId": 43,
+      "chapter": 4,
+      "verseStart": 14,
+      "verseEnd": 14,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-270",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-269",
-      "reference": "Romans 3:26",
-      "text": "to demonstrate his righteousness at this present time; that he might himself be just, and the justifier of him who has faith in Jesus.",
+      "id": "blb-checkbook-doy-329",
+      "reference": "Psalm 103:9",
+      "text": "He will not always accuse; neither will he stay angry forever.",
       "translation": "WEB",
-      "hook": "Morning reading · September 25th",
-      "lesson": "Being justified by faith, we have peace with God. Conscience accuses no longer. Judgment now decides for the sinner instead of against him. Memory looks back upon past sins, with deep sorrow for the sin, but yet with no dread of any penalty to come; for Christ has paid the debt of His people to the last jot and tittle, and received the divine receipt; and unless God can be so unjust as to demand double payment for…",
+      "hook": "Faith's Checkbook · November 24th",
+      "lesson": "He will chide sometimes, or He would not be a wise Father for such poor erring children as we are. His chiding is very painful to those who are true, because they feel how sadly they deserve it, and how wrong it is on their part to grieve Him. We know what this chiding means, and we bow before the Lord, mourning that we should cause Him to be angry with us. But what a comfort we find in these lines! \"Not always\" w…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=269&Time=am",
-      "bookId": 45,
-      "chapter": 3,
-      "verseStart": 26,
-      "verseEnd": 26,
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=329",
+      "bookId": 19,
+      "chapter": 103,
+      "verseStart": 9,
+      "verseEnd": 9,
       "pool": "evergreen"
     },
     {
@@ -3934,7 +3916,7 @@
     {
       "id": "blb-morning-doy-291",
       "reference": "1 Samuel 27:1",
-      "text": "And David said in his heart, I shall now perish one day by the hand of Saul.",
+      "text": "David said in his heart, “I will now perish one day by the hand of Saul. There is nothing better for me than that I should escape into the land of the Philistines; and Saul will despair of me, to seek me any more in all the borders of Israel. So shall I escape out of his hand.”",
       "translation": "WEB",
       "hook": "Morning reading · October 17th",
       "lesson": "The thought of David's heart at this time was a false thought, because he certainly had no ground for thinking that God's anointing him by Samuel was intended to be left as an empty unmeaning act. On no one occasion had the Lord deserted His servant; he had been placed in perilous positions very often, but not one instance had occurred in which divine interposition had not delivered him. The trials to which he had…",
@@ -4456,7 +4438,7 @@
     {
       "id": "blb-morning-doy-320",
       "reference": "Deuteronomy 32:9",
-      "text": "The Lord's portion is His people.",
+      "text": "For Yahweh’s portion is his people. Jacob is the lot of his inheritance.",
       "translation": "WEB",
       "hook": "Morning reading · November 15th",
       "lesson": "How are they His? By His own sovereign choice. He chose them, and set His love upon them. This He did altogether apart from any goodness in them at the time, or any goodness which He foresaw in them. He had mercy on whom He would have mercy, and ordained a chosen company unto eternal life; thus, therefore, are they His by His unconstrained election. They are not only His by choice, but by purchase. He has bought a…",
@@ -4613,6 +4595,24 @@
       "chapter": 1,
       "verseStart": 6,
       "verseEnd": 6,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-329",
+      "reference": "Isaiah 33:21",
+      "text": "But there Yahweh will be with us in majesty, a place of wide rivers and streams, in which no galley with oars will go, neither will any gallant ship pass by there.",
+      "translation": "WEB",
+      "hook": "Morning reading · November 24th",
+      "lesson": "Broad rivers and streams produce fertility, and abundance in the land. Places near broad rivers are remarkable for the variety of their plants and their plentiful harvests. God is all this to His Church. Having God she has abundance. What can she ask for that He will not give her? What want can she mention which He will not supply? \"In this mountain shall the Lord of Hosts make unto all people a feast of fat thing…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=329&Time=am",
+      "bookId": 23,
+      "chapter": 33,
+      "verseStart": 21,
+      "verseEnd": 21,
       "pool": "evergreen"
     }
   ]
