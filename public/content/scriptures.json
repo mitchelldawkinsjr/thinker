@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T21:28:19.079Z",
+  "updatedAt": "2026-11-26T21:15:29.985Z",
   "translation": "WEB",
   "source": "bolls.life + blueletterbible.org (promises, faiths-checkbook, morning)",
   "blbWindowDays": 21,
@@ -2096,24 +2096,6 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-promise-doy-309",
-      "reference": "Psalm 9:9",
-      "text": "Yahweh will also be a high tower for the oppressed; a high tower in times of trouble.",
-      "translation": "WEB",
-      "hook": "Daily promise · November 4th",
-      "lesson": "My Prayer: Lord, thank You for being my stronghold throughout my life! I could not imagine living one day without You! Father, continue to shape me into Your image and cause me to seek Your face more. For I am so grateful nothing can snatch me away from Your hand! Make me worthy of Your goodness and faithfulness. Open the full Blue Letter Bible reading for November 4th.",
-      "topicIds": [
-        "mental-models",
-        "current-events"
-      ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=309",
-      "bookId": 19,
-      "chapter": 9,
-      "verseStart": 9,
-      "verseEnd": 9,
-      "pool": "daily"
-    },
-    {
       "id": "blb-promise-doy-310",
       "reference": "John 14:2–3",
       "text": "In my Father’s house are many homes. If it weren’t so, I would have told you. I am going to prepare a place for you. If I go and prepare a place for you, I will come again, and will receive you to myself; that where I am, you may be there also.",
@@ -2474,22 +2456,22 @@
       "pool": "daily"
     },
     {
-      "id": "blb-checkbook-doy-270",
-      "reference": "Numbers 23:9",
-      "text": "For from the top of the rocks I see him. From the hills I see him. Behold, it is a people that dwells alone, and shall not be listed among the nations.",
+      "id": "blb-promise-doy-330",
+      "reference": "Proverbs 3:25–26",
+      "text": "Don’t be afraid of sudden fear, neither of the desolation of the wicked, when it comes: for Yahweh will be your confidence, and will keep your foot from being taken.",
       "translation": "WEB",
-      "hook": "Faith's Checkbook · September 26th",
-      "lesson": "Who would wish to dwell among the nations, and to be numbered with them? Why, even the professing church is such that to follow the Lord fully within its bounds is very difficult. There is such a mingling and mixing that one often sighs for \"a lodge in some vast wilderness.\" Certain it is that the Lord would have His people follow a separated path as to the world, and come out decidedly and distinctly from it. We…",
+      "hook": "Daily promise · November 25th",
+      "lesson": "With Jesus as our confidence, we have nothing to fear. The Lord has command over all things and promises to keep us from being taken out of His hand. My Prayer: Lord, I thank you for Your love that keeps me securely in Your hands! Help me to depend on You when evil comes to tempt me. Thank You that I have nothing to fear, for You are always with me. Open the full Blue Letter Bible reading for November 25th.",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=270",
-      "bookId": 4,
-      "chapter": 23,
-      "verseStart": 9,
-      "verseEnd": 9,
-      "pool": "evergreen"
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/promises/view.cfm?doy=330",
+      "bookId": 20,
+      "chapter": 3,
+      "verseStart": 25,
+      "verseEnd": 26,
+      "pool": "daily"
     },
     {
       "id": "blb-checkbook-doy-271",
@@ -3536,21 +3518,21 @@
       "pool": "evergreen"
     },
     {
-      "id": "blb-morning-doy-270",
-      "reference": "Zechariah 1:8",
-      "text": "“I had a vision in the night, and behold, a man riding on a red horse, and he stood among the myrtle trees that were in a ravine; and behind him there were red, brown, and white horses.",
+      "id": "blb-checkbook-doy-330",
+      "reference": "Zechariah 4:7",
+      "text": "Who are you, great mountain? Before Zerubbabel you are a plain; and he will bring out the capstone with shouts of ‘Grace, grace, to it!’”",
       "translation": "WEB",
-      "hook": "Morning reading · September 26th",
-      "lesson": "The vision in this chapter describes the condition of Israel in Zechariah's day; but being interpreted in its aspect towards us, it describes the Church of God as we find it now in the world. The Church is compared to a myrtle grove flourishing in a valley. It is hidden, unobserved, secreted; courting no honour and attracting no observation from the careless gazer. The Church, like her head, has a glory, but it is…",
+      "hook": "Faith's Checkbook · November 25th",
+      "lesson": "At this hour a mountain of difficulty, distress, or necessity, may be in our way, and natural reason sees no path over it, or through it, or round it. Let faith come in, and straightway the mountain disappears and becomes a plain. But faith must first hear the word of the Lord - \"Not by might, nor by power, but by my Spirit, saith the Lord of hosts.\" This grand truth is a prime necessity for meeting the insurmount…",
       "topicIds": [
         "mental-models",
         "current-events"
       ],
-      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=270&Time=am",
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/faiths-checkbook/view.cfm?doy=330",
       "bookId": 38,
-      "chapter": 1,
-      "verseStart": 8,
-      "verseEnd": 8,
+      "chapter": 4,
+      "verseStart": 7,
+      "verseEnd": 7,
       "pool": "evergreen"
     },
     {
@@ -4613,6 +4595,24 @@
       "chapter": 33,
       "verseStart": 21,
       "verseEnd": 21,
+      "pool": "evergreen"
+    },
+    {
+      "id": "blb-morning-doy-330",
+      "reference": "Luke 4:18",
+      "text": "“The Spirit of the Lord is on me, because he has anointed me to preach good news to the poor. He has sent me to heal the broken hearted, to proclaim release to the captives, recovering of sight to the blind, to deliver those who are crushed,",
+      "translation": "WEB",
+      "hook": "Morning reading · November 25th",
+      "lesson": "None but Jesus can give deliverance to captives. Real liberty cometh from Him only. It is a liberty righteously bestowed; for the Son, who is Heir of all things, has a right to make men free. The saints honour the justice of God, which now secures their salvation. It is a liberty which has been dearly purchased. Christ speaks it by His power, but He bought it by His blood. He makes thee free, but it is by His own…",
+      "topicIds": [
+        "mental-models",
+        "current-events"
+      ],
+      "sourceUrl": "https://www.blueletterbible.org/devotionals/me/view.cfm?doy=330&Time=am",
+      "bookId": 42,
+      "chapter": 4,
+      "verseStart": 18,
+      "verseEnd": 18,
       "pool": "evergreen"
     }
   ]
